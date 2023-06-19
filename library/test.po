@@ -575,14 +575,16 @@ msgid ""
 "iteration, but not at the first iteration. The sleep delay is doubled at "
 "each iteration (up to *max_delay* seconds)."
 msgstr ""
+"运行循环体直到以 ``break`` 停止循环。 在每次循环迭代时休眠，但第一次迭代时除外。 每次迭代的休眠延时都将加倍（至多 *max_delay* "
+"秒）。"
 
 #: ../../library/test.rst:445
 msgid "See :func:`busy_retry` documentation for the parameters usage."
-msgstr ""
+msgstr "请参阅 :func:`busy_retry` 文档了解相关形参的用法。"
 
 #: ../../library/test.rst:447
 msgid "Example raising an exception after SHORT_TIMEOUT seconds::"
-msgstr ""
+msgstr "在 SHORT_TIMEOUT 秒后引发异常的示例::"
 
 #: ../../library/test.rst:463
 msgid ""
@@ -685,7 +687,7 @@ msgstr ""
 
 #: ../../library/test.rst:541
 msgid "Get size of a page in bytes."
-msgstr ""
+msgstr "获取以字节表示的分页大小。"
 
 #: ../../library/test.rst:548
 msgid ""
@@ -948,7 +950,7 @@ msgstr "用于仅当 :data:`HAVE_DOCSTRINGS` 时才运行测试的装饰器。"
 msgid ""
 "Decorator for only running the test if :ref:`Limited C API <limited-c-api>` "
 "is available."
-msgstr ""
+msgstr "设置仅在 :ref:`受限 C API <limited-c-api>` 可用时运行测试的装饰器。"
 
 #: ../../library/test.rst:812
 msgid "Decorator for tests only applicable to CPython."
