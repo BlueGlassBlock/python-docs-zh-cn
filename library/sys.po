@@ -1840,6 +1840,8 @@ msgid ""
 "pdb; pdb.pm()`` to enter the post-mortem debugger; see :mod:`pdb` module for"
 " more information.)"
 msgstr ""
+"该变量并非总是会被定义；当有未处理的异常时它将被设为相应的异常实例并且解释器将打印异常消息和栈回溯。它的预期用途是允许交互用户导入调试器模块并进行事后调试而不必重新运行导致了错误的命令。"
+" （典型用法是执行 ``import pdb; pdb.pm()`` 来进入事后调试器；请参阅 :mod:`pdb` 了解详情。）"
 
 #: ../../library/sys.rst:1132
 msgid ""
@@ -1847,6 +1849,8 @@ msgid ""
 " hold the legacy representation of ``sys.last_exc``, as returned from "
 ":func:`exc_info` above."
 msgstr ""
+"这三个变量已被弃用；请改用 :data:`sys.last_exc`。 它们将保存 ``sys.last_exc`` 的旧表示形式，如上面 "
+":func:`exc_info` 所返回的。"
 
 #: ../../library/sys.rst:1138
 msgid ""
@@ -1919,6 +1923,9 @@ msgid ""
 ":data:`meta_path` entry doesn't have a "
 ":meth:`~importlib.abc.MetaPathFinder.find_spec` method."
 msgstr ""
+":term:`模块规格说明 <module spec>` 是在 Python 3.4 中根据 :pep:`451` 引入的。 较早版本的 Python "
+"会查找名为 :meth:`!find_module` 的方法。 如果某个 :data:`meta_path` 条目没有 "
+":meth:`~importlib.abc.MetaPathFinder.find_spec` 方法则仍会回退为调用此方法。"
 
 #: ../../library/sys.rst:1186
 msgid ""
@@ -2605,7 +2612,7 @@ msgstr "该设置是特定于单个线程的。"
 msgid ""
 "Activate the stack profiler trampoline *backend*. The only supported backend"
 " is ``\"perf\"``."
-msgstr ""
+msgstr "激活栈性能分析器 trampoline *backend*。 唯一受支持的后端是 ``\"perf\"``。"
 
 #: ../../library/sys.rst:1604 ../../library/sys.rst:1619
 #: ../../library/sys.rst:1627
@@ -2622,7 +2629,7 @@ msgstr "https://perf.wiki.kernel.org"
 
 #: ../../library/sys.rst:1615
 msgid "Deactivate the current stack profiler trampoline backend."
-msgstr ""
+msgstr "取消激活当前的栈性能分析器 trampoline 后端。"
 
 #: ../../library/sys.rst:1617
 msgid "If no stack profiler is activated, this function has no effect."
