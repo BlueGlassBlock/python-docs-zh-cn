@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1196,7 +1196,7 @@ msgstr "如果当前 Python 构建或实现无法合理地计算此信息，允�
 
 #: ../../library/sys.rst:675
 msgid "Return the number of unicode objects that have been interned."
-msgstr ""
+msgstr "返回已被处置的 unicode 对象数量。"
 
 #: ../../library/sys.rst:682
 msgid "Return the build time API version of Android as an integer."
@@ -1395,12 +1395,15 @@ msgid ""
 "unidentifiable, ``None`` is returned.  The default for *depth* is zero, "
 "returning the module at the top of the call stack."
 msgstr ""
+"从调用栈返回一个模块的名称。 如果给出了可选的整数 *depth*，则返回从栈顶往下相应调用层数的模块。 "
+"如果该数值比调用栈更深，或者如果该模块不可被标识，则返回 ``None``。 *depth* 的默认值为零，即返回位于调用栈顶端的模块。"
 
 #: ../../library/sys.rst:830
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sys._getframemodulename`` with "
 "argument ``depth``."
 msgstr ""
+"引发一个 :ref:`审计事件 <auditing>` ``sys._getframemodulename``，附带参数 ``depth``。"
 
 #: ../../library/sys.rst:844
 msgid "Get the profiler function as set by :func:`setprofile`."
@@ -2623,11 +2626,11 @@ msgstr ""
 
 #: ../../library/sys.rst:1617
 msgid "If no stack profiler is activated, this function has no effect."
-msgstr ""
+msgstr "如果没有激活的栈性能分析器，此函数将没有任何效果。"
 
 #: ../../library/sys.rst:1625
 msgid "Return ``True`` if a stack profiler trampoline is active."
-msgstr ""
+msgstr "如果激活了栈性能分析器 trampoline 则返回 ``True``。"
 
 #: ../../library/sys.rst:1633
 msgid ""
