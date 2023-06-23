@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-06-23 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -164,6 +164,8 @@ msgid ""
 "case of error (e.g. no more watcher IDs available), return ``-1`` and set an"
 " exception."
 msgstr ""
+"注册 *callback* 作为当前解释器的函数监视器。 返回一个可被传给 :c:func:`PyFunction_ClearWatcher` 的 "
+"ID。 如果出现错误（比如没有足够的可用监视器 ID），则返回 ``-1`` 并设置一个异常。"
 
 #: ../../c-api/function.rst:135
 msgid ""
@@ -172,6 +174,9 @@ msgid ""
 " success, or ``-1`` and set an exception on error (e.g.  if the given "
 "*watcher_id* was never registered.)"
 msgstr ""
+"清空当前解释器在之前从Clear watcher identified by previously returned from "
+":c:func:`PyFunction_AddWatcher` 返回的由 *watcher_id* 所标识的监视器。 成功时返回 "
+"``0``，或者出错时（比如当给定的 *watcher_id* 未被注册）返回 ``-1`` 并设置一个异常。"
 
 #: ../../c-api/function.rst:145
 msgid ""
@@ -180,10 +185,14 @@ msgid ""
 "``PyFunction_EVENT_MODIFY_CODE`` - ``PyFunction_EVENT_MODIFY_DEFAULTS`` - "
 "``PyFunction_EVENT_MODIFY_KWDEFAULTS``"
 msgstr ""
+"由以下可能的函数监视器事件组成的枚举: - ``PyFunction_EVENT_CREATE`` - "
+"``PyFunction_EVENT_DESTROY`` - ``PyFunction_EVENT_MODIFY_CODE`` - "
+"``PyFunction_EVENT_MODIFY_DEFAULTS`` - "
+"``PyFunction_EVENT_MODIFY_KWDEFAULTS``"
 
 #: ../../c-api/function.rst:157
 msgid "Type of a function watcher callback function."
-msgstr ""
+msgstr "函数监视器回调函数的类型。"
 
 #: ../../c-api/function.rst:159
 msgid ""
@@ -192,12 +201,15 @@ msgid ""
 ":term:`borrowed reference` to the new value that is about to be stored in "
 "*func* for the attribute that is being modified."
 msgstr ""
+"如果 *event* 为 ``PyFunction_EVENT_CREATE`` 或 ``PyFunction_EVENT_DESTROY`` 则 "
+"*new_value* 将为 ``NULL``。 在其他情况下，*new_value* 将为被修改的属性持有一个指向要保存在 *func* 中的新值的 "
+":term:`borrowed reference`。"
 
 #: ../../c-api/function.rst:164
 msgid ""
 "The callback may inspect but must not modify *func*; doing so could have "
 "unpredictable effects, including infinite recursion."
-msgstr ""
+msgstr "该回调可以检查但不能修改 *func*; 这样做可能具有不可预知的影响，包括无限递归。"
 
 #: ../../c-api/function.rst:167
 msgid ""

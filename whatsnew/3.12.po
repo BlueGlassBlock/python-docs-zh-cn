@@ -1124,6 +1124,7 @@ msgid ""
 "Add a :ref:`command-line interface <sqlite3-cli>`. (Contributed by Erlend E."
 " Aasland in :gh:`77617`.)"
 msgstr ""
+"增加了一个 :ref:`命令行接口 <sqlite3-cli>`。 （由 Erlend E. Aasland 在 :gh:`77617` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:725
 msgid ""
@@ -1199,12 +1200,14 @@ msgid ""
 "The :class:`tempfile.NamedTemporaryFile` function has a new optional "
 "parameter *delete_on_close* (Contributed by Evgeny Zorin in :gh:`58451`.)"
 msgstr ""
+":class:`tempfile.NamedTemporaryFile` 函数增加了一个新的可选形参 *delete_on_close*。 （由 "
+"Evgeny Zorin 在 :gh:`58451` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:776
 msgid ""
 ":func:`tempfile.mkdtemp` now always returns an absolute path, even if the "
 "argument provided to the *dir* parameter is a relative path."
-msgstr ""
+msgstr ":func:`tempfile.mkdtemp` 现在将总是返回一个绝对路径，即使提供给 *dir* 形参的参数是一个相对路径。"
 
 #: ../../whatsnew/3.12.rst:782
 msgid "threading"
