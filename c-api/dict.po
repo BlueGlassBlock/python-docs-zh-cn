@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-06-23 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -301,8 +301,8 @@ msgid ""
 ":c:func:`PyDict_AddWatcher` will be called when *dict* is modified or "
 "deallocated. Return ``0`` on success or ``-1`` on error."
 msgstr ""
-"将字典 *dict* 标记为 watched。 由 :c:func:`PyDict_AddWatcher` 授权 *watcher_id* "
-"对应的回调将在 *dict* 被修改或释放时被调用。 成功时返回 ``0``，出错时返回 ``-1``。"
+"将字典 *dict* 标记为已被监视。 由 :c:func:`PyDict_AddWatcher` 授权 *watcher_id* 对应的回调将在 "
+"*dict* 被修改或释放时被调用。 成功时返回 ``0``，出错时返回 ``-1``。"
 
 #: ../../c-api/dict.rst:269
 msgid ""
@@ -311,6 +311,8 @@ msgid ""
 "*dict* is modified or deallocated. The dict must previously have been "
 "watched by this watcher. Return ``0`` on success or ``-1`` on error."
 msgstr ""
+"将字典 *dict* 标记为不再被监视。 由 :c:func:`PyDict_AddWatcher` 授权 *watcher_id* 对应的回调在 "
+"*dict* 被修改或释放时将不再被调用。 该字典在此之前必须已被此监视器所监视。 成功时返回 ``0``，出错时返回 ``-1``。"
 
 #: ../../c-api/dict.rst:278
 msgid ""
@@ -319,10 +321,13 @@ msgid ""
 "``PyDict_EVENT_CLONED``, ``PyDict_EVENT_CLEARED``, or "
 "``PyDict_EVENT_DEALLOCATED``."
 msgstr ""
+"由以下可能的字典监视器事件组成的枚举: ``PyDict_EVENT_ADDED``, ``PyDict_EVENT_MODIFIED``, "
+"``PyDict_EVENT_DELETED``, ``PyDict_EVENT_CLONED``, ``PyDict_EVENT_CLEARED`` "
+"或 ``PyDict_EVENT_DEALLOCATED``。"
 
 #: ../../c-api/dict.rst:286
 msgid "Type of a dict watcher callback function."
-msgstr ""
+msgstr "字典监视器回调函数的类型。"
 
 #: ../../c-api/dict.rst:288
 msgid ""
