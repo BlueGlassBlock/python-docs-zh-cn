@@ -24,17 +24,17 @@
 # ppcfish <ppcfish@gmail.com>, 2023
 # sunsol s <sunsolzn@gmail.com>, 2023
 # Jiuh-star <jiuh.star@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 19:38+0000\n"
+"POT-Creation-Date: 2023-06-23 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
-"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -853,6 +853,7 @@ msgid ""
 "A tuple containing the :ref:`type parameters <type-params>` of a "
 ":ref:`generic function <generic-functions>`."
 msgstr ""
+"一个包含 :ref:`类型形参 <type-params>` 的元组，它们将传给 :ref:`泛型函数 <generic-functions>`。"
 
 #: ../../reference/datamodel.rst:572
 msgid ""
@@ -1294,6 +1295,7 @@ msgid ""
 "A tuple containing the :ref:`type parameters <type-params>` of a "
 ":ref:`generic class <generic-classes>`."
 msgstr ""
+"一个包含 :ref:`类型形参 <type-params>` 的元组，它们将传给 :ref:`泛型类 <generic-classes>`。"
 
 #: ../../reference/datamodel.rst:919
 msgid "Class instances"
@@ -3002,7 +3004,7 @@ msgstr ":func:`types.get_original_bases`"
 msgid ""
 "Retrieve a class's \"original bases\" prior to modifications by "
 ":meth:`~object.__mro_entries__`."
-msgstr ""
+msgstr "在类被 :meth:`~object.__mro_entries__` 修改之前提取其“原始基类”。"
 
 #: ../../reference/datamodel.rst:2121
 msgid ":pep:`560`"
@@ -3962,7 +3964,7 @@ msgstr "有关 Python ``match`` 语句的规范说明。"
 
 #: ../../reference/datamodel.rst:2883
 msgid "Emulating buffer types"
-msgstr ""
+msgstr "模拟缓冲区类型"
 
 #: ../../reference/datamodel.rst:2885
 msgid ""
@@ -4857,7 +4859,7 @@ msgstr "__annotations__ (类属性)"
 
 #: ../../reference/datamodel.rst:840
 msgid "__type_params__ (class attribute)"
-msgstr ""
+msgstr "__type_params__ (类属性)"
 
 #: ../../reference/datamodel.rst:914
 msgid "__dict__ (instance attribute)"
