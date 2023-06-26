@@ -1241,12 +1241,16 @@ msgid ""
 "Add :func:`math.exp2`: return 2 raised to the power of x. (Contributed by "
 "Gideon Mitchell in :issue:`45917`.)"
 msgstr ""
+"增加了 :func:`math.exp2`: 返回 2 的 x 次幂。 （由 Gideon Mitchell 在 :issue:`45917` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:866
 msgid ""
 "Add :func:`math.cbrt`: return the cube root of x. (Contributed by Ajith "
 "Ramachandran in :issue:`44357`.)"
 msgstr ""
+"增加了 :func:`math.cbrt`: 返回 x 的立方根。 （由 Ajith Ramachandran 在 :issue:`44357` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:869
 msgid ""
@@ -1256,12 +1260,15 @@ msgid ""
 "Previously they raised :exc:`ValueError`. (Contributed by Mark Dickinson in "
 ":issue:`44339`.)"
 msgstr ""
+"两个 :func:`math.pow` 边界情况的行为已改变，以便与 IEEE 754 规范保持一致。 ``math.pow(0.0, "
+"-math.inf)`` 和 ``math.pow(-0.0, -math.inf)`` 等运算现在将返回 ``inf``。 在此之前它们会引发 "
+":exc:`ValueError`。 （由 Mark Dickinson 在 :issue:`44339` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:875
 msgid ""
 "The :data:`math.nan` value is now always available. (Contributed by Victor "
 "Stinner in :issue:`46917`.)"
-msgstr ""
+msgstr "现在 :data:`math.nan` 值将总是可用。 （由 Victor Stinner 在 :issue:`46917` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:882
 msgid "operator"
@@ -1273,6 +1280,8 @@ msgid ""
 "``operator.call(obj, *args, **kwargs) == obj(*args, **kwargs)``. "
 "(Contributed by Antony Lee in :issue:`44019`.)"
 msgstr ""
+"增加了一个新函数 ``operator.call``，使得 ``operator.call(obj, *args, **kwargs) == "
+"obj(*args, **kwargs)``。 （由 Antony Lee 在 :issue:`44019` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:892
 msgid "os"
