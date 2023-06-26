@@ -4001,20 +4001,20 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:2916
 msgid ":pep:`688` - Making the buffer protocol accessible in Python"
-msgstr ""
+msgstr ":pep:`688` - 使缓冲区协议在 Python 中可访问"
 
 #: ../../reference/datamodel.rst:2916
 msgid ""
 "Introduces the Python ``__buffer__`` and ``__release_buffer__`` methods."
-msgstr ""
+msgstr "引入 Python ``__buffer__`` 和 ``__release_buffer__`` 方法。"
 
 #: ../../reference/datamodel.rst:2918
 msgid ":class:`collections.abc.Buffer`"
-msgstr ""
+msgstr ":class:`collections.abc.Buffer`"
 
 #: ../../reference/datamodel.rst:2919
 msgid "ABC for buffer types."
-msgstr ""
+msgstr "缓冲区类型的 ABC。"
 
 #: ../../reference/datamodel.rst:2924
 msgid "Special method lookup"
@@ -4721,7 +4721,7 @@ msgstr "__kwdefaults__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__type_params__ (function attribute)"
-msgstr ""
+msgstr "__type_params__ (function attribute)"
 
 #: ../../reference/datamodel.rst:491
 msgid "global"

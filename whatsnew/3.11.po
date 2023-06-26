@@ -1293,6 +1293,8 @@ msgid ""
 "``CryptGenRandom()`` which is deprecated. (Contributed by Dong-hee Na in "
 ":issue:`44611`.)"
 msgstr ""
+"在 Windows 上，:func:`os.urandom` 现在将使用 ``BCryptGenRandom()``，而不是已被弃用的 "
+"``CryptGenRandom()``。 （由 Dong-hee Na 在 :issue:`44611` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:902
 msgid "pathlib"
@@ -1305,6 +1307,9 @@ msgid ""
 ":data:`~os.sep` or :data:`~os.altsep`. (Contributed by Eisuke Kawasima in "
 ":issue:`22276` and :issue:`33392`.)"
 msgstr ""
+":meth:`~pathlib.Path.glob` 和 :meth:`~pathlib.Path.rglob` 在 *pattern* "
+"以路径组件分隔符即 :data:`~os.sep` 或 :data:`~os.altsep` 结束时将只返回目录。 （由 Eisuke Kawasima"
+" 在 :issue:`22276` 和 :issue:`33392` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:913
 msgid "re"
@@ -1316,6 +1321,8 @@ msgid ""
 "``?+``, ``{m,n}+``) are now supported in regular expressions. (Contributed "
 "by Jeffrey C. Jacobs and Serhiy Storchaka in :issue:`433030`.)"
 msgstr ""
+"正则表达式现已支持原子化分组 (``(?>...)``) 和占有型数量限定符 (``*+``, ``++``, ``?+``, ``{m,n}+``)。"
+" （由 Jeffrey C. Jacobs 和 Serhiy Storchaka 在 :issue:`433030` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:923
 msgid "shutil"
@@ -1326,6 +1333,8 @@ msgid ""
 "Add optional parameter *dir_fd* in :func:`shutil.rmtree`. (Contributed by "
 "Serhiy Storchaka in :issue:`46245`.)"
 msgstr ""
+"在 :func:`shutil.rmtree` 中添加了可选形参 *dir_fd*。 （由 Serhiy Storchaka 在 "
+":issue:`46245` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:932
 msgid "socket"
@@ -1366,6 +1375,9 @@ msgid ""
 ":exc:`UnicodeEncodeError` instead of :exc:`sqlite3.ProgrammingError`. "
 "(Contributed by Erlend E. Aasland in :issue:`44688`.)"
 msgstr ""
+"排序名 :meth:`~sqlite3.Connection.create_collation` 现在可以包含任意 Unicode 字符。 "
+"带有无效字符的排序名现在将引发 :exc:`UnicodeEncodeError` 而不是 "
+":exc:`sqlite3.ProgrammingError`。 （由 Erlend E. Aasland 在 :issue:`44688` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:957
 msgid ""

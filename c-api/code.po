@@ -61,20 +61,20 @@ msgstr "返回 *co* 中的自由变量数。"
 msgid ""
 "Return a new code object.  If you need a dummy code object to create a "
 "frame, use :c:func:`PyCode_NewEmpty` instead."
-msgstr ""
+msgstr "返回一个新的代码对象。 如果你需要一个用空代码对象来创建帧，请改用 :c:func:`PyCode_NewEmpty`。"
 
 #: ../../c-api/code.rst:41
 msgid ""
 "Since the definition of the bytecode changes often, calling "
 ":c:func:`PyCode_New` directly can bind you to a precise Python version."
-msgstr ""
+msgstr "由于字节码的定义经常变化，可以直接调用 :c:func:`PyCode_New` 来绑定精确的 Python 版本。"
 
 #: ../../c-api/code.rst:44
 msgid ""
 "The many arguments of this function are inter-dependent in complex ways, "
 "meaning that subtle changes to values are likely to result in incorrect "
 "execution or VM crashes. Use this function only with extreme care."
-msgstr ""
+msgstr "此函数的许多参数以复杂的方式相互依赖，这意味着参数值的细微改变可能导致不正确的执行或 VM 崩溃。 使用此函数需要极度小心。"
 
 #: ../../c-api/code.rst:48 ../../c-api/code.rst:68
 msgid "Added ``exceptiontable`` parameter."

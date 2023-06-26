@@ -1134,6 +1134,10 @@ msgid ""
 "handling <sqlite3-transaction-control-autocommit>`. (Contributed by Erlend "
 "E. Aasland in :gh:`83638`.)"
 msgstr ""
+"向 :class:`~sqlite3.Connection` 添加 :attr:`~sqlite3.Connection.autocommit` "
+"属性并向 :func:`~sqlite3.connect` 添加 *autocommit* 形参用于控制兼容 :pep:`249` 的 "
+":ref:`事务处理 <sqlite3-transaction-control-autocommit>`。 （由 Erlend E. Aasland 在"
+" :gh:`83638` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:732
 msgid ""
@@ -1141,6 +1145,8 @@ msgid ""
 ":meth:`~sqlite3.Connection.load_extension`, for overriding the SQLite "
 "extension entry point. (Contributed by Erlend E. Aasland in :gh:`103015`.)"
 msgstr ""
+"向 :meth:`~sqlite3.Connection.load_extension` 添加了 *entrypoint* 仅限关键字形参，用于覆盖 "
+"SQLite 扩展入口点。 （由 Erlend E. Aasland 在 :gh:`103015` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:737
 msgid ""
@@ -1149,6 +1155,9 @@ msgid ""
 "make configuration changes to a database connection. (Contributed by Erlend "
 "E. Aasland in :gh:`103489`.)"
 msgstr ""
+"向 :class:`~sqlite3.Connection` 添加了 :meth:`~sqlite3.Connection.getconfig` 和 "
+":meth:`~sqlite3.Connection.setconfig` 用于对数据库连接的配置修改。 （由 Erlend E. Aasland 在 "
+":gh:`103489` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:743
 msgid "statistics"
@@ -1160,6 +1169,8 @@ msgid ""
 "for computing the Spearman correlation of ranked data. (Contributed by "
 "Raymond Hettinger in :gh:`95861`.)"
 msgstr ""
+"扩展了 :func:`statistics.correlation` 以 ``ranked`` 方法的形式来包括对分级数据的斯皮尔曼相关性计算。 （由 "
+"Raymond Hettinger 在 :gh:`95861` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:750
 msgid "sys"
@@ -1257,6 +1268,8 @@ msgid ""
 ":ref:`user-defined-generics` when subclassed. (Contributed by James Hilton-"
 "Balfe and Alex Waygood in :gh:`101827`.)"
 msgstr ""
+"增加了 :func:`types.get_original_bases` 以允许在子类化时继续对 :ref:`user-defined-"
+"generics` 进行内省。 （由 James Hilton-Balfe 和 Alex Waygood 在 :gh:`101827` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:816
 msgid "typing"
