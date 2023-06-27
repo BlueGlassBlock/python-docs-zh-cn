@@ -3986,12 +3986,14 @@ msgid ""
 "implemented by builtin types such as :class:`bytes` and :class:`memoryview`,"
 " and third-party libraries may define additional buffer types."
 msgstr ""
+":ref:`缓冲区协议 <bufferobjects>` 为 Python 对象提供了一种向低层级内存数组暴露高效访问的方式。 该协议是通过内置类型如 "
+":class:`bytes` 和 :class:`memoryview` 实现的，还可能由第三方库定义额外的缓冲区类型。"
 
 #: ../../reference/datamodel.rst:2890
 msgid ""
 "While buffer types are usually implemented in C, it is also possible to "
 "implement the protocol in Python."
-msgstr ""
+msgstr "虽然缓冲区类型通常都是用 C 实现的，但用 Python 来实现该协议也是可能的。"
 
 #: ../../reference/datamodel.rst:2895
 msgid ""
