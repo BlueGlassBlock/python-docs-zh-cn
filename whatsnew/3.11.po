@@ -1386,6 +1386,10 @@ msgid ""
 ":attr:`~sqlite3.Error.sqlite_errorname`. (Contributed by Aviv Palivoda, "
 "Daniel Shahaf, and Erlend E. Aasland in :issue:`16379` and :issue:`24139`.)"
 msgstr ""
+"现在 :mod:`sqlite3` 异常包括以 :attr:`~sqlite3.Error.sqlite_errorcode` 代表的 SQLite "
+"扩展错误码和以 :attr:`~sqlite3.Error.sqlite_errorname` 代表的 SQLite 错误名。 （由 Aviv "
+"Palivoda, Daniel Shahaf 和 Erlend E. Aasland 在 :issue:`16379` 和 "
+":issue:`24139` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:963
 msgid ""
@@ -1394,6 +1398,9 @@ msgid ""
 "setting and getting SQLite limits by connection basis. (Contributed by "
 "Erlend E. Aasland in :issue:`45243`.)"
 msgstr ""
+"向 :class:`sqlite3.Connection` 添加了 :meth:`~sqlite3.Connection.setlimit` 和 "
+":meth:`~sqlite3.Connection.getlimit` 用于在连接上设置和获取 SQLite 限制。 （由 Erlend E. "
+"Aasland 在 :issue:`45243` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:968
 msgid ""
@@ -1401,6 +1408,8 @@ msgid ""
 "threading mode the underlying SQLite library has been compiled with. "
 "(Contributed by Erlend E. Aasland in :issue:`45613`.)"
 msgstr ""
+"现在 :mod:`sqlite3` 会基于兼容底层 SQLite 库的默认线程模式来设置 :attr:`sqlite3.threadsafety`。 "
+"（由 Erlend E. Aasland 在 :issue:`45613` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:972
 msgid ""
