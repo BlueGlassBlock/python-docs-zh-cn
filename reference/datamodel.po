@@ -4004,6 +4004,9 @@ msgid ""
 "provides a convenient way to interpret the flags. The method must return a "
 ":class:`memoryview` object."
 msgstr ""
+"当从 *self* 请求一个缓冲区时将被调用（例如，从 :class:`memoryview` 构造器）。 *flags* "
+"参数是代表所请求缓冲区的类别的整数，例如这会影响返回的缓冲区是只读还是可写。 :class:`inspect.BufferFlags` "
+"提供了解读旗标的便利方式。 此方法必须返回一个 :class:`memoryview` 对象。"
 
 #: ../../reference/datamodel.rst:2904
 msgid ""
@@ -4013,6 +4016,9 @@ msgid ""
 " with the buffer. This method should return ``None``. Buffer objects that do"
 " not need to perform any cleanup are not required to implement this method."
 msgstr ""
+"当一个缓冲区不再需要时将被调用。 *buffer* 参数是在此之前由 :meth:`~object.__buffer__` 返回的 "
+":class:`memoryview` 对象。 此方法必须释放任何关联到该缓冲区的资源。 此方法应当返回 ``None``。 "
+"不需要执行任何清理的缓冲区对象不要求实现此方法。"
 
 #: ../../reference/datamodel.rst:2916
 msgid ":pep:`688` - Making the buffer protocol accessible in Python"
