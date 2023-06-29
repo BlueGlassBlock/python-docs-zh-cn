@@ -349,6 +349,8 @@ msgid ""
 "during debugging or when you need your cleanup behavior to be conditional "
 "based on other logic."
 msgstr ""
+"*delete* 可被用于禁止在退出上下文时清理目录树。 "
+"虽然在退出上下文时禁止此操作看起来可能很不常见，但这在进行调试或在你的清理行为需要以其他逻辑为条件时将会很有用处。"
 
 #: ../../library/tempfile.rst:204 ../../library/tempfile.rst:284
 msgid ""
