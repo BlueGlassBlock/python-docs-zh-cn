@@ -226,7 +226,7 @@ msgstr "*delete* 为假值"
 msgid ""
 "additional open shares delete access (e.g. by calling :func:`os.open` with "
 "the flag ``O_TEMPORARY``)"
-msgstr ""
+msgstr "额外的打开将共享删除操作（例如调用 :func:`os.open` 时附带了 ``O_TEMPORARY`` 旗标）"
 
 #: ../../library/tempfile.rst:121
 msgid ""
