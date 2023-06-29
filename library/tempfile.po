@@ -198,26 +198,29 @@ msgid ""
 "false. The latter approach is recommended as it provides assistance in "
 "automatic cleaning of the temporary file upon the context manager exit."
 msgstr ""
+"因此要使用该临时文件的名称在关闭文件之后重新打开它，那么注意在关闭时不要删除文件（将 *delete* 形参设为假值），或者如果该临时文件是在 "
+":keyword:`with` 语句中创建的，则要将 *delete_on_close* 形参设为假值。 "
+"更推荐后一种方式因为它在上下文管理器退出时提供了自动清理协助。"
 
 #: ../../library/tempfile.rst:111
 msgid ""
 "Opening the temporary file again by its name while it is still open works as"
 " follows:"
-msgstr ""
+msgstr "临时文件仍然打开时使用其名称再次打开它的操作如下所示:"
 
 #: ../../library/tempfile.rst:114
 msgid "On POSIX the file can always be opened again."
-msgstr ""
+msgstr "在 POSIX 上该文件总是可以被再次打开。the file can always be opened again."
 
 #: ../../library/tempfile.rst:115
 msgid ""
 "On Windows, make sure that at least one of the following conditions are "
 "fulfilled:"
-msgstr ""
+msgstr "在 Windows 上，要确保至少满足下列条件之一:"
 
 #: ../../library/tempfile.rst:118
 msgid "*delete* is false"
-msgstr ""
+msgstr "*delete* 为假值"
 
 #: ../../library/tempfile.rst:119
 msgid ""
