@@ -236,6 +236,9 @@ msgid ""
 ":func:`os.unlink` call on context manager exit will fail with a "
 ":exc:`PermissionError`."
 msgstr ""
+"*delete* 为真值但 *delete_on_close* 为假值。 注意，在此情况下没有共享删除操作的额外的打开（例如通过内置的 "
+":func:`open` 创建）必须在退出上下文管理器之前被关闭，否则在退出上下文管理器时的 :func:`os.unlink` 调用将失败并引发 "
+":exc:`PermissionError`。"
 
 #: ../../library/tempfile.rst:127
 msgid ""
@@ -246,6 +249,9 @@ msgid ""
 "because delete access is requested by the open, which fails immediately if "
 "the requested access is not granted."
 msgstr ""
+"在 Windows 上，如果 *delete_on_close* 为假值，并且文件是在用户没有删除权限的目录中创建的，则退出上下文管理器时的 "
+":func:`os.unlink` 调用将失败并引发 :exc:`PermissionError`。 这在 *delete_on_close* "
+"为真值时不会发生因为删除权限是由打开操作所请求的，如果未获得所请求的权限此操作将立即失败。"
 
 #: ../../library/tempfile.rst:134
 msgid ""
@@ -255,7 +261,7 @@ msgstr "（只有）在 POSIX 上，一个用 SIGKILL 突然终止的进程无�
 
 #: ../../library/tempfile.rst:142
 msgid "Added *delete_on_close* parameter."
-msgstr ""
+msgstr "增加了 *delete_on_close* 形参。"
 
 #: ../../library/tempfile.rst:148
 msgid ""
