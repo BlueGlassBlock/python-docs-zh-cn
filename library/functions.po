@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:40+0000\n"
+"POT-Creation-Date: 2023-06-30 14:41+0000\n"
 "PO-Revision-Date: 2023-05-24 02:15+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -465,11 +465,9 @@ msgstr ""
 msgid ""
 "Convert an integer number to a binary string prefixed with \"0b\". The "
 "result is a valid Python expression. If *x* is not a Python :class:`int` "
-"object, it has to define an :meth:`__index__` method that returns an "
-"integer. Some examples:"
+"object, it has to define an :meth:`~object.__index__` method that returns an"
+" integer. Some examples:"
 msgstr ""
-"将整数转变为以“0b”前缀的二进制字符串。结果是一个合法的 Python 表达式。如果 *x* 不是 Python 的 :class:`int` "
-"对象，它必须定义 :meth:`__index__`  方法，以便返回整数值。下面是一些例子："
 
 #: ../../library/functions.rst:133
 msgid ""
@@ -872,13 +870,10 @@ msgstr ""
 #: ../../library/functions.rst:385
 msgid ""
 "For a general Python object ``x``, ``complex(x)`` delegates to "
-"``x.__complex__()``.  If ``__complex__()`` is not defined then it falls back"
-" to :meth:`__float__`.  If ``__float__()`` is not defined then it falls back"
-" to :meth:`__index__`."
+"``x.__complex__()``.  If :meth:`~object.__complex__` is not defined then it "
+"falls back to :meth:`~object.__float__`.  If :meth:`!__float__` is not "
+"defined then it falls back to :meth:`~object.__index__`."
 msgstr ""
-"对于一个普通 Python 对象 ``x``，``complex(x)`` 会委托给 ``x.__complex__()``。  如果 "
-"``__complex__()`` 未定义则将回退至 :meth:`__float__`。 如果 ``__float__()`` 未定义则将回退至 "
-":meth:`__index__`。"
 
 #: ../../library/functions.rst:392
 msgid ""
@@ -900,9 +895,9 @@ msgstr "您可以使用下划线将代码文字中的数字进行分组。"
 
 #: ../../library/functions.rst:402
 msgid ""
-"Falls back to :meth:`__index__` if :meth:`__complex__` and :meth:`__float__`"
-" are not defined."
-msgstr "如果 :meth:`__complex__` 和 :meth:`__float__` 未定义则回退至 :meth:`__index__`。"
+"Falls back to :meth:`~object.__index__` if :meth:`~object.__complex__` and "
+":meth:`~object.__float__` are not defined."
+msgstr ""
 
 #: ../../library/functions.rst:409
 msgid ""
@@ -1272,11 +1267,9 @@ msgstr ""
 #: ../../library/functions.rst:682
 msgid ""
 "For a general Python object ``x``, ``float(x)`` delegates to "
-"``x.__float__()``.  If ``__float__()`` is not defined then it falls back to "
-":meth:`__index__`."
+"``x.__float__()``.  If :meth:`~object.__float__` is not defined then it "
+"falls back to :meth:`~object.__index__`."
 msgstr ""
-"对于一个普通 Python 对象 ``x``，``float(x)`` 会委托给 ``x.__float__()``。 如果 "
-"``__float__()`` 未定义则将回退至 :meth:`__index__`。"
 
 #: ../../library/functions.rst:686
 msgid "If no argument is given, ``0.0`` is returned."
@@ -1291,8 +1284,10 @@ msgid "The float type is described in :ref:`typesnumeric`."
 msgstr ":ref:`typesnumeric` 描述了浮点类型。"
 
 #: ../../library/functions.rst:709
-msgid "Falls back to :meth:`__index__` if :meth:`__float__` is not defined."
-msgstr "如果 :meth:`__float__` 未定义则回退至 :meth:`__index__`。"
+msgid ""
+"Falls back to :meth:`~object.__index__` if :meth:`~object.__float__` is not "
+"defined."
+msgstr ""
 
 #: ../../library/functions.rst:719
 msgid ""
@@ -1446,10 +1441,8 @@ msgstr ":mod:`pydoc` 和 :mod:`inspect` 的变更使得可调用对象的签名�
 msgid ""
 "Convert an integer number to a lowercase hexadecimal string prefixed with "
 "\"0x\". If *x* is not a Python :class:`int` object, it has to define an "
-":meth:`__index__` method that returns an integer. Some examples:"
+":meth:`~object.__index__` method that returns an integer. Some examples:"
 msgstr ""
-"将整数转换为以“0x”为前缀的小写十六进制字符串。如果 *x* 不是 Python :class:`int` 对象，则必须定义返回整数的 "
-":meth:`__index__` 方法。一些例子："
 
 #: ../../library/functions.rst:831
 msgid ""
@@ -1535,15 +1528,12 @@ msgstr "在成功读取输入之后引发一个 :ref:`审计事件 <auditing>` `
 #: ../../library/functions.rst:894
 msgid ""
 "Return an integer object constructed from a number or string *x*, or return "
-"``0`` if no arguments are given.  If *x* defines :meth:`__int__`, ``int(x)``"
-" returns ``x.__int__()``.  If *x* defines :meth:`__index__`, it returns "
-"``x.__index__()``.  If *x* defines :meth:`__trunc__`, it returns "
-"``x.__trunc__()``. For floating point numbers, this truncates towards zero."
+"``0`` if no arguments are given.  If *x* defines :meth:`~object.__int__`, "
+"``int(x)`` returns ``x.__int__()``.  If *x* defines "
+":meth:`~object.__index__`, it returns ``x.__index__()``.  If *x* defines "
+":meth:`~object.__trunc__`, it returns ``x.__trunc__()``. For floating point "
+"numbers, this truncates towards zero."
 msgstr ""
-"返回一个基于数字或字符串 *x* 构造的整数对象，或者在未给出参数时返回 ``0``。 如果 *x* 定义了 "
-":meth:`__int__`，``int(x)`` 将返回 ``x.__int__()``。 如果 *x* 定义了 "
-":meth:`__index__`，它将返回 ``x.__index__()``。 如果 *x* 定义了 :meth:`__trunc__`，它将返回 "
-"``x.__trunc__()``。 对于浮点数，它将向零舍入。"
 
 #: ../../library/functions.rst:901
 msgid ""
@@ -1593,12 +1583,14 @@ msgstr ""
 "<object.__int__>` 而不是 :meth:`base.__index__ <object.__index__>`。"
 
 #: ../../library/functions.rst:933
-msgid "Falls back to :meth:`__index__` if :meth:`__int__` is not defined."
-msgstr "如果 :meth:`__int__` 未定义则回退至 :meth:`__index__`。"
+msgid ""
+"Falls back to :meth:`~object.__index__` if :meth:`~object.__int__` is not "
+"defined."
+msgstr ""
 
 #: ../../library/functions.rst:936
-msgid "The delegation to :meth:`__trunc__` is deprecated."
-msgstr "对 :meth:`__trunc__` 的委托已被弃用。"
+msgid "The delegation to :meth:`~object.__trunc__` is deprecated."
+msgstr ""
 
 #: ../../library/functions.rst:939
 msgid ""
@@ -1840,11 +1832,9 @@ msgstr ""
 msgid ""
 "Convert an integer number to an octal string prefixed with \"0o\".  The "
 "result is a valid Python expression. If *x* is not a Python :class:`int` "
-"object, it has to define an :meth:`__index__` method that returns an "
-"integer. For example:"
+"object, it has to define an :meth:`~object.__index__` method that returns an"
+" integer. For example:"
 msgstr ""
-"将一个整数转变为一个前缀为“0o”的八进制字符串。结果是一个合法的 Python 表达式。如果 *x* 不是 Python 的 :class:`int`"
-" 对象，那它需要定义 :meth:`__index__`  方法返回一个整数。一些例子："
 
 #: ../../library/functions.rst:1148
 msgid ""

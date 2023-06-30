@@ -4,21 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
-# Sean Chao <seanchao0804@gmail.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2022
-# Bryan不可思议, 2023
-# Jiuh-star <jiuh.star@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
-"PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-06-30 14:41+0000\n"
+"PO-Revision-Date: 2023-05-24 02:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -131,19 +126,22 @@ msgstr "由 *v* 的整数部分返回一个新的 :c:type:`PyLongObject` 对象�
 #: ../../c-api/long.rst:86
 msgid ""
 "Return a new :c:type:`PyLongObject` based on the string value in *str*, "
-"which is interpreted according to the radix in *base*, or ``NULL`` on "
-"failure.  If *pend* is non-``NULL``, *\\*pend* will point to the end of "
-"*str* on success or to the first character that could not be processed on "
-"error.  If *base* is ``0``, *str* is interpreted using the :ref:`integers` "
-"definition; in this case, leading zeros in a non-zero decimal number raises "
-"a :exc:`ValueError`.  If *base* is not ``0``, it must be between ``2`` and "
-"``36``, inclusive.  Leading and trailing whitespace and single underscores "
-"after a base specifier and between digits are ignored.  If there are no "
-"digits or *str* is not NULL-terminated following the digits and trailing "
-"whitespace, :exc:`ValueError` will be raised."
+"which is interpreted according to the radix in *base*.  If *pend* is "
+"non-``NULL``, *\\*pend* will point to the first character in *str* which "
+"follows the representation of the number.  If *base* is ``0``, *str* is "
+"interpreted using the :ref:`integers` definition; in this case, leading "
+"zeros in a non-zero decimal number raises a :exc:`ValueError`. If *base* is "
+"not ``0``, it must be between ``2`` and ``36``, inclusive.  Leading spaces "
+"and single underscores after a base specifier and between digits are "
+"ignored.  If there are no digits, :exc:`ValueError` will be raised."
 msgstr ""
+"根据 *str* 字符串值返回一个新的 :c:type:`PyLongObject` ，*base* 指定了整数的基。如果 *pend* 不为 "
+"``NULL`` ，则 */*pend* 将指向 *str* 中表示数字部分后面的第一个字符。如果 *base* 为 ``0`` ， *str* 将采用"
+" :ref:`integers` 的定义进行解释；这时非零十进制数的前导零会触发 :exc:`ValueError` 。如果 *base* 不为 "
+"``0`` ，则须位于 ``2`` 和 ``36`` 之间（含 2 和 36）。基之后及数字之间的前导空格、单下划线将被忽略。如果不存在数字，将触发 "
+":exc:`ValueError`。"
 
-#: ../../c-api/long.rst:97
+#: ../../c-api/long.rst:96
 msgid ""
 "Python methods :meth:`int.to_bytes` and :meth:`int.from_bytes` to convert a "
 ":c:type:`PyLongObject` to/from an array of bytes in base ``256``. You can "
@@ -153,50 +151,48 @@ msgstr ""
 ":c:type:`PyLongObject` 到/从字节数组之间以 ``256`` 为基数进行转换。 你可以使用 "
 ":c:func:`PyObject_CallMethod` 从 C 调用它们。"
 
-#: ../../c-api/long.rst:104
+#: ../../c-api/long.rst:103
 msgid ""
 "Convert a sequence of Unicode digits in the string *u* to a Python integer "
 "value."
 msgstr "将字符串 *u* 中的 Unicode 数字序列转换为 Python 整数值。"
 
-#: ../../c-api/long.rst:112
+#: ../../c-api/long.rst:111
 msgid ""
 "Create a Python integer from the pointer *p*. The pointer value can be "
 "retrieved from the resulting value using :c:func:`PyLong_AsVoidPtr`."
 msgstr "从指针 *p* 创建一个 Python 整数。可以使用 :c:func:`PyLong_AsVoidPtr` 返回的指针值。"
 
-#: ../../c-api/long.rst:123 ../../c-api/long.rst:141
+#: ../../c-api/long.rst:122 ../../c-api/long.rst:140
 msgid ""
 "Return a C :c:expr:`long` representation of *obj*.  If *obj* is not an "
-"instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method "
-"(if present) to convert it to a :c:type:`PyLongObject`."
+"instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__`"
+" method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
-"返回 *obj* 的 C :c:expr:`long` 表示形式。 如果 *obj* 不是 :c:type:`PyLongObject` "
-"的实例，则会先调用其 :meth:`__index__` 方法（如果存在）将其转换为 :c:type:`PyLongObject`。"
 
-#: ../../c-api/long.rst:127
+#: ../../c-api/long.rst:126
 msgid ""
 "Raise :exc:`OverflowError` if the value of *obj* is out of range for a "
 ":c:expr:`long`."
 msgstr "如果 *obj* 的值超出了 :c:expr:`long` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:130 ../../c-api/long.rst:150 ../../c-api/long.rst:171
-#: ../../c-api/long.rst:191 ../../c-api/long.rst:214
+#: ../../c-api/long.rst:129 ../../c-api/long.rst:149 ../../c-api/long.rst:170
+#: ../../c-api/long.rst:190 ../../c-api/long.rst:213
 msgid ""
 "Returns ``-1`` on error.  Use :c:func:`PyErr_Occurred` to disambiguate."
 msgstr "出错则返回 ``-1`` 。请用 :c:func:`PyErr_Occurred` 找出具体问题。"
 
-#: ../../c-api/long.rst:132 ../../c-api/long.rst:152 ../../c-api/long.rst:173
-#: ../../c-api/long.rst:195 ../../c-api/long.rst:279 ../../c-api/long.rst:299
-msgid "Use :meth:`__index__` if available."
-msgstr "如果可用将使用 :meth:`__index__`。"
+#: ../../c-api/long.rst:131 ../../c-api/long.rst:151 ../../c-api/long.rst:172
+#: ../../c-api/long.rst:194 ../../c-api/long.rst:278 ../../c-api/long.rst:298
+msgid "Use :meth:`~object.__index__` if available."
+msgstr ""
 
-#: ../../c-api/long.rst:135 ../../c-api/long.rst:155 ../../c-api/long.rst:176
-#: ../../c-api/long.rst:198 ../../c-api/long.rst:282 ../../c-api/long.rst:302
-msgid "This function will no longer use :meth:`__int__`."
-msgstr "本函数不再使用  :meth:`__int__` 。"
+#: ../../c-api/long.rst:134 ../../c-api/long.rst:154 ../../c-api/long.rst:175
+#: ../../c-api/long.rst:197 ../../c-api/long.rst:281 ../../c-api/long.rst:301
+msgid "This function will no longer use :meth:`~object.__int__`."
+msgstr ""
 
-#: ../../c-api/long.rst:145
+#: ../../c-api/long.rst:144
 msgid ""
 "If the value of *obj* is greater than :const:`LONG_MAX` or less than "
 ":const:`LONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and "
@@ -207,22 +203,20 @@ msgstr ""
 " ``1`` 或 ``-1``，并返回 ``1``；否则，将 *\\*overflow*  置为 `0`。如果发生其他异常，则会按常规把 "
 "*\\*overflow* 置为 ``0``，并返回 ``-1``。"
 
-#: ../../c-api/long.rst:164 ../../c-api/long.rst:182
+#: ../../c-api/long.rst:163 ../../c-api/long.rst:181
 msgid ""
 "Return a C :c:expr:`long long` representation of *obj*.  If *obj* is not an "
-"instance of :c:type:`PyLongObject`, first call its :meth:`__index__` method "
-"(if present) to convert it to a :c:type:`PyLongObject`."
+"instance of :c:type:`PyLongObject`, first call its :meth:`~object.__index__`"
+" method (if present) to convert it to a :c:type:`PyLongObject`."
 msgstr ""
-"返回 *obj* 的 C :c:expr:`long long` 表示形式。 如果 *obj* 不是 :c:type:`PyLongObject` "
-"的实例，则会先调用其 :meth:`__index__` 方法（如果存在）将其转换为 :c:type:`PyLongObject`。"
 
-#: ../../c-api/long.rst:168
+#: ../../c-api/long.rst:167
 msgid ""
 "Raise :exc:`OverflowError` if the value of *obj* is out of range for a "
 ":c:expr:`long long`."
 msgstr "如果 *obj* 值超出 :c:expr:`long long` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:186
+#: ../../c-api/long.rst:185
 msgid ""
 "If the value of *obj* is greater than :const:`LLONG_MAX` or less than "
 ":const:`LLONG_MIN`, set *\\*overflow* to ``1`` or ``-1``, respectively, and "
@@ -233,7 +227,7 @@ msgstr ""
 "分别置为 ``1`` 或 ``-1``，并返回 -1，否则将 *\\*overflow* 置为 0。如果触发其他异常则 *\\*overflow* 置为"
 " 0 并返回 -1。"
 
-#: ../../c-api/long.rst:208
+#: ../../c-api/long.rst:207
 msgid ""
 "Return a C :c:type:`Py_ssize_t` representation of *pylong*.  *pylong* must "
 "be an instance of :c:type:`PyLongObject`."
@@ -241,14 +235,14 @@ msgstr ""
 "返回 *pylong* 的 C 语言 :c:type:`Py_ssize_t` 形式。*pylong* 必须是 "
 ":c:type:`PyLongObject` 的实例。"
 
-#: ../../c-api/long.rst:211
+#: ../../c-api/long.rst:210
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:type:`Py_ssize_t`."
 msgstr ""
 "如果 *pylong* 的值超出了 :c:type:`Py_ssize_t` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:223
+#: ../../c-api/long.rst:222
 msgid ""
 "Return a C :c:expr:`unsigned long` representation of *pylong*.  *pylong* "
 "must be an instance of :c:type:`PyLongObject`."
@@ -256,20 +250,20 @@ msgstr ""
 "返回 *pylong* 的 C :c:expr:`unsigned long` 表示形式。 *pylong* 必须是 "
 ":c:type:`PyLongObject` 的实例。"
 
-#: ../../c-api/long.rst:226
+#: ../../c-api/long.rst:225
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:expr:`unsigned long`."
 msgstr ""
 "如果 *pylong* 的值超出了 :c:expr:`unsigned long` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:229
+#: ../../c-api/long.rst:228
 msgid ""
 "Returns ``(unsigned long)-1`` on error. Use :c:func:`PyErr_Occurred` to "
 "disambiguate."
 msgstr "出错时返回 ``(unsigned long)-1`` ，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:239
+#: ../../c-api/long.rst:238
 msgid ""
 "Return a C :c:type:`size_t` representation of *pylong*.  *pylong* must be an"
 " instance of :c:type:`PyLongObject`."
@@ -277,19 +271,19 @@ msgstr ""
 "返回 *pylong* 的 C 语言 :c:type:`size_t` 形式。*pylong* 必须是 :c:type:`PyLongObject` "
 "的实例。"
 
-#: ../../c-api/long.rst:242
+#: ../../c-api/long.rst:241
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:type:`size_t`."
 msgstr "如果 *pylong* 的值超出了 :c:type:`size_t` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:245
+#: ../../c-api/long.rst:244
 msgid ""
 "Returns ``(size_t)-1`` on error. Use :c:func:`PyErr_Occurred` to "
 "disambiguate."
 msgstr "出错时返回  ``(size_t)-1`` ，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:254
+#: ../../c-api/long.rst:253
 msgid ""
 "Return a C :c:expr:`unsigned long long` representation of *pylong*.  "
 "*pylong* must be an instance of :c:type:`PyLongObject`."
@@ -297,7 +291,7 @@ msgstr ""
 "返回 *pylong* 的 C :c:expr:`unsigned long long` 表示形式。 *pylong* 必须是 "
 ":c:type:`PyLongObject` 的实例。"
 
-#: ../../c-api/long.rst:257
+#: ../../c-api/long.rst:256
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for an "
 ":c:expr:`unsigned long long`."
@@ -305,52 +299,47 @@ msgstr ""
 "如果 *pylong* 的值超出 :c:expr:`unsigned long long` 的取值范围则会引发 "
 ":exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:260
+#: ../../c-api/long.rst:259
 msgid ""
 "Returns ``(unsigned long long)-1`` on error. Use :c:func:`PyErr_Occurred` to"
 " disambiguate."
 msgstr "出错时返回 ``(unsigned long long)-1``，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:263
+#: ../../c-api/long.rst:262
 msgid ""
 "A negative *pylong* now raises :exc:`OverflowError`, not :exc:`TypeError`."
 msgstr "现在 *pylong* 为负值会触发  :exc:`OverflowError`，而不是 :exc:`TypeError`。"
 
-#: ../../c-api/long.rst:269
+#: ../../c-api/long.rst:268
 msgid ""
 "Return a C :c:expr:`unsigned long` representation of *obj*.  If *obj* is not"
-" an instance of :c:type:`PyLongObject`, first call its :meth:`__index__` "
-"method (if present) to convert it to a :c:type:`PyLongObject`."
-msgstr ""
-"返回 *obj* 的 C :c:expr:`unsigned long` 表示形式。 如果 *obj* 不是 "
-":c:type:`PyLongObject` 的实例，则会先调用其 :meth:`__index__` 方法（如果存在）将其转换为 "
+" an instance of :c:type:`PyLongObject`, first call its "
+":meth:`~object.__index__` method (if present) to convert it to a "
 ":c:type:`PyLongObject`."
+msgstr ""
 
-#: ../../c-api/long.rst:273
+#: ../../c-api/long.rst:272
 msgid ""
 "If the value of *obj* is out of range for an :c:expr:`unsigned long`, return"
 " the reduction of that value modulo ``ULONG_MAX + 1``."
 msgstr ""
 "如果 *obj* 的值超出了 :c:expr:`unsigned long` 的取值范围，则返回该值对 ``ULONG_MAX + 1`` 求模的余数。"
 
-#: ../../c-api/long.rst:276
+#: ../../c-api/long.rst:275
 msgid ""
 "Returns ``(unsigned long)-1`` on error.  Use :c:func:`PyErr_Occurred` to "
 "disambiguate."
 msgstr "出错时返回 ``(unsigned long)-1``，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:288
+#: ../../c-api/long.rst:287
 msgid ""
 "Return a C :c:expr:`unsigned long long` representation of *obj*.  If *obj* "
 "is not an instance of :c:type:`PyLongObject`, first call its "
-":meth:`__index__` method (if present) to convert it to a "
+":meth:`~object.__index__` method (if present) to convert it to a "
 ":c:type:`PyLongObject`."
 msgstr ""
-"返回 *obj* 的 C :c:expr:`unsigned long long` 表示形式。 如果 *obj* 不是 "
-":c:type:`PyLongObject` 的实例，则会先调用其 :meth:`__index__` 方法（如果存在）将其转换为 "
-":c:type:`PyLongObject`。"
 
-#: ../../c-api/long.rst:293
+#: ../../c-api/long.rst:292
 msgid ""
 "If the value of *obj* is out of range for an :c:expr:`unsigned long long`, "
 "return the reduction of that value modulo ``ULLONG_MAX + 1``."
@@ -358,13 +347,13 @@ msgstr ""
 "如果 *obj* 的值超出了 :c:expr:`unsigned long long` 的取值范围，则返回该值对 ``ULLONG_MAX + 1`` "
 "求模的余数。"
 
-#: ../../c-api/long.rst:296
+#: ../../c-api/long.rst:295
 msgid ""
 "Returns ``(unsigned long long)-1`` on error.  Use :c:func:`PyErr_Occurred` "
 "to disambiguate."
 msgstr "出错时返回 ``(unsigned long long)-1``，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:308
+#: ../../c-api/long.rst:307
 msgid ""
 "Return a C :c:expr:`double` representation of *pylong*.  *pylong* must be an"
 " instance of :c:type:`PyLongObject`."
@@ -372,18 +361,18 @@ msgstr ""
 "返回 *pylong* 的 C :c:expr:`double` 表示形式。 *pylong* 必须是 :c:type:`PyLongObject` "
 "的实例。"
 
-#: ../../c-api/long.rst:311
+#: ../../c-api/long.rst:310
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:expr:`double`."
 msgstr "如果 *pylong* 的值超出了 :c:expr:`double` 的取值范围则会引发 :exc:`OverflowError`。"
 
-#: ../../c-api/long.rst:314
+#: ../../c-api/long.rst:313
 msgid ""
 "Returns ``-1.0`` on error.  Use :c:func:`PyErr_Occurred` to disambiguate."
 msgstr "出错时返回  ``-1.0`` ，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:319
+#: ../../c-api/long.rst:318
 msgid ""
 "Convert a Python integer *pylong* to a C :c:expr:`void` pointer. If *pylong*"
 " cannot be converted, an :exc:`OverflowError` will be raised.  This is only "
@@ -394,43 +383,10 @@ msgstr ""
 ":exc:`OverflowError`。 这只是为了保证将通过 :c:func:`PyLong_FromVoidPtr` 创建的值产生一个可用的 "
 ":c:expr:`void` 指针。"
 
-#: ../../c-api/long.rst:324
+#: ../../c-api/long.rst:323
 msgid ""
 "Returns ``NULL`` on error.  Use :c:func:`PyErr_Occurred` to disambiguate."
 msgstr "出错时返回  ``NULL``，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
-
-#: ../../c-api/long.rst:329
-msgid "Return 1 if *op* is compact, 0 otherwise."
-msgstr ""
-
-#: ../../c-api/long.rst:331
-msgid ""
-"This function makes it possible for performance-critical code to implement a"
-" “fast path” for small integers. For compact values use "
-":c:func:`PyUnstable_Long_CompactValue`; for others fall back to a "
-":c:func:`PyLong_As* <PyLong_AsSize_t>` function or :c:func:`calling "
-"<PyObject_CallMethod>` :meth:`int.to_bytes`."
-msgstr ""
-
-#: ../../c-api/long.rst:337
-msgid "The speedup is expected to be negligible for most users."
-msgstr ""
-
-#: ../../c-api/long.rst:339
-msgid ""
-"Exactly what values are considered compact is an implementation detail and "
-"is subject to change."
-msgstr ""
-
-#: ../../c-api/long.rst:344
-msgid ""
-"If *op* is compact, as determined by :c:func:`PyUnstable_Long_IsCompact`, "
-"return its value."
-msgstr "如果 *op* 为紧凑形式，如 :c:func:`PyUnstable_Long_IsCompact` 所确定的，则返回它的值。"
-
-#: ../../c-api/long.rst:347
-msgid "Otherwise, the return value is undefined."
-msgstr "在其他情况下，返回值是未定义的。"
 
 #: ../../c-api/long.rst:8 ../../c-api/long.rst:8
 msgid "object"
@@ -444,23 +400,23 @@ msgstr "长整型"
 msgid "integer"
 msgstr "integer"
 
-#: ../../c-api/long.rst:119
+#: ../../c-api/long.rst:118
 msgid "LONG_MAX"
 msgstr "LONG_MAX"
 
-#: ../../c-api/long.rst:119 ../../c-api/long.rst:161 ../../c-api/long.rst:204
-#: ../../c-api/long.rst:219 ../../c-api/long.rst:235 ../../c-api/long.rst:251
+#: ../../c-api/long.rst:118 ../../c-api/long.rst:160 ../../c-api/long.rst:203
+#: ../../c-api/long.rst:218 ../../c-api/long.rst:234 ../../c-api/long.rst:250
 msgid "OverflowError (built-in exception)"
 msgstr "OverflowError (内置异常)"
 
-#: ../../c-api/long.rst:204
+#: ../../c-api/long.rst:203
 msgid "PY_SSIZE_T_MAX"
 msgstr "PY_SSIZE_T_MAX"
 
-#: ../../c-api/long.rst:219
+#: ../../c-api/long.rst:218
 msgid "ULONG_MAX"
 msgstr "ULONG_MAX"
 
-#: ../../c-api/long.rst:235
+#: ../../c-api/long.rst:234
 msgid "SIZE_MAX"
 msgstr "SIZE_MAX"

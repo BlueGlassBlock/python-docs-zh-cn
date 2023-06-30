@@ -4,23 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# focusheart <focusheart@gmail.com>, 2021
-# Dingyuan Wang <abcdoyle888@gmail.com>, 2021
-# Arisaka97 <solitaire2312@gmail.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# mlpp iina <duchuan2048@gmail.com>, 2021
-# Naisen Xu <723648649@qq.com>, 2021
-# WH-2099 <wh2099@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-06-30 14:41+0000\n"
+"PO-Revision-Date: 2023-05-24 02:13+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,13 +30,11 @@ msgid ""
 "This module provides access to mathematical functions for complex numbers.  "
 "The functions in this module accept integers, floating-point numbers or "
 "complex numbers as arguments. They will also accept any Python object that "
-"has either a :meth:`__complex__` or a :meth:`__float__` method: these "
-"methods are used to convert the object to a complex or floating-point "
-"number, respectively, and the function is then applied to the result of the "
-"conversion."
+"has either a :meth:`~object.__complex__` or a :meth:`~object.__float__` "
+"method: these methods are used to convert the object to a complex or "
+"floating-point number, respectively, and the function is then applied to the"
+" result of the conversion."
 msgstr ""
-"这一模块提供了一些关于复数的数学函数。 该模块的函数的参数为整数、浮点数或复数。 这些函数的参数也可为一个拥有 :meth:`__complex__` "
-"或 :meth:`__float__` 方法的 Python 对象，这些方法分别用于将对象转换为复数和浮点数，这些函数作用于转换后的结果。"
 
 #: ../../library/cmath.rst:18
 msgid ""
