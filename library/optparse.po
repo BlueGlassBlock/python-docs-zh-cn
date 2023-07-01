@@ -427,10 +427,12 @@ msgid ""
 ":meth:`~OptionParser.parse_args`, but that's rarely necessary: by default it"
 " uses ``sys.argv[1:]``.)"
 msgstr ""
+"（如果你愿意，可以将自定义的参数列表传给 :meth:`~OptionParser.parse_args`，但很少有必要这样做：默认它将使用 "
+"``sys.argv[1:]``。）"
 
 #: ../../library/optparse.rst:291
 msgid ":meth:`~OptionParser.parse_args` returns two values:"
-msgstr ""
+msgstr ":meth:`~OptionParser.parse_args` 返回两个值:"
 
 #: ../../library/optparse.rst:293
 msgid ""
@@ -1854,11 +1856,11 @@ msgstr ""
 
 #: ../../library/optparse.rst:1346
 msgid "Parse the command-line options found in *args*."
-msgstr ""
+msgstr "解析 *args* 中的命令行选项。"
 
 #: ../../library/optparse.rst:1348
 msgid "The input parameters are"
-msgstr ""
+msgstr "输入形参为"
 
 #: ../../library/optparse.rst:1351 ../../library/optparse.rst:1364
 #: ../../library/optparse.rst:1684

@@ -809,22 +809,26 @@ msgid ""
 "exponent is incremented by 1. Otherwise (the coefficient is zero) the "
 "exponent is set to 0. In all cases the sign is unchanged."
 msgstr ""
+"该操作具有与单目取正值运算相同的语义，区别在于如果最终结果为有限值则将缩减到最简形式，即移除所有末尾的零并保留正负号。 "
+"也就是说，当系数为非零值且为十的倍数时则将该系数除以十并将指数加 1。 否则（当系数为零）则将指数设为 0。 在任何情况下正负号都将保持不变。"
 
 #: ../../library/decimal.rst:756
 msgid ""
 "For example, ``Decimal('32.100')`` and ``Decimal('0.321000e+2')`` both "
 "normalize to the equivalent value ``Decimal('32.1')``."
 msgstr ""
+"例如，``Decimal('32.100')`` 和 ``Decimal('0.321000e+2')`` 均将标准化为等价的值 "
+"``Decimal('32.1')``。"
 
 #: ../../library/decimal.rst:759
 msgid "Note that rounding is applied *before* reducing to simplest form."
-msgstr ""
+msgstr "请注意舍入的应用将在缩减到最简形式 *之前* 执行。"
 
 #: ../../library/decimal.rst:761
 msgid ""
 "In the latest versions of the specification, this operation is also known as"
 " ``reduce``."
-msgstr ""
+msgstr "在此规范的最新版本中，该操作也被称为 ``reduce``。"
 
 #: ../../library/decimal.rst:766
 msgid ""
