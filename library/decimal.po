@@ -2191,6 +2191,8 @@ msgid ""
 " rounding (or other context operations) is applied to the *result* of the "
 "computation::"
 msgstr ""
+"A. 是在计算 *之后* 发生的。 decimal 设计规范认为数字应当被视为是精确的并且是不依赖于当前上下文而创建的。 "
+"它们甚至可以具有比当前上下文更高的精确度。 计算过程将使用精确的输入然后再对计算的 *结果* 应用舍入（或其他的上下文操作）::"
 
 #: ../../library/decimal.rst:2112
 msgid ""
