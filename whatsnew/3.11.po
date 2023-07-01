@@ -1594,6 +1594,11 @@ msgid ""
 "Dong-hee Na, Eryk Sun and Victor Stinner in :issue:`21302` and "
 ":issue:`45429`.)"
 msgstr ""
+"在 Windows 8.1 或更新版本上，现在 :func:`time.sleep` 会使用一个基于 `高精度计时器 "
+"<https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/high-"
+"resolution-timers>`_ 的可等待计时器，其精度为 100 纳秒 (10\\ :sup:`-7` 秒)。 在之前版本上，其精度为 1 "
+"毫秒 (10\\ :sup:`-3` 秒)。 （由 Benjamin Szőke, Dong-hee Na, Eryk Sun 和 Victor "
+"Stinner 在 :issue:`21302` 和 :issue:`45429` 中贡献。）.)"
 
 #: ../../whatsnew/3.11.rst:1094
 msgid "tkinter"

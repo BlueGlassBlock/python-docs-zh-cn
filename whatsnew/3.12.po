@@ -1259,6 +1259,9 @@ msgid ""
 ":ref:`whatsnew312-porting-to-python312` for more information on the changes "
 "to the :mod:`tokenize` module."
 msgstr ""
+":mod:`tokenize` 模块包括了 :pep:`701` 所引入的更改。 （由 Marta Gómez Macías 和 Pablo "
+"Galindo 在 :gh:`102856` 中贡献。） 请参阅 :ref:`whatsnew312-porting-to-python312` "
+"了解有关 :mod:`tokenize` 模块的更改详情。"
 
 #: ../../whatsnew/3.12.rst:801
 msgid "types"

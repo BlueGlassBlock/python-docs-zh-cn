@@ -641,6 +641,8 @@ msgid ""
 "Must be raised by :meth:`~object.__anext__` method of an :term:`asynchronous"
 " iterator` object to stop the iteration."
 msgstr ""
+"必须由一个 :term:`asynchronous iterator` 对象的 :meth:`~object.__anext__` "
+"方法来引发以停止迭代操作。"
 
 #: ../../library/exceptions.rst:460
 msgid ""
