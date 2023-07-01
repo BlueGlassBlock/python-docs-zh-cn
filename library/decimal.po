@@ -798,7 +798,7 @@ msgstr ""
 msgid ""
 "Used for producing canonical values of an equivalence class within either "
 "the current context or the specified context."
-msgstr ""
+msgstr "用于在当前上下文或指定上下文中产生等价的类的规范值。"
 
 #: ../../library/decimal.rst:749
 msgid ""
@@ -2180,7 +2180,7 @@ msgstr "A. :meth:`~Decimal.normalize` 方法可将所有相等的值映射为单
 
 #: ../../library/decimal.rst:2092
 msgid "Q. When does rounding occur in a computation?"
-msgstr ""
+msgstr "Q. 计算中的舍入是在什么时候发生的？"
 
 #: ../../library/decimal.rst:2094
 msgid ""
