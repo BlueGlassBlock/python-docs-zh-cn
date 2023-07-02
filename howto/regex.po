@@ -65,8 +65,8 @@ msgid ""
 msgstr ""
 "正则表达式（Regular expressions，也叫 REs、 regexs 或 regex patterns），本质上是嵌入 Python "
 "内部并通过 :mod:`re` "
-"模块提供的一种微小的、高度专业化的编程语言。使用这种小语言，你可以为想要匹配的可能字符串编写规则；这些字符串可能是英文句子、邮箱地址、TeX "
-"命令或任何你喜欢的内容。然后，你可以提出诸如“此字符串是否与表达式匹配？”、“字符串中是否存在表达式的匹配项？”之类的问题。你还可以用正则来修改字符串，或以各种方式将其拆分。"
+"模块提供的一种微小的、高度专业化的编程语言。使用这种微型语言，你可以为想要匹配的可能字符串编写规则；这些字符串可能是英文句子、邮箱地址、TeX "
+"命令或其他任何你想要的内容。然后，你可以提出诸如“此字符串是否符合某规则？”、“字符串当中是否存在与某规则相匹配的子串？”之类的问题。此外，正则还可以用来修改字符串，或者以各种方式将其拆分。"
 
 #: ../../howto/regex.rst:35
 msgid ""
@@ -91,8 +91,8 @@ msgid ""
 "be slower than an elaborate regular expression, it will also probably be "
 "more understandable."
 msgstr ""
-"正则表达式语言相对较小且受限，因此并非所有可能的字符串处理任务都可以使用正则表达式完成。有些任务尽管*可以*用正则表达式来完成，但表达式会变得非常复杂。这些情况下，最好通过编写"
-" Python 代码来进行处理。也许 Python 代码会比精心设计的正则表达式慢，但它可能更容易理解。"
+"正则表达式语言相对较小且受限，因此并非所有可能的字符串处理任务都可以使用正则表达式完成。有些任务尽管可以用正则表达式来完成，但表达式会变得非常复杂。这些情况下，最好通过编写"
+" Python 代码来进行处理。也许 Python 代码的效率比不上精心设计的正则表达式，但它的可读性更高。"
 
 #: ../../howto/regex.rst:51
 msgid "Simple Patterns"
@@ -110,7 +110,7 @@ msgid ""
 "For a detailed explanation of the computer science underlying regular "
 "expressions (deterministic and non-deterministic finite automata), you can "
 "refer to almost any textbook on writing compilers."
-msgstr "关于正则表达式背后的计算机科学的详细解释（确定性和非确定性有限自动机），你可以参考几乎所有关于编写编译器的教科书。"
+msgstr "想要深入了解正则表达式所基于的计算机科学理论（即确定性和非确定性有限自动机），请参考关于编译原理的教材。"
 
 #: ../../howto/regex.rst:63
 msgid "Matching Characters"
@@ -135,14 +135,14 @@ msgid ""
 "this document is devoted to discussing various metacharacters and what they "
 "do."
 msgstr ""
-"但该规则有例外。有些字符是特殊的 "
-":dfn:`元字符（metacharacters）`，并不匹配自身。事实上，它们表示匹配一些非常规的内容，或者通过重复它们或改变它们的含义来影响正则的其他部分。本文的大部分内容都致力于讨论各种元字符及其作用。"
+"有些字符是例外，它们是特殊的 "
+":dfn:`元字符（metacharacters）`，并不匹配自身。事实上，它们表示匹配一些不是那么简单的内容，或者是对某部分表达式进行重复或修改其含义。本文档的很多内容都是介绍各种元字符及其作用。"
 
 #: ../../howto/regex.rst:76
 msgid ""
 "Here's a complete list of the metacharacters; their meanings will be "
 "discussed in the rest of this HOWTO."
-msgstr "这是元字符的完整列表。它们的含义将在本 HOWTO 的其余部分进行讨论。"
+msgstr "这是元字符的完整列表。它们的含义将在本教程的其余部分进行讨论。"
 
 #: ../../howto/regex.rst:83
 msgid ""
@@ -167,8 +167,8 @@ msgid ""
 "``'$'``; ``'$'`` is usually a metacharacter, but inside a character class "
 "it's stripped of its special nature."
 msgstr ""
-"元字符 (除了 ``\\``) 在字符类中是不起作用的。 例如，``[akm$]`` 将会匹配以下任一字符 ``'a'``, ``'k'``, "
-"``'m'`` 或 ``'$'``；``'$'`` 通常是一个元字符，但在一个字符类中它的特殊性被消除了。"
+"元字符 (除了 ``\\``) 在字符类里面是不具有特殊功能的。 例如，``[akm$]`` 将会匹配以下任一字符 ``'a'``, ``'k'``, "
+"``'m'`` 或 ``'$'``；``'$'`` 通常是一个元字符，但放到字符类里面它就没有特殊含义了。"
 
 #: ../../howto/regex.rst:97
 msgid ""
