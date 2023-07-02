@@ -705,7 +705,8 @@ msgid ""
 "the most significant ones will be covered here; consult the :mod:`re` docs "
 "for a complete listing."
 msgstr ""
-"一旦你有一个表示编译正则表达式的对象，你用它做什么？ 模式对象有几种方法和属性。 这里只介绍最重要的内容；请参阅 :mod:`re` 文档获取完整列表。"
+"当你拥有了一个代表编译过的正则表达式的对象，你要如何使用它呢？ 正则对象有一些方法和属性。 这里只介绍最主要的一些；完整的列表请参阅 :mod:`re`"
+" 文档。"
 
 #: ../../howto/regex.rst:360 ../../howto/regex.rst:418
 #: ../../howto/regex.rst:1064
@@ -715,7 +716,7 @@ msgstr "方法 / 属性"
 #: ../../howto/regex.rst:360 ../../howto/regex.rst:418
 #: ../../howto/regex.rst:1064
 msgid "Purpose"
-msgstr "目的"
+msgstr "用途"
 
 #: ../../howto/regex.rst:362
 msgid "``match()``"
@@ -723,7 +724,7 @@ msgstr "``match()``"
 
 #: ../../howto/regex.rst:362
 msgid "Determine if the RE matches at the beginning of the string."
-msgstr "确定正则是否从字符串的开头匹配。"
+msgstr "判断正则是否在字符串的开头找到匹配"
 
 #: ../../howto/regex.rst:365
 msgid "``search()``"
@@ -731,7 +732,7 @@ msgstr "``search()``"
 
 #: ../../howto/regex.rst:365
 msgid "Scan through a string, looking for any location where this RE matches."
-msgstr "扫描字符串，查找此正则匹配的任何位置。"
+msgstr "扫描字符串，找到第一个符合正则的位置（并返回相应的匹配对象）"
 
 #: ../../howto/regex.rst:368
 msgid "``findall()``"
