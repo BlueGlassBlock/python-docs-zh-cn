@@ -1610,6 +1610,8 @@ msgid ""
 "Tcl library as a named tuple similar to :data:`sys.version_info`. "
 "(Contributed by Serhiy Storchaka in :gh:`91827`.)"
 msgstr ""
+"增加了将 Tcl 库的准确版本号作为类似 :data:`sys.version_info` 的命名元组返回的方法 "
+"``info_patchlevel()``。 （由 Serhiy Storchaka 在 :gh:`91827` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1104
 msgid "traceback"
@@ -1621,6 +1623,8 @@ msgid ""
 "override which frames appear in the traceback, and how they are formatted. "
 "(Contributed by Ammar Askar in :issue:`44569`.)"
 msgstr ""
+"增加了 :func:`traceback.StackSummary.format_frame_summary` "
+"以允许用户重载要在回溯中出现哪些帧，以及要如何格式化它们。 （由 Ammar Askar 在 :issue:`44569` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1111
 msgid ""
@@ -1628,6 +1632,9 @@ msgid ""
 ":exc:`~traceback.TracebackException` instance to a file. (Contributed by "
 "Irit Katriel in :issue:`33809`.)"
 msgstr ""
+"增加了 :func:`traceback.TracebackException.print`，该函数可将 "
+":exc:`~traceback.TracebackException` 实例格式化打印到一个文件。 （由 Irit Katriel 在 "
+":issue:`33809` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1119
 msgid "typing"
@@ -1635,7 +1642,7 @@ msgstr "typing"
 
 #: ../../whatsnew/3.11.rst:1121
 msgid "For major changes, see :ref:`new-feat-related-type-hints-311`."
-msgstr ""
+msgstr "主要的变化，请参阅 :ref:`new-feat-related-type-hints-311`。"
 
 #: ../../whatsnew/3.11.rst:1123
 msgid ""
@@ -1644,6 +1651,9 @@ msgid ""
 "that a line of code is not reachable. At runtime, it raises an "
 ":exc:`AssertionError`. (Contributed by Jelle Zijlstra in :gh:`90633`.)"
 msgstr ""
+"增加了 :func:`typing.assert_never` 和 :class:`typing.Never`。 "
+":func:`typing.assert_never` 适用于要求类型检查器确认某一行代码是不可达的。 在运行时，它会引发 "
+":exc:`AssertionError`。 （由 Jelle Zijlstra 在 :gh:`90633` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1129
 msgid ""
@@ -1651,6 +1661,8 @@ msgid ""
 "what type it has inferred for a given expression. At runtime it prints the "
 "type of the received value. (Contributed by Jelle Zijlstra in :gh:`90572`.)"
 msgstr ""
+"增加了 :func:`typing.reveal_type`。 它适用于让类型检查器推理出给定表达式的类型。 在运行时它会打印所接收的值的类型。 （由 "
+"Jelle Zijlstra 在 :gh:`90572` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1134
 msgid ""
@@ -1659,18 +1671,24 @@ msgid ""
 "given type. At runtime it simply returns the received value. (Contributed by"
 " Jelle Zijlstra in :gh:`90638`.)"
 msgstr ""
+"增加了 :func:`typing.assert_type`。 它适用于让类型检查器确认推理出的给定表达式的类型与给定的类型相匹配。 "
+"在运行时它将简单地返回所接收的值。 （由 Jelle Zijlstra 在 :gh:`90638` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1139
 msgid ""
 ":data:`typing.TypedDict` types can now be generic. (Contributed by Samodya "
 "Abeysiriwardane in :gh:`89026`.)"
 msgstr ""
+"现在 :data:`typing.TypedDict` 类型可以是泛型。 （由 Samodya Abeysiriwardane 在 "
+":gh:`89026` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1142
 msgid ""
 ":class:`~typing.NamedTuple` types can now be generic. (Contributed by Serhiy"
 " Storchaka in :issue:`43923`.)"
 msgstr ""
+"现在 :class:`~typing.NamedTuple` 类型可以是泛型。 （由 Serhiy Storchaka 在 :issue:`43923`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1145
 msgid ""
@@ -1678,12 +1696,16 @@ msgid ""
 "checker errors related to highly dynamic class, such as mocks. (Contributed "
 "by Shantanu Jain in :gh:`91154`.)"
 msgstr ""
+"允许 :class:`typing.Any` 子类化。 这适用于避免关联到高度动态类的类型检查器错误，例如 mock 类。 （由 Shantanu "
+"Jain 在 :gh:`91154` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1149
 msgid ""
 "The :func:`typing.final` decorator now sets the ``__final__`` attributed on "
 "the decorated object. (Contributed by Jelle Zijlstra in :gh:`90500`.)"
 msgstr ""
+"现在 :func:`typing.final` 装饰器可在被装饰的对象上设置 ``__final__`` 属性。 （由 Jelle Zijlstra 在"
+" :gh:`90500` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1153
 msgid ""
@@ -1692,12 +1714,16 @@ msgid ""
 " all registered overloads of a function. (Contributed by Jelle Zijlstra in "
 ":gh:`89263`.)"
 msgstr ""
+":func:`typing.get_overloads` 函数可被用来内省一个函数的重载。 :func:`typing.clear_overloads`"
+" 可被用来清理一个函数所有的重载。 （由 Jelle Zijlstra 在 :gh:`89263` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1158
 msgid ""
 "The :meth:`~object.__init__` method of :class:`~typing.Protocol` subclasses "
 "is now preserved. (Contributed by Adrian Garcia Badarasco in :gh:`88970`.)"
 msgstr ""
+"现在 :class:`~typing.Protocol` 子类的 :meth:`~object.__init__` 方法将被保留。 （由 Adrian "
+"Garcia Badarasco 在 :gh:`88970` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1161
 msgid ""
@@ -1705,6 +1731,8 @@ msgid ""
 "affects introspection, e.g. ``get_args(Tuple[()])`` now evaluates to ``()`` "
 "instead of ``((),)``. (Contributed by Serhiy Storchaka in :gh:`91137`.)"
 msgstr ""
+"空元组类型 (``Tuple[()]``) 的表示形式已被简化。 这将影响内省操作，例如 ``get_args(Tuple[()])`` 现在将被求值为"
+" ``()`` 而不是 ``((),)``。 （由 Serhiy Storchaka 在 :gh:`91137` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1166
 msgid ""
@@ -1712,6 +1740,8 @@ msgid ""
 "check in the private ``typing._type_check`` function. (Contributed by "
 "Gregory Beauregard in :gh:`90802`.)"
 msgstr ""
+"通过移除私有 ``typing._type_check`` 函数的回调检查放松了类型标注的运行时要求。 （由 Gregory Beauregard 在 "
+":gh:`90802` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1170
 msgid ""
@@ -1719,6 +1749,8 @@ msgid ""
 "references in :ref:`PEP 585 generic aliases <types-genericalias>`. "
 "(Contributed by Niklas Rosenstein in :gh:`85542`.)"
 msgstr ""
+"现在 :func:`typing.get_type_hints` 支持将字符串求值为 :ref:`PEP 585 泛型别名 <types-"
+"genericalias>` 中的前向引用。 （由 Niklas Rosenstein 在 :gh:`85542` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1174
 msgid ""
@@ -1726,6 +1758,8 @@ msgid ""
 "parameters with ``None`` as a default. (Contributed by Nikita Sobolev in "
 ":gh:`90353`.)"
 msgstr ""
+":func:`typing.get_type_hints` 将不再添加 :data:`~typing.Optional` 到形参并以 ``None`` "
+"作为默认值。 （由 Nikita Sobolev 在 :gh:`90353` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1178
 msgid ""
@@ -1733,6 +1767,8 @@ msgid ""
 ":data:`~typing.ClassVar` annotations. (Contributed by Gregory Beauregard in "
 ":gh:`90711`.)"
 msgstr ""
+"现在 :func:`typing.get_type_hints` 支持与纯字符串化的 :data:`~typing.ClassVar` 标注进行求值。 "
+"（由 Gregory Beauregard 在 :gh:`90711` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1182
 msgid ""
