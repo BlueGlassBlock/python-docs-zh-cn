@@ -580,8 +580,8 @@ msgid ""
 "used without invoking their special meaning. This conflicts with Python's "
 "usage of the same character for the same purpose in string literals."
 msgstr ""
-"如前所述，正则表达式使用反斜杠字符 (``'\\'``) 来表示特殊形式或允许使用特殊字符而不调用它们的特殊含义。 这与 Python "
-"在字符串文字中用于相同目的的相同字符的使用相冲突。"
+"正如前面所说，正则表达式使用反斜杠字符 (``'\\'``) 来表示特殊形式，或者让特殊字符在不触发它们的特殊含义。在 Python "
+"的字符串字面量中，反斜杠有着同样的用法，这两者之间是有冲突的。"
 
 #: ../../howto/regex.rst:303
 msgid ""
@@ -594,10 +594,9 @@ msgid ""
 " to express this as a Python string literal, both backslashes must be "
 "escaped *again*."
 msgstr ""
-"假设你想要编写一个与字符串 ``\\section`` 相匹配的正则，它可以在 LaTeX 文件中找到。 "
-"要找出在程序代码中写入的内容，请从要匹配的字符串开始。 接下来，您必须通过在反斜杠前面添加反斜杠和其他元字符，从而产生字符串 "
-"``\\\\section``。 必须传递给 :func:`re.compile` 的结果字符串必须是 ``\\\\section``。 "
-"但是，要将其表示为 Python 字符串文字，必须 *再次* 转义两个反斜杠。"
+"假设你想写一个正则来匹配字符串 ``\\section`` ，这可能出现在 LateX 文件中。 想要知道在程序代码中怎么写，先从要匹配的字符串开始。 "
+"接下来，你必须用反斜杠转义任何反斜杠和元字符，得到字符串 ``\\\\section``。要传递给 :func:`re.compile` 的字符串必须是"
+" ``\\\\section``。 但是，要将其表示为 Python 字符串字面量，就必须再次转义两个反斜杠。"
 
 #: ../../howto/regex.rst:312
 msgid "Characters"
@@ -613,7 +612,7 @@ msgstr "``\\section``"
 
 #: ../../howto/regex.rst:314
 msgid "Text string to be matched"
-msgstr "被匹配的字符串"
+msgstr "想要匹配的字符串"
 
 #: ../../howto/regex.rst:316
 msgid "``\\\\section``"
@@ -629,7 +628,7 @@ msgstr "``\"\\\\\\\\section\"``"
 
 #: ../../howto/regex.rst:318
 msgid "Escaped backslashes for a string literal"
-msgstr "为字符串字面转义的反斜杠"
+msgstr "为字符串字面量转义的反斜杠"
 
 #: ../../howto/regex.rst:321
 msgid ""
@@ -640,8 +639,8 @@ msgid ""
 "repeated backslashes and makes the resulting strings difficult to "
 "understand."
 msgstr ""
-"简而言之，要匹配文字反斜杠，必须将 ``'\\\\\\\\'`` 写为正则字符串，因为正则表达式必须是 ``\\\\``，并且每个反斜杠必须表示为 "
-"``\\\\`` 在常规Python字符串字面中。 在反复使用反斜杠的正则中，这会导致大量重复的反斜杠，并使得生成的字符串难以理解。"
+"简而言之，要匹配一个字面上的反斜杠，正则字符串必须写为 ``'\\\\\\\\'`` ，因为正则表达式是 ``\\\\``，而每个反斜杠在普通的 "
+"Python 字符串字面量中必须写成 ``\\\\`` 。 在有很多反斜杠的正则中，这会导致大量重复的反斜杠，使得最终的字符串难以理解。"
 
 #: ../../howto/regex.rst:327
 msgid ""
