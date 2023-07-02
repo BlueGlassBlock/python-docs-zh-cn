@@ -651,9 +651,9 @@ msgid ""
 "newline. Regular expressions will often be written in Python code using this"
 " raw string notation."
 msgstr ""
-"解决方案是使用 Python 的原始字符串表示法来表示正则表达式；反斜杠不以任何特殊的方式处理前缀为 ``'r'`` 的字符串字面，因此 "
+"解决办法是使用 Python 的原始字符串表示法来写正则表达式；在以 ``'r'`` 为前缀的字符串字面量中，反斜杠不会被特殊处理，所以 "
 "``r\"\\n\"`` 是一个包含 ``'\\'`` 和 ``'n'`` 的双字符字符串，而 ``\"\\n\"`` 是一个包含换行符的单字符字符串。"
-" 正则表达式通常使用这种原始字符串表示法用 Python 代码编写。"
+" 在 Python 代码中，通常会使用这种原始字符串表示法来编写正则表达式。"
 
 #: ../../howto/regex.rst:333
 msgid ""
@@ -663,12 +663,12 @@ msgid ""
 "which means the sequences will be invalid if raw string notation or escaping"
 " the backslashes isn't used."
 msgstr ""
-"此外，在正则表达式中有效但在 Python 字符串文字中无效的特殊转义序列现在导致 :exc:`DeprecationWarning` 并最终变为 "
-":exc:`SyntaxError`。 这意味着如果未使用原始字符串表示法或转义反斜杠，序列将无效。"
+"此外，一些在正则表达式中有效，但在 Python 字符串字面量中无效的特殊转移序列，现在会导致 :exc:`DeprecationWarning` "
+"并最终变为 :exc:`SyntaxError`。 这意味着如果未使用原始字符串表示法或转义反斜杠，这些序列将会无效。"
 
 #: ../../howto/regex.rst:341
 msgid "Regular String"
-msgstr "常规字符串"
+msgstr "普通字符串"
 
 #: ../../howto/regex.rst:341
 msgid "Raw string"
