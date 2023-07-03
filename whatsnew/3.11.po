@@ -1776,6 +1776,8 @@ msgid ""
 "functions. It also now correctly marks classmethods as not to be type "
 "checked. (Contributed by Nikita Sobolev in :gh:`90729`.)"
 msgstr ""
+":func:`typing.no_type_check` 将不再修改外部类和函数。 现在它还会正确地将类方法标记为不进行类型检查。 （由 Nikita "
+"Sobolev 在 :gh:`90729` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1190
 msgid "unicodedata"
