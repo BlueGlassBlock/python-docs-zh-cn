@@ -1803,6 +1803,12 @@ msgid ""
 ":func:`unittest.enterModuleContext`. (Contributed by Serhiy Storchaka in "
 ":issue:`45046`.)"
 msgstr ""
+"增加了 :class:`~unittest.TestCase` 类的 :meth:`~unittest.TestCase.enterContext` 和"
+" :meth:`~unittest.TestCase.enterClassContext` "
+"方法，:class:`~unittest.IsolatedAsyncioTestCase` 类的 "
+":meth:`~unittest.IsolatedAsyncioTestCase.enterAsyncContext` 方法和 "
+":func:`unittest.enterModuleContext` 函数。 （由 Serhiy Storchaka 在 :issue:`45046`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1213
 msgid "venv"
@@ -1819,6 +1825,10 @@ msgid ""
 "environments should do the same. (Contributed by Miro Hrončok in "
 ":issue:`45413`.)"
 msgstr ""
+"当新的 Python 虚拟环境被创建时，将使用 *venv* :ref:`sysconfig 安装方案 <installation_paths>` "
+"来确定环境内部的路径。 当 Python 在虚拟环境中运行时，同一个安装方案将被设为默认。 这意味着下游分发方可以修改默认的 sysconfig "
+"安装方案而不会改变虚拟环境的行为。 同样会创建新的虚拟环境的第三方代码也应当这样做。 （由 Miro Hrončok 在 :issue:`45413` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1229
 msgid "warnings"
