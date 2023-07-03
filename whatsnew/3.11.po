@@ -1841,6 +1841,8 @@ msgid ""
 "ignore warnings or convert them to errors. (Contributed by Zac Hatfield-"
 "Dodds in :issue:`47074`.)"
 msgstr ""
+":func:`warnings.catch_warnings` 现在接受 :func:`warnings.simplefilter` "
+"的参数，这提供了一种在局部忽略警告或将其转为错误的更精确方式。 （由 Zac Hatfield-Dodds 在 :issue:`47074` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1239
 msgid "zipfile"
