@@ -1787,7 +1787,7 @@ msgstr "unicodedata"
 msgid ""
 "The Unicode database has been updated to version 14.0.0. (Contributed by "
 "Benjamin Peterson in :issue:`45190`)."
-msgstr ""
+msgstr "Unicode 数据库已更新到 14.0.0 版。 （由 Benjamin Peterson 在 :issue:`45190` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1199
 msgid "unittest"
