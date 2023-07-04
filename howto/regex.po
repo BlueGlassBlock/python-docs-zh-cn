@@ -863,7 +863,7 @@ msgstr ""
 ":meth:`~re.Match.group` 返回正则匹配的子字符串。 :meth:`~re.Match.start` 和 "
 ":meth:`~re.Match.end` 返回匹配的起始和结束索引。 :meth:`~re.Match.span` 在单个元组中返回开始和结束索引。 "
 "由于 :meth:`~re.Pattern.match` 方法只检查正则是否在字符串的开头匹配，所以 :meth:`!start` 将始终为零。 "
-"但是，模式的 :meth:`~re.Pattern.search` 方法会扫描字符串，因此在这种情况下匹配可能不会从零开始。::"
+"但是，模式的 :meth:`~re.Pattern.search` 方法会扫描整个字符串，因此在这种情况下，匹配项的起始位置可能不为零。::"
 
 #: ../../howto/regex.rst:456
 msgid ""
@@ -871,8 +871,8 @@ msgid ""
 " <match-objects>` in a variable, and then check if it was ``None``.  This "
 "usually looks like::"
 msgstr ""
-"在实际程序中，最常见的样式是在变量中存储 :ref:`匹配对象 <match-objects>`，然后检查它是否为 ``None``。 "
-"这通常看起来像::"
+"在实际程序中，最常见的风格是把 :ref:`匹配对象 <match-objects>` 储存在一个变量中，然后检查它是否为 ``None``。 "
+"这通常看起来像这样::"
 
 #: ../../howto/regex.rst:467
 msgid ""
