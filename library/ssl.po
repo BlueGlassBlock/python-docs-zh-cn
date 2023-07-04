@@ -996,6 +996,8 @@ msgid ""
 " extensions must be supported by it (a list of supported ones may vary by "
 "platform and kernel version)."
 msgstr ""
+"启用内核 TLS。 为了利用该特征，OpenSSL "
+"编译时必须附带对它的支持，并且协商的密码套件和扩展必须被它所支持（受支持项的列表可能因平台和内核版本而有所变化）。"
 
 #: ../../library/ssl.rst:817
 msgid ""
@@ -1004,12 +1006,14 @@ msgid ""
 "Providers. This might be undesirable if, for example, the application "
 "requires all cryptographic operations to be performed by the FIPS provider."
 msgstr ""
+"请注意当启用内核 TLS 时某些加解密操作将由内核直接执行而不是通过任何可用的 OpenSSL 提供程序。 "
+"这可能并不是你想要的，例如，当应用程序要求所有加解密操作由 FIPS 提供程序执行时。"
 
 #: ../../library/ssl.rst:828
 msgid ""
 "Allow legacy insecure renegotiation between OpenSSL and unpatched servers "
 "only."
-msgstr ""
+msgstr "允许只在 OpenSSL 和未打补丁的服务器之间进行旧式的不安全协商。"
 
 #: ../../library/ssl.rst:835
 msgid ""
@@ -1848,6 +1852,11 @@ msgid ""
 "default. The initial cipher suite list contains only ``HIGH`` ciphers, no "
 "``NULL`` ciphers and no ``MD5`` ciphers."
 msgstr ""
+"上下文会使用安全的默认值来创建。 默认设置的选项有 :data:`OP_NO_COMPRESSION`, "
+":data:`OP_CIPHER_SERVER_PREFERENCE`, :data:`OP_SINGLE_DH_USE`, "
+":data:`OP_SINGLE_ECDH_USE`, :data:`OP_NO_SSLv2` 和 :data:`OP_NO_SSLv3` "
+"(:data:`PROTOCOL_SSLv3` 除外)。 初始密码套件列表只包含 ``HIGH`` 密码，而不包含 ``NULL`` 密码和 "
+"``MD5`` 密码。"
 
 #: ../../library/ssl.rst:1419
 msgid ""
@@ -2724,6 +2733,8 @@ msgid ""
 " needs to be passed.  If the private key is stored with the certificate, it "
 "should come before the first certificate in the certificate chain::"
 msgstr ""
+"私钥往往与证书存储在相同的文件中；在此情况下，只需要将 ``certfile`` 形参传给 "
+":meth:`SSLContext.load_cert_chain`。 如果私钥是与证书一起存储的，则它应当放在证书链的第一个证书之前::"
 
 #: ../../library/ssl.rst:2089
 msgid "Self-signed certificates"
@@ -3314,6 +3325,11 @@ msgid ""
 "This common check is automatically performed when "
 ":attr:`SSLContext.check_hostname` is enabled."
 msgstr ""
+"当直接调用 :class:`SSLContext` 构造器时，将默认使用 :const:`CERT_NONE`。 "
+"由于它不会验证对等方的身份，因此是不安全的，特别是在客户端模式下，大多数时候你都希望能保证你所连接的服务器的身份真实性。 "
+"因此，当牌客户端模式时，强烈推荐使用 :const:`CERT_REQUIRED`。 但是，光这样是不够的；你还必须检查服务器证书，这可以通过调用 "
+":meth:`SSLSocket.getpeercert`，并匹配所需的服务来实现。 对于许多协议和应用来说，服务可通过主机名来标识。 这种通用检查会在"
+" :attr:`SSLContext.check_hostname` 被启用时自动执行。"
 
 #: ../../library/ssl.rst:2570
 msgid ""
@@ -3394,6 +3410,10 @@ msgid ""
 "successful call of :func:`~ssl.RAND_add` or :func:`~ssl.RAND_bytes` is "
 "sufficient."
 msgstr ""
+"如果使用此模块作为多进程应用的一部分（例如，使用 :mod:`multiprocessing` 或 :mod:`concurrent.futures` "
+"模块），请注意 OpenSSL 的内部随机数字生成器并不能正确处理分叉的进程。 应用程序必须修改父进程的 PRNG 状态，如果它们要使用任何包含 "
+":func:`os.fork` 的 SSL 特征的话。 任何对 :func:`~ssl.RAND_add` 或 "
+":func:`~ssl.RAND_bytes` 的成功调用都可以做到这一点。"
 
 #: ../../library/ssl.rst:2629
 msgid "TLS 1.3"
