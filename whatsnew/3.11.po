@@ -1854,12 +1854,16 @@ msgid ""
 ":class:`~zipfile.ZipFile`'s directory and file headers. (Contributed by "
 "Stephen J. Turnbull and Serhiy Storchaka in :issue:`28080`.)"
 msgstr ""
+"增加了为在 :class:`~zipfile.ZipFile` 的目录和文件头中读取元数据指定成员名称编码格式的支持。 （由 Stephen J. "
+"Turnbull 和 Serhiy Storchaka 在 :issue:`28080` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1245
 msgid ""
 "Added :meth:`ZipFile.mkdir() <zipfile.ZipFile.mkdir>` for creating new "
 "directories inside ZIP archives. (Contributed by Sam Ezeh in :gh:`49083`.)"
 msgstr ""
+"增加了 :meth:`ZipFile.mkdir() <zipfile.ZipFile.mkdir>` 用于在 ZIP 归档中新建目录。 （由 Sam "
+"Ezeh 在 :gh:`49083` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1249
 msgid ""
@@ -1867,6 +1871,9 @@ msgid ""
 ":attr:`~zipfile.Path.suffixes` to :class:`zipfile.Path`. (Contributed by "
 "Miguel Brito in :gh:`88261`.)"
 msgstr ""
+"为 :class:`zipfile.Path` 增加了 :attr:`~zipfile.Path.stem`, "
+":attr:`~zipfile.Path.suffix` 和 :attr:`~zipfile.Path.suffixes`。 （由 Miguel "
+"Brito 在 :gh:`88261` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1257
 msgid "Optimizations"
@@ -1877,7 +1884,7 @@ msgid ""
 "This section covers specific optimizations independent of the "
 ":ref:`whatsnew311-faster-cpython` project, which is covered in its own "
 "section."
-msgstr ""
+msgstr "本节列出的特定优化均不依赖于 :ref:`whatsnew311-faster-cpython` 项目，后者将在其专属章节中列出。"
 
 #: ../../whatsnew/3.11.rst:1262
 msgid ""
@@ -1887,6 +1894,9 @@ msgid ""
 ":term:`f-string` expression. (Contributed by Serhiy Storchaka in "
 ":issue:`28307`.)"
 msgstr ""
+"编译器现在将优化只包含格式代码 ``%s``, ``%r`` 和 ``%a`` 的字符串字面值中的简单 :ref:`printf 风格 % 格式化 "
+"<old-string-formatting>` 并使其速度与对应的 :term:`f-string` 表达式一样快。 （由 Serhiy "
+"Storchaka 在 :issue:`28307` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1268
 msgid ""
