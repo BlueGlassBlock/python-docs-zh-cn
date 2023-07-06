@@ -1905,12 +1905,16 @@ msgid ""
 "smaller than ``2**30``. (Contributed by Gregory P. Smith and Tim Peters in "
 ":gh:`90564`.)"
 msgstr ""
+"整除运算 (``//``) 已进行了更好的编译器微调。 在 x86-64 上现在将 :class:`int` 除以小于 ``2**30`` "
+"的值时能够提速 20%。 （由 Gregory P. Smith 和 Tim Peters 在 :gh:`90564` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1273
 msgid ""
 ":func:`sum` is now nearly 30% faster for integers smaller than ``2**30``. "
 "(Contributed by Stefan Behnel in :gh:`68264`.)"
 msgstr ""
+":func:`sum` 现在对小于 ``2**30`` 的整数运算可提速将近 30%。 （由 Stefan Behnel 在 :gh:`68264` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1276
 msgid ""
@@ -1918,6 +1922,8 @@ msgid ""
 ":meth:`list.append` by ≈15% and simple :term:`list comprehension`\\s by up "
 "to 20-30% (Contributed by Dennis Sweeney in :gh:`91165`.)"
 msgstr ""
+"列表大小调整针对常见场景进行了优化，对于 :meth:`list.append` 可提速 ≈15% 而对于简单的 :term:`list "
+"comprehension` 可提速 20-30%。 （由 Dennis Sweeney 在 :gh:`91165` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1281
 msgid ""
@@ -1927,6 +1933,9 @@ msgid ""
 "272 bytes (23% smaller) on 64-bit platforms. (Contributed by Inada Naoki in "
 ":issue:`46845`.)"
 msgstr ""
+"字典在所有键均为 Unicode 对象时将不保存哈希值，以缩减 :class:`dict` 的大小。 "
+"例如，``sys.getsizeof(dict.fromkeys(\"abcdefg\"))`` 在 64 位平台上将从 352 字节缩减为 272 "
+"字节（减小 23%）。 （由 Inada Naoki 在 :issue:`46845` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1287
 msgid ""
@@ -1934,6 +1943,8 @@ msgid ""
 "when transferring large files over UDP, with speeds over 100 times higher "
 "for a ≈60 MiB file. (Contributed by msoxzw in :gh:`91487`.)"
 msgstr ""
+"现在使用 :class:`asyncio.DatagramProtocol` 通过 UDP 传输大文件时速度将有成数量级的提升，对于 ≈60 MiB "
+"的文件将可提速 100 倍以上。 （由 msoxzw 在 :gh:`91487` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1292
 msgid ""

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-06-30 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1023,23 +1023,29 @@ msgid ""
 " ``QueueHandler`` in your configuration. The dictionary schema for "
 "configuring the pair is shown in the example YAML snippet below."
 msgstr ""
+"如果你想要配置一个 :class:`~logging.handlers.QueueHandler`，请注意它通常是与 "
+":class:`~logging.handlers.QueueListener` 一起使用的，你可以同时配置这两者。 "
+"配置完成之后，``QueueListener`` 实例将可作为所创建的处理句柄的 "
+":attr:`~logging.handlers.QueueHandler.listener` 属性来访问，而你也将可以使用 "
+":func:`~logging.getHandlerByName` 来访问它并将你所使用的名称作为配置中的 ``QueueHandler`` 传入。 "
+"用于配置这两者的字典规格显示在下面的 YAML 实例代码段中。"
 
 #: ../../library/logging.config.rst:751
 msgid "The ``queue`` and ``listener`` keys are optional."
-msgstr ""
+msgstr "``queue`` 和 ``listener`` 键是可选的。"
 
 #: ../../library/logging.config.rst:753
 msgid ""
 "If the ``queue`` key is present, the corresponding value can be one of the "
 "following:"
-msgstr ""
+msgstr "如果存在 ``queue`` 键，相应的值可以是下列几项之一:"
 
 #: ../../library/logging.config.rst:755
 msgid ""
 "An actual instance of :class:`queue.Queue` or a subclass thereof. This is of"
 " course only possible if you are constructing or modifying the configuration"
 " dictionary in code."
-msgstr ""
+msgstr "一个实际的 :class:`queue.Queue` 实例或其子类的实例。 这当然仅在你在代码中构造或修改了该配置字典时才是可能的。"
 
 #: ../../library/logging.config.rst:759
 msgid ""
@@ -1048,6 +1054,9 @@ msgid ""
 ":class:`queue.Queue` subclass or a function which returns a suitable queue "
 "instance, such as ``my.module.queue_factory()``."
 msgstr ""
+"一个将被求值为可调用对象的字符串，当不带任何参数被调用时，该可调用对象将返回要使用的 :class:`queue.Queue` 实例。 "
+"该可调用对象可以是一个 :class:`queue.Queue` 子类或一个返回适当的队列实例的函数，如 "
+"``my.module.queue_factory()``。"
 
 #: ../../library/logging.config.rst:764
 msgid ""
