@@ -1064,18 +1064,20 @@ msgid ""
 "discussed in :ref:`logging-config-dict-userdef`. The result of this "
 "construction should be a :class:`queue.Queue` instance."
 msgstr ""
+"一个带有 ``'()'`` 键的字典，它使用 :ref:`logging-config-dict-userdef` 中所介绍的通常方式构造。 "
+"这样构造的结果应当是一个 :class:`queue.Queue` 实例。"
 
 #: ../../library/logging.config.rst:768
 msgid ""
 "If the  ``queue`` key is absent, a standard unbounded :class:`queue.Queue` "
 "instance is created and used."
-msgstr ""
+msgstr "如果没有  ``queue`` 键，则会创建并使用一个标准的未绑定 :class:`queue.Queue` 实例。"
 
 #: ../../library/logging.config.rst:771
 msgid ""
 "If the ``listener`` key is present, the corresponding value can be one of "
 "the following:"
-msgstr ""
+msgstr "如果存在 ``listener`` 键，则相应的值可以是下列几项中的一个:"
 
 #: ../../library/logging.config.rst:773
 msgid ""
@@ -1083,12 +1085,14 @@ msgid ""
 "only possible if you are constructing or modifying the configuration "
 "dictionary in code."
 msgstr ""
+"一个 :class:`logging.handlers.QueueListener` 的子类。 这当然仅在你通过代码构造或修改配置字典时才是可能的。"
 
 #: ../../library/logging.config.rst:777
 msgid ""
 "A string which resolves to a class which is a subclass of ``QueueListener``,"
 " such as ``'my.package.CustomListener'``."
 msgstr ""
+"一个将被求值为属于 ``QueueListener`` 的子类的类的字符串，例如 ``'my.package.CustomListener'``。"
 
 #: ../../library/logging.config.rst:780
 msgid ""
