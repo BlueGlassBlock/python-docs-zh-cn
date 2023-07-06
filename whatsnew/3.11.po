@@ -1952,6 +1952,8 @@ msgid ""
 "times faster for large arguments (with a larger speedup for larger *k*). "
 "(Contributed by Serhiy Storchaka in :issue:`37295`.)"
 msgstr ""
+"现在 :mod:`math` 中的函数 :func:`~math.comb` 和 :func:`~math.perm` 对于大参数可提速 ≈10 "
+"倍（对于越大的 *k* 值提速幅度越大）。 （由 Serhiy Storchaka 在 :issue:`37295` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1296
 msgid ""
@@ -1961,12 +1963,17 @@ msgid ""
 "This is twice as fast and can save substantial memory. (Contributed by "
 "Raymond Hettinger in :gh:`90415`.)"
 msgstr ""
+"现在 :mod:`statistics` 中的函数 :func:`~statistics.mean`, "
+":func:`~statistics.variance` 和 :func:`~statistics.stdev` 将会直接消耗迭代器而不是先将它们转换为"
+" :class:`list`。 这将使速度翻倍并能节省大量内存。 （由 Raymond Hettinger 在 :gh:`90415` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1302
 msgid ""
 ":func:`unicodedata.normalize` now normalizes pure-ASCII strings in constant "
 "time. (Contributed by Dong-hee Na in :issue:`44987`.)"
 msgstr ""
+"现在 :func:`unicodedata.normalize` 将在常量时间内正规化纯 ASCII 字符串。 （由 Dong-hee Na 在 "
+":issue:`44987` 中贡献。）.)"
 
 #: ../../whatsnew/3.11.rst:1310
 msgid "Faster CPython"
