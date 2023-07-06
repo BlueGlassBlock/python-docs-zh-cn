@@ -1101,19 +1101,21 @@ msgid ""
 "construction should be a callable with the same signature as the "
 "``QueueListener`` initializer."
 msgstr ""
+"一个带有 ``'()'`` 键的字典，它使用 :ref:`logging-config-dict-userdef` 中所介绍的通常方式构造。 "
+"这样构造的结果应当是一个与 ``QueueListener`` 初始化器具有相同签名的可调用对象。"
 
 #: ../../library/logging.config.rst:784
 msgid ""
 "If the ``listener`` key is absent, :class:`logging.handlers.QueueListener` "
 "is used."
-msgstr ""
+msgstr "如果不存在 ``listener`` 键，则会使用 :class:`logging.handlers.QueueListener`。"
 
 #: ../../library/logging.config.rst:786
 msgid ""
 "The values under the ``handlers`` key are the names of other handlers in the"
 " configuration (not shown in the above snippet) which will be passed to the "
 "queue listener."
-msgstr ""
+msgstr "在 ``handlers`` 键之下的值是配置中其他处理句柄的名称（未显示在上面的代码片段中），它们将被传给队列监听器。"
 
 #: ../../library/logging.config.rst:790
 msgid ""
@@ -1122,6 +1124,8 @@ msgid ""
 ":class:`~logging.handlers.QueueHandler` and "
 ":class:`~logging.handlers.QueueListener`."
 msgstr ""
+"任何队列处理句柄和监听器类都需要定义为具有与 :class:`~logging.handlers.QueueHandler` 和 "
+":class:`~logging.handlers.QueueListener` 相同的初始化签名。"
 
 #: ../../library/logging.config.rst:799
 msgid "Configuration file format"
@@ -1290,6 +1294,8 @@ msgid ""
 "the ``logging`` package's namespace, is a dictionary of default values for "
 "custom formatting fields. If not provided, it defaults to ``None``."
 msgstr ""
+"``defaults`` 条目，当在 ``logging`` 包的命名空间的上下文中 :ref:`求值 <func-eval>` "
+"时，将是一个由自定义格式化字段的默认值组成的字典。 如果未提供，则默认为 ``None``。"
 
 #: ../../library/logging.config.rst:983
 msgid ""
