@@ -2109,6 +2109,8 @@ msgid ""
 "it sets up a new frame, and \"jumps\" to the new code inside the new frame. "
 "This avoids calling the C interpreting function altogether."
 msgstr ""
+"在 3.11 中，当 CPython 检测到 Python 代码调用了另一个 Python 函数时，它会设置一个新帧，并“跳转”到新帧内部的新代码。 "
+"这可以避免全部调用 C 解析函数。"
 
 #: ../../whatsnew/3.11.rst:1402
 msgid ""
