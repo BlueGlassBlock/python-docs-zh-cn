@@ -2121,6 +2121,9 @@ msgid ""
 ":func:`sys.setrecursionlimit`). We measured a 1-3% improvement in "
 "pyperformance."
 msgstr ""
+"大多数 Python 函数调用现在将不消耗任何 C 栈空间，这提升了它们的速度。 在简单的递归函数如斐波那契或阶乘函数中，我们测得了 1.7x 的提速。"
+" 这还意味着递归函数能够递归得更深（如果用户通过 :func:`sys.setrecursionlimit` 提升了递归限制的话）。 我们在 "
+"pyperformance 中测得了 1-3% 的提升。"
 
 #: ../../whatsnew/3.11.rst:1409
 msgid "(Contributed by Pablo Galindo and Mark Shannon in :issue:`45256`.)"
@@ -2137,6 +2140,8 @@ msgid ""
 "regions where objects and types rarely change. This concept is known as "
 "*type stability*."
 msgstr ""
+":pep:`659` 是 Faster CPython 项目的关键部分之一。 基本理念在于虽然 Python "
+"是一种动态语言，但大部分代码都存在对象和类型极少发生变化的区域。 这一理念被称为 *类型稳定性*。"
 
 #: ../../whatsnew/3.11.rst:1421
 msgid ""
@@ -2148,6 +2153,9 @@ msgid ""
 "where Python caches the results of expensive operations directly in the "
 ":term:`bytecode`."
 msgstr ""
+"在运行时，Python 将尝试在所执行的代码中寻找常见模式和类型稳定性。 然后 Python 将把当前的操作替换为更加专门化的操作。 "
+"这种专门化的操作使用仅对这些应用场景/类型来说可用的快速路径，它们的性能通常都会超过其泛用型的对应物。 这还带来了名为 *内联缓存* 的另一项理念，即 "
+"Python 会将高消耗的操作的结果直接缓存在 :term:`bytecode` 中。"
 
 #: ../../whatsnew/3.11.rst:1429
 msgid ""
