@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-07-07 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -299,6 +299,10 @@ msgid ""
 " might return a set including a logger named ``foo.bar``, but it wouldn't "
 "include one named ``foo.bar.baz``."
 msgstr ""
+"返回由该日志记录器的直接下级日志记录器组成的集合。 举例来说 ``logging.getLogger().getChildren()`` 将返回包含名为"
+" ``foo`` 和 ``bar`` 的日志记录器的集合，但名为 ``foo.bar`` 的日志记录器则不会包括在集合中。 "
+"类似地，``logging.getLogger('foo').getChildren()`` 将返回包括名为 ``foo.bar`` "
+"的日志记录器的集合，但不会包括名为 ``foo.bar.baz`` 的日志记录器。"
 
 #: ../../library/logging.rst:187
 msgid ""
@@ -821,7 +825,7 @@ msgstr "格式器对象"
 msgid ""
 "Responsible for converting a :class:`LogRecord` to an output string to be "
 "interpreted by a human or external system."
-msgstr ""
+msgstr "负责将一个 :class:`LogRecord` 转换为可供人类或外部系统解读的输出字符串。"
 
 #: ../../library/logging.rst:0 ../../library/logging.rst:0
 #: ../../library/logging.rst:0
@@ -835,6 +839,8 @@ msgid ""
 ":ref:`logrecord-attributes`. If not specified, ``'%(message)s'`` is used, "
 "which is just the logged message."
 msgstr ""
+"用于日志记录整体输出的给定 *style* 形式的格式字符串。 可用的映射键将从 :class:`LogRecord` 对象的 "
+":ref:`logrecord-attributes` 中提取。 如果未指定，则将使用 ``'%(message)s'``，即已记录的日志消息。"
 
 #: ../../library/logging.rst:575
 msgid ""
@@ -842,6 +848,7 @@ msgid ""
 " output. If not specified, the default described in :meth:`formatTime` is "
 "used."
 msgstr ""
+"用于日志记录输出的日期/时间部分的给定 *style* 形式的格式字符串。 如果未指定，则将使用 :meth:`formatTime` 中描述的默认值。"
 
 #: ../../library/logging.rst:580
 msgid ""
@@ -853,6 +860,11 @@ msgid ""
 "logging methods. However, there are :ref:`other ways <formatting-styles>` to"
 " use ``{``- and ``$``-formatting for log messages."
 msgstr ""
+"可以是 ``'%'``, ``'{'`` 或 ``'$'`` 之一并决定格式字符串将如何与数据合并: 使用 :ref:`old-string-"
+"formatting` (``%``), :meth:`str.format` (``{``) 或 :class:`string.Template` "
+"(``$``) 之一。 这将只应用于 *fmt* 和 *datefmt* (例如 ``'%(message)s'`` 或 "
+"``'{message}'``)，而不会应用于传给日志记录方法的实际日志消息。 但是，也存在 :ref:`其他方式 <formatting-"
+"styles>` 可以为日志消息使用 ``{`` 格式化。"
 
 #: ../../library/logging.rst:590
 msgid ""
