@@ -1997,11 +1997,11 @@ msgstr ""
 msgid ""
 "Returns a handler with the specified *name*, or ``None`` if there is no "
 "handler with that name."
-msgstr ""
+msgstr "返回具有指定 *name* 的处理句柄，或者如果指定名称的处理句柄不存在则返回 ``None``。"
 
 #: ../../library/logging.rst:1270
 msgid "Returns an immutable set of all known handler names."
-msgstr ""
+msgstr "返回一个由所有已知处理句柄名称组成的不可变集合。"
 
 #: ../../library/logging.rst:1276
 msgid ""
