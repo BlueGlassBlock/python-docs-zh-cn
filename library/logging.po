@@ -1074,6 +1074,8 @@ msgid ""
 "different record instance which will replace the original log record in any "
 "future processing of the event."
 msgstr ""
+"指定的记录是否会被写入日志？否则返回假值，是则返回真值。 "
+"过滤器可以原地修改日志记录或者返回完全不同的记录实例并在该事件未来的任何处理过程中用它来替代原始日志记录。"
 
 #: ../../library/logging.rst:737
 msgid ""
@@ -1117,6 +1119,8 @@ msgid ""
 "to a :class:`Handler` to modify the log record before it is emitted, without"
 " having side effects on other handlers."
 msgstr ""
+"现在你可以从过滤器返回一个 :class:`LogRecord` 实例来替代日志记录而不是原地修改它。 这允许附加到特定 "
+":class:`Handler` 的过滤器在日志记录发出之前修改它，而不会对其他处理句柄产生附带影响。"
 
 #: ../../library/logging.rst:763
 msgid ""
@@ -1604,7 +1608,7 @@ msgstr "添加了 *processName* "
 
 #: ../../library/logging.rst:975
 msgid "*taskName* was added."
-msgstr ""
+msgstr "添加了 *taskName*。"
 
 #: ../../library/logging.rst:981
 msgid "LoggerAdapter Objects"
