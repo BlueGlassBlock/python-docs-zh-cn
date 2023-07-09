@@ -872,12 +872,16 @@ msgid ""
 "raise a :exc:`ValueError`; for example, ``logging.Formatter('%(asctime)s - "
 "%(message)s', style='{')``."
 msgstr ""
+"如果为 ``True`` (默认值)，则不正确或不匹配的 *fmt* 和 *style* 将引发 :exc:`ValueError`；例如 "
+"``logging.Formatter('%(asctime)s - %(message)s', style='{')``。"
 
 #: ../../library/logging.rst:595
 msgid ""
 "A dictionary with default values to use in custom fields. For example, "
 "``logging.Formatter('%(ip)s %(message)s', defaults={\"ip\": None})``"
 msgstr ""
+"一个由在自定义字段中使用的默认值组成的字典。 例如 ``logging.Formatter('%(ip)s %(message)s', "
+"defaults={\"ip\": None})``"
 
 #: ../../library/logging.rst:600
 msgid "The *style* parameter."
@@ -1584,15 +1588,15 @@ msgstr "线程名（如果可用）"
 
 #: ../../library/logging.rst:969
 msgid "taskName"
-msgstr ""
+msgstr "taskName"
 
 #: ../../library/logging.rst:969
 msgid "``%(taskName)s``"
-msgstr ""
+msgstr "``%(taskName)s``"
 
 #: ../../library/logging.rst:969
 msgid ":class:`asyncio.Task` name (if available)."
-msgstr ""
+msgstr ":class:`asyncio.Task` 名称（如果可用）。"
 
 #: ../../library/logging.rst:972
 msgid "*processName* was added."
