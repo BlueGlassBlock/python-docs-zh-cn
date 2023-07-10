@@ -864,7 +864,7 @@ msgstr ""
 "formatting` (``%``), :meth:`str.format` (``{``) 或 :class:`string.Template` "
 "(``$``) 之一。 这将只应用于 *fmt* 和 *datefmt* (例如 ``'%(message)s'`` 或 "
 "``'{message}'``)，而不会应用于传给日志记录方法的实际日志消息。 但是，也存在 :ref:`其他方式 <formatting-"
-"styles>` 可以为日志消息使用 ``{`` 格式化。"
+"styles>` 可以为日志消息使用 ``{`` 和 ``$`` 格式化。"
 
 #: ../../library/logging.rst:590
 msgid ""

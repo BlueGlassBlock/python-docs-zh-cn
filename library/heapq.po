@@ -48,8 +48,8 @@ msgid ""
 "elements are considered to be infinite.  The interesting property of a heap "
 "is that its smallest element is always the root, ``heap[0]``."
 msgstr ""
-"堆是一棵完全二叉树，其中每个节点的值都大于其父节点的值。这里使用数组实现：从下标为零开始计数，对于所有的 *k* ，都有 ``heap[k] <= "
-"heap[2*k+1]`` 和 ``heap[k] <= "
+"堆是一棵完全二叉树，其中每个节点的值都小于等于其各个子节点的值。这个使用数组的实现，索引从 0 开始，且对所有的 *k* 都有 ``heap[k] <="
+" heap[2*k+1]`` 和 ``heap[k] <= "
 "heap[2*k+2]``。比较时不存在的元素被认为是无限大。堆最有趣的特性在于最小的元素总是在根结点：``heap[0]``。"
 
 #: ../../library/heapq.rst:26
@@ -79,8 +79,7 @@ msgstr ""
 msgid ""
 "To create a heap, use a list initialized to ``[]``, or you can transform a "
 "populated list into a heap via function :func:`heapify`."
-msgstr ""
-"要创建一个堆，可以使用list来初始化为 ``[]`` ，或者你可以通过一个函数 :func:`heapify` ，来把一个list转换成堆。"
+msgstr "要创建一个堆，可以新建一个空列表 ``[]``，或者用函数 :func:`heapify` 把一个非空列表变为堆。"
 
 #: ../../library/heapq.rst:40
 msgid "The following functions are provided:"
