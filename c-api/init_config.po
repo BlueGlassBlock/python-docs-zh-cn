@@ -219,7 +219,7 @@ msgid ""
 "Internally, Python uses macros which set ``PyStatus.func``, whereas "
 "functions to create a status set ``func`` to ``NULL``."
 msgstr ""
-"在内部，Python 使用宏来设置 ``PyStatus.func``，而使用方法来创建的状态会把 ``func`` 设置为 ``NULL`` 。"
+"在内部，Python 使用宏来设置 ``PyStatus.func``，而使用函数来创建的状态会把 ``func`` 设置为 ``NULL`` 。"
 
 #: ../../c-api/init_config.rst:183
 msgid "Example::"
@@ -300,6 +300,8 @@ msgid ""
 "``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): :ref:`Python pymalloc memory "
 "allocator <pymalloc>` with :ref:`debug hooks <pymem-debug-hooks>`."
 msgstr ""
+"``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` (``6``): 带 :ref:`调试钩子 <pymem-debug-"
+"hooks>` 的 :ref:`Python pymalloc 内存分配器 <pymalloc>` ."
 
 #: ../../c-api/init_config.rst:247
 msgid ""
@@ -307,6 +309,8 @@ msgid ""
 "supported if Python is :option:`configured using --without-pymalloc "
 "<--without-pymalloc>`."
 msgstr ""
+"如果 Python 是 :option:`使用 --without-pymalloc 配置 <--without-pymalloc>` "
+"的，则不支持``PYMEM_ALLOCATOR_PYMALLOC`` 和 ``PYMEM_ALLOCATOR_PYMALLOC_DEBUG`` 。"
 
 #: ../../c-api/init_config.rst:251
 msgid "See :ref:`Memory Management <memory>`."
@@ -363,19 +367,19 @@ msgstr ":ref:`Python 开发模式 <devmode>`: 参见 :c:member:`PyConfig.dev_mod
 #: ../../c-api/init_config.rst:288 ../../c-api/init_config.rst:679
 #: ../../c-api/init_config.rst:721 ../../c-api/init_config.rst:1150
 msgid "Default: ``-1`` in Python mode, ``0`` in isolated mode."
-msgstr ""
+msgstr "默认值: 在 Python 模式下为 ``-1``，在隔离模式下为 ``0``。"
 
 #: ../../c-api/init_config.rst:292
 msgid "Isolated mode: see :c:member:`PyConfig.isolated`."
-msgstr ""
+msgstr "隔离模式：参见 :c:member:`PyConfig.isolated`。"
 
 #: ../../c-api/init_config.rst:294 ../../c-api/init_config.rst:846
 msgid "Default: ``0`` in Python mode, ``1`` in isolated mode."
-msgstr ""
+msgstr "默认值：Python 模式下为``0`` ，隔离模式下为``1`` 。"
 
 #: ../../c-api/init_config.rst:298
 msgid "If non-zero:"
-msgstr ""
+msgstr "如果不为零："
 
 #: ../../c-api/init_config.rst:300
 msgid "Set :c:member:`PyPreConfig.utf8_mode` to ``0``,"
@@ -393,13 +397,13 @@ msgstr "设置 :c:member:`PyConfig.filesystem_errors` 为 ``\"replace\"``."
 msgid ""
 "Initialized the from :envvar:`PYTHONLEGACYWINDOWSFSENCODING` environment "
 "variable value."
-msgstr ""
+msgstr "使用 :envvar:`PYTHONLEGACYWINDOWSFSENCODING` 环境变量值进行初始化。"
 
 #: ../../c-api/init_config.rst:307 ../../c-api/init_config.rst:859
 msgid ""
 "Only available on Windows. ``#ifdef MS_WINDOWS`` macro can be used for "
 "Windows specific code."
-msgstr ""
+msgstr "仅在 Windows上可用。``#ifdef MS_WINDOWS`` 宏可以用于 Windows 特定的代码。"
 
 #: ../../c-api/init_config.rst:310 ../../c-api/init_config.rst:618
 #: ../../c-api/init_config.rst:625 ../../c-api/init_config.rst:692
@@ -467,51 +471,58 @@ msgstr "设置 Python 内存分配器 (:c:member:`PyPreConfig.allocator`)"
 
 #: ../../c-api/init_config.rst:348
 msgid "Configure the LC_CTYPE locale (:term:`locale encoding`)"
-msgstr ""
+msgstr "配置 LC_CTYPE 语言区域 (:term:`locale encoding`)"
 
 #: ../../c-api/init_config.rst:349
 msgid ""
 "Set the :ref:`Python UTF-8 Mode <utf8-mode>` "
 "(:c:member:`PyPreConfig.utf8_mode`)"
 msgstr ""
+"设置 :ref:`Python UTF-8 模式<utf8-mode>` (:c:member:`PyPreConfig.utf8_mode`)"
 
 #: ../../c-api/init_config.rst:352
 msgid ""
 "The current preconfiguration (``PyPreConfig`` type) is stored in "
 "``_PyRuntime.preconfig``."
-msgstr ""
+msgstr "当前的预配置（``PyPreConfig`` 类型）存储在 ``_PyRuntime.preconfig``。"
 
 #: ../../c-api/init_config.rst:355
 msgid "Functions to preinitialize Python:"
-msgstr ""
+msgstr "用于预初始化 Python 的函数："
 
 #: ../../c-api/init_config.rst:359 ../../c-api/init_config.rst:365
 #: ../../c-api/init_config.rst:374
 msgid "Preinitialize Python from *preconfig* preconfiguration."
-msgstr ""
+msgstr "从 *preconfig* 预配置中预初始化 Python。"
 
 #: ../../c-api/init_config.rst:361 ../../c-api/init_config.rst:370
 #: ../../c-api/init_config.rst:379
 msgid "*preconfig* must not be ``NULL``."
-msgstr ""
+msgstr "*preconfig* 不能是 ``NULL`` 。"
 
 #: ../../c-api/init_config.rst:367
 msgid ""
 "Parse *argv* command line arguments (bytes strings) if "
 ":c:member:`~PyPreConfig.parse_argv` of *preconfig* is non-zero."
 msgstr ""
+"如果 *preconfig* 中的 :c:member:`~PyPreConfig.parse_argv` 不为零，则解析 *argv* "
+"命令行参数（字节字符串）。"
 
 #: ../../c-api/init_config.rst:376
 msgid ""
 "Parse *argv* command line arguments (wide strings) if "
 ":c:member:`~PyPreConfig.parse_argv` of *preconfig* is non-zero."
 msgstr ""
+"如果 *preconfig* 中的 :c:member:`~PyPreConfig.parse_argv` 不为零，则解析 *argv* "
+"命令行参数（宽字符串）。"
 
 #: ../../c-api/init_config.rst:381 ../../c-api/init_config.rst:1249
 msgid ""
 "The caller is responsible to handle exceptions (error or exit) using "
 ":c:func:`PyStatus_Exception` and :c:func:`Py_ExitStatusException`."
 msgstr ""
+"调用者负责使用 :c:func:`PyStatus_Exception` 和 :c:func:`Py_ExitStatusException` "
+"来处理异常（错误或退出）。"
 
 #: ../../c-api/init_config.rst:384
 msgid ""
@@ -522,6 +533,10 @@ msgid ""
 "like encodings. For example, the :option:`-X utf8 <-X>` command line option "
 "enables the :ref:`Python UTF-8 Mode <utf8-mode>`."
 msgstr ""
+"对于 :ref:`Python 配置 <init-python-config>` "
+"(:c:func:`PyPreConfig_InitPythonConfig`)，如果 Python "
+"是用命令行参数初始化的，那么在预初始化Python时也必须传递命令行参数，因为它们对编码等预配置有影响。例如，:option:`-X utf8<-X>`"
+" 命令行选项启用 :ref:`Python UTF-8 模式<utf8-mode>`。"
 
 #: ../../c-api/init_config.rst:391
 msgid ""
@@ -530,6 +545,10 @@ msgid ""
 "allocator. It can be called before :c:func:`Py_PreInitialize` if "
 ":c:member:`PyPreConfig.allocator` is set to ``PYMEM_ALLOCATOR_NOT_SET``."
 msgstr ""
+"``PyMem_SetAllocator()`` 可以在 :c:func:`Py_PreInitialize` "
+"之后、:c:func:`Py_InitializeFromConfig` 之前调用，以安装一个自定义的内存分配器。如果 "
+":c:member:`PyPreConfig.allocator` 被设置为 ``PYMEM_ALLOCATOR_NOT_SET``，它可以在 "
+":c:func:`Py_PreInitialize` 之前被调用。"
 
 #: ../../c-api/init_config.rst:396
 msgid ""
@@ -538,12 +557,15 @@ msgid ""
 "``malloc()`` and ``free()`` is always safe. :c:func:`Py_DecodeLocale` must "
 "not be called before the Python preinitialization."
 msgstr ""
+"像 :c:func:`PyMem_RawMalloc` 这样的 Python 内存分配函数不能在 Python 预初始化之前使用，而直接调用 "
+"``malloc()`` 和 ``free()`` 总是可以的。:c:func:`Py_DecodeLocale` 不能在 Python "
+"预初始化之前调用。"
 
 #: ../../c-api/init_config.rst:401
 msgid ""
 "Example using the preinitialization to enable the :ref:`Python UTF-8 Mode "
 "<utf8-mode>`::"
-msgstr ""
+msgstr "使用预初始化来启用 :ref:`Python UTF-8 模式<utf8-mode>`: 的例子："
 
 #: ../../c-api/init_config.rst:423
 msgid "PyConfig"
@@ -551,7 +573,7 @@ msgstr "PyConfig"
 
 #: ../../c-api/init_config.rst:427
 msgid "Structure containing most parameters to configure Python."
-msgstr ""
+msgstr "包含大多数用于配置 Python 的参数的结构。"
 
 #: ../../c-api/init_config.rst:429
 msgid ""
