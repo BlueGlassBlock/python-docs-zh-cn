@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 14:13+0000\n"
+"POT-Creation-Date: 2023-07-07 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -257,6 +257,7 @@ msgid ""
 "structural concurrency; it allows for waiting for a group of related tasks "
 "with strong safety guarantees."
 msgstr ""
+":meth:`asyncio.TaskGroup.create_task` 是一个平衡了结构化并发的新选择；它允许等待一组相关任务并具有极强的安全保证。"
 
 #: ../../library/asyncio-task.rst:265
 msgid ""
@@ -519,6 +520,9 @@ msgid ""
 "*TaskGroup* will, while *gather* will not, cancel the remaining scheduled "
 "tasks)."
 msgstr ""
+"一个创建然后并发地运行任务等待它们完成的新选择是 :class:`asyncio.TaskGroup`。 *TaskGroup* "
+"提供了针对调度嵌套子任务的比 *gather* 更强的安全保证：如果一个任务（或子任务，即由一个任务调度的任务）引发了异常，*TaskGroup* "
+"将取消剩余的已排期任务）。"
 
 #: ../../library/asyncio-task.rst:510
 msgid ""
@@ -562,12 +566,15 @@ msgid ""
 "they block. This can be a performance improvement as the overhead of loop "
 "scheduling is avoided for coroutines that complete synchronously."
 msgstr ""
+"当使用这个工厂函数时 (通过 :meth:`loop.set_task_factory(asyncio.eager_task_factory) "
+"<loop.set_task_factory>`)，协程将在 :class:`Task` 构造期间同步地开始执行。 "
+"任务仅会在它们阻塞时被加入事件循环上的计划任务。 这可以达成性能提升因为对同步完成的协程来说可以避免循环调度的开销。"
 
 #: ../../library/asyncio-task.rst:545
 msgid ""
 "A common example where this is beneficial is coroutines which employ caching"
 " or memoization to avoid actual I/O when possible."
-msgstr ""
+msgstr "此特性会带来好处的一个常见例子是应用了缓存或记忆功能以便在可能的情况避免实际 I/O 的协程。"
 
 #: ../../library/asyncio-task.rst:550
 msgid ""
@@ -577,6 +584,8 @@ msgid ""
 "change may introduce behavior changes to existing applications. For example,"
 " the application's task execution order is likely to change."
 msgstr ""
+"协程是立即执行是一项语言改变。 如果协程返回或引发异常，其任务将不会被加入事件循环上的计划任务。 "
+"如果协程执行发生阻塞，其任务将被加入事件循环上的计划任务。 这项改变可能会向现有应用程序引入行为变化。 例如，应用程序的任务执行顺序可能会发生改变。"
 
 #: ../../library/asyncio-task.rst:561
 msgid ""
