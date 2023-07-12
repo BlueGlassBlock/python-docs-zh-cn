@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-07-07 14:14+0000\n"
 "PO-Revision-Date: 2023-05-24 13:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -51,6 +51,8 @@ msgid ""
 "and file names of Python functions in your code will not appear in the "
 "output of ``perf``."
 msgstr ""
+"将 ``perf`` 性能分析器与 Python 应用程序配合使用的主要问题在于 ``perf`` 只能获取原生符号的信息，即以 C "
+"编写的函数和过程的名称。 这意味着在你的代码中的 Python 函数名称和文件名称将不会出现在 ``perf`` 输出中。"
 
 #: ../../howto/perf_profiling.rst:22
 msgid ""
@@ -132,7 +134,7 @@ msgstr "...然后::"
 
 #: ../../howto/perf_profiling.rst:193
 msgid "How to obtain the best results"
-msgstr ""
+msgstr "如何获取最佳结果"
 
 #: ../../howto/perf_profiling.rst:195
 msgid ""
@@ -143,15 +145,18 @@ msgid ""
 "dynamically generated it doesn't have any DWARF debugging information "
 "available."
 msgstr ""
+"要获取最佳结果，Python 应当使用 ``CFLAGS=\"-fno-omit-frame-pointer -mno-omit-leaf-frame-"
+"pointer\"`` 来编译因为这将允许性能分析器仅使用帧指针而不是基于 DWARF 调试信息进行展开。 这是因为被插入以允许 ``perf`` "
+"支持的代码是动态生成的所以它没有任何 DWARF 调试信息可用。"
 
 #: ../../howto/perf_profiling.rst:202
 msgid ""
 "You can check if your system has been compiled with this flag by running::"
-msgstr ""
+msgstr "你可以通过运行以下代码来检查你的系统是否为附带此旗标来编译的::"
 
 #: ../../howto/perf_profiling.rst:206
 msgid ""
 "If you don't see any output it means that your interpreter has not been "
 "compiled with frame pointers and therefore it may not be able to show Python"
 " functions in the output of ``perf``."
-msgstr ""
+msgstr "如果你没有看到任何输出则意味着你的解释器没有附带帧指针来编译因而它将无法在 ``perf`` 的输出中显示 Python 函数。"
