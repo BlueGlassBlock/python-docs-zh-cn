@@ -519,7 +519,7 @@ msgstr "返回一个由从代理服务器接收的响应标头映射到 CONNECT 
 
 #: ../../library/http.client.rst:393
 msgid "If the CONNECT request was not sent, the method returns ``None``."
-msgstr ""
+msgstr "如果未发送 CONNECT 请求，该方法将返回 ``None``。"
 
 #: ../../library/http.client.rst:400
 msgid ""

@@ -114,7 +114,7 @@ msgid ""
 "For security reasons, addresses that were ambiguous and could parse into "
 "multiple different addresses now cause ``('', '')`` to be returned instead "
 "of only one of the *potential* addresses."
-msgstr ""
+msgstr "出于安全原因，有歧义并可能被解析为多个不同地址的地址现在会导致返回 ``('', '')`` 而不是只返回 *潜在* 地址中的一个。"
 
 #: ../../library/email.utils.rst:76
 msgid ""
@@ -148,6 +148,9 @@ msgid ""
 " be returned by :meth:`Message.get_all <email.message.Message.get_all>`.  "
 "Here's a simple example that gets all the recipients of a message:"
 msgstr ""
+"此方法将返回一个形式为由 ``parseaddr()`` 所返回的 2 元组组成的列表。 *fieldvalues* 是一个由 "
+":meth:`Message.get_all <email.message.Message.get_all>` 所返回的标头字段值组成的序列。 "
+"下面是一个获取一条消息的所有收件人的简单示例:"
 
 #: ../../library/email.utils.rst:97
 msgid "from email.utils import getaddresses"
