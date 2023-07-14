@@ -135,6 +135,7 @@ msgid ""
 " number of PEPs have modified and enhanced Python's framework for type "
 "annotations:"
 msgstr ""
+"自从在 :pep:`484` 和 :pep:`483` 中首次引入类型提示之来，已有多个 PEP 对 Python 的类型标注框架进行了修改和加强:"
 
 #: ../../library/typing.rst:77
 msgid ":pep:`526`: Syntax for Variable Annotations"
@@ -284,13 +285,14 @@ msgstr "*引入* :func:`@dataclass_transform<dataclass_transform>` 装饰器"
 
 #: ../../library/typing.rst:114
 msgid ":pep:`692`: Using ``TypedDict`` for more precise ``**kwargs`` typing"
-msgstr ""
+msgstr ":pep:`692`: 使用 ``TypedDict`` 进行更精确的 ``**kwargs`` 类型标注"
 
 #: ../../library/typing.rst:114
 msgid ""
 "*Introducing* a new way of typing ``**kwargs`` with :data:`Unpack` and "
 ":data:`TypedDict`"
 msgstr ""
+"通过 :data:`Unpack` 和 :data:`TypedDict` *引入了* 一种对 ``**kwargs`` 进行类型标注的新方式"
 
 #: ../../library/typing.rst:116
 msgid ":pep:`695`: Type Parameter Syntax"
@@ -304,7 +306,7 @@ msgstr "*引入* 创建泛型函数、类和类型别名的语法。"
 
 #: ../../library/typing.rst:119
 msgid ":pep:`698`: Adding an override decorator to typing"
-msgstr ""
+msgstr ":pep:`698`: 为 typing 添加了一个重载装饰器"
 
 #: ../../library/typing.rst:119
 msgid "*Introducing* the :func:`@override<override>` decorator"

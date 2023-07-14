@@ -761,11 +761,11 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:606
 msgid "https://www.sqlite.org/c3ref/c_dbconfig_defensive.html"
-msgstr ""
+msgstr "https://www.sqlite.org/c3ref/c_dbconfig_defensive.html"
 
 #: ../../library/sqlite3.rst:607
 msgid "SQLite docs: Database Connection Configuration Options"
-msgstr ""
+msgstr "SQLite 文档：数据库连接配置选项"
 
 #: ../../library/sqlite3.rst:613
 msgid "Connection objects"

@@ -17,8 +17,8 @@
 # Nyuan Zhang, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
 # 汇民 王 <whuim@qq.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 14:14+0000\n"
 "PO-Revision-Date: 2023-05-24 13:08+0000\n"
-"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -840,6 +840,9 @@ msgid ""
 "addresses are encountered instead of potentially inaccurate values. "
 "(Contributed by Thomas Dwyer for :gh:`102988` to ameliorate CVE-2023-27043.)"
 msgstr ""
+":func:`email.utils.getaddresses` 和 :func:`email.utils.parseaddr` "
+"现在对于更多遇到无效电子邮件地址的情况将返回 ``('', '')`` 2 元组而不是潜在的不正确值。 （由 Thomas Dwyer 针对 "
+":gh:`102988` 贡献用以改善 CVE-2023-27043 问题。）"
 
 #: ../../whatsnew/3.12.rst:582
 msgid "fractions"
@@ -1319,6 +1322,11 @@ msgid ""
 "users are unlikely to be affected by this change. (Contributed by Alex "
 "Waygood in :gh:`102433`.)"
 msgstr ""
+"针对 :func:`运行时可检测协议 <typing.runtime_checkable>` 的 :func:`isinstance` 检测现在会使用 "
+":func:`inspect.getattr_static` 而不是 :func:`hasattr` 来查找属性是否存在。 这意味着描述器和 "
+":meth:`~object.__getattr__` 方法在针对运行时可检测协议的 ``isinstance()`` 检测期间不会被意外地求值。 "
+"但是，这也意味着某些原来被视为运行时可检测协议的实例的对象在 Python 3.12+ 上将不再被视为运行时可检测协议的实例，反之亦然。 "
+"大部分用户都不太可能受到这一改变的影响。 （由 Alex Waygood 在 :gh:`102433` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:835
 msgid ""
