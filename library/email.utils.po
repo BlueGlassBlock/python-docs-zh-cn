@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../library/email.utils.rst:97
 msgid "from email.utils import getaddresses"
-msgstr ""
+msgstr "from email.utils import getaddresses"
 
 #: ../../library/email.utils.rst:99
 msgid ""
@@ -162,6 +162,9 @@ msgid ""
 "msg.get_all('resent-to', []) resent_ccs = msg.get_all('resent-cc', []) "
 "all_recipients = getaddresses(tos + ccs + resent_tos + resent_ccs)"
 msgstr ""
+"tos = msg.get_all('to', []) ccs = msg.get_all('cc', []) resent_tos = "
+"msg.get_all('resent-to', []) resent_ccs = msg.get_all('resent-cc', []) "
+"all_recipients = getaddresses(tos + ccs + resent_tos + resent_ccs)"
 
 #: ../../library/email.utils.rst:105
 msgid ""
@@ -171,16 +174,18 @@ msgid ""
 "list containing a single empty 2-tuple ``[('', '')]`` being returned rather "
 "than returning potentially invalid output."
 msgstr ""
+"当一个字段值解析失败时，将返回一个 2 元组 ``('', '')`` 来代替它。 "
+"解析地址列表时的其他错误例如一个字段值可能被解析为多个地址则将返回包含一个空 2 元组的列表 ``[('', '')]`` 而不是返回有潜在错误的输出。"
 
 #: ../../library/email.utils.rst:112
 msgid "Example malformed input parsing:"
-msgstr ""
+msgstr "错误的输入解析示例:"
 
 #: ../../library/email.utils.rst:120
 msgid ""
 "The 2-tuple of ``('', '')`` in the returned values when parsing fails were "
 "added as to address a security issue."
-msgstr ""
+msgstr "当解析失败时将在返回值中添加 2 元组 ``('', '')`` 以解决安全问题。"
 
 #: ../../library/email.utils.rst:127
 msgid ""

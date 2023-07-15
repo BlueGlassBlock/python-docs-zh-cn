@@ -980,6 +980,8 @@ msgid ""
 "float. The ratio is in lowest terms and has a positive denominator.  Raises "
 ":exc:`OverflowError` on infinities and a :exc:`ValueError` on NaNs."
 msgstr ""
+"返回一对整数，其比率正好等于原浮点数。 该比率为最简形式且分母为正值。 无穷大会引发 :exc:`OverflowError` 而 NaN 则会引发 "
+":exc:`ValueError`。"
 
 #: ../../library/stdtypes.rst:634
 msgid ""
@@ -1156,7 +1158,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:808
 msgid "Boolean Type - :class:`bool`"
-msgstr ""
+msgstr "布尔类型 - :class:`bool`"
 
 #: ../../library/stdtypes.rst:810
 msgid ""
