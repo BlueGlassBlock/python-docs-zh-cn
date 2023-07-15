@@ -694,6 +694,11 @@ msgid ""
 "values, this means that dictionaries take constant time -- O(1), in Big-O "
 "notation -- to retrieve a key."
 msgstr ""
+"字典的工作方式是使用 :func:`hash` 内置函数计算字典中存储的每个键的哈希码。 "
+"哈希码会根据键和基于进程的种子值而大幅改变；例如，``'Python'`` 的哈希码可能为 ``-539294296`` 而 "
+"``'python'``，这个只相差了一丁点的字符串，它的哈希码可能为 ``1142331976``。 "
+"随后哈希码将被用来计算在一个内部数组中相应值的存储位置。 假设你存储的键都具有不同的哈希值，这意味着字典会耗费恒定的时间 -- 即大 O 表示法的 "
+"O(1) -- 要检索一个键。"
 
 #: ../../faq/design.rst:458
 msgid "Why must dictionary keys be immutable?"
@@ -781,6 +786,9 @@ msgid ""
 "reside in a dictionary (or other hash based structure), remain fixed while "
 "the object is in the dictionary (or other structure). ::"
 msgstr ""
+"如果你有需要，以下技巧可以绕过这个问题，但使用它必须自担风险：你可以将一个可变结构体包装在一个同时具有 :meth:`~object.__eq__` 和"
+" :meth:`~object.__hash__` 方法的类实例中。 "
+"然后你必须确保存放在字典（或其他基于哈希值的结构体）中的所有此类包装器对象的哈希值在该字典（或其他结构体）中保持固定。 ::"
 
 #: ../../faq/design.rst:525
 msgid ""
@@ -808,6 +816,8 @@ msgid ""
 "this unless you are prepared to think hard about the requirements and the "
 "consequences of not meeting them correctly.  Consider yourself warned."
 msgstr ""
+"对于 :class:`!ListWrapper` 的情况，只要包装器位于字典中那么被包装的列表就不能更改以避免发生意外。 "
+"除非你准备好认真考虑相关要求以及未能正确满足这些要求的后果否则请不要这样做。 你已经收到警告了。"
 
 #: ../../faq/design.rst:541
 msgid "Why doesn't list.sort() return the sorted list?"
