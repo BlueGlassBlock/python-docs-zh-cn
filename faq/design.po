@@ -902,6 +902,9 @@ msgid ""
 "actually do this correctly, but it's trivial to check this property in a "
 "test suite."
 msgstr ""
+"适当的测试规程能像完善的接口规范一样帮助在 Python 中构建大型的复杂应用程序。 事实上，它能做得更好因为接口规范无法测试程序的某些属性。 "
+"例如，:meth:`list.append` 方法预期向某个内部列表添加新的元素；接口规范不能测试你的 :meth:`list.append` "
+"实现是否能正确地执行此操作，但在测试套件中检查该属性则很容易。"
 
 #: ../../faq/design.rst:592
 msgid ""
@@ -929,6 +932,10 @@ msgid ""
 "and :keyword:`for` statements, possibly containing :keyword:`continue` and "
 ":keyword:`break`)."
 msgstr ""
+"在 1970 年代人们了解到不受限制的 goto 可能导致混乱得像“意大利面”那样难以理解和修改的代码。 "
+"在高级语言中，它也是不必要的，只需能够执行分支（在 Python 中是使用 :keyword:`if` 语句和 :keyword:`or`, "
+":keyword:`and` 以及 :keyword:`if`/:keyword:`else` 表达式）和循环（使用 :keyword:`while` "
+"和 :keyword:`for` 语句，还可能包含 :keyword:`continue` 和 :keyword:`break` 语句）就足够了。"
 
 #: ../../faq/design.rst:609
 msgid ""
