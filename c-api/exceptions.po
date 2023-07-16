@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-07-14 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -126,10 +126,13 @@ msgid ""
 ":data:`sys.last_traceback` are also set to the type, value and traceback of "
 "this exception, respectively."
 msgstr ""
+"如果 *set_sys_last_vars* 为非零值，则变量 :data:`sys.last_exc` 将被设为要打印的异常。 "
+"出于向下兼容性考虑，已弃用的变量 :data:`sys.last_type`, :data:`sys.last_value` 和 "
+":data:`sys.last_traceback` 也会被分别设为该异常的类型, 值和回溯。"
 
 #: ../../c-api/exceptions.rst:69
 msgid "The setting of :data:`sys.last_exc` was added."
-msgstr ""
+msgstr "增加了对 :data:`sys.last_exc` 的设置。"
 
 #: ../../c-api/exceptions.rst:75
 msgid "Alias for ``PyErr_PrintEx(1)``."
@@ -166,7 +169,7 @@ msgstr "调用此函数时必须设置一个异常。"
 msgid ""
 "Print the standard traceback display of ``exc`` to ``sys.stderr``, including"
 " chained exceptions and notes."
-msgstr ""
+msgstr "将 ``exc`` 的标准回溯显示打印到 ``sys.stderr``，包括链式异常和注释。"
 
 #: ../../c-api/exceptions.rst:102
 msgid "Raising exceptions"
@@ -547,13 +550,13 @@ msgstr ""
 msgid ""
 "Return the exception currently being raised, clearing the error indicator at"
 " the same time."
-msgstr ""
+msgstr "返回当前被引发的异常，同时清除错误指示器。"
 
 #: ../../c-api/exceptions.rst:419
 msgid ""
 "This function is used by code that needs to catch exceptions, or code that "
 "needs to save and restore the error indicator temporarily."
-msgstr ""
+msgstr "此函数会被需要捕获异常的代码，或需要临时保存和恢复错误指示器的代码所使用。"
 
 #: ../../c-api/exceptions.rst:422 ../../c-api/exceptions.rst:466
 msgid "For example::"
@@ -563,7 +566,7 @@ msgstr "例如："
 msgid ""
 ":c:func:`PyErr_GetHandledException`, to save the exception currently being "
 "handled."
-msgstr ""
+msgstr ":c:func:`PyErr_GetHandledException`，保存当前正在处理的异常。"
 
 #: ../../c-api/exceptions.rst:440
 msgid ""
@@ -595,11 +598,11 @@ msgstr ""
 msgid ""
 "This function is normally only used by legacy code that needs to catch "
 "exceptions or save and restore the error indicator temporarily."
-msgstr ""
+msgstr "此函数通常只被需要捕获异常或临时保存和恢复错误指示符的旧式代码所使用。"
 
 #: ../../c-api/exceptions.rst:482
 msgid "Use :c:func:`PyErr_SetRaisedException` instead."
-msgstr ""
+msgstr "请改用 :c:func:`PyErr_SetRaisedException`。"
 
 #: ../../c-api/exceptions.rst:484
 msgid ""
