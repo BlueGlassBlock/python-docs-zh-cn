@@ -944,12 +944,14 @@ msgid ""
 "all reasonable uses of the ``go`` or ``goto`` constructs of C, Fortran, and "
 "other languages.  For example::"
 msgstr ""
+"人们还可以使用异常来提供甚至能跨函数调用的“结构化 goto”。 许多人觉得异常可以方便地模拟 C, Fortran 和其他语言中所有合理使用的 "
+"``go`` 或 ``goto`` 结构::"
 
 #: ../../faq/design.rst:625
 msgid ""
 "This doesn't allow you to jump into the middle of a loop, but that's usually"
 " considered an abuse of ``goto`` anyway.  Use sparingly."
-msgstr ""
+msgstr "这并不允许跳到一个循环的中间，但这通常被视为是对 ``goto`` 的滥用。 应当谨慎使用。"
 
 #: ../../faq/design.rst:630
 msgid "Why can't raw strings (r-strings) end with a backslash?"
@@ -1034,6 +1036,9 @@ msgid ""
 "variable named ``x``, will it be used inside the :keyword:`with` block?  As "
 "you see, the dynamic nature of Python makes such choices much harder."
 msgstr ""
+"该代码段假设 ``a`` 必须有一个名为 ``x`` 的成员属性。 然而，Python 中没有什么能告诉解释器这一点。 举例来说，如果 ``a`` "
+"是一个整数那么会发生什么？ 如果有一个名为 ``x`` 的全局变量，它是否会在 :keyword:`with` 代码块内被使用？ 如你所见，Python"
+" 的动态特性使得这样的选择更为困难。"
 
 #: ../../faq/design.rst:691
 msgid ""
