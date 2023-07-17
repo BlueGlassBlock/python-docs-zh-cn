@@ -6,7 +6,6 @@
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
-# Jason Ren, 2023
 # Menghua Xiao <arieshout@gmail.com>, 2023
 # 
 #, fuzzy
@@ -343,7 +342,7 @@ msgstr ""
 msgid ""
 "Set to ``1`` if the :envvar:`PYTHONLEGACYWINDOWSSTDIO` environment variable "
 "is set to a non-empty string."
-msgstr ""
+msgstr "如果 :envvar:`PYTHONLEGACYWINDOWSSTDIO` 环境变量设置为非空字符串，则设置为 ``1`` 。"
 
 #: ../../c-api/init.rst:173
 msgid "See :pep:`528` for more details."
