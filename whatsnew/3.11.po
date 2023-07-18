@@ -2172,6 +2172,8 @@ msgid ""
 "attempts are not too expensive, allowing specialization to adapt to new "
 "circumstances."
 msgstr ""
+"Python 将只特化（会被多次执行的）“热门”代码。 这可以防止 Python 在只执行一次的代码上浪费时间。 Python "
+"还可以在代码过于动态或用法发生变化时取消特化。 特化会定期地尝试，而特化尝试的开销也不高，这使得特化能够适应新的环境改变。"
 
 #: ../../whatsnew/3.11.rst:1439
 msgid ""
@@ -2179,6 +2181,8 @@ msgid ""
 ":pep:`659` for more information. Implementation by Mark Shannon and Brandt "
 "Bucher, with additional help from Irit Katriel and Dennis Sweeney.)"
 msgstr ""
+"（PEP 由 Mark Shannon 撰写，部分想法由 Stefan Brunthaler 提供。 请参阅 :pep:`659` 了解详情。 由 "
+"Mark Shannon 和 Brandt Bucher 实现，并由 Irit Katriel 和 Dennis Sweeney 提供了额外的帮助。）"
 
 #: ../../whatsnew/3.11.rst:1447
 msgid "Operation"
@@ -2478,7 +2482,7 @@ msgstr "常见问题"
 
 #: ../../whatsnew/3.11.rst:1533
 msgid "How should I write my code to utilize these speedups?"
-msgstr ""
+msgstr "我要如何编写代码以便应用这些加速？"
 
 #: ../../whatsnew/3.11.rst:1535
 msgid ""
@@ -2486,10 +2490,11 @@ msgid ""
 "change your code. The Faster CPython project optimizes for common code "
 "patterns we observe."
 msgstr ""
+"请编写遵循常见最佳实践的具有 Python 风格的代码；你不需要修改你的代码。 CPython 加速计划会针对我们观察到的常见代码模式进行优化。"
 
 #: ../../whatsnew/3.11.rst:1543
 msgid "Will CPython 3.11 use more memory?"
-msgstr ""
+msgstr "CPython 3.11 会使用更多内存吗？"
 
 #: ../../whatsnew/3.11.rst:1545
 msgid ""
