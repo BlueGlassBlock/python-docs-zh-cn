@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-07-14 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -526,16 +526,19 @@ msgid ""
 "will continue to work without change, the import machinery will try it only "
 "if the finder does not implement ``find_spec()``."
 msgstr ""
+"元路径查找器的 :meth:`~importlib.abc.MetaPathFinder.find_spec` 方法替代了 "
+":meth:`!find_module`，后者现已被弃用。 虽然它将继续可用但不会再做改变，导入机制仅会在查找器未实现 ``find_spec()`` "
+"时尝试使用它。"
 
 #: ../../reference/import.rst:332
 msgid ""
 "Use of :meth:`!find_module` by the import system now raises "
 ":exc:`ImportWarning`."
-msgstr ""
+msgstr "导入系统使用 :meth:`!find_module` 现在将引发 :exc:`ImportWarning`。"
 
 #: ../../reference/import.rst:336
 msgid "``find_module()`` has been removed.  Use :meth:`find_spec` instead."
-msgstr ""
+msgstr "``find_module()`` 已被移除。 请改用 :meth:`find_spec`。"
 
 #: ../../reference/import.rst:341
 msgid "Loading"
@@ -837,7 +840,7 @@ msgstr "导入机制会在加载期间会根据模块的规格说明填充每个
 msgid ""
 "It is **strongly** recommended that you rely on :attr:`__spec__` and its "
 "attributes instead of any of the other individual attributes listed below."
-msgstr ""
+msgstr "**强烈** 建议你使用 :attr:`__spec__` 及其属性来代替下面列出的任何其他单独属性。"
 
 #: ../../reference/import.rst:550
 msgid ""
@@ -860,7 +863,7 @@ msgstr ""
 msgid ""
 "It is **strongly** recommended that you rely on :attr:`__spec__` instead "
 "instead of this attribute."
-msgstr ""
+msgstr "**强烈** 建议你使用 :attr:`__spec__` 来代替这个属性。"
 
 #: ../../reference/import.rst:564
 msgid ""
@@ -868,6 +871,8 @@ msgid ""
 "``__spec__.loader``.  The use of ``__loader__`` is deprecated and slated for"
 " removal in Python 3.14."
 msgstr ""
+"``__loader__`` 的值应当与 ``__spec__.loader`` 相同。 ``__loader__`` 已被弃用并将在 Python "
+"3.14 中被移除。"
 
 #: ../../reference/import.rst:571
 msgid ""
@@ -878,6 +883,9 @@ msgid ""
 " string for top-level modules, or for submodules, to the parent package's "
 "name.  See :pep:`366` for further details."
 msgstr ""
+"模块的 ``__package__`` 属性可以被设置。 其值必须为一个字符串，但可以与 ``__name__`` 取相同的值。 当模块是一个包时，其 "
+"``__package__`` 值应当设为其 ``__name__`` 值。 当模块不是包时，对于最高层级模块 ``__package__`` "
+"应当设为空字符串，对于子模块则应当设为其父包名。 请参阅 :pep:`366` 了解更多细节。"
 
 #: ../../reference/import.rst:579
 msgid ""

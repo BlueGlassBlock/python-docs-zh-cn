@@ -2501,11 +2501,11 @@ msgid ""
 "Maybe not; we don't expect memory use to exceed 20% higher than 3.10. This "
 "is offset by memory optimizations for frame objects and object dictionaries "
 "as mentioned above."
-msgstr ""
+msgstr "可能不会；我们预期内存占用的增加相比 3.10 不会超过 20%。 这是通过上文提及的帧对象和对象字典内存优化来平衡的。"
 
 #: ../../whatsnew/3.11.rst:1553
 msgid "I don't see any speedups in my workload. Why?"
-msgstr ""
+msgstr "我没有发现我的运行负载有任何加速。 为什么？"
 
 #: ../../whatsnew/3.11.rst:1555
 msgid ""
@@ -2514,6 +2514,8 @@ msgid ""
 "extension library like NumPy, there won't be significant speedups. This "
 "project currently benefits pure-Python workloads the most."
 msgstr ""
+"特定代码将不会有明显的收益。 如果你的代码大部时间消耗在 I/O 操作上，或者像 NumPy 那样大部分计算是在 C 扩展库中进行的就将如此。 "
+"目前这个项目将只针对纯 Python 的运行负载。"
 
 #: ../../whatsnew/3.11.rst:1560
 msgid ""
@@ -2521,6 +2523,8 @@ msgid ""
 " pyperformance benchmarks, certain benchmarks have slowed down slightly, "
 "while others have sped up by nearly 2x!"
 msgstr ""
+"此外，pyperformance 分数是一个几何平均值。 即使在 pyperformance "
+"基准测试内部，特定的基准测试也略有放缓，但其他的基准测试则有将近 2x 的加速！"
 
 #: ../../whatsnew/3.11.rst:1568
 msgid "Is there a JIT compiler?"
@@ -2541,6 +2545,8 @@ msgid ""
 " funded by Bloomberg LP to work on the project part-time. Finally, many "
 "contributors are volunteers from the community."
 msgstr ""
+"CPython 加速项目探索针对 :term:`CPython` 的优化。 项目主团队由 Microsoft 提供资助来支持全职工作。 Pablo "
+"Galindo Salgado 还由 Bloomberg LP 提供资助来兼职该项目。 此外，还有许多贡献者是来自社区的志愿者。"
 
 #: ../../whatsnew/3.11.rst:1587
 msgid "CPython bytecode changes"
