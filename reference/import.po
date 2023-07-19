@@ -930,7 +930,7 @@ msgstr ""
 #: ../../reference/import.rst:607
 msgid ""
 "When ``__spec__.parent`` is not set, ``__package__`` is used as a fallback."
-msgstr ""
+msgstr "当 ``__spec__.parent`` 未设置时，将使用 ``__package__`` 作用回退项。"
 
 #: ../../reference/import.rst:612
 msgid ""
@@ -996,7 +996,7 @@ msgstr ""
 msgid ""
 "It is **strongly** recommended that you rely on :attr:`__spec__` instead "
 "instead of ``__cached__``."
-msgstr ""
+msgstr "**强烈** 建议你使用 :attr:`__spec__` 来代替 ``__cached__``。"
 
 #: ../../reference/import.rst:658
 msgid "module.__path__"
@@ -1102,6 +1102,8 @@ msgid ""
 "removed in Python 3.12 and is no longer called during the resolution of a "
 "module's repr."
 msgstr ""
+":meth:`!module_repr` 自 Python 3.4 起已被弃用，在 Python 3.12 中已被移除且不会在模块的 repr "
+"计算期间被调用。"
 
 #: ../../reference/import.rst:716
 msgid "Cached bytecode invalidation"
@@ -1407,6 +1409,8 @@ msgid ""
 ":term:`portion`, the path entry finder sets ``submodule_search_locations`` "
 "to a list containing the portion."
 msgstr ""
+"为了向导入机制提示该规格说明代表一个命名空间 :term:`portion`，路径条目查找器会将 "
+"``submodule_search_locations`` 设为一个包含该部分的列表。"
 
 #: ../../reference/import.rst:896
 msgid ""
@@ -1414,6 +1418,8 @@ msgid ""
 ":meth:`!find_loader` and :meth:`!find_module`, both of which are now "
 "deprecated, but will be used if ``find_spec()`` is not defined."
 msgstr ""
+":meth:`~importlib.abc.PathEntryFinder.find_spec` 替代了 :meth:`!find_loader` 和 "
+":meth:`!find_module`，这两者现在都已被弃用，但会在 ``find_spec()`` 未定义时被使用。"
 
 #: ../../reference/import.rst:902
 msgid ""
