@@ -1315,6 +1315,13 @@ msgid ""
 "code is free to remove cache entries from :data:`sys.path_importer_cache` "
 "forcing the path based finder to perform the path entry search again."
 msgstr ""
+"基于路径的查找器会迭代搜索路径中的每个条目，并且每次都查找与路径条目对应的 :term:`path entry finder` "
+"(:class:`~importlib.abc.PathEntryFinder`)。 因为这种操作可能很耗费资源 (例如搜索会有 ``stat()`` "
+"调用的开销)，基于路径的查找器会维持一个将路径条目映射到路径条目查找器的缓存。 这个缓存是在 "
+":data:`sys.path_importer_cache` 中维护的 (尽管如此命名，但这个缓存实际存放的是查找器对象而非仅限于 "
+":term:`importer` 对象)。 通过这种方式，对特定 :term:`path entry` 位置的 :term:`path entry "
+"finder` 的高耗费搜索只需进行一次。 用户代码可以自由地从 :data:`sys.path_importer_cache` "
+"移除缓存条目以强制基于路径的查找器再次执行路径条目搜索。"
 
 #: ../../reference/import.rst:845
 msgid ""
@@ -1437,6 +1444,8 @@ msgid ""
 "module being imported.  ``find_loader()`` returns a 2-tuple where the first "
 "item is the loader and the second item is a namespace :term:`portion`."
 msgstr ""
+":meth:`!find_loader` 接受一个参数，即要导入模块的完整限定名称。 ``find_loader()`` 返回一个 2 "
+"元组，其中第一项是加载器而第二项是命名空间 :term:`portion`。"
 
 #: ../../reference/import.rst:912
 msgid ""
@@ -1467,10 +1476,12 @@ msgid ""
 "Calls to :meth:`!find_module` and :meth:`!find_loader` by the import system "
 "will raise :exc:`ImportWarning`."
 msgstr ""
+"导入系统对 :meth:`!find_module` 和 :meth:`!find_loader` 的调用将引发 "
+":exc:`ImportWarning`。"
 
 #: ../../reference/import.rst:930
 msgid "``find_module()`` and ``find_loader()`` have been removed."
-msgstr ""
+msgstr "``find_module()`` 和 ``find_loader()`` 已被移除。"
 
 #: ../../reference/import.rst:935
 msgid "Replacing the standard import system"
@@ -1655,6 +1666,8 @@ msgid ""
 "Python 3.3.  :pep:`420` also introduced the :meth:`!find_loader` protocol as"
 " an alternative to :meth:`!find_module`."
 msgstr ""
+":pep:`420` 为 Python 3.3 引入了 :term:`命名空间包 <namespace package>`。 :pep:`420` "
+"还引入了 :meth:`!find_loader` 协议作为 :meth:`!find_module` 的替代。"
 
 #: ../../reference/import.rst:1057
 msgid ""

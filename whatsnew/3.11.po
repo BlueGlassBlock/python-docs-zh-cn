@@ -2588,7 +2588,7 @@ msgstr ":opcode:`JUMP_BACKWARD_NO_INTERRUPT`，用于某些不希望处理中断
 
 #: ../../whatsnew/3.11.rst:1612
 msgid ":opcode:`MAKE_CELL`, to create :ref:`cell-objects`."
-msgstr ""
+msgstr ":opcode:`MAKE_CELL`，用于创建 :ref:`cell-objects`。"
 
 #: ../../whatsnew/3.11.rst:1614
 msgid ""
@@ -2596,16 +2596,18 @@ msgid ""
 ":ref:`new exception groups and except* <whatsnew311-pep654>` added in "
 ":pep:`654`."
 msgstr ""
+":opcode:`CHECK_EG_MATCH`  和  :opcode:`PREP_RERAISE_STAR`，用于处理在 :pep:`654` "
+"中增加的 :ref:`新异常组和 except* <whatsnew311-pep654>`。"
 
 #: ../../whatsnew/3.11.rst:1618
 msgid ":opcode:`PUSH_EXC_INFO`, for use in exception handlers."
-msgstr ""
+msgstr ":opcode:`PUSH_EXC_INFO`，用于异常处理句柄。"
 
 #: ../../whatsnew/3.11.rst:1620
 msgid ""
 ":opcode:`RESUME`, a no-op, for internal tracing, debugging and optimization "
 "checks."
-msgstr ""
+msgstr ":opcode:`RESUME`，空操作，用于内部追踪、调试和优化检查。"
 
 #: ../../whatsnew/3.11.rst:1627
 msgid "Replaced opcodes"
@@ -2637,7 +2639,7 @@ msgstr ":opcode:`BINARY_OP`"
 
 #: ../../whatsnew/3.11.rst:1632
 msgid "Replaced all numeric binary/in-place opcodes with a single opcode"
-msgstr ""
+msgstr "用单个操作码替换所有数值类双目/原地操作码"
 
 #: ../../whatsnew/3.11.rst:0
 msgid ":opcode:`!CALL_FUNCTION`"
