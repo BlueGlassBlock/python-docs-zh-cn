@@ -891,7 +891,7 @@ msgstr ""
 msgid ""
 "This attribute is used instead of ``__name__`` to calculate explicit "
 "relative imports for main modules, as defined in :pep:`366`."
-msgstr ""
+msgstr "该属性取代 ``__name__`` 被用来为主模块计算显式相对导入，相关定义见 :pep:`366`。"
 
 #: ../../reference/import.rst:585
 msgid ""
@@ -904,12 +904,16 @@ msgid ""
 ":exc:`ImportWarning` is raised if import falls back to ``__package__`` "
 "instead of :attr:`~importlib.machinery.ModuleSpec.parent`."
 msgstr ""
+":exc:`ImportWarning` 将在导入回退至 ``__package__`` 代替 "
+":attr:`~importlib.machinery.ModuleSpec.parent` 时被引发。"
 
 #: ../../reference/import.rst:594
 msgid ""
 "Raise :exc:`DeprecationWarning` instead of :exc:`ImportWarning` when falling"
 " back to ``__package__``."
 msgstr ""
+"当回退至 ``__package__`` 时将引发 :exc:`DeprecationWarning` 而不是 "
+":exc:`ImportWarning`。"
 
 #: ../../reference/import.rst:601
 msgid ""
