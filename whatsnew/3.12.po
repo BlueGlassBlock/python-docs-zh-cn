@@ -1385,11 +1385,11 @@ msgstr "unittest"
 msgid ""
 "Added ``--durations`` command line option, showing the N slowest test "
 "cases::"
-msgstr ""
+msgstr "增加了 ``--durations`` 命令行选项，显示 N 个最慢的测试用例::"
 
 #: ../../whatsnew/3.12.rst:900
 msgid "(Contributed by Giampaolo Rodola in :issue:`4080`)"
-msgstr ""
+msgstr "（由 Giampaolo Rodola 在 :issue:`4080` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:903
 msgid "uuid"
@@ -1399,7 +1399,7 @@ msgstr "uuid"
 msgid ""
 "Add a :ref:`command-line interface <uuid-cli>`. (Contributed by Adam Chhina "
 "in :gh:`88597`.)"
-msgstr ""
+msgstr "增加了一个 :ref:`命令行接口 <uuid-cli>`。 （由 Adam Chhina 在 :gh:`88597` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:910
 msgid "Optimizations"
@@ -1411,6 +1411,8 @@ msgid ""
 "reduces object size by 8 or 16 bytes on 64bit platform. (:pep:`623`) "
 "(Contributed by Inada Naoki in :gh:`92536`.)"
 msgstr ""
+"从 Unicode 对象中移除了 ``wstr`` 和 ``wstr_length`` 成员。 这使得对象大小在 64 位平台上减小了 8 个或 16 "
+"个字节。 (:pep:`623`) （由 Inada Naoki 在 :gh:`92536` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:916
 msgid ""
@@ -1418,6 +1420,8 @@ msgid ""
 "process, which improves performance by 1-5%. (Contributed by Kevin "
 "Modzelewski in :gh:`90536` and tuned by Dong-hee Na in :gh:`101525`)"
 msgstr ""
+"增加了在构建进程中使用 BOLT 二进制优化器的试验性支持，这将使使性能提升 1-5%。 （由 Kevin Modzelewski 在 "
+":gh:`90536` 中贡献并由 Dong-hee Na 在 :gh:`101525` 中加以改进。）"
 
 #: ../../whatsnew/3.12.rst:920
 msgid ""
