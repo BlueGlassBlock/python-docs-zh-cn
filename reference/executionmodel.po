@@ -353,6 +353,9 @@ msgid ""
 "functions defined within classes, which cannot access names defined in the "
 "class scope."
 msgstr ""
+"标注作用域能够访问其所包含的类命名空间。 "
+"如果某个标注作用域紧接在一个类作用域之内，或是位于紧接一个类作用域的另一个标注作用域之内，则该标注作用域中的代码将能使用在该类作用域中定义的名称，就像它是在该类内部直接执行一样。"
+" 这不同于在类中定义的常规函数，后者无法访问在类作用域中定义的名称。"
 
 #: ../../reference/executionmodel.rst:219
 msgid ""
@@ -361,6 +364,9 @@ msgid ""
 "grammar:assignment_expression>` expressions. (These expressions are allowed "
 "in other scopes contained within the annotation scope.)"
 msgstr ""
+"标注作用域中的表达式不能包含 :keyword:`yield`, ``yield from``, :keyword:`await` 或 "
+":token:`:= <python-grammar:assignment_expression>` 表达式。 "
+"（这些表达式在包含于标注作用域之内的其他作用域中则是允许的。）"
 
 #: ../../reference/executionmodel.rst:223
 msgid ""
@@ -369,6 +375,8 @@ msgid ""
 "parameters, as no other syntactic elements that can appear within annotation"
 " scopes can introduce new names."
 msgstr ""
+"在标注作用域中定义的名称不能在内部作用域中通过 :keyword:`nonlocal` 语句来重新绑定。 "
+"这只包括类型形参，因为没有其他可以在标注作用域内部出现的语法元素能够引入新的名称。"
 
 #: ../../reference/executionmodel.rst:226
 msgid ""
@@ -377,11 +385,13 @@ msgid ""
 "scope. Instead, the :attr:`!__qualname__` of such objects is as if the "
 "object were defined in the enclosing scope."
 msgstr ""
+"虽然标注作用域具有其内部名称，但该名称不会在作用域内部定义对象的 :term:`__qualname__ <qualified name>` "
+"中反映出来。 这些对象的 :attr:`!__qualname__` 就像他们是定义在包含作用域中的对象一样。"
 
 #: ../../reference/executionmodel.rst:231
 msgid ""
 "Annotation scopes were introduced in Python 3.12 as part of :pep:`695`."
-msgstr ""
+msgstr "标注作用域是在 Python 3.12 中作为 :pep:`695` 的一部分引入的。"
 
 #: ../../reference/executionmodel.rst:237
 msgid "Lazy evaluation"
