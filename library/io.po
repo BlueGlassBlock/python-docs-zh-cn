@@ -4,24 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Shengjing Zhu <zsj950618@gmail.com>, 2021
-# Konge <zkonge@outlook.com>, 2021
-# Wu Pipi, 2021
-# Sean Chao <seanchao0804@gmail.com>, 2021
-# ww song <sww4718168@gmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2022
-# Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:16+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -718,11 +710,9 @@ msgstr "``SEEK_*`` 常量."
 #: ../../library/io.rst:424
 msgid ""
 "Some operating systems could support additional values, like "
-":data:`os.SEEK_HOLE` or :data:`os.SEEK_DATA`. The valid values for a file "
+":const:`os.SEEK_HOLE` or :const:`os.SEEK_DATA`. The valid values for a file "
 "could depend on it being open in text or binary mode."
 msgstr ""
-"某些操作系统还可支持其他的值，例如 :data:`os.SEEK_HOLE` 或 "
-":data:`os.SEEK_DATA`。特定文件的可用值还会取决于它是以文本还是二进制模式打开。"
 
 #: ../../library/io.rst:431
 msgid ""

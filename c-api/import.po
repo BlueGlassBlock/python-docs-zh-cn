@@ -4,19 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 汪心禾 <wangxinhe06@gmail.com>, 2021
-# Lordran <xuzhaoyang1990@live.cn>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
-"PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -164,18 +161,13 @@ msgid ""
 "object read from a Python bytecode file or obtained from the built-in "
 "function :func:`compile`, load the module.  Return a new reference to the "
 "module object, or ``NULL`` with an exception set if an error occurred.  "
-"*name* is removed from :attr:`sys.modules` in error cases, even if *name* "
-"was already in :attr:`sys.modules` on entry to "
+"*name* is removed from :data:`sys.modules` in error cases, even if *name* "
+"was already in :data:`sys.modules` on entry to "
 ":c:func:`PyImport_ExecCodeModule`.  Leaving incompletely initialized modules"
-" in :attr:`sys.modules` is dangerous, as imports of such modules have no way"
+" in :data:`sys.modules` is dangerous, as imports of such modules have no way"
 " to know that the module object is an unknown (and probably damaged with "
 "respect to the module author's intents) state."
 msgstr ""
-"给定一个模块名称（可能为 ``package.module`` 形式）和一个从 Pyhon 字节码文件读取或从内置函数 :func:`compile` "
-"获取的代码对象，加载该模块。 返回对该模块对象的新引用，或者如果发生错误则返回 ``NULL`` 并设置一个异常。 在发生错误的情况下 *name* "
-"会从 :attr:`sys.modules` 中被移除，即使 *name* 在进入 :c:func:`PyImport_ExecCodeModule` "
-"时已存在于 :attr:`sys.modules` 中。 在 :attr:`sys.modules` "
-"中保留未完全初始化的模块是危险的，因为导入这样的模块没有办法知道模块对象是否处于一种未知的（对于模块作业的意图来说可能是已损坏的）状态。"
 
 #: ../../c-api/import.rst:135
 msgid ""
@@ -216,15 +208,7 @@ msgstr ""
 "另请参阅 :c:func:`PyImport_ExecCodeModuleEx` 和 "
 ":c:func:`PyImport_ExecCodeModuleWithPathnames`。"
 
-#: ../../c-api/import.rst:153
-msgid ""
-"The setting of :attr:`__cached__` and :attr:`__loader__` is deprecated. See "
-":class:`~importlib.machinery.ModuleSpec` for alternatives."
-msgstr ""
-":attr:`__cached__` 和 :attr:`__loader__` 的设置已被弃用。 替代设置参见 "
-":class:`~importlib.machinery.ModuleSpec`。"
-
-#: ../../c-api/import.rst:161
+#: ../../c-api/import.rst:156
 msgid ""
 "Like :c:func:`PyImport_ExecCodeModule`, but the :attr:`__file__` attribute "
 "of the module object is set to *pathname* if it is non-``NULL``."
@@ -232,11 +216,11 @@ msgstr ""
 "类似于 :c:func:`PyImport_ExecCodeModule`，但如果 *pathname* 不为 ``NULL`` 则会被设为模块对象的 "
 ":attr:`__file__` 属性的值。"
 
-#: ../../c-api/import.rst:164
+#: ../../c-api/import.rst:159
 msgid "See also :c:func:`PyImport_ExecCodeModuleWithPathnames`."
 msgstr "参见 :c:func:`PyImport_ExecCodeModuleWithPathnames`。"
 
-#: ../../c-api/import.rst:169
+#: ../../c-api/import.rst:164
 msgid ""
 "Like :c:func:`PyImport_ExecCodeModuleEx`, but the :attr:`__cached__` "
 "attribute of the module object is set to *cpathname* if it is non-``NULL``."
@@ -245,14 +229,7 @@ msgstr ""
 "类似于 :c:func:`PyImport_ExecCodeModuleEx`，但如果 *cpathname* 不为 ``NULL`` "
 "则会被设为模块对象的 :attr:`__cached__` 值。 在三个函数中，这是推荐使用的一个。"
 
-#: ../../c-api/import.rst:175
-msgid ""
-"Setting :attr:`__cached__` is deprecated. See "
-":class:`~importlib.machinery.ModuleSpec` for alternatives."
-msgstr ""
-":attr:`__cached__` 的设置已被弃用。 替代设置参见 :class:`~importlib.machinery.ModuleSpec`。"
-
-#: ../../c-api/import.rst:182
+#: ../../c-api/import.rst:173
 msgid ""
 "Like :c:func:`PyImport_ExecCodeModuleObject`, but *name*, *pathname* and "
 "*cpathname* are UTF-8 encoded strings. Attempts are also made to figure out "
@@ -263,17 +240,13 @@ msgstr ""
 "*cpathname* 为 UTF-8 编码的字符串。如果 *pathname* 也被设为 ``NULL`` 则还会尝试根据 *cpathname* "
 "推断出前者的值。"
 
-#: ../../c-api/import.rst:188
+#: ../../c-api/import.rst:179
 msgid ""
-"Uses :func:`!imp.source_from_cache()` in calculating the source path if only"
-" the bytecode path is provided."
-msgstr "如果只提供了字节码路径则会使用 :func:`!imp.source_from_cache()` 来计算源路径。"
+"Uses :func:`imp.source_from_cache()` in calculating the source path if only "
+"the bytecode path is provided."
+msgstr "如果只提供了字节码路径则会使用 :func:`imp.source_from_cache()` 来计算源路径。"
 
-#: ../../c-api/import.rst:191
-msgid "No longer uses the removed :mod:`!imp` module."
-msgstr "不再使用已移除的 :mod:`!imp` 模块。"
-
-#: ../../c-api/import.rst:197
+#: ../../c-api/import.rst:186
 msgid ""
 "Return the magic number for Python bytecode files (a.k.a. :file:`.pyc` "
 "file). The magic number should be present in the first four bytes of the "
@@ -282,11 +255,11 @@ msgstr ""
 "返回 Python 字节码文件（即 :file:`.pyc` 文件）的魔数。 此魔数应当存在于字节码文件的开头四个字节中，按照小端字节序。 出错时返回 "
 "``-1``。"
 
-#: ../../c-api/import.rst:201
+#: ../../c-api/import.rst:190
 msgid "Return value of ``-1`` upon failure."
 msgstr "失败时返回值 ``-1``。"
 
-#: ../../c-api/import.rst:207
+#: ../../c-api/import.rst:196
 msgid ""
 "Return the magic tag string for :pep:`3147` format Python bytecode file "
 "names.  Keep in mind that the value at ``sys.implementation.cache_tag`` is "
@@ -295,20 +268,20 @@ msgstr ""
 "针对 :pep:`3147` 格式的 Python 字节码文件名返回魔术标签字符串。 请记住在 "
 "``sys.implementation.cache_tag`` 上的值是应当被用来代替此函数的更权威的值。"
 
-#: ../../c-api/import.rst:215
+#: ../../c-api/import.rst:204
 msgid ""
 "Return the dictionary used for the module administration (a.k.a. "
 "``sys.modules``).  Note that this is a per-interpreter variable."
 msgstr "返回用于模块管理的字典 (即 ``sys.modules``)。 请注意这是针对每个解释器的变量。"
 
-#: ../../c-api/import.rst:220
+#: ../../c-api/import.rst:209
 msgid ""
 "Return the already imported module with the given name.  If the module has "
 "not been imported yet then returns ``NULL`` but does not set an error.  "
 "Returns ``NULL`` and sets an error if the lookup failed."
 msgstr "返回给定名称的已导入模块。 如果模块尚未导入则返回 ``NULL`` 但不会设置错误。 如果查找失败则返回 ``NULL`` 并设置错误。"
 
-#: ../../c-api/import.rst:228
+#: ../../c-api/import.rst:217
 msgid ""
 "Return a finder object for a :data:`sys.path`/:attr:`pkg.__path__` item "
 "*path*, possibly by fetching it from the :data:`sys.path_importer_cache` "
@@ -325,7 +298,7 @@ msgstr ""
 "finder` 无法为该 path 条目找到查找器。 结果将缓存到 :data:`sys.path_importer_cache`。 "
 "返回一个指向查找器对象的新引用。"
 
-#: ../../c-api/import.rst:239
+#: ../../c-api/import.rst:228
 msgid ""
 "Load a frozen module named *name*.  Return ``1`` for success, ``0`` if the "
 "module is not found, and ``-1`` with an exception set if the initialization "
@@ -337,11 +310,11 @@ msgstr ""
 " 要在加载成功后访问被导入的模块，请使用 :c:func:`PyImport_ImportModule`。 （请注意此名称有误导性 --- "
 "如果模块已被导入此函数将重载它。）"
 
-#: ../../c-api/import.rst:247
+#: ../../c-api/import.rst:236
 msgid "The ``__file__`` attribute is no longer set on the module."
 msgstr "``__file__`` 属性将不再在模块上设置。"
 
-#: ../../c-api/import.rst:253
+#: ../../c-api/import.rst:242
 msgid ""
 "Similar to :c:func:`PyImport_ImportFrozenModuleObject`, but the name is a "
 "UTF-8 encoded string instead of a Unicode object."
@@ -349,7 +322,7 @@ msgstr ""
 "类似于 :c:func:`PyImport_ImportFrozenModuleObject`，但其名称为 UTF-8 编码的字符串而不是 "
 "Unicode 对象。"
 
-#: ../../c-api/import.rst:261
+#: ../../c-api/import.rst:250
 msgid ""
 "This is the structure type definition for frozen module descriptors, as "
 "generated by the :program:`freeze` utility (see :file:`Tools/freeze/` in the"
@@ -359,13 +332,13 @@ msgstr ""
 "这是针对已冻结模块描述器的结构类型定义，与由 :program:`freeze` 工具所生成的一致 (请参看 Python 源代码发行版中的 "
 ":file:`Tools/freeze/`)。 其定义可在 :file:`Include/import.h` 中找到::"
 
-#: ../../c-api/import.rst:273
+#: ../../c-api/import.rst:262
 msgid ""
 "The new ``is_package`` field indicates whether the module is a package or "
 "not. This replaces setting the ``size`` field to a negative value."
 msgstr "新的 ``is_package`` 字段指明模块是否为一个包。 这替代了将 ``size`` 设为负值的做法。"
 
-#: ../../c-api/import.rst:279
+#: ../../c-api/import.rst:268
 msgid ""
 "This pointer is initialized to point to an array of :c:struct:`_frozen` "
 "records, terminated by one whose members are all ``NULL`` or zero.  When a "
@@ -376,7 +349,7 @@ msgstr ""
 "该指针被初始化为指向一个 :c:struct:`_frozen` 记录的数组，以一个所有成员均为 ``NULL`` 或零的记录表示结束。 "
 "当一个冻结模块被导入时，它将在此表中被搜索。 第三方代码可以利用此方式来提供动态创建的冻结模块集。"
 
-#: ../../c-api/import.rst:287
+#: ../../c-api/import.rst:276
 msgid ""
 "Add a single module to the existing table of built-in modules.  This is a "
 "convenience wrapper around :c:func:`PyImport_ExtendInittab`, returning "
@@ -389,7 +362,7 @@ msgstr ""
 "``-1``。 新的模块可使用名称 *name* 来导入，并使用函数 *initfunc* 作为在第一次尝试导入时调用的初始化函数。 此函数应当在 "
 ":c:func:`Py_Initialize` 之前调用。"
 
-#: ../../c-api/import.rst:297
+#: ../../c-api/import.rst:286
 msgid ""
 "Structure describing a single entry in the list of built-in modules.  Each "
 "of these structures gives the name and initialization function for a module "
@@ -402,7 +375,7 @@ msgstr ""
 "Python 的程序可以使用该结构体的数组来与 :c:func:`PyImport_ExtendInittab` 相结合以提供额外的内置模块。 "
 "该结构体在 :file:`Include/import.h` 中被定义为::"
 
-#: ../../c-api/import.rst:312
+#: ../../c-api/import.rst:301
 msgid ""
 "Add a collection of modules to the table of built-in modules.  The *newtab* "
 "array must end with a sentinel entry which contains ``NULL`` for the "
@@ -416,7 +389,7 @@ msgstr ""
 "字段的岗哨条目结束；未能提供岗哨值会导致内存错误。 成功时返回 ``0`` 或者如果无法分配足够内存来扩展内部表则返回 ``-1``。 "
 "当发生失败时，将不会添加模块到内部表。 此函数必须在 :c:func:`Py_Initialize` 之前调用。"
 
-#: ../../c-api/import.rst:319
+#: ../../c-api/import.rst:308
 msgid ""
 "If Python is initialized multiple times, :c:func:`PyImport_AppendInittab` or"
 " :c:func:`PyImport_ExtendInittab` must be called before each Python "
@@ -453,6 +426,6 @@ msgstr "__import__"
 msgid "compile"
 msgstr "编译"
 
-#: ../../c-api/import.rst:259
+#: ../../c-api/import.rst:248
 msgid "freeze utility"
 msgstr "冻结工具"
