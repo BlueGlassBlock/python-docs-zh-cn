@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 14:14+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -246,18 +246,12 @@ msgid ""
 "constructs a tuple object whose first item is the integer :c:data:`errno` "
 "value and whose second item is the corresponding error message (gotten from "
 ":c:func:`strerror`), and then calls ``PyErr_SetObject(type, object)``.  On "
-"Unix, when the :c:data:`errno` value is :const:`EINTR`, indicating an "
+"Unix, when the :c:data:`errno` value is :c:macro:`EINTR`, indicating an "
 "interrupted system call, this calls :c:func:`PyErr_CheckSignals`, and if "
 "that set the error indicator, leaves it set to that.  The function always "
 "returns ``NULL``, so a wrapper function around a system call can write "
 "``return PyErr_SetFromErrno(type);`` when the system call returns an error."
 msgstr ""
-"这是个便捷函数，当 C 库函数返回错误并设置 :c:data:`errno` 时，这个函数会触发异常。它构造一个元组对象，其第一项是整数值 "
-":c:data:`errno`，第二项是相应的错误消息（从 :c:func:`strerror` 获取），然后调用 "
-"``PyErr_SetObject(type, object)``。在 Unix 上，当 :c:data:`errno` 值是 "
-":const:`EINTR` ，即中断的系统调用时，这个函数会调用 :c:func:`PyErr_CheckSignals` "
-"，如果设置了错误指示器，则将其设置为该值。该函数永远返回 ``NULL`` ，因此当系统调用返回错误时，围绕系统调用的包装函数可以写成 ``return"
-" PyErr_SetFromErrno(type);``。"
 
 #: ../../c-api/exceptions.rst:177
 msgid ""
@@ -793,15 +787,15 @@ msgstr "这个函数可以由希望被用户请求(例如按Ctrl-C)中断的长�
 
 #: ../../c-api/exceptions.rst:634
 msgid ""
-"The default Python signal handler for :const:`SIGINT` raises the "
+"The default Python signal handler for :c:macro:`SIGINT` raises the "
 ":exc:`KeyboardInterrupt` exception."
-msgstr "针对 :const:`SIGINT` 的默认 Python 信号处理句柄会引发 :exc:`KeyboardInterrupt` 异常。"
+msgstr ""
 
 #: ../../c-api/exceptions.rst:645
 msgid ""
-"Simulate the effect of a :const:`SIGINT` signal arriving. This is equivalent"
-" to ``PyErr_SetInterruptEx(SIGINT)``."
-msgstr "模拟一个 :const:`SIGINT` 信号到达的效果。 这等价于 ``PyErr_SetInterruptEx(SIGINT)``。"
+"Simulate the effect of a :c:macro:`SIGINT` signal arriving. This is "
+"equivalent to ``PyErr_SetInterruptEx(SIGINT)``."
+msgstr ""
 
 #: ../../c-api/exceptions.rst:649 ../../c-api/exceptions.rst:676
 msgid ""
@@ -831,10 +825,9 @@ msgstr ""
 #: ../../c-api/exceptions.rst:668
 msgid ""
 "If the given signal isn't handled by Python (it was set to "
-":data:`signal.SIG_DFL` or :data:`signal.SIG_IGN`), it will be ignored."
+":py:const:`signal.SIG_DFL` or :py:const:`signal.SIG_IGN`), it will be "
+"ignored."
 msgstr ""
-"如果给定的信号不是由 Python 来处理的 (即被设为 :data:`signal.SIG_DFL` 或 "
-":data:`signal.SIG_IGN`)，它将会被忽略。"
 
 #: ../../c-api/exceptions.rst:671
 msgid ""
@@ -945,21 +938,17 @@ msgstr ""
 
 #: ../../c-api/exceptions.rst:757
 msgid ""
-"Return the cause (either an exception instance, or :const:`None`, set by "
-"``raise ... from ...``) associated with the exception as a new reference, as"
-" accessible from Python through :attr:`__cause__`."
+"Return the cause (either an exception instance, or ``None``, set by ``raise "
+"... from ...``) associated with the exception as a new reference, as "
+"accessible from Python through :attr:`__cause__`."
 msgstr ""
-"将与异常相关联的原因（一个异常实例，或是 :const:`None`，由 ``raise ... from ...`` 设置）作为一个新引用返回，可在 "
-"Python 中通过 :attr:`__cause__` 来访问。"
 
 #: ../../c-api/exceptions.rst:764
 msgid ""
 "Set the cause associated with the exception to *cause*.  Use ``NULL`` to "
 "clear it.  There is no type check to make sure that *cause* is either an "
-"exception instance or :const:`None`.  This steals a reference to *cause*."
+"exception instance or ``None``.  This steals a reference to *cause*."
 msgstr ""
-"将与异常相关联的原因设置为 *cause*。 使用 ``NULL`` 来清空它。 它没有用来确保 *cause* 是一个异常实例或 "
-":const:`None` 的类型检查。 这将偷取一个指向 *cause* 的引用。"
 
 #: ../../c-api/exceptions.rst:768
 msgid ""
@@ -1080,12 +1069,10 @@ msgstr "标记一个递归的 C 层级调用即将被执行的点位。"
 
 #: ../../c-api/exceptions.rst:877
 msgid ""
-"If :const:`USE_STACKCHECK` is defined, this function checks if the OS stack "
-"overflowed using :c:func:`PyOS_CheckStack`.  In this is the case, it sets a "
-":exc:`MemoryError` and returns a nonzero value."
+"If :c:macro:`USE_STACKCHECK` is defined, this function checks if the OS "
+"stack overflowed using :c:func:`PyOS_CheckStack`.  In this is the case, it "
+"sets a :exc:`MemoryError` and returns a nonzero value."
 msgstr ""
-"如果定义了 :const:`USE_STACKCHECK`，此函数会使用 :c:func:`PyOS_CheckStack` "
-"来检查操作系统堆栈是否溢出。 在这种情况下，它将设置一个 :exc:`MemoryError` 并返回非零值。"
 
 #: ../../c-api/exceptions.rst:881
 msgid ""

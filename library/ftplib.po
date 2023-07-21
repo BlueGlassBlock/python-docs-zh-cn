@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -132,10 +132,8 @@ msgstr ""
 msgid ""
 "The class now supports hostname check with "
 ":attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see "
-":data:`ssl.HAS_SNI`)."
+":const:`ssl.HAS_SNI`)."
 msgstr ""
-"本类现在支持使用 :attr:`ssl.SSLContext.check_hostname` 和 *服务器名称指示* （参阅 "
-":data:`ssl.HAS_SNI`）进行主机名检查。"
 
 #: ../../library/ftplib.rst:116
 msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
@@ -525,8 +523,8 @@ msgid ""
 msgstr ":class:`FTP_TLS` 类继承自 :class:`FTP`，它定义了下述其他对象："
 
 #: ../../library/ftplib.rst:434
-msgid "The SSL version to use (defaults to :attr:`ssl.PROTOCOL_SSLv23`)."
-msgstr "欲采用的 SSL 版本（默认为 :attr:`ssl.PROTOCOL_SSLv23`）。"
+msgid "The SSL version to use (defaults to :data:`ssl.PROTOCOL_SSLv23`)."
+msgstr ""
 
 #: ../../library/ftplib.rst:438
 msgid ""
@@ -538,10 +536,8 @@ msgstr "通过使用 TLS 或 SSL 来设置一个安全控制连接，具体取�
 msgid ""
 "The method now supports hostname check with "
 ":attr:`ssl.SSLContext.check_hostname` and *Server Name Indication* (see "
-":data:`ssl.HAS_SNI`)."
+":const:`ssl.HAS_SNI`)."
 msgstr ""
-"此方法现在支持使用 :attr:`ssl.SSLContext.check_hostname` 和 *服务器名称指示* (参见 "
-":data:`ssl.HAS_SNI`) 进行主机名检查。"
 
 #: ../../library/ftplib.rst:448
 msgid ""

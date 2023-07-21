@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -113,18 +113,15 @@ msgstr "模拟一个信号到达主线程的效果。 线程可使用此函数�
 #: ../../library/_thread.rst:72
 msgid ""
 "If given, *signum* is the number of the signal to simulate. If *signum* is "
-"not given, :data:`signal.SIGINT` is simulated."
+"not given, :const:`signal.SIGINT` is simulated."
 msgstr ""
-"如果给出 *signum*，则表示要模拟的信号的编号。 如果未给出 *signum*，则将模拟 :data:`signal.SIGINT`。"
 
 #: ../../library/_thread.rst:75
 msgid ""
 "If the given signal isn't handled by Python (it was set to "
-":data:`signal.SIG_DFL` or :data:`signal.SIG_IGN`), this function does "
+":const:`signal.SIG_DFL` or :const:`signal.SIG_IGN`), this function does "
 "nothing."
 msgstr ""
-"如果 Python 没有处理给定的信号 (它被设为 :data:`signal.SIG_DFL` 或 "
-":data:`signal.SIG_IGN`)，此函数将不做任何操作。"
 
 #: ../../library/_thread.rst:79
 msgid "The *signum* argument is added to customize the signal number."

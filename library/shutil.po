@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-16 14:12+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -656,10 +656,8 @@ msgstr "*mode* 是一个传递给 :func:`os.access` 的权限掩码，在默认�
 #: ../../library/shutil.rst:433
 msgid ""
 "When no *path* is specified, the results of :func:`os.environ` are used, "
-"returning either the \"PATH\" value or a fallback of :attr:`os.defpath`."
+"returning either the \"PATH\" value or a fallback of :data:`os.defpath`."
 msgstr ""
-"当未指定 *path* 时，将会使用 :func:`os.environ` 的结果，返回 \"PATH\" 的值或回退为 "
-":attr:`os.defpath`。"
 
 #: ../../library/shutil.rst:436
 msgid ""
