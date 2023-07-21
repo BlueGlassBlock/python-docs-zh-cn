@@ -395,7 +395,7 @@ msgstr "标注作用域是在 Python 3.12 中作为 :pep:`695` 的一部分引�
 
 #: ../../reference/executionmodel.rst:237
 msgid "Lazy evaluation"
-msgstr ""
+msgstr "惰性求值"
 
 #: ../../reference/executionmodel.rst:239
 msgid ""
