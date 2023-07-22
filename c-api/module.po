@@ -181,7 +181,7 @@ msgstr "模块定义结构，它保存创建模块对象所需的所有信息。
 
 #: ../../c-api/module.rst:148
 msgid "Always initialize this member to :c:data:`PyModuleDef_HEAD_INIT`."
-msgstr ""
+msgstr "总是将此成员初始化为 :c:data:`PyModuleDef_HEAD_INIT`。"
 
 #: ../../c-api/module.rst:152
 msgid "Name for the new module."
@@ -314,6 +314,8 @@ msgid ""
 "like :c:func:`PyModule_Create2` with *module_api_version* set to "
 ":c:macro:`PYTHON_API_VERSION`."
 msgstr ""
+"根据在 *def* 中给出的定义创建一个新的模块对象。 它的行为类似于 :c:func:`PyModule_Create2` 将 "
+"*module_api_version* 设为 :c:macro:`PYTHON_API_VERSION`。"
 
 #: ../../c-api/module.rst:264
 msgid ""
@@ -512,6 +514,9 @@ msgid ""
 " *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with "
 "*module_api_version* set to :c:macro:`PYTHON_API_VERSION`."
 msgstr ""
+"根据在 *def* 中给出的定义和 ModuleSpec *spec* 创建一个新的模块对象。 它的行为类似于 "
+":c:func:`PyModule_FromDefAndSpec2` 将 *module_api_version* 设为 "
+":c:macro:`PYTHON_API_VERSION`。"
 
 #: ../../c-api/module.rst:399
 msgid ""
