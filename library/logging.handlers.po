@@ -1678,6 +1678,10 @@ msgid ""
 ":data:`logging.raiseExceptions` is ``False``) or a message printed to "
 "``sys.stderr`` (if :data:`logging.raiseExceptions` is ``True``)."
 msgstr ""
+"将准备 LogRecord 的结果排入队列。 如果发生了异常（例如由于有界队列已满），则会调用 "
+":meth:`~logging.Handler.handleError` 方法来处理错误。 这可能导致记录被静默地丢弃 (当 "
+":data:`logging.raiseExceptions` 为 ``False`` 时) 或者消息被打印到 ``sys.stderr`` (当 "
+":data:`logging.raiseExceptions` 为 ``True`` 时)。"
 
 #: ../../library/logging.handlers.rst:1059
 msgid ""

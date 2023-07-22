@@ -85,7 +85,7 @@ msgstr "在 macOS (也许还有其他平台) 上，可执行文件可能是包�
 msgid ""
 "To get at the \"64-bitness\" of the current interpreter, it is more reliable"
 " to query the :data:`sys.maxsize` attribute::"
-msgstr ""
+msgstr "要获取当前解释器的“64 位性”，更可靠的做法是查询 :data:`sys.maxsize` 属性::"
 
 #: ../../library/platform.rst:56
 msgid ""

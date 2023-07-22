@@ -153,6 +153,10 @@ msgid ""
 " C++ compiler). :c:macro:`USE_STACKCHECK` will be defined automatically; you"
 " should never change the definition in your own code."
 msgstr ""
+"当解释器耗尽栈空间时返回真值。 这是一个可靠的检查，但仅在已定义 :c:macro:`USE_STACKCHECK` 时可用（目前是在使用 "
+"Microsoft Visual C++ 编译器的特定 Windows 版本上）。 :c:macro:`USE_STACKCHECK` "
+"将被自动定义；你绝不应该在你自己的代码中改变此定义。will be defined automatically; you should never "
+"change the definition in your own code."
 
 #: ../../c-api/sys.rst:108
 msgid ""

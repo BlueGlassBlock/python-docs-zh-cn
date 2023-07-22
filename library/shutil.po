@@ -658,6 +658,8 @@ msgid ""
 "When no *path* is specified, the results of :func:`os.environ` are used, "
 "returning either the \"PATH\" value or a fallback of :data:`os.defpath`."
 msgstr ""
+"当未指定 *path* 时，将会使用 :func:`os.environ` 的结果，返回 \"PATH\" 值或回退为 "
+":data:`os.defpath`。"
 
 #: ../../library/shutil.rst:436
 msgid ""

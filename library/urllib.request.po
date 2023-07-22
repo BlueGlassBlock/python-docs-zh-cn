@@ -218,7 +218,7 @@ msgstr "增加了 *cafile* 与 *capath*。"
 msgid ""
 "HTTPS virtual hosts are now supported if possible (that is, if "
 ":const:`ssl.HAS_SNI` is true)."
-msgstr ""
+msgstr "现在将在可能的情况下支持 HTTPS 虚拟主机（也就是说，如果 :const:`ssl.HAS_SNI` 为真值）。"
 
 #: ../../library/urllib.request.rst:104
 msgid "*data* can be an iterable object."

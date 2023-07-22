@@ -1286,6 +1286,8 @@ msgid ""
 "domains (:c:macro:`PYMEM_DOMAIN_RAW`, :c:macro:`PYMEM_DOMAIN_MEM`, "
 ":c:macro:`PYMEM_DOMAIN_OBJ`)."
 msgstr ""
+"``malloc``: 对所有域 (:c:macro:`PYMEM_DOMAIN_RAW`, :c:macro:`PYMEM_DOMAIN_MEM`, "
+":c:macro:`PYMEM_DOMAIN_OBJ`) 使用 C 库的 :c:func:`malloc` 函数。"
 
 #: ../../using/cmdline.rst:902
 msgid ""

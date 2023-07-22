@@ -143,7 +143,7 @@ msgstr "添加了 *source_address*, *context* 和 *check_hostname*。"
 msgid ""
 "This class now supports HTTPS virtual hosts if possible (that is, if "
 ":const:`ssl.HAS_SNI` is true)."
-msgstr ""
+msgstr "这个类现在会在可能的情况下（即当 :const:`ssl.HAS_SNI` 为真值时）支持 HTTPS 虚拟主机。"
 
 #: ../../library/http.client.rst:88
 msgid ""
