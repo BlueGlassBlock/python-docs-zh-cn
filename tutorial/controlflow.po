@@ -327,6 +327,7 @@ msgid ""
 "Patterns can be arbitrarily nested.  For example, if we have a short list of"
 " Points, with ``__match_args__`` added, we could match it like this::"
 msgstr ""
+"模式可以被任意地嵌套。 举例来说，如果我一个由 Point 组成的列表，当添加了 ``__match_args__`` 时，我们可以这样来匹配它::"
 
 #: ../../tutorial/controlflow.rst:366
 msgid ""
