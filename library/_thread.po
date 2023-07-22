@@ -115,6 +115,7 @@ msgid ""
 "If given, *signum* is the number of the signal to simulate. If *signum* is "
 "not given, :const:`signal.SIGINT` is simulated."
 msgstr ""
+"如果给出 *signum*，则表示要模拟的信号的编号。 如果未给出 *signum*，则将模拟 :const:`signal.SIGINT`。"
 
 #: ../../library/_thread.rst:75
 msgid ""
@@ -122,6 +123,8 @@ msgid ""
 ":const:`signal.SIG_DFL` or :const:`signal.SIG_IGN`), this function does "
 "nothing."
 msgstr ""
+"如果给出的信号未被 Python 处理 (它被设为 :const:`signal.SIG_DFL` 或 "
+":const:`signal.SIG_IGN`)，则此函数将不做任何操作。"
 
 #: ../../library/_thread.rst:79
 msgid "The *signum* argument is added to customize the signal number."
