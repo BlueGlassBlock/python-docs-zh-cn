@@ -311,16 +311,16 @@ msgstr ""
 
 #: ../../library/fcntl.rst:175
 msgid ":const:`0` -- relative to the start of the file (:const:`os.SEEK_SET`)"
-msgstr ""
+msgstr ":const:`0` -- 相对于文件开头 (:const:`os.SEEK_SET`)"
 
 #: ../../library/fcntl.rst:176
 msgid ""
 ":const:`1` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
-msgstr ""
+msgstr ":const:`1` -- 相对于当前缓冲区位置 (:const:`os.SEEK_CUR`)"
 
 #: ../../library/fcntl.rst:177
 msgid ":const:`2` -- relative to the end of the file (:const:`os.SEEK_END`)"
-msgstr ""
+msgstr ":const:`2` -- 相对于文件末尾 (:const:`os.SEEK_END`)"
 
 #: ../../library/fcntl.rst:179
 msgid ""
@@ -362,6 +362,8 @@ msgid ""
 "present in the :mod:`os` module (on BSD only), the :func:`os.open` function "
 "provides an alternative to the :func:`lockf` and :func:`flock` functions."
 msgstr ""
+"如果加锁旗标 :const:`~os.O_SHLOCK` 和 :const:`~os.O_EXLOCK` 存在于 :mod:`os` 模块中（仅 BSD"
+" 专属），则 :func:`os.open` 函数提供了对 :func:`lockf` 和 :func:`flock` 函数的替代。"
 
 #: ../../library/fcntl.rst:10 ../../library/fcntl.rst:10
 msgid "UNIX"
