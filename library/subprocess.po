@@ -2084,6 +2084,8 @@ msgid ""
 "prevent ``vfork()`` from being used by Python, you can set the "
 ":const:`subprocess._USE_VFORK` attribute to a false value."
 msgstr ""
+"如果你遇到了在预想中非常不正常的需要防止 ``vfork()`` 被 Python 所使用的情况，你可以将 "
+":const:`subprocess._USE_VFORK` 属性设为假值。"
 
 #: ../../library/subprocess.rst:1619
 msgid ""
@@ -2092,6 +2094,8 @@ msgid ""
 ":const:`subprocess._USE_POSIX_SPAWN` attribute if you need to prevent use of"
 " that."
 msgstr ""
+"设置该值对于 ``posix_spawn()`` 的使用没有影响，它可以在内部使用在其 libc 实现中的 ``vfork()``。 "
+"如果你需要防止其被使用则可利用类似的 :const:`subprocess._USE_POSIX_SPAWN` 属性。"
 
 #: ../../library/subprocess.rst:1628
 msgid ""
