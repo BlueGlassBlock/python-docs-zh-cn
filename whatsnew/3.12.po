@@ -810,6 +810,8 @@ msgid ""
 "provide finer grained control of ``None`` and empty strings by "
 ":class:`~csv.writer` objects."
 msgstr ""
+"增加了 :const:`~csv.QUOTE_NOTNULL` 和 :const:`~csv.QUOTE_STRINGS` 旗标以通过 "
+":class:`~csv.writer` 对象提供对 ``None`` 和空字符串的更细粒度控制。"
 
 #: ../../whatsnew/3.12.rst:563
 msgid "dis"
@@ -915,6 +917,8 @@ msgid ""
 ":func:`os.pidfd_open` in non-blocking mode. (Contributed by Kumar Aditya in "
 ":gh:`93312`.)"
 msgstr ""
+"增加了 :const:`os.PIDFD_NONBLOCK` 以在非阻塞模式下打开具有 :func:`os.pidfd_open` 的进程的文件描述符。"
+" （由 Kumar Aditya 在 :gh:`93312` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:619
 msgid ""
@@ -1356,7 +1360,7 @@ msgstr "unicodedata"
 msgid ""
 "The Unicode database has been updated to version 15.0.0. (Contributed by "
 "Benjamin Peterson in :gh:`96734`)."
-msgstr ""
+msgstr "Unicode 数据库已更新到 15.0.0 版。 （由 Benjamin Peterson 在 :gh:`96734` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:874
 msgid "unittest"

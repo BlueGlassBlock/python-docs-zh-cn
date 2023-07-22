@@ -1164,7 +1164,7 @@ msgstr "布尔类型 - :class:`bool`"
 msgid ""
 "Booleans represent truth values. The :class:`bool` type has exactly two "
 "constant instances: ``True`` and ``False``."
-msgstr ""
+msgstr "代表真值的布尔对象。 :class:`bool` 类型只有两个常量实例: ``True`` 和 ``False``。"
 
 #: ../../library/stdtypes.rst:818
 msgid ""

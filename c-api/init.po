@@ -264,6 +264,8 @@ msgid ""
 ":c:member:`PyConfig.write_bytecode` should be used instead, see :ref:`Python"
 " Initialization Configuration <init-config>`."
 msgstr ""
+"此 API 仅为向下兼容而保留：应当改为设置 :c:member:`PyConfig.write_bytecode`，参见 :ref:`Python "
+"初始化配置 <init-config>`。"
 
 #: ../../c-api/init.rst:118
 msgid ""
@@ -283,6 +285,8 @@ msgid ""
 ":c:member:`PyConfig.pathconfig_warnings` should be used instead, see "
 ":ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
+"此 API 仅为向下兼容而保留：应当改为设置 :c:member:`PyConfig.pathconfig_warnings`，参见 "
+":ref:`Python 初始化配置 <init-config>`。"
 
 #: ../../c-api/init.rst:132
 msgid ""
@@ -301,6 +305,8 @@ msgid ""
 " be used instead, see :ref:`Python Initialization Configuration <init-"
 "config>`."
 msgstr ""
+"此 API 仅为向下兼容而保留：应当改为设置 :c:member:`PyConfig.hash_seed` 和 "
+":c:member:`PyConfig.use_hash_seed`，参见 :ref:`Python 初始化配置 <init-config>`。"
 
 #: ../../c-api/init.rst:146
 msgid ""

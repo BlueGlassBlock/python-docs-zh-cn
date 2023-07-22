@@ -48,6 +48,9 @@ msgid ""
 "Additional macros can be found under :ref:`reference counting "
 "<countingrefs>`."
 msgstr ""
+"所有的 Python 对象最终都会在对象的内存表示的开始部分共享少量的字段。 这些字段由 :c:type:`PyObject` 和 "
+":c:type:`PyVarObject` 类型来表示，相应地，这些类型又是由一些宏扩展来定义的，它们也直接或间接地被用于所有其他 Python "
+"对象的定义。 附加的宏可以在 :ref:`引用计数 <countingrefs>` 下找到。"
 
 #: ../../c-api/structures.rst:26
 msgid ""
@@ -208,12 +211,14 @@ msgid ""
 " :ref:`METH_VARARGS | METH_KEYWORDS <METH_VARARGS-METH_KEYWORDS>`. The "
 "function signature is::"
 msgstr ""
+"用于在 C 中实现具有 :ref:`METH_VARARGS | METH_KEYWORDS <METH_VARARGS-METH_KEYWORDS>`"
+" 签名的 Python 可调用对象的函数类型。 函数的签名为::"
 
 #: ../../c-api/structures.rst:192
 msgid ""
 "Type of the functions used to implement Python callables in C with signature"
 " :c:macro:`METH_FASTCALL`. The function signature is::"
-msgstr ""
+msgstr "用于在 C 中实现具有 :c:macro:`METH_FASTCALL` 签名的 Python 可调用对象的函数类型。 函数的签名为::"
 
 #: ../../c-api/structures.rst:202
 msgid ""

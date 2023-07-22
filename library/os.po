@@ -137,7 +137,7 @@ msgstr "导入的依赖特定操作系统的模块的名称。以下名称目前
 msgid ""
 ":data:`sys.platform` has a finer granularity.  :func:`os.uname` gives "
 "system-dependent version information."
-msgstr ""
+msgstr ":data:`sys.platform` 具有更细的粒度。 :func:`os.uname` 将给出基于不同系统的版本信息。"
 
 #: ../../library/os.rst:66
 msgid ""
@@ -483,7 +483,7 @@ msgstr ""
 msgid ""
 ":data:`environb` is only available if :const:`supports_bytes_environ` is "
 "``True``."
-msgstr ""
+msgstr ":data:`environb` 仅在 :const:`supports_bytes_environ` 为 ``True`` 时可用。"
 
 #: ../../library/os.rst:250
 msgid "These functions are described in :ref:`os-file-dir`."

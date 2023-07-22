@@ -34,7 +34,7 @@ msgstr "构建要求"
 
 #: ../../using/configure.rst:8
 msgid "Features required to build CPython:"
-msgstr ""
+msgstr "编译 CPython 所需的特性:"
 
 #: ../../using/configure.rst:10
 msgid ""
@@ -43,6 +43,9 @@ msgid ""
 "<https://en.wikipedia.org/wiki/C11_(C_standard_revision)#Optional_features>`_"
 " are not required."
 msgstr ""
+"`C11 <https://en.cppreference.com/w/c/11>`_ 编译器。 `可选的 C11 特性 "
+"<https://en.wikipedia.org/wiki/C11_(C_standard_revision)#Optional_features>`_"
+" 不是必须的。"
 
 #: ../../using/configure.rst:15
 msgid ""

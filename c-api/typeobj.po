@@ -1408,6 +1408,8 @@ msgid ""
 " be the type name, and the module name explicitly stored in the type dict as"
 " the value for key ``'__module__'``."
 msgstr ""
+"对于 :ref:`动态分配的类型对象 <heap-types>`，这应为类型名称，而模块名称将作为 ``'__module__'`` "
+"键的值显式地保存在类型字典中。"
 
 #: ../../c-api/typeobj.rst:590
 msgid ""

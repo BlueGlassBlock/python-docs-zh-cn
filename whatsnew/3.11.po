@@ -893,6 +893,8 @@ msgid ""
 "Add :const:`datetime.UTC`, a convenience alias for "
 ":attr:`datetime.timezone.utc`. (Contributed by Kabir Kwatra in :gh:`91973`.)"
 msgstr ""
+"增加了 :const:`datetime.UTC`，是 :attr:`datetime.timezone.utc` 的便捷别名。 （由 Kabir "
+"Kwatra 在 :gh:`91973` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:646
 msgid ""
@@ -991,6 +993,9 @@ msgid ""
 "``'re.ASCII'`` for the :const:`~re.ASCII` member of :class:`re.RegexFlag` "
 "rather than ``'RegexFlag.ASCII'``."
 msgstr ""
+"增加了 :func:`~enum.global_enum` 枚举装饰器，它会调整 :meth:`~object.__repr__` 和 "
+":meth:`~object.__str__` 以将值显示为其模块的成员而不是枚举类的成员。 例如，``'re.ASCII'`` 是 "
+":class:`re.RegexFlag` 的 :const:`~re.ASCII` 成员而不是 ``'RegexFlag.ASCII'``。"
 
 #: ../../whatsnew/3.11.rst:696
 msgid ""
@@ -1557,6 +1562,10 @@ msgid ""
 "affected by system clock changes. (Contributed by Victor Stinner in "
 ":issue:`41710`.)"
 msgstr ""
+"在 Unix 上，如果 ``sem_clockwait()`` 函数存在于 C 库中 (即glibc 2.30 及更新的版本)，则 "
+":meth:`threading.Lock.acquire` 方法现在将使用单调时钟 (:const:`time.CLOCK_MONOTONIC`) "
+"来计算超时，而不使用系统时钟 (:const:`time.CLOCK_REALTIME`)，以不受系统时钟修改的影响。 （由 Victor "
+"Stinner 在 :issue:`41710` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1075
 msgid "time"

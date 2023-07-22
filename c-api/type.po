@@ -65,6 +65,10 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_flags` itself is not part of the :ref:`limited "
 "API <limited-c-api>`."
 msgstr ""
+"返回 *type* 的 :c:member:`~PyTypeObject.tp_flags` 成员。 此函数主要是配合 "
+"``Py_LIMITED_API`` 使用；单独的旗标位会确保在各个 Python 发布版之间保持稳定，但对 "
+":c:member:`~PyTypeObject.tp_flags` 本身的访问并不是 :ref:`受限 API <limited-c-api>` "
+"的一部分。"
 
 #: ../../c-api/type.rst:49
 msgid "The return type is now ``unsigned long`` rather than ``long``."
@@ -89,7 +93,7 @@ msgstr ""
 msgid ""
 "Extension modules should continue to use ``tp_dict``, directly or "
 "indirectly, when setting up their own types."
-msgstr ""
+msgstr "扩展模块在设置它们自己的类型时应当继续直接或间接地使用 ``tp_dict``。"
 
 #: ../../c-api/type.rst:72
 msgid ""
@@ -105,6 +109,8 @@ msgid ""
 "error (e.g. no more watcher IDs available), return ``-1`` and set an "
 "exception."
 msgstr ""
+"注册 *callback* 作为类型监视器。 返回一个非负的整数 ID，它必须传给将来对 :c:func:`PyType_Watch` 的调用。 "
+"如果出错（例如没有足够的可用监视器 ID）,则返回 ``-1`` 并设置一个异常。"
 
 #: ../../c-api/type.rst:89
 msgid ""

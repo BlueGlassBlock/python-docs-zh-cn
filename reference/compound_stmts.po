@@ -1577,7 +1577,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1265
 #: ../../reference/compound_stmts.rst:1452
 msgid "Type parameter lists are new in Python 3.12."
-msgstr ""
+msgstr "类型形参列表是在 Python 3.12 中新增的。"
 
 #: ../../reference/compound_stmts.rst:1273
 msgid ""
@@ -2124,7 +2124,7 @@ msgstr "这相当于："
 
 #: ../../reference/compound_stmts.rst:1811
 msgid "Generic type aliases"
-msgstr ""
+msgstr "泛型类型别名"
 
 #: ../../reference/compound_stmts.rst:1813
 msgid ""

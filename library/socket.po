@@ -542,7 +542,7 @@ msgstr ""
 #: ../../library/socket.rst:257
 msgid ""
 "The ``service_id`` is the service identifier of the registered service."
-msgstr ""
+msgstr "``service_id`` 是已注册服务的服务标识号。"
 
 #: ../../library/socket.rst:261
 msgid ""

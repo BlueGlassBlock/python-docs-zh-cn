@@ -588,10 +588,12 @@ msgid ""
 ":py:const:`~socket.AF_INET6` depending on *host* (or the *family* argument, "
 "if provided)."
 msgstr ""
+"套接字族可以是 :py:const:`~socket.AF_INET` 或 :py:const:`~socket.AF_INET6`，具体取决于 "
+"*host* (或 *family* 参数，如果有提供的话)。"
 
 #: ../../library/asyncio-eventloop.rst:410
 msgid "The socket type will be :py:const:`~socket.SOCK_STREAM`."
-msgstr ""
+msgstr "套接字类型将为 :py:const:`~socket.SOCK_STREAM`。"
 
 #: ../../library/asyncio-eventloop.rst:412
 #: ../../library/asyncio-eventloop.rst:1152
@@ -787,7 +789,7 @@ msgstr ":class:`ProactorEventLoop` 类中添加 SSL/TLS 支持。"
 msgid ""
 "The socket option :py:const:`~socket.TCP_NODELAY` is set by default for all "
 "TCP connections."
-msgstr ""
+msgstr "套接字选项 :py:const:`~socket.TCP_NODELAY` 默认已为所有 TCP 连接进行了设置。"
 
 #: ../../library/asyncio-eventloop.rst:517
 #: ../../library/asyncio-eventloop.rst:842
@@ -848,6 +850,8 @@ msgid ""
 ":py:const:`~socket.AF_INET6`, or :py:const:`~socket.AF_UNIX`, depending on "
 "*host* (or the *family* argument, if provided)."
 msgstr ""
+"套接字族可以是 :py:const:`~socket.AF_INET`, :py:const:`~socket.AF_INET6` 或 "
+":py:const:`~socket.AF_UNIX`，具体取决于 *host* (或 *family* 参数，如果有提供的话)。"
 
 #: ../../library/asyncio-eventloop.rst:559
 msgid "The socket type will be :py:const:`~socket.SOCK_DGRAM`."

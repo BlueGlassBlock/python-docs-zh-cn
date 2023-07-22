@@ -1720,6 +1720,9 @@ msgid ""
 " :const:`~os.O_NOFOLLOW_ANY` for macOS. (Contributed by Dong-hee Na in "
 ":issue:`43106`.)"
 msgstr ""
+"为 macOS 增加了 :const:`~os.O_EVTONLY`, :const:`~os.O_FSYNC`, "
+":const:`~os.O_SYMLINK` 和 :const:`~os.O_NOFOLLOW_ANY`。 （由 Dong-hee Na 在 "
+":issue:`43106` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1261
 msgid "os.path"
@@ -1850,6 +1853,8 @@ msgid ""
 "default instead of :mod:`pickle` protocol ``3`` when creating shelves. "
 "(Contributed by Zackery Spytz in :issue:`34204`.)"
 msgstr ""
+"现在 :mod:`shelve` 在创建 shelve 时默认使用 :const:`pickle.DEFAULT_PROTOCOL` 而不是 "
+":mod:`pickle` 协议 ``3``。 （由 Zackery Spytz 在 :issue:`34204` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1327
 msgid "statistics"
@@ -1916,6 +1921,10 @@ msgid ""
 ":issue:`38820`, :issue:`43794`, :issue:`43788`, :issue:`43791`, "
 ":issue:`43799`, :issue:`43920`, :issue:`43789`, and :issue:`43811`.)"
 msgstr ""
+"ssl 模块已初步支持 OpenSSL 3.0.0 和新选项 :const:`~ssl.OP_IGNORE_UNEXPECTED_EOF`。 （由 "
+"Christian Heimes 在 :issue:`38820`, :issue:`43794`, :issue:`43788`, "
+":issue:`43791`, :issue:`43799`, :issue:`43920`, :issue:`43789` 和 "
+":issue:`43811` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1364
 msgid ""
@@ -1974,6 +1983,8 @@ msgid ""
 "A new verify flag :const:`~ssl.VERIFY_X509_PARTIAL_CHAIN` has been added. "
 "(Contributed by l0x in :issue:`40849`.)"
 msgstr ""
+"增加了一个新的校验旗标 :const:`~ssl.VERIFY_X509_PARTIAL_CHAIN`。 （由 l0x 在 :issue:`40849`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1394
 msgid "sqlite3"

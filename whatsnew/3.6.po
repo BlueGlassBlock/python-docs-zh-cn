@@ -273,6 +273,8 @@ msgid ""
 ":envvar:`PYTHONHOME`. See :ref:`the documentation <windows_finding_modules>`"
 " for more information."
 msgstr ""
+"现在 ``python36.zip`` 文件可以作为推断 :envvar:`PYTHONHOME` 的标记物。 请参阅 :ref:`相关文档 "
+"<windows_finding_modules>` 了解详情。"
 
 #: ../../whatsnew/3.6.rst:176
 msgid "New Features"
