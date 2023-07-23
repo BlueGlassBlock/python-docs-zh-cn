@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../library/sys.rst:169
 msgid "See also the :data:`sys.stdlib_module_names` list."
-msgstr ""
+msgstr "另请参阅 :data:`sys.stdlib_module_names` 列表。"
 
 #: ../../library/sys.rst:174
 msgid ""
@@ -1218,6 +1218,8 @@ msgid ""
 "calls.  Symbolic names for the flag values can be found in the :mod:`os` "
 "module (``RTLD_xxx`` constants, e.g. :const:`os.RTLD_LAZY`)."
 msgstr ""
+"返回用于 :c:func:`dlopen` 调用的旗标的当前值。 旗标值的符号名称可在 :mod:`os` 模块中找到 (``RTLD_xxx`` "
+"常量，例如 :const:`os.RTLD_LAZY`)。"
 
 #: ../../library/sys.rst:702 ../../library/sys.rst:1373
 msgid ":ref:`Availability <availability>`: Unix."

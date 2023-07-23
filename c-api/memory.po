@@ -772,6 +772,8 @@ msgid ""
 "safe: the :term:`GIL <global interpreter lock>` is not held when the "
 "allocator is called."
 msgstr ""
+"对于 :c:macro:`PYMEM_DOMAIN_RAW` 域，分配器必须是线程安全的：当分配器被调用时将不持有 :term:`GIL <global"
+" interpreter lock>`。"
 
 #: ../../c-api/memory.rst:477
 msgid ""
@@ -892,6 +894,9 @@ msgid ""
 " :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are "
 "called."
 msgstr ""
+"检测当调用 :c:macro:`PYMEM_DOMAIN_OBJ` (如: :c:func:`PyObject_Malloc`) 和 "
+":c:macro:`PYMEM_DOMAIN_MEM` (如: :c:func:`PyMem_Malloc`) 域的分配器函数时是否持有 "
+":term:`GIL <global interpreter lock>`。"
 
 #: ../../c-api/memory.rst:543
 msgid ""

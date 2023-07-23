@@ -832,6 +832,9 @@ msgid ""
 " :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) domains are "
 "called."
 msgstr ""
+"检测当调用 :c:macro:`PYMEM_DOMAIN_OBJ` (如: :c:func:`PyObject_Malloc`) 和 "
+":c:macro:`PYMEM_DOMAIN_MEM` (如: :c:func:`PyMem_Malloc`) 域的分配器函数时是否持有 "
+":term:`GIL <global interpreter lock>`。"
 
 #: ../../whatsnew/3.6.rst:656
 msgid "Checking if the GIL is held is also a new feature of Python 3.6."
