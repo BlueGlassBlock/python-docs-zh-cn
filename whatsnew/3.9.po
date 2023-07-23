@@ -1279,6 +1279,9 @@ msgid ""
 "platforms. (Contributed by Jan Matějek, Matěj Cepl, Charalampos Stratakis "
 "and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
+"新增 :data:`sys.platlibdir` 属性：平台专属库目录的名称。 它被用于构建标准库的路径和已安装扩展模块的路径。 它在大多数平台上等于"
+" ``\"lib\"``。 在 Fedora 和 SuSE 上，对于 64 位平台它将等于 ``\"lib64\"``。 （由 Jan Matějek,"
+" Matěj Cepl, Charalampos Stratakis 和 Victor Stinner 在 :issue:`1294959` 中贡献。）"
 
 #: ../../whatsnew/3.9.rst:701
 msgid ""
@@ -1286,6 +1289,8 @@ msgid ""
 "``stderr`` defaults to always being line-buffered. (Contributed by Jendrik "
 "Seipp in :issue:`13601`.)"
 msgstr ""
+"在之前版本中，:data:`sys.stderr` 在非交互模式时是带块缓冲的。 现在 ``stderr`` 默认总是带行缓冲的。 （由 Jendrik"
+" Seipp 在 :issue:`13601` 中贡献。）"
 
 #: ../../whatsnew/3.9.rst:706
 msgid "tracemalloc"
@@ -1964,6 +1969,8 @@ msgid ""
 ":const:`~errno.EBADF` error. (Contributed by Victor Stinner in "
 ":issue:`39239`.)"
 msgstr ""
+":meth:`select.epoll.unregister` 方法不会再忽略 :const:`~errno.EBADF` 错误。 （由 Victor "
+"Stinner 在 :issue:`39239` 中贡献。）"
 
 #: ../../whatsnew/3.9.rst:1090
 msgid ""
@@ -2195,6 +2202,10 @@ msgid ""
 "more information. (Contributed by Jan Matějek, Matěj Cepl, Charalampos "
 "Stratakis and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
+"向 ``configure`` 脚本添加了 ``--with-platlibdir`` 选项：平台专属库目录的名称，保存在新的 "
+":data:`sys.platlibdir` 属性中。 请参阅 :data:`sys.platlibdir` 属性了解更多信息。 （由 Jan "
+"Matějek, Matěj Cepl, Charalampos Stratakis 和 Victor Stinner 在 "
+":issue:`1294959` 中贡献。）"
 
 #: ../../whatsnew/3.9.rst:1234
 msgid ""
@@ -2275,6 +2286,10 @@ msgid ""
 ":c:macro:`METH_METHOD` to allow a method to access the class it was defined "
 "in. (Contributed by Marcel Plch and Petr Viktorin in :issue:`38787`.)"
 msgstr ""
+":pep:`573`: 增加了 :c:func:`PyType_FromModuleAndSpec` "
+"用于将模块关联到一个类；:c:func:`PyType_GetModule` 和 :c:func:`PyType_GetModuleState` "
+"用于获取模块及其状态；以及 :c:data:`PyCMethod` 和 :c:macro:`METH_METHOD` "
+"用于允许一个方法访问其定义所在的类。 （由 Marcel Plch 和 Petr Viktorin 在 :issue:`38787` 中贡献。）"
 
 #: ../../whatsnew/3.9.rst:1283
 msgid ""
