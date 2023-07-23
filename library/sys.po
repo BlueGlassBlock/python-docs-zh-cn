@@ -2133,12 +2133,14 @@ msgid ""
 "Python versions include the version number, it is recommended to always use "
 "the ``startswith`` idiom presented above."
 msgstr ""
+"在 AIX 上，:data:`sys.platform` 将不再包含主要版本号。 它将总是 ``'aix'``，而不是 ``'aix5'`` 或 "
+"``'aix7'``。 由于较旧的 Python 版本会包括版本号，因此推荐总是使用上述的 ``startswith`` 惯例写法。"
 
 #: ../../library/sys.rst:1303
 msgid ""
 ":data:`os.name` has a coarser granularity.  :func:`os.uname` gives system-"
 "dependent version information."
-msgstr ""
+msgstr ":data:`os.name` 具有更粗的粒度。 :func:`os.uname` 将给出依赖于具体系统的版本信息。"
 
 #: ../../library/sys.rst:1306
 msgid ""
@@ -2234,6 +2236,10 @@ msgid ""
 "values can be found in the :mod:`os` module (``RTLD_xxx`` constants, e.g. "
 ":const:`os.RTLD_LAZY`)."
 msgstr ""
+"设置解释器在调用 :c:func:`dlopen` 时使用的旗标，例如当解释器加载扩展模块的时候。 首先，这将在导入模块时启用符号的惰性求值，如果以 "
+"``sys.setdlopenflags(0)`` 的形式调用的话。 要在扩展模块之间共享符号，请以 "
+"``sys.setdlopenflags(os.RTLD_GLOBAL)`` 的形式调用。 旗标值的符号名称可以在 :mod:`os` 模块中找到 "
+"(``RTLD_xxx`` 常量，例如 :const:`os.RTLD_LAZY`)。"
 
 #: ../../library/sys.rst:1377
 msgid ""
@@ -2827,7 +2833,7 @@ msgstr ""
 
 #: ../../library/sys.rst:1746
 msgid "See also the :data:`sys.builtin_module_names` list."
-msgstr ""
+msgstr "另请参阅 :data:`sys.builtin_module_names` 列表。"
 
 #: ../../library/sys.rst:1753
 msgid ""
