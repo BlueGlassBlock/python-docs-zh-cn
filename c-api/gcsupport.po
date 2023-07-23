@@ -46,10 +46,13 @@ msgid ""
 "instances of the type are mutable, a :c:member:`~PyTypeObject.tp_clear` "
 "implementation must also be provided."
 msgstr ""
+"要创建一个容器类，类型对象的 :c:member:`~PyTypeObject.tp_flags` 字段必须包括 "
+":c:macro:`Py_TPFLAGS_HAVE_GC` 并提供一个 :c:member:`~PyTypeObject.tp_traverse` "
+"处理句柄的实现。 如果该类型的实例是可变的，则还必须提供 :c:member:`~PyTypeObject.tp_clear` 的实现。"
 
 #: ../../c-api/gcsupport.rst:24
 msgid ":c:macro:`Py_TPFLAGS_HAVE_GC`"
-msgstr ""
+msgstr ":c:macro:`Py_TPFLAGS_HAVE_GC`"
 
 #: ../../c-api/gcsupport.rst:22
 msgid ""
@@ -111,18 +114,25 @@ msgid ""
 "class that implements the garbage collector protocol and the child class "
 "does *not* include the :c:macro:`Py_TPFLAGS_HAVE_GC` flag."
 msgstr ""
+"当调用 :c:func:`PyType_Ready` 或者某些间接调用该函数的 API 如 "
+":c:func:`PyType_FromSpecWithBases` 或 :c:func:`PyType_FromSpec` 时解释器将自动填充 "
+":c:member:`~PyTypeObject.tp_flags`, :c:member:`~PyTypeObject.tp_traverse` 和 "
+":c:member:`~PyTypeObject.tp_clear` 字段，如果该类型是继承自实现了垃圾回收器协议的类并且该子类 *没有* 包括 "
+":c:macro:`Py_TPFLAGS_HAVE_GC` 旗标的话。"
 
 #: ../../c-api/gcsupport.rst:57
 msgid ""
 "Analogous to :c:func:`PyObject_New` but for container objects with the "
 ":c:macro:`Py_TPFLAGS_HAVE_GC` flag set."
 msgstr ""
+"类似于 :c:func:`PyObject_New` 但专用于设置了 :c:macro:`Py_TPFLAGS_HAVE_GC` 旗标的容器对象。"
 
 #: ../../c-api/gcsupport.rst:62
 msgid ""
 "Analogous to :c:func:`PyObject_NewVar` but for container objects with the "
 ":c:macro:`Py_TPFLAGS_HAVE_GC` flag set."
 msgstr ""
+"类似于 :c:func:`PyObject_NewVar` 但专用于设置了 :c:macro:`Py_TPFLAGS_HAVE_GC` 旗标的容器对象。"
 
 #: ../../c-api/gcsupport.rst:67
 msgid ""
