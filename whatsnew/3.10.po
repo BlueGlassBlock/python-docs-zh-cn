@@ -2033,6 +2033,8 @@ msgid ""
 "simulate (the default is still :const:`signal.SIGINT`). (Contributed by "
 "Antoine Pitrou in :issue:`43356`.)"
 msgstr ""
+"现在 :func:`_thread.interrupt_main` 接受一个可选的信号数值供模拟 (默认值仍为 "
+":const:`signal.SIGINT`)。 （由 Antoine Pitrou 在 :issue:`43356` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1420
 msgid "threading"
@@ -2701,6 +2703,11 @@ msgid ""
 ":const:`~ssl.PROTOCOL_TLS` are deprecated in favor of "
 ":const:`~ssl.PROTOCOL_TLS_CLIENT` and :const:`~ssl.PROTOCOL_TLS_SERVER`"
 msgstr ""
+":data:`~ssl.PROTOCOL_SSLv2`, :data:`~ssl.PROTOCOL_SSLv3`, "
+":data:`~ssl.PROTOCOL_SSLv23`, :data:`~ssl.PROTOCOL_TLSv1`, "
+":data:`~ssl.PROTOCOL_TLSv1_1`, :data:`~ssl.PROTOCOL_TLSv1_2` 和 "
+":const:`~ssl.PROTOCOL_TLS` 已被弃用并应改用 :const:`~ssl.PROTOCOL_TLS_CLIENT` 和 "
+":const:`~ssl.PROTOCOL_TLS_SERVER`"
 
 #: ../../whatsnew/3.10.rst:1763
 msgid ""
@@ -3392,6 +3399,8 @@ msgid ""
 "Add a new :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` type flag to disallow"
 " creating type instances. (Contributed by Victor Stinner in :issue:`43916`.)"
 msgstr ""
+"新增了 :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` 类型旗标用于禁止创建类型实例。 （由 Victor "
+"Stinner 在 :issue:`43916` 中贡献。）.)"
 
 #: ../../whatsnew/3.10.rst:2131
 msgid ""
@@ -3399,6 +3408,8 @@ msgid ""
 "immutable type objects: type attributes cannot be set nor deleted. "
 "(Contributed by Victor Stinner and Erlend E. Aasland in :issue:`43908`.)"
 msgstr ""
+"新增了 :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` 类型旗标用于创建不可变类型对象：类型的属性不可被设置或删除。 （由 "
+"Victor Stinner 和 Erlend E. Aasland 在 :issue:`43908` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:2138
 msgid ""
@@ -3512,6 +3523,10 @@ msgid ""
 "is set instead. (Contributed by Victor Stinner and Erlend E. Aasland in "
 ":issue:`43908`.)"
 msgstr ""
+"请使用 :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` 类型旗标来创建不可变类型对象。 请勿依赖于 "
+":c:macro:`Py_TPFLAGS_HEAPTYPE` 来确定类型对象是否可变；应改为检查是否设置了 "
+":c:macro:`Py_TPFLAGS_IMMUTABLETYPE`。 （由 Victor Stinner 和 Erlend E. Aasland 在"
+" :issue:`43908` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:2196
 msgid ""
