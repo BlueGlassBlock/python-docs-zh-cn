@@ -11,8 +11,8 @@
 # Zxilly Chou <zhouxinyu1001@gmail.com>, 2021
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # helloworldSB <warningfor163@foxmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,6 +115,10 @@ msgid ""
 "versions, vectorcall should only be used with :c:macro:`immutable "
 "<Py_TPFLAGS_IMMUTABLETYPE>` or static types."
 msgstr ""
+"现在 :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` 旗标在类的 :py:meth:`~object.__call__` "
+"方法被重新赋值时将会从类中移除。 （这将仅在内部设置 :c:member:`~PyTypeObject.tp_call`，因此可能使其行为不同于 "
+"vectorcall 函数。） 在更早的 Python 版本中，vectorcall 应当仅被用于 :c:macro:`不可变对象 "
+"<Py_TPFLAGS_IMMUTABLETYPE>` 或静态类型。"
 
 #: ../../c-api/call.rst:69
 msgid ""
@@ -134,6 +138,9 @@ msgid ""
 "object structure where a *vectorcallfunc* appears. This is a pointer to a "
 "function with the following signature:"
 msgstr ""
+"类可以通过启用 :c:macro:`Py_TPFLAGS_HAVE_VECTORCALL` 旗标并将 "
+":c:member:`~PyTypeObject.tp_vectorcall_offset` 设为对象结构体中 *vectorcallfunc* "
+"出现位置偏移量来实现 vectorcall 协议。 这是一个指向具有以下签名的函数的指针:"
 
 #: ../../c-api/call.rst:82
 msgid "*callable* is the object being called."
