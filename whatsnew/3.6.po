@@ -360,6 +360,8 @@ msgid ""
 "Tools that use or will use the new syntax: `mypy <https://www.mypy-"
 "lang.org/>`_, `pytype <https://github.com/google/pytype>`_, PyCharm, etc."
 msgstr ""
+"使用或将要使用此新语法的工具有: `mypy <https://www.mypy-lang.org/>`_, `pytype "
+"<https://github.com/google/pytype>`_, PyCharm 等等。"
 
 #: ../../whatsnew/3.6.rst:248
 msgid "PEP 515: Underscores in Numeric Literals"
@@ -679,6 +681,7 @@ msgid ""
 "order in which the names appear in the source.  This order is now preserved "
 "in the new class's :attr:`~object.__dict__` attribute."
 msgstr ""
+"类定义体中的属性具有自然的排序：与名称在源代码中出现的顺序相同。 现在此排序会在新类的 :attr:`~object.__dict__` 属性中被保留。"
 
 #: ../../whatsnew/3.6.rst:554
 msgid ""
@@ -686,6 +689,8 @@ msgid ""
 ":ref:`type.__prepare__() <prepare>`) is now an insertion-order-preserving "
 "mapping."
 msgstr ""
+"并且，实际的默认类 *execution* 命名空间 (从 :ref:`type.__prepare__() <prepare>` 返回) "
+"现在将是一个保留插入顺序的映射对象。"
 
 #: ../../whatsnew/3.6.rst:560
 msgid ":pep:`520` -- Preserving Class Attribute Definition Order"
@@ -703,7 +708,7 @@ msgstr "PEP 468: 保留关键字参数顺序"
 msgid ""
 "``**kwargs`` in a function signature is now guaranteed to be an insertion-"
 "order-preserving mapping."
-msgstr ""
+msgstr "函数签名中的 ``**kwargs`` 现在将保证是一个保留插入顺序的映射对象。"
 
 #: ../../whatsnew/3.6.rst:574
 msgid ":pep:`468` -- Preserving Keyword Argument Order"

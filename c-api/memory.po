@@ -941,15 +941,15 @@ msgstr "API 标识符（ASCII 字符）:"
 
 #: ../../c-api/memory.rst:560
 msgid "``'r'`` for :c:macro:`PYMEM_DOMAIN_RAW`."
-msgstr ""
+msgstr "``'r'`` 表示 :c:macro:`PYMEM_DOMAIN_RAW`。"
 
 #: ../../c-api/memory.rst:561
 msgid "``'m'`` for :c:macro:`PYMEM_DOMAIN_MEM`."
-msgstr ""
+msgstr "``'m'`` 表示 :c:macro:`PYMEM_DOMAIN_MEM`。"
 
 #: ../../c-api/memory.rst:562
 msgid "``'o'`` for :c:macro:`PYMEM_DOMAIN_OBJ`."
-msgstr ""
+msgstr "``'o'`` 表示 :c:macro:`PYMEM_DOMAIN_OBJ`。"
 
 #: ../../c-api/memory.rst:565
 msgid "``p[-S+1:0]``"
@@ -1035,6 +1035,10 @@ msgid ""
 ":c:macro:`PYMEM_DOMAIN_OBJ` and :c:macro:`PYMEM_DOMAIN_MEM` domains are "
 "called."
 msgstr ""
+":c:func:`PyMem_SetupDebugHooks` 函数现在也能在使用发布模式编译的 Python 上工作。 "
+"当发生错误时，调试钩子现在会使用 :mod:`tracemalloc` 来获取已分配内存块的回溯信息。 调试钩子现在还会在 "
+":c:macro:`PYMEM_DOMAIN_OBJ` 和 :c:macro:`PYMEM_DOMAIN_MEM` 作用域的函数被调用时检查是否持有 "
+"GIL。"
 
 #: ../../c-api/memory.rst:607
 msgid ""
@@ -1069,6 +1073,9 @@ msgid ""
 "the :c:macro:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) and "
 ":c:macro:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) domains."
 msgstr ""
+"*pymalloc* 是 :c:macro:`PYMEM_DOMAIN_MEM` (例如: :c:func:`PyMem_Malloc`) 和 "
+":c:macro:`PYMEM_DOMAIN_OBJ` (例如: :c:func:`PyObject_Malloc`) 域的 :ref:`默认分配器 "
+"<default-memory-allocators>`。"
 
 #: ../../c-api/memory.rst:628
 msgid "The arena allocator uses the following functions:"
