@@ -252,6 +252,12 @@ msgid ""
 "returns ``NULL``, so a wrapper function around a system call can write "
 "``return PyErr_SetFromErrno(type);`` when the system call returns an error."
 msgstr ""
+"这是个便捷函数，当 C 库函数返回错误并设置 C 变量 :c:data:`errno` 时它会引发一个异常。 它构造一个元组对象，其第一项是整数值 "
+":c:data:`errno` 而第二项是对应的错误消息（从 :c:func:`strerror` 获取），然后调用 "
+"``PyErr_SetObject(type, object)``。 在 Unix 上，当 :c:data:`errno` 值为 "
+":c:macro:`EINTR`，它表示有一个中断的系统调用，此函数将调用 "
+":c:func:`PyErr_CheckSignals`，并且如果它设置了错误指示器，则让它保持该设置。 该函数将总是返回 "
+"``NULL``，因此当系统调用返回错误时围绕该系统调用的包装器函数可以写入 ``return PyErr_SetFromErrno(type);``。"
 
 #: ../../c-api/exceptions.rst:177
 msgid ""
@@ -830,6 +836,8 @@ msgid ""
 ":py:const:`signal.SIG_DFL` or :py:const:`signal.SIG_IGN`), it will be "
 "ignored."
 msgstr ""
+"如果给定的信号不是由 Python 来处理的 (即被设为 :py:const:`signal.SIG_DFL` 或 "
+":py:const:`signal.SIG_IGN`)，它将会被忽略。"
 
 #: ../../c-api/exceptions.rst:671
 msgid ""
@@ -944,6 +952,8 @@ msgid ""
 "... from ...``) associated with the exception as a new reference, as "
 "accessible from Python through :attr:`__cause__`."
 msgstr ""
+"将与异常相关联的原因（一个异常实例，或为 ``None``，由 ``raise ... from ...`` 设置）作为一个新引用返回，可在从 "
+"Python 通过 :attr:`__cause__` 来访问。"
 
 #: ../../c-api/exceptions.rst:764
 msgid ""
@@ -951,6 +961,8 @@ msgid ""
 "clear it.  There is no type check to make sure that *cause* is either an "
 "exception instance or ``None``.  This steals a reference to *cause*."
 msgstr ""
+"将与异常相关联的原因设为 *cause*。 使用 ``NULL`` 来清空它。 不存在类型检查用来确保 *cause* 是一个异常实例或为 "
+"``None``。 这个偷取一个指向 *cause* 的引用。"
 
 #: ../../c-api/exceptions.rst:768
 msgid ""
@@ -1075,6 +1087,8 @@ msgid ""
 "stack overflowed using :c:func:`PyOS_CheckStack`.  In this is the case, it "
 "sets a :exc:`MemoryError` and returns a nonzero value."
 msgstr ""
+"如果定义了 :c:macro:`USE_STACKCHECK`，此函数会使用 :c:func:`PyOS_CheckStack` 来检查 OS "
+"栈是否溢出。 在这种情况下，它将设置一个 :exc:`MemoryError` 并返回非零值。"
 
 #: ../../c-api/exceptions.rst:881
 msgid ""

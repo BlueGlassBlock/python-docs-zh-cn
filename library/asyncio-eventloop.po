@@ -855,7 +855,7 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:559
 msgid "The socket type will be :py:const:`~socket.SOCK_DGRAM`."
-msgstr ""
+msgstr "套接字类型将为 :py:const:`~socket.SOCK_DGRAM`。"
 
 #: ../../library/asyncio-eventloop.rst:561
 #: ../../library/asyncio-eventloop.rst:681
