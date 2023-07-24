@@ -1073,6 +1073,8 @@ msgid ""
 "set, the *family* will be determined from host name (defaults to "
 ":const:`~socket.AF_UNSPEC`)."
 msgstr ""
+"*family* 可被设为 :const:`socket.AF_INET` 或 :const:`~socket.AF_INET6` 以强制此套接字使用 "
+"IPv4 或 IPv6。 如果未设定，则 *family* 将通过主机名为确定 (默认为 :const:`~socket.AF_UNSPEC`)。"
 
 #: ../../library/asyncio-eventloop.rst:707
 msgid "*flags* is a bitmask for :meth:`getaddrinfo`."
@@ -1153,6 +1155,8 @@ msgid ""
 "option :py:const:`~socket.TCP_NODELAY` is set by default for all TCP "
 "connections."
 msgstr ""
+"增加了 *ssl_handshake_timeout* 和 *start_serving* 形参。 套接字选项 "
+":py:const:`~socket.TCP_NODELAY` 默认将为所有 TCP 连接进行设置。"
 
 #: ../../library/asyncio-eventloop.rst:768
 msgid ""
@@ -1168,6 +1172,7 @@ msgid ""
 "Similar to :meth:`loop.create_server` but works with the "
 ":py:const:`~socket.AF_UNIX` socket family."
 msgstr ""
+"与 :meth:`loop.create_server` 类似但是专用于 :py:const:`~socket.AF_UNIX` 套接字族。"
 
 #: ../../library/asyncio-eventloop.rst:782
 msgid ""
@@ -2228,7 +2233,7 @@ msgstr "Python3.7 开始，Server 对象是一个异步上下文管理器。"
 msgid ""
 "This class was exposed publicly as ``asyncio.Server`` in Python 3.9.11, "
 "3.10.3 and 3.11."
-msgstr ""
+msgstr "这个类在 Python 3.9.11, 3.10.3 和 3.11 中作为 ``asyncio.Server`` 对外公开。"
 
 #: ../../library/asyncio-eventloop.rst:1601
 msgid ""
