@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-16 14:12+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -961,15 +961,15 @@ msgstr ""
 
 #: ../../library/hashlib.rst:831
 msgid "https://csrc.nist.gov/publications/detail/fips/202/final"
-msgstr ""
+msgstr "https://csrc.nist.gov/publications/detail/fips/202/final"
 
 #: ../../library/hashlib.rst:831
 msgid "The FIPS 202 publication on the SHA-3 Standard."
-msgstr ""
+msgstr "关于 SHA-3 标准的 FIPS 202 公告。"
 
 #: ../../library/hashlib.rst:834
 msgid "https://www.blake2.net/"
-msgstr ""
+msgstr "https://www.blake2.net/"
 
 #: ../../library/hashlib.rst:834
 msgid "Official BLAKE2 website."
@@ -977,7 +977,7 @@ msgstr "BLAKE2 官方网站"
 
 #: ../../library/hashlib.rst:838
 msgid "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
 
 #: ../../library/hashlib.rst:837
 msgid ""
@@ -1012,6 +1012,7 @@ msgid ""
 "secure hash algorithm, SHA1, SHA2, SHA224, SHA256, SHA384, SHA512, SHA3, "
 "Shake, Blake2"
 msgstr ""
+"安全哈希算法, SHA1, SHA2, SHA224, SHA256, SHA384, SHA512, SHA3, Shake, Blake2"
 
 #: ../../library/hashlib.rst:55
 msgid "OpenSSL"

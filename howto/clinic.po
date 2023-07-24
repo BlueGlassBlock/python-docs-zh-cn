@@ -1488,7 +1488,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:915
 msgid "How to use advanced converters"
-msgstr ""
+msgstr "如何使用高级转换器"
 
 #: ../../howto/clinic.rst:917
 msgid ""
@@ -1542,7 +1542,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:947
 msgid "How to assign default values to parameter"
-msgstr ""
+msgstr "如何给形参赋默认值"
 
 #: ../../howto/clinic.rst:949
 msgid ""
@@ -1613,7 +1613,7 @@ msgstr "（未来可能需要加以细化，以便可以采用 ``CONSTANT - 1`` 
 
 #: ../../howto/clinic.rst:998
 msgid "Expressions as default values"
-msgstr ""
+msgstr "表达式作为默认值"
 
 #: ../../howto/clinic.rst:1000
 msgid ""
@@ -1706,7 +1706,7 @@ msgstr "元组、列表、集合、字典的字面量"
 
 #: ../../howto/clinic.rst:1055
 msgid "How to use return converters"
-msgstr ""
+msgstr "如何使用返回转换器"
 
 #: ../../howto/clinic.rst:1057
 msgid ""
@@ -1792,7 +1792,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1125
 msgid "How to clone existing functions"
-msgstr ""
+msgstr "如何克隆现有的函数"
 
 #: ../../howto/clinic.rst:1127
 msgid ""
@@ -1861,7 +1861,7 @@ msgstr "另外，要克隆的函数必须在当前文件中已有定义。"
 
 #: ../../howto/clinic.rst:1169
 msgid "How to call Python code"
-msgstr ""
+msgstr "如何调用 Python 代码"
 
 #: ../../howto/clinic.rst:1171
 msgid ""
@@ -1893,7 +1893,7 @@ msgstr "以下例子包含了 Python 块，用于在 C 代码中添加一个静�
 
 #: ../../howto/clinic.rst:1197
 msgid "How to use the \"self converter\""
-msgstr ""
+msgstr "如何使用“自转换器”"
 
 #: ../../howto/clinic.rst:1199
 msgid ""
@@ -1936,7 +1936,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1249
 msgid "How to use the \"defining class\" converter"
-msgstr ""
+msgstr "如何使用“定义类”转换器"
 
 #: ../../howto/clinic.rst:1251
 msgid ""
@@ -2005,7 +2005,7 @@ msgstr "参见  :pep:`573`。"
 
 #: ../../howto/clinic.rst:1312
 msgid "How to write a custom converter"
-msgstr ""
+msgstr "如何编写自定义转换器"
 
 #: ../../howto/clinic.rst:1314
 msgid ""
@@ -2155,7 +2155,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1404
 msgid "How to write a custom return converter"
-msgstr ""
+msgstr "如何编写自定义返回转换器"
 
 #: ../../howto/clinic.rst:1406
 msgid ""
@@ -2178,7 +2178,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1419
 msgid "How to convert ``METH_O`` and ``METH_NOARGS`` functions"
-msgstr ""
+msgstr "如何转换 ``METH_O`` 和 ``METH_NOARGS`` 函数"
 
 #: ../../howto/clinic.rst:1421
 msgid ""
@@ -2201,7 +2201,7 @@ msgstr "依然可以采用一个 self 转换器、一个返回值转换器，并
 
 #: ../../howto/clinic.rst:1441
 msgid "How to convert ``tp_new`` and ``tp_init`` functions"
-msgstr ""
+msgstr "如何转换 ``tp_new`` 和 ``tp_init`` 函数"
 
 #: ../../howto/clinic.rst:1443
 msgid ""
@@ -2242,7 +2242,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1464
 msgid "How to change and redirect Clinic's output"
-msgstr ""
+msgstr "如何修改和重定向 Clinic 的输出"
 
 #: ../../howto/clinic.rst:1466
 msgid ""
@@ -2717,7 +2717,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1747
 msgid "How to use the ``#ifdef`` trick"
-msgstr ""
+msgstr "如何使用 ``#ifdef`` 技巧"
 
 #: ../../howto/clinic.rst:1749
 msgid ""
@@ -2807,7 +2807,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1828
 msgid "How to use Argument Clinic in Python files"
-msgstr ""
+msgstr "如何在 Python 文件中使用 Argument Clinic"
 
 #: ../../howto/clinic.rst:1830
 msgid ""
