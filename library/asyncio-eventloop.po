@@ -906,6 +906,8 @@ msgid ""
 "Unixes. If the :py:const:`~socket.SO_REUSEPORT` constant is not defined then"
 " this capability is unsupported."
 msgstr ""
+"*reuse_port* 告知内核允许此端点绑定到其他现有端点所绑定的相同端口上，只要它们在创建时都设置了这个旗标。 这个选项在 Windows 和某些"
+" Unix 上将不受支持。 如果 :py:const:`~socket.SO_REUSEPORT` 常量未被定义那么该功能就是不受支持的。"
 
 #: ../../library/asyncio-eventloop.rst:587
 msgid ""
@@ -946,6 +948,8 @@ msgid ""
 ":py:const:`~sockets.SO_REUSEADDR` poses a significant security concern for "
 "UDP. Explicitly passing ``reuse_address=True`` will raise an exception."
 msgstr ""
+"*reuse_address* 形参已不再受支持，因为使用 :py:const:`~sockets.SO_REUSEADDR` 会对 UDP "
+"造成显著的安全问题。 显式地传入 ``reuse_address=True`` 将引发一个异常。"
 
 #: ../../library/asyncio-eventloop.rst:613
 msgid ""
@@ -962,6 +966,8 @@ msgid ""
 "is used instead, which specifically prevents processes with differing UIDs "
 "from assigning sockets to the same socket address."
 msgstr ""
+"对于受支持的平台，*reuse_port* 可被用作类似功能的替代。 通过 *reuse_port*，将会改用 "
+":py:const:`~sockets.SO_REUSEPORT`，它能够防止具有不同 UID 的进程将套接字赋给相同的套接字地址。"
 
 #: ../../library/asyncio-eventloop.rst:623
 msgid "Added support for Windows."
@@ -983,6 +989,7 @@ msgid ""
 "The socket family will be :py:const:`~socket.AF_UNIX`; socket type will be "
 ":py:const:`~socket.SOCK_STREAM`."
 msgstr ""
+"套接字族将为 :py:const:`~socket.AF_UNIX`；套接字类型将为 :py:const:`~socket.SOCK_STREAM`。"
 
 #: ../../library/asyncio-eventloop.rst:642
 msgid ""
@@ -1021,6 +1028,7 @@ msgid ""
 "Create a TCP server (socket type :const:`~socket.SOCK_STREAM`) listening on "
 "*port* of the *host* address."
 msgstr ""
+"创建一个 TCP 服务器 (套接字类型 :const:`~socket.SOCK_STREAM`) 在 *host* 地址的 *port* 上进行监听。"
 
 #: ../../library/asyncio-eventloop.rst:677
 msgid "Returns a :class:`Server` object."
