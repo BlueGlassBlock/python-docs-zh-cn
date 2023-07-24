@@ -540,7 +540,7 @@ msgstr ""
 msgid ""
 "``PyMember_GetOne`` is always available. Previously, it required including "
 "``\"structmember.h\"``."
-msgstr ""
+msgstr "``PyMember_GetOne`` 将总是可用。 在之前版本中，它需要包括 ``\"structmember.h\"``。"
 
 #: ../../c-api/structures.rst:482
 msgid ""
@@ -555,19 +555,19 @@ msgstr ""
 msgid ""
 "``PyMember_SetOne`` is always available. Previously, it required including "
 "``\"structmember.h\"``."
-msgstr ""
+msgstr "``PyMember_SetOne`` 将总是可用。 在之前版本中，它需要包括 ``\"structmember.h\"``。"
 
 #: ../../c-api/structures.rst:494
 msgid "Member flags"
-msgstr ""
+msgstr "成员旗标"
 
 #: ../../c-api/structures.rst:496
 msgid "The following flags can be used with :c:member:`PyMemberDef.flags`:"
-msgstr ""
+msgstr "以下旗标可被用于 :c:member:`PyMemberDef.flags`:"
 
 #: ../../c-api/structures.rst:500
 msgid "Not writable."
-msgstr ""
+msgstr "不可写入。"
 
 #: ../../c-api/structures.rst:504
 msgid ""

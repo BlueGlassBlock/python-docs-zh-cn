@@ -612,12 +612,16 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_weaklistoffset` (use "
 ":c:macro:`Py_TPFLAGS_MANAGED_WEAKREF` instead)"
 msgstr ""
+":c:member:`~PyTypeObject.tp_weaklistoffset` (改用 "
+":c:macro:`Py_TPFLAGS_MANAGED_WEAKREF`)"
 
 #: ../../c-api/type.rst:475
 msgid ""
 ":c:member:`~PyTypeObject.tp_dictoffset` (use "
 ":c:macro:`Py_TPFLAGS_MANAGED_DICT` instead)"
 msgstr ""
+":c:member:`~PyTypeObject.tp_dictoffset` (改用 "
+":c:macro:`Py_TPFLAGS_MANAGED_DICT`)"
 
 #: ../../c-api/type.rst:477
 msgid ""
@@ -646,6 +650,9 @@ msgid ""
 ":c:member:`~PyBufferProcs.bf_releasebuffer` are now available under the "
 ":ref:`limited API <limited-c-api>`."
 msgstr ""
+"现在 :c:member:`~PyBufferProcs.bf_getbuffer` 和 "
+":c:member:`~PyBufferProcs.bf_releasebuffer` 将在 :ref:`受限 API <limited-c-api>`"
+" 中可用。"
 
 #: ../../c-api/type.rst:496
 msgid ""
