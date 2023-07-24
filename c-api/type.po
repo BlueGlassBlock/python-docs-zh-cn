@@ -520,7 +520,7 @@ msgstr ""
 
 #: ../../c-api/type.rst:423
 msgid "With the :c:macro:`Py_TPFLAGS_ITEMS_AT_END` flag."
-msgstr ""
+msgstr "具有 :c:macro:`Py_TPFLAGS_ITEMS_AT_END` 旗标。"
 
 #: ../../c-api/type.rst:427
 msgid "Type flags, used to set :c:member:`PyTypeObject.tp_flags`."
@@ -542,7 +542,7 @@ msgstr ":c:type:`PyType_Slot` 结构体的数组。 以特殊槽位值 ``{0, NUL
 
 #: ../../c-api/type.rst:437
 msgid "Each slot ID should be specified at most once."
-msgstr ""
+msgstr "每个槽位 ID 应当只被指定一次。"
 
 #: ../../c-api/type.rst:447
 msgid ""
