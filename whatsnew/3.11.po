@@ -2561,6 +2561,8 @@ msgid ""
 "great care should be taken when reading or modifying raw, adaptive bytecode "
 "containing quickened data."
 msgstr ""
+"字节码现在包含内联缓存条目，它采用新增的 :opcode:`CACHE` 指令形式。 许多操作码都预期带有确切数量的缓存，并指示解释器在运行时跳过它们。"
+" 被填充的缓存看起来可以像是任意指令，因此在读取或修改包含加速的数据的原始自适应字节码时应当格外小心。"
 
 #: ../../whatsnew/3.11.rst:1601
 msgid "New opcodes"
@@ -2836,6 +2838,10 @@ msgid ""
 "consider using the :attr:`!__wrapped__` attribute that was added in Python "
 "3.10. (Contributed by Raymond Hettinger in :gh:`89519`.)"
 msgstr ""
+"串连 :class:`classmethod` 描述器（在 :issue:`19072` 中引入）现已被弃用。 它不能再被用来包装其他描述器如 "
+":class:`property`。 该特性的核心设计存在缺陷并导致了许多下游问题。 要“穿过”一个 "
+":class:`classmethod`，请考虑使用在 Python 3.10 中添加的 :attr:`!__wrapped__` 属性。 （由 "
+"Raymond Hettinger 在 :gh:`89519` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1710
 msgid ""
@@ -2844,6 +2850,9 @@ msgid ""
 "Python version, they will raise a :exc:`SyntaxWarning` and eventually a "
 ":exc:`SyntaxError`. (Contributed by Serhiy Storchaka in :gh:`81548`.)"
 msgstr ""
+"数值大于 ``0o377`` (十进制的 255) 的八进制转义符会产生 :exc:`DeprecationWarning`。 在未来的 Python "
+"版本中，这将引发 :exc:`SyntaxWarning` 并最终改为 :exc:`SyntaxError`。 （由 Serhiy Storchaka "
+"在 :gh:`81548` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1716
 msgid ""
