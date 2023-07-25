@@ -2419,6 +2419,8 @@ msgid ""
 "Folding' of the Unicode Standard "
 "<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__."
 msgstr ""
+"大小写折叠算法 `在 Unicode 标准 3.13 节 'Default Case Folding' 中描述 "
+"<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__。"
 
 #: ../../library/stdtypes.rst:1649
 msgid ""
@@ -2612,6 +2614,11 @@ msgid ""
 " of the Unicode Standard "
 "<https://www.unicode.org/versions/Unicode15.0.0/ch04.pdf>`_."
 msgstr ""
+"如果字符串中的所有字符都为字母并且至少有一个字符则返回 ``True``，否则返回 ``False``。 字母字符是指在 Unicode "
+"字符数据库中被定义为 \"Letter\" 的字符，即具有通用类型属性 \"Lm\", \"Lt\", \"Lu\", \"Ll\" 或 \"Lo\" "
+"之一的字符。 请注意这不同于 `Unicode 标准 4.10 节 'Letters, Alphabetic, and Ideographic' "
+"中定义的 Alphabetic 属性 "
+"<https://www.unicode.org/versions/Unicode15.0.0/ch04.pdf>`_。"
 
 #: ../../library/stdtypes.rst:1811
 msgid ""
@@ -2658,6 +2665,8 @@ msgid ""
 ":func:`keyword.iskeyword` can be used to test whether string ``s`` is a "
 "reserved identifier, such as :keyword:`def` and :keyword:`class`."
 msgstr ""
+":func:`keyword.iskeyword` 可被用来测试字符串 ``s`` 是否为保留的标识符，如 :keyword:`def` 和 "
+":keyword:`class`。"
 
 #: ../../library/stdtypes.rst:1846
 msgid "Example: ::"
@@ -2760,6 +2769,8 @@ msgid ""
 "Folding' of the Unicode Standard "
 "<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__."
 msgstr ""
+"所使用的小写算法 `在 Unicode 标准 3.13 节 'Default Case Folding' 中描述 "
+"<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__。"
 
 #: ../../library/stdtypes.rst:1947
 msgid ""
@@ -3190,6 +3201,8 @@ msgid ""
 "Folding' of the Unicode Standard "
 "<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__."
 msgstr ""
+"所使用的大写算法 `在 Unicode 标准 3.13 'Default Case Folding' 中描述 "
+"<https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf>`__。"
 
 #: ../../library/stdtypes.rst:2293
 msgid ""
