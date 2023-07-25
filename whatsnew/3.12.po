@@ -1425,12 +1425,16 @@ msgid ""
 "replacement strings containing group references by 2--3 times. (Contributed "
 "by Serhiy Storchaka in :gh:`91524`.)"
 msgstr ""
+"对于包含分组引用的替换字符串的正则表达式替换（包括 :func:`re.sub` 和 :func:`re.subn` 函数及对应的 "
+":class:`!re.Pattern` 方法）可加速 2--3 倍。 （由 Serhiy Storchaka 在 :gh:`91524` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:917
 msgid ""
 "Speed up :class:`asyncio.Task` creation by deferring expensive string "
 "formatting. (Contributed by Itamar O in :gh:`103793`.)"
 msgstr ""
+"通过推迟高消耗的字符串格式化来加速 :class:`asyncio.Task` 的创建。 （由 Itamar O 在 :gh:`103793` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:920
 msgid ""
@@ -1439,6 +1443,9 @@ msgid ""
 ":pep:`701` in the :mod:`tokenize` module. (Contributed by Marta Gómez Macías"
 " and Pablo Galindo in :gh:`102856`.)"
 msgstr ""
+"作为在 :mod:`tokenize` 模块中应用 :pep:`701` 所要求的更改的附带效果，:func:`tokenize.tokenize` 和"
+" :func:`tokenize.generate_tokens` 函数可加速至多 64%。 （由 Marta Gómez Macías 和 Pablo"
+" Galindo 在 :gh:`102856` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:925
 msgid ""
@@ -1446,6 +1453,8 @@ msgid ""
 ":opcode:`LOAD_SUPER_ATTR` instruction. (Contributed by Carl Meyer and "
 "Vladimir Matveev in :gh:`103497`.)"
 msgstr ""
+"通过新的 :opcode:`LOAD_SUPER_ATTR` 指令加速 :func:`super` 方法调用和属性加载。 （由 Carl Meyer 和"
+" Vladimir Matveev 在 :gh:`103497` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:931
 msgid "CPython bytecode changes"
