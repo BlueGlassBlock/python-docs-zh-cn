@@ -1321,12 +1321,14 @@ msgid ""
 "on :func:`isinstance` checks comparing objects to the protocol. For "
 "example::"
 msgstr ""
+"现在运行时可检测协议的成员在运行时一旦创建了相应的类就将被视为“已冻结”。 "
+"作用于运行时可检测协议的猴子补丁属性将仍然可用，但不会再影响将对象与协议进行比较的 :func:`isinstance` 检测中。 例如::"
 
 #: ../../whatsnew/3.12.rst:849
 msgid ""
 "This change was made in order to speed up ``isinstance()`` checks against "
 "runtime-checkable protocols."
-msgstr ""
+msgstr "应用这项改变是为了提高针对运行时可检测协议的 ``isinstance()`` 检测速度。"
 
 #: ../../whatsnew/3.12.rst:852
 msgid ""
@@ -1338,6 +1340,10 @@ msgid ""
 "more members may be slower than in Python 3.11. (Contributed by Alex Waygood"
 " in :gh:`74690` and :gh:`103193`.)"
 msgstr ""
+"针对 :func:`运行时可检测协议 <typing.runtime_checkable>` 的 :func:`isinstance` "
+"检测的性能表现有显著的改进。 对于具有少量成员的协议的 ``isinstance()`` 检测相比 3.11 应当至少有 2x 的提速，有些可能会有 "
+"20x 或更多的提速。 但是，对于具有十四个或更多成员的协议的 ``isinstance()`` 检测可能会慢于 Python 3.11。 （由 "
+"Alex Waygood 在 :gh:`74690` 和 :gh:`103193` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:860
 msgid ""
@@ -1345,12 +1351,16 @@ msgid ""
 "the ``__orig_bases__`` attribute. (Contributed by Adrian Garcia Badaracco in"
 " :gh:`103699`.)"
 msgstr ""
+"现在所有 :data:`typing.TypedDict` 和 :data:`typing.NamedTuple` 类都具有 "
+"``__orig_bases__`` 属性。 （由 Adrian Garcia Badaracco 在 :gh:`103699` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:864
 msgid ""
 "Add ``frozen_default`` parameter to :func:`typing.dataclass_transform`. "
 "(Contributed by Erik De Bonte in :gh:`99957`.)"
 msgstr ""
+"向 :func:`typing.dataclass_transform` 添加了 ``frozen_default`` 形参。 （由 Erik De "
+"Bonte 在 :gh:`99957` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:868
 msgid "unicodedata"

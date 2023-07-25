@@ -181,6 +181,9 @@ msgid ""
 "the :ref:`Compile-time configuration <zoneinfo_data_compile_time_config>` of"
 " the :mod:`zoneinfo` module."
 msgstr ""
+"Select the default time zone search path for为 :const:`zoneinfo.TZPATH` "
+"选择默认的时区搜索路径。 参见 :mod:`zoneinfo` 模块的 :ref:`编译时配置 "
+"<zoneinfo_data_compile_time_config>`。"
 
 #: ../../using/configure.rst:104
 msgid ""
@@ -202,7 +205,7 @@ msgstr "编译 ``_decimal`` 扩展模块时使用线程本地上下文，而不�
 #: ../../using/configure.rst:115
 msgid ""
 "See :const:`decimal.HAVE_CONTEXTVAR` and the :mod:`contextvars` module."
-msgstr ""
+msgstr "参见 :const:`decimal.HAVE_CONTEXTVAR` 和 :mod:`contextvars` 模块。"
 
 #: ../../using/configure.rst:121
 msgid "Override order to check db backends for the :mod:`dbm` module"
@@ -241,6 +244,7 @@ msgstr "参阅  :envvar:`PYTHONCOERCECLOCALE` 和 :pep:`538`。"
 #: ../../using/configure.rst:139
 msgid "Disable all freelists except the empty tuple singleton."
 msgstr ""
+"禁用除空元组单例以外的所有自由列表。Disable all freelists except the empty tuple singleton."
 
 #: ../../using/configure.rst:145
 msgid "Python library directory name (default is ``lib``)."
