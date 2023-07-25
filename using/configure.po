@@ -62,41 +62,44 @@ msgstr "对线程的支持。"
 
 #: ../../using/configure.rst:21
 msgid "OpenSSL 1.1.1 or newer for the :mod:`ssl` and :mod:`hashlib` modules."
-msgstr ""
+msgstr "用于 :mod:`ssl` 和 :mod:`hashlib` 模块的 OpenSSL 1.1.1 或更新版本。"
 
 #: ../../using/configure.rst:23
 msgid "On Windows, Microsoft Visual Studio 2017 or later is required."
-msgstr ""
+msgstr "在 Windows 上，需要 Microsoft Visual Studio 2017 或更新版本。"
 
 #: ../../using/configure.rst:25
 msgid ""
 "C11 compiler, IEEE 754 and NaN support are now required. On Windows, Visual "
 "Studio 2017 or later is required."
 msgstr ""
+"C11 编译器，现在要求 IEEE 754 和 NaN 支持。 在 Windows 上，需要 Visual Studio 2017 或更新版本。"
 
 #: ../../using/configure.rst:29
 msgid "OpenSSL 1.1.1 is now required."
-msgstr ""
+msgstr "现在要求 OpenSSL 1.1.1。"
 
 #: ../../using/configure.rst:32
 msgid "Thread support and OpenSSL 1.0.2 are now required."
-msgstr ""
+msgstr "现在要求线程支持和 OpenSSL 1.0.2。"
 
 #: ../../using/configure.rst:35
 msgid ""
 "Selected C99 features are now required, like ``<stdint.h>`` and ``static "
 "inline`` functions."
-msgstr ""
+msgstr "现在要求选定的 C99 特性，如 ``<stdint.h>`` 和 ``static inline`` 函数。"
 
 #: ../../using/configure.rst:39
 msgid "On Windows, Visual Studio 2015 or later is required."
-msgstr ""
+msgstr "在 Windows 上，需要 Visual Studio 2015 或更新版本。"
 
 #: ../../using/configure.rst:42
 msgid ""
 "See also :pep:`7` \"Style Guide for C Code\" and :pep:`11` \"CPython "
 "platform support\"."
 msgstr ""
+"另请参阅 :pep:`7` \"Style Guide for C Code\" 和 :pep:`11` \"CPython platform "
+"support\"。"
 
 #: ../../using/configure.rst:49
 msgid "Configure Options"
