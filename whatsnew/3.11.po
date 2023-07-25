@@ -2862,6 +2862,10 @@ msgid ""
 ":meth:`~object.__index__` now raises a :exc:`DeprecationWarning`. "
 "(Contributed by Zackery Spytz in :issue:`44977`.)"
 msgstr ""
+"现在从 :func:`int` 至 :meth:`~object.__trunc__` 的委托已被弃用。 当 ``type(a)`` 实现了 "
+":meth:`!__trunc__` 但未实现 :meth:`~object.__int__` 或 :meth:`~object.__index__` "
+"时调用 ``int(a)`` 现在将引发 :exc:`DeprecationWarning`。 （由 Zackery Spytz 在 "
+":issue:`44977` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1726
 msgid "Modules"
@@ -2963,6 +2967,9 @@ msgid ""
 "warnings have now been updated to note they will be removed in Python 3.12. "
 "(Contributed by Hugo van Kemenade in :issue:`47022`.)"
 msgstr ""
+"至少从 Python 3.6 起 :mod:`asynchat`, :mod:`asyncore` 和  :mod:`smtpd` 模块已被弃用。 "
+"它们的文档和弃用警告现在已更新为提示它们将在 Python 3.12 中被移除。 （由 Hugo van Kemenade 在 "
+":issue:`47022` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1751
 msgid ""
@@ -2971,6 +2978,9 @@ msgid ""
 ":pep:`617`, introducing the new PEG parser, for details. (Contributed by "
 "Victor Stinner in :issue:`40360`.)"
 msgstr ""
+":mod:`lib2to3` 包和 :ref:`2to3 <2to3-reference>` 工具现已被弃用并可能无法解析 Python 3.10 "
+"或更新版本。 参见引入新 PEG 解析器的 :pep:`617` 了解详情。 （由 Victor Stinner 在 :issue:`40360` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1756
 msgid ""
@@ -2978,6 +2988,8 @@ msgid ""
 ":mod:`!sre_parse` are now deprecated. (Contributed by Serhiy Storchaka in "
 ":issue:`47152`.)"
 msgstr ""
+"未写入文档的模块 :mod:`!sre_compile`, :mod:`!sre_constants` 和 :mod:`!sre_parse` "
+"现已被弃用。 （由 Serhiy Storchaka 在 :issue:`47152` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1764
 msgid "Standard Library"
@@ -2989,6 +3001,8 @@ msgid ""
 "Their deprecation warnings have now been updated to note they will be "
 "removed in Python 3.12:"
 msgstr ""
+":mod:`configparser` 的下列部分自 Python 3.2 起已被弃用。 现在它们的弃用警告已更新为提示它们将在 Python 3.12"
+" 中被移除:"
 
 #: ../../whatsnew/3.11.rst:1770
 msgid "the :class:`!configparser.SafeConfigParser` class"
@@ -3015,6 +3029,11 @@ msgid ""
 ":class:`configparser.ExtendedInterpolation` instead. (Contributed by Hugo "
 "van Kemenade in :issue:`46607`.)"
 msgstr ""
+":class:`!configparser.LegacyInterpolation` 自 Python 3.2 起已在文档字符串中被弃用，并未在 "
+":mod:`configparser` 文档中列出。 现在它将发出 :exc:`DeprecationWarning` 并将在 Python 3.13 "
+"中被移除。 请改用 :class:`configparser.BasicInterpolation` 或 "
+":class:`configparser.ExtendedInterpolation`。 （由 Hugo van Kemenade 在 "
+":issue:`46607` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1783
 msgid ""
@@ -3023,6 +3042,8 @@ msgid ""
 "future Python version, due to not supporting resources located within "
 "package subdirectories:"
 msgstr ""
+"较旧的 :mod:`importlib.resources` 函数集合已被弃用而改用在 Python 3.9 中添加的替代物并将在未来的 Python "
+"版本中被移除，因为它们不支持位于 package 子目录下的资源:"
 
 #: ../../whatsnew/3.11.rst:1788
 msgid ":func:`importlib.resources.contents`"

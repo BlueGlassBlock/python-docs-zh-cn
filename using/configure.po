@@ -302,6 +302,8 @@ msgid ""
 "``/tmp/py_stats/``, or ``C:\\temp\\py_stats\\`` on Windows. If that "
 "directory does not exist, results will be printed on stdout."
 msgstr ""
+"统计信息将被转储至 ``/tmp/py_stats/`` 中的任意文件（可能唯一），或者在 Windows 上则为 "
+"``C:\\temp\\py_stats\\``。 如果该目录不存在，结果将被打印到 stdout。"
 
 #: ../../using/configure.rst:184
 msgid "Use ``Tools/scripts/summarize_stats.py`` to read the stats."
@@ -402,6 +404,8 @@ msgid ""
 "is recommended for best performance. The experimental ``--enable-bolt`` flag"
 " can also be used to improve performance."
 msgstr ""
+"为获得最佳性能推荐使用 ``--enable-optimizations --with-lto`` (PGO + LTO) 来配置 Python。 "
+"试验性的 ``--enable-bolt`` 旗标也可被用来提升性能。"
 
 #: ../../using/configure.rst:263
 msgid ""
@@ -461,7 +465,7 @@ msgstr "要使用 ThinLTO 特性，请在 Clang 上使用 ``--with-lto=thin``。
 msgid ""
 "Use ThinLTO as the default optimization policy on Clang if the compiler "
 "accepts the flag."
-msgstr ""
+msgstr "如果编译器支持将使用 ThinLTO 旗标作为 Clang 上的默认优化策略。"
 
 #: ../../using/configure.rst:304
 msgid ""
@@ -469,6 +473,8 @@ msgid ""
 "<https://github.com/llvm/llvm-project/tree/main/bolt>`_ (disabled by "
 "default)."
 msgstr ""
+"允许启用 `BOLT 链接后二进制优化器 <https://github.com/llvm/llvm-project/tree/main/bolt>`_"
+" (默认为禁用)。"
 
 #: ../../using/configure.rst:308
 msgid ""
@@ -476,6 +482,8 @@ msgid ""
 "distributions. This flag requires that ``llvm-bolt`` and ``merge-fdata`` are"
 " available."
 msgstr ""
+"BOLT 是 LLVM 项目的一部分但并不总是包括在其二进制分发包中。 该旗标要求 ``llvm-bolt`` 和 ``merge-fdata`` "
+"可用。"
 
 #: ../../using/configure.rst:312
 msgid ""
@@ -487,6 +495,9 @@ msgid ""
 "some scenarios. Use of LLVM 16 or newer for BOLT optimization is strongly "
 "encouraged."
 msgstr ""
+"BOLT 仍然是一个相当新的项目因此目前该旗标应当被视为是试验性的。 因为此工具是作用于机器码所以其成功依赖于构建环境 + 其他优化配置参数 + CPU"
+" 架构的组合，并且并非所有组合都受到支持。 已知 LLVM 16 之前的 BOLT 版本在某些场景下会使得 BOLT 发生崩溃。 强烈建议使用 LLVM"
+" 16 或更新版本进行 BOLT 优化。"
 
 #: ../../using/configure.rst:320
 msgid ""
@@ -495,6 +506,9 @@ msgid ""
 " arguments for :program:`llvm-bolt` to instrument and apply BOLT data to "
 "binaries, respectively."
 msgstr ""
+":envvar:`!BOLT_INSTRUMENT_FLAGS` 和 :envvar:`!BOLT_APPLY_FLAGS` "
+":program:`configure` 变量可被定义为覆盖 :program:`llvm-bolt` 的默认参数集合来分别指示和将 BOLT "
+"数据应用于二进制代码中。"
 
 #: ../../using/configure.rst:329
 msgid ""
@@ -535,6 +549,8 @@ msgid ""
 "Add ``-fstrict-overflow`` to the C compiler flags (by default we add ``-fno-"
 "strict-overflow`` instead)."
 msgstr ""
+"将 ``-fstrict-overflow`` 添加到 C 编译器旗标 (在默认情况下我们将添加 ``-fno-strict-overflow`` "
+"来代替)。"
 
 #: ../../using/configure.rst:361
 msgid "Python Debug Build"
@@ -572,7 +588,7 @@ msgstr "命令行参数加入 :option:`-X showrefcount <-X>` 。"
 msgid ""
 "Add :option:`-d` command line option and :envvar:`PYTHONDEBUG` environment "
 "variable to debug the parser."
-msgstr ""
+msgstr "添加 :option:`-d` 命令行选项和 :envvar:`PYTHONDEBUG` 环境变量用于调试解析器。"
 
 #: ../../using/configure.rst:375
 msgid ""
@@ -1035,7 +1051,7 @@ msgstr ""
 
 #: ../../using/configure.rst:689
 msgid ":file:`setup.py`: C extensions built using the ``setuptools`` package."
-msgstr ""
+msgstr ":file:`setup.py`: 使用 ``setuptools`` 包构建的 C 扩展。"
 
 #: ../../using/configure.rst:692
 msgid "Main build steps"
@@ -1291,6 +1307,7 @@ msgid ""
 "Options passed to the :mod:`compileall` command line when building PYC files"
 " in ``make install``. Default: ``-j0``."
 msgstr ""
+"当在 ``make install`` 中构建 PYC 文件时传给 :mod:`compileall` 命令行的选项。 默认值: ``-j0``。"
 
 #: ../../using/configure.rst:849
 msgid "Extra C compiler flags."
@@ -1397,7 +1414,7 @@ msgstr "用于构建如 ``python`` 和 ``_testembed`` 的程序的链接器命�
 
 #: ../../using/configure.rst:939
 msgid "Default: ``$(PURIFY) $(CC)``."
-msgstr ""
+msgstr "默认值: ``$(PURIFY) $(CC)``。"
 
 #: ../../using/configure.rst:943
 msgid ""
