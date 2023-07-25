@@ -1170,7 +1170,7 @@ msgstr "代表真值的布尔对象。 :class:`bool` 类型只有两个常量实
 msgid ""
 "The built-in function :func:`bool`  converts any value to a boolean, if the "
 "value can be interpreted as a truth value (see section :ref:`truth` above)."
-msgstr ""
+msgstr "内置函数 :func:`bool` 可将任意值转换为布尔值，如果该值可以被解读为逻辑值的话（参见上面的 :ref:`truth` 小节）。"
 
 #: ../../library/stdtypes.rst:821
 msgid ""
@@ -1180,12 +1180,15 @@ msgid ""
 "\"and\", \"or\", \"xor\". However, the logical operators ``and``, ``or`` and"
 " ``!=`` should be preferred over ``&``, ``|`` and ``^``."
 msgstr ""
+"对于逻辑运算，请使用 :ref:`布尔运算符 <boolean>` ``and``, ``or`` 和 ``not``。 当于两个布尔值应用按位运算符 "
+"``&``, ``|``, ``^`` 时，它们将返回一个等价于逻辑运算 \"与\", \"或\", \"异或\" 的布尔值。 "
+"但是，更推荐使用逻辑运算符 ``and``, ``or`` 和 ``!=`` 而不是 ``&``, ``|`` 和 ``^``。"
 
 #: ../../library/stdtypes.rst:830
 msgid ""
 "The use of the bitwise inversion operator ``~`` is deprecated and will raise"
 " an error in Python 3.14."
-msgstr ""
+msgstr "按位取反运算符 ``~`` 已被弃用并将在 Python 3.14 中引发异常。"
 
 #: ../../library/stdtypes.rst:833
 msgid ""
@@ -1194,6 +1197,9 @@ msgid ""
 " 1, respectively. However, relying on this is discouraged; explicitly "
 "convert using :func:`int` instead."
 msgstr ""
+":class:`bool` 是 :class:`int` 的子类 (参见 :ref:`typesnumeric`)。 "
+"在许多数字场景下，``False`` 和 ``True`` 的行为分别与整数 0 和 1 类似。 但是，不建议这样使用；请使用 :func:`int` "
+"显式地执行转换。"
 
 #: ../../library/stdtypes.rst:841
 msgid "Iterator Types"
@@ -2298,6 +2304,10 @@ msgid ""
 ":meth:`~object.__str__` method, then :func:`str` falls back to returning "
 ":func:`repr(object) <repr>`."
 msgstr ""
+"如果 *encoding* 或 *errors* 均未给出，则 ``str(object)`` 将返回 "
+":meth:`type(object).__str__(object) <object.__str__>`，这是 *object* "
+"的“非正式”而适合显示的字符串表示形式。 对于字符串对象，这就是该字符串本身。 如果 *object* 没有 "
+":meth:`~object.__str__` 方法，则 :func:`str` 将回退为返回 :func:`repr(object) <repr>`。"
 
 #: ../../library/stdtypes.rst:1571
 msgid ""
