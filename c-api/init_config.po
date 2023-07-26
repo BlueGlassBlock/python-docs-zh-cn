@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Menghua Xiao <arieshout@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 14:44+0000\n"
+"POT-Creation-Date: 2023-07-21 14:44+0000\n"
 "PO-Revision-Date: 2023-05-24 02:09+0000\n"
-"Last-Translator: Menghua Xiao <arieshout@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1045,7 +1045,7 @@ msgid ""
 "ASCII encoding, whereas the ``mbstowcs()`` function decodes from a different"
 " encoding (usually Latin1)."
 msgstr ""
-"``\"ascii\"``：如果 Python 检测到 ``nl_langinfo(CODESET)`` 声明的是 ASCII 编码，但 "
+"``\"ascii\"``，如果 Python 检测到 ``nl_langinfo(CODESET)`` 声明的是 ASCII 编码，但 "
 "``mbstowcs()`` 函数是从别的编码进行解码的 （通常是 Latin1）。  "
 
 #: ../../c-api/init_config.rst:740
@@ -1612,70 +1612,73 @@ msgstr "默认编码："
 
 #: ../../c-api/init_config.rst:1131
 msgid "``\"UTF-8\"`` if :c:member:`PyPreConfig.utf8_mode` is non-zero."
-msgstr ""
+msgstr "``\"UTF-8\"``， 如果 :c:member:`PyPreConfig.utf8_mode` 非零。 "
 
 #: ../../c-api/init_config.rst:1132
 msgid "Otherwise, use the :term:`locale encoding`."
-msgstr ""
+msgstr "否则，请使用 :term:`locale encoding`。"
 
 #: ../../c-api/init_config.rst:1134
 msgid "Default error handler:"
-msgstr ""
+msgstr "默认错误处理程序："
 
 #: ../../c-api/init_config.rst:1136
 msgid "On Windows: use ``\"surrogateescape\"``."
-msgstr ""
+msgstr "在 Windows 系统中：使用 ``\"surrogateescape\"`` 。"
 
 #: ../../c-api/init_config.rst:1137
 msgid ""
 "``\"surrogateescape\"`` if :c:member:`PyPreConfig.utf8_mode` is non-zero, or"
 " if the LC_CTYPE locale is \"C\" or \"POSIX\"."
 msgstr ""
+" 如果 :c:member:`PyPreConfig.utf8_mode` 非零，或者 LC_CTYPE 语言区域为 \"C \"或 "
+"\"POSIX\"，使用 ``\"surrogateescape\"``。"
 
 #: ../../c-api/init_config.rst:1139
 msgid "``\"strict\"`` otherwise."
-msgstr ""
+msgstr "否则使用 ``\"strict\"`` 。"
 
 #: ../../c-api/init_config.rst:1143
 msgid "Enable tracemalloc?"
-msgstr ""
+msgstr "启用 tracemalloc？"
 
 #: ../../c-api/init_config.rst:1145
 msgid "If non-zero, call :func:`tracemalloc.start` at startup."
-msgstr ""
+msgstr "如果非零，则在启动时调用 :func:`tracemalloc.start` 。"
 
 #: ../../c-api/init_config.rst:1147
 msgid ""
 "Set by :option:`-X tracemalloc=N <-X>` command line option and by the "
 ":envvar:`PYTHONTRACEMALLOC` environment variable."
 msgstr ""
+"通过 :option:`-X tracemalloc=N<-X>` 命令行选项和 :envvar:`PYTHONTRACEMALLOC` 环境变量设置。"
 
 #: ../../c-api/init_config.rst:1154
 msgid "Use :ref:`environment variables <using-on-envvars>`?"
-msgstr ""
+msgstr "使用 :ref:`环境变量 <using-on-envvars>`？"
 
 #: ../../c-api/init_config.rst:1156
 msgid ""
 "If equals to zero, ignore the :ref:`environment variables <using-on-"
 "envvars>`."
-msgstr ""
+msgstr "如果等于零，则忽略 :ref:`环境变量 <using-on-envvars>`。"
 
 #: ../../c-api/init_config.rst:1159
 msgid "Set to ``0`` by the :option:`-E` environment variable."
-msgstr ""
+msgstr "通过 :option:`-E` 环境变量设置为 ``0`` 。"
 
 #: ../../c-api/init_config.rst:1165
 msgid "If non-zero, add the user site directory to :data:`sys.path`."
-msgstr ""
+msgstr "如果非零，则将用户站点目录添加到 :data:`sys.path` 。"
 
 #: ../../c-api/init_config.rst:1167
 msgid ""
 "Set to ``0`` by the :option:`-s` and :option:`-I` command line options."
-msgstr ""
+msgstr "通过 :option:`-s` 和 :option:`-I` 命令行选项设置为 ``0`` 。"
 
 #: ../../c-api/init_config.rst:1169
 msgid "Set to ``0`` by the :envvar:`PYTHONNOUSERSITE` environment variable."
-msgstr ""
+msgstr "通过 :envvar:`PYTHONNOUSERSITE` 环境变量设置为``0`` 。"
 
 #: ../../c-api/init_config.rst:1175
 msgid ""
