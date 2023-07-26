@@ -883,7 +883,7 @@ msgstr ""
 
 #: ../../library/socket.rst:540
 msgid "For more information, see the :manpage:`packet(7)` manpage."
-msgstr ""
+msgstr "要了解详情，请参阅 :manpage:`packet(7)` 手册页。"
 
 #: ../../library/socket.rst:542
 msgid ":ref:`Availability <availability>`: Linux."
@@ -981,7 +981,7 @@ msgstr "用于优化 CPU 定位的常量，应与 :data:`SO_REUSEPORT` 配合使
 
 #: ../../library/socket.rst:671
 msgid "Constants for Windows Hyper-V sockets for host/guest communications."
-msgstr ""
+msgstr "用于 Windows Hyper-V 宿主机/客户机通信的套接字的常量。"
 
 #: ../../library/socket.rst:673 ../../library/socket.rst:880
 #: ../../library/socket.rst:1971
@@ -994,10 +994,13 @@ msgid ""
 "<https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.txt>`_. "
 "constants."
 msgstr ""
+"`IEEE 802.3 协议号 "
+"<https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.txt>`_ "
+"常量。"
 
 #: ../../library/socket.rst:688
 msgid ":ref:`Availability <availability>`: Linux, FreeBSD, macOS."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux, FreeBSD, macOS。"
 
 #: ../../library/socket.rst:694
 msgid "Functions"
@@ -1187,7 +1190,7 @@ msgstr "添加了 *all_errors*。"
 msgid ""
 "Convenience function which creates a TCP socket bound to *address* (a "
 "2-tuple ``(host, port)``) and returns the socket object."
-msgstr ""
+msgstr "创建绑定到 *address* 的 TCP 套接字（一个 ``(host, port)`` 2 元组）并返回该套接字对象的便捷函数。"
 
 #: ../../library/socket.rst:818
 msgid ""
@@ -2080,7 +2083,7 @@ msgstr "如果套接字处于阻塞模式，返回 ``True``，非阻塞模式返
 
 #: ../../library/socket.rst:1530
 msgid "This is equivalent to checking ``socket.gettimeout() != 0``."
-msgstr ""
+msgstr "这等价于检测 ``socket.gettimeout() != 0``。"
 
 #: ../../library/socket.rst:1537
 msgid ""
@@ -2795,7 +2798,7 @@ msgstr "这是因为前一次运行使套接字处于 ``TIME_WAIT`` 状态，无
 msgid ""
 "There is a :mod:`socket` flag to set, in order to prevent this, "
 ":const:`socket.SO_REUSEADDR`::"
-msgstr ""
+msgstr "要防止这种情况，需要设置一个 :mod:`socket` 旗标 :const:`socket.SO_REUSEADDR`::"
 
 #: ../../library/socket.rst:2261
 msgid ""
