@@ -3081,6 +3081,10 @@ msgid ""
 " :func:`locale.getlocale` functions instead. (Contributed by Victor Stinner "
 "in :gh:`90817`.)"
 msgstr ""
+":func:`locale.getdefaultlocale` 函数已被弃用并将在 Python 3.13 中移除。 请改用 "
+":func:`locale.setlocale`, :func:`locale.getpreferredencoding(False) "
+"<locale.getpreferredencoding>` 和 :func:`locale.getlocale` 函数。 （由 Victor "
+"Stinner 在 :gh:`90817` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1802
 msgid ""
@@ -3088,6 +3092,9 @@ msgid ""
 " Python 3.13. Use ``locale.setlocale(locale.LC_ALL, \"\")`` instead. "
 "(Contributed by Victor Stinner in :gh:`90817`.)"
 msgstr ""
+":func:`locale.resetlocale` 函数已被弃用并将在 Python 3.13 中移除。 请改用 "
+"``locale.setlocale(locale.LC_ALL, \"\")``。 （由 Victor Stinner 在 :gh:`90817` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1806
 msgid ""
@@ -3099,6 +3106,9 @@ msgid ""
 "for syntax violating these rules. (Contributed by Serhiy Storchaka in "
 ":gh:`91760`.)"
 msgstr ""
+"现在对于 :ref:`正则表达式 <re-syntax>` 中的数字分组引用和分组名称将应用更严格的规则。 现在只有 ASCII "
+"数字序列会被接受作为数字引用，而 :class:`bytes` 模式和替换字符串中的分组名称只能包含 ASCII 字母、数字和下划线。 "
+"目前对于违反这些规则的语法将会引发弃用警告。 （由 Serhiy Storchaka 在 :gh:`91760` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1814
 msgid ""
@@ -3108,6 +3118,9 @@ msgid ""
 "removed in Python 3.13. (Contributed by Serhiy Storchaka and Miro Hrončok in"
 " :gh:`92728`.)"
 msgstr ""
+"在 :mod:`re` 模块中，:func:`!re.template` 函数和相应的 :const:`!re.TEMPLATE` 和 "
+":const:`!re.T` 旗标已被弃用，因为它们未被写入文档并缺少明显的目的。 它们将在 Python 3.13 中移除。 （由 Serhiy "
+"Storchaka 和 Miro Hrončok 在 :gh:`92728` 由贡献。）"
 
 #: ../../whatsnew/3.11.rst:1820
 msgid ""
@@ -3117,6 +3130,9 @@ msgid ""
 "deprecated, and its docstring is now corrected). (Contributed by Hugo van "
 "Kemenade in :issue:`45837`.)"
 msgstr ""
+":func:`turtle.settiltangle` 自 Python 3.1 起已被弃用；现在它会发出弃用警告并将在 Python 3.13 "
+"中移除。 请改用 :func:`turtle.tiltangle` (该函数在此前被错误地标记为已弃用，现在它的文档字符串已被修正)。 （由 Hugo "
+"van Kemenade 在 :issue:`45837` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1826
 msgid ""
