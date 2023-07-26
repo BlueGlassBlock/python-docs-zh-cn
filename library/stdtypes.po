@@ -4681,18 +4681,20 @@ msgid ""
 "is the nested list representation of the view. If ``view.ndim = 1``, this is"
 " equal to the number of elements in the view."
 msgstr ""
+"``len(view)`` 等于 :class:`~memoryview.tolist` 的长度，即视图的嵌套列表表示形式。 如果 "
+"``view.ndim = 1``，它将等于视图中元素的数量。"
 
 #: ../../library/stdtypes.rst:3755
 msgid ""
 "If ``view.ndim == 0``, ``len(view)`` now raises :exc:`TypeError` instead of "
 "returning 1."
-msgstr ""
+msgstr "如果 ``view.ndim == 0``，现在 ``len(view)`` 将引发 :exc:`TypeError` 而不是返回 1."
 
 #: ../../library/stdtypes.rst:3758
 msgid ""
 "The :class:`~memoryview.itemsize` attribute will give you the number of "
 "bytes in a single element."
-msgstr ""
+msgstr ":class:`~memoryview.itemsize` 属性将给出单个元素的字节数。"
 
 #: ../../library/stdtypes.rst:3761
 msgid ""
@@ -4894,6 +4896,8 @@ msgid ""
 "'c'). The byte length of the result must be the same as the original length."
 " Note that all byte lengths may depend on the operating system."
 msgstr ""
+"目标格式被限制为 :mod:`struct` 语法中的单一元素的原生格式。 这些格式中的一种必须为字节格式 ('B', 'b' 或 'c')。 "
+"结果的字节长度必须与原始长度相同。 请注意全部字节长度可能取决于具体操作系统。"
 
 #: ../../library/stdtypes.rst:4011
 msgid "Cast 1D/long to 1D/unsigned bytes::"
@@ -5708,6 +5712,10 @@ msgid ""
 "``^``).  While using set operators, set-like views accept any iterable as "
 "the other operand, unlike sets which only accept sets as the input."
 msgstr ""
+"键视图与集合类似因为它们的条目是唯一并且为 :term:`hashable`。 如果所有值都是可哈希对象，因而 ``(key, value)`` "
+"对也是唯一并且为可哈希对象，那么条目视图也将与集合类似。 （值视图不会被认为与集合类似因为其条目通常都不是唯一的。） 对于与集合类似的视图，为抽象基类 "
+":class:`collections.abc.Set` 定义的所有操作都将是可用的 (例如 ``==``, ``<`` 或 ``^``)。 "
+"虽然使用了集合运算符，但与集合类似的视图接受任何可迭代对象作为其操作数，而不像集合哪样只接受集合作为输入。"
 
 #: ../../library/stdtypes.rst:4761
 msgid "An example of dictionary view usage::"
@@ -6334,6 +6342,8 @@ msgid ""
 " For unions which include forward references, present the whole expression "
 "as a string, e.g. ``\"int | Foo\"``."
 msgstr ""
+"不可在运行时使用 ``|`` 操作数来定义有一个或多个成员为前向引用的并集。 例如，``int | \"Foo\"``，其中 ``\"Foo\"`` "
+"是指向某个尚未定义的类的引用，在运行时将会失败。 对于包括前向引用的并集，请将整个表达式用字符串来表示，例如 ``\"int | Foo\"``。"
 
 #: ../../library/stdtypes.rst:5176
 msgid ""
@@ -6370,7 +6380,7 @@ msgstr ":func:`isinstance` 和 :func:`issubclass` 也支持 union 对象："
 msgid ""
 "However, :ref:`parameterized generics <types-genericalias>` in union objects"
 " cannot be checked::"
-msgstr ""
+msgstr "但是联合对象中的 :ref:`参数化泛型 <types-genericalias>` 将无法被检测::"
 
 #: ../../library/stdtypes.rst:5217
 msgid ""
@@ -6675,7 +6685,7 @@ msgstr "类、函数、方法、描述器或生成器实例的 :term:`qualified 
 msgid ""
 "The :ref:`type parameters <type-params>` of generic classes, functions, and "
 ":ref:`type aliases <type-aliases>`."
-msgstr ""
+msgstr "以下对象的 :ref:`类型形参 <type-params>`: 泛型类、函数和 :ref:`类型别名 <type-aliases>`。"
 
 #: ../../library/stdtypes.rst:5500
 msgid ""
@@ -6881,7 +6891,7 @@ msgstr ""
 msgid ""
 "Information about the default and minimum can be found in "
 ":data:`sys.int_info`:"
-msgstr ""
+msgstr "有关默认值和最小值的信息可在 :data:`sys.int_info` 中找到:"
 
 #: ../../library/stdtypes.rst:5634
 msgid ""
@@ -6934,6 +6944,9 @@ msgid ""
 "limit, set it from your main entry point using Python version agnostic code "
 "as these APIs were added in security patch releases in versions before 3.12."
 msgstr ""
+"默认的 :data:`sys.int_info.default_max_str_digits` 被预期对于大多数应用程序来说都是合理的。 "
+"如果你的应用程序需要不同的限制值，请使用不预设 Python 版本的代码从你的主入口点进行设置，因为这些 API 是在 3.12 "
+"之前的版本所发布的安全补丁中添加的。"
 
 #: ../../library/stdtypes.rst:5665
 msgid "Example::"
