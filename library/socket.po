@@ -502,6 +502,8 @@ msgid ""
 "represented as a ``(vm_id, service_id)`` tuple where the ``vm_id`` and "
 "``service_id`` are UUID strings."
 msgstr ""
+":const:`AF_HYPERV` 是 Windows 专属的用于同 Hyper-V 主机和客户机通信的基于套接字的接口。 其地址族以一个 "
+"``(vm_id, service_id)`` 元组表示，其中 ``vm_id`` 和 ``service_id`` 均为 UUID 字符串。"
 
 #: ../../library/socket.rst:243
 msgid ""
@@ -509,30 +511,32 @@ msgid ""
 "values if the target is not a specific virtual machine. Known VMID constants"
 " defined on ``socket`` are:"
 msgstr ""
+"``vm_id`` 为虚拟机标识号或者如果目标不是一台特定的虚拟机则为已知 VMID 值的集合。 在 ``socket`` 上定义的已知 VMID "
+"常量有:"
 
 #: ../../library/socket.rst:247
 msgid "``HV_GUID_ZERO``"
-msgstr ""
+msgstr "``HV_GUID_ZERO``"
 
 #: ../../library/socket.rst:248
 msgid "``HV_GUID_BROADCAST``"
-msgstr ""
+msgstr "``HV_GUID_BROADCAST``"
 
 #: ../../library/socket.rst:249
 msgid ""
 "``HV_GUID_WILDCARD`` - Used to bind on itself and accept connections from "
 "all partitions."
-msgstr ""
+msgstr "``HV_GUID_WILDCARD`` - 用于绑定自身并接受来自所有分区的连接。"
 
 #: ../../library/socket.rst:251
 msgid ""
 "``HV_GUID_CHILDREN`` - Used to bind on itself and accept connection from "
 "child partitions."
-msgstr ""
+msgstr "``HV_GUID_CHILDREN`` - 用于绑定自身并接受来自子分区的连接。"
 
 #: ../../library/socket.rst:253
 msgid "``HV_GUID_LOOPBACK`` - Used as a target to itself."
-msgstr ""
+msgstr "``HV_GUID_LOOPBACK`` - 用作指向自身的目标。"
 
 #: ../../library/socket.rst:254
 msgid ""
@@ -540,6 +544,8 @@ msgid ""
 "partition. When used as an address target it will connect to the parent "
 "partition."
 msgstr ""
+"``HV_GUID_PARENT`` - 当用作绑定时接受来自父分区的连接。 当用作地址目标时它将连接到父分区。will connect to the "
+"parent partition."
 
 #: ../../library/socket.rst:257
 msgid ""
