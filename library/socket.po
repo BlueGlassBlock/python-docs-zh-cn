@@ -774,6 +774,16 @@ msgid ""
 "``IP_BLOCK_SOURCE``, ``IP_ADD_SOURCE_MEMBERSHIP``, "
 "``IP_DROP_SOURCE_MEMBERSHIP``."
 msgstr ""
+"增加了 ``SO_RTABLE`` 和 ``SO_USER_COOKIE``。 这些常量分别在 OpenBSD 和 FreeBSD 可按与 "
+"``SO_MARK`` 在 Linux 上相同的方式被使用。 还增加了来自 Linux 的缺失的 TCP 套接字选项: ``TCP_MD5SIG``, "
+"``TCP_THIN_LINEAR_TIMEOUTS``, ``TCP_THIN_DUPACK``, ``TCP_REPAIR``, "
+"``TCP_REPAIR_QUEUE``, ``TCP_QUEUE_SEQ``, ``TCP_REPAIR_OPTIONS``, "
+"``TCP_TIMESTAMP``, ``TCP_CC_INFO``, ``TCP_SAVE_SYN``, ``TCP_SAVED_SYN``, "
+"``TCP_REPAIR_WINDOW``, ``TCP_FASTOPEN_CONNECT``, ``TCP_ULP``, "
+"``TCP_MD5SIG_EXT``, ``TCP_FASTOPEN_KEY``, ``TCP_FASTOPEN_NO_COOKIE``, "
+"``TCP_ZEROCOPY_RECEIVE``, ``TCP_INQ``, ``TCP_TX_DELAY``。 增加了 ``IP_PKTINFO``,"
+" ``IP_UNBLOCK_SOURCE``, ``IP_BLOCK_SOURCE``, ``IP_ADD_SOURCE_MEMBERSHIP``, "
+"``IP_DROP_SOURCE_MEMBERSHIP``。"
 
 #: ../../library/socket.rst:447 ../../library/socket.rst:528
 #: ../../library/socket.rst:552
@@ -856,11 +866,11 @@ msgstr ":ref:`可用性 <availability>`： Linux >= 5.4。"
 msgid ""
 "These two constants, documented in the FreeBSD divert(4) manual page, are "
 "also defined in the socket module."
-msgstr ""
+msgstr "这两个常量，记录在 FreeBSD divert(4) 手册页中，同样已在 socket 模块中定义。"
 
 #: ../../library/socket.rst:519
 msgid ":ref:`Availability <availability>`: FreeBSD >= 14.0."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: FreeBSD >= 14.0。"
 
 #: ../../library/socket.rst:536
 msgid ""
@@ -868,6 +878,8 @@ msgid ""
 " *proto* for the :const:`AF_PACKET` family in order to capture every packet,"
 " regardless of protocol."
 msgstr ""
+":data:`!ETH_P_ALL` 可在 :class:`~socket.socket` 构造器中用作 :const:`AF_PACKET` 族的 "
+"*proto* 以便捕获每个包，无论是使用什么协议。"
 
 #: ../../library/socket.rst:540
 msgid "For more information, see the :manpage:`packet(7)` manpage."
