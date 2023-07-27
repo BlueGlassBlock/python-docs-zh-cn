@@ -198,6 +198,11 @@ msgid ""
 " Point <https://www.lahey.com/float.htm>`_ for a more complete account of "
 "other common surprises."
 msgstr ""
+"二进制浮点运算会有许多这样令人惊讶的情况。 有关 \"0.1\" 的问题会在下面 \"表示性错误\" 一节中更精确详细地描述。 请参阅 "
+"`Examples of Floating Point Problems "
+"<https://jvns.ca/blog/2023/01/13/examples-of-floating-point-problems/>`_ "
+"获取针对二进制浮点运算机制和在实践中各种常见问题的概要说明。 还可参阅 `The Perils of Floating Point "
+"<https://www.lahey.com/float.htm>`_ 获取其他常见意外现象的更完整介绍。"
 
 #: ../../tutorial/floatingpoint.rst:156
 msgid ""
@@ -247,6 +252,8 @@ msgid ""
 "statistical operations supplied by the SciPy project. See "
 "<https://scipy.org>."
 msgstr ""
+"如果你是浮点运算的重度用户那么你应当了解一下 NumPy 包以及由 SciPy 项目所提供的许多其他数学和统计运算包。 参见 "
+"<https://scipy.org>。"
 
 #: ../../tutorial/floatingpoint.rst:181
 msgid ""
@@ -255,6 +262,8 @@ msgid ""
 ":meth:`float.as_integer_ratio` method expresses the value of a float as a "
 "fraction:"
 msgstr ""
+"Python 还提供了一些工具可能在你 *确实* 想要知道一个浮点数的精确值的少数情况下提供帮助。 例如 "
+":meth:`float.as_integer_ratio` 方法会将浮点数值表示为一个分数:"
 
 #: ../../tutorial/floatingpoint.rst:192
 msgid ""
