@@ -172,18 +172,20 @@ msgid ""
 " cannot get any closer to the exact value of 3/10, then pre-rounding with "
 ":func:`round` function cannot help:"
 msgstr ""
+"而且，由于这个 0.1 无法精确表示 1/10 而这个 0.3 也无法精确表示 3/10 的值，使用 :func:`round` "
+"函数进行预先舍入也是没用的:"
 
 #: ../../tutorial/floatingpoint.rst:131
 msgid ""
 "Though the numbers cannot be made closer to their intended exact values, the"
 " :func:`math.isclose` function can be useful for comparing inexact values:"
-msgstr ""
+msgstr "虽然这些数字无法精确表示其所要代表的实际值，但是可以使用 :func:`math.isclose` 函数来进行不精确的值比较:"
 
 #: ../../tutorial/floatingpoint.rst:139
 msgid ""
 "Alternatively, the :func:`round` function can be used to compare rough "
 "approximations::"
-msgstr ""
+msgstr "或者，也可以使用 :func:`round` 函数来大致比较近似程度::"
 
 #: ../../tutorial/floatingpoint.rst:147
 msgid ""
@@ -340,7 +342,7 @@ msgstr "写为 ::"
 msgid ""
 "and recalling that *J* has exactly 53 bits (is ``>= 2**52`` but ``< "
 "2**53``), the best value for *N* is 56:"
-msgstr ""
+msgstr "并且由于 *J* 恰好有 53 位 (即 ``>= 2**52`` 但 ``< 2**53``)，*N* 的最佳值为 56:"
 
 #: ../../tutorial/floatingpoint.rst:294
 msgid ""
@@ -352,7 +354,7 @@ msgstr ""
 msgid ""
 "Since the remainder is more than half of 10, the best approximation is "
 "obtained by rounding up:"
-msgstr ""
+msgstr "由于余数超于 10 的一半，所以最佳近似值可通过向上舍入获得:"
 
 #: ../../tutorial/floatingpoint.rst:313
 msgid ""
