@@ -269,19 +269,19 @@ msgstr ""
 msgid ""
 "Since the ratio is exact, it can be used to losslessly recreate the original"
 " value:"
-msgstr ""
+msgstr "由于这个比值是精确的，它可以被用来无损地重建原始值:"
 
 #: ../../tutorial/floatingpoint.rst:200
 msgid ""
 "The :meth:`float.hex` method expresses a float in hexadecimal (base 16), "
 "again giving the exact value stored by your computer:"
-msgstr ""
+msgstr ":meth:`float.hex` 方法会以十六进制（以 16 为基数）来表示浮点数，同样能给出保存在你的计算机中的精确值:"
 
 #: ../../tutorial/floatingpoint.rst:208
 msgid ""
 "This precise hexadecimal representation can be used to reconstruct the float"
 " value exactly:"
-msgstr ""
+msgstr "这种精确的十六进制表示形式可被用来精确地重建浮点数值:"
 
 #: ../../tutorial/floatingpoint.rst:216
 msgid ""
@@ -300,6 +300,8 @@ msgid ""
 "difference in overall accuracy so that the errors do not accumulate to the "
 "point where they affect the final total:"
 msgstr ""
+"另一个有用的工具是 :func:`sum` 函数，它能够帮助减少求和过程中的精度损失。 它会在数值被添加到总计值的时候为中间舍入步骤使用扩展的精度。 "
+"这可以更好地保持总体精确度，使得错误不会积累到能够影响最终总计值的程度:"
 
 #: ../../tutorial/floatingpoint.rst:233
 msgid ""
@@ -309,6 +311,8 @@ msgid ""
 "in uncommon cases where large magnitude inputs mostly cancel each other out "
 "leaving a final sum near zero:"
 msgstr ""
+":func:`math.fsum()` 更进一步地会在数值被添加到总计值的时候跟踪“丢失的数位”以使得结果只执行一次舍入。 此函数要比 "
+":func:`sum` 慢但在大量输入几乎相互抵销导致最终总计值接近零的少见场景中将会更为精确:"
 
 #: ../../tutorial/floatingpoint.rst:260
 msgid "Representation Error"
@@ -342,6 +346,10 @@ msgid ""
 "fraction it can of the form *J*/2**\\ *N* where *J* is an integer containing"
 " exactly 53 bits. Rewriting ::"
 msgstr ""
+"为什么会这样？ 1/10 是无法用二进制小数精确表示的。 至少从 2000 年起，几乎所有机器都使用 IEEE 754 "
+"二进制浮点运算标准，而几乎所有系统平台都将 Python 浮点数映射为 IEEE 754 binary64 \"双精度\" 值。 IEEE 754 "
+"binary64 值包含 53 位精度，因此在输入时计算机会尽量将 0.1 转换为以 *J*/2**\\ *N* 形式所能表示的最接近的小数，其中 "
+"*J* 为恰好包含 53 比特位的整数。 重新将 ::"
 
 #: ../../tutorial/floatingpoint.rst:282
 msgid "as ::"
@@ -357,7 +365,7 @@ msgstr "并且由于 *J* 恰好有 53 位 (即 ``>= 2**52`` 但 ``< 2**53``)，*
 msgid ""
 "That is, 56 is the only value for *N* that leaves *J* with exactly 53 bits."
 "  The best possible value for *J* is then that quotient rounded:"
-msgstr ""
+msgstr "也就是说，56 是唯一能使 *J* 恰好有 53 位的 *N* 值。 这样 *J* 可能的最佳就是舍入之后的商:"
 
 #: ../../tutorial/floatingpoint.rst:303
 msgid ""
@@ -369,7 +377,7 @@ msgstr "由于余数超于 10 的一半，所以最佳近似值可通过向上�
 msgid ""
 "Therefore the best possible approximation to 1/10 in IEEE 754 double "
 "precision is::"
-msgstr ""
+msgstr "因此在 IEEE 754 双精度下可能达到的 1/10 的最佳近似值为::"
 
 #: ../../tutorial/floatingpoint.rst:318
 msgid ""
@@ -389,7 +397,7 @@ msgstr ""
 msgid ""
 "So the computer never \"sees\" 1/10:  what it sees is the exact fraction "
 "given above, the best IEEE 754 double approximation it can get:"
-msgstr ""
+msgstr "因此计算机永远不会 \"看到\" 1/10: 它实际看到的就是上面所给出的小数，即它能达到的最佳 IEEE 754 双精度近似值:"
 
 #: ../../tutorial/floatingpoint.rst:334
 msgid ""
