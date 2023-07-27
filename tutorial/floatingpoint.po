@@ -5,17 +5,17 @@
 # 
 # Translators:
 # ww song <sww4718168@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2021
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-07-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,6 +36,9 @@ msgid ""
 "values, the only real difference being that the first is written in base 10 "
 "fractional notation, and the second in base 2."
 msgstr ""
+"浮点数在计算机硬件中是以基数为 2 (二进制) 的小数来表示的。 例如，**十进制** 小数 ``0.625`` 的值为 6/10 + 2/100 + "
+"5/1000，而同样的 **二进制** 小数 ``0.101`` 的值为 1/2 + 0/4 + 1/8。 "
+"这两个小数具有相同的值，唯一的区别在于第一个写成了基数为 10 的小数形式，而第二个则写成的基数为 2 的小数形式。"
 
 #: ../../tutorial/floatingpoint.rst:23
 msgid ""
@@ -93,12 +96,14 @@ msgid ""
 "if Python were to print the true decimal value of the binary approximation "
 "stored for 0.1, it would have to display::"
 msgstr ""
+"由于值的显示方式大多数用户都不会意识到这个差异的存在。 Python 只会打印计算机中存储的二进制值的十进制近似值。 在大部分计算机中，如果 "
+"Python 要把 0.1 的二进制值对应的准确的十进制值打印出来，将会显示成这样::"
 
 #: ../../tutorial/floatingpoint.rst:67
 msgid ""
 "That is more digits than most people find useful, so Python keeps the number"
 " of digits manageable by displaying a rounded value instead:"
-msgstr ""
+msgstr "这比大多数人认为有用的数位更多，因此 Python 通过改为显示舍入值来保留可管理的数位:"
 
 #: ../../tutorial/floatingpoint.rst:75
 msgid ""
@@ -147,7 +152,7 @@ msgstr ""
 msgid ""
 "For more pleasant output, you may wish to use string formatting to produce a"
 " limited number of significant digits:"
-msgstr ""
+msgstr "想要更美观的输出，你可能会希望使用字符串格式化来产生限定长度的有效位数:"
 
 #: ../../tutorial/floatingpoint.rst:111
 msgid ""
@@ -159,7 +164,7 @@ msgstr "必须重点了解的是，这在实际上只是一个假象：你只是
 msgid ""
 "One illusion may beget another.  For example, since 0.1 is not exactly 1/10,"
 " summing three values of 0.1 may not yield exactly 0.3, either:"
-msgstr ""
+msgstr "一个假象还可能导致另一个假象。 例如，由于这个 0.1 并非真正的 1/10，将三个 0.1 的值相加也无法恰好得到 0.3:"
 
 #: ../../tutorial/floatingpoint.rst:122
 msgid ""
