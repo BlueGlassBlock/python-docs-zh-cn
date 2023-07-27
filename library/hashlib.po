@@ -176,7 +176,7 @@ msgstr "更简要的写法："
 
 #: ../../library/hashlib.rst:122
 msgid "Constructors"
-msgstr ""
+msgstr "构造器"
 
 #: ../../library/hashlib.rst:126
 msgid ""
@@ -185,16 +185,18 @@ msgid ""
 "above listed hashes as well as any other algorithms that your OpenSSL "
 "library may offer."
 msgstr ""
+"接受想要的算法对应的字符串 *name* 作为其第一个形参的泛型构造器。 它还允许访问上面列出的哈希算法以及你的 OpenSSL "
+"库可能提供的任何其他算法。"
 
 #: ../../library/hashlib.rst:131
 msgid "Using :func:`new` with an algorithm name:"
-msgstr ""
+msgstr "使用 :func:`new` 并附带一个算法名称:"
 
 #: ../../library/hashlib.rst:150
 msgid ""
 "Named constructors such as these are faster than passing an algorithm name "
 "to :func:`new`."
-msgstr ""
+msgstr "这些带命名的构造器速度相比向 :func:`new` 传入算法名称更快。"
 
 #: ../../library/hashlib.rst:154
 msgid "Attributes"
@@ -202,7 +204,7 @@ msgstr "属性"
 
 #: ../../library/hashlib.rst:156
 msgid "Hashlib provides the following constant module attributes:"
-msgstr ""
+msgstr "在 hashlib 中提供了下列常量模块属性:"
 
 #: ../../library/hashlib.rst:160
 msgid ""
@@ -228,7 +230,7 @@ msgstr ""
 
 #: ../../library/hashlib.rst:178
 msgid "Hash Objects"
-msgstr ""
+msgstr "哈希对象"
 
 #: ../../library/hashlib.rst:180
 msgid ""
@@ -327,10 +329,12 @@ msgid ""
 "double length, containing only hexadecimal digits.  This may be used to "
 "exchange the value in email or other non-binary environments."
 msgstr ""
+"类似于 :meth:`digest` 但摘要会以两倍长度字符串对象的形式返回，其中仅包含十六进制数码。 "
+"这可以被用于在电子邮件或其他非二进制环境中安全地交换数据值。"
 
 #: ../../library/hashlib.rst:258
 msgid "Example use:"
-msgstr ""
+msgstr "用法示例:"
 
 #: ../../library/hashlib.rst:265
 msgid "File hashing"
@@ -978,11 +982,11 @@ msgstr "针对非二进制环境对二进制哈希值进行编辑的另一种方
 
 #: ../../library/hashlib.rst:828
 msgid "https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf"
-msgstr ""
+msgstr "https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf"
 
 #: ../../library/hashlib.rst:828
 msgid "The FIPS 180-4 publication on Secure Hash Algorithms."
-msgstr ""
+msgstr "有关安全哈希算法的 FIPS 180-4 发布版。"
 
 #: ../../library/hashlib.rst:831
 msgid "https://csrc.nist.gov/publications/detail/fips/202/final"
