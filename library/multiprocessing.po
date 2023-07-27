@@ -187,7 +187,7 @@ msgstr ""
 #: ../../library/multiprocessing.rst:127
 msgid ""
 "Available on POSIX systems.  Currently the default on POSIX except macOS."
-msgstr ""
+msgstr "在 POSIX 系统上可用。 目前在除 macOS 之外的 POSIX 上为默认值。"
 
 #: ../../library/multiprocessing.rst:130
 msgid ""
@@ -195,6 +195,8 @@ msgid ""
 "that requires *fork* should explicitly specify that via :func:`get_context` "
 "or :func:`set_start_method`."
 msgstr ""
+"在 Python 3.14 上默认的启动方法将不再为 *fork*。 需要 *fork* 的代码应当显式地通过 :func:`get_context` "
+"或 :func:`set_start_method` 来指定。"
 
 #: ../../library/multiprocessing.rst:145
 msgid "*forkserver*"
@@ -209,12 +211,16 @@ msgid ""
 " or preloaded imports spawn threads as a side-effect so it is generally safe"
 " for it to use :func:`os.fork`. No unnecessary resources are inherited."
 msgstr ""
+"当程序启动并选择 *forkserver* 启动方法时，将产生一个服务器进程。 "
+"从那时起，每当需要一个新进程时，父进程就会连接到该服务器并请求它分叉一个新进程。 "
+"分叉服务器进程是单线程的，除非因系统库或预加载导入的附带影响改变了这一点，因此使用 :func:`os.fork` 通常是安全的。 "
+"没有不必要的资源被继承。"
 
 #: ../../library/multiprocessing.rst:143
 msgid ""
 "Available on POSIX platforms which support passing file descriptors over "
 "Unix pipes such as Linux."
-msgstr ""
+msgstr "在支持通过 Unix 管道传递文件描述符的 POSIX 平台上可用，例如 Linux。"
 
 #: ../../library/multiprocessing.rst:149
 msgid ""
@@ -222,6 +228,8 @@ msgid ""
 "method should be considered unsafe as it can lead to crashes of the "
 "subprocess as macOS system libraries may start threads. See :issue:`33725`."
 msgstr ""
+"在 macOS 上，现在 *spawn* 启动方法是默认值。 由于 *fork* 启动方法可能因 macOS "
+"系统库也许会启动线程导致子进程崩溃因而应当被视为是不安全的。 参见 :issue:`33725`。"
 
 #: ../../library/multiprocessing.rst:153
 msgid ""

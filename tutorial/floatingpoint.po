@@ -403,7 +403,7 @@ msgstr "因此计算机永远不会 \"看到\" 1/10: 它实际看到的就是上
 msgid ""
 "If we multiply that fraction by 10\\*\\*55, we can see the value out to 55 "
 "decimal digits:"
-msgstr ""
+msgstr "如果我们将该小数乘以 10\\*\\*55，我们可以看到该值输出 55 个十进制数位:"
 
 #: ../../tutorial/floatingpoint.rst:342
 msgid ""
@@ -412,9 +412,12 @@ msgid ""
 " displaying the full decimal value, many languages (including older versions"
 " of Python), round the result to 17 significant digits:"
 msgstr ""
+"这意味着存储在计算机中的确切数字等于十进制数值 "
+"0.1000000000000000055511151231257827021181583404541015625。 许多语言（包括较旧版本的 "
+"Python）都不会显示这个完整的十进制数值，而是将结果舍入到 17 位有效数字:"
 
 #: ../../tutorial/floatingpoint.rst:352
 msgid ""
 "The :mod:`fractions` and :mod:`decimal` modules make these calculations "
 "easy:"
-msgstr ""
+msgstr ":mod:`fractions` 和 :mod:`decimal` 模块使得这样的计算更为容易:"
