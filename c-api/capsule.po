@@ -4,18 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Shengjing Zhu <zsj950618@gmail.com>, 2021
-# Trim21 <i@trim21.me>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,11 +103,9 @@ msgstr "提取保存在 capsule 中的 *pointer*。 在失败时设置一个异�
 msgid ""
 "The *name* parameter must compare exactly to the name stored in the capsule."
 " If the name stored in the capsule is ``NULL``, the *name* passed in must "
-"also be ``NULL``.  Python uses the C function :c:func:`strcmp` to compare "
+"also be ``NULL``.  Python uses the C function :c:func:`!strcmp` to compare "
 "capsule names."
 msgstr ""
-"*name* 形参必须与保存在 capsule 中的名称进行精确比较。 如果保存在 capsule 中的名称为 ``NULL``，则传入的 *name*"
-" 也必须为 ``NULL``。 Python 会使用 C 函数 :c:func:`strcmp` 来比较 capsule 名称。"
 
 #: ../../c-api/capsule.rst:73
 msgid ""
@@ -191,11 +187,9 @@ msgstr ""
 #: ../../c-api/capsule.rst:123
 msgid ""
 "In other words, if :c:func:`PyCapsule_IsValid` returns a true value, calls "
-"to any of the accessors (any function starting with :c:func:`PyCapsule_Get`)"
-" are guaranteed to succeed."
+"to any of the accessors (any function starting with ``PyCapsule_Get``) are "
+"guaranteed to succeed."
 msgstr ""
-"换句话说，如果 :c:func:`PyCapsule_IsValid` 返回真值，则任何对访问器（以 :c:func:`PyCapsule_Get` "
-"开头的任何函数）的调用都保证会成功。"
 
 #: ../../c-api/capsule.rst:127
 msgid ""

@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 汪心禾 <wangxinhe06@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,12 +37,10 @@ msgstr ""
 msgid ""
 "Return ``1`` if the object provides the mapping protocol or supports "
 "slicing, and ``0`` otherwise.  Note that it returns ``1`` for Python classes"
-" with a :meth:`__getitem__` method, since in general it is impossible to "
-"determine what type of keys the class supports. This function always "
-"succeeds."
+" with a :meth:`~object.__getitem__` method, since in general it is "
+"impossible to determine what type of keys the class supports. This function "
+"always succeeds."
 msgstr ""
-"如果对象提供了映射协议或是支持切片则返回 ``1``，否则返回 ``0``。 请注意它将为具有 :meth:`__getitem__` 方法的 "
-"Python 类返回 ``1``，因为在通常情况下无法确定该类所支持的键类型。 此函数总是会成功执行。"
 
 #: ../../c-api/mapping.rst:25
 msgid ""
@@ -97,21 +94,18 @@ msgstr ""
 
 #: ../../c-api/mapping.rst:63
 msgid ""
-"Note that exceptions which occur while calling the :meth:`__getitem__` "
-"method will get suppressed. To get error reporting use "
-":c:func:`PyObject_GetItem()` instead."
+"Note that exceptions which occur while calling the "
+":meth:`~object.__getitem__` method will get suppressed. To get error "
+"reporting use :c:func:`PyObject_GetItem()` instead."
 msgstr ""
-"请注意在调用 :meth:`__getitem__` 方法期间发生的异常将会被屏蔽。 要获取错误报告请改用 "
-":c:func:`PyObject_GetItem()`。"
 
 #: ../../c-api/mapping.rst:74
 msgid ""
-"Note that exceptions which occur while calling the :meth:`__getitem__` "
-"method and creating a temporary string object will get suppressed. To get "
-"error reporting use :c:func:`PyMapping_GetItemString()` instead."
+"Note that exceptions which occur while calling the "
+":meth:`~object.__getitem__` method and creating a temporary string object "
+"will get suppressed. To get error reporting use "
+":c:func:`PyMapping_GetItemString()` instead."
 msgstr ""
-"请注意在调用 :meth:`__getitem__` 方法期间发生的异常将会被屏蔽。 要获取错误报告请改用 "
-":c:func:`PyMapping_GetItemString()`。"
 
 #: ../../c-api/mapping.rst:81
 msgid ""

@@ -4,19 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# weihaipy, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
-# Bryan不可思议, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:10+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -297,11 +294,9 @@ msgstr "在 :c:func:`main` 函数之前插入上述代码。并在调用 :c:func
 #: ../../extending/embedding.rst:252
 msgid ""
 "These two lines initialize the ``numargs`` variable, and make the "
-":func:`emb.numargs` function accessible to the embedded Python interpreter. "
-"With these extensions, the Python script can do things like"
+":func:`!emb.numargs` function accessible to the embedded Python interpreter."
+" With these extensions, the Python script can do things like"
 msgstr ""
-"这两行代码初始化了 ``numargs`` 变量，并让 :func:`emb.numargs` 函数能被嵌入的 Python "
-"解释器访问到。有了这些扩展，Python 脚本可以执行类似以下功能："
 
 #: ../../extending/embedding.rst:261
 msgid ""

@@ -4,23 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# ww song <sww4718168@gmail.com>, 2021
-# Tony Tong <firfly.net@qq.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Jiuh-star <jiuh.star@gmail.com>, 2021
-# jaystone776 <1732865113@qq.com>, 2022
-# Dai Xu <daixu61@hotmail.com>, 2023
-# WH-2099 <wh2099@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
-"PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -262,10 +255,10 @@ msgstr "添加了 MSVC 支持。"
 #: ../../c-api/intro.rst:155
 msgid ""
 "Like ``getenv(s)``, but returns ``NULL`` if :option:`-E` was passed on the "
-"command line (see :c:member:`PyConfig.use_environment`)."
+"command line (i.e. if ``Py_IgnoreEnvironmentFlag`` is set)."
 msgstr ""
-"与 ``getenv(s)`` 类似，但是如果从命令行传入了 :option:`-E` 则返回 ``NULL`` (参见 "
-":c:member:`PyConfig.use_environment`)。"
+"与 ``getenv(s)`` 类似，但是如果命令行上传递了 :option:`-E` ，则返回 ``NULL`` （即如果设置了 "
+"``Py_IgnoreEnvironmentFlag`` ）。"
 
 #: ../../c-api/intro.rst:160
 msgid "Return the maximum value between ``x`` and ``y``."
@@ -780,14 +773,11 @@ msgstr ""
 #: ../../c-api/intro.rst:618
 msgid ""
 "A simple example of detecting exceptions and passing them on is shown in the"
-" :c:func:`sum_sequence` example above.  It so happens that this example "
+" :c:func:`!sum_sequence` example above.  It so happens that this example "
 "doesn't need to clean up any owned references when it detects an error.  The"
 " following example function shows some error cleanup.  First, to remind you "
 "why you like Python, we show the equivalent Python code::"
 msgstr ""
-"一个检测异常并传递它们的简单例子在上面的 :c:func:`sum_sequence` 示例中进行了演示。 "
-"这个例子恰好在检测到错误时不需要清理所拥有的任何引用。 下面的示例函数演示了一些错误清理操作。 首先，为了向你提示 Python "
-"的优势，我们展示了等效的 Python 代码::"
 
 #: ../../c-api/intro.rst:633
 msgid "Here is the corresponding C code, in all its glory::"

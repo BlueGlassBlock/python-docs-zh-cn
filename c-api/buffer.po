@@ -4,32 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# jsgang <jsgang9@gmail.com>, 2021
-# 稀饭~~ <wangwhai@qq.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# taotieren <admin@taotieren.com>, 2021
-# 豌豆花下猫 <chinesehuazhou@gmail.com>, 2021
-# jacky <jackylvm@foxmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
-# Jiu Hong Jiang <julse@qq.com>, 2021
-# NCJ <me@ncj.wiki>, 2021
-# Jianchao Su, 2021
-# Jiuh-star <jiuh.star@gmail.com>, 2021
-# Dankinder <2535262279@qq.com>, 2021
-# helloworldSB <warningfor163@foxmail.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
-# Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,16 +81,12 @@ msgid ""
 "An example consumer of the buffer interface is the "
 ":meth:`~io.BufferedIOBase.write` method of file objects: any object that can"
 " export a series of bytes through the buffer interface can be written to a "
-"file.  While :meth:`write` only needs read-only access to the internal "
+"file.  While :meth:`!write` only needs read-only access to the internal "
 "contents of the object passed to it, other methods such as "
 ":meth:`~io.BufferedIOBase.readinto` need write access to the contents of "
 "their argument.  The buffer interface allows objects to selectively allow or"
 " reject exporting of read-write and read-only buffers."
 msgstr ""
-"缓冲区接口的消费者的一个例子是文件对象的 :meth:`~io.BufferedIOBase.write` "
-"方法：任何可以输出为一系列字节流的对象可以被写入文件。然而 :meth:`write` 方法只需要对于传入对象的只读权限，其他的方法，如 "
-":meth:`~io.BufferedIOBase.readinto` "
-"需要参数内容的写入权限。缓冲区接口使得对象可以选择性地允许或拒绝读写或只读缓冲区的导出。"
 
 #: ../../c-api/buffer.rst:53
 msgid ""
@@ -411,9 +391,9 @@ msgstr ""
 
 #: ../../c-api/buffer.rst:228
 msgid ""
-"All :c:data:`Py_buffer` fields are unambiguously defined by the request "
+"All :c:type:`Py_buffer` fields are unambiguously defined by the request "
 "type."
-msgstr "所有 :c:data:`Py_buffer` 字段均由请求类型明确定义。"
+msgstr ""
 
 #: ../../c-api/buffer.rst:232
 msgid "request-independent fields"
@@ -745,11 +725,9 @@ msgstr "若该函数针对的缓冲区不是通过 :c:func:`PyObject_GetBuffer` 
 
 #: ../../c-api/buffer.rst:467
 msgid ""
-"Return the implied :c:data:`~Py_buffer.itemsize` from "
-":c:data:`~Py_buffer.format`. On error, raise an exception and return -1."
+"Return the implied :c:member:`~Py_buffer.itemsize` from "
+":c:member:`~Py_buffer.format`. On error, raise an exception and return -1."
 msgstr ""
-"返回 :c:data:`~Py_buffer.itemsize` 中隐含的 :c:data:`~Py_buffer.format` "
-"。如果出错，会触发异常并返回 -1。"
 
 #: ../../c-api/buffer.rst:475
 msgid ""

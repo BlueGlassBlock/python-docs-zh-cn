@@ -4,22 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# banxi <banxi1988@gmail.com>, 2021
-# ww song <sww4718168@gmail.com>, 2021
-# df2dc1c92e792f7ae8417c51df43db8f_594d92a <0f49be28017426edb1db1a2ab6e67088_717605>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# WH-2099 <wh2099@outlook.com>, 2022
-# Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"PO-Revision-Date: 2023-05-24 02:11+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -619,11 +613,9 @@ msgstr "如果找到了一个描述器，那么将通过 ``desc.__get__(None, A)
 
 #: ../../howto/descriptor.rst:782
 msgid ""
-"The full C implementation can be found in :c:func:`type_getattro()` and "
-":c:func:`_PyType_Lookup()` in :source:`Objects/typeobject.c`."
+"The full C implementation can be found in :c:func:`!type_getattro` and "
+":c:func:`!_PyType_Lookup` in :source:`Objects/typeobject.c`."
 msgstr ""
-"完整的 C 实现可在 :source:`Objects/typeobject.c` 中的 :c:func:`type_getattro()` 和 "
-":c:func:`_PyType_Lookup()` 找到。"
 
 #: ../../howto/descriptor.rst:787
 msgid "Invocation from super"
@@ -648,15 +640,11 @@ msgstr ""
 
 #: ../../howto/descriptor.rst:797
 msgid ""
-"The full C implementation can be found in :c:func:`super_getattro()` in "
+"The full C implementation can be found in :c:func:`!super_getattro` in "
 ":source:`Objects/typeobject.c`.  A pure Python equivalent can be found in "
 "`Guido's Tutorial "
 "<https://www.python.org/download/releases/2.2.3/descrintro/#cooperation>`_."
 msgstr ""
-"完整的 C 实现可以在 :source:`Objects/typeobject.c` 的 :c:func:`super_getattro()` "
-"中找到。纯 Python 等价实现可以在 `Guido's Tutorial "
-"<https://www.python.org/download/releases/2.2.3/descrintro/#cooperation>`_ "
-"中找到。"
 
 #: ../../howto/descriptor.rst:804
 msgid "Summary of invocation logic"
@@ -726,11 +714,9 @@ msgstr ""
 
 #: ../../howto/descriptor.rst:839
 msgid ""
-"The implementation details are in :c:func:`type_new()` and "
-":c:func:`set_names()` in :source:`Objects/typeobject.c`."
+"The implementation details are in :c:func:`!type_new` and "
+":c:func:`!set_names` in :source:`Objects/typeobject.c`."
 msgstr ""
-"实现的细节在 :source:`Objects/typeobject.c` 中的 :c:func:`type_new()` 和 "
-":c:func:`set_names()` 。"
 
 #: ../../howto/descriptor.rst:842
 msgid ""
