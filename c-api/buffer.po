@@ -413,7 +413,7 @@ msgstr ""
 msgid ""
 "All :c:type:`Py_buffer` fields are unambiguously defined by the request "
 "type."
-msgstr ""
+msgstr "所有 :c:type:`Py_buffer` 字段均由请求类型无歧义地定义。"
 
 #: ../../c-api/buffer.rst:232
 msgid "request-independent fields"
@@ -748,6 +748,8 @@ msgid ""
 "Return the implied :c:member:`~Py_buffer.itemsize` from "
 ":c:member:`~Py_buffer.format`. On error, raise an exception and return -1."
 msgstr ""
+"从 :c:member:`~Py_buffer.format` 返回隐含的 :c:member:`~Py_buffer.itemsize`。 "
+"如果出错，则引发异常并返回 -1。"
 
 #: ../../c-api/buffer.rst:475
 msgid ""

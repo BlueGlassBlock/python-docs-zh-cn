@@ -483,6 +483,9 @@ msgid ""
 ":c:member:`~PyCompilerFlags.cf_flags` is treated as equal to ``0``, and any "
 "modification due to ``from __future__ import`` is discarded."
 msgstr ""
+"只要 ``PyCompilerFlags *flags`` 是 "
+"``NULL``，:c:member:`~PyCompilerFlags.cf_flags` 就会被视为等同于 ``0``，而由于 ``from "
+"__future__ import`` 而产生的任何修改都会被丢弃。"
 
 #: ../../c-api/veryhigh.rst:362
 msgid "Compiler flags."
@@ -499,6 +502,8 @@ msgid ""
 "The field is ignored by default, it is used if and only if ``PyCF_ONLY_AST``"
 " flag is set in :c:member:`~PyCompilerFlags.cf_flags`."
 msgstr ""
+"该字段默认会被忽略，当且仅当在 :c:member:`~PyCompilerFlags.cf_flags` 中设置了 ``PyCF_ONLY_AST``"
+" 旗标时它才会被使用。"
 
 #: ../../c-api/veryhigh.rst:372
 msgid "Added *cf_feature_version* field."
