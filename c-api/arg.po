@@ -10,11 +10,11 @@
 # QR Wang <wangqirui1996@gmail.com>, 2021
 # Woko <banbooliu@gmail.com>, 2021
 # dannyvi <dannyvis@icloud.com>, 2021
-# taotieren <admin@taotieren.com>, 2021
 # Naisen Xu <723648649@qq.com>, 2021
 # Jing Li <tes286.lijing@gmail.com>, 2021
 # 高乐喆 <gaolezhe@outlook.com>, 2023
 # Bryan不可思议, 2023
+# taotieren <admin@taotieren.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:13+0000\n"
+"POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -949,8 +949,8 @@ msgstr ""
 #: ../../c-api/arg.rst:471
 msgid ""
 "This is an example of the use of this function, taken from the sources for "
-"the :mod:`_weakref` helper module for weak references::"
-msgstr "这是一个使用此函数的示例，取自 :mod:`_weakref` 帮助模块用来弱化引用的源代码："
+"the :mod:`!_weakref` helper module for weak references::"
+msgstr "这是一个使用该函数的示例，取自 :mod:`!_weakref` 弱引用辅助模块的源代码::"
 
 #: ../../c-api/arg.rst:487
 msgid ""
@@ -1082,12 +1082,12 @@ msgstr "``u`` (:class:`str`) [const wchar_t \\*]"
 
 #: ../../c-api/arg.rst:550
 msgid ""
-"Convert a null-terminated :c:expr:`wchar_t` buffer of Unicode (UTF-16 or "
+"Convert a null-terminated :c:type:`wchar_t` buffer of Unicode (UTF-16 or "
 "UCS-4) data to a Python Unicode object.  If the Unicode buffer pointer is "
 "``NULL``, ``None`` is returned."
 msgstr ""
-"将一个以空值作为结束的 Unicode (UTF-16 或 UCS-4) 数据的 :c:expr:`wchar_t` 缓冲区转换为 Python "
-"Unicode 对象。 如果该 Unicode 缓冲区指针为 ``NULL``，则返回 ``None``。"
+"将空终止的 :c:type:`wchar_t` 的 Unicode （UTF-16 或 UCS-4） 数据缓冲区转换为 Python Unicode "
+"对象。 如果 Unicode 缓冲区指针为 ``NULL``，则返回 ``None``。"
 
 #: ../../c-api/arg.rst:557
 msgid "``u#`` (:class:`str`) [const wchar_t \\*, :c:type:`Py_ssize_t`]"

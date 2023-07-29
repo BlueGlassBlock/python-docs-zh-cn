@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-23 14:14+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -66,8 +66,9 @@ msgstr "返回一个新的代码对象。 如果你需要一个用空代码对�
 #: ../../c-api/code.rst:41
 msgid ""
 "Since the definition of the bytecode changes often, calling "
-":c:func:`PyCode_New` directly can bind you to a precise Python version."
-msgstr "由于字节码的定义经常变化，可以直接调用 :c:func:`PyCode_New` 来绑定精确的 Python 版本。"
+":c:func:`PyUnstable_Code_New` directly can bind you to a precise Python "
+"version."
+msgstr "由于字节码的定义经常变化，可以直接调用 :c:func:`PyUnstable_Code_New` 来绑定某个确定的 Python 版本。"
 
 #: ../../c-api/code.rst:44
 msgid ""
@@ -88,12 +89,10 @@ msgstr ""
 
 #: ../../c-api/code.rst:61
 msgid ""
-"Similar to :c:func:`PyCode_New`, but with an extra \"posonlyargcount\" for "
-"positional-only arguments. The same caveats that apply to ``PyCode_New`` "
-"also apply to this function."
+"Similar to :c:func:`PyUnstable_Code_New`, but with an extra "
+"\"posonlyargcount\" for positional-only arguments. The same caveats that "
+"apply to ``PyUnstable_Code_New`` also apply to this function."
 msgstr ""
-"与 :c:func:`PyCode_New` 类似，但还有一个针对仅限位置参数的额外的 \"posonlyargcount\"。 适用于 "
-"``PyCode_New`` 的注意事项同样适用于这个函数。"
 
 #: ../../c-api/code.rst:66
 msgid "as ``PyCode_NewWithPosOnlyArgs``"
@@ -263,7 +262,7 @@ msgstr ""
 
 #: ../../c-api/code.rst:201
 msgid "Extra information"
-msgstr ""
+msgstr "附加信息"
 
 #: ../../c-api/code.rst:203
 msgid ""

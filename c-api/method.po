@@ -11,9 +11,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -29,12 +29,12 @@ msgstr "实例方法对象"
 
 #: ../../c-api/method.rst:10
 msgid ""
-"An instance method is a wrapper for a :c:data:`PyCFunction` and the new way "
-"to bind a :c:data:`PyCFunction` to a class object. It replaces the former "
+"An instance method is a wrapper for a :c:type:`PyCFunction` and the new way "
+"to bind a :c:type:`PyCFunction` to a class object. It replaces the former "
 "call ``PyMethod_New(func, NULL, class)``."
 msgstr ""
-"实例方法是 :c:data:`PyCFunction` 的包装器，也是将 :c:data:`PyCFunction` 绑定到类对象的一种新方式。 "
-"它替代了原先的调用 ``PyMethod_New(func, NULL, class)``。"
+"实例方法是 :c:type:`PyCFunction` 的包装器，也是将 :c:type:`PyCFunction` 与类对象绑定的新方法。 "
+"它取代了以前的调用 ``PyMethod_New(func, NULL, class)``。"
 
 #: ../../c-api/method.rst:17
 msgid ""

@@ -12,9 +12,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -754,10 +754,8 @@ msgstr "请参阅手册页面 :manpage:`siginterrupt(3)` 了解更多信息。"
 msgid ""
 "Note that installing a signal handler with :func:`signal` will reset the "
 "restart behaviour to interruptible by implicitly calling "
-":c:func:`siginterrupt` with a true *flag* value for the given signal."
+":c:func:`!siginterrupt` with a true *flag* value for the given signal."
 msgstr ""
-"请注意用 :func:`signal` 安装信号处理程序将重启行为重置为可通过显式调用 :c:func:`siginterrupt` 并为给定信号的 "
-"*flag* 设置真值来实现中断。"
 
 #: ../../library/signal.rst:570
 msgid ""
@@ -878,11 +876,9 @@ msgstr "当被某个 不在 *sigset* 中的信号中断时本函数将进行重�
 #: ../../library/signal.rst:658
 msgid ""
 "Like :func:`sigwaitinfo`, but takes an additional *timeout* argument "
-"specifying a timeout. If *timeout* is specified as :const:`0`, a poll is "
+"specifying a timeout. If *timeout* is specified as ``0``, a poll is "
 "performed. Returns :const:`None` if a timeout occurs."
 msgstr ""
-"类似于 :func:`sigwaitinfo`，但会接受一个额外的 *timeout* 参数来指定超时限制。 如果将 *timeout* 指定为 "
-":const:`0`，则会执行轮询。 如果发生超时则返回 :const:`None`。"
 
 #: ../../library/signal.rst:664
 msgid "See the man page :manpage:`sigtimedwait(2)` for further information."

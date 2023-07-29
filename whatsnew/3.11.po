@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:13+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -3141,6 +3141,8 @@ msgid ""
 "currently unplanned, but users are encouraged to use :class:`str` instead "
 "wherever possible. (Contributed by Alex Waygood in :gh:`92332`.)"
 msgstr ""
+":class:`typing.Text`，它的存在只是为了在 Python 2 和 Python 3 代码之间提供兼容性支持，现在已被弃用。 "
+"目前尚无移除它的计划，但推荐用户在任何可能的地方改用 :class:`str`。 （由 Alex Waygood 在 :gh:`92332` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1832
 msgid ""
@@ -3148,6 +3150,8 @@ msgid ""
 "is now deprecated. Support will be removed in Python 3.13. (Contributed by "
 "Jingchen Ye in :gh:`90224`.)"
 msgstr ""
+"用于构造 :data:`typing.TypedDict` 类型的关键字参数语法现在已被弃用。 将在 Python 3.13 中移除对它的支持。 （由 "
+"Jingchen Ye 在 :gh:`90224` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1836
 msgid ""
@@ -3155,6 +3159,8 @@ msgid ""
 "3.13. It is untested, undocumented, and not used by :mod:`webbrowser` "
 "itself. (Contributed by Dong-hee Na in :issue:`42255`.)"
 msgstr ""
+":class:`!webbrowser.MacOSX` 已被弃用并将在 Python 3.13 中移除。 它未经测试，未写入文档，也未被 "
+":mod:`webbrowser` 本身所使用。 （由 Dong-hee Na 在 :issue:`42255` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1840
 msgid ""
@@ -3162,12 +3168,14 @@ msgid ""
 ":class:`~unittest.IsolatedAsyncioTestCase` test methods (other than the "
 "default ``None`` value) is now deprecated."
 msgstr ""
+"从 :class:`~unittest.TestCase` 和 :class:`~unittest.IsolatedAsyncioTestCase` "
+"测试方法返回一个值（默认的 ``None`` 以外的值）的行为现在已被弃用。"
 
 #: ../../whatsnew/3.11.rst:1844
 msgid ""
 "Deprecated the following not-formally-documented :mod:`unittest` functions, "
 "scheduled for removal in Python 3.13:"
-msgstr ""
+msgstr "已弃用下列未正式写入文档的 :mod:`unittest` 函数，计划在 Python 3.13 中移除:"
 
 #: ../../whatsnew/3.11.rst:1847
 msgid ":func:`!unittest.findTestCases`"
@@ -3496,6 +3504,10 @@ msgid ""
 " the removal was initially scheduled for Python 3.10. Use :keyword:`async "
 "def` instead. (Contributed by Illia Volochii in :issue:`43216`.)"
 msgstr ""
+"移除了允许旧式基于生成器的协程兼容 :keyword:`async` / :keyword:`await` 代码的 "
+":func:`!@asyncio.coroutine` :term:`decorator`。 该函数自 Python 3.8 起已被弃用并且原定在 "
+"Python 3.10 中移除。 请改用 :keyword:`async def`。 （由 Illia Volochii 在 "
+":issue:`43216` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1944
 msgid ""
@@ -3503,6 +3515,8 @@ msgid ""
 "generator-based coroutine objects in the debug mode. (Contributed by Illia "
 "Volochii in :issue:`43216`.)"
 msgstr ""
+"移除了用于在调试模式下包装旧式基于生成器的协程对象的 :class:`!asyncio.coroutines.CoroWrapper`。 （由 "
+"Illia Volochii 在 :issue:`43216` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1948
 msgid ""
@@ -3512,12 +3526,16 @@ msgid ""
 "``SO_REUSEADDR`` in UDP. (Contributed by Hugo van Kemenade in "
 ":issue:`45129`.)"
 msgstr ""
+"出于显著的安全性考量，自 Python 3.9 起已被禁用的 :meth:`asyncio.loop.create_datagram_endpoint`"
+" 的 *reuse_address* 形参现在已彻底移除。 这是因为在 UDP 中套接字选项 ``SO_REUSEADDR`` 的行为。 （由 Hugo"
+" van Kemenade 在 :issue:`45129` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1954
 msgid ""
 "Removed the :mod:`!binhex` module, deprecated in Python 3.9. Also removed "
 "the related, similarly-deprecated :mod:`binascii` functions:"
 msgstr ""
+"移除了自 Python 3.9 起已弃用的 :mod:`!binhex` 模块。 并移除了相关联的同样已弃用的 :mod:`binascii` 函数:"
 
 #: ../../whatsnew/3.11.rst:1957
 msgid ":func:`!binascii.a2b_hqx`"
@@ -3549,6 +3567,8 @@ msgid ""
 " Use ``bdist_wheel`` (wheel packages) instead. (Contributed by Hugo van "
 "Kemenade in :issue:`45124`.)"
 msgstr ""
+"移除了自 Python 3.9 起已弃用的 :mod:`distutils` ``bdist_msi`` 命令。 请改用 ``bdist_wheel``"
+" (wheel 包)。 （由 Hugo van Kemenade 在 :issue:`45124` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1970
 msgid ""
@@ -3557,6 +3577,9 @@ msgid ""
 "and :class:`fileinput.FileInput`, deprecated since Python 3.9. (Contributed "
 "by Hugo van Kemenade in :issue:`45132`.)"
 msgstr ""
+"移除了自 Python 3.9 起已弃用的 :class:`xml.dom.pulldom.DOMEventStream`, "
+":class:`wsgiref.util.FileWrapper` 和 :class:`fileinput.FileInput` 的 "
+":meth:`~object.__getitem__` 方法。 （由 Hugo van Kemenade 在 :issue:`45132` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1975
 msgid ""
@@ -3569,6 +3592,12 @@ msgid ""
 "used for the :func:`!l*gettext` functions. (Contributed by Dong-hee Na and "
 "Serhiy Storchaka in :issue:`44235`.)"
 msgstr ""
+"移除了已弃用的 :mod:`gettext` 函数 :func:`!lgettext`, :func:`!ldgettext`, "
+":func:`!lngettext` 和 :func:`!ldngettext`。 并移除了 "
+":func:`!bind_textdomain_codeset` 函数，:meth:`!NullTranslations.output_charset`"
+" 和 :meth:`!NullTranslations.set_output_charset` 方法，以及 :func:`!translation` 和"
+" :func:`!install` 的 *codeset* 形参，因为它们仅被用于 :func:`!l*gettext` 函数。 （由 Dong-hee"
+" Na 和 Serhiy Storchaka 在 :issue:`44235` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:1985
 msgid "Removed from the :mod:`inspect` module:"
@@ -3639,6 +3668,8 @@ msgid ""
 "introduced in Python 3.4 but has been broken since Python 3.7. (Contributed "
 "by Inada Naoki in :issue:`23882`.)"
 msgstr ""
+"从 :mod:`unittest` 发现中移除了命名空间包支持。 它在 Python 3.4 中引入但自 Python 3.7 起已不可用。 （由 "
+"Inada Naoki 在 :issue:`23882` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2017
 msgid ""
@@ -3648,6 +3679,9 @@ msgid ""
 "mainly to be used in Python's test suite.\" (Contributed by Victor Stinner "
 "in :issue:`46852`.)"
 msgstr ""
+"移除了未写入文档的私有 :meth:`!float.__set_format__()` 方法，之前在 Python 3.7 中名为 "
+":meth:`!float.__setformat__()`。 其文档字符串已写明：“你应该不需要使用此函数。 它的存在主要是用于 Python "
+"的测试套件。” （由 Victor Stinner 在 :issue:`46852` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2023
 msgid ""
@@ -3655,6 +3689,8 @@ msgid ""
 "corresponding :c:macro:`!EXPERIMENTAL_ISOLATED_SUBINTERPRETERS` macro) have "
 "been removed."
 msgstr ""
+":option:`!--experimental-isolated-subinterpreters` 配置旗标（和相应的 "
+":c:macro:`!EXPERIMENTAL_ISOLATED_SUBINTERPRETERS` 宏）已被移除。"
 
 #: ../../whatsnew/3.11.rst:2027
 msgid ""
@@ -3664,6 +3700,9 @@ msgid ""
 "<https://gitlab.com/warsaw/pynche/-/tree/main>`_ from the Python source "
 "tree."
 msgstr ""
+"`Pynche <https://pypi.org/project/pynche/>`_ --- The Pythonically Natural "
+"Color and Hue Editor --- 已被移出 ``Tools/scripts`` 并将脱离 Python 源代码树 `独立开发 "
+"<https://gitlab.com/warsaw/pynche/-/tree/main>`_。"
 
 #: ../../whatsnew/3.11.rst:2037 ../../whatsnew/3.11.rst:2259
 msgid "Porting to Python 3.11"
@@ -3673,7 +3712,7 @@ msgstr "移植到 Python 3.11"
 msgid ""
 "This section lists previously described changes and other bugfixes in the "
 "Python API that may require changes to your Python code."
-msgstr ""
+msgstr "本节列出了先前描述的更改以及 Python API 中可能需要修改你的 Python 代码的其他错误修正。"
 
 #: ../../whatsnew/3.11.rst:2042
 msgid ""
@@ -3691,6 +3730,11 @@ msgid ""
 "newline-parameter>` to these functions controls how universal newlines work."
 " (Contributed by Victor Stinner in :issue:`37330`.)"
 msgstr ""
+":func:`open`, :func:`io.open`, :func:`codecs.open` 和 "
+":class:`fileinput.FileInput` 的文件模式中不再接受 ``'U'`` (\"通用换行符\")。 在 Python 3 "
+"中，\"通用换行符\" 模式会在文件以文本模式打开时默认被使用，而 ``'U'`` 旗标自 Python 3.3 起已被弃用。 这些函数的 "
+":ref:`newline 形参 <open-newline-parameter>` 将控制如何使用通用换行符。 （由 Victor Stinner 在"
+" :issue:`37330` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2054
 msgid ""
@@ -3989,13 +4033,11 @@ msgstr "（由 Christian Heimes 在 :issue:`45459` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2230
 msgid ""
-"Added the :c:data:`PyType_GetModuleByDef` function, used to get the module "
+"Added the :c:func:`PyType_GetModuleByDef` function, used to get the module "
 "in which a method was defined, in cases where this information is not "
 "available directly (via :c:type:`PyCMethod`). (Contributed by Petr Viktorin "
 "in :issue:`46613`.)"
 msgstr ""
-"增加了 :c:data:`PyType_GetModuleByDef` 函数，用来获取方法定义所在的模块，在此信息不可直接获取 (通过 "
-":c:type:`PyCMethod`) 的情况下使用。 （由 Petr Viktorin in :issue:`46613`。）"
 
 #: ../../whatsnew/3.11.rst:2235
 msgid ""
@@ -4233,13 +4275,13 @@ msgstr ":c:type:`PyFrame_Type`"
 
 #: ../../whatsnew/3.11.rst:2419
 msgid "(Contributed by Victor Stinner in :gh:`93937`.)"
-msgstr ""
+msgstr "（由 Victor Stinner 在 :gh:`93937` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2423
 msgid ""
 "The :c:type:`PyFrameObject` structure members have been removed from the "
 "public C API."
-msgstr ""
+msgstr ":c:type:`PyFrameObject` 结构体成员已从公有 C API 中被移除。"
 
 #: ../../whatsnew/3.11.rst:2426
 msgid ""
@@ -4682,7 +4724,7 @@ msgstr "``Py_MARSHAL_VERSION`` 宏"
 
 #: ../../whatsnew/3.11.rst:2653
 msgid "These are not part of the :ref:`limited API <limited-api-list>`."
-msgstr ""
+msgstr "这些不是 :ref:`受限 API <limited-api-list>` 的组成部分。"
 
 #: ../../whatsnew/3.11.rst:2655
 msgid "(Contributed by Victor Stinner in :issue:`45474`.)"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:13+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -160,14 +160,14 @@ msgstr ""
 msgid ""
 "Returns a new instance of the :class:`FileHandler` class. The specified file"
 " is opened and used as the stream for logging. If *mode* is not specified, "
-":const:`'a'` is used.  If *encoding* is not ``None``, it is used to open the"
-" file with that encoding.  If *delay* is true, then file opening is deferred"
-" until the first call to :meth:`emit`. By default, the file grows "
+"``'a'`` is used.  If *encoding* is not ``None``, it is used to open the file"
+" with that encoding.  If *delay* is true, then file opening is deferred "
+"until the first call to :meth:`emit`. By default, the file grows "
 "indefinitely. If *errors* is specified, it's used to determine how encoding "
 "errors are handled."
 msgstr ""
 "返回一个 :class:`FileHandler` 类的新实例。 将打开指定的文件并将其用作日志记录流。 如果未指定 *mode*，则会使用 "
-":const:`'a'`。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 *delay* "
+"``'a'``。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 *delay* "
 "为真值，则文件打开会被推迟至第一次调用 :meth:`emit` 时。 默认情况下，文件会无限增长。 如果指定了 "
 "*errors*，它会被用于确定编码格式错误的处理方式。"
 
@@ -277,15 +277,15 @@ msgstr ""
 msgid ""
 "Returns a new instance of the :class:`WatchedFileHandler` class. The "
 "specified file is opened and used as the stream for logging. If *mode* is "
-"not specified, :const:`'a'` is used.  If *encoding* is not ``None``, it is "
-"used to open the file with that encoding.  If *delay* is true, then file "
-"opening is deferred until the first call to :meth:`emit`.  By default, the "
-"file grows indefinitely. If *errors* is provided, it determines how encoding"
-" errors are handled."
+"not specified, ``'a'`` is used.  If *encoding* is not ``None``, it is used "
+"to open the file with that encoding.  If *delay* is true, then file opening "
+"is deferred until the first call to :meth:`emit`.  By default, the file "
+"grows indefinitely. If *errors* is provided, it determines how encoding "
+"errors are handled."
 msgstr ""
 "返回一个 :class:`WatchedFileHandler` 类的新实例。 将打开指定的文件并将其用作日志记录流。 如果未指定 "
-"*mode*，则会使用 :const:`'a'`。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 "
-"*delay* 为真值，则文件打开会被推迟至第一次调用 :meth:`emit` 时。 默认情况下，文件会无限增长。 如果提供了 "
+"*mode*，则会使用 ``'a'``。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 *delay* "
+"为真值，则文件打开会被推迟至第一次调用 :meth:`emit` 时。 默认情况下，文件会无限增长。 如果提供了 "
 "*errors*，它会被用于确定编码格式错误的处理方式。"
 
 #: ../../library/logging.handlers.rst:199
@@ -1498,17 +1498,19 @@ msgstr "将记录添加到缓冲区。 如果 :meth:`shouldFlush` 返回真值�
 
 #: ../../library/logging.handlers.rst:920
 msgid ""
-"You can override this to implement custom flushing behavior. This version "
-"just zaps the buffer to empty."
-msgstr "你可以重载此方法来实现自定义的刷新行为。 此版本只是将缓冲区清空。"
+"For a :class:`BufferingHandler` instance, flushing means that it sets the "
+"buffer to an empty list. This method can be overwritten to implement more "
+"useful flushing behavior."
+msgstr ""
+"对于 :class:`BufferingHandler` 的实例，刷新意味着将缓冲区设为一个空列表。 此方法可被覆盖以实现更有用的刷新行为。"
 
-#: ../../library/logging.handlers.rst:926
+#: ../../library/logging.handlers.rst:927
 msgid ""
 "Return ``True`` if the buffer is up to capacity. This method can be "
 "overridden to implement custom flushing strategies."
 msgstr "如果缓冲区容量已满则返回 ``True``。 可以重载此方法以实现自定义的刷新策略。"
 
-#: ../../library/logging.handlers.rst:932
+#: ../../library/logging.handlers.rst:933
 msgid ""
 "Returns a new instance of the :class:`MemoryHandler` class. The instance is "
 "initialized with a buffer size of *capacity* (number of records buffered). "
@@ -1524,37 +1526,38 @@ msgstr ""
 " :meth:`setTarget` 来设置目标。 如果 *flushOnClose* 指定为 ``False``，则当处理程序被关闭时 *不会* "
 "刷新缓冲区。 如果未指定或指定为 ``True``，则当处理程序被关闭时将会发生之前的缓冲区刷新行为。"
 
-#: ../../library/logging.handlers.rst:941
+#: ../../library/logging.handlers.rst:942
 msgid "The *flushOnClose* parameter was added."
 msgstr "增加了 *flushOnClose* 形参。"
 
-#: ../../library/logging.handlers.rst:947
+#: ../../library/logging.handlers.rst:948
 msgid ""
 "Calls :meth:`flush`, sets the target to ``None`` and clears the buffer."
 msgstr "调用 :meth:`flush`，设置目标为 ``None`` 并清空缓冲区。"
 
-#: ../../library/logging.handlers.rst:953
+#: ../../library/logging.handlers.rst:954
 msgid ""
-"For a :class:`MemoryHandler`, flushing means just sending the buffered "
-"records to the target, if there is one. The buffer is also cleared when this"
-" happens. Override if you want different behavior."
+"For a :class:`MemoryHandler` instance, flushing means just sending the "
+"buffered records to the target, if there is one. The buffer is also cleared "
+"when buffered records are sent to the target. Override if you want different"
+" behavior."
 msgstr ""
-"对于 :class:`MemoryHandler`，刷新是指将缓冲的记录发送到目标，如果存在目标的话。 当此行为发生时缓冲区也将被清空。 "
-"如果你想要不同的行为请重载此方法。"
+"对于 :class:`MemoryHandler` 的实例，刷新意味着将缓冲的记录发送到目标，如果目标存在的话。 "
+"当缓冲的记录被发送到目标时缓冲区也将被清空。 如果你想要不同的行为请重载此方法。"
 
-#: ../../library/logging.handlers.rst:960
+#: ../../library/logging.handlers.rst:961
 msgid "Sets the target handler for this handler."
 msgstr "设置此处理程序的目标处理程序。"
 
-#: ../../library/logging.handlers.rst:965
+#: ../../library/logging.handlers.rst:966
 msgid "Checks for buffer full or a record at the *flushLevel* or higher."
 msgstr "检测缓冲区是否已满或是有记录为 *flushLevel* 或更高级别。"
 
-#: ../../library/logging.handlers.rst:971
+#: ../../library/logging.handlers.rst:972
 msgid "HTTPHandler"
 msgstr "HTTPHandler"
 
-#: ../../library/logging.handlers.rst:973
+#: ../../library/logging.handlers.rst:974
 msgid ""
 "The :class:`HTTPHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a web server, using either "
@@ -1563,7 +1566,7 @@ msgstr ""
 ":class:`HTTPHandler` 类位于 :mod:`logging.handlers` 模块，它支持使用 ``GET`` 或 ``POST``"
 " 语义将日志记录消息发送到 Web 服务器。"
 
-#: ../../library/logging.handlers.rst:980
+#: ../../library/logging.handlers.rst:981
 msgid ""
 "Returns a new instance of the :class:`HTTPHandler` class. The *host* can be "
 "of the form ``host:port``, should you need to use a specific port number.  "
@@ -1583,11 +1586,11 @@ msgstr ""
 "'Authorization' 标头中。 如果你指定了 credentials，你还应当指定 secure=True 这样你的 userid 和 "
 "password 就不会以明文在线路上传输。"
 
-#: ../../library/logging.handlers.rst:991
+#: ../../library/logging.handlers.rst:992
 msgid "The *context* parameter was added."
 msgstr "增加了 *context* 形参。"
 
-#: ../../library/logging.handlers.rst:996
+#: ../../library/logging.handlers.rst:997
 msgid ""
 "Provides a dictionary, based on ``record``, which is to be URL-encoded and "
 "sent to the web server. The default implementation just returns "
@@ -1599,14 +1602,14 @@ msgstr ""
 "在只需将 :class:`~logging.LogRecord` 的某个子集发送至 Web "
 "服务器，或者需要对发送至服务器的内容进行更多定制时可以重载此方法。"
 
-#: ../../library/logging.handlers.rst:1004
+#: ../../library/logging.handlers.rst:1005
 msgid ""
 "Sends the record to the web server as a URL-encoded dictionary. The "
 ":meth:`mapLogRecord` method is used to convert the record to the dictionary "
 "to be sent."
 msgstr "将记录以 URL 编码字典的形式发送至 Web 服务器。 :meth:`mapLogRecord` 方法会被用来将要发送的记录转换为字典。"
 
-#: ../../library/logging.handlers.rst:1008
+#: ../../library/logging.handlers.rst:1009
 msgid ""
 "Since preparing a record for sending it to a web server is not the same as a"
 " generic formatting operation, using :meth:`~logging.Handler.setFormatter` "
@@ -1620,11 +1623,11 @@ msgstr ""
 ":meth:`~logging.Handler.format`，而是调用 :meth:`mapLogRecord` 然后再调用 "
 ":func:`urllib.parse.urlencode` 来以适合发送至 Web 服务器的形式对字典进行编码。"
 
-#: ../../library/logging.handlers.rst:1021
+#: ../../library/logging.handlers.rst:1022
 msgid "QueueHandler"
 msgstr "QueueHandler"
 
-#: ../../library/logging.handlers.rst:1025
+#: ../../library/logging.handlers.rst:1026
 msgid ""
 "The :class:`QueueHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a queue, such as those "
@@ -1633,7 +1636,7 @@ msgstr ""
 ":class:`QueueHandler` 类位于 :mod:`logging.handlers` 模块，它支持将日志记录消息发送到一个队列，例如在 "
 ":mod:`queue` 或 :mod:`multiprocessing` 模块中实现的队列。"
 
-#: ../../library/logging.handlers.rst:1029
+#: ../../library/logging.handlers.rst:1030
 msgid ""
 "Along with the :class:`QueueListener` class, :class:`QueueHandler` can be "
 "used to let handlers do their work on a separate thread from the one which "
@@ -1647,7 +1650,7 @@ msgstr ""
 "应用程序以及其他服务于客户端的线程需要尽可能快地响应的服务应用程序来说很重要，任何潜在的慢速操作（例如通过 :class:`SMTPHandler` "
 "发送邮件）都要在单独的线程上完成。"
 
-#: ../../library/logging.handlers.rst:1038
+#: ../../library/logging.handlers.rst:1039
 msgid ""
 "Returns a new instance of the :class:`QueueHandler` class. The instance is "
 "initialized with the queue to send messages to. The *queue* can be any "
@@ -1660,8 +1663,8 @@ msgstr ""
 ":meth:`enqueue` 方法来使用，该方法需要知道如何向其发送消息。 队列 *不要求* 具有任务跟踪 API，这意味着你可以为 *queue* "
 "使用 :class:`~queue.SimpleQueue` 实例。"
 
-#: ../../library/logging.handlers.rst:1045
-#: ../../library/logging.handlers.rst:1134
+#: ../../library/logging.handlers.rst:1046
+#: ../../library/logging.handlers.rst:1135
 msgid ""
 "If you are using :mod:`multiprocessing`, you should avoid using "
 ":class:`~queue.SimpleQueue` and instead use :class:`multiprocessing.Queue`."
@@ -1669,7 +1672,7 @@ msgstr ""
 "如果你在使用 :mod:`multiprocessing`，则你应当避免使用 :class:`~queue.SimpleQueue` 而要改用 "
 ":class:`multiprocessing.Queue`。"
 
-#: ../../library/logging.handlers.rst:1050
+#: ../../library/logging.handlers.rst:1051
 msgid ""
 "Enqueues the result of preparing the LogRecord. Should an exception occur "
 "(e.g. because a bounded queue has filled up), the "
@@ -1683,13 +1686,13 @@ msgstr ""
 ":data:`logging.raiseExceptions` 为 ``False`` 时) 或者消息被打印到 ``sys.stderr`` (当 "
 ":data:`logging.raiseExceptions` 为 ``True`` 时)。"
 
-#: ../../library/logging.handlers.rst:1059
+#: ../../library/logging.handlers.rst:1060
 msgid ""
 "Prepares a record for queuing. The object returned by this method is "
 "enqueued."
 msgstr "准备用于队列的记录。 此方法返回的对象会被排入队列。"
 
-#: ../../library/logging.handlers.rst:1062
+#: ../../library/logging.handlers.rst:1063
 msgid ""
 "The base implementation formats the record to merge the message, arguments, "
 "exception and stack information, if present.  It also removes unpickleable "
@@ -1703,14 +1706,14 @@ msgstr ""
 ":attr:`message` 属性，并将 :attr:`args`, :attr:`exc_info` 和 :attr:`exc_text` "
 "属性设置为 ``None``。"
 
-#: ../../library/logging.handlers.rst:1070
+#: ../../library/logging.handlers.rst:1071
 msgid ""
 "You might want to override this method if you want to convert the record to "
 "a dict or JSON string, or send a modified copy of the record while leaving "
 "the original intact."
 msgstr "如果你想要将记录转换为 dict 或 JSON 字符串，或者发送记录被修改后的副本而让初始记录保持原样，则你可能会想要重载此方法。"
 
-#: ../../library/logging.handlers.rst:1074
+#: ../../library/logging.handlers.rst:1075
 msgid ""
 "The base implementation formats the message with arguments, sets the "
 "``message`` and ``msg`` attributes to the formatted message and sets the "
@@ -1732,14 +1735,14 @@ msgstr ""
 "``msg`` / ``args`` 的改变与确保记录可以 pickle 是相关联的，根据你的 ``args`` 是否可以 pickle "
 "你将可能或不可能避免这样做。 （请注意你可能必须不仅要考虑你自己的代码还要考虑你所使用的任何库中的代码。）"
 
-#: ../../library/logging.handlers.rst:1090
+#: ../../library/logging.handlers.rst:1091
 msgid ""
 "Enqueues the record on the queue using ``put_nowait()``; you may want to "
 "override this if you want to use blocking behaviour, or a timeout, or a "
 "customized queue implementation."
 msgstr "使用 ``put_nowait()`` 将记录排入队列；如果你想要使用阻塞行为，或超时设置，或自定义的队列实现，则你可能会想要重载此方法。"
 
-#: ../../library/logging.handlers.rst:1096
+#: ../../library/logging.handlers.rst:1097
 msgid ""
 "When created via configuration using :func:`~logging.config.dictConfig`, "
 "this attribute will contain a :class:`QueueListener` instance for use with "
@@ -1748,11 +1751,11 @@ msgstr ""
 "当通过使用 :func:`~logging.config.dictConfig` 的配置创建时，该属性将包含一个 "
 ":class:`QueueListener` 实例供此处理句柄使用。 在其他情况下，它将为 ``None``。"
 
-#: ../../library/logging.handlers.rst:1105
+#: ../../library/logging.handlers.rst:1106
 msgid "QueueListener"
 msgstr "QueueListener"
 
-#: ../../library/logging.handlers.rst:1109
+#: ../../library/logging.handlers.rst:1110
 msgid ""
 "The :class:`QueueListener` class, located in the :mod:`logging.handlers` "
 "module, supports receiving logging messages from a queue, such as those "
@@ -1767,7 +1770,7 @@ msgstr ""
 "消息是在内部线程中从队列接收并在同一线程上传递到一个或多个处理程序进行处理的。 尽管 :class:`QueueListener` "
 "本身并不是一个处理程序，但由于它要与 :class:`QueueHandler` 配合工作，因此也在此处介绍。"
 
-#: ../../library/logging.handlers.rst:1117
+#: ../../library/logging.handlers.rst:1118
 msgid ""
 "Along with the :class:`QueueHandler` class, :class:`QueueListener` can be "
 "used to let handlers do their work on a separate thread from the one which "
@@ -1781,7 +1784,7 @@ msgstr ""
 "应用程序以及其他服务于客户端的线程需要尽可能快地响应的服务应用程序来说很重要，任何潜在的慢速动作（例如通过 :class:`SMTPHandler` "
 "发送邮件）都要在单独的线程上完成。"
 
-#: ../../library/logging.handlers.rst:1126
+#: ../../library/logging.handlers.rst:1127
 msgid ""
 "Returns a new instance of the :class:`QueueListener` class. The instance is "
 "initialized with the queue to send messages to and a list of handlers which "
@@ -1796,7 +1799,7 @@ msgstr ""
 ":meth:`dequeue` 方法，该方法需要知道如何从其获取消息。 队列 *不要求* 具有任务跟踪 API（但如提供则会使用它），这意味着你可以为 "
 "*queue* 使用 :class:`~queue.SimpleQueue` 实例。"
 
-#: ../../library/logging.handlers.rst:1137
+#: ../../library/logging.handlers.rst:1138
 msgid ""
 "If ``respect_handler_level`` is ``True``, a handler's level is respected "
 "(compared with the level for the message) when deciding whether to pass "
@@ -1807,25 +1810,25 @@ msgstr ""
 "``True``，则在决定是否将消息传递给处理程序之前会遵循处理程序的级别（与消息的级别进行比较）；在其他情况下，其行为与之前的 Python 版本一致"
 " —— 总是将每条消息传递给每个处理程序。"
 
-#: ../../library/logging.handlers.rst:1142
+#: ../../library/logging.handlers.rst:1143
 msgid "The ``respect_handler_level`` argument was added."
 msgstr "增加了 ``respect_handler_level`` 参数。"
 
-#: ../../library/logging.handlers.rst:1147
+#: ../../library/logging.handlers.rst:1148
 msgid "Dequeues a record and return it, optionally blocking."
 msgstr "从队列移出一条记录并将其返回，可以选择阻塞。"
 
-#: ../../library/logging.handlers.rst:1149
+#: ../../library/logging.handlers.rst:1150
 msgid ""
 "The base implementation uses ``get()``. You may want to override this method"
 " if you want to use timeouts or work with custom queue implementations."
 msgstr "基本实现使用 ``get()``。 如果你想要使用超时设置或自定义的队列实现，则你可能会想要重载此方法。"
 
-#: ../../library/logging.handlers.rst:1155
+#: ../../library/logging.handlers.rst:1156
 msgid "Prepare a record for handling."
 msgstr "准备一条要处理的记录。"
 
-#: ../../library/logging.handlers.rst:1157
+#: ../../library/logging.handlers.rst:1158
 msgid ""
 "This implementation just returns the passed-in record. You may want to "
 "override this method if you need to do any custom marshalling or "
@@ -1833,32 +1836,32 @@ msgid ""
 msgstr ""
 "该实现只是返回传入的记录。 如果你想要对记录执行任何自定义的 marshal 操作或在将其传给处理程序之前进行调整，则你可能会想要重载此方法。"
 
-#: ../../library/logging.handlers.rst:1163
+#: ../../library/logging.handlers.rst:1164
 msgid "Handle a record."
 msgstr "处理一条记录。"
 
-#: ../../library/logging.handlers.rst:1165
+#: ../../library/logging.handlers.rst:1166
 msgid ""
 "This just loops through the handlers offering them the record to handle. The"
 " actual object passed to the handlers is that which is returned from "
 ":meth:`prepare`."
 msgstr "此方法简单地循环遍历处理程序，向它们提供要处理的记录。 实际传给处理程序的对象就是从 :meth:`prepare` 返回的对象。"
 
-#: ../../library/logging.handlers.rst:1171
+#: ../../library/logging.handlers.rst:1172
 msgid "Starts the listener."
 msgstr "启动监听器。"
 
-#: ../../library/logging.handlers.rst:1173
+#: ../../library/logging.handlers.rst:1174
 msgid ""
 "This starts up a background thread to monitor the queue for LogRecords to "
 "process."
 msgstr "此方法启动一个后台线程来监视 LogRecords 队列以进行处理。"
 
-#: ../../library/logging.handlers.rst:1178
+#: ../../library/logging.handlers.rst:1179
 msgid "Stops the listener."
 msgstr "停止监听器。"
 
-#: ../../library/logging.handlers.rst:1180
+#: ../../library/logging.handlers.rst:1181
 msgid ""
 "This asks the thread to terminate, and then waits for it to do so. Note that"
 " if you don't call this before your application exits, there may be some "
@@ -1866,7 +1869,7 @@ msgid ""
 msgstr ""
 "此方法要求线程终止，然后等待它完成终止操作。 请注意在你的应用程序退出之前如果你没有调用此方法，则可能会有一些记录在留在队列中，它们将不会被处理。"
 
-#: ../../library/logging.handlers.rst:1186
+#: ../../library/logging.handlers.rst:1187
 msgid ""
 "Writes a sentinel to the queue to tell the listener to quit. This "
 "implementation uses ``put_nowait()``.  You may want to override this method "
@@ -1875,18 +1878,18 @@ msgstr ""
 "将一个标记写入队列以通知监听器退出。 此实现会使用 ``put_nowait()``。 "
 "如果你想要使得超时设置或自定义的队列实现，则你可能会想要重载此方法。"
 
-#: ../../library/logging.handlers.rst:1197
+#: ../../library/logging.handlers.rst:1198
 msgid "Module :mod:`logging`"
 msgstr "模块 :mod:`logging`"
 
-#: ../../library/logging.handlers.rst:1197
+#: ../../library/logging.handlers.rst:1198
 msgid "API reference for the logging module."
 msgstr "日志记录模块的 API 参考。"
 
-#: ../../library/logging.handlers.rst:1199
+#: ../../library/logging.handlers.rst:1200
 msgid "Module :mod:`logging.config`"
 msgstr ":mod:`logging.config` 模块"
 
-#: ../../library/logging.handlers.rst:1200
+#: ../../library/logging.handlers.rst:1201
 msgid "Configuration API for the logging module."
 msgstr "日志记录模块的配置 API 。"

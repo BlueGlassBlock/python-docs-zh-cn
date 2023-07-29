@@ -14,9 +14,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -32,18 +32,19 @@ msgstr ":mod:`select` --- 等待 I/O 完成"
 
 #: ../../library/select.rst:9
 msgid ""
-"This module provides access to the :c:func:`select` and :c:func:`poll` "
-"functions available in most operating systems, :c:func:`devpoll` available "
-"on Solaris and derivatives, :c:func:`epoll` available on Linux 2.5+ and "
-":c:func:`kqueue` available on most BSD. Note that on Windows, it only works "
-"for sockets; on other operating systems, it also works for other file types "
-"(in particular, on Unix, it works on pipes). It cannot be used on regular "
+"This module provides access to the :c:func:`!select` and :c:func:`!poll` "
+"functions available in most operating systems, :c:func:`!devpoll` available "
+"on Solaris and derivatives, :c:func:`!epoll` available on Linux 2.5+ and "
+":c:func:`!kqueue` available on most BSD. Note that on Windows, it only works"
+" for sockets; on other operating systems, it also works for other file types"
+" (in particular, on Unix, it works on pipes). It cannot be used on regular "
 "files to determine whether a file has grown since it was last read."
 msgstr ""
-"该模块提供了对 :c:func:`select` 和 :c:func:`poll` 函数的访问，这些函数在大多数操作系统中是可用的。在 Solaris "
-"及其衍生版本上可用 :c:func:`devpoll`，在 Linux 2.5+ 上可用 :c:func:`epoll`，在大多数 BSD 上可用 "
-":c:func:`kqueue`。注意，在 Windows 上，本模块仅适用于套接字；在其他操作系统上，本模块也适用于其他文件类型（特别地，在 Unix"
-" 上也适用于管道）。本模块不能用于常规文件，不能检测出（自上次读取文件后）文件是否有新数据写入。"
+"该模块提供了对 :c:func:`!select` 和 :c:func:`!poll` "
+"函数的访问，这在大多数操作系统上都是可用的，:c:func:`!devpoll` 在 Solaris "
+"及其衍生系统上可用，:c:func:`!epoll` 在 Linux 2.5+ 上可用，而 :c:func:`!kqueue` 在大多数 BSD "
+"上可用。 注意在 Windows 上，它仅适用于套接字；在其他操作系统上，它还适用于其他文件类型（特别是在 Unix 上，它还适用于管道）。 "
+"它不能被用在常规文件上确定一个文件自其最后一次被读取后大小是否有增长。"
 
 #: ../../library/select.rst:20
 msgid ""
@@ -91,13 +92,11 @@ msgstr ""
 
 #: ../../library/select.rst:44
 msgid ""
-":c:func:`devpoll` objects are linked to the number of file descriptors "
+":c:func:`!devpoll` objects are linked to the number of file descriptors "
 "allowed at the time of instantiation. If your program reduces this value, "
-":c:func:`devpoll` will fail. If your program increases this value, "
-":c:func:`devpoll` may return an incomplete list of active file descriptors."
+":c:func:`!devpoll` will fail. If your program increases this value, "
+":c:func:`!devpoll` may return an incomplete list of active file descriptors."
 msgstr ""
-":c:func:`devpoll` 对象与实例化时允许的文件描述符数量有关，如果在程序中降低了此数值，:c:func:`devpoll` "
-"调用将失败。如果程序提高了此数值，:c:func:`devpoll` 可能会返回一个不完整的活动文件描述符列表。"
 
 #: ../../library/select.rst:50 ../../library/select.rst:79
 #: ../../library/select.rst:106
@@ -118,11 +117,9 @@ msgstr "（仅支持 Linux 2.5.44 或更高版本）返回一个 edge poll 对�
 msgid ""
 "*sizehint* informs epoll about the expected number of events to be "
 "registered.  It must be positive, or ``-1`` to use the default. It is only "
-"used on older systems where :c:func:`epoll_create1` is not available; "
+"used on older systems where :c:func:`!epoll_create1` is not available; "
 "otherwise it has no effect (though its value is still checked)."
 msgstr ""
-"*sizehint* 指示 epoll 预计需要注册的事件数。它必须为正数，或为 ``-1`` 以使用默认值。 它仅在 "
-":c:func:`epoll_create1` 不可用的旧系统上会被用到，其他情况下它没有任何作用（尽管仍会检查其值）。"
 
 #: ../../library/select.rst:68
 msgid ""
@@ -189,14 +186,11 @@ msgstr "（仅支持 BSD）返回一个内核事件对象，请参阅下方 :ref
 
 #: ../../library/select.rst:120
 msgid ""
-"This is a straightforward interface to the Unix :c:func:`select` system "
+"This is a straightforward interface to the Unix :c:func:`!select` system "
 "call. The first three arguments are iterables of 'waitable objects': either "
 "integers representing file descriptors or objects with a parameterless "
 "method named :meth:`~io.IOBase.fileno` returning such an integer:"
 msgstr ""
-"这是一个明白直观的 Unix :c:func:`select` 系统调用接口。 "
-"前三个参数是由‘可等待对象’组成的序列：可以是代表文件描述符的整数，或是带有名为 :meth:`~io.IOBase.fileno` "
-"的返回这样的整数的无形参方法的对象:"
 
 #: ../../library/select.rst:125
 msgid "*rlist*: wait until ready for reading"
@@ -249,11 +243,10 @@ msgstr ""
 #: ../../library/select.rst:156
 msgid ""
 "File objects on Windows are not acceptable, but sockets are.  On Windows, "
-"the underlying :c:func:`select` function is provided by the WinSock library,"
-" and does not handle file descriptors that don't originate from WinSock."
+"the underlying :c:func:`!select` function is provided by the WinSock "
+"library, and does not handle file descriptors that don't originate from "
+"WinSock."
 msgstr ""
-"Windows 上不接受文件对象，但接受套接字。在 Windows 上，底层的 :c:func:`select` 函数由 WinSock "
-"库提供，且不处理不是源自 WinSock 的文件描述符。"
 
 #: ../../library/select.rst:161 ../../library/select.rst:267
 #: ../../library/select.rst:367 ../../library/select.rst:455
@@ -270,11 +263,9 @@ msgstr ""
 msgid ""
 "The minimum number of bytes which can be written without blocking to a pipe "
 "when the pipe has been reported as ready for writing by "
-":func:`~select.select`, :func:`poll` or another interface in this module.  "
+":func:`~select.select`, :func:`!poll` or another interface in this module.  "
 "This doesn't apply to other kind of file-like objects such as sockets."
 msgstr ""
-"当一个管道已经被 :func:`~select.select`、:func:`poll` "
-"或本模块中的某个接口报告为可写入时，可以在不阻塞该管道的情况下写入的最小字节数。它不适用于套接字等其他类型的文件类对象。"
 
 #: ../../library/select.rst:175
 msgid "This value is guaranteed by POSIX to be at least 512."
@@ -290,17 +281,16 @@ msgstr "``/dev/poll`` 轮询对象"
 
 #: ../../library/select.rst:187
 msgid ""
-"Solaris and derivatives have ``/dev/poll``. While :c:func:`select` is "
-"O(highest file descriptor) and :c:func:`poll` is O(number of file "
+"Solaris and derivatives have ``/dev/poll``. While :c:func:`!select` is "
+"O(highest file descriptor) and :c:func:`!poll` is O(number of file "
 "descriptors), ``/dev/poll`` is O(active file descriptors)."
 msgstr ""
-"Solaris 及其衍生版本具备 ``/dev/poll``。:c:func:`select` 复杂度为 "
-"O（最高文件描述符），:c:func:`poll` 为 O（文件描述符数量），而 ``/dev/poll`` 为 O（活动的文件描述符）。"
 
 #: ../../library/select.rst:191
 msgid ""
-"``/dev/poll`` behaviour is very close to the standard :c:func:`poll` object."
-msgstr "``/dev/poll`` 的行为与标准 :c:func:`poll` 对象十分类似。"
+"``/dev/poll`` behaviour is very close to the standard :c:func:`!poll` "
+"object."
+msgstr ""
 
 #: ../../library/select.rst:197
 msgid "Close the file descriptor of the polling object."
@@ -329,20 +319,17 @@ msgstr ""
 #: ../../library/select.rst:224
 msgid ""
 "*eventmask* is an optional bitmask describing the type of events you want to"
-" check for. The constants are the same that with :c:func:`poll` object. The "
-"default value is a combination of the constants :const:`POLLIN`, "
+" check for. The constants are the same that with :c:func:`!poll` object. The"
+" default value is a combination of the constants :const:`POLLIN`, "
 ":const:`POLLPRI`, and :const:`POLLOUT`."
 msgstr ""
-"*eventmask* 是可选的位掩码，用于指定要检查的事件类型。这些常量与 :c:func:`poll` 对象所用的相同。本参数的默认值是常量 "
-":const:`POLLIN`、:const:`POLLPRI` 和 :const:`POLLOUT` 的组合。"
 
 #: ../../library/select.rst:231
 msgid ""
 "Registering a file descriptor that's already registered is not an error, but"
 " the result is undefined. The appropriate action is to unregister or modify "
-"it first. This is an important difference compared with :c:func:`poll`."
+"it first. This is an important difference compared with :c:func:`!poll`."
 msgstr ""
-"注册已注册过的文件描述符不会报错，但是结果是不确定的。正确的操作是先注销或直接修改它。与 :c:func:`poll` 相比，这是一个重要的区别。"
 
 #: ../../library/select.rst:239
 msgid ""
@@ -577,20 +564,15 @@ msgstr "Poll 对象"
 
 #: ../../library/select.rst:379
 msgid ""
-"The :c:func:`poll` system call, supported on most Unix systems, provides "
+"The :c:func:`!poll` system call, supported on most Unix systems, provides "
 "better scalability for network servers that service many, many clients at "
-"the same time. :c:func:`poll` scales better because the system call only "
-"requires listing the file descriptors of interest, while :c:func:`select` "
+"the same time. :c:func:`!poll` scales better because the system call only "
+"requires listing the file descriptors of interest, while :c:func:`!select` "
 "builds a bitmap, turns on bits for the fds of interest, and then afterward "
-"the whole bitmap has to be linearly scanned again. :c:func:`select` is "
-"O(highest file descriptor), while :c:func:`poll` is O(number of file "
+"the whole bitmap has to be linearly scanned again. :c:func:`!select` is "
+"O(highest file descriptor), while :c:func:`!poll` is O(number of file "
 "descriptors)."
 msgstr ""
-"大多数 Unix 系统支持 :c:func:`poll` "
-"系统调用，为服务器提供了更好的可伸缩性，使服务器可以同时服务于大量客户端。:c:func:`poll` "
-"的伸缩性更好，因为该调用内部仅列出所关注的文件描述符，而 :c:func:`select` 会构造一个 bitmap，在其中将所关注的描述符所对应的 "
-"bit 打开，然后重新遍历整个 bitmap。因此 :c:func:`select` 复杂度是 O（最高文件描述符），而 :c:func:`poll` "
-"是 O（文件描述符数量）。"
 
 #: ../../library/select.rst:396
 msgid ""

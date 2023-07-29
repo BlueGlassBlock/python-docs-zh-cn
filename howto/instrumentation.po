@@ -15,9 +15,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-07-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
 "Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -253,16 +253,14 @@ msgstr "``$arg3`` : ``int`` 行号"
 
 #: ../../howto/instrumentation.rst:295
 msgid ""
-"This marker is the converse of :c:func:`function__entry`, and indicates that"
-" execution of a Python function has ended (either via ``return``, or via an "
-"exception).  It is only triggered for pure-Python (bytecode) functions."
+"This marker is the converse of :c:func:`!function__entry`, and indicates "
+"that execution of a Python function has ended (either via ``return``, or via"
+" an exception).  It is only triggered for pure-Python (bytecode) functions."
 msgstr ""
-"这个标记与 :c:func:`function__entry` 相反，表示Python函数的执行已经结束 (通过 ``return`` 或者异常)。 "
-"它只对纯Python (字节码) 函数触发。"
 
 #: ../../howto/instrumentation.rst:299
-msgid "The arguments are the same as for :c:func:`function__entry`"
-msgstr "参数和 :c:func:`function__entry` 相同"
+msgid "The arguments are the same as for :c:func:`!function__entry`"
+msgstr ""
 
 #: ../../howto/instrumentation.rst:303
 msgid ""
@@ -272,8 +270,8 @@ msgid ""
 msgstr "这个标记表示一个 Python 行即将被执行。它相当于用 Python 分析器逐行追踪。它不会在C函数中触发。"
 
 #: ../../howto/instrumentation.rst:307
-msgid "The arguments are the same as for :c:func:`function__entry`."
-msgstr "参数和 :c:func:`function__entry` 相同"
+msgid "The arguments are the same as for :c:func:`!function__entry`."
+msgstr ""
 
 #: ../../howto/instrumentation.rst:311
 msgid ""
