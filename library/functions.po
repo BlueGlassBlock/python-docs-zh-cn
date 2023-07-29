@@ -13,19 +13,19 @@
 # ww song <sww4718168@gmail.com>, 2020
 # Konge <zkonge@outlook.com>, 2020
 # Woostundy <woostundy@gmail.com>, 2020
-# ppcfish <ppcfish@gmail.com>, 2020
 # belingud <1170202353@qq.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:02+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +40,7 @@ msgstr "内置函数"
 msgid ""
 "The Python interpreter has a number of functions and types built into it "
 "that are always available.  They are listed here in alphabetical order."
-msgstr "Python 解释器内置了很多函数和类型，您可以在任何时候使用它们。以下按字母表顺序列出它们。"
+msgstr "Python 解释器内置了很多函数和类型，任何时候都能使用。以下按字母顺序给出列表。"
 
 #: ../../library/functions.rst:13
 msgid ":func:`abs`"
@@ -332,7 +332,7 @@ msgstr ""
 msgid ""
 "Return ``True`` if all elements of the *iterable* are true (or if the "
 "iterable is empty).  Equivalent to::"
-msgstr "如果 *iterable* 的所有元素均为真值（或可迭代对象为空）则返回 ``True`` 。 等价于::"
+msgstr "如果 *iterable* 的所有元素均为真值（或可迭代对象为空）则返回 ``True`` 。 等价于："
 
 #: ../../library/functions.rst:65
 msgid ""
@@ -1037,8 +1037,8 @@ msgid ""
 "Pass an explicit *locals* dictionary if you need to see effects of the code "
 "on *locals* after function :func:`exec` returns."
 msgstr ""
-"默认情况下，*locals* 的行为如下面 :func:`locals` 函数描述的一样：不要试图改变默认的 *locals* 字典。如果您想在 "
-":func:`exec` 函数返回时知道代码对 *locals* 的变动，请明确地传递 *locals* 字典。"
+"默认情况下，*locals* 的行为如下面 :func:`locals` 函数描述的一样：不要试图改变默认的 *locals* 字典。 如果您需要在 "
+":func:`exec` 函数返回时查看代码对 *locals* 的影响，请明确地传递 *locals* 字典。"
 
 #: ../../library/functions.rst:554
 msgid ""
@@ -1694,7 +1694,7 @@ msgstr "字符"
 
 #: ../../library/functions.rst:1075
 msgid "Meaning"
-msgstr "含义"
+msgstr "含意"
 
 #: ../../library/functions.rst:1077
 msgid "``'r'``"
@@ -1772,8 +1772,8 @@ msgid ""
 "specified *encoding* if given."
 msgstr ""
 "正如在 :ref:`io-overview` 中提到的，Python区分二进制和文本I/O。以二进制模式打开的文件（包括 *mode* 参数中的 "
-"``'b'`` ）返回的内容为 :class:`bytes`对象，不进行任何解码。在文本模式下（默认情况下，或者在 *mode* 参数中包含 "
-"``'t'` ）时，文件内容返回为 :class:`str` ，首先使用指定的 *encoding* （如果给定）或者使用平台默认的的字节编码解码。"
+"``'b'`` ）返回的内容为 :class:`bytes` 对象，不进行任何解码。在文本模式下（默认情况下，或者在 *mode* 参数中包含 "
+"``'t'`` ）时，文件内容返回为 :class:`str` ，首先使用指定的 *encoding* （如果给定）或者使用平台默认的的字节编码解码。"
 
 #: ../../library/functions.rst:1098
 msgid ""
@@ -1983,7 +1983,7 @@ msgid ""
 msgstr ""
 ":func:`open` 函数所返回的 :term:`file object` 类型取决于所用模式。 当使用 :func:`open` 以文本模式 "
 "(``'w'``, ``'r'``, ``'wt'``, ``'rt'`` 等) 打开文件时，它将返回 :class:`io.TextIOBase` "
-"(特别是 :class:`io.TextIOWrapper`) 的一个子类。 当使用缓冲以二进制模式打开文件时，返回的类是 "
+"(具体为 :class:`io.TextIOWrapper`) 的一个子类。 当使用缓冲以二进制模式打开文件时，返回的类是 "
 ":class:`io.BufferedIOBase` 的一个子类。 具体的类会有多种：在只读的二进制模式下，它将返回 "
 ":class:`io.BufferedReader`；在写入二进制和追加二进制模式下，它将返回 "
 ":class:`io.BufferedWriter`，而在读/写模式下，它将返回 :class:`io.BufferedRandom`。 "
@@ -2141,9 +2141,9 @@ msgid ""
 "use the default values.  If no *objects* are given, :func:`print` will just "
 "write *end*."
 msgstr ""
-"所有非关键字参数都会被转换为字符串，就像是执行了 :func:`str` 一样，并会被写入到流，以 *sep* 且在末尾加上 *end*。 *sep* "
-"和 *end* 都必须为字符串；它们也可以为 ``None``，这意味着使用默认值。 如果没有给出 *objects*，则 :func:`print` "
-"将只写入 *end*。"
+"所有非关键字参数都会被转换为字符串，就像是执行了 :func:`str` 一样，并会被写入到流，以 *sep* 分隔并在末尾加上 *end*。 "
+"*sep* 和 *end* 都必须为字符串；它们也可以为 ``None``，这意味着使用默认值。 如果没有给出 *objects*，则 "
+":func:`print` 将只写入 *end*。"
 
 #: ../../library/functions.rst:1336
 msgid ""
@@ -2849,7 +2849,7 @@ msgstr "如果您只想按名称导入模块（可能在包中），请使用 :f
 msgid ""
 "Negative values for *level* are no longer supported (which also changes the "
 "default value to 0)."
-msgstr " *level* 的值不再支持负数（默认值也修改为0）。"
+msgstr "*level* 的值不再支持负数（默认值也修改为0）。"
 
 #: ../../library/functions.rst:1856
 msgid "Footnotes"

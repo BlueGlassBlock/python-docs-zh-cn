@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # eric R <trencyclopedia@gmail.com>, 2020
-# Kevin Deng <kevindeng55+transifex@gmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:01+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../library/email.generator.rst:75 ../../library/email.generator.rst:174
 msgid "Added the *policy* keyword."
-msgstr "添加了*policy*关键字。"
+msgstr "添加了 *policy* 关键字。"
 
 #: ../../library/email.generator.rst:77 ../../library/email.generator.rst:176
 msgid ""
@@ -211,9 +211,7 @@ msgstr ""
 msgid ""
 "Return an independent clone of this :class:`BytesGenerator` instance with "
 "the exact same option settings, and *fp* as the new *outfp*."
-msgstr ""
-"返回此Return an independent clone of this :class:`BytesGenerator` "
-"实例的独立克隆，具有完全相同的选项设置，而 *fp* 为新的 *outfp*。"
+msgstr "返回此 :class:`BytesGenerator` 实例的独立克隆，具有完全相同的选项设置，而 *fp* 为新的 *outfp*。"
 
 #: ../../library/email.generator.rst:125
 msgid ""

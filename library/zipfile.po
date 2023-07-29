@@ -1,28 +1,28 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # sgqy <sgqyzh@gmail.com>, 2020
 # cdarlint <cdarling@126.com>, 2020
-# Jack Wu <bitlabwzh@gmail.com>, 2020
 # 稀饭~~ <wangwhai@qq.com>, 2020
 # Zombie110year <zombie110year@gmail.com>, 2020
 # ppcfish <ppcfish@gmail.com>, 2020
 # Makdon <makdon@makdon.me>, 2020
 # 钢 彭 <szhairui@gmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:15+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -277,7 +277,7 @@ msgstr ""
 
 #: ../../library/zipfile.rst:198
 msgid "Added the ability to use :class:`ZipFile` as a context manager."
-msgstr "添加了将 :class:`ZipFile` 用作上下文管理员的功能。"
+msgstr "添加了将 :class:`ZipFile` 用作上下文管理器的功能。"
 
 #: ../../library/zipfile.rst:201
 msgid "Added support for :mod:`bzip2 <bz2>` and :mod:`lzma` compression."
@@ -1025,7 +1025,7 @@ msgstr "未压缩文件的大小。"
 
 #: ../../library/zipfile.rst:770
 msgid "Command-Line Interface"
-msgstr "命令行界面"
+msgstr "命令行接口"
 
 #: ../../library/zipfile.rst:772
 msgid ""

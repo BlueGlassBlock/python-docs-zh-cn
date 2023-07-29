@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,16 +8,17 @@
 # ppcfish <ppcfish@gmail.com>, 2020
 # Naisen Xu <723648649@qq.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2020
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 11:59+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -353,8 +354,8 @@ msgid ""
 "``Decimal('1.100000000000000088817841970012523233890533447265625')``."
 msgstr ""
 "如果 *value* 是 :class:`float` ，则二进制浮点值无损地转换为其精确的十进制等效值。 此转换通常需要53位或更多位数的精度。 "
-"例如， ``Decimal(float('1.1'))`` "
-"转换为``Decimal('1.100000000000000088817841970012523233890533447265625')``。"
+"例如， ``Decimal(float('1.1'))`` 转换为 "
+"``Decimal('1.100000000000000088817841970012523233890533447265625')``。"
 
 #: ../../library/decimal.rst:382
 msgid ""
@@ -590,7 +591,7 @@ msgid ""
 "Return the value of the (natural) exponential function ``e**x`` at the given"
 " number.  The result is correctly rounded using the :const:`ROUND_HALF_EVEN`"
 " rounding mode."
-msgstr "返回给定数字的（自然）指数函数``e**x``的值。结果使用 :const:`ROUND_HALF_EVEN` 舍入模式正确舍入。"
+msgstr "返回给定数字的（自然）指数函数 ``e**x`` 的值。结果使用 :const:`ROUND_HALF_EVEN` 舍入模式正确舍入。"
 
 #: ../../library/decimal.rst:576
 msgid "Classmethod that converts a float to a decimal number, exactly."
@@ -1385,7 +1386,7 @@ msgstr "如果 *x* 是规范的则返回 ``True``；否则返回 ``False``。"
 
 #: ../../library/decimal.rst:1210
 msgid "Returns ``True`` if *x* is finite; otherwise returns ``False``."
-msgstr "如果 *x* 为有限的则返回``True``；否则返回 ``False``。"
+msgstr "如果 *x* 为有限的则返回 ``True``；否则返回 ``False``。"
 
 #: ../../library/decimal.rst:1215
 msgid "Returns ``True`` if *x* is infinite; otherwise returns ``False``."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -14,16 +14,17 @@
 # Claude Manchester <atlanmatrix@gmail.com>, 2021
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:03+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -333,12 +334,12 @@ msgid ""
 "is.  If *body* is an iterable, the elements of the iterable are sent as is "
 "until the iterable is exhausted."
 msgstr ""
-"如果给定 *body*，那么给定的数据会在信息头完成之后发送。它可能是一个 :class:`str` 、一个 :term:`bytes-like "
-"object` 、一个打开的 :term:`file object`，或者 :class:`bytes` 迭代器。如果 *body* 是字符串，它会按 "
-"HTTP 默认的 ISO-8859-1 编码；如果是一个字节类对象，它会按原样发送；如果是 :term:`file object` "
-"，文件的内容会被发送，这个文件对象应该支持 ``read()`` 方法。如果这个文件对象是一个 :class:`io.TextIOBase` 实例， "
-"``read()`` 方法返回的数据会按 ISO-8859-1 编码，否则 ``read()`` 方法返回的数据会按原样发送；如果 *body* "
-"是一个迭代器，迭代器中的元素会被发送，直到迭代器耗尽。"
+"如果给定 *body*，那么给定的数据会在信息头完成之后发送。它可能是一个 :class:`字符串`，一个 :term:`bytes-like "
+"object`，一个打开的 :term:`file object`，或者 :class:`bytes` 迭代器。如果 *body* 是字符串，它会按 "
+"HTTP 默认的 ISO-8859-1 编码。如果是一个字节类对象，它会按原样发送。如果是 :term:`file "
+"object`，文件的内容会被发送，这个文件对象应该至少支持 ``read()`` 方法。如果这个文件对象是一个 "
+":class:`io.TextIOBase` 实例，由 ``read()`` 方法返回的数据会按 ISO-8859-1 编码，否则由 "
+"``read()`` 方法返回的数据会按原样发送。如果 *body* 是一个迭代器，迭代器中的元素会被发送，直到迭代器耗尽。"
 
 #: ../../library/http.client.rst:272
 msgid ""
@@ -527,7 +528,7 @@ msgstr ""
 ":ref:`buffer 接口 <bufferobjects>`，编码将生成一个数据块。如果 *message_body* 是  "
 ":class:`collections.abc.Iterable`，则 *message_body* 的每次迭代都会产生一个块。 如果 "
 "*message_body* 为  :term:`file object`，那么每次调用 ``.read()`` 都会产生一个数据块。在 "
-"*message_body* 结束后，本方法立即会自动标记块编码数据的结束。"
+"*message_body* 结束后，本方法立即会自动标记分块编码数据的结束。"
 
 #: ../../library/http.client.rst:419
 msgid ""
@@ -608,7 +609,7 @@ msgstr ""
 #: ../../library/http.client.rst:485
 msgid ""
 "HTTP protocol version used by server.  10 for HTTP/1.0, 11 for HTTP/1.1."
-msgstr "服务器使用的 HTTP 协议版本。10 代表 HTTP/1.0，11 代表 HTTP/1.1。"
+msgstr "服务器采用的 HTTP 协议版本。10 代表 HTTP/1.0，11 代表 HTTP/1.1。"
 
 #: ../../library/http.client.rst:489
 msgid "Status code returned by server."
@@ -626,7 +627,7 @@ msgstr "一个调试钩子。如果 :attr:`debuglevel` 大于零，状态信息�
 
 #: ../../library/http.client.rst:502
 msgid "Is ``True`` if the stream is closed."
-msgstr "如果流被关闭，则为``True``。"
+msgstr "如果流被关闭，则为 ``True``。"
 
 #: ../../library/http.client.rst:505
 msgid "Examples"

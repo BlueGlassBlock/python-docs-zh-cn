@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# dannyvi <dannyvis@icloud.com>, 2020
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../library/winsound.rst:2
 msgid ":mod:`winsound` --- Sound-playing interface for Windows"
-msgstr ":mod:`winsound` —— Windows 系统的声音播放接口"
+msgstr ":mod:`winsound` —— Windows 系统的音频播放接口"
 
 #: ../../library/winsound.rst:13
 msgid ""
@@ -56,7 +56,7 @@ msgid ""
 ":exc:`RuntimeError` is raised."
 msgstr ""
 "由平台 API 调用底层的 :c:func:`PlaySound` 函数。 参数 *sound* "
-"可以是文件名、系统音频的别名、:term:`bytes-like object` 的音频数据或``None``。 如何解释取决于 *flags* "
+"可以是文件名、系统音频的别名、:term:`bytes-like object` 的音频数据或 ``None``。 如何解释取决于 *flags* "
 "的值，可为以下常数的二进制 OR 组合。 如果 *sound* 参数为 ``None``，则当前播放的波形音频会全部停止。如果系统报错， 则会触发 "
 ":exc:`RuntimeError`。"
 
@@ -102,7 +102,7 @@ msgstr "所有的 Win32 系统至少支持以下音频名称；大多数系统�
 
 #: ../../library/winsound.rst:64
 msgid ":func:`PlaySound` *name*"
-msgstr ":func:`PlaySound` *name*"
+msgstr ":func:`PlaySound` *name* 参数"
 
 #: ../../library/winsound.rst:64
 msgid "Corresponding Control Panel Sound name"
@@ -122,7 +122,7 @@ msgstr "``'SystemExclamation'``"
 
 #: ../../library/winsound.rst:68
 msgid "Exclamation"
-msgstr "叹息声"
+msgstr "感叹号"
 
 #: ../../library/winsound.rst:70
 msgid "``'SystemExit'``"
@@ -138,7 +138,7 @@ msgstr "``'SystemHand'``"
 
 #: ../../library/winsound.rst:72
 msgid "Critical Stop"
-msgstr "关键性停止音"
+msgstr "关键性停止"
 
 #: ../../library/winsound.rst:74
 msgid "``'SystemQuestion'``"
@@ -150,7 +150,7 @@ msgstr "问题"
 
 #: ../../library/winsound.rst:77
 msgid "For example::"
-msgstr "例如 ::"
+msgstr "例如："
 
 #: ../../library/winsound.rst:90
 msgid ""
@@ -177,7 +177,7 @@ msgstr ""
 
 #: ../../library/winsound.rst:107
 msgid "Stop playing all instances of the specified sound."
-msgstr "停止播放指定声音的所有实例。"
+msgstr "停止播放指定音频的所有实例。"
 
 #: ../../library/winsound.rst:111 ../../library/winsound.rst:135
 msgid "This flag is not supported on modern Windows platforms."

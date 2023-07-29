@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-26 17:13+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:01+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +29,7 @@ msgstr ":mod:`email` --- 电子邮件与 MIME 处理包"
 
 #: ../../library/email.rst:11
 msgid "**Source code:** :source:`Lib/email/__init__.py`"
-msgstr "**源码:** :source:`Lib/email/__init__.py`"
+msgstr "**源代码:** :source:`Lib/email/__init__.py`"
 
 #: ../../library/email.rst:15
 msgid ""
@@ -50,7 +51,7 @@ msgid ""
 "The overall structure of the email package can be divided into three major "
 "components, plus a fourth component that controls the behavior of the other "
 "components."
-msgstr "email 包的总体结构可以分为三个主要部分，另外还有第四个部分用于控制其他部分的行为。"
+msgstr "email 包的总体结构可以分为三个主要组件，另外还有第四个组件用于控制其他组件的行为。"
 
 #: ../../library/email.rst:27
 msgid ""

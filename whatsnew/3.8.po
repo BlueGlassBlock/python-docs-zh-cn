@@ -13,15 +13,16 @@
 # CatNeverCodes CNC <574469831@qq.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
 # Jason Ren, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 14:33+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:18+0000\n"
-"Last-Translator: Jason Ren, 2023\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +40,7 @@ msgstr "编者"
 
 #: ../../whatsnew/3.8.rst:45
 msgid "Raymond Hettinger"
-msgstr "Raymond Hettinger"
+msgstr "Raymond Hettinger（译者：wh2099 at outlook dot com）"
 
 #: ../../whatsnew/3.8.rst:47
 msgid ""
@@ -53,7 +54,7 @@ msgstr "Python 3.8已于2019年10月14日发布。"
 
 #: ../../whatsnew/3.8.rst:62
 msgid "Summary -- Release highlights"
-msgstr "摘要 - 发布重点"
+msgstr "摘要 -- 发布重点"
 
 #: ../../whatsnew/3.8.rst:73
 msgid "New Features"
@@ -1806,7 +1807,7 @@ msgstr ""
 "Python 没有办法处理时被调用。 例如，当一个析构器在垃圾回收时 (:func:`gc.collect`) 所引发的异常。 （由 Victor "
 "Stinner 在 :issue:`36829` 中贡献。）"
 
-#: ../../whatsnew/3.8.rst:1246
+#: ../../whatsnew/3.8.rst:1246 ../../whatsnew/3.8.rst:2347
 msgid "tarfile"
 msgstr "tarfile"
 
@@ -3699,3 +3700,18 @@ msgstr ""
 "bin/cvename.cgi?name=CVE-2020-10735>`_ 的缓解方案。这个限制可以通过环境变量、命令行旗标或 :mod:`sys` "
 "API 进行配置或禁用。参见 :ref:`integer string conversion length limitation "
 "<int_max_str_digits>` 文档。默认限制是字符串形式的 4300 位数字。"
+
+#: ../../whatsnew/3.8.rst:2344
+msgid "Notable Changes in 3.8.17"
+msgstr ""
+
+#: ../../whatsnew/3.8.rst:2349
+msgid ""
+"The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`,"
+" have a new a *filter* argument that allows limiting tar features than may "
+"be surprising or dangerous, such as creating files outside the destination "
+"directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12,"
+" use without the *filter* argument will show a :exc:`DeprecationWarning`. In"
+" Python 3.14, the default will switch to ``'data'``. (Contributed by Petr "
+"Viktorin in :pep:`706`.)"
+msgstr ""

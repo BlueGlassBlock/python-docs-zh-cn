@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,16 +11,17 @@
 # ppcfish <ppcfish@gmail.com>, 2020
 # Siyuan Xu, 2020
 # WH-2099 <wh2099@outlook.com>, 2020
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 11:54+0000\n"
-"Last-Translator: WH-2099 <wh2099@outlook.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +38,7 @@ msgstr "作者"
 
 #: ../../howto/descriptor.rst:5
 msgid "Raymond Hettinger"
-msgstr "Raymond Hettinger"
+msgstr "Raymond Hettinger（译者：wh2099 at outlook dot com）"
 
 #: ../../howto/descriptor.rst:0
 msgid "Contact"
@@ -138,7 +139,7 @@ msgid ""
 "That is all there is to it.  Define any of these methods and an object is "
 "considered a descriptor and can override default behavior upon being looked "
 "up as an attribute."
-msgstr "以上就是全部。定义这些方法中的任何一个的对象被视为描述器，并在被作为属性时覆盖其默认行为。"
+msgstr "描述器的方法就这些。一个对象只要定义了以上方法中的任何一个，就被视为描述器，并在被作为属性时覆盖其默认行为。"
 
 #: ../../howto/descriptor.rst:61
 msgid ""
@@ -471,7 +472,7 @@ msgstr ""
 msgid ""
 "Good candidates for static methods are methods that do not reference the "
 "``self`` variable."
-msgstr "适合于作为静态方法的是那些不引用 ``self`` 变量的方法。"
+msgstr "适合作为静态方法的是那些不引用 ``self`` 变量的方法。"
 
 #: ../../howto/descriptor.rst:356
 msgid ""

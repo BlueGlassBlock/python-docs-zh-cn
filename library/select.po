@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,16 +9,17 @@
 # 黄瓜小王子 <linxzh1989@gmail.com>, 2020
 # ppcfish <ppcfish@gmail.com>, 2020
 # Arisaka97 <solitaire2312@gmail.com>, 2020
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 12:09+0000\n"
-"Last-Translator: Arisaka97 <solitaire2312@gmail.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -389,14 +390,14 @@ msgstr "*eventmask*"
 #: ../../library/select.rst:578 ../../library/select.rst:586
 #: ../../library/select.rst:606 ../../library/select.rst:629
 msgid "Constant"
-msgstr "常数"
+msgstr "常量"
 
 #: ../../library/select.rst:283 ../../library/select.rst:398
 #: ../../library/select.rst:518 ../../library/select.rst:547
 #: ../../library/select.rst:578 ../../library/select.rst:586
 #: ../../library/select.rst:606 ../../library/select.rst:629
 msgid "Meaning"
-msgstr "含义"
+msgstr "含意"
 
 #: ../../library/select.rst:285
 msgid ":const:`EPOLLIN`"
@@ -915,7 +916,7 @@ msgstr ":const:`KQ_NOTE_DELETE`"
 
 #: ../../library/select.rst:588
 msgid "*unlink()* was called"
-msgstr "已调用 *unlink()* "
+msgstr "已调用 *unlink()*"
 
 #: ../../library/select.rst:590
 msgid ":const:`KQ_NOTE_WRITE`"

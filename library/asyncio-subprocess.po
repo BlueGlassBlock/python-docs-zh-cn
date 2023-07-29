@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,16 +11,17 @@
 # ppcfish <ppcfish@gmail.com>, 2020
 # MuSheng Chen <sheng.2179@gmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-26 17:13+0000\n"
+"POT-Creation-Date: 2023-07-29 04:03+0000\n"
 "PO-Revision-Date: 2020-05-30 11:56+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -340,7 +341,7 @@ msgid ""
 "``CREATE_NEW_PROCESS_GROUP``."
 msgstr ""
 "在 Windows 上，:py:data:`SIGTERM` 是 :meth:`terminate` 的别名。 ``CTRL_C_EVENT`` 和 "
-"``CTRL_BREAK_EVENT`` 可被发送给创建时附带 *creationflags* 形参且其中包括 "
+"``CTRL_BREAK_EVENT`` 可被发送给创建时设置了 *creationflags* 形参且其中包括 "
 "``CREATE_NEW_PROCESS_GROUP`` 的进程。"
 
 #: ../../library/asyncio-subprocess.rst:244
@@ -376,7 +377,8 @@ msgstr "在 Windows 上此方法是 :meth:`terminate` 的别名。"
 msgid ""
 "Standard input stream (:class:`StreamWriter`) or ``None`` if the process was"
 " created with ``stdin=None``."
-msgstr "标准输入流 (:class:`StreamWriter`) 或者如果进程创建时设置了``stdin=None`` 则为 ``None``。"
+msgstr ""
+"标准输入流 (:class:`StreamWriter`) 或者如果进程创建时设置了 ``stdin=None`` 则为 ``None``。"
 
 #: ../../library/asyncio-subprocess.rst:268
 msgid ""
@@ -488,7 +490,7 @@ msgid ""
 "output."
 msgstr ""
 "一个使用 :class:`~asyncio.subprocess.Process` 类来控制子进程并用 :class:`StreamReader` "
-"类来从其标准输出读取信息的例子。"
+"类来从其标准输出读取信息的示例。"
 
 #: ../../library/asyncio-subprocess.rst:343
 msgid ""
