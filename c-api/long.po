@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,6 +85,8 @@ msgid ""
 "Return a new :c:type:`PyLongObject` object from a C :c:expr:`unsigned long`,"
 " or ``NULL`` on failure."
 msgstr ""
+"基于 C :c:expr:`unsigned long` 返回一个新的 :c:type:`PyLongObject` 对象，失败时返回 "
+"``NULL``。"
 
 #: ../../c-api/long.rst:56
 msgid ""
@@ -105,12 +107,15 @@ msgid ""
 "Return a new :c:type:`PyLongObject` object from a C :c:expr:`long long`, or "
 "``NULL`` on failure."
 msgstr ""
+"基于 C :c:expr:`long long` 返回一个新的 :c:type:`PyLongObject`，失败时返回 ``NULL``。"
 
 #: ../../c-api/long.rst:74
 msgid ""
 "Return a new :c:type:`PyLongObject` object from a C :c:expr:`unsigned long "
 "long`, or ``NULL`` on failure."
 msgstr ""
+"基于 C :c:expr:`unsigned long long` 返回一个新的 :c:type:`PyLongObject` 对象，失败时返回 "
+"``NULL``。"
 
 #: ../../c-api/long.rst:80
 msgid ""
@@ -142,6 +147,9 @@ msgid ""
 ":c:type:`PyLongObject` to/from an array of bytes in base ``256``. You can "
 "call those from C using :c:func:`PyObject_CallMethod`."
 msgstr ""
+"Python 方法 :meth:`int.to_bytes` 和 :meth:`int.from_bytes` 用于 "
+":c:type:`PyLongObject` 到/从字节数组之间以 ``256`` 为基数进行转换。 你可以使用 "
+":c:func:`PyObject_CallMethod` 从 C 调用它们。"
 
 #: ../../c-api/long.rst:103
 msgid ""
@@ -166,7 +174,7 @@ msgstr ""
 msgid ""
 "Raise :exc:`OverflowError` if the value of *obj* is out of range for a "
 ":c:expr:`long`."
-msgstr ""
+msgstr "如果 *obj* 的值超出了 :c:expr:`long` 的取值范围则会引发 :exc:`OverflowError`。"
 
 #: ../../c-api/long.rst:129 ../../c-api/long.rst:149 ../../c-api/long.rst:170
 #: ../../c-api/long.rst:190 ../../c-api/long.rst:213
@@ -206,7 +214,7 @@ msgstr ""
 msgid ""
 "Raise :exc:`OverflowError` if the value of *obj* is out of range for a "
 ":c:expr:`long long`."
-msgstr ""
+msgstr "如果 *obj* 值超出 :c:expr:`long long` 的取值范围则会引发 :exc:`OverflowError`。"
 
 #: ../../c-api/long.rst:185
 msgid ""
@@ -239,12 +247,15 @@ msgid ""
 "Return a C :c:expr:`unsigned long` representation of *pylong*.  *pylong* "
 "must be an instance of :c:type:`PyLongObject`."
 msgstr ""
+"返回 *pylong* 的 C :c:expr:`unsigned long` 表示形式。 *pylong* 必须是 "
+":c:type:`PyLongObject` 的实例。"
 
 #: ../../c-api/long.rst:225
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:expr:`unsigned long`."
 msgstr ""
+"如果 *pylong* 的值超出了 :c:expr:`unsigned long` 的取值范围则会引发 :exc:`OverflowError`。"
 
 #: ../../c-api/long.rst:228
 msgid ""
@@ -277,12 +288,16 @@ msgid ""
 "Return a C :c:expr:`unsigned long long` representation of *pylong*.  "
 "*pylong* must be an instance of :c:type:`PyLongObject`."
 msgstr ""
+"返回 *pylong* 的 C :c:expr:`unsigned long long` 表示形式。 *pylong* 必须是 "
+":c:type:`PyLongObject` 的实例。"
 
 #: ../../c-api/long.rst:256
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for an "
 ":c:expr:`unsigned long long`."
 msgstr ""
+"如果 *pylong* 的值超出 :c:expr:`unsigned long long` 的取值范围则会引发 "
+":exc:`OverflowError`。"
 
 #: ../../c-api/long.rst:259
 msgid ""
@@ -307,6 +322,7 @@ msgid ""
 "If the value of *obj* is out of range for an :c:expr:`unsigned long`, return"
 " the reduction of that value modulo ``ULONG_MAX + 1``."
 msgstr ""
+"如果 *obj* 的值超出了 :c:expr:`unsigned long` 的取值范围，则返回该值对 ``ULONG_MAX + 1`` 求模的余数。"
 
 #: ../../c-api/long.rst:275
 msgid ""
@@ -327,6 +343,8 @@ msgid ""
 "If the value of *obj* is out of range for an :c:expr:`unsigned long long`, "
 "return the reduction of that value modulo ``ULLONG_MAX + 1``."
 msgstr ""
+"如果 *obj* 的值超出了 :c:expr:`unsigned long long` 的取值范围，则返回该值对 ``ULLONG_MAX + 1`` "
+"求模的余数。"
 
 #: ../../c-api/long.rst:295
 msgid ""
@@ -339,12 +357,14 @@ msgid ""
 "Return a C :c:expr:`double` representation of *pylong*.  *pylong* must be an"
 " instance of :c:type:`PyLongObject`."
 msgstr ""
+"返回 *pylong* 的 C :c:expr:`double` 表示形式。 *pylong* 必须是 :c:type:`PyLongObject` "
+"的实例。"
 
 #: ../../c-api/long.rst:310
 msgid ""
 "Raise :exc:`OverflowError` if the value of *pylong* is out of range for a "
 ":c:expr:`double`."
-msgstr ""
+msgstr "如果 *pylong* 的值超出了 :c:expr:`double` 的取值范围则会引发 :exc:`OverflowError`。"
 
 #: ../../c-api/long.rst:313
 msgid ""
@@ -358,6 +378,9 @@ msgid ""
 "assured to produce a usable :c:expr:`void` pointer for values created with "
 ":c:func:`PyLong_FromVoidPtr`."
 msgstr ""
+"将一个 Python 整数 *pylong* 转换为 C :c:expr:`void` 指针。 如果 *pylong* 无法被转换，则将引发 "
+":exc:`OverflowError`。 这只是为了保证将通过 :c:func:`PyLong_FromVoidPtr` 创建的值产生一个可用的 "
+":c:expr:`void` 指针。"
 
 #: ../../c-api/long.rst:323
 msgid ""
