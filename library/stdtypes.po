@@ -4,11 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jerry Chen <jerrychen9657@gmail.com>, 2017
 # emrich <emrich3@163.com>, 2017
 # cdarlint <cdarling@126.com>, 2018
 # Shengjing Zhu <zsj950618@gmail.com>, 2018
-# isaced <isaced@163.com>, 2018
 # eric R <trencyclopedia@gmail.com>, 2018
 # CommonZ <zyyzcode@outlook.com>, 2018
 # Zombie110year <zombie110year@gmail.com>, 2019
@@ -20,19 +18,20 @@
 # Konge <zkonge@outlook.com>, 2019
 # Sean Chao <seanchao0804@gmail.com>, 2020
 # Jiuh-star <jiuh.star@gmail.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2022
+# Dai Xu <daixu61@hotmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:28+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:27+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,14 +141,14 @@ msgstr "运算"
 #: ../../library/stdtypes.rst:364 ../../library/stdtypes.rst:414
 #: ../../library/stdtypes.rst:862 ../../library/stdtypes.rst:1057
 msgid "Result"
-msgstr "结果"
+msgstr "结果："
 
 #: ../../library/stdtypes.rst:85 ../../library/stdtypes.rst:275
 #: ../../library/stdtypes.rst:414 ../../library/stdtypes.rst:862
 #: ../../library/stdtypes.rst:1057 ../../library/stdtypes.rst:2292
 #: ../../library/stdtypes.rst:3502
 msgid "Notes"
-msgstr "注释"
+msgstr "备注"
 
 #: ../../library/stdtypes.rst:87
 msgid "``x or y``"
@@ -203,7 +202,7 @@ msgstr "\\(3)"
 #: ../../library/stdtypes.rst:1107 ../../library/stdtypes.rst:2338
 #: ../../library/stdtypes.rst:3552
 msgid "Notes:"
-msgstr "注释:"
+msgstr "注释："
 
 #: ../../library/stdtypes.rst:105
 msgid ""
@@ -227,7 +226,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:120
 msgid "Comparisons"
-msgstr "比较"
+msgstr "比较运算"
 
 #: ../../library/stdtypes.rst:134
 msgid ""
@@ -249,7 +248,7 @@ msgstr "此表格汇总了比较运算:"
 #: ../../library/stdtypes.rst:2292 ../../library/stdtypes.rst:3479
 #: ../../library/stdtypes.rst:3502
 msgid "Meaning"
-msgstr "含义"
+msgstr "含意"
 
 #: ../../library/stdtypes.rst:145
 msgid "``<``"
@@ -414,7 +413,6 @@ msgid ""
 msgstr ""
 "Python "
 "完全支持混合运算：当一个二元算术运算符的操作数有不同数值类型时，\"较窄\"类型的操作数会拓宽到另一个操作数的类型，其中整数比浮点数窄，浮点数比复数窄。不同类型的数字之间的比较，同比较这些数字的精确值一样。[2]_"
-" "
 
 #: ../../library/stdtypes.rst:268
 msgid ""
@@ -686,7 +684,7 @@ msgstr ":func:`math.floor(\\ x) <math.floor>`"
 
 #: ../../library/stdtypes.rst:373
 msgid "the greatest :class:`~numbers.Integral` <= *x*"
-msgstr "<= *x* 的最大 :class:`~numbers.Integral` "
+msgstr "<= *x* 的最大 :class:`~numbers.Integral`"
 
 #: ../../library/stdtypes.rst:376
 msgid ":func:`math.ceil(x) <math.ceil>`"
@@ -694,7 +692,7 @@ msgstr ":func:`math.ceil(x) <math.ceil>`"
 
 #: ../../library/stdtypes.rst:376
 msgid "the least :class:`~numbers.Integral` >= *x*"
-msgstr ">= *x* 的最小 :class:`~numbers.Integral` "
+msgstr ">= *x* 的最小 :class:`~numbers.Integral`"
 
 #: ../../library/stdtypes.rst:380
 msgid ""
@@ -2463,7 +2461,7 @@ msgstr ""
 msgid ""
 "Like :meth:`~str.find`, but raise :exc:`ValueError` when the substring is "
 "not found."
-msgstr "类似于 :meth:`~str.find`，但在找不到子类时会引发 :exc:`ValueError`。"
+msgstr "类似于 :meth:`~str.find`，但在找不到子字符串时会引发 :exc:`ValueError`。"
 
 #: ../../library/stdtypes.rst:1674
 msgid ""
@@ -2474,7 +2472,7 @@ msgid ""
 msgstr ""
 "如果字符串中的所有字符都是字母或数字且至少有一个字符，则返回 ``True`` ， 否则返回 ``False`` 。 如果 "
 "``c.isalpha()`` ， ``c.isdecimal()`` ， ``c.isdigit()`` ，或 ``c.isnumeric()`` "
-"之中有一个返回 ``True`` ，则字符``c``是字母或数字。"
+"之中有一个返回 ``True`` ，则字符 ``c`` 是字母或数字。"
 
 #: ../../library/stdtypes.rst:1682
 msgid ""
@@ -2813,7 +2811,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:3313 ../../library/stdtypes.rst:3355
 #: ../../library/stdtypes.rst:3379
 msgid "For example::"
-msgstr "例如::"
+msgstr "例如："
 
 #: ../../library/stdtypes.rst:1981
 msgid ""
@@ -3190,7 +3188,7 @@ msgstr "转换旗标为："
 
 #: ../../library/stdtypes.rst:2269 ../../library/stdtypes.rst:3479
 msgid "Flag"
-msgstr "标志"
+msgstr "标志位"
 
 #: ../../library/stdtypes.rst:2271 ../../library/stdtypes.rst:3481
 msgid "``'#'``"
@@ -5798,7 +5796,7 @@ msgid ""
 "The builtin functions :func:`isinstance` and :func:`issubclass` do not "
 "accept ``GenericAlias`` types for their second argument::"
 msgstr ""
-"内置函数 :func:`isinstance` 和 :func:`issubclass` 不接受第二个参数为``GenericAlias`` 类型："
+"内置函数 :func:`isinstance` 和 :func:`issubclass` 不接受第二个参数为 ``GenericAlias`` 类型："
 
 #: ../../library/stdtypes.rst:4804
 msgid ""
@@ -5815,7 +5813,7 @@ msgstr ""
 msgid ""
 "Furthermore, parameterized generics erase type parameters during object "
 "creation::"
-msgstr "不仅如此，在创建对象的过程中，参数化的泛型还会抹除类型参数："
+msgstr "不仅如此，在创建对象的过程中，应用了参数后的泛型还会抹除类型参数："
 
 #: ../../library/stdtypes.rst:4825
 msgid ""
@@ -6090,7 +6088,7 @@ msgstr ""
 msgid ""
 "This attribute is a lazily computed tuple (possibly empty) of unique type "
 "variables found in ``__args__``::"
-msgstr "该属性是延迟计算出来的一个元组（可能为空），包含了  ``__args__`` 中的唯一类型变量。"
+msgstr "该属性是延迟计算出来的一个元组（可能为空），包含了  ``__args__`` 中的类型变量。"
 
 #: ../../library/stdtypes.rst:4952
 msgid ":pep:`484` - Type Hints"
@@ -6687,7 +6685,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5391
 msgid "Example::"
-msgstr "示例："
+msgstr "示例::"
 
 #: ../../library/stdtypes.rst:5403
 msgid "If you need to disable it entirely, set it to ``0``."
@@ -6695,7 +6693,7 @@ msgstr "如果你需要完全禁用它，请将其设为 ``0``。"
 
 #: ../../library/stdtypes.rst:5407
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "备注"
 
 #: ../../library/stdtypes.rst:5408
 msgid ""
@@ -6711,7 +6709,7 @@ msgstr "作为结果，列表 ``[1, 2]`` 与 ``[1.0, 2.0]`` 是相等的，元�
 
 #: ../../library/stdtypes.rst:5414
 msgid "They must have since the parser can't tell the type of the operands."
-msgstr "它们必须如此，因为解析器无法区分这些操作数的类型。"
+msgstr "必须如此，因为解析器无法判断操作数的类型。"
 
 #: ../../library/stdtypes.rst:5416
 msgid ""
@@ -6726,4 +6724,4 @@ msgstr ""
 msgid ""
 "To format only a tuple you should therefore provide a singleton tuple whose "
 "only element is the tuple to be formatted."
-msgstr "要格式化单独一个元组，那么你应当提供一个单例元组，其唯一的元素就是要被格式化的元组。"
+msgstr "若只是要格式化一个元组，则应提供一个单例元组，其中只包含一个元素，就是需要格式化的那个元组。"

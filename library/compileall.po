@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # walkinrain <walkinrain2008@outlook.com>, 2019
-# Zombie110year <zombie110year@gmail.com>, 2019
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:03+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,7 +147,7 @@ msgid ""
 ":envvar:`SOURCE_DATE_EPOCH` environment variable is not set, and ``checked-"
 "hash`` if the ``SOURCE_DATE_EPOCH`` environment variable is set."
 msgstr ""
-"控制生成的字节码文件在运行时的失效规则。 值为``timestamp``，意味着将生成嵌入了源时间戳和大小的 ``.pyc`` 文件。 "
+"控制生成的字节码文件在运行时的失效规则。 值为 ``timestamp``，意味着将生成嵌入了源时间戳和大小的 ``.pyc`` 文件。 "
 "``checked-hash`` 和 ``unchecked-hash`` 等值将导致生成基于哈希的 pyc。 基于哈希的 pyc "
 "嵌入了源文件内容的哈希值而不是时间戳。 请参阅 :ref:`pyc-invalidation` 了解有关 Python "
 "在运行时如何验证字节码缓存文件的更多信息。 如果未设置 :envvar:`SOURCE_DATE_EPOCH` 环境变量则默认值为 "
@@ -350,7 +350,7 @@ msgstr "*legacy* 形参将只写入 ``.pyc`` 文件而非 ``.pyo`` 文件，无�
 
 #: ../../library/compileall.rst:219
 msgid "Accepts a :term:`path-like object`."
-msgstr "接受一个 :term:`类路径对象 <path-like object>`。"
+msgstr "接受一个 :term:`path-like object`。"
 
 #: ../../library/compileall.rst:222 ../../library/compileall.rst:285
 #: ../../library/compileall.rst:314

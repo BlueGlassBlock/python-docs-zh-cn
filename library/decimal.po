@@ -1,24 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Alpha Du <alphanow@gmail.com>, 2019
-# focusheart <focusheart@gmail.com>, 2019
 # Naisen Xu <723648649@qq.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2020
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:06+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,8 +49,8 @@ msgid ""
 "people learn at school.\" -- excerpt from the decimal arithmetic "
 "specification."
 msgstr ""
-"Decimal “基于一个浮点模型，它是为人们设计的，并且必然具有最重要的指导原则 —— 计算机必须提供与人们在学校学习的算法相同的算法。” —— "
-"摘自十进制算术规范。"
+"Decimal 类型的“设计是基于考虑人类习惯的浮点数模型，并且因此具有以下最高指导原则 —— 计算机必须提供与人们在学校所学习的算术相一致的算术。” "
+"—— 摘自 decimal 算术规范描述。"
 
 #: ../../library/decimal.rst:42
 msgid ""
@@ -105,8 +105,8 @@ msgid ""
 "signal handling. This includes an option to enforce exact arithmetic by "
 "using exceptions to block any inexact operations."
 msgstr ""
-"二进制和十进制浮点都是根据已发布的标准实现的。 虽然内置浮点类型只公开其功能的一小部分，但十进制模块公开了标准的所有必需部分。 "
-"在需要时，程序员可以完全控制舍入和信号处理。 这包括通过使用异常来阻止任何不精确操作来强制执行精确算术的选项。"
+"二进制和 decimal 浮点数都是根据已发布的标准实现的。 虽然内置浮点类型只公开其功能的一小部分，但 decimal 模块公开了标准的所有必需部分。"
+" 在需要时，程序员可以完全控制舍入和信号处理。 这包括通过使用异常来阻止任何不精确操作来强制执行精确算术的选项。"
 
 #: ../../library/decimal.rst:80
 msgid ""
@@ -114,13 +114,14 @@ msgid ""
 "unrounded decimal arithmetic (sometimes called fixed-point arithmetic) and "
 "rounded floating-point arithmetic.\"  -- excerpt from the decimal arithmetic"
 " specification."
-msgstr "十进制模块旨在支持“无偏见，精确的非连续十进制算术（有时称为定点算术）和舍入浮点算术”。 —— 摘自十进制算术规范。"
+msgstr ""
+"decimal 模块旨在支持“无偏差，精确无舍入的十进制算术（有时称为定点数算术）和有舍入的浮点数算术”。 —— 摘自 decimal 算术规范说明。"
 
 #: ../../library/decimal.rst:85
 msgid ""
 "The module design is centered around three concepts:  the decimal number, "
 "the context for arithmetic, and signals."
-msgstr "模块设计以三个概念为中心：十进制数，算术上下文和信号。"
+msgstr "该模块的设计以三个概念为中心：decimal 数值，算术上下文和信号。"
 
 #: ../../library/decimal.rst:88
 msgid ""
@@ -191,7 +192,9 @@ msgid ""
 "The usual start to using decimals is importing the module, viewing the "
 "current context with :func:`getcontext` and, if necessary, setting new "
 "values for precision, rounding, or enabled traps::"
-msgstr "通常使用小数的开始是导入模块，使用 :func:`getcontext` 查看当前上下文，并在必要时为精度、舍入或启用的陷阱设置新值::"
+msgstr ""
+"通常使用 decimal 的方式是先导入该模块，通过 :func:`getcontext` "
+"查看当前上下文，并在必要时为精度、舍入或启用的陷阱设置新值::"
 
 #: ../../library/decimal.rst:139
 msgid ""
@@ -222,13 +225,13 @@ msgstr "新 Decimal 的重要性仅由输入的位数决定。 上下文精度�
 msgid ""
 "If the internal limits of the C version are exceeded, constructing a decimal"
 " raises :class:`InvalidOperation`::"
-msgstr "如果超出了C版本的内部限制，则构造一个十进制将引发 :class:`InvalidOperation` ::"
+msgstr "如果超出了 C 版本的内部限制，则构造一个 decimal 将引发 :class:`InvalidOperation` ::"
 
 #: ../../library/decimal.rst:209
 msgid ""
 "Decimals interact well with much of the rest of Python.  Here is a small "
 "decimal floating point flying circus:"
-msgstr "小数与 Python 的其余部分很好地交互。 这是一个小的十进制浮点飞行杂技团："
+msgstr "Decimal 数字能很好地与 Python 的其余部分交互。 以下是一个小小的 decimal 浮点数飞行马戏团："
 
 #: ../../library/decimal.rst:241
 msgid "And some mathematical functions are also available to Decimal:"
@@ -351,8 +354,8 @@ msgid ""
 "``Decimal('1.100000000000000088817841970012523233890533447265625')``."
 msgstr ""
 "如果 *value* 是 :class:`float` ，则二进制浮点值无损地转换为其精确的十进制等效值。 此转换通常需要53位或更多位数的精度。 "
-"例如， ``Decimal(float('1.1'))`` "
-"转换为``Decimal('1.100000000000000088817841970012523233890533447265625')``。"
+"例如， ``Decimal(float('1.1'))`` 转换为 "
+"``Decimal('1.100000000000000088817841970012523233890533447265625')``。"
 
 #: ../../library/decimal.rst:382
 msgid ""
@@ -588,7 +591,7 @@ msgid ""
 "Return the value of the (natural) exponential function ``e**x`` at the given"
 " number.  The result is correctly rounded using the :const:`ROUND_HALF_EVEN`"
 " rounding mode."
-msgstr "返回给定数字的（自然）指数函数``e**x``的值。结果使用 :const:`ROUND_HALF_EVEN` 舍入模式正确舍入。"
+msgstr "返回给定数字的（自然）指数函数 ``e**x`` 的值。结果使用 :const:`ROUND_HALF_EVEN` 舍入模式正确舍入。"
 
 #: ../../library/decimal.rst:576
 msgid "Classmethod that converts a float to a decimal number, exactly."
@@ -1383,7 +1386,7 @@ msgstr "如果 *x* 是规范的则返回 ``True``；否则返回 ``False``。"
 
 #: ../../library/decimal.rst:1210
 msgid "Returns ``True`` if *x* is finite; otherwise returns ``False``."
-msgstr "如果 *x* 为有限的则返回``True``；否则返回 ``False``。"
+msgstr "如果 *x* 为有限的则返回 ``True``；否则返回 ``False``。"
 
 #: ../../library/decimal.rst:1215
 msgid "Returns ``True`` if *x* is infinite; otherwise returns ``False``."
@@ -1620,7 +1623,7 @@ msgstr "使用科学计数法将一个数字转换为字符串。"
 
 #: ../../library/decimal.rst:1461
 msgid "Constants"
-msgstr "常数"
+msgstr "常量"
 
 #: ../../library/decimal.rst:1463
 msgid ""

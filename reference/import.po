@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jerry Chen <jerrychen9657@gmail.com>, 2017
 # eric R <trencyclopedia@gmail.com>, 2018
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:38+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,7 +51,7 @@ msgid ""
 "operation."
 msgstr ""
 ":keyword:`import` 语句结合了两个操作；它先搜索指定名称的模块，然后将搜索结果绑定到当前作用域中的名称。 "
-":keyword:`!import` 语句的搜索操作定义为对 :func:`__import__` 函数的调用并带有适当的参数。 "
+":keyword:`!import` 语句的搜索操作被定义为对 :func:`__import__` 函数的调用并带有适当的参数。 "
 ":func:`__import__` 的返回值会被用于执行 :keyword:`!import` 语句的名称绑定操作。 请参阅 "
 ":keyword:`!import` 语句了解名称绑定操作的更多细节。"
 
@@ -141,7 +141,7 @@ msgid ""
 " hierarchically, and packages may themselves contain subpackages, as well as"
 " regular modules."
 msgstr ""
-"你可以把包看成是文件系统中的目录，并把模块看成是目录中的文件，但请不要对这个类似做过于字面的理解，因为包和模块不是必须来自于文件系统。 "
+"你可以把包看成是文件系统中的目录，并把模块看成是目录中的文件，但请不要对这个类比做过于字面的理解，因为包和模块不是必须来自于文件系统。 "
 "为了方便理解本文档，我们将继续使用这种目录和文件的类比。 与文件系统一样，包通过层次结构进行组织，在包之内除了一般的模块，还可以有子包。"
 
 #: ../../reference/import.rst:80
@@ -1681,7 +1681,7 @@ msgstr ""
 
 #: ../../reference/import.rst:1047
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "备注"
 
 #: ../../reference/import.rst:1048
 msgid "See :class:`types.ModuleType`."

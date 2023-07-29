@@ -1,24 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yiyi Python <python.yiyi@gmail.com>, 2017
-# wwj402 <wwj402@gmail.com>, 2017
 # chordy <wfsinap@gmail.com>, 2017
 # Shengjing Zhu <zsj950618@gmail.com>, 2019
 # Alpha Du <alphanow@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 17:31+0000\n"
-"Last-Translator: Alpha Du <alphanow@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +33,8 @@ msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_,"
 " a document processor specifically written for the Python documentation."
 msgstr ""
-"这些文档生成自 `reStructuredText`_ 原文档，由 `Sphinx`_ （一个专门为 Python 文档写的文档生成器）创建。"
+"这些文档是用 `Sphinx`_ 从 `reStructuredText`_ 源生成的，`Sphinx` 是一个专为处理 Python "
+"文档而编写的文档生成器。"
 
 #: ../../about.rst:15
 msgid ""
@@ -43,18 +43,18 @@ msgid ""
 "look at the :ref:`reporting-bugs` page for information on how to do so.  New"
 " volunteers are always welcome!"
 msgstr ""
-"本文档和它所用工具链的开发完全是由志愿者完成的，这和 Python 本身一样。如果您想参与进来，请阅读 :ref:`reporting-bugs` "
+"本文档及其工具链之开发，皆在于志愿者之努力，亦恰如 Python 本身。如果您想为此作出贡献，请阅读 :ref:`reporting-bugs` "
 "了解如何参与。我们随时欢迎新的志愿者！"
 
 #: ../../about.rst:20
 msgid "Many thanks go to:"
-msgstr "非常感谢："
+msgstr "特别鸣谢："
 
 #: ../../about.rst:22
 msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset"
 " and writer of much of the content;"
-msgstr "Fred L. Drake, Jr.，创造了用于早期 Python 文档的工具链，以及撰写了非常多的文档；"
+msgstr "Fred L. Drake, Jr.，原始 Python 文档工具集之创造者，众多文档之作者；"
 
 #: ../../about.rst:24
 msgid ""
@@ -72,7 +72,7 @@ msgstr "Fredrik Lundh 的 Alternative Python Reference 项目， Sphinx 从中�
 
 #: ../../about.rst:31
 msgid "Contributors to the Python Documentation"
-msgstr "Python 文档贡献者"
+msgstr "Python 文档的贡献者"
 
 #: ../../about.rst:33
 msgid ""
@@ -80,11 +80,11 @@ msgid ""
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
-"有很多对 Python 语言，Python 标准库和 Python 文档有贡献的人，随 Python 源代码发布的 "
+"有很多对 Python 语言，Python 标准库和 Python 文档有贡献的人，随 Python 源代码分发的 "
 ":source:`Misc/ACKS` 文件列出了部分贡献者。"
 
 #: ../../about.rst:37
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
-msgstr "有了 Python 社区的输入和贡献，Python 才有了如此出色的文档 - 谢谢你们！"
+msgstr "有了 Python 社区的输入和贡献，Python 才有了如此出色的文档——谢谢你们！"

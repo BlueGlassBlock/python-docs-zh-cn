@@ -4,7 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 操旭 <caoxu3000@126.com>, 2017
 # 叶浚安 <ye.pandaaaa906@gmail.com>, 2019
 # Jiu Hong Jiang <julse@qq.com>, 2019
 # Kevin Deng <kevindeng55+transifex@gmail.com>, 2020
@@ -12,16 +11,17 @@
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
 # Jing Li <tes286.lijing@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:28+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 17:42+0000\n"
-"Last-Translator: Jing Li <tes286.lijing@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -359,11 +359,11 @@ msgstr "以下标志常量定义在:file: ' structmember.h ';它们可以使用b
 
 #: ../../extending/newtypes.rst:298
 msgid "Constant"
-msgstr "常数"
+msgstr "常量"
 
 #: ../../extending/newtypes.rst:298
 msgid "Meaning"
-msgstr "意义"
+msgstr "含意"
 
 #: ../../extending/newtypes.rst:300
 msgid ":const:`READONLY`"
@@ -625,7 +625,7 @@ msgid ""
 "classes:"
 msgstr ""
 "任何 :term:`iterable` 对象都必须实现 :c:member:`~PyTypeObject.tp_iter` "
-"处理句柄，该处理句柄必须返回一个 :term:`iterator` 对象。 下面是是与 Python 类所应用的同一个指导原则:"
+"处理句柄，该处理句柄必须返回一个 :term:`iterator` 对象。 下面是与 Python 类所应用的同一个指导原则:"
 
 #: ../../extending/newtypes.rst:535
 msgid ""

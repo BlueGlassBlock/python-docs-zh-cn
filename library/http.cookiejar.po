@@ -1,26 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Fred <fred.wei@foxmail.com>, 2018
 # 汪心禾 <wangxinhe06@gmail.com>, 2019
 # Zombie110year <zombie110year@gmail.com>, 2019
 # Shengjing Zhu <zsj950618@gmail.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2019
 # Alpha Du <alphanow@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -184,7 +184,7 @@ msgid ""
 " on a :class:`CookieJar` instance."
 msgstr ""
 "这个类代表 Netscape、:rfc:`2109` 和 :rfc:`2965` 的 cookie 。 我们不希望 "
-":mod:`http.cookiejar` 的用户构建他们自己的 :class:`Cookie` 实例。 相反，如果有必要，请在一个  "
+":mod:`http.cookiejar` 的用户构建他们自己的 :class:`Cookie` 实例。 如果有必要，请在一个  "
 ":class:`CookieJar` 实例上调用 :meth:`make_cookies` 。"
 
 #: ../../library/http.cookiejar.rst:118
@@ -220,7 +220,7 @@ msgid ""
 "resemblance to the one sketched out in ``cookie_spec.html``."
 msgstr ""
 "原始 Netscape cookie 协议的规范。 虽然这仍然是主流协议，但所有主要浏览器（以及 :mod:`http.cookiejar` ）实现的 "
-"\"Netscape cookie协议\" 与``cookie_spec.html``中描述的协议仅有几分相似之处。"
+"\"Netscape cookie协议\" 与 ``cookie_spec.html`` 中描述的协议仅有几分相似之处。"
 
 #: ../../library/http.cookiejar.rst:132
 msgid ":rfc:`2109` - HTTP State Management Mechanism"
@@ -249,11 +249,11 @@ msgstr "http://kristol.org/cookie/errata.html"
 
 #: ../../library/http.cookiejar.rst:139
 msgid "Unfinished errata to :rfc:`2965`."
-msgstr "未完成的:rfc:`2965` 勘误表。"
+msgstr "未完成的 :rfc:`2965` 勘误表。"
 
 #: ../../library/http.cookiejar.rst:141
 msgid ":rfc:`2964` - Use of HTTP State Management"
-msgstr "HTTP状态管理使用方法"
+msgstr ":rfc:`2964` - HTTP状态管理使用方法"
 
 #: ../../library/http.cookiejar.rst:146
 msgid "CookieJar and FileCookieJar Objects"
@@ -395,7 +395,7 @@ msgstr "如果不存在匹配的 cookie，则会引发 :exc:`KeyError`。"
 
 #: ../../library/http.cookiejar.rst:239
 msgid "Discard all session cookies."
-msgstr "丢弃所有session cookie。"
+msgstr "丢弃所有的会话 cookie。"
 
 #: ../../library/http.cookiejar.rst:241
 msgid ""
@@ -1057,7 +1057,7 @@ msgstr ""
 
 #: ../../library/http.cookiejar.rst:738
 msgid "Examples"
-msgstr "示例"
+msgstr "例子"
 
 #: ../../library/http.cookiejar.rst:740
 msgid ""

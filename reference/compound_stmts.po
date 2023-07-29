@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jerry Chen <jerrychen9657@gmail.com>, 2017
 # dannyvi <dannyvis@icloud.com>, 2018
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:38+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -702,7 +702,7 @@ msgstr "最初的函数标注规范说明。"
 
 #: ../../reference/compound_stmts.rst:649
 msgid ":pep:`484` - Type Hints"
-msgstr ":pep:`484` - 类型提示"
+msgstr ":pep:`484` —— 类型注解"
 
 #: ../../reference/compound_stmts.rst:649
 msgid "Definition of a standard meaning for annotations: type hints."
@@ -941,7 +941,7 @@ msgstr "将协程作为 Python 中的一个正式的单独概念，并增加相�
 
 #: ../../reference/compound_stmts.rst:893
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "备注"
 
 #: ../../reference/compound_stmts.rst:894
 msgid ""

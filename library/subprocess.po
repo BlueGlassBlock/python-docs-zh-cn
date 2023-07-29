@@ -6,21 +6,21 @@
 # Translators:
 # ww song <sww4718168@gmail.com>, 2018
 # Shengjing Zhu <zsj950618@gmail.com>, 2019
-# ppcfish <ppcfish@gmail.com>, 2019
 # Zombie110year <zombie110year@gmail.com>, 2019
 # Arisaka97 <solitaire2312@gmail.com>, 2020
 # Tianyu Chen (billchenchina) <billchenchina2001@gmail.com>, 2021
 # Nyuan Zhang, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:25+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 23:28+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +79,7 @@ msgstr ""
 msgid ""
 "Run the command described by *args*.  Wait for command to complete, then "
 "return a :class:`CompletedProcess` instance."
-msgstr "运行被 *arg* 描述的指令。等待指令完成，然后返回一个 :class:`CompletedProcess` 实例。"
+msgstr "运行被 *arg* 描述的指令. 等待指令完成, 然后返回一个 :class:`CompletedProcess` 实例."
 
 #: ../../library/subprocess.rst:48
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 "internal :class:`Popen` object is automatically created with ``stdin=PIPE``,"
 " and the *stdin* argument may not be used as well."
 msgstr ""
-"*input* 参数将被传递给 :meth:`Popen.communicate` 以及子进程的标准输入。 如果使用此参数，它必须是一个字节序列。 "
+"*input* 参数将被传递给 :meth:`Popen.communicate` 以及子进程的 stdin。 如果使用此参数，它必须是一个字节序列。 "
 "如果指定了 *encoding* 或 *errors* 或者将 *text* 设置为 ``True``，那么也可以是一个字符串。 "
 "当使用此参数时，在创建内部 :class:`Popen` 对象时将自动带上 ``stdin=PIPE``，并且不能再手动指定 *stdin* 参数。"
 
@@ -151,7 +151,7 @@ msgid ""
 msgstr ""
 "如果指定了 *encoding* 或 *error*，或者 *text* 被设为真值，标准输入、标准输出和标准错误的文件对象将使用指定的 "
 "*encoding* 和 *errors* 或者 :class:`io.TextIOWrapper` 默认值以文本模式打开。 "
-"*universal_newlines* 参数等同于 *text* 并且提供了向后兼容性。 默认情况下，文件对象是以二进制模式打开的。"
+"*universal_newlines* 参数等同于 *text* 并且提供了向后兼容性。 默认情况下, 文件对象是以二进制模式打开的。"
 
 #: ../../library/subprocess.rst:84
 msgid ""
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../library/subprocess.rst:89
 msgid "Examples::"
-msgstr "例如::"
+msgstr "示例::"
 
 #: ../../library/subprocess.rst:107
 msgid "Added *encoding* and *errors* parameters"
@@ -1351,7 +1351,7 @@ msgstr "仅关键词参数支持被加入。"
 msgid ""
 "A bit field that determines whether certain :class:`STARTUPINFO` attributes "
 "are used when the process creates a window. ::"
-msgstr "一个位域，用于确定属性 :class:`STARTUPINFO` 是否在进程创建窗口时使用。"
+msgstr "一个位字段，用于确定进程在创建窗口时是否使用某些 :class:`STARTUPINFO` 属性。"
 
 #: ../../library/subprocess.rst:925
 msgid ""
@@ -1359,7 +1359,7 @@ msgid ""
 " the standard input handle for the process. If :data:`STARTF_USESTDHANDLES` "
 "is not specified, the default for standard input is the keyboard buffer."
 msgstr ""
-"如果 :attr:`dwFlags` 被指定为 :data:`STARTF_USESTDHANDLES`，此值是进程的标准输入句柄，如果 "
+"如果 :attr:`dwFlags` 被指定为 :data:`STARTF_USESTDHANDLES`，则此属性是进程的标准输入句柄，如果 "
 ":data:`STARTF_USESTDHANDLES` 未指定，则默认的标准输入是键盘缓冲区。"
 
 #: ../../library/subprocess.rst:932
@@ -1368,8 +1368,8 @@ msgid ""
 " the standard output handle for the process. Otherwise, this attribute is "
 "ignored and the default for standard output is the console window's buffer."
 msgstr ""
-"如果 :attr:`dwFlags` 指定为 "
-":data:`STARTF_USESTDHANDLES`，此属性是进程的标准输出句柄。除此之外，此此属性将被忽略并且默认标准输出是控制台窗口缓冲区。"
+"如果 :attr:`dwFlags` 被指定为 "
+":data:`STARTF_USESTDHANDLES`，则此属性是进程的标准输出句柄。除此之外，此此属性将被忽略并且默认标准输出是控制台窗口缓冲区。"
 
 #: ../../library/subprocess.rst:939
 msgid ""
@@ -1442,8 +1442,8 @@ msgid ""
 ":func:`os.system`.  This also applies to standard handle redirection, which "
 "temporarily creates inheritable handles."
 msgstr ""
-"在多线程进程中，请谨慎使用，以便在将此功能与对继承所有句柄的其他进程创建函数（例如 "
-":func:`os.system`）的并发调用相结合时，避免泄漏标记为可继承的句柄。这也应用于临时性创建可继承句柄的标准句柄重定向。"
+"在多线程进程中，请谨慎使用，以便在将此功能与对继承所有句柄的其他进程创建函数——例如 :func:`os.system` "
+"的并发调用——相结合时，避免泄漏标记为可继承的句柄。这也应用于临时性创建可继承句柄的标准句柄重定向。"
 
 #: ../../library/subprocess.rst:984
 msgid "Windows Constants"
@@ -1659,7 +1659,7 @@ msgstr ""
 
 #: ../../library/subprocess.rst:1206
 msgid "This is equivalent to::"
-msgstr "这相当于::"
+msgstr "这相当于："
 
 #: ../../library/subprocess.rst:1210
 msgid ""
@@ -1771,7 +1771,7 @@ msgstr "替代 :func:`os.system`"
 
 #: ../../library/subprocess.rst:1328
 msgid "Notes:"
-msgstr "注释:"
+msgstr "注释："
 
 #: ../../library/subprocess.rst:1330
 msgid "Calling the program through the shell is usually not required."
@@ -1929,7 +1929,7 @@ msgstr "添加了 Windows 支持"
 
 #: ../../library/subprocess.rst:1519
 msgid "Notes"
-msgstr "注释"
+msgstr "备注"
 
 #: ../../library/subprocess.rst:1524
 msgid "Converting an argument sequence to a string on Windows"

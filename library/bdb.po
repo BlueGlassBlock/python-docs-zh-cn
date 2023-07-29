@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -7,16 +7,17 @@
 # 汇民 王 <whuim@qq.com>, 2019
 # Arisaka97 <solitaire2312@gmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-07-29 03:34+0000\n"
 "PO-Revision-Date: 2017-02-16 18:42+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -203,7 +204,7 @@ msgstr "``\"call\"``: 一个函数即将被调用，或者进入了另一个代�
 
 #: ../../library/bdb.rst:119
 msgid "``\"return\"``: A function or other code block is about to return."
-msgstr "``\"return\"``: 一个即将返回的函数或其他代码块。"
+msgstr "``\"return\"``: 一个函数或其他代码块即将返回。"
 
 #: ../../library/bdb.rst:120
 msgid "``\"exception\"``: An exception has occurred."
@@ -363,11 +364,11 @@ msgstr "派生类与客户端可以调用以下方法来影响步进状态。"
 
 #: ../../library/bdb.rst:221
 msgid "Stop after one line of code."
-msgstr "在一行代码之后停止。Stop after one line of code."
+msgstr "在一行代码之后停止。"
 
 #: ../../library/bdb.rst:225
 msgid "Stop on the next line in or below the given frame."
-msgstr "在给定帧以内或以下的下一行停止。"
+msgstr "在给定的帧以内或以下的下一行停止。"
 
 #: ../../library/bdb.rst:229
 msgid "Stop when returning from the given frame."
@@ -464,7 +465,7 @@ msgstr "返回 *filename* 中在 *lineno* 上的所有中断点，或者如果�
 #: ../../library/bdb.rst:302
 msgid ""
 "Return all breakpoints in *filename*, or an empty list if none are set."
-msgstr "返回 *filename* 中在 *lineno* 上的所有中断点，或者如果未设置任何中断点则返回一个空列表。"
+msgstr "返回 *filename* 中的所有中断点，或者如果未设置任何中断点则返回一个空列表。"
 
 #: ../../library/bdb.rst:306
 msgid "Return all breakpoints that are set."
@@ -531,7 +532,7 @@ msgstr ""
 
 #: ../../library/bdb.rst:344
 msgid "For backwards compatibility.  Calls the :meth:`run` method."
-msgstr "为了向下兼容。 调用 :meth:`run` 方法。"
+msgstr "为了保证向下兼容性。 调用 :meth:`run` 方法。"
 
 #: ../../library/bdb.rst:348
 msgid "Debug a single function call, and return its result."
