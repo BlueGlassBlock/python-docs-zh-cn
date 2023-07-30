@@ -3796,6 +3796,8 @@ msgid ""
 "was previously an arbitrary random function to use for the shuffle; now, "
 ":func:`random.random` (its previous default) will always be used."
 msgstr ""
+"移除了 :func:`random.shuffle` 的 *random* 可选形参。 在之前版本中重排操作是使用任意随机函数；现在，将始终使用 "
+":func:`random.random` (之前的默认值)。"
 
 #: ../../whatsnew/3.11.rst:2083
 msgid ""
@@ -3804,6 +3806,8 @@ msgid ""
 "been deprecated since Python 3.6. (Contributed by Serhiy Storchaka in "
 ":issue:`47066`.)"
 msgstr ""
+"在 :mod:`re` :ref:`re-syntax` 中，全局内联旗标 (例如 ``(?i)``) 现在只能在正则表达式的开头使用。 自 "
+"Python 3.6 起在别处使用这些旗标的做法已被弃用。 （由 Serhiy Storchaka 在 :issue:`47066` 中贡献）。"
 
 #: ../../whatsnew/3.11.rst:2088
 msgid ""
@@ -3812,6 +3816,8 @@ msgid ""
 "this could change the captured output in these cases. (Contributed by Ma Lin"
 " in :issue:`35859`.)"
 msgstr ""
+"在 :mod:`re` 模块中，修复了几个长期存在的错误，在极少数情况下，这些错误可能会导致捕获分组得到错误的结果。 "
+"因此，这可能会改变这些情况下的捕获输出。 （由 Ma Lin 在 :issue:`35859` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2097
 msgid "Build Changes"
@@ -3831,10 +3837,19 @@ msgid ""
 "Christian Heimes and Ethan Smith in :gh:`84461` and WASI contributed by "
 "Christian Heimes in :gh:`90473`; platforms promoted in :gh:`95085`)"
 msgstr ""
+"CPython 现已具有 :pep:`11` :pep:`Tier 3 support <11#tier-3>` 以便交叉编译至 "
+"`WebAssembly <https://webassembly.org/>`_ 平台 `Emscripten "
+"<https://emscripten.org/>`_ (``wasm32-unknown-emscripten`` 即浏览器版 Python) 和 "
+"`WebAssembly System Interface (WASI) <https://wasi.dev/>`_ "
+"(``wasm32-unknown-wasi``)。 此计划的灵感来自前人的工作如 `Pyodide <https://pyodide.org/>`_。"
+" 这些平台提供了 POSIX API 的有限子集；与网络、进程、线程、信号、mmap 和用户/组相关的 Python "
+"标准库特性和模块将不可用或无法正常工作。 （Emscripten 由 Christian Heimes 和 Ethan Smith 在 "
+":gh:`84461` 中贡献，WASI 由 Christian Heimes 在 :gh:`90473` 中贡献；平台的推进在 :gh:`95085`"
+" 中追踪。）"
 
 #: ../../whatsnew/3.11.rst:2113
 msgid "Building CPython now requires:"
-msgstr ""
+msgstr "构建 CPython 现在需要:"
 
 #: ../../whatsnew/3.11.rst:2115
 msgid ""
@@ -4051,6 +4066,8 @@ msgid ""
 "available directly (via :c:type:`PyCMethod`). (Contributed by Petr Viktorin "
 "in :issue:`46613`.)"
 msgstr ""
+"增加了 :c:func:`PyType_GetModuleByDef` 函数，用于在无法直接获取信息的情况下 (通过 "
+":c:type:`PyCMethod`) 获取方法定义所在的模块。 （由 Petr Viktorin 在 :issue:`46613` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2235
 msgid ""
@@ -4084,6 +4101,10 @@ msgid ""
 "representation of exceptions. (Contributed by Irit Katriel in "
 ":issue:`46343`.)"
 msgstr ""
+"新增了两个用于获取和设置活动异常实例的函数: :c:func:`PyErr_GetHandledException` 和 "
+":c:func:`PyErr_SetHandledException`。 这两个函数是 :c:func:`PyErr_SetExcInfo()` 和 "
+":c:func:`PyErr_GetExcInfo()` 的替代品，后者使用传统的 3 元组表示异常。 （由 Irit Katriel 在 "
+":issue:`46343` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2252
 msgid ""
@@ -4301,14 +4322,14 @@ msgid ""
 "While the documentation notes that the :c:type:`PyFrameObject` fields are "
 "subject to change at any time, they have been stable for a long time and "
 "were used in several popular extensions."
-msgstr ""
+msgstr "虽然文档指出 :c:type:`PyFrameObject` 字段可能随时更改，但这些字段长期以来一直保持稳定，并在多个流行的扩展中使用。"
 
 #: ../../whatsnew/3.11.rst:2430
 msgid ""
 "In Python 3.11, the frame struct was reorganized to allow performance "
 "optimizations. Some fields were removed entirely, as they were details of "
 "the old implementation."
-msgstr ""
+msgstr "在 Python 3.11 中，为了优化性能，对帧结构进行了重组。 一些字段被完全删除，因为它们属于旧实现的细节。"
 
 #: ../../whatsnew/3.11.rst:2434
 msgid ":c:type:`PyFrameObject` fields:"
@@ -4749,6 +4770,9 @@ msgid ""
 "worked since the :c:type:`PyWeakReference` structure is opaque in the "
 "limited C API. (Contributed by Victor Stinner in :issue:`35134`.)"
 msgstr ""
+"将 :c:func:`PyWeakref_GET_OBJECT` 排除在受限 C API 之外。 由于 "
+":c:type:`PyWeakReference` 结构体在受限 C API 中是不透明的因此它从未正确发挥作用。 （由 Victor Stinner "
+"在 d:issue:`35134` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2662
 msgid ""
