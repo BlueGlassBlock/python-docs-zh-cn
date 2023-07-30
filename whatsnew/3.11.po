@@ -3912,7 +3912,7 @@ msgstr ""
 msgid ""
 "libpython is no longer linked against libcrypt. (Contributed by Mike Gilbert"
 " in :issue:`45433`.)"
-msgstr ""
+msgstr "libpython 不再与 libcrypt 链接。 （由 Mike Gilbert 在 :issue:`45433` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2147
 msgid ""
@@ -3921,6 +3921,9 @@ msgid ""
 ":option:`--with-lto`, i.e. ``--with-lto=thin``. (Contributed by Dong-hee Na "
 "and Brett Holman in :issue:`44340`.)"
 msgstr ""
+"现在 CPython 可以通过向 :option:`--with-lto` 传入 ``thin``，例如 ``--with-lto=thin`` "
+"在编译时启用 `ThinLTO <https://clang.llvm.org/docs/ThinLTO.html>`_。 （由 Dong-hee Na"
+" 和 Brett Holman 在 :issue:`44340` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2152
 msgid ""
@@ -3929,6 +3932,8 @@ msgid ""
 "except empty tuple singleton. (Contributed by Christian Heimes in "
 ":issue:`45522`.)"
 msgstr ""
+"现在可以禁用对象结构体的自由列表。 新的 :program:`configure` 选项 :option:`--without-freelists` "
+"可用于禁用除空元组单例之外的所有自由列表。 （由 Christian Heimes 在 :issue:`45522` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2157
 msgid ""
@@ -3938,6 +3943,10 @@ msgid ""
 "(Contributed by Brett Cannon and Christian Heimes in :issue:`45548`, "
 ":issue:`45570`, :issue:`45571`, and :issue:`43974`.)"
 msgstr ""
+"``Modules/Setup`` 和 ``Modules/makesetup`` 已获得改进并进行绑定。 扩展模块现在可以通过 "
+"``makesetup`` 来构建。 除部分测试模块外所有模块都可以静态链接到主二进制文件或库中。 （由 Brett Cannon 和 "
+"Christian Heimes 在 :issue:`45548`, :issue:`45570`, :issue:`45571` 和 "
+":issue:`43974` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2164
 msgid ""
@@ -3946,6 +3955,9 @@ msgid ""
 " libraries. The :program:`configure` options :option:`!--with-tcltk-"
 "includes` and :option:`!--with-tcltk-libs` have been removed."
 msgstr ""
+"使用环境变量 :envvar:`!TCLTK_CFLAGS` 和 :envvar:`!TCLTK_LIBS` 来手动指定 Tcl/Tk "
+"头文件和库的位置。 :program:`configure` 选项 :option:`!--with-tcltk-includes` 和 "
+":option:`!--with-tcltk-libs` 已被移除。"
 
 #: ../../whatsnew/3.11.rst:2170
 msgid ""
@@ -3954,6 +3966,9 @@ msgid ""
 "directory ``Misc/rhel7`` contains ``.pc`` files and instructions on how to "
 "build Python with RHEL 7's and CentOS 7's Tcl/Tk and OpenSSL."
 msgstr ""
+"在 RHEL 7 和 CentOS 7 上开发包将不提供 ``tcl.pc`` 和 ``tk.pc``；请使用 "
+"``TCLTK_LIBS=\"-ltk8.5 -ltkstub8.5 -ltcl8.5\"``。 ``Misc/rhel7`` 目录包含 ``.pc``"
+" 文件以及如何使用 RHEL 7 和 CentOS 7 的 Tcl/Tk 和 OpenSSL 构建 Python 的说明。"
 
 #: ../../whatsnew/3.11.rst:2175
 msgid ""
@@ -3966,6 +3981,11 @@ msgid ""
 "this option may be removed at some point in the future. (Contributed by Mark"
 " Dickinson in :issue:`45569`.)"
 msgstr ""
+"CPython 现在将默认使用 30 比特位的数字来实现 Python :class:`int`。 之前版本中，在 ``SIZEOF_VOID_P >="
+" 8`` 的平台上默认使用 30 比特位数字，否则使用 15 位数字。 仍然有可能通过配置脚本的 :option:`--enable-big-"
+"digits` 选项或 ``PC/pyconfig.h`` 中的 ``PYLONG_BITS_IN_DIGIT`` 变量（适用于 "
+"Windows）显式地要求使用 15 比特位数字，但该选项可能会在未来某个时候被移除。 （由 Mark Dickinson 在 "
+":issue:`45569` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2188
 msgid "C API Changes"
@@ -4139,6 +4159,10 @@ msgid ""
 "expected types. See :pep:`670` for more details. (Contributed by Victor "
 "Stinner and Erlend E. Aasland in :gh:`89653`.)"
 msgstr ""
+"部分宏已被转换为静态内联函数以避免 `宏陷阱 <https://gcc.gnu.org/onlinedocs/cpp/Macro-"
+"Pitfalls.html>`_。 这项改变对用户来说应该是基本无感的，因为替代函数会将其参数强制转换为预期的类型以避免静态类型检查导致的编译器警告。 "
+"但是，当受限 C API 被设为 >=3.11 时，将不会执行这些强制转换，调用方将需要自行将参数强制转换为其预期的类型。 请参阅 :pep:`670`"
+" 了解详情。 （由 Victor Stinner 和 Erlend E. Aasland 在 :gh:`89653` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2274
 msgid ""
@@ -4147,6 +4171,9 @@ msgid ""
 "instance (the ``value`` argument). The function still steals references of "
 "all three arguments. (Contributed by Irit Katriel in :issue:`45711`.)"
 msgstr ""
+":c:func:`PyErr_SetExcInfo()` 不再使用 ``type`` 和 ``traceback`` 参数，解释器现在将从异常实例（ 即"
+" ``value`` 参数）中获取这些值。 该函数仍会偷取对所有三个参数的引用。 （由 Irit Katriel 在 :issue:`45711` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2280
 msgid ""
@@ -4154,6 +4181,8 @@ msgid ""
 "fields of the result from the exception instance (the ``value`` field). "
 "(Contributed by Irit Katriel in :issue:`45711`.)"
 msgstr ""
+":c:func:`PyErr_GetExcInfo()` 现在将从异常实例（即 ``value`` 字段）获取结果的 ``type`` 和 "
+"``traceback`` 字段。 （由 Irit Katriel 在 :issue:`45711` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2284
 msgid ""
@@ -4162,6 +4191,8 @@ msgid ""
 "``size`` field was the indicator.  Now only non-negative values be used for "
 "``size``. (Contributed by Kumar Aditya in :issue:`46608`.)"
 msgstr ""
+":c:struct:`_frozen` 新增了 ``is_package`` 字段用来指明冻结模块是否为包。 之前，是将 ``size`` "
+"字段设置负值作为指示符。  现在 ``size`` 将只使用非负值。 （由 Kumar Aditya 在 :issue:`46608` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2290
 msgid ""
@@ -4437,6 +4468,8 @@ msgid ""
 " computed lazily. The :c:func:`PyFrame_GetBack` function must be called "
 "instead."
 msgstr ""
+"现在 Python 帧对象是惰性地创建的。 一个附带影响是 ``f_back`` 成员不可直接访问，因为它现在的值也是惰性地计算的。 必须改为调用 "
+":c:func:`PyFrame_GetBack` 函数。"
 
 #: ../../whatsnew/3.11.rst:2461
 msgid ""
@@ -4446,20 +4479,25 @@ msgid ""
 "in fact they should not call those functions. The necessary updating of the "
 "frame is now managed by the virtual machine."
 msgstr ""
+"直接访问 ``f_locals`` 的调试器 *必须* 改为调用 :c:func:`PyFrame_GetLocals`。 它们不再需要调用 "
+":c:func:`PyFrame_FastToLocalsWithError` 或 "
+":c:func:`PyFrame_LocalsToFast`，实际上它们不应该调用这些函数。 现在帧所需要的更新将由虚拟机来管理。"
 
 #: ../../whatsnew/3.11.rst:2467
 msgid "Code defining ``PyFrame_GetCode()`` on Python 3.8 and older::"
-msgstr ""
+msgstr "在 Python 3.8 及更旧版本上定义 ``PyFrame_GetCode()`` 的代码::"
 
 #: ../../whatsnew/3.11.rst:2477
 msgid "Code defining ``PyFrame_GetBack()`` on Python 3.8 and older::"
-msgstr ""
+msgstr "在 Python 3.8 及更旧版本上定义 ``PyFrame_GetBack()`` 的代码::"
 
 #: ../../whatsnew/3.11.rst:2487
 msgid ""
 "Or use the `pythoncapi_compat project <https://github.com/python/pythoncapi-"
 "compat>`__ to get these two functions on older Python versions."
 msgstr ""
+"或者使用 `pythoncapi_compat 项目 <https://github.com/python/pythoncapi-compat>`__ "
+"在更旧版本的 Python 上获取这些函数。"
 
 #: ../../whatsnew/3.11.rst:2491
 msgid "Changes of the :c:type:`PyThreadState` structure members:"
