@@ -325,12 +325,16 @@ msgid ""
 ":c:member:`PyConfig.use_environment` should be used instead, see "
 ":ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
+"此 API 仅为向下兼容而保留：应当改为设置 :c:member:`PyConfig.use_environment`，参见 :ref:`Python "
+"初始化配置 <init-config>`。"
 
 #: ../../c-api/init.rst:160
 msgid ""
 "Ignore all :envvar:`!PYTHON*` environment variables, e.g. "
 ":envvar:`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
+"忽略所有 :envvar:`!PYTHON*` 环境变量，例如可能设置的 :envvar:`PYTHONPATH` 和 "
+":envvar:`PYTHONHOME`。"
 
 #: ../../c-api/init.rst:163
 msgid "Set by the :option:`-E` and :option:`-I` options."
