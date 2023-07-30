@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -967,7 +967,7 @@ msgstr ":attr:`tm_sec`"
 
 #: ../../library/time.rst:562
 msgid "range [0, 61]; see **(2)** in :func:`strftime` description"
-msgstr "range [0, 61]； 见 :func:`strftime` 介绍中的 **(2)** "
+msgstr "range [0, 61]； 见 :func:`strftime` 介绍中的 **(2)**"
 
 #: ../../library/time.rst:565
 msgid "6"
@@ -1452,7 +1452,7 @@ msgstr "国际化服务。 区域设置会影响 :func:`strftime` 和 :func:`str
 
 #: ../../library/time.rst:912
 msgid "Module :mod:`calendar`"
-msgstr "模块 :mod:`calendar` "
+msgstr "模块 :mod:`calendar`"
 
 #: ../../library/time.rst:912
 msgid ""
@@ -1474,6 +1474,6 @@ msgid ""
 " the 4-digit year has been first recommended by :rfc:`1123` and then "
 "mandated by :rfc:`2822`."
 msgstr ""
-"现在不推荐使用 ``%Z`` ，但是所有 ANSI C 库都不支持扩展为首选小时/分钟偏移量的``%z``转义符。 此外，严格的 1982 年原始 "
-":rfc:`822` 标准要求两位数的年份（``%y``而不是``%Y``），但是实际在2000年之前很久就转移到了4位数年。之后， "
+"现在不推荐使用 ``%Z`` ，但是所有 ANSI C 库都不支持扩展为首选小时/分钟偏移量的 ``%z`` 转义符。 此外，严格的 1982 年原始 "
+":rfc:`822` 标准要求两位数的年份（ ``%y`` 而不是 ``%Y`` ），但是实际在2000年之前很久就转移到了4位数年。之后， "
 ":rfc:`822` 已经废弃了，4位数的年份首先被推荐 :rfc:`1123` ，然后被 :rfc:`2822` 强制执行。"

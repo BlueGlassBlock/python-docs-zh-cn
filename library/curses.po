@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +27,7 @@ msgstr ":mod:`curses` --- 终端字符单元显示的处理"
 
 #: ../../library/curses.rst:12
 msgid "**Source code:** :source:`Lib/curses`"
-msgstr ""
+msgstr "**源代码:** :source:`Lib/curses`"
 
 #: ../../library/curses.rst:16
 msgid ""
@@ -417,6 +417,10 @@ msgid ""
 "no-op on most terminals; it is active only if :func:`can_change_color` "
 "returns ``True``."
 msgstr ""
+"更改某个颜色的定义，接受要更改的颜色编号以及三个 RGB 值（表示红绿蓝三个分量的强度）。 *color_number* 的值必须为 ``0`` 和 "
+"``COLORS - 1`` 之间的数字。 每个 *r*, *g*, *b* 值必须为 ``0`` 和 ``1000`` 之间的数字。 当使用 "
+":func:`init_color` 时，出现在屏幕上的对应颜色会立即按照定定义来更改。 此函数在大多数终端上都是无操作的；它仅会在 "
+":func:`can_change_color` 返回 ``True`` 时生效。"
 
 #: ../../library/curses.rst:305
 msgid ""
@@ -1664,7 +1668,7 @@ msgstr "将自上次调用 :meth:`refresh` 以来窗口中的所有行标记为�
 msgid ""
 "Display a vertical line starting at ``(y, x)`` with length *n* consisting of"
 " the character *ch* with attributes *attr*."
-msgstr ""
+msgstr "显示一行起始于 ``(y, x)`` 长度为 *n* 的由具有属性 *attr* 的字符 *ch* 组成的垂直线。"
 
 #: ../../library/curses.rst:1325
 msgid "Constants"
@@ -2324,7 +2328,7 @@ msgstr "``KEY_OPTIONS``"
 
 #: ../../library/curses.rst:1535
 msgid "Options"
-msgstr "选项"
+msgstr "属性"
 
 #: ../../library/curses.rst:1537
 msgid "``KEY_PREVIOUS``"

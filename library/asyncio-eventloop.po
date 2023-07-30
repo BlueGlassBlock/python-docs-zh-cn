@@ -4,18 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
-# Lu <lu2github@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Lu <lu2github@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,11 +71,11 @@ msgstr "返回当前 OS 线程中正在运行的事件循环。"
 
 #: ../../library/asyncio-eventloop.rst:36
 msgid "Raise a :exc:`RuntimeError` if there is no running event loop."
-msgstr "如果没有运行中的事件循环，则抛出 :exc:`RuntimeError` 。"
+msgstr "如果没有正在运行的事件循环则会引发 :exc:`RuntimeError`。"
 
 #: ../../library/asyncio-eventloop.rst:38
 msgid "This function can only be called from a coroutine or a callback."
-msgstr "此函数只能在协程或回调中被调用。"
+msgstr "此函数只能由协程或回调来调用。"
 
 #: ../../library/asyncio-eventloop.rst:44
 msgid "Get the current event loop."
@@ -86,13 +85,14 @@ msgstr "获取当前事件循环。"
 msgid ""
 "When called from a coroutine or a callback (e.g. scheduled with call_soon or"
 " similar API), this function will always return the running event loop."
-msgstr ""
+msgstr "当在协程或回调中被调用时（例如通过 call_soon 或类似 API 加入计划任务），此函数将始终返回正在运行的事件循环。"
 
 #: ../../library/asyncio-eventloop.rst:50
 msgid ""
 "If there is no running event loop set, the function will return the result "
 "of the ``get_event_loop_policy().get_event_loop()`` call."
 msgstr ""
+"如果没有设置正在运行的事件循环，此函数将返回 ``get_event_loop_policy().get_event_loop()`` 调用的结果。"
 
 #: ../../library/asyncio-eventloop.rst:53
 msgid ""
@@ -108,7 +108,7 @@ msgid ""
 "As noted above, consider using the higher-level :func:`asyncio.run` "
 "function, instead of using these lower level functions to manually create "
 "and close an event loop."
-msgstr ""
+msgstr "如上文所说，请考虑使用高层级的 :func:`asyncio.run` 函数，而不是使用这些低层级的函数来手动创建和关闭事件循环。"
 
 #: ../../library/asyncio-eventloop.rst:63
 msgid ""
@@ -122,7 +122,7 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:74
 msgid "Set *loop* as the current event loop for the current OS thread."
-msgstr ""
+msgstr "将 *loop* 设为当前 OS 线程的当前事件循环。"
 
 #: ../../library/asyncio-eventloop.rst:78
 msgid "Create and return a new event loop object."
@@ -284,8 +284,8 @@ msgid ""
 msgstr "请注意当使用 :func:`asyncio.run` 时不必调用此函数。"
 
 #: ../../library/asyncio-eventloop.rst:182
-#: ../../library/asyncio-eventloop.rst:1124
-#: ../../library/asyncio-eventloop.rst:1516
+#: ../../library/asyncio-eventloop.rst:1127
+#: ../../library/asyncio-eventloop.rst:1519
 msgid "Example::"
 msgstr "示例::"
 
@@ -296,12 +296,14 @@ msgid ""
 "this method has been called, using the default executor with "
 ":meth:`loop.run_in_executor` will raise a :exc:`RuntimeError`."
 msgstr ""
+"安排默认执行器的关闭并等待它合并 :class:`~concurrent.futures.ThreadPoolExecutor` 中的所有线程。 "
+"一旦此方法被调用，将默认执行器与 :meth:`loop.run_in_executor` 一起使用将引发 :exc:`RuntimeError`。"
 
 #: ../../library/asyncio-eventloop.rst:202
 msgid ""
 "Do not call this method when using :func:`asyncio.run`, as the latter "
 "handles default executor shutdown automatically."
-msgstr ""
+msgstr "当使用 :func:`asyncio.run` 不要调用此方法，因为它会自动处理默认执行器的关闭。"
 
 #: ../../library/asyncio-eventloop.rst:209
 msgid "Scheduling callbacks"
@@ -317,7 +319,7 @@ msgstr "安排 *callback* :term:`callback` 在事件循环的下一次迭代时�
 msgid ""
 "Return an instance of :class:`asyncio.Handle`, which can be used later to "
 "cancel the callback."
-msgstr ""
+msgstr "返回一个 :class:`asyncio.Handle` 的实例，可在此后被用来取消回调。"
 
 #: ../../library/asyncio-eventloop.rst:219
 msgid ""
@@ -331,10 +333,14 @@ msgid ""
 ":class:`contextvars.Context` for the *callback* to run in. Callbacks use the"
 " current context when no *context* is provided."
 msgstr ""
+"可选的仅限关键字参数 *context* 指定一个自定义的 :class:`contextvars.Context` 供 *callback* "
+"在其中运行。 当未提供 *context* 时回调将使用当前上下文。"
 
 #: ../../library/asyncio-eventloop.rst:226
 msgid "Unlike :meth:`call_soon_threadsafe`, this method is not thread-safe."
 msgstr ""
+"与 :meth:`call_soon_threadsafe` 不同，此方法不是线程安全的。, this method is not thread-"
+"safe."
 
 #: ../../library/asyncio-eventloop.rst:230
 msgid ""
@@ -342,6 +348,8 @@ msgid ""
 "another thread, this function *must* be used, since :meth:`call_soon` is not"
 " thread-safe."
 msgstr ""
+":meth:`call_soon` 的线程安全版。 当从另一个线程安排回调时，*必须* 使用此函数，因为 :meth:`call_soon` "
+"不是线程安全的。"
 
 #: ../../library/asyncio-eventloop.rst:234
 msgid ""
@@ -486,7 +494,7 @@ msgstr "这是在asyncio中创建Futures的首选方式。这让第三方事件�
 msgid ""
 "Schedule the execution of :ref:`coroutine <coroutine>` *coro*. Return a "
 ":class:`Task` object."
-msgstr ""
+msgstr "将 :ref:`协程 <coroutine>` *coro* 的执行加入计划任务。 返回一个 :class:`Task` 对象。"
 
 #: ../../library/asyncio-eventloop.rst:353
 msgid ""
@@ -504,7 +512,7 @@ msgstr "如果提供了 *name* 参数且不为 ``None``，它会使用 :meth:`Ta
 
 #: ../../library/asyncio-eventloop.rst:360
 msgid "Added the *name* parameter."
-msgstr "添加了 *name* 参数。"
+msgstr "添加了 *name* 形参。"
 
 #: ../../library/asyncio-eventloop.rst:365
 msgid "Set a task factory that will be used by :meth:`loop.create_task`."
@@ -550,8 +558,8 @@ msgid "The socket type will be :py:data:`~socket.SOCK_STREAM`."
 msgstr "套接字类型将为 :py:data:`~socket.SOCK_STREAM`。"
 
 #: ../../library/asyncio-eventloop.rst:398
-#: ../../library/asyncio-eventloop.rst:1040
-#: ../../library/asyncio-eventloop.rst:1056
+#: ../../library/asyncio-eventloop.rst:1043
+#: ../../library/asyncio-eventloop.rst:1059
 msgid ""
 "*protocol_factory* must be a callable returning an :ref:`asyncio protocol "
 "<asyncio-protocol>` implementation."
@@ -687,6 +695,8 @@ msgid ""
 "created. To close the socket, call the transport's "
 ":meth:`~asyncio.BaseTransport.close` method."
 msgstr ""
+"*sock* 参数可将套接字的所有权转给所创建的传输。 要关闭该套接字，请调用传输的 "
+":meth:`~asyncio.BaseTransport.close` 方法。"
 
 #: ../../library/asyncio-eventloop.rst:472
 msgid ""
@@ -698,7 +708,7 @@ msgstr ""
 "*local_host* 和 *local_port* 会使用 ``getaddrinfo()`` 来查找，这与 *host* 和 *port* 类似。"
 
 #: ../../library/asyncio-eventloop.rst:476
-#: ../../library/asyncio-eventloop.rst:847
+#: ../../library/asyncio-eventloop.rst:850
 msgid ""
 "*ssl_handshake_timeout* is (for a TLS connection) the time in seconds to "
 "wait for the TLS handshake to complete before aborting the connection. "
@@ -721,7 +731,7 @@ msgstr "套接字选项 :py:data:`~socket.TCP_NODELAY` 默认已为所有 TCP �
 #: ../../library/asyncio-eventloop.rst:491
 #: ../../library/asyncio-eventloop.rst:782
 msgid "Added the *ssl_handshake_timeout* parameter."
-msgstr "添加了 *ssl_handshake_timeout* 参数。"
+msgstr "添加了 *ssl_handshake_timeout* 形参。"
 
 #: ../../library/asyncio-eventloop.rst:495
 msgid "Added the *happy_eyeballs_delay* and *interleave* parameters."
@@ -737,6 +747,9 @@ msgid ""
 "This document specifies requirements for algorithms that reduce this user-"
 "visible delay and provides an algorithm."
 msgstr ""
+"Happy Eyeballs 算法：成功使用双栈主机。 当服务器的 IPv4 路径和协议工作正常，但服务器的 IPv6 "
+"路径和协议工作不正常时，双线客户端应用程序相比仅有 IPv4 的客户端会感受到明显的连接延迟。 这是不可接受的因为它会导致双栈客户端糟糕的用户体验。 "
+"这篇文档指明了减少这种用户可见延迟的算法要求并提供了具体的算法。"
 
 #: ../../library/asyncio-eventloop.rst:506
 msgid "For more information: https://tools.ietf.org/html/rfc6555"
@@ -918,7 +931,7 @@ msgstr "请查看 :meth:`loop.create_connection` 方法的文档了解有关此�
 
 #: ../../library/asyncio-eventloop.rst:617
 #: ../../library/asyncio-eventloop.rst:741
-#: ../../library/asyncio-eventloop.rst:1107
+#: ../../library/asyncio-eventloop.rst:1110
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ":ref:`可用性 <availability>`: Unix。"
 
@@ -1010,6 +1023,8 @@ msgid ""
 " To close the socket, call the server's :meth:`~asyncio.Server.close` "
 "method."
 msgstr ""
+"*sock* 参数可将套接字的所有权转给所创建的服务器。 要关闭该套接字，请调用服务器的 :meth:`~asyncio.Server.close` "
+"方法。"
 
 #: ../../library/asyncio-eventloop.rst:678
 msgid ""
@@ -1123,7 +1138,7 @@ msgid ""
 msgstr "此方法可被服务器用来接受 asyncio 以外的连接，但是使用 asyncio 来处理它们。"
 
 #: ../../library/asyncio-eventloop.rst:755
-#: ../../library/asyncio-eventloop.rst:833
+#: ../../library/asyncio-eventloop.rst:836
 msgid "Parameters:"
 msgstr "参数："
 
@@ -1171,7 +1186,7 @@ msgid "*file* must be a regular file object opened in binary mode."
 msgstr "*file* 必须是个二进制模式打开的常规文件对象。"
 
 #: ../../library/asyncio-eventloop.rst:798
-#: ../../library/asyncio-eventloop.rst:995
+#: ../../library/asyncio-eventloop.rst:998
 msgid ""
 "*offset* tells from where to start reading the file. If specified, *count* "
 "is the total number of bytes to transmit as opposed to sending the file "
@@ -1214,6 +1229,8 @@ msgid ""
 "and the *protocol*. The coder/decoder implements both *transport*-facing "
 "protocol and *protocol*-facing transport."
 msgstr ""
+"创建一个 TLS 编码器/解码器实例并将其插入到 *transport* 和 *protocol* 之间。 该编码器/解码器同时实现了面向 "
+"*transport* 的协议和面向 *protocol* 的传输。"
 
 #: ../../library/asyncio-eventloop.rst:828
 msgid ""
@@ -1222,8 +1239,16 @@ msgid ""
 "object only because the coder caches *protocol*-side data and sporadically "
 "exchanges extra TLS session packets with *transport*."
 msgstr ""
+"返回已创建的双接口实例。 在 *await* 之后，*protocol* 必须使用原始 *transport* "
+"来停止并仅与所返回的对象通信因为编码器会缓存 *protocol* 方的数据并会不定期地与 *transport* 交换额外的 TLS 会话数据包。"
 
-#: ../../library/asyncio-eventloop.rst:835
+#: ../../library/asyncio-eventloop.rst:833
+msgid ""
+"In some situations (e.g. when the passed transport is already closing) this "
+"may return ``None``."
+msgstr "在某些情况下（例如当传入的 transport 已经关闭）这可能返回 ``None``。"
+
+#: ../../library/asyncio-eventloop.rst:838
 msgid ""
 "*transport* and *protocol* instances that methods like "
 ":meth:`~loop.create_server` and :meth:`~loop.create_connection` return."
@@ -1231,11 +1256,11 @@ msgstr ""
 "*transport* 和 *protocol* 实例的方法与 :meth:`~loop.create_server` 和 "
 ":meth:`~loop.create_connection` 所返回的类似。"
 
-#: ../../library/asyncio-eventloop.rst:839
+#: ../../library/asyncio-eventloop.rst:842
 msgid "*sslcontext*: a configured instance of :class:`~ssl.SSLContext`."
 msgstr "*sslcontext* ：一个已经配置好的 :class:`~ssl.SSLContext` 实例。"
 
-#: ../../library/asyncio-eventloop.rst:841
+#: ../../library/asyncio-eventloop.rst:844
 msgid ""
 "*server_side* pass ``True`` when a server-side connection is being upgraded "
 "(like the one created by :meth:`~loop.create_server`)."
@@ -1243,36 +1268,36 @@ msgstr ""
 "当服务端连接已升级时 (如 :meth:`~loop.create_server` 所创建的对象) *server_side* 会传入 "
 "``True``。"
 
-#: ../../library/asyncio-eventloop.rst:844
+#: ../../library/asyncio-eventloop.rst:847
 msgid ""
 "*server_hostname*: sets or overrides the host name that the target server's "
 "certificate will be matched against."
 msgstr "*server_hostname* ：设置或者覆盖目标服务器证书中相对应的主机名。"
 
-#: ../../library/asyncio-eventloop.rst:855
+#: ../../library/asyncio-eventloop.rst:858
 msgid "Watching file descriptors"
 msgstr "监控文件描述符"
 
-#: ../../library/asyncio-eventloop.rst:859
+#: ../../library/asyncio-eventloop.rst:862
 msgid ""
 "Start monitoring the *fd* file descriptor for read availability and invoke "
 "*callback* with the specified arguments once *fd* is available for reading."
 msgstr "开始监视 *fd* 文件描述符以获取读取的可用性，一旦 *fd* 可用于读取，使用指定的参数调用 *callback* 。"
 
-#: ../../library/asyncio-eventloop.rst:865
+#: ../../library/asyncio-eventloop.rst:868
 msgid ""
 "Stop monitoring the *fd* file descriptor for read availability. Returns "
 "``True`` if *fd* was previously being monitored for reads."
-msgstr ""
+msgstr "停止监视 *fd* 文件描述符的读取可用性。 如果之前正在监视 *fd* 的读取则返回 ``True``。"
 
-#: ../../library/asyncio-eventloop.rst:870
+#: ../../library/asyncio-eventloop.rst:873
 msgid ""
 "Start monitoring the *fd* file descriptor for write availability and invoke "
 "*callback* with the specified arguments once *fd* is available for writing."
 msgstr "开始监视 *fd* 文件描述符的写入可用性，一旦 *fd* 可用于写入，使用指定的参数调用 *callback* 。"
 
-#: ../../library/asyncio-eventloop.rst:874
-#: ../../library/asyncio-eventloop.rst:1094
+#: ../../library/asyncio-eventloop.rst:877
+#: ../../library/asyncio-eventloop.rst:1097
 msgid ""
 "Use :func:`functools.partial` :ref:`to pass keyword arguments <asyncio-pass-"
 "keywords>` to *callback*."
@@ -1280,23 +1305,23 @@ msgstr ""
 "使用 :func:`functools.partial` :ref:`传递关键字参数 <asyncio-pass-keywords>`  给 "
 "*callback*."
 
-#: ../../library/asyncio-eventloop.rst:879
+#: ../../library/asyncio-eventloop.rst:882
 msgid ""
 "Stop monitoring the *fd* file descriptor for write availability. Returns "
 "``True`` if *fd* was previously being monitored for writes."
-msgstr ""
+msgstr "停止监视 *fd* 文件描述符的写入可用性。 如果之前正在监视 *fd* 的写入则返回 ``True``。"
 
-#: ../../library/asyncio-eventloop.rst:882
+#: ../../library/asyncio-eventloop.rst:885
 msgid ""
 "See also :ref:`Platform Support <asyncio-platform-support>` section for some"
 " limitations of these methods."
 msgstr "另请查看 :ref:`平台支持 <asyncio-platform-support>` 一节了解以上方法的某些限制。"
 
-#: ../../library/asyncio-eventloop.rst:887
+#: ../../library/asyncio-eventloop.rst:890
 msgid "Working with socket objects directly"
 msgstr "直接使用 socket 对象"
 
-#: ../../library/asyncio-eventloop.rst:889
+#: ../../library/asyncio-eventloop.rst:892
 msgid ""
 "In general, protocol implementations that use transport-based APIs such as "
 ":meth:`loop.create_connection` and :meth:`loop.create_server` are faster "
@@ -1308,27 +1333,27 @@ msgstr ""
 ":meth:`loop.create_server` 比直接使用套接字的实现更快。 但是，在某些应用场景下性能并不非常重要，直接使用 "
 ":class:`~socket.socket` 对象会更方便。"
 
-#: ../../library/asyncio-eventloop.rst:898
+#: ../../library/asyncio-eventloop.rst:901
 msgid ""
 "Receive up to *nbytes* from *sock*.  Asynchronous version of "
 ":meth:`socket.recv() <socket.socket.recv>`."
 msgstr ""
 "从 *sock* 接收至多 *nbytes*。 :meth:`socket.recv() <socket.socket.recv>` 的异步版本。"
 
-#: ../../library/asyncio-eventloop.rst:901
+#: ../../library/asyncio-eventloop.rst:904
 msgid "Return the received data as a bytes object."
 msgstr "返回接收到的数据【bytes对象类型】。"
 
-#: ../../library/asyncio-eventloop.rst:903
-#: ../../library/asyncio-eventloop.rst:917
-#: ../../library/asyncio-eventloop.rst:932
-#: ../../library/asyncio-eventloop.rst:945
-#: ../../library/asyncio-eventloop.rst:971
-#: ../../library/asyncio-eventloop.rst:1009
+#: ../../library/asyncio-eventloop.rst:906
+#: ../../library/asyncio-eventloop.rst:920
+#: ../../library/asyncio-eventloop.rst:935
+#: ../../library/asyncio-eventloop.rst:948
+#: ../../library/asyncio-eventloop.rst:974
+#: ../../library/asyncio-eventloop.rst:1012
 msgid "*sock* must be a non-blocking socket."
 msgstr "*sock* 必须是个非阻塞socket。"
 
-#: ../../library/asyncio-eventloop.rst:905
+#: ../../library/asyncio-eventloop.rst:908
 msgid ""
 "Even though this method was always documented as a coroutine method, "
 "releases before Python 3.7 returned a :class:`Future`. Since Python 3.7 this"
@@ -1337,7 +1362,7 @@ msgstr ""
 "虽然这个方法总是被记录为协程方法，但它在 Python 3.7 之前的发行版中会返回一个 :class:`Future`。 从 Python 3.7 "
 "开始它则是一个 ``async def`` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:912
+#: ../../library/asyncio-eventloop.rst:915
 msgid ""
 "Receive data from *sock* into the *buf* buffer.  Modeled after the blocking "
 ":meth:`socket.recv_into() <socket.socket.recv_into>` method."
@@ -1345,11 +1370,11 @@ msgstr ""
 "从 *sock* 接收数据放入 *buf* 缓冲区。 模仿了阻塞型的 :meth:`socket.recv_into() "
 "<socket.socket.recv_into>` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:915
+#: ../../library/asyncio-eventloop.rst:918
 msgid "Return the number of bytes written to the buffer."
 msgstr "返回写入缓冲区的字节数。"
 
-#: ../../library/asyncio-eventloop.rst:923
+#: ../../library/asyncio-eventloop.rst:926
 msgid ""
 "Send *data* to the *sock* socket. Asynchronous version of "
 ":meth:`socket.sendall() <socket.socket.sendall>`."
@@ -1357,7 +1382,7 @@ msgstr ""
 "将 *data* 发送到 *sock* 套接字。 :meth:`socket.sendall() <socket.socket.sendall>` "
 "的异步版本。"
 
-#: ../../library/asyncio-eventloop.rst:926
+#: ../../library/asyncio-eventloop.rst:929
 msgid ""
 "This method continues to send to the socket until either all data in *data* "
 "has been sent or an error occurs.  ``None`` is returned on success.  On "
@@ -1368,7 +1393,7 @@ msgstr ""
 "此方法会持续发送数据到套接字直至 *data* 中的所有数据发送完毕或是有错误发生。 当成功时会返回 ``None``。 当发生错误时，会引发一个异常。"
 " 此外，没有办法能确定有多少数据或是否有数据被连接的接收方成功处理。"
 
-#: ../../library/asyncio-eventloop.rst:934
+#: ../../library/asyncio-eventloop.rst:937
 msgid ""
 "Even though the method was always documented as a coroutine method, before "
 "Python 3.7 it returned an :class:`Future`. Since Python 3.7, this is an "
@@ -1377,16 +1402,16 @@ msgstr ""
 "虽然这个方法一直被标记为协程方法。但是，Python 3.7 之前，该方法返回 :class:`Future` ，从Python 3.7 "
 "开始，这个方法是 ``async def`` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:941
+#: ../../library/asyncio-eventloop.rst:944
 msgid "Connect *sock* to a remote socket at *address*."
 msgstr "将 *sock* 连接到位于 *address* 的远程套接字。"
 
-#: ../../library/asyncio-eventloop.rst:943
+#: ../../library/asyncio-eventloop.rst:946
 msgid ""
 "Asynchronous version of :meth:`socket.connect() <socket.socket.connect>`."
 msgstr ":meth:`socket.connect() <socket.socket.connect>` 的异步版本。"
 
-#: ../../library/asyncio-eventloop.rst:947
+#: ../../library/asyncio-eventloop.rst:950
 msgid ""
 "``address`` no longer needs to be resolved.  ``sock_connect`` will try to "
 "check if the *address* is already resolved by calling "
@@ -1397,7 +1422,7 @@ msgstr ""
 ":func:`socket.inet_pton` 被解析。 如果没有，则将使用 :meth:`loop.getaddrinfo` 来解析 "
 "*address*。"
 
-#: ../../library/asyncio-eventloop.rst:956
+#: ../../library/asyncio-eventloop.rst:959
 msgid ""
 ":meth:`loop.create_connection` and  :func:`asyncio.open_connection() "
 "<open_connection>`."
@@ -1405,13 +1430,13 @@ msgstr ""
 ":meth:`loop.create_connection` 和  :func:`asyncio.open_connection() "
 "<open_connection>` 。"
 
-#: ../../library/asyncio-eventloop.rst:962
+#: ../../library/asyncio-eventloop.rst:965
 msgid ""
 "Accept a connection.  Modeled after the blocking :meth:`socket.accept() "
 "<socket.socket.accept>` method."
 msgstr "接受一个连接。 模仿了阻塞型的 :meth:`socket.accept() <socket.socket.accept>` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:965
+#: ../../library/asyncio-eventloop.rst:968
 msgid ""
 "The socket must be bound to an address and listening for connections. The "
 "return value is a pair ``(conn, address)`` where *conn* is a *new* socket "
@@ -1421,7 +1446,7 @@ msgstr ""
 "此 *scoket* 必须绑定到一个地址上并且监听连接。返回值是一个 ``(conn, address)`` 对，其中 *conn* 是一个 "
 "*新*的套接字对象，用于在此连接上收发数据，*address* 是连接的另一端的套接字所绑定的地址。"
 
-#: ../../library/asyncio-eventloop.rst:973
+#: ../../library/asyncio-eventloop.rst:976
 msgid ""
 "Even though the method was always documented as a coroutine method, before "
 "Python 3.7 it returned a :class:`Future`. Since Python 3.7, this is an "
@@ -1430,32 +1455,32 @@ msgstr ""
 "虽然这个方法一直被标记为协程方法。但是，Python 3.7 之前，该方法返回 :class:`Future` ，从Python 3.7 "
 "开始，这个方法是 ``async def`` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:980
+#: ../../library/asyncio-eventloop.rst:983
 msgid ":meth:`loop.create_server` and :func:`start_server`."
 msgstr ":meth:`loop.create_server` 和 :func:`start_server`。"
 
-#: ../../library/asyncio-eventloop.rst:985
+#: ../../library/asyncio-eventloop.rst:988
 msgid ""
 "Send a file using high-performance :mod:`os.sendfile` if possible. Return "
 "the total number of bytes sent."
 msgstr "在可能的情况下使用高性能的 :mod:`os.sendfile` 发送文件。 返回所发送的字节总数。"
 
-#: ../../library/asyncio-eventloop.rst:988
+#: ../../library/asyncio-eventloop.rst:991
 msgid ""
 "Asynchronous version of :meth:`socket.sendfile() <socket.socket.sendfile>`."
 msgstr ":meth:`socket.sendfile() <socket.socket.sendfile>` 的异步版本。"
 
-#: ../../library/asyncio-eventloop.rst:990
+#: ../../library/asyncio-eventloop.rst:993
 msgid ""
 "*sock* must be a non-blocking :const:`socket.SOCK_STREAM` "
 ":class:`~socket.socket`."
 msgstr "*sock* 必须为非阻塞型的 :const:`socket.SOCK_STREAM` :class:`~socket.socket`。"
 
-#: ../../library/asyncio-eventloop.rst:993
+#: ../../library/asyncio-eventloop.rst:996
 msgid "*file* must be a regular file object open in binary mode."
 msgstr "*file* 必须是个用二进制方式打开的常规文件对象。"
 
-#: ../../library/asyncio-eventloop.rst:1002
+#: ../../library/asyncio-eventloop.rst:1005
 msgid ""
 "*fallback*, when set to ``True``, makes asyncio manually read and send the "
 "file when the platform does not support the sendfile syscall (e.g. Windows "
@@ -1464,7 +1489,7 @@ msgstr ""
 "当 *fallback* 被设为 ``True`` 时，会使用 asyncio 在平台不支持 sendfile 系统调用时手动读取并发送文件（例如 "
 "Windows 或 Unix 上的 SSL 套接字）。"
 
-#: ../../library/asyncio-eventloop.rst:1006
+#: ../../library/asyncio-eventloop.rst:1009
 msgid ""
 "Raise :exc:`SendfileNotAvailableError` if the system does not support "
 "*sendfile* syscall and *fallback* is ``False``."
@@ -1472,19 +1497,19 @@ msgstr ""
 "如果系统不支持 *sendfile* 并且 *fallback* 为 ``False`` ，引发 "
 ":exc:`SendfileNotAvailableError` 异常。"
 
-#: ../../library/asyncio-eventloop.rst:1015
+#: ../../library/asyncio-eventloop.rst:1018
 msgid "DNS"
 msgstr "DNS"
 
-#: ../../library/asyncio-eventloop.rst:1020
+#: ../../library/asyncio-eventloop.rst:1023
 msgid "Asynchronous version of :meth:`socket.getaddrinfo`."
 msgstr "异步版的 :meth:`socket.getaddrinfo` 。"
 
-#: ../../library/asyncio-eventloop.rst:1024
+#: ../../library/asyncio-eventloop.rst:1027
 msgid "Asynchronous version of :meth:`socket.getnameinfo`."
 msgstr "异步版的 :meth:`socket.getnameinfo` 。"
 
-#: ../../library/asyncio-eventloop.rst:1026
+#: ../../library/asyncio-eventloop.rst:1029
 msgid ""
 "Both *getaddrinfo* and *getnameinfo* methods were always documented to "
 "return a coroutine, but prior to Python 3.7 they were, in fact, returning "
@@ -1494,19 +1519,19 @@ msgstr ""
 "*getaddrinfo* 和 *getnameinfo* 方法一直被标记返回一个协程，但是Python 3.7之前，实际返回的是 "
 ":class:`asyncio.Future` 对象。从Python 3.7 开始，这两个方法是协程。"
 
-#: ../../library/asyncio-eventloop.rst:1034
+#: ../../library/asyncio-eventloop.rst:1037
 msgid "Working with pipes"
 msgstr "使用管道"
 
-#: ../../library/asyncio-eventloop.rst:1038
+#: ../../library/asyncio-eventloop.rst:1041
 msgid "Register the read end of *pipe* in the event loop."
 msgstr "在事件循环中注册 *pipe* 的读取端。"
 
-#: ../../library/asyncio-eventloop.rst:1043
+#: ../../library/asyncio-eventloop.rst:1046
 msgid "*pipe* is a :term:`file-like object <file object>`."
 msgstr "*pipe* 是个 :term:`类似文件型对象 <file object>`."
 
-#: ../../library/asyncio-eventloop.rst:1045
+#: ../../library/asyncio-eventloop.rst:1048
 msgid ""
 "Return pair ``(transport, protocol)``, where *transport* supports the "
 ":class:`ReadTransport` interface and *protocol* is an object instantiated by"
@@ -1515,22 +1540,22 @@ msgstr ""
 "返回一对 ``(transport, protocol)``，其中 *transport* 支持 :class:`ReadTransport` 接口而 "
 "*protocol* 是由 *protocol_factory* 所实例化的对象。"
 
-#: ../../library/asyncio-eventloop.rst:1049
-#: ../../library/asyncio-eventloop.rst:1065
+#: ../../library/asyncio-eventloop.rst:1052
+#: ../../library/asyncio-eventloop.rst:1068
 msgid ""
 "With :class:`SelectorEventLoop` event loop, the *pipe* is set to non-"
 "blocking mode."
 msgstr "使用 :class:`SelectorEventLoop` 事件循环， *pipe* 被设置为非阻塞模式。"
 
-#: ../../library/asyncio-eventloop.rst:1054
+#: ../../library/asyncio-eventloop.rst:1057
 msgid "Register the write end of *pipe* in the event loop."
 msgstr "在事件循环中注册 *pipe* 的写入端。"
 
-#: ../../library/asyncio-eventloop.rst:1059
+#: ../../library/asyncio-eventloop.rst:1062
 msgid "*pipe* is :term:`file-like object <file object>`."
 msgstr "*pipe* 是个 :term:`类似文件型对象 <file object>`."
 
-#: ../../library/asyncio-eventloop.rst:1061
+#: ../../library/asyncio-eventloop.rst:1064
 msgid ""
 "Return pair ``(transport, protocol)``, where *transport* supports "
 ":class:`WriteTransport` interface and *protocol* is an object instantiated "
@@ -1539,7 +1564,7 @@ msgstr ""
 "返回一对 ``(transport, protocol)``，其中 *transport* 支持 :class:`WriteTransport` 接口而"
 " *protocol* 是由 *protocol_factory* 所实例化的对象。"
 
-#: ../../library/asyncio-eventloop.rst:1070
+#: ../../library/asyncio-eventloop.rst:1073
 msgid ""
 ":class:`SelectorEventLoop` does not support the above methods on Windows.  "
 "Use :class:`ProactorEventLoop` instead for Windows."
@@ -1547,20 +1572,20 @@ msgstr ""
 "在 Windows 中 :class:`SelectorEventLoop` 不支持上述方法。 对于 Windows 请改用 "
 ":class:`ProactorEventLoop`。"
 
-#: ../../library/asyncio-eventloop.rst:1075
+#: ../../library/asyncio-eventloop.rst:1078
 msgid ""
 "The :meth:`loop.subprocess_exec` and :meth:`loop.subprocess_shell` methods."
 msgstr ":meth:`loop.subprocess_exec` 和 :meth:`loop.subprocess_shell` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:1080
+#: ../../library/asyncio-eventloop.rst:1083
 msgid "Unix signals"
 msgstr "Unix 信号"
 
-#: ../../library/asyncio-eventloop.rst:1084
+#: ../../library/asyncio-eventloop.rst:1087
 msgid "Set *callback* as the handler for the *signum* signal."
 msgstr "设置 *callback* 作为 *signum* 信号的处理程序。"
 
-#: ../../library/asyncio-eventloop.rst:1086
+#: ../../library/asyncio-eventloop.rst:1089
 msgid ""
 "The callback will be invoked by *loop*, along with other queued callbacks "
 "and runnable coroutines of that event loop. Unlike signal handlers "
@@ -1570,7 +1595,7 @@ msgstr ""
 "此回调将与该事件循环中其他加入队列的回调和可运行协程一起由 *loop* 发起调用。 不同与使用 :func:`signal.signal` "
 "注册的信号处理程序，使用此函数注册的回调可以与事件循环进行交互。"
 
-#: ../../library/asyncio-eventloop.rst:1091
+#: ../../library/asyncio-eventloop.rst:1094
 msgid ""
 "Raise :exc:`ValueError` if the signal number is invalid or uncatchable. "
 "Raise :exc:`RuntimeError` if there is a problem setting up the handler."
@@ -1578,35 +1603,35 @@ msgstr ""
 "如果信号数字非法或者不可捕获，就抛出一个 :exc:`ValueError` 。如果建立处理器的过程中出现问题，会抛出一个 "
 ":exc:`RuntimeError` 。"
 
-#: ../../library/asyncio-eventloop.rst:1097
+#: ../../library/asyncio-eventloop.rst:1100
 msgid ""
 "Like :func:`signal.signal`, this function must be invoked in the main "
 "thread."
 msgstr "和 :func:`signal.signal` 一样，这个函数只能在主线程中调用。"
 
-#: ../../library/asyncio-eventloop.rst:1102
+#: ../../library/asyncio-eventloop.rst:1105
 msgid "Remove the handler for the *sig* signal."
 msgstr "移除 *sig* 信号的处理程序。"
 
-#: ../../library/asyncio-eventloop.rst:1104
+#: ../../library/asyncio-eventloop.rst:1107
 msgid ""
 "Return ``True`` if the signal handler was removed, or ``False`` if no "
 "handler was set for the given signal."
 msgstr "如果信号处理程序被移除则返回 ``True``，否则如果给定信号未设置处理程序则返回 ``False``。"
 
-#: ../../library/asyncio-eventloop.rst:1111
+#: ../../library/asyncio-eventloop.rst:1114
 msgid "The :mod:`signal` module."
 msgstr ":mod:`signal` 模块。"
 
-#: ../../library/asyncio-eventloop.rst:1115
+#: ../../library/asyncio-eventloop.rst:1118
 msgid "Executing code in thread or process pools"
 msgstr "在线程或者进程池中执行代码。"
 
-#: ../../library/asyncio-eventloop.rst:1119
+#: ../../library/asyncio-eventloop.rst:1122
 msgid "Arrange for *func* to be called in the specified executor."
 msgstr "安排在指定的执行器中调用 *func* 。"
 
-#: ../../library/asyncio-eventloop.rst:1121
+#: ../../library/asyncio-eventloop.rst:1124
 msgid ""
 "The *executor* argument should be an :class:`concurrent.futures.Executor` "
 "instance. The default executor is used if *executor* is ``None``."
@@ -1614,19 +1639,23 @@ msgstr ""
 " *executor* 参数应该是个 :class:`concurrent.futures.Executor` 实例。如果 *executor* 为 "
 "``None`` ，则使用默认的executor。"
 
-#: ../../library/asyncio-eventloop.rst:1166
+#: ../../library/asyncio-eventloop.rst:1169
 msgid ""
 "Note that the entry point guard (``if __name__ == '__main__'``) is required "
 "for option 3 due to the peculiarities of :mod:`multiprocessing`, which is "
 "used by :class:`~concurrent.futures.ProcessPoolExecutor`. See :ref:`Safe "
 "importing of main module <multiprocessing-safe-main-import>`."
 msgstr ""
+"请注意需要为选项 3 设置入口点保护 (``if __name__ == '__main__'``)，这是由于 "
+":mod:`multiprocessing` 的特殊性，它将由 "
+":class:`~concurrent.futures.ProcessPoolExecutor` 来使用。 参见 :ref:`主模块的安全导入 "
+"<multiprocessing-safe-main-import>`。"
 
-#: ../../library/asyncio-eventloop.rst:1171
+#: ../../library/asyncio-eventloop.rst:1174
 msgid "This method returns a :class:`asyncio.Future` object."
 msgstr "这个方法返回一个 :class:`asyncio.Future` 对象。"
 
-#: ../../library/asyncio-eventloop.rst:1173
+#: ../../library/asyncio-eventloop.rst:1176
 msgid ""
 "Use :func:`functools.partial` :ref:`to pass keyword arguments <asyncio-pass-"
 "keywords>` to *func*."
@@ -1634,7 +1663,7 @@ msgstr ""
 "使用 :func:`functools.partial` :ref:`传递关键字参数 <asyncio-pass-keywords>`  给 "
 "*func* 。"
 
-#: ../../library/asyncio-eventloop.rst:1176
+#: ../../library/asyncio-eventloop.rst:1179
 msgid ""
 ":meth:`loop.run_in_executor` no longer configures the ``max_workers`` of the"
 " thread pool executor it creates, instead leaving it up to the thread pool "
@@ -1644,7 +1673,7 @@ msgstr ""
 ":meth:`loop.run_in_executor` 不会再配置它所创建的线程池执行器的 ``max_workers``，而是将其留给线程池执行器 "
 "(:class:`~concurrent.futures.ThreadPoolExecutor`) 来设置默认值。"
 
-#: ../../library/asyncio-eventloop.rst:1185
+#: ../../library/asyncio-eventloop.rst:1188
 msgid ""
 "Set *executor* as the default executor used by :meth:`run_in_executor`. "
 "*executor* should be an instance of "
@@ -1653,7 +1682,7 @@ msgstr ""
 "将 *executor* 设为 :meth:`run_in_executor` 所使用的默认执行器。 *executor* 应当是 "
 ":class:`~concurrent.futures.ThreadPoolExecutor` 的实例。"
 
-#: ../../library/asyncio-eventloop.rst:1189
+#: ../../library/asyncio-eventloop.rst:1192
 msgid ""
 "Using an executor that is not an instance of "
 ":class:`~concurrent.futures.ThreadPoolExecutor` is deprecated and will "
@@ -1663,25 +1692,25 @@ msgstr ""
 ":class:`~concurrent.futures.ThreadPoolExecutor` 实例的执行器的做法已被弃用并将在 Python 3.9 "
 "中引起错误。"
 
-#: ../../library/asyncio-eventloop.rst:1194
+#: ../../library/asyncio-eventloop.rst:1197
 msgid ""
 "*executor* must be an instance of "
 ":class:`concurrent.futures.ThreadPoolExecutor`."
 msgstr "*executor* 必须是个 :class:`concurrent.futures.ThreadPoolExecutor` 的实例。"
 
-#: ../../library/asyncio-eventloop.rst:1199
+#: ../../library/asyncio-eventloop.rst:1202
 msgid "Error Handling API"
 msgstr "错误处理API"
 
-#: ../../library/asyncio-eventloop.rst:1201
+#: ../../library/asyncio-eventloop.rst:1204
 msgid "Allows customizing how exceptions are handled in the event loop."
 msgstr "允许自定义事件循环中如何去处理异常。"
 
-#: ../../library/asyncio-eventloop.rst:1205
+#: ../../library/asyncio-eventloop.rst:1208
 msgid "Set *handler* as the new event loop exception handler."
 msgstr "将 *handler* 设置为新的事件循环异常处理器。"
 
-#: ../../library/asyncio-eventloop.rst:1207
+#: ../../library/asyncio-eventloop.rst:1210
 msgid ""
 "If *handler* is ``None``, the default exception handler will be set.  "
 "Otherwise, *handler* must be a callable with the signature matching ``(loop,"
@@ -1694,95 +1723,95 @@ msgstr ""
 "``(loop, context)``，其中 ``loop`` 是对活动事件循环的引用，而 ``context`` 是一个包含异常详情的 "
 "``dict`` (请查看 :meth:`call_exception_handler` 文档来获取关于上下文的更多信息)。"
 
-#: ../../library/asyncio-eventloop.rst:1217
+#: ../../library/asyncio-eventloop.rst:1220
 msgid ""
 "Return the current exception handler, or ``None`` if no custom exception "
 "handler was set."
 msgstr "返回当前的异常处理器，如果没有设置异常处理器，则返回 ``None`` 。"
 
-#: ../../library/asyncio-eventloop.rst:1224
+#: ../../library/asyncio-eventloop.rst:1227
 msgid "Default exception handler."
 msgstr "默认的异常处理器。"
 
-#: ../../library/asyncio-eventloop.rst:1226
+#: ../../library/asyncio-eventloop.rst:1229
 msgid ""
 "This is called when an exception occurs and no exception handler is set. "
 "This can be called by a custom exception handler that wants to defer to the "
 "default handler behavior."
 msgstr "此方法会在发生异常且未设置异常处理程序时被调用。 此方法也可以由想要具有不同于默认处理程序的行为的自定义异常处理程序来调用。"
 
-#: ../../library/asyncio-eventloop.rst:1230
+#: ../../library/asyncio-eventloop.rst:1233
 msgid ""
 "*context* parameter has the same meaning as in "
 ":meth:`call_exception_handler`."
 msgstr "*context* 参数和 :meth:`call_exception_handler` 中的同名参数完全相同。"
 
-#: ../../library/asyncio-eventloop.rst:1235
+#: ../../library/asyncio-eventloop.rst:1238
 msgid "Call the current event loop exception handler."
 msgstr "调用当前事件循环的异常处理器。"
 
-#: ../../library/asyncio-eventloop.rst:1237
+#: ../../library/asyncio-eventloop.rst:1240
 msgid ""
 "*context* is a ``dict`` object containing the following keys (new keys may "
 "be introduced in future Python versions):"
 msgstr "*context* 是个包含下列键的 ``dict`` 对象(未来版本的Python可能会引入新键)："
 
-#: ../../library/asyncio-eventloop.rst:1240
+#: ../../library/asyncio-eventloop.rst:1243
 msgid "'message': Error message;"
 msgstr "'message': 错误消息；"
 
-#: ../../library/asyncio-eventloop.rst:1241
+#: ../../library/asyncio-eventloop.rst:1244
 msgid "'exception' (optional): Exception object;"
 msgstr "'exception' （可选）: 异常对象；"
 
-#: ../../library/asyncio-eventloop.rst:1242
+#: ../../library/asyncio-eventloop.rst:1245
 msgid "'future' (optional): :class:`asyncio.Future` instance;"
 msgstr "'future' （可选）:  :class:`asyncio.Future` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1243
+#: ../../library/asyncio-eventloop.rst:1246
 msgid "'task' (optional): :class:`asyncio.Task` instance;"
 msgstr "'task' (可选): :class:`asyncio.Task` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1244
+#: ../../library/asyncio-eventloop.rst:1247
 msgid "'handle' (optional): :class:`asyncio.Handle` instance;"
 msgstr "'handle' （可选）: :class:`asyncio.Handle` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1245
+#: ../../library/asyncio-eventloop.rst:1248
 msgid "'protocol' (optional): :ref:`Protocol <asyncio-protocol>` instance;"
 msgstr "'protocol' （可选）: :ref:`Protocol <asyncio-protocol>` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1246
+#: ../../library/asyncio-eventloop.rst:1249
 msgid "'transport' (optional): :ref:`Transport <asyncio-transport>` instance;"
 msgstr "'transport' （可选）: :ref:`Transport <asyncio-transport>` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1247
+#: ../../library/asyncio-eventloop.rst:1250
 msgid "'socket' (optional): :class:`socket.socket` instance;"
 msgstr "'socket' (可选): :class:`socket.socket` 实例；"
 
-#: ../../library/asyncio-eventloop.rst:1249
+#: ../../library/asyncio-eventloop.rst:1252
 msgid "'asyncgen' (optional): Asynchronous generator that caused"
 msgstr "'asyncgen' (可选): 异步生成器，它导致了"
 
-#: ../../library/asyncio-eventloop.rst:1249
+#: ../../library/asyncio-eventloop.rst:1252
 msgid "the exception."
 msgstr "这个异常"
 
-#: ../../library/asyncio-eventloop.rst:1253
+#: ../../library/asyncio-eventloop.rst:1256
 msgid ""
 "This method should not be overloaded in subclassed event loops.  For custom "
 "exception handling, use the :meth:`set_exception_handler()` method."
 msgstr ""
 "此方法不应在子类化的事件循环中被重载。 对于自定义的异常处理，请使用 :meth:`set_exception_handler()` 方法。"
 
-#: ../../library/asyncio-eventloop.rst:1258
+#: ../../library/asyncio-eventloop.rst:1261
 msgid "Enabling debug mode"
 msgstr "开启调试模式"
 
-#: ../../library/asyncio-eventloop.rst:1262
+#: ../../library/asyncio-eventloop.rst:1265
 msgid "Get the debug mode (:class:`bool`) of the event loop."
 msgstr "获取事件循环调试模式设置（:class:`bool`）。"
 
-#: ../../library/asyncio-eventloop.rst:1264
+#: ../../library/asyncio-eventloop.rst:1267
 msgid ""
 "The default value is ``True`` if the environment variable "
 ":envvar:`PYTHONASYNCIODEBUG` is set to a non-empty string, ``False`` "
@@ -1790,25 +1819,25 @@ msgid ""
 msgstr ""
 "如果环境变量 :envvar:`PYTHONASYNCIODEBUG` 是一个非空字符串，就返回 ``True`` ，否则就返回 ``False`` 。"
 
-#: ../../library/asyncio-eventloop.rst:1270
+#: ../../library/asyncio-eventloop.rst:1273
 msgid "Set the debug mode of the event loop."
 msgstr "设置事件循环的调试模式。"
 
-#: ../../library/asyncio-eventloop.rst:1274
+#: ../../library/asyncio-eventloop.rst:1277
 msgid ""
 "The new :ref:`Python Development Mode <devmode>` can now also be used to "
 "enable the debug mode."
 msgstr "现在也可以通过新的 :ref:`Python 开发模式 <devmode>` 来启用调试模式。"
 
-#: ../../library/asyncio-eventloop.rst:1279
+#: ../../library/asyncio-eventloop.rst:1282
 msgid "The :ref:`debug mode of asyncio <asyncio-debug-mode>`."
 msgstr ":ref:`debug mode of asyncio <asyncio-debug-mode>`."
 
-#: ../../library/asyncio-eventloop.rst:1283
+#: ../../library/asyncio-eventloop.rst:1286
 msgid "Running Subprocesses"
 msgstr "运行子进程"
 
-#: ../../library/asyncio-eventloop.rst:1285
+#: ../../library/asyncio-eventloop.rst:1288
 msgid ""
 "Methods described in this subsections are low-level.  In regular async/await"
 " code consider using the high-level :func:`asyncio.create_subprocess_shell` "
@@ -1818,7 +1847,7 @@ msgstr ""
 ":func:`asyncio.create_subprocess_shell` 和 "
 ":func:`asyncio.create_subprocess_exec` 便捷函数。"
 
-#: ../../library/asyncio-eventloop.rst:1292
+#: ../../library/asyncio-eventloop.rst:1295
 msgid ""
 "On Windows, the default event loop :class:`ProactorEventLoop` supports "
 "subprocesses, whereas :class:`SelectorEventLoop` does not. See "
@@ -1829,33 +1858,33 @@ msgstr ""
 ":class:`SelectorEventLoop` 不支持。参见 :ref:`Windows 中的子进程支持 <asyncio-windows-"
 "subprocess>` 。"
 
-#: ../../library/asyncio-eventloop.rst:1301
+#: ../../library/asyncio-eventloop.rst:1304
 msgid ""
 "Create a subprocess from one or more string arguments specified by *args*."
 msgstr "用 *args* 指定的一个或者多个字符串型参数创建一个子进程。"
 
-#: ../../library/asyncio-eventloop.rst:1304
+#: ../../library/asyncio-eventloop.rst:1307
 msgid "*args* must be a list of strings represented by:"
 msgstr "*args* 必须是个由下列形式的字符串组成的列表："
 
-#: ../../library/asyncio-eventloop.rst:1306
+#: ../../library/asyncio-eventloop.rst:1309
 msgid ":class:`str`;"
 msgstr ":class:`str`;"
 
-#: ../../library/asyncio-eventloop.rst:1307
+#: ../../library/asyncio-eventloop.rst:1310
 msgid ""
 "or :class:`bytes`, encoded to the :ref:`filesystem encoding <filesystem-"
 "encoding>`."
 msgstr "或者由 :ref:`文件系统编码格式 <filesystem-encoding>` 编码的 :class:`bytes`。"
 
-#: ../../library/asyncio-eventloop.rst:1310
+#: ../../library/asyncio-eventloop.rst:1313
 msgid ""
 "The first string specifies the program executable, and the remaining strings"
 " specify the arguments.  Together, string arguments form the ``argv`` of the"
 " program."
 msgstr "第一个字符串指定可执行程序，其余的字符串指定其参数。 所有字符串参数共同组成了程序的 ``argv``。"
 
-#: ../../library/asyncio-eventloop.rst:1314
+#: ../../library/asyncio-eventloop.rst:1317
 msgid ""
 "This is similar to the standard library :class:`subprocess.Popen` class "
 "called with ``shell=False`` and the list of strings passed as the first "
@@ -1866,78 +1895,78 @@ msgstr ""
 "并将字符串列表作为第一个参数传入；但是，:class:`~subprocess.Popen` 只接受一个单独的字符串列表参数，而 "
 "*subprocess_exec* 接受多个字符串参数。"
 
-#: ../../library/asyncio-eventloop.rst:1320
+#: ../../library/asyncio-eventloop.rst:1323
 msgid ""
 "The *protocol_factory* must be a callable returning a subclass of the "
 ":class:`asyncio.SubprocessProtocol` class."
 msgstr ""
 "*protocol_factory* 必须为一个返回 :class:`asyncio.SubprocessProtocol` 类的子类的可调用对象。"
 
-#: ../../library/asyncio-eventloop.rst:1323
+#: ../../library/asyncio-eventloop.rst:1326
 msgid "Other parameters:"
 msgstr "其他参数："
 
-#: ../../library/asyncio-eventloop.rst:1325
+#: ../../library/asyncio-eventloop.rst:1328
 msgid "*stdin* can be any of these:"
 msgstr "*stdin* 可以是以下对象之一:"
 
-#: ../../library/asyncio-eventloop.rst:1327
+#: ../../library/asyncio-eventloop.rst:1330
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard input stream using :meth:`~loop.connect_write_pipe`"
 msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输入流的管道"
 
-#: ../../library/asyncio-eventloop.rst:1330
-#: ../../library/asyncio-eventloop.rst:1342
-#: ../../library/asyncio-eventloop.rst:1354
+#: ../../library/asyncio-eventloop.rst:1333
+#: ../../library/asyncio-eventloop.rst:1345
+#: ../../library/asyncio-eventloop.rst:1357
 msgid ""
 "the :const:`subprocess.PIPE` constant (default) which will create a new pipe"
 " and connect it,"
 msgstr ":const:`subprocess.PIPE` 常量（默认），将创建并连接一个新的管道。"
 
-#: ../../library/asyncio-eventloop.rst:1332
-#: ../../library/asyncio-eventloop.rst:1344
-#: ../../library/asyncio-eventloop.rst:1356
+#: ../../library/asyncio-eventloop.rst:1335
+#: ../../library/asyncio-eventloop.rst:1347
+#: ../../library/asyncio-eventloop.rst:1359
 msgid ""
 "the value ``None`` which will make the subprocess inherit the file "
 "descriptor from this process"
 msgstr "``None`` 值，这将使得子进程继承来自此进程的文件描述符"
 
-#: ../../library/asyncio-eventloop.rst:1334
-#: ../../library/asyncio-eventloop.rst:1346
-#: ../../library/asyncio-eventloop.rst:1358
+#: ../../library/asyncio-eventloop.rst:1337
+#: ../../library/asyncio-eventloop.rst:1349
+#: ../../library/asyncio-eventloop.rst:1361
 msgid ""
 "the :const:`subprocess.DEVNULL` constant which indicates that the special "
 ":data:`os.devnull` file will be used"
 msgstr ":const:`subprocess.DEVNULL` 常量，这表示将使用特殊的 :data:`os.devnull` 文件"
 
-#: ../../library/asyncio-eventloop.rst:1337
+#: ../../library/asyncio-eventloop.rst:1340
 msgid "*stdout* can be any of these:"
 msgstr "*stdout* 可以是以下对象之一:"
 
-#: ../../library/asyncio-eventloop.rst:1339
+#: ../../library/asyncio-eventloop.rst:1342
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard output stream using :meth:`~loop.connect_write_pipe`"
 msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输出流的管道"
 
-#: ../../library/asyncio-eventloop.rst:1349
+#: ../../library/asyncio-eventloop.rst:1352
 msgid "*stderr* can be any of these:"
 msgstr "*stderr* 可以是以下对象之一:"
 
-#: ../../library/asyncio-eventloop.rst:1351
+#: ../../library/asyncio-eventloop.rst:1354
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard error stream using :meth:`~loop.connect_write_pipe`"
 msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准错误流的管道"
 
-#: ../../library/asyncio-eventloop.rst:1360
+#: ../../library/asyncio-eventloop.rst:1363
 msgid ""
 "the :const:`subprocess.STDOUT` constant which will connect the standard "
 "error stream to the process' standard output stream"
 msgstr ":const:`subprocess.STDOUT` 常量，将把标准错误流连接到进程的标准输出流"
 
-#: ../../library/asyncio-eventloop.rst:1363
+#: ../../library/asyncio-eventloop.rst:1366
 msgid ""
 "All other keyword arguments are passed to :class:`subprocess.Popen` without "
 "interpretation, except for *bufsize*, *universal_newlines*, *shell*, *text*,"
@@ -1946,7 +1975,7 @@ msgstr ""
 "所有其他关键字参数会被不加解释地传给 :class:`subprocess.Popen`，除了 *bufsize*, "
 "*universal_newlines*, *shell*, *text*, *encoding* 和 *errors*，它们都不应当被指定。"
 
-#: ../../library/asyncio-eventloop.rst:1368
+#: ../../library/asyncio-eventloop.rst:1371
 msgid ""
 "The ``asyncio`` subprocess API does not support decoding the streams as "
 "text. :func:`bytes.decode` can be used to convert the bytes returned from "
@@ -1954,13 +1983,13 @@ msgid ""
 msgstr ""
 "``asyncio`` 子进程 API 不支持将流解码为文本。 可以使用 :func:`bytes.decode` 来将从流返回的字节串转换为文本。"
 
-#: ../../library/asyncio-eventloop.rst:1372
+#: ../../library/asyncio-eventloop.rst:1375
 msgid ""
 "See the constructor of the :class:`subprocess.Popen` class for documentation"
 " on other arguments."
 msgstr "其他参数的文档，请参阅 :class:`subprocess.Popen` 类的构造函数。"
 
-#: ../../library/asyncio-eventloop.rst:1375
+#: ../../library/asyncio-eventloop.rst:1378
 msgid ""
 "Returns a pair of ``(transport, protocol)``, where *transport* conforms to "
 "the :class:`asyncio.SubprocessTransport` base class and *protocol* is an "
@@ -1970,7 +1999,7 @@ msgstr ""
 ":class:`asyncio.SubprocessTransport` 基类而 *protocol* 是由 *protocol_factory* "
 "所实例化的对象。"
 
-#: ../../library/asyncio-eventloop.rst:1383
+#: ../../library/asyncio-eventloop.rst:1386
 msgid ""
 "Create a subprocess from *cmd*, which can be a :class:`str` or a "
 ":class:`bytes` string encoded to the :ref:`filesystem encoding <filesystem-"
@@ -1979,25 +2008,25 @@ msgstr ""
 "基于 *cmd* 创建一个子进程，该参数可以是一个 :class:`str` 或者按 :ref:`文件系统编码格式 <filesystem-"
 "encoding>` 编码得到的 :class:`bytes` ，使用平台的 \"shell\" 语法。"
 
-#: ../../library/asyncio-eventloop.rst:1388
+#: ../../library/asyncio-eventloop.rst:1391
 msgid ""
 "This is similar to the standard library :class:`subprocess.Popen` class "
 "called with ``shell=True``."
 msgstr "这类似与用 ``shell=True`` 调用标准库的 :class:`subprocess.Popen` 类。"
 
-#: ../../library/asyncio-eventloop.rst:1391
+#: ../../library/asyncio-eventloop.rst:1394
 msgid ""
 "The *protocol_factory* must be a callable returning a subclass of the "
 ":class:`SubprocessProtocol` class."
 msgstr "*protocol_factory* 必须为一个返回 :class:`SubprocessProtocol` 类的子类的可调用对象。"
 
-#: ../../library/asyncio-eventloop.rst:1394
+#: ../../library/asyncio-eventloop.rst:1397
 msgid ""
 "See :meth:`~loop.subprocess_exec` for more details about the remaining "
 "arguments."
 msgstr "请参阅 :meth:`~loop.subprocess_exec` 了解有关其余参数的详情。"
 
-#: ../../library/asyncio-eventloop.rst:1397
+#: ../../library/asyncio-eventloop.rst:1400
 msgid ""
 "Returns a pair of ``(transport, protocol)``, where *transport* conforms to "
 "the :class:`SubprocessTransport` base class and *protocol* is an object "
@@ -2006,7 +2035,7 @@ msgstr ""
 "返回一对 ``(transport, protocol)``，其中 *transport* 来自 "
 ":class:`SubprocessTransport` 基类而 *protocol* 是由 *protocol_factory* 所实例化的对象。"
 
-#: ../../library/asyncio-eventloop.rst:1402
+#: ../../library/asyncio-eventloop.rst:1405
 msgid ""
 "It is the application's responsibility to ensure that all whitespace and "
 "special characters are quoted appropriately to avoid `shell injection "
@@ -2019,52 +2048,52 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/Shell_injection#Shell_injection>`_ 漏洞。 "
 ":func:`shlex.quote` 函数可以被用来正确地转义字符串中可能被用来构造 shell 命令的空白字符和特殊字符。"
 
-#: ../../library/asyncio-eventloop.rst:1411
+#: ../../library/asyncio-eventloop.rst:1414
 msgid "Callback Handles"
 msgstr "回调处理"
 
-#: ../../library/asyncio-eventloop.rst:1415
+#: ../../library/asyncio-eventloop.rst:1418
 msgid ""
 "A callback wrapper object returned by :meth:`loop.call_soon`, "
 ":meth:`loop.call_soon_threadsafe`."
 msgstr ""
 "由 :meth:`loop.call_soon`, :meth:`loop.call_soon_threadsafe` 所返回的回调包装器对象。"
 
-#: ../../library/asyncio-eventloop.rst:1420
+#: ../../library/asyncio-eventloop.rst:1423
 msgid ""
 "Cancel the callback.  If the callback has already been canceled or executed,"
 " this method has no effect."
 msgstr "取消回调。 如果此回调已被取消或已被执行，此方法将没有任何效果。"
 
-#: ../../library/asyncio-eventloop.rst:1425
+#: ../../library/asyncio-eventloop.rst:1428
 msgid "Return ``True`` if the callback was cancelled."
 msgstr "如果此回调已被取消则返回 ``True``。"
 
-#: ../../library/asyncio-eventloop.rst:1431
+#: ../../library/asyncio-eventloop.rst:1434
 msgid ""
 "A callback wrapper object returned by :meth:`loop.call_later`, and "
 ":meth:`loop.call_at`."
 msgstr "由 :meth:`loop.call_later` 和 :meth:`loop.call_at` 所返回的回调包装器对象。"
 
-#: ../../library/asyncio-eventloop.rst:1434
+#: ../../library/asyncio-eventloop.rst:1437
 msgid "This class is a subclass of :class:`Handle`."
 msgstr "这个类是 :class:`Handle` 的子类。"
 
-#: ../../library/asyncio-eventloop.rst:1438
+#: ../../library/asyncio-eventloop.rst:1441
 msgid "Return a scheduled callback time as :class:`float` seconds."
 msgstr "返回加入计划任务的回调时间，以 :class:`float` 值表示的秒数。"
 
-#: ../../library/asyncio-eventloop.rst:1440
+#: ../../library/asyncio-eventloop.rst:1443
 msgid ""
 "The time is an absolute timestamp, using the same time reference as "
 ":meth:`loop.time`."
 msgstr "时间值是一个绝对时间戳，使用与 :meth:`loop.time` 相同的时间引用。"
 
-#: ../../library/asyncio-eventloop.rst:1447
+#: ../../library/asyncio-eventloop.rst:1450
 msgid "Server Objects"
 msgstr "Server 对象"
 
-#: ../../library/asyncio-eventloop.rst:1449
+#: ../../library/asyncio-eventloop.rst:1452
 msgid ""
 "Server objects are created by :meth:`loop.create_server`, "
 ":meth:`loop.create_unix_server`, :func:`start_server`, and "
@@ -2073,11 +2102,11 @@ msgstr ""
 "Server 对象可使用 :meth:`loop.create_server`, :meth:`loop.create_unix_server`, "
 ":func:`start_server` 和 :func:`start_unix_server` 等函数来创建。"
 
-#: ../../library/asyncio-eventloop.rst:1453
+#: ../../library/asyncio-eventloop.rst:1456
 msgid "Do not instantiate the class directly."
 msgstr "请不要直接实例化该类。"
 
-#: ../../library/asyncio-eventloop.rst:1457
+#: ../../library/asyncio-eventloop.rst:1460
 msgid ""
 "*Server* objects are asynchronous context managers.  When used in an ``async"
 " with`` statement, it's guaranteed that the Server object is closed and not "
@@ -2086,43 +2115,43 @@ msgstr ""
 "*Server* 对象是异步上下文管理器。当用于 ``async with`` 语句时，异步上下文管理器可以确保 Server 对象被关闭，并且在 "
 "``async with`` 语句完成后，不接受新的连接。"
 
-#: ../../library/asyncio-eventloop.rst:1470
+#: ../../library/asyncio-eventloop.rst:1473
 msgid "Server object is an asynchronous context manager since Python 3.7."
 msgstr "Python3.7 开始，Server 对象是一个异步上下文管理器。"
 
-#: ../../library/asyncio-eventloop.rst:1475
+#: ../../library/asyncio-eventloop.rst:1478
 msgid ""
 "Stop serving: close listening sockets and set the :attr:`sockets` attribute "
 "to ``None``."
 msgstr "停止服务：关闭监听的套接字并且设置 :attr:`sockets` 属性为 ``None`` 。"
 
-#: ../../library/asyncio-eventloop.rst:1478
+#: ../../library/asyncio-eventloop.rst:1481
 msgid ""
 "The sockets that represent existing incoming client connections are left "
 "open."
 msgstr "用于表示已经连进来的客户端连接会保持打开的状态。"
 
-#: ../../library/asyncio-eventloop.rst:1481
+#: ../../library/asyncio-eventloop.rst:1484
 msgid ""
 "The server is closed asynchronously, use the :meth:`wait_closed` coroutine "
 "to wait until the server is closed."
 msgstr "服务器是被异步关闭的，使用 :meth:`wait_closed` 协程来等待服务器关闭。"
 
-#: ../../library/asyncio-eventloop.rst:1486
+#: ../../library/asyncio-eventloop.rst:1489
 msgid "Return the event loop associated with the server object."
 msgstr "返回与服务器对象相关联的事件循环。"
 
-#: ../../library/asyncio-eventloop.rst:1492
+#: ../../library/asyncio-eventloop.rst:1495
 msgid "Start accepting connections."
 msgstr "开始接受连接。"
 
-#: ../../library/asyncio-eventloop.rst:1494
+#: ../../library/asyncio-eventloop.rst:1497
 msgid ""
 "This method is idempotent, so it can be called when the server is already "
 "being serving."
 msgstr "这个方法是幂等的【相同参数重复执行，能获得相同的结果】，所以此方法能在服务已经运行的时候调用。"
 
-#: ../../library/asyncio-eventloop.rst:1497
+#: ../../library/asyncio-eventloop.rst:1500
 msgid ""
 "The *start_serving* keyword-only parameter to :meth:`loop.create_server` and"
 " :meth:`asyncio.start_server` allows creating a Server object that is not "
@@ -2134,42 +2163,42 @@ msgstr ""
 "*start_serving* 仅限关键字形参允许创建不接受初始连接的 Server 对象。 在此情况下可以使用 "
 "``Server.start_serving()`` 或 :meth:`Server.serve_forever` 让 Server 对象开始接受连接。"
 
-#: ../../library/asyncio-eventloop.rst:1508
+#: ../../library/asyncio-eventloop.rst:1511
 msgid ""
 "Start accepting connections until the coroutine is cancelled. Cancellation "
 "of ``serve_forever`` task causes the server to be closed."
 msgstr "开始接受连接，直到协程被取消。 ``serve_forever`` 任务的取消将导致服务器被关闭。"
 
-#: ../../library/asyncio-eventloop.rst:1512
+#: ../../library/asyncio-eventloop.rst:1515
 msgid ""
 "This method can be called if the server is already accepting connections.  "
 "Only one ``serve_forever`` task can exist per one *Server* object."
 msgstr "如果服务器已经在接受连接了，这个方法可以被调用。每个 *Server* 对象，仅能有一个 ``serve_forever`` 任务。"
 
-#: ../../library/asyncio-eventloop.rst:1534
+#: ../../library/asyncio-eventloop.rst:1537
 msgid "Return ``True`` if the server is accepting new connections."
 msgstr "如果服务器正在接受新连接的状态，返回 ``True`` 。"
 
-#: ../../library/asyncio-eventloop.rst:1540
+#: ../../library/asyncio-eventloop.rst:1543
 msgid "Wait until the :meth:`close` method completes."
 msgstr "等待 :meth:`close` 方法执行完毕。"
 
-#: ../../library/asyncio-eventloop.rst:1544
+#: ../../library/asyncio-eventloop.rst:1547
 msgid "List of :class:`socket.socket` objects the server is listening on."
 msgstr "服务器监听的 :class:`socket.socket` 对象列表。"
 
-#: ../../library/asyncio-eventloop.rst:1546
+#: ../../library/asyncio-eventloop.rst:1549
 msgid ""
 "Prior to Python 3.7 ``Server.sockets`` used to return an internal list of "
 "server sockets directly.  In 3.7 a copy of that list is returned."
 msgstr ""
 "在 Python 3.7 之前 ``Server.sockets`` 会直接返回内部的服务器套接字列表。 在 3.7 版则会返回该列表的副本。"
 
-#: ../../library/asyncio-eventloop.rst:1556
+#: ../../library/asyncio-eventloop.rst:1559
 msgid "Event Loop Implementations"
 msgstr "事件循环实现"
 
-#: ../../library/asyncio-eventloop.rst:1558
+#: ../../library/asyncio-eventloop.rst:1561
 msgid ""
 "asyncio ships with two different event loop implementations: "
 ":class:`SelectorEventLoop` and :class:`ProactorEventLoop`."
@@ -2177,7 +2206,7 @@ msgstr ""
 "asyncio 带有两种不同的事件循环实现: :class:`SelectorEventLoop` 和 "
 ":class:`ProactorEventLoop`。"
 
-#: ../../library/asyncio-eventloop.rst:1561
+#: ../../library/asyncio-eventloop.rst:1564
 msgid ""
 "By default asyncio is configured to use :class:`SelectorEventLoop` on Unix "
 "and :class:`ProactorEventLoop` on Windows."
@@ -2185,30 +2214,30 @@ msgstr ""
 "默认情况下 asyncio 被配置为在 Unix 上使用 :class:`SelectorEventLoop` 而在 Windows 上使用 "
 ":class:`ProactorEventLoop`。"
 
-#: ../../library/asyncio-eventloop.rst:1567
+#: ../../library/asyncio-eventloop.rst:1570
 msgid "An event loop based on the :mod:`selectors` module."
 msgstr "基于 :mod:`selectors` 模块的事件循环。"
 
-#: ../../library/asyncio-eventloop.rst:1569
+#: ../../library/asyncio-eventloop.rst:1572
 msgid ""
 "Uses the most efficient *selector* available for the given platform.  It is "
 "also possible to manually configure the exact selector implementation to be "
 "used::"
 msgstr "使用给定平台中最高效的可用 *selector*。 也可以手动配置要使用的特定 selector::"
 
-#: ../../library/asyncio-eventloop.rst:1584
+#: ../../library/asyncio-eventloop.rst:1587
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ":ref:`可用性 <availability>`: Unix, Windows。"
 
-#: ../../library/asyncio-eventloop.rst:1589
+#: ../../library/asyncio-eventloop.rst:1592
 msgid "An event loop for Windows that uses \"I/O Completion Ports\" (IOCP)."
 msgstr "用 \"I/O Completion Ports\" (IOCP) 构建的专为Windows 的事件循环。"
 
-#: ../../library/asyncio-eventloop.rst:1592
+#: ../../library/asyncio-eventloop.rst:1595
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ":ref:`可用性 <availability>`: Windows。"
 
-#: ../../library/asyncio-eventloop.rst:1595
+#: ../../library/asyncio-eventloop.rst:1598
 msgid ""
 "`MSDN documentation on I/O Completion Ports <https://docs.microsoft.com/en-"
 "ca/windows/desktop/FileIO/i-o-completion-ports>`_."
@@ -2216,21 +2245,23 @@ msgstr ""
 "`有关 I/O 完成端口的 MSDN 文档 <https://docs.microsoft.com/en-"
 "ca/windows/desktop/FileIO/i-o-completion-ports>`_。"
 
-#: ../../library/asyncio-eventloop.rst:1601
+#: ../../library/asyncio-eventloop.rst:1604
 msgid "Abstract base class for asyncio-compliant event loops."
 msgstr "asyncio 兼容事件循环的抽象基类。"
 
-#: ../../library/asyncio-eventloop.rst:1603
+#: ../../library/asyncio-eventloop.rst:1606
 msgid ""
 "The :ref:`asyncio-event-loop-methods` section lists all methods that an "
 "alternative implementation of ``AbstractEventLoop`` should have defined."
 msgstr ""
+":ref:`asyncio-event-loop-methods` 一节列出了 ``AbstractEventLoop`` "
+"的替代实现应当要定义的所有方法。"
 
-#: ../../library/asyncio-eventloop.rst:1609
+#: ../../library/asyncio-eventloop.rst:1612
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/asyncio-eventloop.rst:1611
+#: ../../library/asyncio-eventloop.rst:1614
 msgid ""
 "Note that all examples in this section **purposefully** show how to use the "
 "low-level event loop APIs, such as :meth:`loop.run_forever` and "
@@ -2242,28 +2273,28 @@ msgstr ""
 ":meth:`loop.call_soon`。 现代的 asyncio 应用很少需要以这样的方式编写；请考虑使用高层级的函数例如 "
 ":func:`asyncio.run`。"
 
-#: ../../library/asyncio-eventloop.rst:1621
+#: ../../library/asyncio-eventloop.rst:1624
 msgid "Hello World with call_soon()"
 msgstr "call_soon() 的 Hello World 示例。"
 
-#: ../../library/asyncio-eventloop.rst:1623
+#: ../../library/asyncio-eventloop.rst:1626
 msgid ""
 "An example using the :meth:`loop.call_soon` method to schedule a callback. "
 "The callback displays ``\"Hello World\"`` and then stops the event loop::"
 msgstr ""
 "一个使用 :meth:`loop.call_soon` 方法来安排回调的示例。 回调会显示 ``\"Hello World\"`` 然后停止事件循环::"
 
-#: ../../library/asyncio-eventloop.rst:1647
+#: ../../library/asyncio-eventloop.rst:1650
 msgid ""
 "A similar :ref:`Hello World <coroutine>` example created with a coroutine "
 "and the :func:`run` function."
 msgstr "一个类似的 :ref:`Hello World <coroutine>` 示例，使用协程和 :func:`run` 函数创建。"
 
-#: ../../library/asyncio-eventloop.rst:1654
+#: ../../library/asyncio-eventloop.rst:1657
 msgid "Display the current date with call_later()"
 msgstr "使用 call_later() 来展示当前的日期"
 
-#: ../../library/asyncio-eventloop.rst:1656
+#: ../../library/asyncio-eventloop.rst:1659
 msgid ""
 "An example of a callback displaying the current date every second. The "
 "callback uses the :meth:`loop.call_later` method to reschedule itself after "
@@ -2271,24 +2302,24 @@ msgid ""
 msgstr ""
 "一个每秒刷新显示当前日期的示例。 回调使用 :meth:`loop.call_later` 方法在 5 秒后将自身重新加入计划日程，然后停止事件循环::"
 
-#: ../../library/asyncio-eventloop.rst:1684
+#: ../../library/asyncio-eventloop.rst:1687
 msgid ""
 "A similar :ref:`current date <asyncio_example_sleep>` example created with a"
 " coroutine and the :func:`run` function."
 msgstr ""
 "一个类似的 :ref:`current date <asyncio_example_sleep>` 示例，使用协程和 :func:`run` 函数创建。"
 
-#: ../../library/asyncio-eventloop.rst:1691
+#: ../../library/asyncio-eventloop.rst:1694
 msgid "Watch a file descriptor for read events"
 msgstr "监控一个文件描述符的读事件"
 
-#: ../../library/asyncio-eventloop.rst:1693
+#: ../../library/asyncio-eventloop.rst:1696
 msgid ""
 "Wait until a file descriptor received some data using the "
 ":meth:`loop.add_reader` method and then close the event loop::"
 msgstr "使用 :meth:`loop.add_reader` 方法，等到文件描述符收到一些数据，然后关闭事件循环："
 
-#: ../../library/asyncio-eventloop.rst:1731
+#: ../../library/asyncio-eventloop.rst:1734
 msgid ""
 "A similar :ref:`example <asyncio_example_create_connection>` using "
 "transports, protocols, and the :meth:`loop.create_connection` method."
@@ -2296,7 +2327,7 @@ msgstr ""
 "一个类似的 :ref:`示例 <asyncio_example_create_connection>`，使用传输、协议和 "
 ":meth:`loop.create_connection` 方法创建。"
 
-#: ../../library/asyncio-eventloop.rst:1735
+#: ../../library/asyncio-eventloop.rst:1738
 msgid ""
 "Another similar :ref:`example <asyncio_example_create_connection-streams>` "
 "using the high-level :func:`asyncio.open_connection` function and streams."
@@ -2304,15 +2335,15 @@ msgstr ""
 "另一个类似的 :ref:`示例 <asyncio_example_create_connection-streams>`，使用了高层级的 "
 ":func:`asyncio.open_connection` 函数和流。"
 
-#: ../../library/asyncio-eventloop.rst:1743
+#: ../../library/asyncio-eventloop.rst:1746
 msgid "Set signal handlers for SIGINT and SIGTERM"
 msgstr "为SIGINT和SIGTERM设置信号处理器"
 
-#: ../../library/asyncio-eventloop.rst:1745
+#: ../../library/asyncio-eventloop.rst:1748
 msgid "(This ``signals`` example only works on Unix.)"
 msgstr "（这个 ``signals`` 示例只适用于 Unix。）"
 
-#: ../../library/asyncio-eventloop.rst:1747
+#: ../../library/asyncio-eventloop.rst:1750
 msgid ""
 "Register handlers for signals :py:data:`SIGINT` and :py:data:`SIGTERM` using"
 " the :meth:`loop.add_signal_handler` method::"

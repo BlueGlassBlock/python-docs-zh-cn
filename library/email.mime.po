@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -156,9 +156,9 @@ msgid ""
 ":mailheader:`MIME-Version` header will also be added."
 msgstr ""
 ":class:`~email.mime.base.MIMEBase` 的子类，这是用于 :mimetype:`multipart` MIME "
-"消息的中间基类。 可选的 *_subtype* 默认为 :mimetype:`mixed`，但可被用来指定消息的子类型。 "
-"将会在消息对象中添加一个:mimetype:`multipart/_subtype` 的 :mailheader:`Content-Type` 标头。 "
-"并还将添加一个 :mailheader:`MIME-Version` 标头。"
+"消息的中间基类。 可选的 *_subtype* 默认为 :mimetype:`mixed`，但可被用来指定消息的子类型。 将会在消息对象中添加一个 "
+":mimetype:`multipart/_subtype` 的 :mailheader:`Content-Type` 标头。 并还将添加一个 "
+":mailheader:`MIME-Version` 标头。"
 
 #: ../../library/email.mime.rst:89
 msgid ""
@@ -206,6 +206,10 @@ msgid ""
 "application data.  Optional *_subtype* specifies the MIME subtype and "
 "defaults to :mimetype:`octet-stream`."
 msgstr ""
+":class:`~email.mime.nonmultipart.MIMENonMultipart` "
+"的子类，:class:`MIMEApplication` 类被用来表示主类型为 :mimetype:`application` 的 MIME 消息。 "
+"*_data* 为包含原始应用程序数据的字节串。 可选的 *_subtype* 指定 MIME 子类型并默认为 :mimetype:`octet-"
+"stream`。"
 
 #: ../../library/email.mime.rst:121
 msgid ""

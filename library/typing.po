@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 18:10+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../library/typing.rst:3
 msgid ":mod:`typing` --- Support for type hints"
-msgstr ":mod:`typing` —— 类型注解支持"
+msgstr ":mod:`typing` —— 对类型提示的支持"
 
 #: ../../library/typing.rst:10
 msgid "**Source code:** :source:`Lib/typing.py`"
@@ -35,7 +35,7 @@ msgid ""
 "The Python runtime does not enforce function and variable type annotations. "
 "They can be used by third party tools such as type checkers, IDEs, linters, "
 "etc."
-msgstr "Python 运行时不强制执行函数和变量类型注解，但这些注解可用于类型检查器、IDE、静态检查器等第三方工具。"
+msgstr "Python 运行时不强制要求函数与变量类型注解。它们可用于类型检查器、IDE、错误检查器等第三方工具。"
 
 #: ../../library/typing.rst:20
 msgid ""
@@ -59,8 +59,8 @@ msgid ""
 "type :class:`str` and the return type :class:`str`. Subtypes are accepted as"
 " arguments."
 msgstr ""
-"``greeting`` 函数中，参数 ``name`` 的类型是 :class:`str`，返回类型也是 "
-":class:`str`。子类型也可以当作参数。"
+"``greeting`` 函数中，参数 ``name`` 的类型应是 :class:`str`，返回类型是 "
+":class:`str`。子类型也可以作为参数。"
 
 #: ../../library/typing.rst:35
 msgid ""
@@ -355,9 +355,9 @@ msgid ""
 "``Callable[Concatenate[Arg1Type, Arg2Type, ..., ParamSpecVariable], "
 "ReturnType]`` respectively."
 msgstr ""
-"以其他可调用对象为参数的可调用对象可以使用 :class:`ParamSpec` "
-"来表明其参数类型是相互依赖的。此外，如果该可调用对象增加或删除了其他可调用对象的参数，可以使用 :data:`Concatenate` 操作符。 "
-"它们分别采取 ``Callable[ParamSpecVariable, ReturnType]`` 和 "
+"以其他可调用对象为参数的可调用对象可以使用 :class:`ParamSpec` 来表明其参数类型是相互依赖的。 "
+"此外，如果该可调用对象增加或删除了其他可调用对象的参数，可以使用 :data:`Concatenate` 操作符。 它们分别采取 "
+"``Callable[ParamSpecVariable, ReturnType]`` 和 "
 "``Callable[Concatenate[Arg1Type, Arg2Type, ..., ParamSpecVariable], "
 "ReturnType]`` 的形式。"
 
@@ -503,6 +503,8 @@ msgid ""
 "parameterizing generics is cached, and most types in the typing module are "
 ":term:`hashable` and comparable for equality."
 msgstr ""
+"用户定义的泛型类可以将 ABC 作为基类而不会导致元类冲突。 参数化泛型的输出结果会被缓存，且 typing 模块中的大多数类型都是 "
+":term:`hashable` 并且支持相等性比较。"
 
 #: ../../library/typing.rst:441
 msgid "The :data:`Any` type"
@@ -530,6 +532,8 @@ msgid ""
 "declared to be of type :class:`str` and receives an :class:`int` value at "
 "runtime!"
 msgstr ""
+"注意，:data:`Any` 类型的值赋给更精确的类型时，不执行类型检查。例如，把 ``a`` 赋给 ``s``，在运行时，即便 ``s`` 已声明为 "
+":class:`str` 类型，但接收 :class:`int` 值时，静态类型检查器也不会报错。"
 
 #: ../../library/typing.rst:471
 msgid ""
@@ -728,6 +732,8 @@ msgid ""
 ":class:`builtins.tuple <tuple>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.tuple <tuple>` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:647
 msgid ""
@@ -838,6 +844,8 @@ msgid ""
 ":class:`collections.abc.Callable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Callable` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:739
 msgid ""
@@ -930,6 +938,8 @@ msgid ""
 ":class:`builtins.type <type>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.type <type>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:843
 msgid ""
@@ -1177,7 +1187,7 @@ msgstr ""
 msgid ""
 "``TypeGuard`` also works with type variables.  See :pep:`647` for more "
 "details."
-msgstr ""
+msgstr "``TypeGuard`` 也适用于类型变量。 详情参见 :pep:`647`。"
 
 #: ../../library/typing.rst:1067
 msgid "Building generic types"
@@ -1421,6 +1431,8 @@ msgid ""
 "protocols that check only the presence of given attributes, ignoring their "
 "type signatures."
 msgstr ""
+"请参阅 :pep:`544` 了解详情。 使用 :func:`runtime_checkable` "
+"装饰的协议类（稍后将介绍）可作为只检查给定属性是否存在，而忽略其类型签名的简单的运行时协议。"
 
 #: ../../library/typing.rst:1338
 msgid "Protocol classes can be generic, for example::"
@@ -1460,6 +1472,8 @@ msgid ""
 "protocol class. Consider using alternative idioms such as :func:`hasattr` "
 "calls for structural checks in performance-sensitive code."
 msgstr ""
+"针对运行时可检查协议的 :func:`isinstance` 检查相比针对非协议类的 ``isinstance()`` 检查可能会惊人的缓慢。 "
+"请考虑在性能敏感的代码中使用替代性写法如 :func:`hasattr` 调用进行结构检查。"
 
 #: ../../library/typing.rst:1390
 msgid "Other special directives"
@@ -1666,6 +1680,8 @@ msgid ""
 ":class:`builtins.dict <dict>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.dict <dict>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1629
 msgid ""
@@ -1685,6 +1701,8 @@ msgid ""
 ":class:`builtins.list <list>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.list <list>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1650
 msgid ""
@@ -1700,6 +1718,8 @@ msgid ""
 ":class:`builtins.set <set>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.set <set>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:1660
 msgid "A generic version of :class:`builtins.frozenset <frozenset>`."
@@ -1710,6 +1730,8 @@ msgid ""
 ":class:`builtins.frozenset <frozenset>` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.frozenset <frozenset>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1667
 msgid ":data:`Tuple` is a special form."
@@ -1728,6 +1750,8 @@ msgid ""
 ":class:`collections.defaultdict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.defaultdict` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1684
 msgid "A generic version of :class:`collections.OrderedDict`."
@@ -1738,6 +1762,8 @@ msgid ""
 ":class:`collections.OrderedDict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.OrderedDict` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1694
 msgid "A generic version of :class:`collections.ChainMap`."
@@ -1748,6 +1774,8 @@ msgid ""
 ":class:`collections.ChainMap` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.ChainMap` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1705
 msgid "A generic version of :class:`collections.Counter`."
@@ -1758,6 +1786,8 @@ msgid ""
 ":class:`collections.Counter` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.Counter` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:1716
 msgid "A generic version of :class:`collections.deque`."
@@ -1768,6 +1798,8 @@ msgid ""
 ":class:`collections.deque` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.deque` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:1726
 msgid "Other concrete types"
@@ -1786,7 +1818,7 @@ msgstr ""
 msgid ""
 "The ``typing.io`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
-msgstr "``typing.io`` 命名空间已被废弃并将被删除。这些类型应该被直接从 ``typing`` 导入。"
+msgstr "``typing.io`` 命名空间已被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
 
 #: ../../library/typing.rst:1744
 msgid ""
@@ -1803,7 +1835,7 @@ msgstr ""
 msgid ""
 "The ``typing.re`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
-msgstr "``typing.re`` 命名空间已被废弃并将被删除。这些类型应该被直接从 ``typing`` 导入。"
+msgstr "``typing.re`` 命名空间已被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
 
 #: ../../library/typing.rst:1755
 msgid ""
@@ -1845,6 +1877,8 @@ msgid ""
 ":class:`collections.abc.Set` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Set` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:1789
 msgid "A generic version of :class:`collections.abc.ByteString`."
@@ -1877,6 +1911,8 @@ msgid ""
 ":class:`collections.abc.Collection` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Collection` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1813
 msgid "A generic version of :class:`collections.abc.Container`."
@@ -1887,6 +1923,8 @@ msgid ""
 ":class:`collections.abc.Container` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Container` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1821
 msgid "A generic version of :class:`collections.abc.ItemsView`."
@@ -1897,6 +1935,8 @@ msgid ""
 ":class:`collections.abc.ItemsView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.ItemsView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1829
 msgid "A generic version of :class:`collections.abc.KeysView`."
@@ -1907,6 +1947,8 @@ msgid ""
 ":class:`collections.abc.KeysView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.KeysView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1837
 msgid ""
@@ -1919,6 +1961,8 @@ msgid ""
 ":class:`collections.abc.Mapping` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Mapping` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1849
 msgid "A generic version of :class:`collections.abc.MappingView`."
@@ -1929,6 +1973,8 @@ msgid ""
 ":class:`collections.abc.MappingView` now supports subscripting (``[]``). See"
 " :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MappingView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1857
 msgid "A generic version of :class:`collections.abc.MutableMapping`."
@@ -1939,6 +1985,8 @@ msgid ""
 ":class:`collections.abc.MutableMapping` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableMapping` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1866
 msgid "A generic version of :class:`collections.abc.MutableSequence`."
@@ -1949,6 +1997,8 @@ msgid ""
 ":class:`collections.abc.MutableSequence` now supports subscripting (``[]``)."
 " See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableSequence` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1875
 msgid "A generic version of :class:`collections.abc.MutableSet`."
@@ -1959,6 +2009,8 @@ msgid ""
 ":class:`collections.abc.MutableSet` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableSet` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1883
 msgid "A generic version of :class:`collections.abc.Sequence`."
@@ -1969,6 +2021,8 @@ msgid ""
 ":class:`collections.abc.Sequence` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Sequence` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1891
 msgid "A generic version of :class:`collections.abc.ValuesView`."
@@ -1979,6 +2033,8 @@ msgid ""
 ":class:`collections.abc.ValuesView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.ValuesView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1898
 msgid "Corresponding to other types in :mod:`collections.abc`"
@@ -1993,6 +2049,8 @@ msgid ""
 ":class:`collections.abc.Iterable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Iterable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1910
 msgid "A generic version of :class:`collections.abc.Iterator`."
@@ -2003,6 +2061,8 @@ msgid ""
 ":class:`collections.abc.Iterator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Iterator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1918
 msgid ""
@@ -2036,6 +2096,8 @@ msgid ""
 ":class:`collections.abc.Generator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Generator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1953
 msgid "An alias to :class:`collections.abc.Hashable`."
@@ -2050,6 +2112,8 @@ msgid ""
 ":class:`collections.abc.Reversible` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Reversible` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1965
 msgid "An alias to :class:`collections.abc.Sized`."
@@ -2073,6 +2137,8 @@ msgid ""
 ":class:`collections.abc.Coroutine` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Coroutine` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1990
 msgid ""
@@ -2107,6 +2173,8 @@ msgid ""
 ":class:`collections.abc.AsyncGenerator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.AsyncGenerator` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2028
 msgid "A generic version of :class:`collections.abc.AsyncIterable`."
@@ -2117,6 +2185,8 @@ msgid ""
 ":class:`collections.abc.AsyncIterable` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.AsyncIterable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2038
 msgid "A generic version of :class:`collections.abc.AsyncIterator`."
@@ -2127,6 +2197,8 @@ msgid ""
 ":class:`collections.abc.AsyncIterator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.AsyncIterator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2048
 msgid "A generic version of :class:`collections.abc.Awaitable`."
@@ -2137,6 +2209,8 @@ msgid ""
 ":class:`collections.abc.Awaitable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Awaitable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2058
 msgid "Context manager types"
@@ -2151,6 +2225,8 @@ msgid ""
 ":class:`contextlib.AbstractContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`contextlib.AbstractContextManager` 现在支持下标操作 (``[]``)。 参见 :pep:`585` "
+"和 :ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2074
 msgid "A generic version of :class:`contextlib.AbstractAsyncContextManager`."
@@ -2161,6 +2237,8 @@ msgid ""
 ":class:`contextlib.AbstractAsyncContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`contextlib.AbstractAsyncContextManager` 现在 支持下标操作 (``[]``)。 参见 "
+":pep:`585` 和 :ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2085
 msgid "Protocols"
@@ -2239,7 +2317,7 @@ msgstr ""
 #: ../../library/typing.rst:2159
 msgid ""
 "See :pep:`484` for more details and comparison with other typing semantics."
-msgstr ""
+msgstr "请参阅 :pep:`484` 了解更多细节以及与其他类型语义的比较。"
 
 #: ../../library/typing.rst:2163
 msgid ""

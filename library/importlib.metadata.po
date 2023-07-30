@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -76,7 +76,7 @@ msgstr "假设你想得到你用 ``pip`` 安装的一个包的版本字符串。
 
 #: ../../library/importlib.metadata.rst:48
 msgid "You can get the version string for ``wheel`` by running the following:"
-msgstr "你可以通过运行以下代码得到``wheel``的版本字符串："
+msgstr "你可以通过运行以下代码得到 ``wheel`` 的版本字符串："
 
 #: ../../library/importlib.metadata.rst:57
 msgid ""
@@ -171,6 +171,10 @@ msgid ""
 "<https://setuptools.pypa.io/en/latest/userguide/entry_point.html>`_ for more"
 " information on entry points, their definition, and usage."
 msgstr ""
+"``group`` 和 ``name`` 是由包作者定义的任意值并且通常来说客户端会想要解析特定 group 的所有入口点。 请参阅 `the "
+"setuptools docs "
+"<https://setuptools.pypa.io/en/latest/userguide/entry_point.html>`_ "
+"了解有关入口点，其定义和用法的更多信息。"
 
 #: ../../library/importlib.metadata.rst:142
 msgid "*Compatibility Note*"

@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,21 +51,21 @@ msgstr ""
 
 #: ../../library/traceback.rst:26
 msgid "Module :mod:`faulthandler`"
-msgstr ""
+msgstr "模块 :mod:`faulthandler`"
 
 #: ../../library/traceback.rst:26
 msgid ""
 "Used to dump Python tracebacks explicitly, on a fault, after a timeout, or "
 "on a user signal."
-msgstr ""
+msgstr "用于在发生错误、超时或用户信号时显式地转储 Python 回溯信息。"
 
 #: ../../library/traceback.rst:28
 msgid "Module :mod:`pdb`"
-msgstr ""
+msgstr "模块 :mod:`pdb`"
 
 #: ../../library/traceback.rst:29
 msgid "Interactive source code debugger for Python programs."
-msgstr ""
+msgstr "用于 Python 程序的交互式源代码调试器。"
 
 #: ../../library/traceback.rst:31
 msgid "The module defines the following functions:"
@@ -81,9 +81,9 @@ msgid ""
 "receive the output."
 msgstr ""
 "如果*limit*是正整数，那么从 traceback 对象 \"tb\" 输出最高 *limit* 个（从调用函数开始的）栈的堆栈回溯‎条目‎；如果 "
-"*limit* 是负数就输出 ``abs(limit)`` 个回溯条目；又如果 *limit* 被省略或者为 "
-"``None``，那么就会输出所有回溯条目。如果 *file* 被省略或为 ``None`` "
-"那么就会输出至标准输出``sys.stderr``否则它应该是一个打开的文件或者文件类对象来接收输出"
+"*limit* 是负数就输出 ``abs(limit)`` 个回溯条目；又如果 *limit* 被省略或者为 ``None`` "
+"，那么就会输出所有回溯条目。如果 *file* 被省略或为 ``None`` 那么就会输出至标准输出 ``sys.stderr`` "
+"否则它应该是一个打开的文件或者文件类对象来接收输出"
 
 #: ../../library/traceback.rst:42 ../../library/traceback.rst:105
 msgid "Added negative *limit* support."
@@ -304,7 +304,7 @@ msgid ""
 "capture data for later printing in a lightweight fashion."
 msgstr ":class:`TracebackException` 对象基于实际的异常创建通过轻量的方式捕获数据以便随后打印。"
 
-#: ../../library/traceback.rst:224 ../../library/traceback.rst:276
+#: ../../library/traceback.rst:224 ../../library/traceback.rst:290
 msgid ""
 "Capture an exception for later rendering. *limit*, *lookup_lines* and "
 "*capture_locals* are as for the :class:`StackSummary` class."
@@ -323,7 +323,7 @@ msgstr ""
 "方法所需要的数据会被保存在类属性中。 特别地，``__context__`` 字段只有在 ``__cause__`` 为 ``None`` 且 "
 "``__suppress_context__`` 为假值时才会被计算。"
 
-#: ../../library/traceback.rst:232 ../../library/traceback.rst:279
+#: ../../library/traceback.rst:232 ../../library/traceback.rst:293
 msgid ""
 "Note that when locals are captured, they are also shown in the traceback."
 msgstr "请注意当局部变量被捕获时，它们也会被显示在回溯中。"
@@ -357,28 +357,40 @@ msgid "For syntax errors - the line number where the error occurred."
 msgstr "针对语法错误 —— 错误发生所在的行号。"
 
 #: ../../library/traceback.rst:264
+msgid ""
+"For syntax errors - the end line number where the error occurred. Can be "
+"``None`` if not present."
+msgstr "针对语法错误 —— 错误发生所在的末尾行号。 如不存在则可以为 ``None``。"
+
+#: ../../library/traceback.rst:271
 msgid "For syntax errors - the text where the error occurred."
 msgstr "针对语法错误 —— 错误发生所在的文本。"
 
-#: ../../library/traceback.rst:268
+#: ../../library/traceback.rst:275
 msgid "For syntax errors - the offset into the text where the error occurred."
 msgstr "针对语法错误 —— 错误发生所在的文本内部的偏移量。"
 
-#: ../../library/traceback.rst:272
+#: ../../library/traceback.rst:279
+msgid ""
+"For syntax errors - the end offset into the text where the error occurred. "
+"Can be ``None`` if not present."
+msgstr "针对语法错误 —— 错误发生所在的文本末尾偏移量。 如不存在则可以为 ``None``。"
+
+#: ../../library/traceback.rst:286
 msgid "For syntax errors - the compiler error message."
 msgstr "针对语法错误 —— 编译器错误消息。"
 
-#: ../../library/traceback.rst:283
+#: ../../library/traceback.rst:297
 msgid "Format the exception."
 msgstr "格式化异常。"
 
-#: ../../library/traceback.rst:285
+#: ../../library/traceback.rst:299
 msgid ""
 "If *chain* is not ``True``, ``__cause__`` and ``__context__`` will not be "
 "formatted."
 msgstr "如果 *chain* 不为 ``True``，则 ``__cause__`` 和 ``__context__`` 将不会被格式化。"
 
-#: ../../library/traceback.rst:288
+#: ../../library/traceback.rst:302
 msgid ""
 "The return value is a generator of strings, each ending in a newline and "
 "some containing internal newlines. :func:`~traceback.print_exception` is a "
@@ -387,21 +399,21 @@ msgstr ""
 "返回值是一个字符串的生成器，其中每个字符串都以换行符结束并且有些还会包含内部换行符。 "
 ":func:`~traceback.print_exception` 是此方法的一个包装器，它只是将这些行打印到一个文件。"
 
-#: ../../library/traceback.rst:292 ../../library/traceback.rst:306
+#: ../../library/traceback.rst:306 ../../library/traceback.rst:320
 msgid ""
 "The message indicating which exception occurred is always the last string in"
 " the output."
 msgstr "指明发生了哪种异常的消息总会是输出中的最后一个字符串。"
 
-#: ../../library/traceback.rst:297
+#: ../../library/traceback.rst:311
 msgid "Format the exception part of the traceback."
 msgstr "格式化回溯的异常部分。"
 
-#: ../../library/traceback.rst:299
+#: ../../library/traceback.rst:313
 msgid "The return value is a generator of strings, each ending in a newline."
 msgstr "返回值是一个字符串的生成器，每个字符串都以一个换行符结束。"
 
-#: ../../library/traceback.rst:301
+#: ../../library/traceback.rst:315
 msgid ""
 "Normally, the generator emits a single string; however, for "
 ":exc:`SyntaxError` exceptions, it emits several lines that (when printed) "
@@ -409,20 +421,20 @@ msgid ""
 msgstr ""
 "通常，生成器会发出单个字符串；不过，对于 :exc:`SyntaxError` 异常，它会发出（当打印时）显示有关语法错误发生在何处的详细信息的多个行。"
 
-#: ../../library/traceback.rst:309
+#: ../../library/traceback.rst:323
 msgid "Added the *compact* parameter."
 msgstr "增加了 *compact* 形参。"
 
-#: ../../library/traceback.rst:314
+#: ../../library/traceback.rst:328
 msgid ":class:`StackSummary` Objects"
 msgstr ":class:`StackSummary` 对象"
 
-#: ../../library/traceback.rst:318
+#: ../../library/traceback.rst:332
 msgid ""
 ":class:`StackSummary` objects represent a call stack ready for formatting."
 msgstr "代表一个可被格式化的调用栈的 :class:`StackSummary` 对象。"
 
-#: ../../library/traceback.rst:324
+#: ../../library/traceback.rst:338
 msgid ""
 "Construct a :class:`StackSummary` object from a frame generator (such as is "
 "returned by :func:`~traceback.walk_stack` or :func:`~traceback.walk_tb`)."
@@ -430,7 +442,7 @@ msgstr ""
 "构造一个来自帧生成器的 :class:`StackSummary` 对象（如 :func:`~traceback.walk_stack` 或 "
 ":func:`~traceback.walk_tb` 所返回的一样）。"
 
-#: ../../library/traceback.rst:328
+#: ../../library/traceback.rst:342
 msgid ""
 "If *limit* is supplied, only this many frames are taken from *frame_gen*. If"
 " *lookup_lines* is ``False``, the returned :class:`FrameSummary` objects "
@@ -444,7 +456,7 @@ msgstr ""
 "的开销更低（如果它不会被实际格式化这就会很有价值）。 如果 *capture_locals* 为 ``True`` 则每个 "
 ":class:`FrameSummary` 中的局部变量会被捕获为对象表示形式。"
 
-#: ../../library/traceback.rst:338
+#: ../../library/traceback.rst:352
 msgid ""
 "Construct a :class:`StackSummary` object from a supplied list of "
 ":class:`FrameSummary` objects or old-style list of tuples.  Each tuple "
@@ -453,7 +465,7 @@ msgstr ""
 "从所提供的 :class:`FrameSummary` 对象列表或旧式的元组列表构造一个 :class:`StackSummary` 对象。 "
 "每个元组都应当是以文件、行号、名称和行为元素的 4 元组。"
 
-#: ../../library/traceback.rst:344
+#: ../../library/traceback.rst:358
 msgid ""
 "Returns a list of strings ready for printing.  Each string in the resulting "
 "list corresponds to a single frame from the stack. Each string ends in a "
@@ -463,26 +475,26 @@ msgstr ""
 "返回一个可打印的字符串列表。 结果列表中的每个字符串各自对应来自于栈的单独帧。 "
 "每个字符串都以一个换行符结束；对于带有源文本行的条目来说，字符串还可能包含内部换行符。"
 
-#: ../../library/traceback.rst:349
+#: ../../library/traceback.rst:363
 msgid ""
 "For long sequences of the same frame and line, the first few repetitions are"
 " shown, followed by a summary line stating the exact number of further "
 "repetitions."
 msgstr "对于同一帧与行的长序列，将显示前几个重复项，后面跟一个指明之后的实际重复次数的摘要行。"
 
-#: ../../library/traceback.rst:353
+#: ../../library/traceback.rst:367
 msgid "Long sequences of repeated frames are now abbreviated."
 msgstr "重复帧的长序列现在将被缩减。"
 
-#: ../../library/traceback.rst:358
+#: ../../library/traceback.rst:372
 msgid ":class:`FrameSummary` Objects"
 msgstr ":class:`FrameSummary` 对象"
 
-#: ../../library/traceback.rst:362
+#: ../../library/traceback.rst:376
 msgid ":class:`FrameSummary` objects represent a single frame in a traceback."
 msgstr ":class:`FrameSummary` 对象代表回溯中的一个单独帧。"
 
-#: ../../library/traceback.rst:366
+#: ../../library/traceback.rst:380
 msgid ""
 "Represent a single frame in the traceback or stack that is being formatted "
 "or printed. It may optionally have a stringified version of the frames "
@@ -499,11 +511,11 @@ msgstr ""
 "属性（这还将发生在将其转换为元组时）。 :attr:`~FrameSummary.line` 可能会被直接提供，并将完全阻止行查找的发生。 "
 "*locals* 是一个可选的局部变量字典，如果有提供的话这些变量的表示形式将被存储在摘要中以便随后显示。"
 
-#: ../../library/traceback.rst:379
+#: ../../library/traceback.rst:393
 msgid "Traceback Examples"
 msgstr "回溯示例"
 
-#: ../../library/traceback.rst:381
+#: ../../library/traceback.rst:395
 msgid ""
 "This simple example implements a basic read-eval-print loop, similar to (but"
 " less useful than) the standard Python interactive interpreter loop.  For a "
@@ -513,22 +525,22 @@ msgstr ""
 "这个简单示例是一个基本的读取-求值-打印循环，类似于（但实用性小于）标准 Python 交互式解释器循环。 对于解释器循环的更完整实现，请参阅 "
 ":mod:`code` 模块。 ::"
 
-#: ../../library/traceback.rst:403
+#: ../../library/traceback.rst:417
 msgid ""
 "The following example demonstrates the different ways to print and format "
 "the exception and traceback:"
 msgstr "下面的例子演示了打印和格式化异常与回溯的不同方式:"
 
-#: ../../library/traceback.rst:438
+#: ../../library/traceback.rst:452
 msgid "The output for the example would look similar to this:"
 msgstr "该示例的输出看起来像是这样的:"
 
-#: ../../library/traceback.rst:480
+#: ../../library/traceback.rst:494
 msgid ""
 "The following example shows the different ways to print and format the "
 "stack::"
 msgstr "下面的例子演示了打印和格式化栈的不同方式::"
 
-#: ../../library/traceback.rst:506
+#: ../../library/traceback.rst:520
 msgid "This last example demonstrates the final few formatting functions:"
 msgstr "最后这个例子演示了最后几个格式化函数:"

@@ -4,18 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
-# Zhang LongQi <longqi90@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-07-29 03:05+0000\n"
 "PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Zhang LongQi <longqi90@gmail.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +23,7 @@ msgstr ""
 
 #: ../../library/array.rst:2
 msgid ":mod:`array` --- Efficient arrays of numeric values"
-msgstr ":mod:`array` --- 高效的数值数组"
+msgstr ":mod:`array` --- 高效的数字数组"
 
 #: ../../library/array.rst:11
 msgid ""
@@ -53,7 +52,7 @@ msgstr "Python 类型"
 
 #: ../../library/array.rst:19
 msgid "Minimum size in bytes"
-msgstr "最少字节数"
+msgstr "以字节表示的最小尺寸"
 
 #: ../../library/array.rst:19
 msgid "Notes"
@@ -223,10 +222,11 @@ msgid ""
 "architecture (strictly speaking, by the C implementation).  The actual size "
 "can be accessed through the :attr:`array.itemsize` attribute."
 msgstr ""
+"值的实际表示形式是由机器架构（严格地说，是由 C 实现）决定的。 其实际大小可以通过 :attr:`array.itemsize` 属性来访问。"
 
 #: ../../library/array.rst:65
 msgid "The module defines the following item:"
-msgstr ""
+msgstr "模块定义了以下项目："
 
 #: ../../library/array.rst:70
 msgid "A string with all available type codes."
@@ -300,6 +300,9 @@ msgid ""
 "returned numbers are valid as long as the array exists and no length-"
 "changing operations are applied to it."
 msgstr ""
+"返回一个元组 ``(address, length)`` 以给出用于存放数据内容的缓冲区元素的当前内存地址和长度。 以字节表示的内存缓冲区大小可通过 "
+"``array.buffer_info()[1] * array.itemsize`` 来计算。 这在使用需要内存地址的低层级（因此不够安全）I/O "
+"接口时会很有用处，例如某些 :c:func:`!ioctl` 操作。 只要数组存在且没有对其应用过改变长度的操作则返回的数值就是有效的。"
 
 #: ../../library/array.rst:124
 msgid ""
@@ -346,7 +349,7 @@ msgstr "添加来自字节串的项，将字符节解读为机器值的数组（
 
 #: ../../library/array.rst:157
 msgid ":meth:`!fromstring` is renamed to :meth:`frombytes` for clarity."
-msgstr ""
+msgstr ":meth:`!fromstring` 被重命名为含义更准确的 :meth:`frombytes`。"
 
 #: ../../library/array.rst:163
 msgid ""
@@ -419,7 +422,7 @@ msgstr "将数组转换为一个机器值数组并返回其字节表示（即相
 
 #: ../../library/array.rst:223
 msgid ":meth:`!tostring` is renamed to :meth:`tobytes` for clarity."
-msgstr ""
+msgstr ":meth:`!tostring` 被重命名为含义更准确的 :meth:`tobytes`。"
 
 #: ../../library/array.rst:229
 msgid "Write all items (as machine values) to the :term:`file object` *f*."
