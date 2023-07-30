@@ -3859,6 +3859,10 @@ msgid ""
 " are not required. (Contributed by Victor Stinner in :issue:`46656`, "
 ":issue:`45440` and :issue:`46640`.)"
 msgstr ""
+"`C11 <https://en.cppreference.com/w/c/11>`_ 编译器和标准库。 `可选的 C11 特性 "
+"<https://en.wikipedia.org/wiki/C11_(C_standard_revision)#Optional_features>`_"
+" 不是必须的。 （由 Victor Stinner 在 :issue:`46656`, :issue:`45440` 和 :issue:`46640` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2122
 msgid ""
@@ -3874,6 +3878,8 @@ msgid ""
 " IEEE 754 floats, NaN values are always available. (Contributed by Victor "
 "Stinner in :issue:`46656`.)"
 msgstr ""
+":c:macro:`!Py_NO_NAN` 宏已被移除。 由于 CPython 现在要求 IEEE 754 浮点数，NaN 值将始终可用。 （由 "
+"Victor Stinner 在 :issue:`46656` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2130
 msgid ""
@@ -3881,6 +3887,8 @@ msgid ""
 "version 8.5.12 or newer. (Contributed by Serhiy Storchaka in "
 ":issue:`46996`.)"
 msgstr ""
+":mod:`tkinter` 包现在需要 `Tcl/Tk <https://www.tcl.tk>`_ 8.5.12 或更新的版本。 （由 Serhiy"
+" Storchaka 在 :issue:`46996` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2134
 msgid ""
@@ -3893,6 +3901,12 @@ msgid ""
 "(Contributed by Christian Heimes and Erlend Egeberg Aasland in "
 ":issue:`45847`, :issue:`45747`, and :issue:`45763`.)"
 msgstr ""
+"大多数标准库扩展模块的构建依赖、编译器旗标和链接器旗标现在将由 :program:`configure` 来检测。 libffi, libnsl, "
+"libsqlite3, zlib, bzip2, liblzma, libcrypt, Tcl/Tk 和 uuid 旗标将由 `pkg-config "
+"<https://www.freedesktop.org/wiki/Software/pkg-config/>`_ (如果可用) 来检测。 "
+":mod:`tkinter` 现在需要由 pkg-config 命令来检测 `Tcl/Tk`_ 标头和库的开发设置。 （由 Christian "
+"Heimes 和 Erlend Egeberg Aasland 在 :issue:`45847`, :issue:`45747` 和 "
+":issue:`45763` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2144
 msgid ""
