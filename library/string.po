@@ -4,25 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Shengjing Zhu <zsj950618@gmail.com>, 2021
-# Woko <banbooliu@gmail.com>, 2021
-# df2dc1c92e792f7ae8417c51df43db8f_594d92a <0f49be28017426edb1db1a2ab6e67088_717605>, 2021
-# Nasy, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
-# Yuwei Tu <yt1209@nyu.edu>, 2021
-# jaystone776 <1732865113@qq.com>, 2021
-# 乐成 王, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
+"PO-Revision-Date: 2023-05-24 02:20+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -333,15 +324,8 @@ msgid ""
 "*arg_name* can be followed by any number of index or attribute expressions. "
 "An expression of the form ``'.name'`` selects the named attribute using "
 ":func:`getattr`, while an expression of the form ``'[index]'`` does an index"
-" lookup using :meth:`~object.__getitem__`."
+" lookup using :func:`__getitem__`."
 msgstr ""
-"*field_name* 本身以一个数字或关键字形式的 *arg_name* 打头。 "
-"如果为数字，则它指向一个位置参数，而如果为关键字，则它指向一个命名关键字参数。 如果在字符串上调用 :meth:`str.isdecimal` "
-"会返回真值则 *arg_name* 会被当作数字来处理。 如果格式字段串中的数字 arg_names 为 0, 1, 2, ... "
-"的序列，它们可以全部（而非部分）被省略并且数字 0, 1, 2, ... 将按顺序被自动插入。 由于 *arg_name* "
-"不使用引号分隔，因此无法在格式字符串中指定任意的字典键（例如字符串 ``'10'`` 或 ``':-]'`` 等）。 *arg_name* "
-"之后可以跟任意数量的索引或属性表达式。 ``'.name'`` 形式的表达式会使用 :func:`getattr` 来选择命名属性，而 "
-"``'[index]'`` 形式的表达式会使用 :meth:`~object.__getitem__` 来执行索引查找。"
 
 #: ../../library/string.rst:242
 msgid ""
@@ -363,15 +347,12 @@ msgstr "一些简单的格式字符串示例"
 #: ../../library/string.rst:258
 msgid ""
 "The *conversion* field causes a type coercion before formatting.  Normally, "
-"the job of formatting a value is done by the :meth:`~object.__format__` "
-"method of the value itself.  However, in some cases it is desirable to force"
-" a type to be formatted as a string, overriding its own definition of "
-"formatting.  By converting the value to a string before calling "
-":meth:`~object.__format__`, the normal formatting logic is bypassed."
+"the job of formatting a value is done by the :meth:`__format__` method of "
+"the value itself.  However, in some cases it is desirable to force a type to"
+" be formatted as a string, overriding its own definition of formatting.  By "
+"converting the value to a string before calling :meth:`__format__`, the "
+"normal formatting logic is bypassed."
 msgstr ""
-"*conversion* 字段会在格式化之前进行类型强制转换。 通常，格式化一个值的工作是由该值本身的 "
-":meth:`~object.__format__` 方法完成的。 但是，在某些情况下最好是强制将类型格式化为一个字符串，覆盖其本身的格式化定义。 "
-"通过在调用 :meth:`~object.__format__` 之间将值转换为字符串，可以绕过正常的格式化逻辑。"
 
 #: ../../library/string.rst:265
 msgid ""
@@ -474,7 +455,7 @@ msgstr "各种对齐选项的含义如下："
 
 #: ../../library/string.rst:342 ../../library/string.rst:373
 msgid "Option"
-msgstr "选项"
+msgstr "属性"
 
 #: ../../library/string.rst:342 ../../library/string.rst:373
 #: ../../library/string.rst:456 ../../library/string.rst:467
@@ -1308,11 +1289,11 @@ msgstr ": (冒号)"
 
 #: ../../library/string.rst:335
 msgid "< (less)"
-msgstr "< (小于号)"
+msgstr "< (小与)"
 
 #: ../../library/string.rst:335
 msgid "> (greater)"
-msgstr "> (大于号)"
+msgstr "> (大与)"
 
 #: ../../library/string.rst:335
 msgid "= (equals)"

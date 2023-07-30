@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:15+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -294,16 +294,16 @@ msgstr ""
 ":func:`io.IOBase.seek` 的定义一样。"
 
 #: ../../library/fcntl.rst:169
-msgid ":const:`0` -- relative to the start of the file (:const:`os.SEEK_SET`)"
+msgid "``0`` -- relative to the start of the file (:const:`os.SEEK_SET`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:170
 msgid ""
-":const:`1` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
+"``1`` -- relative to the current buffer position (:const:`os.SEEK_CUR`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:171
-msgid ":const:`2` -- relative to the end of the file (:const:`os.SEEK_END`)"
+msgid "``2`` -- relative to the end of the file (:const:`os.SEEK_END`)"
 msgstr ""
 
 #: ../../library/fcntl.rst:173
@@ -346,6 +346,8 @@ msgid ""
 "present in the :mod:`os` module (on BSD only), the :func:`os.open` function "
 "provides an alternative to the :func:`lockf` and :func:`flock` functions."
 msgstr ""
+"如果加锁旗标 :const:`~os.O_SHLOCK` 和 :const:`~os.O_EXLOCK` 存在于 :mod:`os` 模块中（仅 BSD"
+" 专属），则 :func:`os.open` 函数提供了对 :func:`lockf` 和 :func:`flock` 函数的替代。"
 
 #: ../../library/fcntl.rst:10 ../../library/fcntl.rst:10
 msgid "UNIX"

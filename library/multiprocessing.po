@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:17+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -542,7 +542,7 @@ msgstr "使用列表或元组作为传给 :class:`Process` 的 *args* 参数可�
 
 #: ../../library/multiprocessing.rst:523
 msgid "Example::"
-msgstr "示例："
+msgstr "示例::"
 
 #: ../../library/multiprocessing.rst:535
 msgid "Start the process's activity."
@@ -3340,6 +3340,8 @@ msgid ""
 "default handler. Messages sent to this logger will not by default propagate "
 "to the root logger."
 msgstr ""
+"当首次创建时日志记录器级别为 :const:`logging.NOTSET` 并且没有默认处理句柄。 "
+"发送到这个日志记录器的消息默认将不会传播到根日志记录器。"
 
 #: ../../library/multiprocessing.rst:2689
 msgid ""

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:22+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -3488,6 +3488,9 @@ msgid ""
 ":exc:`!OverflowError` by truth value testing, an object must define a "
 ":meth:`__bool__` method."
 msgstr ""
+"在 CPython 中，要求其长度最大为 :data:`sys.maxsize`。 如果长度大于 :data:`!sys.maxsize` 则某些特性 "
+"(如 :func:`len`) 可能会引发 :exc:`OverflowError`。 要通过真值检测来防止引发 "
+":exc:`!OverflowError`，对象必须定义 :meth:`__bool__` 方法。"
 
 #: ../../reference/datamodel.rst:2494
 msgid ""
@@ -4808,7 +4811,7 @@ msgstr "bytecode -- 字节码"
 
 #: ../../reference/datamodel.rst:944
 msgid "code"
-msgstr "code -- 代码"
+msgstr "code"
 
 #: ../../reference/datamodel.rst:944
 msgid "code object"
@@ -4932,7 +4935,7 @@ msgstr "f_lineno (帧属性)"
 
 #: ../../reference/datamodel.rst:1117
 msgid "traceback"
-msgstr "traceback -- 回溯"
+msgstr "回溯"
 
 #: ../../reference/datamodel.rst:1117 ../../reference/datamodel.rst:1117
 msgid "stack"

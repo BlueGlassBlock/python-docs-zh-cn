@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:17+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -161,6 +161,10 @@ msgid ""
 "indefinitely. If *errors* is specified, it's used to determine how encoding "
 "errors are handled."
 msgstr ""
+"返回一个 :class:`FileHandler` 类的新实例。 将打开指定的文件并将其用作日志记录流。 如果未指定 *mode*，则会使用 "
+"``'a'``。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 *delay* "
+"为真值，则文件打开会被推迟至第一次调用 :meth:`emit` 时。 默认情况下，文件会无限增长。 如果指定了 "
+"*errors*，它会被用于确定编码格式错误的处理方式。"
 
 #: ../../library/logging.handlers.rst:105
 #: ../../library/logging.handlers.rst:190
@@ -274,6 +278,10 @@ msgid ""
 "grows indefinitely. If *errors* is provided, it determines how encoding "
 "errors are handled."
 msgstr ""
+"返回一个 :class:`WatchedFileHandler` 类的新实例。 将打开指定的文件并将其用作日志记录流。 如果未指定 "
+"*mode*，则会使用 ``'a'``。 如果 *encoding* 不为 ``None``，则会将其用作打开文件的编码格式。 如果 *delay* "
+"为真值，则文件打开会被推迟至第一次调用 :meth:`emit` 时。 默认情况下，文件会无限增长。 如果提供了 "
+"*errors*，它会被用于确定编码格式错误的处理方式。"
 
 #: ../../library/logging.handlers.rst:199
 msgid ""
@@ -1489,6 +1497,7 @@ msgid ""
 "buffer to an empty list. This method can be overwritten to implement more "
 "useful flushing behavior."
 msgstr ""
+"对于 :class:`BufferingHandler` 的实例，刷新意味着将缓冲区设为一个空列表。 此方法可被覆盖以实现更有用的刷新行为。"
 
 #: ../../library/logging.handlers.rst:927
 msgid ""
@@ -1528,6 +1537,8 @@ msgid ""
 "when buffered records are sent to the target. Override if you want different"
 " behavior."
 msgstr ""
+"对于 :class:`MemoryHandler` 的实例，刷新意味着将缓冲的记录发送到目标，如果目标存在的话。 "
+"当缓冲的记录被发送到目标时缓冲区也将被清空。 如果你想要不同的行为请重载此方法。"
 
 #: ../../library/logging.handlers.rst:961
 msgid "Sets the target handler for this handler."
@@ -1665,6 +1676,10 @@ msgid ""
 ":data:`logging.raiseExceptions` is ``False``) or a message printed to "
 "``sys.stderr`` (if :data:`logging.raiseExceptions` is ``True``)."
 msgstr ""
+"将准备 LogRecord 的结果排入队列。 如果发生了异常（例如由于有界队列已满），则会调用 "
+":meth:`~logging.Handler.handleError` 方法来处理错误。 这可能导致记录被静默地丢弃 (当 "
+":data:`logging.raiseExceptions` 为 ``False`` 时) 或者消息被打印到 ``sys.stderr`` (当 "
+":data:`logging.raiseExceptions` 为 ``True`` 时)。"
 
 #: ../../library/logging.handlers.rst:1060
 msgid ""

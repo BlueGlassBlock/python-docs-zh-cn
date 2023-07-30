@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:21+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../library/typing.rst:3
 msgid ":mod:`typing` --- Support for type hints"
-msgstr ":mod:`typing` —— 类型注解支持"
+msgstr ":mod:`typing` —— 对类型提示的支持"
 
 #: ../../library/typing.rst:16
 msgid "**Source code:** :source:`Lib/typing.py`"
@@ -34,14 +34,14 @@ msgid ""
 "The Python runtime does not enforce function and variable type annotations. "
 "They can be used by third party tools such as type checkers, IDEs, linters, "
 "etc."
-msgstr "Python 运行时不强制执行函数和变量类型注解，但这些注解可用于类型检查器、IDE、静态检查器等第三方工具。"
+msgstr "Python 运行时不强制要求函数与变量类型注解。它们可用于类型检查器、IDE、错误检查器等第三方工具。"
 
 #: ../../library/typing.rst:26
 msgid ""
 "This module provides runtime support for type hints. For the original "
 "specification of the typing system, see :pep:`484`. For a simplified "
 "introduction to type hints, see :pep:`483`."
-msgstr ""
+msgstr "本模块提供对类型提示的运行时支持。对于类型系统的原始说明，请参阅 :pep:`484`。一个更简明的介绍是 :pep:`483`。"
 
 #: ../../library/typing.rst:31
 msgid ""
@@ -54,8 +54,8 @@ msgid ""
 "type :class:`str` and the return type :class:`str`. Subtypes are accepted as"
 " arguments."
 msgstr ""
-"``greeting`` 函数中，参数 ``name`` 的类型是 :class:`str`，返回类型也是 "
-":class:`str`。子类型也可以当作参数。"
+"``greeting`` 函数中，参数 ``name`` 的类型应是 :class:`str`，返回类型是 "
+":class:`str`。子类型也可以作为参数。"
 
 #: ../../library/typing.rst:40
 msgid ""
@@ -77,16 +77,19 @@ msgid ""
 "`\"Typing cheat sheet\" "
 "<https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_"
 msgstr ""
+"`\"类型系统备忘单\" <https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_"
 
 #: ../../library/typing.rst:50
 msgid "A quick overview of type hints (hosted at the mypy docs)"
-msgstr ""
+msgstr "关于类型提示的概览（发布于 mypy 文档站点）"
 
 #: ../../library/typing.rst:55
 msgid ""
 "\"Type System Reference\" section of `the mypy docs "
 "<https://mypy.readthedocs.io/en/stable/index.html>`_"
 msgstr ""
+"`mypy 文档 <https://mypy.readthedocs.io/en/stable/index.html>`_ 的 \"Type "
+"System Reference\" 章节"
 
 #: ../../library/typing.rst:53
 msgid ""
@@ -94,17 +97,19 @@ msgid ""
 "broadly apply to most Python type checkers. (Some parts may still be "
 "specific to mypy.)"
 msgstr ""
+"Python 类型系统是通过 PEP 来标准化的，因此该参考应当广泛适用于大多数 Python 类型检查器。 （但某些部分仍然是 mypy 专属的。）"
 
 #: ../../library/typing.rst:59
 msgid ""
 "`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
 msgstr ""
+"`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
 
 #: ../../library/typing.rst:58
 msgid ""
 "Type-checker-agnostic documentation written by the community detailing type "
 "system features, useful typing related tools and typing best practices."
-msgstr ""
+msgstr "由社区编写的不限定具体类型检查器的文档，详细讲解了类型系统特性，有用的类型相关工具以及类型的最佳实践。"
 
 #: ../../library/typing.rst:65
 msgid "Relevant PEPs"
@@ -116,6 +121,7 @@ msgid ""
 " number of PEPs have modified and enhanced Python's framework for type "
 "annotations:"
 msgstr ""
+"自从在 :pep:`484` 和 :pep:`483` 中首次引入类型提示之来，已有多个 PEP 对 Python 的类型标注框架进行了修改和加强:"
 
 #: ../../library/typing.rst:77
 msgid ":pep:`526`: Syntax for Variable Annotations"
@@ -835,7 +841,7 @@ msgstr ""
 
 #: ../../library/typing.rst:835
 msgid "See :pep:`675` for more details."
-msgstr "See :pep:`675` for more details."
+msgstr "请参阅 :pep:`675` 了解详情。"
 
 #: ../../library/typing.rst:841
 msgid ""
@@ -2104,7 +2110,7 @@ msgstr "让静态类型检查器确认一行代码是不可达的。"
 
 #: ../../library/typing.rst:2249
 msgid "Example::"
-msgstr "示例："
+msgstr "示例::"
 
 #: ../../library/typing.rst:2260
 msgid ""
@@ -2631,7 +2637,7 @@ msgstr ""
 
 #: ../../library/typing.rst:2751
 msgid "Deprecated aliases"
-msgstr ""
+msgstr "已弃用的别名"
 
 #: ../../library/typing.rst:2753
 msgid ""

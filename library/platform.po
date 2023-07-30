@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:18+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -82,7 +82,7 @@ msgstr "在 macOS (也许还有其他平台) 上，可执行文件可能是包�
 msgid ""
 "To get at the \"64-bitness\" of the current interpreter, it is more reliable"
 " to query the :data:`sys.maxsize` attribute::"
-msgstr ""
+msgstr "要获取当前解释器的“64 位性”，更可靠的做法是查询 :data:`sys.maxsize` 属性::"
 
 #: ../../library/platform.rst:56
 msgid ""

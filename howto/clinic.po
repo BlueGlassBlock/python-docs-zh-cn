@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:44+0000\n"
+"POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:11+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -35,7 +35,7 @@ msgstr "Larry Hastings"
 
 #: ../../howto/clinic.rst:11
 msgid "**Source code:** :source:`Tools/clinic/clinic.py`."
-msgstr ""
+msgstr "**源代码:** :source:`Tools/clinic/clinic.py`。"
 
 #: ../../howto/clinic.rst:7
 msgid "Abstract"
@@ -48,28 +48,30 @@ msgid ""
 " \"builtins\", module level functions, and class methods. This document is "
 "divided in four major sections:"
 msgstr ""
+"Argument Clinic 是一个针对 CPython 的 C 文件预处理器。 "
+"其目标是自动处理所有与“内置函数”、模块层级函数和类方法的参数解析相关的代码。 本文档分为四个主要小节:"
 
 #: ../../howto/clinic.rst:21
 msgid ""
 ":ref:`clinic-background` talks about the basic concepts and goals of "
 "Argument Clinic."
-msgstr ""
+msgstr ":ref:`clinic-background` 谈论有关 Argument Clinic 的基本概念和目标。"
 
 #: ../../howto/clinic.rst:23
 msgid ""
 ":ref:`clinic-reference` describes the command-line interface and Argument "
 "Clinic terminology."
-msgstr ""
+msgstr ":ref:`clinic-reference` 描述了命令行接口和 Argument Clinic 相关术语。"
 
 #: ../../howto/clinic.rst:25
 msgid ""
 ":ref:`clinic-tutorial` guides you through all the steps required to adapt an"
 " existing C function to Argument Clinic."
-msgstr ""
+msgstr ":ref:`clinic-tutorial` 指导你熟悉将现有 C 函数适配至 Argument Clinic 所需的所有步骤。"
 
 #: ../../howto/clinic.rst:27
 msgid ":ref:`clinic-howtos` details how to handle specific tasks."
-msgstr ""
+msgstr ":ref:`clinic-howtos` 详细介绍如何处理一些特定的任务。"
 
 #: ../../howto/clinic.rst:32
 msgid ""
@@ -81,6 +83,9 @@ msgid ""
 "that ships with the next version of CPython *could* be totally incompatible "
 "and break all your code."
 msgstr ""
+"Argument Clinic 被视为仅供 CPython 内部使用。 它不支持在 CPython 以外的文件中使用，也不保证未来版本会向下兼容。 "
+"换句话说：如果维护的是 CPython 的外部 C 扩展，欢迎在你自己的代码中试用 Argument Clinic. 但是 Argument "
+"Clinic 当前版本与新版 CPython 附带的版本 *可能* 完全不兼容并会破坏你的所有代码。"
 
 #: ../../howto/clinic.rst:45
 msgid "Background"
@@ -88,7 +93,7 @@ msgstr "背景"
 
 #: ../../howto/clinic.rst:49
 msgid "The goals of Argument Clinic"
-msgstr ""
+msgstr "Argument Clinic 的设计目标"
 
 #: ../../howto/clinic.rst:51
 msgid ""
@@ -770,7 +775,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:699
 msgid "How to convert functions using ``PyArg_UnpackTuple``"
-msgstr ""
+msgstr "如何转换使用 ``PyArg_UnpackTuple`` 的函数"
 
 #: ../../howto/clinic.rst:701
 msgid ""
@@ -789,7 +794,7 @@ msgstr "目前，所生成的代码将会用到 :c:func:`PyArg_ParseTuple` ，�
 
 #: ../../howto/clinic.rst:712
 msgid "How to use optional groups"
-msgstr ""
+msgstr "如何使用可选分组"
 
 #: ../../howto/clinic.rst:714
 msgid ""
@@ -858,7 +863,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:779
 msgid "Notes:"
-msgstr "注："
+msgstr "注释："
 
 #: ../../howto/clinic.rst:781
 msgid ""
@@ -902,7 +907,7 @@ msgstr "可选组 *仅限* 用于过时代码。请勿在新的代码中使用�
 #: ../../howto/clinic.rst:805
 msgid ""
 "How to use real Argument Clinic converters, instead of \"legacy converters\""
-msgstr ""
+msgstr "如何使用真正的 Argument Clinic 转换器，而不是“旧式转换器”"
 
 #: ../../howto/clinic.rst:807
 msgid ""
@@ -1457,7 +1462,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:973
 msgid "How to use the ``Py_buffer`` converter"
-msgstr ""
+msgstr "如何使用 ``Py_buffer`` 转换器"
 
 #: ../../howto/clinic.rst:975
 msgid ""
@@ -1472,7 +1477,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:984
 msgid "How to use advanced converters"
-msgstr ""
+msgstr "如何使用高级转换器"
 
 #: ../../howto/clinic.rst:986
 msgid ""
@@ -1515,7 +1520,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1017
 msgid "How to assign default values to parameter"
-msgstr ""
+msgstr "如何给形参赋默认值"
 
 #: ../../howto/clinic.rst:1019
 msgid ""
@@ -1586,7 +1591,7 @@ msgstr "（未来可能需要加以细化，以便可以采用 ``CONSTANT - 1`` 
 
 #: ../../howto/clinic.rst:1068
 msgid "Expressions as default values"
-msgstr ""
+msgstr "表达式作为默认值"
 
 #: ../../howto/clinic.rst:1070
 msgid ""
@@ -1672,7 +1677,7 @@ msgstr "元组、列表、集合、字典的字面量"
 
 #: ../../howto/clinic.rst:1127
 msgid "How to use return converters"
-msgstr ""
+msgstr "如何使用返回转换器"
 
 #: ../../howto/clinic.rst:1129
 msgid ""
@@ -1764,7 +1769,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1202
 msgid "How to clone existing functions"
-msgstr ""
+msgstr "如何克隆现有的函数"
 
 #: ../../howto/clinic.rst:1204
 msgid ""
@@ -1833,7 +1838,7 @@ msgstr "另外，要克隆的函数必须在当前文件中已有定义。"
 
 #: ../../howto/clinic.rst:1246
 msgid "How to call Python code"
-msgstr ""
+msgstr "如何调用 Python 代码"
 
 #: ../../howto/clinic.rst:1248
 msgid ""
@@ -1865,7 +1870,7 @@ msgstr "以下例子包含了 Python 块，用于在 C 代码中添加一个静�
 
 #: ../../howto/clinic.rst:1276
 msgid "How to use the \"self converter\""
-msgstr ""
+msgstr "如何使用“自转换器”"
 
 #: ../../howto/clinic.rst:1278
 msgid ""
@@ -1901,7 +1906,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1328
 msgid "How to use the \"defining class\" converter"
-msgstr ""
+msgstr "如何使用“定义类”转换器"
 
 #: ../../howto/clinic.rst:1330
 msgid ""
@@ -1964,7 +1969,7 @@ msgstr "参见  :pep:`573`。"
 
 #: ../../howto/clinic.rst:1392
 msgid "How to write a custom converter"
-msgstr ""
+msgstr "如何编写自定义转换器"
 
 #: ../../howto/clinic.rst:1394
 msgid ""
@@ -2086,7 +2091,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1497
 msgid "How to write a custom return converter"
-msgstr ""
+msgstr "如何编写自定义返回转换器"
 
 #: ../../howto/clinic.rst:1499
 msgid ""
@@ -2106,7 +2111,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1512
 msgid "How to convert ``METH_O`` and ``METH_NOARGS`` functions"
-msgstr ""
+msgstr "如何转换 ``METH_O`` 和 ``METH_NOARGS`` 函数"
 
 #: ../../howto/clinic.rst:1514
 msgid ""
@@ -2129,7 +2134,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1534
 msgid "How to convert ``tp_new`` and ``tp_init`` functions"
-msgstr ""
+msgstr "如何转换 ``tp_new`` 和 ``tp_init`` 函数"
 
 #: ../../howto/clinic.rst:1536
 msgid ""
@@ -2170,7 +2175,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1558
 msgid "How to change and redirect Clinic's output"
-msgstr ""
+msgstr "如何修改和重定向 Clinic 的输出"
 
 #: ../../howto/clinic.rst:1560
 msgid ""
@@ -2641,7 +2646,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1841
 msgid "How to use the ``#ifdef`` trick"
-msgstr ""
+msgstr "如何使用 ``#ifdef`` 技巧"
 
 #: ../../howto/clinic.rst:1843
 msgid ""
@@ -2729,7 +2734,7 @@ msgstr ""
 
 #: ../../howto/clinic.rst:1922
 msgid "How to use Argument Clinic in Python files"
-msgstr ""
+msgstr "如何在 Python 文件中使用 Argument Clinic"
 
 #: ../../howto/clinic.rst:1924
 msgid ""
