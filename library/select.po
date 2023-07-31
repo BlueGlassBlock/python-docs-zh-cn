@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Zombie110year <zombie110year@gmail.com>, 2021
-# 黄瓜小王子 <linxzh1989@gmail.com>, 2021
+# 林行众 <linxzh1989@gmail.com>, 2021
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Bryan不可思议, 2023
@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:13+0000\n"
+"POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -97,6 +97,8 @@ msgid ""
 ":c:func:`!devpoll` will fail. If your program increases this value, "
 ":c:func:`!devpoll` may return an incomplete list of active file descriptors."
 msgstr ""
+":c:func:`!devpoll` 对象与实例化时允许的文件描述符数量相关联。 如果你的程序减少该值，:c:func:`!devpoll` 将会失败。"
+" 如果你的程序增加该值，:c:func:`!devpoll` 可能会返回不完整的活动文件描述符列表。"
 
 #: ../../library/select.rst:50 ../../library/select.rst:79
 #: ../../library/select.rst:106

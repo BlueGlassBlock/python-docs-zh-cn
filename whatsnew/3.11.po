@@ -4291,6 +4291,9 @@ msgid ""
 "new_type)``: see the :c:func:`Py_SET_TYPE()` function (available since "
 "Python 3.9). For backward compatibility, this macro can be used::"
 msgstr ""
+"由于 :c:func:`Py_TYPE()` 已改为内联静态函数，因此 ``Py_TYPE(obj) = new_type`` 必须换成 "
+"``Py_SET_TYPE(obj, new_type)``: 参见 :c:func:`Py_SET_TYPE()` 函数（自 Python 3.9 "
+"起可用）。 为保持向下兼容，可以使用这个宏::"
 
 #: ../../whatsnew/3.11.rst:2371 ../../whatsnew/3.11.rst:2385
 msgid "(Contributed by Victor Stinner in :issue:`39573`.)"
@@ -4303,6 +4306,9 @@ msgid ""
 "new_size)``: see the :c:func:`Py_SET_SIZE()` function (available since "
 "Python 3.9). For backward compatibility, this macro can be used::"
 msgstr ""
+"由于 :c:func:`Py_SIZE()` 已改为内联静态函数，因此 ``Py_SIZE(obj) = new_size`` 必须换成 "
+"``Py_SET_SIZE(obj, new_size)``: 参见 :c:func:`Py_SET_SIZE()` 函数（自 Python 3.9 "
+"起可用）。 为保持向下兼容，可以使用这个宏::"
 
 #: ../../whatsnew/3.11.rst:2387
 msgid ""
@@ -4312,6 +4318,10 @@ msgid ""
 "explicitly include the header files after ``#include <Python.h>``. "
 "(Contributed by Victor Stinner in :issue:`45434`.)"
 msgstr ""
+"在 ``Py_LIMITED_API`` 宏被设为 ``0x030b0000`` (Python 3.11) 或更高版本时，``<Python.h>``"
+" 将不再包含头文件 ``<stdlib.h>``, ``<stdio.h>``, ``<errno.h>`` 和 ``<string.h>``。 C "
+"扩展应在 ``#include <Python.h>`` 之后显式地包括头文件。 （由 Victor Stinner 在 :issue:`45434` "
+"中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2393
 msgid ""
@@ -4323,6 +4333,11 @@ msgid ""
 "If they have been included directly, consider including ``Python.h`` "
 "instead. (Contributed by Victor Stinner in :issue:`35134`.)"
 msgstr ""
+"非受限 API 文件 ``cellobject.h``, ``classobject.h``, ``code.h``, ``context.h``, "
+"``funcobject.h``, ``genobject.h`` 和 ``longintrepr.h`` 已被移至 "
+"``Include/cpython`` 目录。 此外，还移除了 ``eval.h`` 头文件。 这些文件不能被直接包括，因为它们已经被包括在 "
+"``Python.h`` 中了：参见 :ref:`包括文件 <api-includes>`。如果它们已被直接包括，请考虑改为包括 "
+"``Python.h``。 （由 Victor Stinner 在 :issue:`35134` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2401
 msgid ""
@@ -4331,6 +4346,8 @@ msgid ""
 "structures which are not available in the limited C API. (Contributed by "
 "Victor Stinner in :issue:`46007`.)"
 msgstr ""
+":c:func:`PyUnicode_CHECK_INTERNED` 宏已被排除在受限 C API 之外。 它从未在那里被使用，因为它使用了受限 C "
+"API 中不可用的内部结构体。 （由 Victor Stinner 在 :issue:`46007` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2406
 msgid ""
@@ -4338,6 +4355,8 @@ msgid ""
 "``#include <Python.h>``, it's no longer needed to add ``#include "
 "<frameobject.h>``:"
 msgstr ""
+"以下帧函数和类型现在可通过 ``#include <Python.h>`` 直接使用，不再需要添加 ``#include "
+"<frameobject.h>``:"
 
 #: ../../whatsnew/3.11.rst:2410
 msgid ":c:func:`PyFrame_Check`"
@@ -4520,7 +4539,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2491
 msgid "Changes of the :c:type:`PyThreadState` structure members:"
-msgstr ""
+msgstr ":c:type:`PyThreadState` 结构体成员的变化:"
 
 #: ../../whatsnew/3.11.rst:2493
 msgid ""
@@ -4528,6 +4547,9 @@ msgid ""
 "Python 3.9 by :issue:`40429`). Warning: the function returns a :term:`strong"
 " reference`, need to call :c:func:`Py_XDECREF`."
 msgstr ""
+"``frame``: 已被移除，请使用 :c:func:`PyThreadState_GetFrame` (由 :issue:`40429` 添加到 "
+"Python 3.9 的函数)。 警告：该函数返回一个 :term:`strong reference`，需要调用 "
+":c:func:`Py_XDECREF`。"
 
 #: ../../whatsnew/3.11.rst:2497
 msgid ""
@@ -4535,12 +4557,16 @@ msgid ""
 ":c:func:`PyThreadState_LeaveTracing` (functions added to Python 3.11 by "
 ":issue:`43760`)."
 msgstr ""
+"``tracing``: 已被更改，请使用 :c:func:`PyThreadState_EnterTracing` 和 "
+":c:func:`PyThreadState_LeaveTracing` (由:issue:`43760` 添加到 Python 3.11 的函数)。"
 
 #: ../../whatsnew/3.11.rst:2500
 msgid ""
 "``recursion_depth``: removed, use ``(tstate->recursion_limit - "
 "tstate->recursion_remaining)`` instead."
 msgstr ""
+"``recursion_depth``: 已被移除，请使用 ``(tstate->recursion_limit - "
+"tstate->recursion_remaining)`` 代替。"
 
 #: ../../whatsnew/3.11.rst:2502
 msgid "``stackcheck_counter``: removed."
