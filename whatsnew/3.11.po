@@ -4200,6 +4200,8 @@ msgid ""
 "second parameter, instead of ``PyFrameObject*``. See :pep:`523` for more "
 "details of how to use this function pointer type."
 msgstr ""
+"现在 :c:func:`_PyFrameEvalFunction` 接受 ``_PyInterpreterFrame*`` 作为其第二个形参，而不是 "
+"``PyFrameObject*``。 请参阅 :pep:`523` 了解如何使用此函数指针类型的更多细节。"
 
 #: ../../whatsnew/3.11.rst:2294
 msgid ""
@@ -4209,6 +4211,9 @@ msgid ""
 "object using the compiler, then get a modified version with the ``replace`` "
 "method."
 msgstr ""
+"现在 :c:func:`PyCode_New` 和 :c:func:`PyCode_NewWithPosOnlyArgs` 接受一个额外的 "
+"``exception_table`` 参数。 如果可能，应当必须使用这些函数。 获取自定义的代码对象：使用编译器创建一个代码对象，然后使用 "
+"``replace`` 方法得到一个经过修改的版本。"
 
 #: ../../whatsnew/3.11.rst:2300
 msgid ""
@@ -4219,6 +4224,11 @@ msgid ""
 "to access them via the C API. (Contributed by Brandt Bucher in "
 ":issue:`46841` and Ken Jin in :gh:`92154` and :gh:`94936`.)"
 msgstr ""
+":c:type:`PyCodeObject` 不再具有 ``co_code``, ``co_varnames``, ``co_cellvars`` 和 "
+"``co_freevars`` 字段。 请分别改用 :c:func:`PyCode_GetCode`, "
+":c:func:`PyCode_GetVarnames`, :c:func:`PyCode_GetCellvars` 和 "
+":c:func:`PyCode_GetFreevars` 通过 C API 来访问它们。 （由 Brandt Bucher 在 "
+":issue:`46841` 以及 Ken Jin 在 :gh:`92154` 和 :gh:`94936` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2308
 msgid ""
@@ -4227,20 +4237,22 @@ msgid ""
 "They should be replaced by the new macros ``Py_TRASHCAN_BEGIN`` and "
 "``Py_TRASHCAN_END``."
 msgstr ""
+"旧的垃圾桶宏 (``Py_TRASHCAN_SAFE_BEGIN``/``Py_TRASHCAN_SAFE_END``) 现在已被弃用。 "
+"它们应该由新的宏 ``Py_TRASHCAN_BEGIN`` 和 ``Py_TRASHCAN_END`` 代替。"
 
 #: ../../whatsnew/3.11.rst:2312
 msgid "A tp_dealloc function that has the old macros, such as::"
-msgstr ""
+msgstr "带有旧版宏的 tp_dealloc 函数，例如::"
 
 #: ../../whatsnew/3.11.rst:2323
 msgid "should migrate to the new macros as follows::"
-msgstr ""
+msgstr "应当按照以下方式迁移到新版宏::"
 
 #: ../../whatsnew/3.11.rst:2334
 msgid ""
 "Note that ``Py_TRASHCAN_BEGIN`` has a second argument which should be the "
 "deallocation function it is in."
-msgstr ""
+msgstr "请注意 ``Py_TRASHCAN_BEGIN`` 的第二个参数应该是它所属的取消分配函数。"
 
 #: ../../whatsnew/3.11.rst:2337
 msgid ""
@@ -4248,6 +4260,7 @@ msgid ""
 "following macros and use them throughout the code (credit: these were copied"
 " from the ``mypy`` codebase)::"
 msgstr ""
+"要在同一代码库中支持旧版本的 Python，可以定义以下的宏并在整个代码中使用它们 (版权声明：这些宏是从 ``mypy`` 代码库中拷贝的)::"
 
 #: ../../whatsnew/3.11.rst:2349
 msgid ""
@@ -4256,6 +4269,9 @@ msgid ""
 "function (:c:member:`PyTypeObject.tp_traverse`). (Contributed by Victor "
 "Stinner in :issue:`44263`.)"
 msgstr ""
+"现在如果一个类型定义了 :c:macro:`Py_TPFLAGS_HAVE_GC` 旗标但没有遍历函数 "
+"(:c:member:`PyTypeObject.tp_traverse`) 则 :c:func:`PyType_Ready` 函数将引发一个错误。 "
+"（由 Victor Stinner 在 :issue:`44263` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2354
 msgid ""
@@ -4264,6 +4280,9 @@ msgid ""
 " :ref:`static types <static-types>`. (Contributed by Erlend E. Aasland in "
 ":issue:`43908`)"
 msgstr ""
+"带有 :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` 旗标的堆类型现在可以继承 :pep:`590` vectorcall "
+"协议。 在之前版本中，这只适用于 :ref:`静态类型 <static-types>`。（由 Erlend E. Aasland 在 "
+":issue:`43908` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:2359
 msgid ""
