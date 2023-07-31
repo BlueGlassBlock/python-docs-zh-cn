@@ -1602,10 +1602,12 @@ msgid ""
 " as will be removed in Python 3.14. Use *onexc* instead. (Contributed by "
 "Irit Katriel in :gh:`102828`.)"
 msgstr ""
+":mod:`shutil`: :func:`shutil.rmtree` 的 *onerror* 参数已被弃用并将在 Python 3.14 中移除。 "
+"请改用 *onexc*。 （由 Irit Katriel 在 :gh:`102828` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1010
 msgid ":mod:`sqlite3`:"
-msgstr ""
+msgstr ":mod:`sqlite3`:"
 
 #: ../../whatsnew/3.12.rst:999
 msgid ""
@@ -1614,6 +1616,9 @@ msgid ""
 "tailor them to your needs. (Contributed by Erlend E. Aasland in "
 ":gh:`90016`.)"
 msgstr ""
+":ref:`默认适配器和转换器 <sqlite3-default-converters>` 现在已被弃用，请使用 "
+":ref:`sqlite3-adapter-converter-recipes` 并根据你的需要调整它们。 （由 Erlend E. Aasland 在"
+" :gh:`90016` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1005
 msgid ""
@@ -1636,6 +1641,9 @@ msgid ""
 ":data:`sys.last_traceback` fields are deprecated. Use :data:`sys.last_exc` "
 "instead. (Contributed by Irit Katriel in :gh:`102778`.)"
 msgstr ""
+":mod:`sys`: :data:`sys.last_type`, :data:`sys.last_value` 和 "
+":data:`sys.last_traceback` 字段已被弃用。 请改用 :data:`sys.last_exc`。 （由 Irit Katriel"
+" 在 :gh:`102778` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1016
 msgid ""
@@ -1643,6 +1651,8 @@ msgid ""
 "deprecated until Python 3.14, when ``'data'`` filter will become the "
 "default. See :ref:`tarfile-extraction-filter` for details."
 msgstr ""
+":mod:`tarfile`: 提取 tar 归档而不指定 *filter* 的做法已被弃用直到 Python 3.14，在该版本中 "
+"``'data'`` 将成为默认过滤器。 请参阅 :ref:`tarfile-extraction-filter` 了解详情。"
 
 #: ../../whatsnew/3.12.rst:1020
 msgid ""
