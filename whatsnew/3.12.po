@@ -2124,6 +2124,8 @@ msgid ""
 ":class:`configparser.ConfigParser` no longer has a ``readfp`` method. Use "
 ":meth:`~configparser.ConfigParser.read_file` instead."
 msgstr ""
+":class:`configparser.ConfigParser` 不再具有 ``readfp`` 方法。 请改用 "
+":meth:`~configparser.ConfigParser.read_file`。"
 
 #: ../../whatsnew/3.12.rst:1213
 msgid ""
