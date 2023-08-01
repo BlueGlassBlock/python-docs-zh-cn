@@ -5,8 +5,8 @@
 # 
 # Translators:
 # WH-2099 <wh2099@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-29 02:37+0000\n"
 "PO-Revision-Date: 2023-05-24 02:23+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3234,7 +3234,7 @@ msgstr ":ref:`整个 distutils 包 <distutils-deprecated>`"
 
 #: ../../whatsnew/3.11.rst:1879
 msgid "The :mod:`imp` module"
-msgstr ""
+msgstr ":mod:`imp` 模块"
 
 #: ../../whatsnew/3.11.rst:1880
 msgid "The :class:`typing.io <typing.IO>` namespace"
@@ -3250,23 +3250,23 @@ msgstr ":func:`!cgi.log`"
 
 #: ../../whatsnew/3.11.rst:1883
 msgid ":func:`importlib.find_loader`"
-msgstr ""
+msgstr ":func:`importlib.find_loader`"
 
 #: ../../whatsnew/3.11.rst:1884
 msgid ":meth:`importlib.abc.Loader.module_repr`"
-msgstr ""
+msgstr ":meth:`importlib.abc.Loader.module_repr`"
 
 #: ../../whatsnew/3.11.rst:1885
 msgid ":meth:`importlib.abc.MetaPathFinder.find_module`"
-msgstr ""
+msgstr ":meth:`importlib.abc.MetaPathFinder.find_module`"
 
 #: ../../whatsnew/3.11.rst:1886
 msgid ":meth:`importlib.abc.PathEntryFinder.find_loader`"
-msgstr ""
+msgstr ":meth:`importlib.abc.PathEntryFinder.find_loader`"
 
 #: ../../whatsnew/3.11.rst:1887
 msgid ":meth:`importlib.abc.PathEntryFinder.find_module`"
-msgstr ""
+msgstr ":meth:`importlib.abc.PathEntryFinder.find_module`"
 
 #: ../../whatsnew/3.11.rst:1888
 msgid ":meth:`!importlib.machinery.BuiltinImporter.find_module`"
@@ -3294,7 +3294,7 @@ msgstr ":meth:`!importlib.machinery.FrozenLoader.module_repr`"
 
 #: ../../whatsnew/3.11.rst:1894
 msgid ":meth:`importlib.machinery.PathFinder.find_module`"
-msgstr ""
+msgstr ":meth:`importlib.machinery.PathFinder.find_module`"
 
 #: ../../whatsnew/3.11.rst:1895
 msgid ":meth:`!importlib.machinery.WindowsRegistryFinder.find_module`"
@@ -3302,7 +3302,7 @@ msgstr ":meth:`!importlib.machinery.WindowsRegistryFinder.find_module`"
 
 #: ../../whatsnew/3.11.rst:1896
 msgid ":func:`importlib.util.module_for_loader`"
-msgstr ""
+msgstr ":func:`importlib.util.module_for_loader`"
 
 #: ../../whatsnew/3.11.rst:1897
 msgid ":func:`!importlib.util.set_loader_wrapper`"
@@ -3314,11 +3314,11 @@ msgstr ":func:`!importlib.util.set_package_wrapper`"
 
 #: ../../whatsnew/3.11.rst:1899
 msgid ":class:`pkgutil.ImpImporter`"
-msgstr ""
+msgstr ":class:`pkgutil.ImpImporter`"
 
 #: ../../whatsnew/3.11.rst:1900
 msgid ":class:`pkgutil.ImpLoader`"
-msgstr ""
+msgstr ":class:`pkgutil.ImpLoader`"
 
 #: ../../whatsnew/3.11.rst:1901
 msgid ":meth:`pathlib.Path.link_to`"
@@ -4376,6 +4376,8 @@ msgid ""
 " computed lazily. The :c:func:`PyFrame_GetBack` function must be called "
 "instead."
 msgstr ""
+"现在 Python 帧对象是惰性创建的。 一个附带影响是由于 ``f_back`` 成员的值现在也是惰性地计算出来的，因此不能直接访问该成员。 "
+"必须改为调用 :c:func:`PyFrame_GetBack` 函数。"
 
 #: ../../whatsnew/3.11.rst:2461
 msgid ""
@@ -4817,7 +4819,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2700
 msgid "Notable Changes in 3.11.4"
-msgstr ""
+msgstr "3.11.4 中的重要变化"
 
 #: ../../whatsnew/3.11.rst:2703
 msgid "tarfile"
