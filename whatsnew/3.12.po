@@ -1963,6 +1963,9 @@ msgid ""
 "This will be removed in 3.14 for a significant reduction in code volume and "
 "maintenance burden. (Contributed by Raymond Hettinger in :gh:`101588`.)"
 msgstr ""
+":mod:`itertools`: 该模块具有对 copy, deepcopy 和 pickle "
+"等操作的未写入文档的、低效的、历史上充满问题的且不稳定的支持。 这将在 3.14 中移除以显著减少量和维护负担。 （由 Raymond "
+"Hettinger 在 :gh:`101588` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1138
 msgid ""
@@ -1974,6 +1977,12 @@ msgid ""
 ":func:`~multiprocessing.set_start_method` APIs to explicitly specify when "
 "your code *requires* ``'fork'``.  See :ref:`multiprocessing-start-methods`."
 msgstr ""
+":mod:`multiprocessing`: 默认的 :mod:`multiprocessing` 启动方法在目前默认使用 ``'fork'`` 的 "
+"Linux, BSD 和其他非 macOS 的 POSIX 平台上将改为更安全的启动方法 (:gh:`84559`)。 "
+"为此添加运行时警告将带来糟糕的体验因为大部分代码并不会关心这个问题。 当你的代码 *需要* ``'fork'`` 时请使用 "
+":func:`~multiprocessing.get_context` 或 "
+":func:`~multiprocessing.set_start_method` API 来显式地指明。 参见 "
+":ref:`multiprocessing-start-methods`。"
 
 #: ../../whatsnew/3.12.rst:1146
 msgid ""
@@ -1981,6 +1990,9 @@ msgid ""
 "now raise :exc:`DeprecationWarning`; use :func:`importlib.util.find_spec` "
 "instead. (Contributed by Nikita Sobolev in :gh:`97850`.)"
 msgstr ""
+":mod:`pkgutil`: 现在 :func:`pkgutil.find_loader` 和 :func:`pkgutil.get_loader` "
+"将引发 :exc:`DeprecationWarning`；请改用 :func:`importlib.util.find_spec`。 （由 "
+"Nikita Sobolev 在 :gh:`97850` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1151
 msgid ""
@@ -1988,18 +2000,24 @@ msgid ""
 "``slave_open()`` functions that have been deprecated since Python 2 but only"
 " gained a proper :exc:`DeprecationWarning` in 3.12. Remove them in 3.14."
 msgstr ""
+":mod:`pty`: 该模块有两个未写入文档的 ``master_open()`` 和 ``slave_open()`` 函数自 Python 2 "
+"起即已被弃用但直到 3.12 才添加了相应的 :exc:`DeprecationWarning`。 它们将在 3.14 中移除。"
 
 #: ../../whatsnew/3.12.rst:1155
 msgid ""
 ":mod:`shutil`: The *onerror* argument of :func:`shutil.rmtree` is deprecated"
 " in 3.12, and will be removed in 3.14."
 msgstr ""
+":mod:`shutil`: :func:`shutil.rmtree` 的 *onerror* 参数在 3.12 中已被弃用，并将在 3.14 "
+"中移除。"
 
 #: ../../whatsnew/3.12.rst:1158
 msgid ""
 ":mod:`typing`: :class:`typing.ByteString`, deprecated since Python 3.9, now "
 "causes a :exc:`DeprecationWarning` to be emitted when it is used."
 msgstr ""
+":mod:`typing`: :class:`typing.ByteString` 自 Python 3.9 起已被弃用，现在当被使用时将会发出 "
+":exc:`DeprecationWarning`。"
 
 #: ../../whatsnew/3.12.rst:1161
 msgid ""
@@ -2007,6 +2025,8 @@ msgid ""
 ":class:`xml.etree.ElementTree.Element` is deprecated and will raise an "
 "exception in Python 3.14."
 msgstr ""
+":mod:`xml.etree.ElementTree`: 已弃用对 :class:`xml.etree.ElementTree.Element` "
+"进行真值测试并将在 Python 3.14 中引发异常。"
 
 #: ../../whatsnew/3.12.rst:1164
 msgid ""
@@ -2320,6 +2340,8 @@ msgid ""
 "``imp.lock_held()``, ``imp.acquire_lock()``, ``imp.release_lock()``: the "
 "locking scheme has changed in Python 3.3 to per-module locks."
 msgstr ""
+"``imp.lock_held()``,``imp.acquire_lock()``,``imp.release_lock()``: 加锁方案在 "
+"Python 3.3 中已改为模块级锁。"
 
 #: ../../whatsnew/3.12.rst:1314
 msgid ""
@@ -2327,6 +2349,9 @@ msgid ""
 "``PY_COMPILED``, ``C_EXTENSION``, ``PY_RESOURCE``, ``PKG_DIRECTORY``, "
 "``C_BUILTIN``, ``PY_FROZEN``, ``PY_CODERESOURCE``, ``IMP_HOOK``."
 msgstr ""
+"``imp.find_module()`` 常量: ``SEARCH_ERROR``, ``PY_SOURCE``, ``PY_COMPILED``, "
+"``C_EXTENSION``, ``PY_RESOURCE``, ``PKG_DIRECTORY``, ``C_BUILTIN``, "
+"``PY_FROZEN``, ``PY_CODERESOURCE``, ``IMP_HOOK``。"
 
 #: ../../whatsnew/3.12.rst:1318
 msgid ""
@@ -2336,6 +2361,9 @@ msgid ""
 ":func:`!_pyio.open` is also a static method. (Contributed by Victor Stinner "
 "in :gh:`94169`.)"
 msgstr ""
+":mod:`io`: 移除 ``io.OpenWrapper`` 和 ``_pyio.OpenWrapper``，它们在 Python 3.10 "
+"中已被弃用：请直接改用 :func:`open`。 :func:`open` (:func:`io.open`) 函数是一个内置函数。 自 Python"
+" 3.10 起，:func:`!_pyio.open` 也是一个静态方法。 （由 Victor Stinner 在 :gh:`94169` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1324
 msgid ""

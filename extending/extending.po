@@ -561,6 +561,9 @@ msgid ""
 ":c:func:`PyImport_AppendInittab`, optionally followed by an import of the "
 "module::"
 msgstr ""
+"当嵌入 Python 时，除非 :c:data:`PyImport_Inittab` 表中有条目，否则不会自动调用 "
+":c:func:`!PyInit_spam` 函数。 要将模块添加到初始化表中，请使用 "
+":c:func:`PyImport_AppendInittab`，可选择随后导入该模块::"
 
 #: ../../extending/extending.rst:425
 msgid ""
@@ -1212,6 +1215,9 @@ msgid ""
 "defined a :meth:`!__del__` method.  If this class instance has a reference "
 "count of 1, disposing of it will call its :meth:`!__del__` method."
 msgstr ""
+"让我们跟随控制流进入 :c:func:`PyList_SetItem`。 列表拥有对其所有条目的引用，因此当条目 1 被替换时，它必须丢弃原始条目 1。"
+" 现在我们假设原始条目 1 是一个用户定义类的实例，并进一步假设该类定义了一个 :meth:`!__del__` 方法。 如果该类实例的引用计数为 "
+"1，那么丢弃它时将调用其 :meth:`!__del__` 方法。"
 
 #: ../../extending/extending.rst:1036
 msgid ""
@@ -1223,6 +1229,10 @@ msgid ""
 "this was the last reference to that object, it would free the memory "
 "associated with it, thereby invalidating ``item``."
 msgstr ""
+"由于它是用 Python 编写的，因此 :meth:`!__del__` 方法可以执行任意 Python 代码。 它是否可以使 "
+":c:func:`!bug` 中对 ``item`` 的引用失效呢？ 当然可以！ 假定传入 :c:func:`!bug` 的列表可以被 "
+":meth:`!__del__` 方法访问，它就可以执行一条语句实现 ``del list[0]`` "
+"的效果，假定这是对该对象的最后一次引用，它就会释放与之相关联的内存，从而使 ``item`` 失效。"
 
 #: ../../extending/extending.rst:1044
 msgid ""
@@ -1236,6 +1246,8 @@ msgid ""
 " bug and someone spent a considerable amount of time in a C debugger to "
 "figure out why his :meth:`!__del__` methods would fail..."
 msgstr ""
+"这是一个真实的故事。 一个较旧版本的 Python 曾经包含此问题的变化形式，有人在 C 语言调试器中花费了大量时间，才弄明白为什么他的 "
+":meth:`!__del__` 方法会失败……"
 
 #: ../../extending/extending.rst:1062
 msgid ""
@@ -1467,6 +1479,10 @@ msgid ""
 "function :c:func:`!PySpam_System` is also exported to other extension "
 "modules."
 msgstr ""
+"导出模块是对 :ref:`extending-simpleexample` 部分的 :mod:`!spam` 模块的修改。 函数 "
+":func:`!spam.system` 并不直接调用 C 库函数 :c:func:`system`，而是调用一个函数 "
+":c:func:`!PySpam_System`，这个函数在现实中当然会做一些更复杂的事情（比如在每条命令中添加“sapm”）。 该函数 "
+":c:func:`!PySpam_System` 也会导出给其他扩展模块。"
 
 #: ../../extending/extending.rst:1218
 msgid ""
