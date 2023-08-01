@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:13+0000\n"
+"POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1808,6 +1808,8 @@ msgid ""
 "retrieved from the class's ``__type_params__`` attribute. See :ref:`generic-"
 "classes` for more."
 msgstr ""
+"可以在类名之后的方括号中列出 :ref:`类型形参 <type-params>`。 这将向静态类型检查器指明该类是泛型类。 在运行时，可以从类的 "
+"``__type_params__`` 属性中获取类型参数。 请参阅 :ref:`generic-classes` 了解详情。"
 
 #: ../../reference/compound_stmts.rst:1455
 msgid ""
@@ -2141,7 +2143,7 @@ msgstr ":keyword:`type` 语句也可被用来创建泛型类型别名::"
 msgid ""
 "Except for the :ref:`lazy evaluation <lazy-evaluation>` of the value, this "
 "is equivalent to::"
-msgstr ""
+msgstr "除了会对值执行 :ref:`惰性求值 <lazy-evaluation>` 以外，这等同于::"
 
 #: ../../reference/compound_stmts.rst:1829
 msgid ""
@@ -2149,6 +2151,8 @@ msgid ""
 "scope <annotation-scopes>`. The capitalized names like "
 "``TYPE_PARAMS_OF_ListOrSet`` are not actually bound at runtime."
 msgstr ""
+"这里，``annotation-def`` (不是一个真正的关键字) 指明 :ref:`标注作用域 <annotation-scopes>`。 像 "
+"``TYPE_PARAMS_OF_ListOrSet`` 这样的大写名称不会在运行时实际被绑定。"
 
 #: ../../reference/compound_stmts.rst:1834
 msgid "Footnotes"
@@ -2178,7 +2182,7 @@ msgstr "注册为 :class:`collections.abc.Sequence` 的 Python 类"
 msgid ""
 "a builtin class that has its (CPython) :c:macro:`Py_TPFLAGS_SEQUENCE` bit "
 "set"
-msgstr ""
+msgstr "设置了 (CPython) :c:macro:`Py_TPFLAGS_SEQUENCE` 比特位的内置类"
 
 #: ../../reference/compound_stmts.rst:1844
 #: ../../reference/compound_stmts.rst:1863
@@ -2227,7 +2231,7 @@ msgstr "注册为 :class:`collections.abc.Mapping` 的 Python 类"
 #: ../../reference/compound_stmts.rst:1862
 msgid ""
 "a builtin class that has its (CPython) :c:macro:`Py_TPFLAGS_MAPPING` bit set"
-msgstr ""
+msgstr "设置了 (CPython) :c:macro:`Py_TPFLAGS_MAPPING` 比特位的内置类"
 
 #: ../../reference/compound_stmts.rst:1865
 msgid ""

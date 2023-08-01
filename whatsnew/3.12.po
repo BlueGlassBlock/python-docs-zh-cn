@@ -1660,6 +1660,9 @@ msgid ""
 "for :class:`collections.abc.Hashable` and :class:`collections.abc.Sized`. "
 "(:gh:`94309`.)"
 msgstr ""
+":mod:`typing`: :class:`typing.Hashable` 和 :class:`typing.Sized` 是 "
+":class:`collections.abc.Hashable` 和 :class:`collections.abc.Sized` 的别名。 （参见 "
+":gh:`94309`。）"
 
 #: ../../whatsnew/3.12.rst:1023
 msgid ""
@@ -1668,6 +1671,9 @@ msgid ""
 "Before, the Python implementation emitted :exc:`FutureWarning`, and the C "
 "implementation emitted nothing."
 msgstr ""
+":mod:`xml.etree.ElementTree`: 现在该模块在对 :class:`xml.etree.ElementTree.Element`"
+" 进行真值测试时将发出 :exc:`DeprecationWarning`。 在之前，Python 实现会发出 "
+":exc:`FutureWarning`，而 C 实现则不会发出任何警告。"
 
 #: ../../whatsnew/3.12.rst:1028
 msgid ""
@@ -1854,6 +1860,9 @@ msgid ""
 ":class:`!argparse.BooleanOptionalAction` are deprecated and will be removed "
 "in 3.14. (Contributed by Nikita Sobolev in :gh:`92248`.)"
 msgstr ""
+":mod:`argparse`: :class:`!argparse.BooleanOptionalAction` 的 *type*, "
+"*choices* 和 *metavar* 形参已被弃用并将在 3.14 中移除。 （由 Nikita Sobolev 在 :gh:`92248` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1097
 msgid ""
@@ -1862,6 +1871,8 @@ msgid ""
 "emitted at runtime when they are accessed or used, and will be removed in "
 "Python 3.14:"
 msgstr ""
+":mod:`ast`: 以下 :mod:`ast` 特性自 Python 3.8 起已在文档中声明弃用，现在当运行时如果它们被访问或使用将发出 "
+":exc:`DeprecationWarning`，并将在 Python 3.14 中移除:"
 
 #: ../../whatsnew/3.12.rst:1101
 msgid ":class:`!ast.Num`"
@@ -1877,17 +1888,17 @@ msgstr ":class:`!ast.Bytes`"
 
 #: ../../whatsnew/3.12.rst:1104
 msgid ":class:`!ast.NameConstant`"
-msgstr ""
+msgstr ":class:`!ast.NameConstant`"
 
 #: ../../whatsnew/3.12.rst:1105
 msgid ":class:`!ast.Ellipsis`"
-msgstr ""
+msgstr ":class:`!ast.Ellipsis`"
 
 #: ../../whatsnew/3.12.rst:1107
 msgid ""
 "Use :class:`ast.Constant` instead. (Contributed by Serhiy Storchaka in "
 ":gh:`90953`.)"
-msgstr ""
+msgstr "请改用 :class:`ast.Constant`。 （由 Serhiy Storchaka 在 :gh:`90953` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1110
 msgid ""
@@ -1897,6 +1908,10 @@ msgid ""
 ":class:`collections.abc.Buffer`. (Contributed by Shantanu Jain in "
 ":gh:`91896`.)"
 msgstr ""
+":mod:`collections.abc`: 已弃用 :class:`collections.abc.ByteString`。 推荐改用 "
+":class:`Sequence` 或 :class:`collections.abc.Buffer`。 在类型标中，推荐改用并集，如 ``bytes "
+"| bytearray`` 或 :class:`collections.abc.Buffer`。 （由 Shantanu Jain 在 "
+":gh:`91896` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1115
 msgid ""
@@ -1904,12 +1919,14 @@ msgid ""
 ":func:`email.utils.localtime`. (Contributed by Alan Williams in "
 ":gh:`72346`.)"
 msgstr ""
+":mod:`email`: 已弃用 :func:`email.utils.localtime` 中的 *isdst* 形参。 （由 Alan "
+"Williams 在 :gh:`72346` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1118
 msgid ""
 ":mod:`importlib.abc`: Deprecated the following classes, scheduled for "
 "removal in Python 3.14:"
-msgstr ""
+msgstr ":mod:`importlib.abc`: 已弃用下列类，计划在 Python 3.14 中移除:"
 
 #: ../../whatsnew/3.12.rst:1121
 msgid ":class:`!importlib.abc.ResourceReader`"
@@ -2016,17 +2033,17 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:1177
 msgid "Pending Removal in Future Versions"
-msgstr ""
+msgstr "计划在未来版本中移除"
 
 #: ../../whatsnew/3.12.rst:1179
 msgid ""
 "The following APIs were deprecated in earlier Python versions and will be "
 "removed, although there is currently no date scheduled for their removal."
-msgstr ""
+msgstr "下列 API 在更早的 Python 版本中已被弃用并将被移除，但目前还没有确定它们的移除日期。"
 
 #: ../../whatsnew/3.12.rst:1182
 msgid ":class:`typing.Text` (:gh:`92332`)"
-msgstr ""
+msgstr ":class:`typing.Text` (:gh:`92332`)"
 
 #: ../../whatsnew/3.12.rst:1184
 msgid ""
@@ -2186,39 +2203,39 @@ msgstr "importlib"
 
 #: ../../whatsnew/3.12.rst:1276
 msgid "``imp.NullImporter``"
-msgstr ""
+msgstr "``imp.NullImporter``"
 
 #: ../../whatsnew/3.12.rst:1276
 msgid "Insert ``None`` into ``sys.path_importer_cache``"
-msgstr ""
+msgstr "将 ``None`` 插入到 ``sys.path_importer_cache``"
 
 #: ../../whatsnew/3.12.rst:1277
 msgid "``imp.cache_from_source()``"
-msgstr ""
+msgstr "``imp.cache_from_source()``"
 
 #: ../../whatsnew/3.12.rst:1277
 msgid ":func:`importlib.util.cache_from_source`"
-msgstr ""
+msgstr ":func:`importlib.util.cache_from_source`"
 
 #: ../../whatsnew/3.12.rst:1278
 msgid "``imp.find_module()``"
-msgstr ""
+msgstr "``imp.find_module()``"
 
 #: ../../whatsnew/3.12.rst:1278
 msgid ":func:`importlib.util.find_spec`"
-msgstr ""
+msgstr ":func:`importlib.util.find_spec`"
 
 #: ../../whatsnew/3.12.rst:1279
 msgid "``imp.get_magic()``"
-msgstr ""
+msgstr "``imp.get_magic()``"
 
 #: ../../whatsnew/3.12.rst:1279
 msgid ":attr:`importlib.util.MAGIC_NUMBER`"
-msgstr ""
+msgstr ":attr:`importlib.util.MAGIC_NUMBER`"
 
 #: ../../whatsnew/3.12.rst:1280
 msgid "``imp.get_suffixes()``"
-msgstr ""
+msgstr "``imp.get_suffixes()``"
 
 #: ../../whatsnew/3.12.rst:1280
 msgid ""
@@ -2226,74 +2243,77 @@ msgid ""
 ":attr:`importlib.machinery.EXTENSION_SUFFIXES`, and "
 ":attr:`importlib.machinery.BYTECODE_SUFFIXES`"
 msgstr ""
+":attr:`importlib.machinery.SOURCE_SUFFIXES`, "
+":attr:`importlib.machinery.EXTENSION_SUFFIXES` 和 "
+":attr:`importlib.machinery.BYTECODE_SUFFIXES`"
 
 #: ../../whatsnew/3.12.rst:1281
 msgid "``imp.get_tag()``"
-msgstr ""
+msgstr "``imp.get_tag()``"
 
 #: ../../whatsnew/3.12.rst:1281
 msgid ":attr:`sys.implementation.cache_tag <sys.implementation>`"
-msgstr ""
+msgstr ":attr:`sys.implementation.cache_tag <sys.implementation>`"
 
 #: ../../whatsnew/3.12.rst:1282
 msgid "``imp.load_module()``"
-msgstr ""
+msgstr "``imp.load_module()``"
 
 #: ../../whatsnew/3.12.rst:1282
 msgid ":func:`importlib.import_module`"
-msgstr ""
+msgstr ":func:`importlib.import_module`"
 
 #: ../../whatsnew/3.12.rst:1283
 msgid "``imp.new_module(name)``"
-msgstr ""
+msgstr "``imp.new_module(name)``"
 
 #: ../../whatsnew/3.12.rst:1283
 msgid "``types.ModuleType(name)``"
-msgstr ""
+msgstr "``types.ModuleType(name)``"
 
 #: ../../whatsnew/3.12.rst:1284
 msgid "``imp.reload()``"
-msgstr ""
+msgstr "``imp.reload()``"
 
 #: ../../whatsnew/3.12.rst:1284
 msgid ":func:`importlib.reload`"
-msgstr ""
+msgstr ":func:`importlib.reload`"
 
 #: ../../whatsnew/3.12.rst:1285
 msgid "``imp.source_from_cache()``"
-msgstr ""
+msgstr "``imp.source_from_cache()``"
 
 #: ../../whatsnew/3.12.rst:1285
 msgid ":func:`importlib.util.source_from_cache`"
-msgstr ""
+msgstr ":func:`importlib.util.source_from_cache`"
 
 #: ../../whatsnew/3.12.rst:1288
 msgid "Replace ``imp.load_source()`` with::"
-msgstr ""
+msgstr "将 ``imp.load_source()`` 替换为::"
 
 #: ../../whatsnew/3.12.rst:1303
 msgid "Removed :mod:`!imp` functions and attributes with no replacements:"
-msgstr ""
+msgstr "已移除 :mod:`!imp` 函数和属性并且没有替选项:"
 
 #: ../../whatsnew/3.12.rst:1305
 msgid "undocumented functions:"
-msgstr ""
+msgstr "未写入文档的函数:"
 
 #: ../../whatsnew/3.12.rst:1307
 msgid "``imp.init_builtin()``"
-msgstr ""
+msgstr "``imp.init_builtin()``"
 
 #: ../../whatsnew/3.12.rst:1308
 msgid "``imp.load_compiled()``"
-msgstr ""
+msgstr "``imp.load_compiled()``"
 
 #: ../../whatsnew/3.12.rst:1309
 msgid "``imp.load_dynamic()``"
-msgstr ""
+msgstr "``imp.load_dynamic()``"
 
 #: ../../whatsnew/3.12.rst:1310
 msgid "``imp.load_package()``"
-msgstr ""
+msgstr "``imp.load_package()``"
 
 #: ../../whatsnew/3.12.rst:1312
 msgid ""
@@ -2868,29 +2888,31 @@ msgstr "``PyUnstable_Code_SetExtra()`` (由 ``_PyCode_SetExtra`` 改名而来)"
 msgid ""
 "The original names will continue to be available until the respective API "
 "changes."
-msgstr ""
+msgstr "原有名称将继续可用直到对应的 API 发生改变。"
 
 #: ../../whatsnew/3.12.rst:1617
 msgid "(Contributed by Petr Viktorin in :gh:`101101`.)"
-msgstr ""
+msgstr "（由 Petr Viktorin 在 :gh:`101101` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1619
 msgid ""
 ":pep:`697`: Added API for extending types whose instance memory layout is "
 "opaque:"
-msgstr ""
+msgstr ":pep:`697`: 添加了用于扩展实例的内存布局不透明的 API:"
 
 #: ../../whatsnew/3.12.rst:1622
 msgid ""
 ":c:member:`PyType_Spec.basicsize` can be zero or negative to specify "
 "inheriting or extending the base class size."
-msgstr ""
+msgstr ":c:member:`PyType_Spec.basicsize` 可以为零或负数，用于以指定继承或扩展基类的大小。"
 
 #: ../../whatsnew/3.12.rst:1624
 msgid ""
 ":c:func:`PyObject_GetTypeData` and :c:func:`PyType_GetTypeDataSize` added to"
 " allow access to subclass-specific instance data."
 msgstr ""
+"增加了 :c:func:`PyObject_GetTypeData` 和 :c:func:`PyType_GetTypeDataSize` "
+"以允许访问特定子类的实例数据。"
 
 #: ../../whatsnew/3.12.rst:1626
 msgid ""
