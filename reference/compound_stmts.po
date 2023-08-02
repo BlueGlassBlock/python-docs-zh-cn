@@ -1977,6 +1977,7 @@ msgid ""
 "type checkers, and at runtime, generic objects behave much like their non-"
 "generic counterparts."
 msgstr ""
+"从语义上讲，这表明函数、类或类型别名是类型变量的泛型。 此信息主要供静态类型检查器使用，并且在运行时，泛型对象的行为与其对应的非泛型对象非常相似。"
 
 #: ../../reference/compound_stmts.rst:1651
 msgid ""
@@ -1989,22 +1990,27 @@ msgid ""
 "function (technically, an :ref:`annotation scope <annotation-scopes>`) that "
 "wraps the creation of the generic object."
 msgstr ""
+"类型参数是紧接在函数、类或类型别名的名称之后的方括号 (``[]``) 中声明的。 类型参数可在泛型对象的作用域内访问，但不能在其他地方访问。 "
+"因此，在声明 ``def func[T](): pass`` 之后，模块作用域中就不能再使用 ``T`` 这个名称。 "
+"在下文中，将更精确地描述泛型对象的语义。 类型形参的作用域是用一个特殊函数 (从技术上说，是一个 :ref:`标注作用域 <annotation-"
+"scopes>`) 来模拟的，它封装了泛型对象的创建操作。"
 
 #: ../../reference/compound_stmts.rst:1660
 msgid ""
 "Generic functions, classes, and type aliases have a :attr:`!__type_params__`"
 " attribute listing their type parameters."
-msgstr ""
+msgstr "泛型函数、类和类型别名都有一个 :attr:`!__type_params__` 属性用于列出它们的类型形参。"
 
 #: ../../reference/compound_stmts.rst:1663
 msgid "Type parameters come in three kinds:"
-msgstr ""
+msgstr "类型形参可分为三种:"
 
 #: ../../reference/compound_stmts.rst:1665
 msgid ""
 ":data:`typing.TypeVar`, introduced by a plain name (e.g., ``T``). "
 "Semantically, this represents a single type to a type checker."
 msgstr ""
+":data:`typing.TypeVar`，由一个普通名称 (例如``T``) 引入。 从语义上讲，这对类型检查器来说代表了一个单独类型。"
 
 #: ../../reference/compound_stmts.rst:1667
 msgid ""
