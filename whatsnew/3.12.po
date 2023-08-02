@@ -2135,12 +2135,18 @@ msgid ""
 "project can be installed: it still provides ``distutils``. (Contributed by "
 "Victor Stinner in :gh:`92584`.)"
 msgstr ""
+"``distutils``: 移除了 ``distutils`` 包。 它已在 Python 3.10 中根据 :pep:`632` "
+"\"Deprecate distutils module\" 被弃用。 对于仍然使用 ``distutils`` "
+"且无法升级为使用其他工具的项目，可以安装 ``setuptools`` 项目：它仍然提供了 ``distutils``。 （由 Victor "
+"Stinner 在 :gh:`92584` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1219
 msgid ""
 ":mod:`ensurepip`: Remove the bundled setuptools wheel from :mod:`ensurepip`,"
 " and stop installing setuptools in environments created by :mod:`venv`."
 msgstr ""
+":mod:`ensurepip`: 从 :mod:`ensurepip` 中移除了捆绑的 setuptools wheel，并停止在由 "
+":mod:`venv` 创建的环境中安装 setuptools。"
 
 #: ../../whatsnew/3.12.rst:1222
 msgid ""
@@ -2149,6 +2155,9 @@ msgid ""
 "still be used with ``pip install``, since pip will provide ``setuptools`` in"
 " the build environment it uses for building a package."
 msgstr ""
+"``pip (>= 22.1)`` 不再要求在环境中安装 setuptools。 基于 ``setuptools`` (和基于 "
+"``distutils``) 的包仍然可通过 ``pip install`` 来使用，因为 pip 将在它用于构建包的构建环境中提供 "
+"``setuptools``。"
 
 #: ../../whatsnew/3.12.rst:1228
 msgid ""
@@ -2159,16 +2168,21 @@ msgid ""
 "project should be declared as a dependency and installed separately "
 "(typically, using pip)."
 msgstr ""
+"在默认情况下由 ``venv`` 创建或通过 ``ensurepip`` 初始化的环境将不再提供 ``easy_install``, "
+"``pkg_resources``, ``setuptools`` 和 ``distutils`` 包，因为它们是 ``setuptools`` "
+"包的组成部分。 对于在运行时依赖这些包的项目，应当将 ``setuptools`` 项目声明为依赖项之一并单独安装（通常是使用 pip）。"
 
 #: ../../whatsnew/3.12.rst:1235
 msgid "(Contributed by Pradyun Gedam in :gh:`95299`.)"
-msgstr ""
+msgstr "（由 Pradyun Gedam 在 :gh:`95299` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1237
 msgid ""
 ":mod:`ftplib`: Remove the ``FTP_TLS.ssl_version`` class attribute: use the "
 "*context* parameter instead. (Contributed by Victor Stinner in :gh:`94172`.)"
 msgstr ""
+":mod:`ftplib`: 移除了 ``FTP_TLS.ssl_version`` 类属性：请改用 *context* 形参。 （由 Victor "
+"Stinner 在 :gh:`94172` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1241
 msgid ""
@@ -2178,6 +2192,9 @@ msgid ""
 "extension if it was not present. (Contributed by Victor Stinner in "
 ":gh:`94196`.)"
 msgstr ""
+":mod:`gzip`: 移除了 :class:`gzip.GzipFile` 的 ``filename`` 属性，自 Python 2.6 "
+"起该属性已被弃用，请改用 :attr:`~gzip.GzipFile.name` 属性。 在可写模式下，如果 ``filename`` 属性不存在 "
+"``'.gz'`` 文件扩展名则会添加它。 （由 Victor Stinner 在 :gh:`94196` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1247
 msgid ""
@@ -2187,12 +2204,16 @@ msgid ""
 " implementation of :func:`~hashlib.pbkdf2_hmac()` which is faster. "
 "(Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
+":mod:`hashlib`: 移除了 :func:`hashlib.pbkdf2_hmac()` 的纯 Python 实现，该实现在 Python "
+"3.10 中已被弃用。 Python 3.10 及更新版本需要 OpenSSL 1.1.1 (:pep:`644`)：该 OpenSSL 版本提供了 "
+":func:`~hashlib.pbkdf2_hmac()` 的 C 语言实现，速度更快。 （由 Victor Stinner 在 "
+":gh:`94199` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1253
 msgid ""
 ":mod:`importlib`: Many previously deprecated cleanups in :mod:`importlib` "
 "have now been completed:"
-msgstr ""
+msgstr ":mod:`importlib`: :mod:`importlib` 中许多先前已弃用的清理工作现已完成:"
 
 #: ../../whatsnew/3.12.rst:1256
 msgid ""
