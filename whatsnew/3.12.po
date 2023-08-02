@@ -2431,20 +2431,21 @@ msgid ""
 ":mod:`sqlite3`: The following undocumented :mod:`sqlite3` features, "
 "deprecated in Python 3.10, are now removed:"
 msgstr ""
+":mod:`sqlite3`: 以下未写入文档的 :mod:`sqlite3` 特性，在 Python 3.10 中已被弃用，现在已被移除:"
 
 #: ../../whatsnew/3.12.rst:1339
 msgid "``sqlite3.enable_shared_cache()``"
-msgstr ""
+msgstr "``sqlite3.enable_shared_cache()``"
 
 #: ../../whatsnew/3.12.rst:1340
 msgid "``sqlite3.OptimizedUnicode``"
-msgstr ""
+msgstr "``sqlite3.OptimizedUnicode``"
 
 #: ../../whatsnew/3.12.rst:1342
 msgid ""
 "If a shared cache must be used, open the database in URI mode using the "
 "``cache=shared`` query parameter."
-msgstr ""
+msgstr "如果必须使用共享缓存，请在以 URI 模式打开数据库时使用 ``cache=shared`` 查询参数。"
 
 #: ../../whatsnew/3.12.rst:1345
 msgid ""
@@ -2453,14 +2454,16 @@ msgid ""
 "``OptimizedUnicode`` can either use ``str`` explicitly, or rely on the "
 "default value which is also ``str``."
 msgstr ""
+"``sqlite3.OptimizedUnicode`` 文本工厂函数自 Python 3.3 起已成为 :class:`str` 的一个别名。 "
+"之前将文本工厂设为 ``OptimizedUnicode`` 的代码可以显式地使用 ``str``，或者依赖同样为 ``str`` 的默认值。"
 
 #: ../../whatsnew/3.12.rst:1350
 msgid "(Contributed by Erlend E. Aasland in :gh:`92548`.)"
-msgstr ""
+msgstr "（由 Erlend E. Aasland 在 :gh:`92548` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1352
 msgid ":mod:`ssl`:"
-msgstr ""
+msgstr ":mod:`ssl`:"
 
 #: ../../whatsnew/3.12.rst:1354
 msgid ""
@@ -2468,6 +2471,9 @@ msgid ""
 "3.6: use :func:`os.urandom` or :func:`ssl.RAND_bytes` instead. (Contributed "
 "by Victor Stinner in :gh:`94199`.)"
 msgstr ""
+"移除了 :func:`!ssl.RAND_pseudo_bytes` 函数，它在 Python 3.6 中已被弃用：请改用 "
+":func:`os.urandom` 或 :func:`ssl.RAND_bytes`。 （由 Victor Stinner 在 :gh:`94199`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1358
 msgid ""
@@ -2476,6 +2482,9 @@ msgid ""
 "uses the :func:`!ssl.match_hostname` function. (Contributed by Victor "
 "Stinner in :gh:`94199`.)"
 msgstr ""
+"移除了 :func:`!ssl.match_hostname` 函数。 它在 Python 3.7 中已被弃用。 OpenSSL 自 Python "
+"3.7 起将会执行主机名匹配，Python 已不再使用 :func:`!ssl.match_hostname` 函数。 （由 Victor "
+"Stinner 在 :gh:`94199` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1364
 msgid ""
@@ -2487,14 +2496,20 @@ msgid ""
 "`CWE-295 <https://cwe.mitre.org/data/definitions/295.html>`_: Improper "
 "Certificate Validation. (Contributed by Victor Stinner in :gh:`94199`.)"
 msgstr ""
+"移除了 :func:`!ssl.wrap_socket` 函数，它在 Python 3.7 中已被弃用：请改为创建一个 "
+":class:`ssl.SSLContext` 对象并调用其 :class:`ssl.SSLContext.wrap_socket` 方法。 "
+"任何仍然使用 :func:`!ssl.wrap_socket` 的包都不再适用并且是不安全的。 该函数既不会发送 SNI TLS "
+"扩展也不会验证服务器主机名。 其代码会受到 `CWE-295 "
+"<https://cwe.mitre.org/data/definitions/295.html>`_: 不正确的证书验证问题的影响。 （由 "
+"Victor Stinner 在 :gh:`94199` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1373
 msgid ":mod:`unittest`: Removed many old deprecated :mod:`unittest` features:"
-msgstr ""
+msgstr ":mod:`unittest`: 移除了许多早已弃用的 :mod:`unittest` 特性:"
 
 #: ../../whatsnew/3.12.rst:1375
 msgid "A number of :class:`~unittest.TestCase` method aliases:"
-msgstr ""
+msgstr "一些 :class:`~unittest.TestCase` 方法的别名:"
 
 #: ../../whatsnew/3.12.rst:1378
 msgid "Deprecated alias"
@@ -2630,13 +2645,15 @@ msgstr "3.5"
 msgid ""
 "You can use https://github.com/isidentical/teyit to automatically modernise "
 "your unit tests."
-msgstr ""
+msgstr "您可以使用 https://github.com/isidentical/teyit 来自动更新你的单元测试。"
 
 #: ../../whatsnew/3.12.rst:1400
 msgid ""
 "Undocumented and broken :class:`~unittest.TestCase` method "
 "``assertDictContainsSubset`` (deprecated in Python 3.2)."
 msgstr ""
+"未写入文档且已不可用的 :class:`~unittest.TestCase` 方法 ``assertDictContainsSubset``。 （在 "
+"Python 3.2 中已弃用。）"
 
 #: ../../whatsnew/3.12.rst:1403
 msgid ""
@@ -2644,12 +2661,17 @@ msgid ""
 "<unittest.TestLoader.loadTestsFromModule>` parameter *use_load_tests* "
 "(deprecated and ignored since Python 3.2)."
 msgstr ""
+"未写入文档的 :meth:`TestLoader.loadTestsFromModule "
+"<unittest.TestLoader.loadTestsFromModule>` 形参 *use_load_tests*。 （自 Python "
+"3.2 起已弃用并被忽略。）"
 
 #: ../../whatsnew/3.12.rst:1407
 msgid ""
 "An alias of the :class:`~unittest.TextTestResult` class: ``_TextTestResult``"
 " (deprecated in Python 3.2)."
 msgstr ""
+":class:`~unittest.TextTestResult` 类的一个别名: ``_TextTestResult``。 （在 Python 3.2"
+" 中已弃用。）"
 
 #: ../../whatsnew/3.12.rst:1410
 msgid "(Contributed by Serhiy Storchaka in :issue:`45162`.)"
