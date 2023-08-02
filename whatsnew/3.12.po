@@ -2220,38 +2220,44 @@ msgid ""
 "References to, and support for :meth:`!module_repr()` has been removed. "
 "(Contributed by Barry Warsaw in :gh:`97850`.)"
 msgstr ""
+"对 :meth:`!module_repr()` 的引用和支持已被移除。 （由 Barry Warsaw 在 :gh:`97850` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1259
 msgid ""
 "``importlib.util.set_package`` has been removed. (Contributed by Brett "
 "Cannon in :gh:`65961`.)"
 msgstr ""
+"``importlib.util.set_package`` 已被移除。 （由 Brett Cannon 在 :gh:`65961` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1262
 msgid ""
 "Support for ``find_loader()`` and ``find_module()`` APIs have been removed."
 "  (Contributed by Barry Warsaw in :gh:`98040`.)"
 msgstr ""
+"对 ``find_loader()`` 和 ``find_module()`` API 的支持已被移除。 （由 Barry Warsaw 在 "
+":gh:`98040` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1265
 msgid ""
 "``importlib.abc.Finder``, ``pkgutil.ImpImporter``, and ``pkgutil.ImpLoader``"
 " have been removed.  (Contributed by Barry Warsaw in :gh:`98040`.)"
 msgstr ""
+"``importlib.abc.Finder``, ``pkgutil.ImpImporter`` 和 ``pkgutil.ImpLoader`` "
+"已被移除。 （由 Barry Warsaw 在 :gh:`98040` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1268
 msgid ""
 "The :mod:`!imp` module has been removed.  (Contributed by Barry Warsaw in "
 ":gh:`98040`.)"
-msgstr ""
+msgstr ":mod:`!imp` 模块已被移除。 （由 Barry Warsaw 在 :gh:`98040` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1271
 msgid "Replace removed :mod:`!imp` functions with :mod:`importlib` functions:"
-msgstr ""
+msgstr "将已移除的 :mod:`!imp` 函数替换为 :mod:`importlib` 函数:"
 
 #: ../../whatsnew/3.12.rst:1274
 msgid "imp"
-msgstr ""
+msgstr "imp"
 
 #: ../../whatsnew/3.12.rst:1274
 msgid "importlib"
@@ -2407,6 +2413,8 @@ msgid ""
 "Python 3.7: use :func:`locale.format_string` instead. (Contributed by Victor"
 " Stinner in :gh:`94226`.)"
 msgstr ""
+":mod:`locale`: 移除了 :func:`!locale.format` 函数，它在 Python 3.7 中已被弃用：请改用 "
+":func:`locale.format_string`。 （由 Victor Stinner 在 :gh:`94226` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1328
 msgid ""
@@ -2415,6 +2423,8 @@ msgid ""
 "PyPI module or any other :mod:`asyncio`-based server instead. (Contributed "
 "by Oleg Iarygin in :gh:`93243`.)"
 msgstr ""
+"``smtpd``: 该模块已按照 :pep:`594` 中的计划表被移除，它在 Python 3.4.7 和 3.5.4 中已被弃用。 请改用 "
+"aiosmtpd_ PyPI 模块或任何其他基于 :mod:`asyncio` Oleg Iarygin 在 :gh:`93243` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1336
 msgid ""
