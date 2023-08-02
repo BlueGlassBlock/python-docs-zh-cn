@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 14:13+0000\n"
+"POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -140,6 +140,8 @@ msgid ""
 "the :meth:`~os.PathLike.__fspath__` method returns a string, such as another"
 " path object::"
 msgstr ""
+"*pathsegments* 的每个元素既可以是代表一个路径段的字符串，也可以是实现了 :class:`os.PathLike` 接口的对象，其中 "
+":meth:`~os.PathLike.__fspath__` 方法返回一个字符串，例如另一个路径对象::"
 
 #: ../../library/pathlib.rst:118
 msgid "When *pathsegments* is empty, the current directory is assumed::"
@@ -412,7 +414,7 @@ msgstr "返回此路径是否相对于 *other* 的路径。"
 msgid ""
 "Passing additional arguments is deprecated; if supplied, they are joined "
 "with *other*."
-msgstr ""
+msgstr "传入附加参数的做法已被弃用；如果提供了附加参数，它们将与 *other* 合并。"
 
 #: ../../library/pathlib.rst:521
 msgid ""
@@ -433,7 +435,7 @@ msgstr "当保留路径上的文件系统被调用，则可能出现玄学失败
 msgid ""
 "Calling this method is equivalent to combining the path with each of the "
 "given *pathsegments* in turn::"
-msgstr ""
+msgstr "调用此方法等同于依次将路径与给定的每个 *pathsegments* 组合到一起::"
 
 #: ../../library/pathlib.rst:551
 msgid ""
@@ -457,7 +459,7 @@ msgstr "如果 *pattern* 是绝对的，则路径必须是绝对的，并且路�
 msgid ""
 "The *pattern* may be another path object; this speeds up matching the same "
 "pattern against multiple files::"
-msgstr ""
+msgstr "*pattern* 可以是另一个路径对象；这样可以加快多个文件匹配同一模式的速度::"
 
 #: ../../library/pathlib.rst:579
 msgid "As with other methods, case-sensitivity follows platform defaults::"
@@ -471,7 +473,7 @@ msgstr "将 *case_sensitive* 设为 ``True`` 或 ``False`` 来重载此行为。
 #: ../../library/pathlib.rst:588 ../../library/pathlib.rst:931
 #: ../../library/pathlib.rst:1344
 msgid "The *case_sensitive* parameter was added."
-msgstr ""
+msgstr "增加了 *case_sensitive* 形参。"
 
 #: ../../library/pathlib.rst:594
 msgid ""
