@@ -2675,7 +2675,7 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:1410
 msgid "(Contributed by Serhiy Storchaka in :issue:`45162`.)"
-msgstr ""
+msgstr "（由 Serhiy Storchaka 在 :issue:`45162` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1412
 msgid ""
@@ -2684,6 +2684,9 @@ msgid ""
 "Galeon, Skipstone, Iceape, Firebird, and Firefox versions 35 and below "
 "(:gh:`102871`)."
 msgstr ""
+":mod:`webbrowser`: 从 :mod:`webbrowser` 中移除了对过时浏览器的支持。 被移除的浏览器包括: Grail, "
+"Mosaic, Netscape, Galeon, Skipstone, Iceape, Firebird 和 Firefox 35 及以下的版本 "
+"(:gh:`102871`)。"
 
 #: ../../whatsnew/3.12.rst:1416
 msgid ""
