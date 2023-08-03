@@ -2018,12 +2018,16 @@ msgid ""
 "asterisk (e.g., ``*Ts``). Semantically, this stands for a tuple of any "
 "number of types."
 msgstr ""
+":data:`typing.TypeVarTuple`，通过在前面添加一个星号的名称来引入 (例如 ``*Ts``)。 "
+"从语义上讲，它代表由任意多个类型组成的元组。"
 
 #: ../../reference/compound_stmts.rst:1670
 msgid ""
 ":data:`typing.ParamSpec`, introduced by a name prefixed with two asterisks "
 "(e.g., ``**P``). Semantically, this stands for the parameters of a callable."
 msgstr ""
+":data:`typing.ParamSpec`，通过在前面添加两个星号的名称来引入 (例如 ``**P``)。 "
+"从语义上讲，它代表一个可调用对象的形参。"
 
 #: ../../reference/compound_stmts.rst:1673
 msgid ""
@@ -2099,12 +2103,13 @@ msgid ""
 "Except for the :ref:`lazy evaluation <lazy-evaluation>` of the "
 ":class:`~typing.TypeVar` bound, this is equivalent to::"
 msgstr ""
+"除了 :class:`~typing.TypeVar` 绑定的 :ref:`惰性求值 <lazy-evaluation>` 以外，这等同于::"
 
 #: ../../reference/compound_stmts.rst:1763
 msgid ""
 "The capitalized names like ``DEFAULT_OF_arg`` are not actually bound at "
 "runtime."
-msgstr ""
+msgstr "大写形式的名称如 ``DEFAULT_OF_arg`` 在运行时不会被实际绑定。"
 
 #: ../../reference/compound_stmts.rst:1769
 msgid "Generic classes"
@@ -2130,6 +2135,8 @@ msgid ""
 "type scope for the type parameters, and decorators are evaluated outside "
 "that scope. This is illustrated by this example::"
 msgstr ""
+"泛型类隐式地继承自 :data:`typing.Generic`。 "
+"泛型类的基类和关键字参数在类型形参的类型作用域内进行求值，而装饰器则在该作用域之外进行求值。 以下示例对此进行了说明::"
 
 #: ../../reference/compound_stmts.rst:1798
 msgid "This is equivalent to::"

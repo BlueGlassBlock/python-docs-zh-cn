@@ -18,6 +18,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2023
 # 汇民 王 <whuim@qq.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Alpha Du <alphanow@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -26,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-29 02:08+0000\n"
 "PO-Revision-Date: 2023-05-24 13:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Alpha Du <alphanow@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2696,6 +2697,10 @@ msgid ""
 ":mod:`xml.etree.ElementTree` has no ``copy()`` method, only a ``__copy__()``"
 " method. (Contributed by Victor Stinner in :gh:`94383`.)"
 msgstr ""
+":mod:`xml.etree.ElementTree`: 移除了纯 Python 实现的 ``ElementTree.Element.copy()``"
+" 方法，该方法在 Python 3.10 中已被弃用，请改用 :func:`copy.copy` 函数。 "
+":mod:`xml.etree.ElementTree` 的 C 实现没有 ``copy()`` 方法，只有 ``__copy__()`` 方法。 （由"
+" Victor Stinner 在 :gh:`94383` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1422
 msgid ""
@@ -2704,6 +2709,9 @@ msgid ""
 ":pep:`451` for the rationale. (Contributed by Victor Stinner in "
 ":gh:`94379`.)"
 msgstr ""
+":mod:`zipimport`: 移除了在 Python 3.10 中已被弃用的 ``find_loader()`` "
+"和``find_module()`` 方法：请改用 ``find_spec()`` 方法。 请参阅 :pep:`451` 了解相关说明。 （由 "
+"Victor Stinner 在 :gh:`94379` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1427
 msgid ""
@@ -2712,6 +2720,9 @@ msgid ""
 "<https://github.com/sphinx-contrib/sphinx-lint>`_. (Contributed by Julien "
 "Palard in :gh:`98179`.)"
 msgstr ""
+"从文档 Makefile 中移除了 ``suspicious`` 规则，并移除了 ``Doc/tools/rstlint.py``，请改用 "
+"`sphinx-lint <https://github.com/sphinx-contrib/sphinx-lint>`_。 （由 Julien "
+"Palard 在 :gh:`98179` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1432
 msgid ""
@@ -2722,10 +2733,14 @@ msgid ""
 "*context* parameter (*ssl_context* in :mod:`imaplib`) instead. (Contributed "
 "by Victor Stinner in :gh:`94172`.)"
 msgstr ""
+"移除了 :mod:`ftplib`、:mod:`imaplib`、:mod:`poplib` 和 :mod:`smtplib` 模块中的 "
+"*keyfile* 和 *certfile* 形参数，以及 :mod:`http.client` 模块中的 *key_file*、*cert_file*"
+" 和 *check_hostname* 形参，它们自 Python 3.6 起都已被弃用。 请改用 *context* 形参（在 "
+":mod:`imaplib` 中为 *ssl_context* 形参）。 （由 Victor Stinner 在 :gh:`94172` 中贡献。）.)"
 
 #: ../../whatsnew/3.12.rst:1443 ../../whatsnew/3.12.rst:1747
 msgid "Porting to Python 3.12"
-msgstr ""
+msgstr "移植到 Python 3.12"
 
 #: ../../whatsnew/3.12.rst:1445
 msgid ""
@@ -2855,19 +2870,21 @@ msgstr ""
 msgid ""
 "Incomplete single-line strings now also raise :exc:`tokenize.TokenError` as "
 "incomplete multiline strings do."
-msgstr ""
+msgstr "不完整的单行字符串现在也会像不完整的多行字符串一样引发 :exc:`tokenize.TokenError`。"
 
 #: ../../whatsnew/3.12.rst:1545
 msgid ""
 "Some incomplete or invalid Python code now raises :exc:`tokenize.TokenError`"
 " instead of returning arbitrary ``ERRORTOKEN`` tokens when tokenizing it."
 msgstr ""
+"某些不完整或无效的 Python 代码现在会引发 :exc:`tokenize.TokenError` 而不是在执行分词时返回任意的 "
+"``ERRORTOKEN`` 词元。"
 
 #: ../../whatsnew/3.12.rst:1548
 msgid ""
 "Mixing tabs and spaces as indentation in the same file is not supported "
 "anymore and will raise a :exc:`TabError`."
-msgstr ""
+msgstr "在同一文件中混合使用制表符和空格作为缩进不再受到支持而是会引发 :exc:`TabError`。"
 
 #: ../../whatsnew/3.12.rst:1552
 msgid "Build Changes"
