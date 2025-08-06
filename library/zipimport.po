@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../../library/zipimport.rst:98 ../../library/zipimport.rst:111
 msgid "Use :meth:`find_spec` instead."
-msgstr ""
+msgstr "使用 :meth:`find_spec` 代替。"
 
 #: ../../library/zipimport.rst:103
 msgid ""
@@ -194,8 +194,9 @@ msgid ""
 msgstr "返回与 *pathname* 相关联的数据。如果不能找到文件则引发 :exc:`OSError` 错误。"
 
 #: ../../library/zipimport.rst:132
-msgid ":exc:`IOError` used to be raised instead of :exc:`OSError`."
-msgstr "曾经是 :exc:`IOError` 被引发而不是 :exc:`OSError` 。"
+msgid ""
+":exc:`IOError` used to be raised, it is now an alias of :exc:`OSError`."
+msgstr "过去触发的 :exc:`IOError`，现在是 :exc:`OSError` 的别名。"
 
 #: ../../library/zipimport.rst:138
 msgid ""

@@ -1,26 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Shengjing Zhu <zsj950618@gmail.com>, 2021
-# Zombie110year <zombie110year@gmail.com>, 2021
-# 汪心禾 <wangxinhe06@gmail.com>, 2021
-# nick <2330458484@qq.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
-# Bryan不可思议, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:07+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,8 +84,9 @@ msgstr ""
 
 #: ../../library/http.cookiejar.rst:46
 msgid ""
-"LoadError was made a subclass of :exc:`OSError` instead of :exc:`IOError`."
-msgstr "LoadError 成为 :exc:`OSError` 的子类而不是 :exc:`IOError`。"
+":exc:`LoadError` used to be a subtype of :exc:`IOError`, which is now an "
+"alias of :exc:`OSError`."
+msgstr ":exc:`LoadError` 曾经是 :exc:`IOError` 的子类型，现在它是 :exc:`OSError` 的一个别名。"
 
 #: ../../library/http.cookiejar.rst:51
 msgid "The following classes are provided:"
@@ -695,7 +689,7 @@ msgid ""
 " to be useful)."
 msgstr ""
 "定义 :class:`CookiePolicy` 类的最适用方式是通过子类化 :class:`DefaultCookiePolicy` "
-"并重载部分或全部上述的方法。 :class:`CookiePolicy` 本身可被用作 '空策略' 以允许设置和接收所有的 "
+"并重写部分或全部上述的方法。 :class:`CookiePolicy` 本身可被用作 '空策略' 以允许设置和接收所有的 "
 "cookie（但这没有什么用处）。"
 
 #: ../../library/http.cookiejar.rst:440
@@ -717,7 +711,7 @@ msgid ""
 "The easiest way to provide your own policy is to override this class and "
 "call its methods in your overridden implementations before adding your own "
 "additional checks::"
-msgstr "提供自定义策略的最容易方式是重载此类并在你重载的实现中添加你自己的额外检查之前调用其方法::"
+msgstr "提供自定义策略的最容易方式是重写此类并在你重写的实现中添加你自己的额外检查之前调用其方法::"
 
 #: ../../library/http.cookiejar.rst:460
 msgid ""
@@ -888,7 +882,7 @@ msgid ""
 "``www.foo.bar.com`` can't set a cookie for ``.bar.com``, because ``www.foo``"
 " contains a dot)."
 msgstr ""
-"当设置 cookie 是，'host prefix' 不可包含点号（例如 ``www.foo.bar.com`` 不能为 ``.bar.com`` 设置"
+"当设置 cookie 时，'host prefix' 不可包含点号（例如 ``www.foo.bar.com`` 不能为 ``.bar.com`` 设置"
 " cookie，因为 ``www.foo`` 包含了一个点号）。"
 
 #: ../../library/http.cookiejar.rst:587
@@ -976,37 +970,41 @@ msgid ""
 msgstr "代表一个端口或一组端口（例如 '80' 或 '80,8080'）的字符串，或为 :const:`None`。"
 
 #: ../../library/http.cookiejar.rst:654
+msgid "Cookie domain (a string)."
+msgstr "Cookie 域（一个字符串）。"
+
+#: ../../library/http.cookiejar.rst:659
 msgid "Cookie path (a string, eg. ``'/acme/rocket_launchers'``)."
 msgstr "Cookie 路径 (字符串类型，例如 ``'/acme/rocket_launchers'``)。"
 
-#: ../../library/http.cookiejar.rst:659
+#: ../../library/http.cookiejar.rst:664
 msgid "``True`` if cookie should only be returned over a secure connection."
 msgstr "如果 cookie 应当只能通过安全连接返回则为 ``True``。"
 
-#: ../../library/http.cookiejar.rst:664
+#: ../../library/http.cookiejar.rst:669
 msgid ""
 "Integer expiry date in seconds since epoch, or :const:`None`.  See also the "
 ":meth:`is_expired` method."
 msgstr ""
 "整数类型的过期时间，以距离 Unix 纪元的秒数表示，或者为 :const:`None`。 另请参阅 :meth:`is_expired` 方法。"
 
-#: ../../library/http.cookiejar.rst:670
+#: ../../library/http.cookiejar.rst:675
 msgid "``True`` if this is a session cookie."
 msgstr "如果是会话 cookie 则为 ``True``。"
 
-#: ../../library/http.cookiejar.rst:675
+#: ../../library/http.cookiejar.rst:680
 msgid ""
 "String comment from the server explaining the function of this cookie, or "
 ":const:`None`."
 msgstr "来自服务器的解释此 cookie 功能的字符串形式的注释，或者为 :const:`None`。"
 
-#: ../../library/http.cookiejar.rst:681
+#: ../../library/http.cookiejar.rst:686
 msgid ""
 "URL linking to a comment from the server explaining the function of this "
 "cookie, or :const:`None`."
 msgstr "链接到来自服务器的解释此 cookie 功能的注释的 URL，或者为 :const:`None`。"
 
-#: ../../library/http.cookiejar.rst:687
+#: ../../library/http.cookiejar.rst:692
 msgid ""
 "``True`` if this cookie was received as an :rfc:`2109` cookie (ie. the "
 "cookie arrived in a :mailheader:`Set-Cookie` header, and the value of the "
@@ -1019,7 +1017,7 @@ msgstr ""
 ":mod:`http.cookiejar` 可能会从 RFC 2109 cookies '降级' 为 Netscape cookie，在此情况下 "
 ":attr:`version` 值为 0。"
 
-#: ../../library/http.cookiejar.rst:696
+#: ../../library/http.cookiejar.rst:701
 msgid ""
 "``True`` if a port or set of ports was explicitly specified by the server "
 "(in the :mailheader:`Set-Cookie` / :mailheader:`Set-Cookie2` header)."
@@ -1027,41 +1025,41 @@ msgstr ""
 "如果服务器显式地指定了一个端口或一组端口（在 :mailheader:`Set-Cookie` / :mailheader:`Set-Cookie2` "
 "标头中）则为 ``True``。"
 
-#: ../../library/http.cookiejar.rst:702
+#: ../../library/http.cookiejar.rst:707
 msgid "``True`` if a domain was explicitly specified by the server."
 msgstr "如果服务器显式地指定了一个域则为 ``True``。"
 
-#: ../../library/http.cookiejar.rst:707
+#: ../../library/http.cookiejar.rst:712
 msgid ""
 "``True`` if the domain explicitly specified by the server began with a dot "
 "(``'.'``)."
 msgstr "该属性为 ``True`` 表示服务器显式地指定了以一个点号 (``'.'``) 打头的域。"
 
-#: ../../library/http.cookiejar.rst:710
+#: ../../library/http.cookiejar.rst:715
 msgid ""
 "Cookies may have additional non-standard cookie-attributes.  These may be "
 "accessed using the following methods:"
 msgstr "Cookie 可能还有额外的非标准 cookie 属性。 这些属性可以通过下列方法来访问:"
 
-#: ../../library/http.cookiejar.rst:716
+#: ../../library/http.cookiejar.rst:721
 msgid "Return ``True`` if cookie has the named cookie-attribute."
 msgstr "如果 cookie 具有相应名称的 cookie 属性则返回 ``True``。"
 
-#: ../../library/http.cookiejar.rst:721
+#: ../../library/http.cookiejar.rst:726
 msgid ""
 "If cookie has the named cookie-attribute, return its value. Otherwise, "
 "return *default*."
 msgstr "如果 cookie 具有相应名称的 cookie 属性，则返回其值。 否则，返回 *default*。"
 
-#: ../../library/http.cookiejar.rst:727
+#: ../../library/http.cookiejar.rst:732
 msgid "Set the value of the named cookie-attribute."
 msgstr "设置指定名称的 cookie 属性的值。"
 
-#: ../../library/http.cookiejar.rst:729
+#: ../../library/http.cookiejar.rst:734
 msgid "The :class:`Cookie` class also defines the following method:"
 msgstr ":class:`Cookie` 类还定义了下列方法:"
 
-#: ../../library/http.cookiejar.rst:734
+#: ../../library/http.cookiejar.rst:739
 msgid ""
 "``True`` if cookie has passed the time at which the server requested it "
 "should expire.  If *now* is given (in seconds since the epoch), return "
@@ -1070,16 +1068,16 @@ msgstr ""
 "如果 cookie 传入了服务器请求其所应过期的时间则为 ``True``。 如果给出 *now* 值（距离 Unix 纪元的秒数），则返回在指定的时间"
 " cookie 是否已过期。"
 
-#: ../../library/http.cookiejar.rst:740
+#: ../../library/http.cookiejar.rst:745
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/http.cookiejar.rst:742
+#: ../../library/http.cookiejar.rst:747
 msgid ""
 "The first example shows the most common usage of :mod:`http.cookiejar`::"
 msgstr "第一个例子显示了 :mod:`http.cookiejar` 的最常见用法::"
 
-#: ../../library/http.cookiejar.rst:749
+#: ../../library/http.cookiejar.rst:754
 msgid ""
 "This example illustrates how to open a URL using your Netscape, Mozilla, or "
 "Lynx cookies (assumes Unix/Netscape convention for location of the cookies "
@@ -1088,7 +1086,7 @@ msgstr ""
 "这个例子演示了如何使用你的 Netscape, Mozilla 或 Lynx cookie 打开一个 URL (假定 cookie 文件位置采用 "
 "Unix/Netscape 惯例)::"
 
-#: ../../library/http.cookiejar.rst:758
+#: ../../library/http.cookiejar.rst:763
 msgid ""
 "The next example illustrates the use of :class:`DefaultCookiePolicy`. Turn "
 "on :rfc:`2965` cookies, be more strict about domains when setting and "

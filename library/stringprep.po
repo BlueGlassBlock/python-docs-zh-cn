@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2021
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,12 +60,12 @@ msgstr ""
 #: ../../library/stringprep.rst:29
 msgid ""
 "The module :mod:`stringprep` only exposes the tables from :rfc:`3454`. As "
-"these tables would be very large to represent them as dictionaries or lists,"
-" the module uses the Unicode character database internally. The module "
-"source code itself was generated using the ``mkstringprep.py`` utility."
+"these tables would be very large to represent as dictionaries or lists, the "
+"module uses the Unicode character database internally. The module source "
+"code itself was generated using the ``mkstringprep.py`` utility."
 msgstr ""
-"模块 :mod:`stringprep` 仅公开了来自 :rfc:`3454` 的表格。 "
-"由于这些如果表格如果表示为字典或列表将会非常庞大，该模块在内部使用 Unicode 字符数据库。 该模块本身的源代码是使用 "
+":mod:`stringprep` 模块只公开了来自 :rfc:`3454` 的表格。 "
+"由于以字典或列表形式表示这些表格将会非常庞大，因此该模块在内部使用 Unicode 字符数据库。 该模块本身的源代码是使用 "
 "``mkstringprep.py`` 工具生成的。"
 
 #: ../../library/stringprep.rst:34

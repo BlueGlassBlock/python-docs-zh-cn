@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:16+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -190,15 +190,13 @@ msgstr "以文本形式读取自身的内容。"
 msgid ""
 "An abstract base class for resource readers capable of serving the "
 ":meth:`importlib.resources.files` interface. Subclasses "
-":class:`importlib.resources.abc.ResourceReader` and provides concrete "
-"implementations of the :class:`importlib.resources.abc.ResourceReader`'s "
-"abstract methods. Therefore, any loader supplying "
-":class:`importlib.abc.TraversableResources` also supplies ResourceReader."
+":class:`ResourceReader` and provides concrete implementations of the "
+":class:`!ResourceReader`'s abstract methods. Therefore, any loader supplying"
+" :class:`!TraversableResources` also supplies :class:`!ResourceReader`."
 msgstr ""
 "针对能够为 :meth:`importlib.resources.files` 接口提供服务的资源读取器的抽象基类。 子类化 "
-":class:`importlib.resources.abc.ResourceReader` 并为 "
-":class:`importlib.resources.abc.ResourceReader` 的抽象方法提供具体实现。 因此，任何提供了 "
-":class:`importlib.abc.TraversableResources` 的加载器也会提供 ResourceReader。"
+":class:`ResourceReader` 并为 :class:`!ResourceReader` 的抽象方法提供具体实现。 因此 ，任何提供了 "
+":class:`!TraversableResources` 的加载器也会提供 :class:`!ResourceReader`。"
 
 #: ../../library/importlib.resources.abc.rst:147
 msgid ""

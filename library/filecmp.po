@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:15+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -168,11 +168,12 @@ msgstr ":class:`dircmp` 类提供了一些有趣的属性，用以得到关于�
 
 #: ../../library/filecmp.rst:103
 msgid ""
-"Note that via :meth:`__getattr__` hooks, all attributes are computed lazily,"
-" so there is no speed penalty if only those attributes which are lightweight"
-" to compute are used."
+"Note that via :meth:`~object.__getattr__` hooks, all attributes are computed"
+" lazily, so there is no speed penalty if only those attributes which are "
+"lightweight to compute are used."
 msgstr ""
-"需要注意，通过 :meth:`__getattr__`  钩子，所有的属性将会惰性求值，因此如果只使用那些计算简便的属性，将不会有速度损失。"
+"请注意通过 :meth:`~object.__getattr__` "
+"钩子，所有的属性都将被惰性求值，因此如果只需使用那些计算简便的属性就不会有速度上的损失。"
 
 #: ../../library/filecmp.rst:110
 msgid "The directory *a*."

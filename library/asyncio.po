@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,15 +21,15 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/asyncio.rst:78 ../../library/asyncio.rst:78
+#: ../../library/asyncio.rst:87
 msgid "High-level APIs"
 msgstr "高层级 API"
 
-#: ../../library/asyncio.rst:90 ../../library/asyncio.rst:90
+#: ../../library/asyncio.rst:99
 msgid "Low-level APIs"
 msgstr "低层级 API"
 
-#: ../../library/asyncio.rst:101 ../../library/asyncio.rst:101
+#: ../../library/asyncio.rst:110
 msgid "Guides and Tutorials"
 msgstr "指南与教程"
 
@@ -38,7 +37,7 @@ msgstr "指南与教程"
 msgid ":mod:`asyncio` --- Asynchronous I/O"
 msgstr ":mod:`asyncio` --- 异步 I/O"
 
-#: ../../library/asyncio.rstNone
+#: ../../library/asyncio.rst-1
 msgid "Hello World!"
 msgstr "Hello World!"
 
@@ -96,13 +95,13 @@ msgstr "此外，还有一些 **低层级** API 以支持 *库和框架的开发
 #: ../../library/asyncio.rst:48
 msgid ""
 "create and manage :ref:`event loops <asyncio-event-loop>`, which provide "
-"asynchronous APIs for :meth:`networking <loop.create_server>`, running "
-":meth:`subprocesses <loop.subprocess_exec>`, handling :meth:`OS signals "
-"<loop.add_signal_handler>`, etc;"
+"asynchronous APIs for :ref:`networking <loop_create_server>`, running "
+":ref:`subprocesses <loop_subprocess_exec>`, handling :ref:`OS signals "
+"<loop_add_signal_handler>`, etc;"
 msgstr ""
-"创建和管理 :ref:`事件循环 <asyncio-event-loop>`，以提供异步 API 用于 :meth:`网络化 "
-"<loop.create_server>`, 运行 :meth:`子进程 <loop.subprocess_exec>`，处理 :meth:`OS 信号"
-" <loop.add_signal_handler>` 等等;"
+"创建和管理 :ref:`事件循环 <asyncio-event-loop>`，它提供用于 :ref:`连接网络 "
+"<loop_create_server>`, 运行 :ref:`子进程 <loop_subprocess_exec>`, 处理 :ref:`OS 信号 "
+"<loop_add_signal_handler>` 等功能的异步 API；"
 
 #: ../../library/asyncio.rst:53
 msgid ""
@@ -115,10 +114,6 @@ msgid ""
 ":ref:`bridge <asyncio-futures>` callback-based libraries and code with "
 "async/await syntax."
 msgstr "通过 async/await 语法 :ref:`桥接 <asyncio-futures>` 基于回调的库和代码。"
-
-#: ../../library/asyncio.rst:59
-msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
-msgstr "你可以在 REPL 中尝试使用 ``asyncio`` 并发上下文:"
 
 #: ../../includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
@@ -133,10 +128,28 @@ msgstr ""
 "此模块在 WebAssembly 平台 ``wasm32-emscripten`` 和 ``wasm32-wasi`` 上不适用或不可用。 请参阅 "
 ":ref:`wasm-availability` 了解详情。"
 
-#: ../../library/asyncio.rst:77
+#: ../../library/asyncio.rst:64
+msgid "asyncio REPL"
+msgstr "asyncio REPL"
+
+#: ../../library/asyncio.rst:65
+msgid "You can experiment with an ``asyncio`` concurrent context in the REPL:"
+msgstr "你可以在 REPL 中尝试使用 ``asyncio`` 并发上下文:"
+
+#: ../../library/asyncio.rst:88
+msgid ""
+"Raises an :ref:`auditing event <auditing>` ``cpython.run_stdin`` with no "
+"arguments."
+msgstr "引发一个不带参数的 :ref:`审计事件 <auditing>` ``cpython.run_stdin``。"
+
+#: ../../library/asyncio.rst:79
+msgid "(also 3.10.15, 3.9.20, and 3.8.20) Emits audit events."
+msgstr ""
+
+#: ../../library/asyncio.rst:86
 msgid "Reference"
 msgstr "参考"
 
-#: ../../library/asyncio.rst:110
+#: ../../library/asyncio.rst:119
 msgid "The source code for asyncio can be found in :source:`Lib/asyncio/`."
 msgstr "asyncio 的源代码可以在 :source:`Lib/asyncio/` 中找到。"

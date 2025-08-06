@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:44+0000\n"
-"PO-Revision-Date: 2023-05-24 02:09+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:04+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -154,6 +154,8 @@ msgid ""
 " to ``len(anyset)``.  Raises a :exc:`SystemError` if *anyset* is not a "
 ":class:`set`, :class:`frozenset`, or an instance of a subtype."
 msgstr ""
+"返回 :class:`set` 或 :class:`frozenset` 对象的长度。 等同于 ``len(anyset)``。 如果 *anyset*"
+" 不是 :class:`set`, :class:`frozenset` 或其子类型的实例，则会引发 :exc:`SystemError`。"
 
 #: ../../c-api/set.rst:119
 msgid "Macro form of :c:func:`PySet_Size` without error checking."
@@ -168,6 +170,10 @@ msgid ""
 ":exc:`SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, or"
 " an instance of a subtype."
 msgstr ""
+"如果找到则返回 ``1`` ，如果未找到则返回 ``0`` ，如果遇到错误则返回 ``-1``。 与 Python "
+":meth:`~object.__contains__` 方法不同，该函数不会自动将不可哈希的集合转换为临时冻结集合。 如果 *key* "
+"是不可哈希对象则会引发 :exc:`TypeError`。 如果 *anyset* 不是 :class:`set`, "
+":class:`frozenset` 或其子类型的实例则会引发 :exc:`SystemError`。"
 
 #: ../../c-api/set.rst:133
 msgid ""
@@ -196,10 +202,15 @@ msgid ""
 "Return ``1`` if found and removed, ``0`` if not found (no action taken), and"
 " ``-1`` if an error is encountered.  Does not raise :exc:`KeyError` for "
 "missing keys.  Raise a :exc:`TypeError` if the *key* is unhashable.  Unlike "
-"the Python :meth:`~set.discard` method, this function does not automatically"
-" convert unhashable sets into temporary frozensets. Raise :exc:`SystemError`"
-" if *set* is not an instance of :class:`set` or its subtype."
+"the Python :meth:`~frozenset.discard` method, this function does not "
+"automatically convert unhashable sets into temporary frozensets. Raise "
+":exc:`SystemError` if *set* is not an instance of :class:`set` or its "
+"subtype."
 msgstr ""
+"如果找到并已删除则返回 ``1``，如未找到（无操作）则返回 ``0``，如果遇到错误则返回 ``-1``。 对于不存在的键不会引发 "
+":exc:`KeyError`。 如果 *key* 为不可哈希对象则会引发 :exc:`TypeError`。 与 Python "
+":meth:`~frozenset.discard` 方法不同，该函数不会自动将不可哈希的集合转换为临时的冻结集合。 如果 *set* 不是 "
+":class:`set` 或其子类的实例则会引发 :exc:`SystemError`。"
 
 #: ../../c-api/set.rst:158
 msgid ""
@@ -212,10 +223,15 @@ msgstr ""
 ":exc:`KeyError`。 如果 *set* 不是 :class:`set` 或其子类型的实例则会引发 :exc:`SystemError`。"
 
 #: ../../c-api/set.rst:166
-msgid "Empty an existing set of all elements."
-msgstr "清空现有字典的所有键值对。"
+msgid ""
+"Empty an existing set of all elements. Return ``0`` on success. Return "
+"``-1`` and raise :exc:`SystemError` if *set* is not an instance of "
+":class:`set` or its subtype."
+msgstr ""
+"清空现有的所有元素的集合。 成功时返回 ``0``。 如果 *set* 不是 :class:`set` 或其子类型的实际则返回  ``-1`` 并引发 "
+":exc:`SystemError`。"
 
-#: ../../c-api/set.rst:11 ../../c-api/set.rst:11
+#: ../../c-api/set.rst:11
 msgid "object"
 msgstr "object -- 对象"
 

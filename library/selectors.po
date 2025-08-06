@@ -1,24 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# ausaki <www.ljm969087551@qq.com>, 2021
-# ww song <sww4718168@gmail.com>, 2021
-# nick <2330458484@qq.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# WH-2099 <wh2099@outlook.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,12 +48,12 @@ msgid ""
 "concrete implementations (:class:`KqueueSelector`, "
 ":class:`EpollSelector`...), that can be used to wait for I/O readiness "
 "notification on multiple file objects. In the following, \"file object\" "
-"refers to any object with a :meth:`fileno()` method, or a raw file "
+"refers to any object with a :meth:`~io.IOBase.fileno` method, or a raw file "
 "descriptor. See :term:`file object`."
 msgstr ""
-"它定义了一个 :class:`BaseSelector` 抽象基类，以及多个实际的实现 (:class:`KqueueSelector`, "
-":class:`EpollSelector`...)，它们可被用于在多个文件对象上等待 I/O 就绪通知。 在下文中，\"文件对象\" 是指任何具有 "
-":meth:`fileno()` 方法的对象，或是一个原始文件描述符。 参见 :term:`file object`。"
+"它定义了一个 :class:`BaseSelector` 抽象基类，以及多个具体实现 (:class:`KqueueSelector`, "
+":class:`EpollSelector`...)，它们可被用于在多个文件对象上等待 I/O 就绪通知。 在下文中，“文件对象”是指任何具有 "
+":meth:`~io.IOBase.fileno` 方法的对象，或是一个原始文件描述符。 参见 :term:`file object`。"
 
 #: ../../library/selectors.rst:26
 msgid ""
@@ -122,16 +117,8 @@ msgid "Meaning"
 msgstr "含意"
 
 #: ../../library/selectors.rst:63
-msgid ":const:`EVENT_READ`"
-msgstr ":const:`EVENT_READ`"
-
-#: ../../library/selectors.rst:63
 msgid "Available for read"
 msgstr "可读"
-
-#: ../../library/selectors.rst:65
-msgid ":const:`EVENT_WRITE`"
-msgstr ":const:`EVENT_WRITE`"
 
 #: ../../library/selectors.rst:65
 msgid "Available for write"
@@ -232,12 +219,12 @@ msgstr "更改已注册文件对象所监视的事件或所附带的数据。"
 
 #: ../../library/selectors.rst:135
 msgid ""
-"This is equivalent to :meth:`BaseSelector.unregister(fileobj)` followed by "
-":meth:`BaseSelector.register(fileobj, events, data)`, except that it can be "
+"This is equivalent to ``BaseSelector.unregister(fileobj)`` followed by "
+"``BaseSelector.register(fileobj, events, data)``, except that it can be "
 "implemented more efficiently."
 msgstr ""
-"这等价于 :meth:`BaseSelector.unregister(fileobj)` 加 "
-":meth:`BaseSelector.register(fileobj, events, data)`，区别在于它可以被更高效地实现。"
+"这等价于 ``BaseSelector.unregister(fileobj)`` 加 ``BaseSelector.register(fileobj,"
+" events, data)``，区别在于它可以被更高效地实现。"
 
 #: ../../library/selectors.rst:139
 msgid ""

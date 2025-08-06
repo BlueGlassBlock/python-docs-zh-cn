@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:20+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -526,7 +526,7 @@ msgstr "``'+'``"
 msgid ""
 "indicates that a sign should be used for both positive as well as negative "
 "numbers."
-msgstr "表示标志应该用于正数和负数。"
+msgstr "表示正负号将同时用于正数与负数，例如 +3 , -1 。"
 
 #: ../../library/string.rst:378
 msgid "``'-'``"
@@ -536,9 +536,9 @@ msgstr "``'-'``"
 msgid ""
 "indicates that a sign should be used only for negative numbers (this is the "
 "default behavior)."
-msgstr "表示标志应仅用于负数（这是默认行为）。"
+msgstr "表示正负号仅用于负数（这是默认行为），例如 3 , -1。"
 
-#: ../../library/string.rst:381 ../../library/string.rst:367
+#: ../../library/string.rst:367 ../../library/string.rst:381
 msgid "space"
 msgstr "space"
 
@@ -546,7 +546,7 @@ msgstr "space"
 msgid ""
 "indicates that a leading space should be used on positive numbers, and a "
 "minus sign on negative numbers."
-msgstr "表示应在正数上使用前导空格，在负数上使用减号。"
+msgstr "表示应在正数上使用前导空格，在负数上使用负号。"
 
 #: ../../library/string.rst:388
 msgid ""
@@ -1260,14 +1260,10 @@ msgstr ""
 msgid "{} (curly brackets)"
 msgstr "{} (花括号)"
 
-#: ../../library/string.rst:195 ../../library/string.rst:195
-#: ../../library/string.rst:195 ../../library/string.rst:195
 #: ../../library/string.rst:195 ../../library/string.rst:335
-#: ../../library/string.rst:335 ../../library/string.rst:335
-#: ../../library/string.rst:335 ../../library/string.rst:367
-#: ../../library/string.rst:367 ../../library/string.rst:367
-#: ../../library/string.rst:386 ../../library/string.rst:395
-#: ../../library/string.rst:409 ../../library/string.rst:418
+#: ../../library/string.rst:367 ../../library/string.rst:386
+#: ../../library/string.rst:395 ../../library/string.rst:409
+#: ../../library/string.rst:418
 msgid "in string formatting"
 msgstr "在字符串格式化中"
 

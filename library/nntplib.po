@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:40+0000\n"
-"PO-Revision-Date: 2023-05-24 02:18+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,7 +98,7 @@ msgstr ""
 ":exc:`NNTPPermanentError`，你可能需要设置 *readermode*。 :class:`NNTP` 类支持使用 "
 ":keyword:`with` 语句来无条件地消费 :exc:`OSError` 异常并在结束时关闭 NNTP 连接，例如:"
 
-#: ../../library/nntplib.rst:97 ../../library/nntplib.rst:129
+#: ../../library/nntplib.rst:99 ../../library/nntplib.rst:131
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.connect`` with "
 "arguments ``self``, ``host``, ``port``."
@@ -106,7 +106,7 @@ msgstr ""
 "引发一个 :ref:`审计事件 <auditing>` ``nntplib.connect``，附带参数 ``self``, ``host``, "
 "``port``。"
 
-#: ../../library/nntplib.rst:99 ../../library/nntplib.rst:131
+#: ../../library/nntplib.rst:101 ../../library/nntplib.rst:133
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.putline`` with "
 "arguments ``self``, ``line``."
@@ -678,7 +678,7 @@ msgstr ""
 
 #: ../../library/nntplib.rst:10
 msgid "NNTP"
-msgstr "NNTP"
+msgstr ""
 
 #: ../../library/nntplib.rst:10
 msgid "protocol"
@@ -686,4 +686,4 @@ msgstr "协议"
 
 #: ../../library/nntplib.rst:10
 msgid "Network News Transfer Protocol"
-msgstr "网络新闻传输协议"
+msgstr ""

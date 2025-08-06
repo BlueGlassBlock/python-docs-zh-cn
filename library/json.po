@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:17+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -221,11 +221,11 @@ msgstr "如果 *sort_keys* 是 true（默认为 ``False``），那么字典的�
 #: ../../library/json.rst:194
 msgid ""
 "To use a custom :class:`JSONEncoder` subclass (e.g. one that overrides the "
-":meth:`default` method to serialize additional types), specify it with the "
-"*cls* kwarg; otherwise :class:`JSONEncoder` is used."
+":meth:`~JSONEncoder.default` method to serialize additional types), specify "
+"it with the *cls* kwarg; otherwise :class:`JSONEncoder` is used."
 msgstr ""
-"为了使用一个自定义的 :class:`JSONEncoder` 子类（比如：覆盖了 :meth:`default` 方法来序列化额外的类型）， 通过 "
-"*cls* 关键字参数来指定；否则将使用 :class:`JSONEncoder`。"
+"要使用自定义的 :class:`JSONEncoder` 子类（例如重写了 :meth:`~JSONEncoder.default` "
+"方法来序列化额外类型），请使用 *cls* 关键字参数来指定它；否则将使用 :class:`JSONEncoder`。"
 
 #: ../../library/json.rst:198 ../../library/json.rst:277
 msgid ""
@@ -561,7 +561,7 @@ msgstr "int, float, int 和 float 派生的枚举"
 
 #: ../../library/json.rst:412
 msgid "number"
-msgstr "number"
+msgstr "数字"
 
 #: ../../library/json.rst:421
 msgid "Added support for int- and float-derived Enum classes."
@@ -570,12 +570,12 @@ msgstr "添加了对 int 和 float 派生的枚举类的支持"
 #: ../../library/json.rst:424
 msgid ""
 "To extend this to recognize other objects, subclass and implement a "
-":meth:`default` method with another method that returns a serializable "
-"object for ``o`` if possible, otherwise it should call the superclass "
-"implementation (to raise :exc:`TypeError`)."
+":meth:`~JSONEncoder.default` method with another method that returns a "
+"serializable object for ``o`` if possible, otherwise it should call the "
+"superclass implementation (to raise :exc:`TypeError`)."
 msgstr ""
-"为了将其拓展至识别其他对象，需要子类化并实现 :meth:`default` 方法于另一种返回 ``o`` "
-"的可序列化对象的方法如果可行，否则它应该调用超类实现（来引发 :exc:`TypeError` ）。"
+"要将其扩展至识别其他对象，需要子类化并实现 :meth:`~JSONEncoder.default`，如果可能还要实现另一个返回 ``o`` "
+"的可序列化对象的方法，否则它应当调用超类实现 (来引发 :exc:`TypeError`)。"
 
 #: ../../library/json.rst:429
 msgid ""
@@ -628,8 +628,8 @@ msgstr "在子类中实现这种方法使其返回 *o* 的可序列化对象，�
 #: ../../library/json.rst:485
 msgid ""
 "For example, to support arbitrary iterators, you could implement "
-":meth:`default` like this::"
-msgstr "例如，为了支持任意的迭代器，你可以这样来实现 :meth:`default`::"
+":meth:`~JSONEncoder.default` like this::"
+msgstr "例如，要支持任意的迭代器，你可以这样实现 :meth:`~JSONEncoder.default`::"
 
 #: ../../library/json.rst:501
 msgid ""

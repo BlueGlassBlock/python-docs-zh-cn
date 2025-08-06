@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:19+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -101,7 +101,7 @@ msgstr ""
 ":class:`SMTP` 类支持 :keyword:`with` 语句。当这样使用时，:keyword:`!with` 语句一退出就会自动发出 "
 "SMTP ``QUIT`` 命令。例如::"
 
-#: ../../library/smtplib.rst:68
+#: ../../library/smtplib.rst:70
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``smtplib.send`` with arguments "
 "``self``, ``data``."
@@ -360,13 +360,13 @@ msgstr ""
 "结尾，后跟数字，则该后缀将被删除，且数字将视作要使用的端口号。如果在实例化时指定了 host，则构造函数会自动调用本方法。返回包含响应码和响应消息的 2"
 " 元组，它们由服务器在其连接响应中发送。"
 
-#: ../../library/smtplib.rst:271
+#: ../../library/smtplib.rst:273
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``smtplib.connect`` with "
 "arguments ``self``, ``host``, ``port``."
 msgstr ""
-"触发一个 :ref:`auditing event <auditing>` ``smtplib.connect``，其参数为 ``self`` ， "
-"``host`` ， ``port`` 。"
+"引发一个 :ref:`审计事件 <auditing>` ``smtplib.connect`` 并附带参数 ``self``, ``host``, "
+"``port``。"
 
 #: ../../library/smtplib.rst:267
 msgid ""
@@ -534,7 +534,7 @@ msgstr ""
 
 #: ../../library/smtplib.rst:365
 msgid "data = authobject(challenge=None)"
-msgstr ""
+msgstr "data = authobject(challenge=None)"
 
 #: ../../library/smtplib.rst:367
 msgid ""

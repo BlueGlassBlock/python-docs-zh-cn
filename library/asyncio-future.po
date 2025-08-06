@@ -1,22 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Woko <banbooliu@gmail.com>, 2021
-# MuSheng Chen <sheng.2179@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
-# Bryan不可思议, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -377,7 +374,7 @@ msgstr ""
 #: ../../library/asyncio-future.rst:278
 msgid ""
 ":meth:`asyncio.Future.cancel` accepts an optional ``msg`` argument, but "
-":func:`concurrent.futures.cancel` does not."
+":meth:`concurrent.futures.Future.cancel` does not."
 msgstr ""
 ":meth:`asyncio.Future.cancel` 接受一个可选的 ``msg`` 参数，但 "
-":func:`concurrent.futures.cancel` 无此参数。"
+":meth:`concurrent.futures.Future.cancel` 无此参数。"

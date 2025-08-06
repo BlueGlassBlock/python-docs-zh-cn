@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -683,8 +683,7 @@ msgid ""
 " may contain non-ASCII data will need to do their own decoding from bytes to"
 " characters before invoking the URL parsing methods."
 msgstr ""
-"对于某些需要在有可能不正确地转码的包含非 ASCII 数据的 URL 上进行操作的应用程序来说，在发起调用 URL "
-"解析方法之前必须自行将字节串解码为字符。"
+"对于某些需要在有可能不正确地转码的包含非 ASCII 数据的 URL 上进行操作的应用程序来说，在唤起 URL 解析方法之前必须自行将字节串解码为字符。"
 
 #: ../../library/urllib.parse.rst:494
 msgid ""
@@ -816,14 +815,15 @@ msgstr ""
 
 #: ../../library/urllib.parse.rst:601
 msgid ""
-"Replace special characters in *string* using the ``%xx`` escape. Letters, "
-"digits, and the characters ``'_.-~'`` are never quoted. By default, this "
-"function is intended for quoting the path section of a URL. The optional "
-"*safe* parameter specifies additional ASCII characters that should not be "
-"quoted --- its default value is ``'/'``."
+"Replace special characters in *string* using the :samp:`%{xx}` escape. "
+"Letters, digits, and the characters ``'_.-~'`` are never quoted. By default,"
+" this function is intended for quoting the path section of a URL. The "
+"optional *safe* parameter specifies additional ASCII characters that should "
+"not be quoted --- its default value is ``'/'``."
 msgstr ""
-"使用 ``%xx`` 转义符替换 *string* 中的特殊字符。 字母、数字和 ``'_.-~'`` 等字符一定不会被转码。 在默认情况下，此函数只对"
-" URL 的路径部分进行转码。 可选的 *safe* 形参额外指定不应被转码的 ASCII 字符 --- 其默认值为 ``'/'``。"
+"使用 :samp:`%{xx}` 转义符替换 *string* 中的特殊字符。 字母、数字和 ``'_.-~'`` 等字符一定不会被转码。 "
+"在默认情况下，此函数只对 URL 的路径部分进行转码。 可选的 *safe* 形参额外指定不应被转码的 ASCII 字符 --- 其默认值为 "
+"``'/'``。"
 
 #: ../../library/urllib.parse.rst:607 ../../library/urllib.parse.rst:653
 #: ../../library/urllib.parse.rst:682
@@ -889,13 +889,13 @@ msgstr "例如: ``quote_from_bytes(b'a&\\xef')`` 将产生 ``'a%26%EF'``。"
 
 #: ../../library/urllib.parse.rst:648
 msgid ""
-"Replace ``%xx`` escapes with their single-character equivalent. The optional"
-" *encoding* and *errors* parameters specify how to decode percent-encoded "
-"sequences into Unicode characters, as accepted by the :meth:`bytes.decode` "
-"method."
+"Replace :samp:`%{xx}` escapes with their single-character equivalent. The "
+"optional *encoding* and *errors* parameters specify how to decode percent-"
+"encoded sequences into Unicode characters, as accepted by the "
+":meth:`bytes.decode` method."
 msgstr ""
-"将 ``%xx`` 转义符替换为其单字符等价物。 可选的 *encoding* 和 *errors* 形参指定如何将以百分号编码的序列解码为 "
-"Unicode 字符，即 :meth:`bytes.decode` 方法所接受的数据。"
+"将 :samp:`%{xx}` 转义符替换为等效的单字符。 可选的 *encoding* 和 *errors* 形参指定如何将以百分号编码的序列解码为 "
+"Unicode 字符，即 :meth:`bytes.decode` 方法所接受的形式。"
 
 #: ../../library/urllib.parse.rst:655
 msgid ""
@@ -929,9 +929,9 @@ msgstr "例如: ``unquote_plus('/El+Ni%C3%B1o/')`` 将产生 ``'/El Niño/'``。
 
 #: ../../library/urllib.parse.rst:679
 msgid ""
-"Replace ``%xx`` escapes with their single-octet equivalent, and return a "
-":class:`bytes` object."
-msgstr "将 ``%xx`` 转义符替换为其单八位等价物，并返回一个 :class:`bytes` 对象。"
+"Replace :samp:`%{xx}` escapes with their single-octet equivalent, and return"
+" a :class:`bytes` object."
+msgstr "用等价的单八位形式替换 :samp:`%{xx}` 转义码，并返回一个 :class:`bytes` 对象。"
 
 #: ../../library/urllib.parse.rst:684
 msgid ""
@@ -1018,8 +1018,8 @@ msgid "*query* supports bytes and string objects."
 msgstr "查询支持字节和字符串对象。"
 
 #: ../../library/urllib.parse.rst:732
-msgid "*quote_via* parameter."
-msgstr "*quote_via* 参数."
+msgid "Added the *quote_via* parameter."
+msgstr "增加了 *quote_via* 形参。"
 
 #: ../../library/urllib.parse.rst:740
 msgid "`WHATWG`_ -  URL Living standard"
@@ -1098,7 +1098,6 @@ msgstr "WWW"
 msgid "World Wide Web"
 msgstr "World Wide Web"
 
-#: ../../library/urllib.parse.rst:9 ../../library/urllib.parse.rst:9
 #: ../../library/urllib.parse.rst:9
 msgid "URL"
 msgstr "网址"

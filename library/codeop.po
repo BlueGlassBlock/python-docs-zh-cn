@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:44+0000\n"
-"PO-Revision-Date: 2023-05-24 02:13+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,6 +117,8 @@ msgid ""
 "statement, the instance 'remembers' and compiles all subsequent program "
 "texts with the statement in force."
 msgstr ""
+"该类的实例具有 :meth:`~object.__call__` 方法，其签名与内置函数 :func:`compile` "
+"相似，区别在于如果该实例编译了包含 :mod:`__future__` 语句的程序文本，则该实例会‘记住’并编译后续所有的所有包含该语句的程序文本。"
 
 #: ../../library/codeop.rst:70
 msgid ""
@@ -126,3 +128,5 @@ msgid ""
 "instance 'remembers' and compiles all subsequent program texts with the "
 "statement in force."
 msgstr ""
+"该类的实例具有 :meth:`~object.__call__` 方法，其签名与 :func:`compile_command` "
+"相似；区别在如果该实例编译了包含 :mod:`__future__` 语句的程序文本，则该实例会‘记住’并编译后续所有的包含该语句的程序文本。"

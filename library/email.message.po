@@ -1,23 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# cdarlint <cdarling@126.com>, 2021
-# eric R <trencyclopedia@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2021
-# Kevin Deng <kevindeng55+transifex@gmail.com>, 2021
-# Bryan不可思议, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -88,13 +84,13 @@ msgid ""
 "The :class:`EmailMessage` dictionary-like interface is indexed by the header"
 " names, which must be ASCII values.  The values of the dictionary are "
 "strings with some extra methods.  Headers are stored and returned in case-"
-"preserving form, but field names are matched case-insensitively.  Unlike a "
-"real dict, there is an ordering to the keys, and there can be duplicate "
-"keys.  Additional methods are provided for working with headers that have "
-"duplicate keys."
+"preserving form, but field names are matched case-insensitively.  The keys "
+"are ordered, but unlike a real dict, there can be duplicates.  Addtional "
+"methods are provided for working with headers that have duplicate keys."
 msgstr ""
-":class:`EmailMessage` "
-"的类字典接口的字典索引是头字段名，头字段名必须是ASCII值。字典值是带有一些附加方法的字符串。虽然头字段的存储和获取都是保留其原始大小写的，但是字段名的匹配是大小写不敏感的。与真正的字典不同，键与键之间不但存在顺序关系，还可以重复。我们提供了额外的方法来处理含有重复键的头。"
+":class:`EmailMessage` 字典型接口使用的索引是标头名称，它必须为 ASCII 值。 字典的值是包含一些附加方法的字符串。 "
+"标头是以保留大小写的形式存储和返回的，但字段名的匹配则是大小写不敏感的。 键是保留顺序的，但与真正字典不同的是键可以重复。 "
+"额外提供了一些方法来处理包含重复键的标头。"
 
 #: ../../library/email.message.rst:47
 msgid ""
@@ -126,18 +122,18 @@ msgid ""
 " defaults to ``False``.  For backward compatibility with the base "
 ":class:`~email.message.Message` class *maxheaderlen* is accepted, but "
 "defaults to ``None``, which means that by default the line length is "
-"controlled by the :attr:`~email.policy.EmailPolicy.max_line_length` of the "
+"controlled by the :attr:`~email.policy.Policy.max_line_length` of the "
 "policy.  The *policy* argument may be used to override the default policy "
 "obtained from the message instance.  This can be used to control some of the"
 " formatting produced by the method, since the specified *policy* will be "
 "passed to the :class:`~email.generator.Generator`."
 msgstr ""
-"以一段字符串的形式返回整个消息对象。 若可选的 *unixform* 参数为真，返回的字符串会包含信封头。 *unixform* 的默认值是 "
-"``False``。 为了保持与基类 :class:`~email.message.Message` 的兼容性，*maxheaderlen* "
-"是被接受的，但是其默认值是 ``None``。 这个默认值表示行长度由策略的 "
-":attr:`~email.policy.EmailPolicy.max_line_length` 属性所控制。从信息实例所获取到的策略可以通过 "
-"*policy* 参数重写。 这样可以对该方法所产生的输出进行略微的控制，因为指定的 *policy* 会被传递到 "
-":class:`~email.generator.Generator` 当中。"
+"以一段字符串的形式返回整个消息对象。 若可选的 *unixfrom* 为真值，信封头将包括在返回的字符串中。 *unixfrom* 默认为 "
+"``False``。 为了保持向下兼容基类 :class:`~email.message.Message` 还接受 "
+"*maxheaderlen*，但其默认为 ``None``，这意味着在默认情况下行长度将由策略的 "
+":attr:`~email.policy.Policy.max_line_length` 来控制。 *policy* "
+"参数可以被用于覆盖从消息实例获取到的默认策略。 这可以被用来控制该方法所产生的某些格式，因为指定的 *policy* 将被传给 "
+":class:`~email.generator.Generator`。"
 
 #: ../../library/email.message.rst:76 ../../library/email.message.rst:114
 msgid ""
@@ -198,7 +194,7 @@ msgid ""
 ":class:`~email.generator.BytesGenerator`."
 msgstr ""
 "以字节串对象的形式返回整个扁平化后的消息。 当可选的 *unixfrom* 为真值时，返回的字符串会包含信封标头。 *unixfrom* 的默认值为 "
-"``False``。 *policy* 参数可被用于重载从消息实例获取的默认 policy。 这可被用来控制该方法所产生的部分格式效果，因为指定的 "
+"``False``。 *policy* 参数可被用于覆盖从消息实例获取的默认 policy。 这可被用来控制该方法所产生的部分格式效果，因为指定的 "
 "*policy* 将被传递给 :class:`~email.generator.BytesGenerator`。"
 
 #: ../../library/email.message.rst:118
@@ -334,17 +330,16 @@ msgstr ""
 
 #: ../../library/email.message.rst:216
 msgid ""
-"If the :mod:`policy` defines certain headers to be unique (as the standard "
-"policies do), this method may raise a :exc:`ValueError` when an attempt is "
-"made to assign a value to such a header when one already exists.  This "
-"behavior is intentional for consistency's sake, but do not depend on it as "
-"we may choose to make such assignments do an automatic deletion of the "
-"existing header in the future."
+"If the :mod:`policy <email.policy>` defines certain headers to be unique (as"
+" the standard policies do), this method may raise a :exc:`ValueError` when "
+"an attempt is made to assign a value to such a header when one already "
+"exists.  This behavior is intentional for consistency's sake, but do not "
+"depend on it as we may choose to make such assignments do an automatic "
+"deletion of the existing header in the future."
 msgstr ""
-"如果 :mod:`policy` "
-"明确要求某些字段是唯一的（至少标准策略就有这么做），对这些字段在已有同名字段的情况下仍然调用此方法尝试为字段名赋值会引发 "
-":exc:`ValueError` "
-"异常。这是为了一致性而刻意设计出的行为，不过我们随时可能会突然觉得“还是在这种情况下自动把旧字段删除比较好吧”而把这个行为改掉，所以不要以为这是特性而依赖这个行为。"
+"如果 :mod:`policy <email.policy>` "
+"将特定标头定义为唯一的（就像标准策略所做的一样），则当这样的标头已存在时试图为其赋值此方法会引发 :exc:`ValueError`。 "
+"采取此种行为是出于保持一致性的考量，但不能依赖它因为在未来我们可能会选择让这样的赋值操作自动删除现有的标头。"
 
 #: ../../library/email.message.rst:226
 msgid ""
@@ -370,11 +365,11 @@ msgstr "以二元元组的列表形式返回消息头中所有的字段名和字
 #: ../../library/email.message.rst:249
 msgid ""
 "Return the value of the named header field.  This is identical to "
-":meth:`__getitem__` except that optional *failobj* is returned if the named "
-"header is missing (*failobj* defaults to ``None``)."
+":meth:`~object.__getitem__` except that optional *failobj* is returned if "
+"the named header is missing (*failobj* defaults to ``None``)."
 msgstr ""
-"返回对应字段名的字段值。这个方法与 :meth:`__getitem__` 是一样的，只不过如果对应字段名的字段没有找到，该方法会返回 "
-"*failobj* 。这个参数是可选的（默认值为 ``None`` ）。"
+"返回对应标头字段名的值。 这个方法与 :meth:`~object.__getitem__` 是一样的，只是如果对应标头不存在则返回可选的 "
+"*failobj* (*failobj* 默认为 ``None``)。"
 
 #: ../../library/email.message.rst:254
 msgid "Here are some additional useful header related methods:"
@@ -561,11 +556,12 @@ msgstr "于 :class:`EmailMessage` 对象而言， *requote* 参数已被弃用�
 #: ../../library/email.message.rst:380
 msgid ""
 "Note that existing parameter values of headers may be accessed through the "
-":attr:`~email.headerregistry.BaseHeader.params` attribute of the header "
-"value (for example, ``msg['Content-Type'].params['charset']``)."
+":attr:`~email.headerregistry.ParameterizedMIMEHeader.params` attribute of "
+"the header value (for example, ``msg['Content-Type'].params['charset']``)."
 msgstr ""
-"请注意，头字段已有的参数值可以通过头字段的 :attr:`~email.headerregistry.BaseHeader.params` "
-"属性来访问（举例： ``msg['Content-Type'].params['charset']`` ）。"
+"请注意标头现有的形参值可以通过标头值的 "
+":attr:`~email.headerregistry.ParameterizedMIMEHeader.params` 属性来访问 (例如 "
+"``msg['Content-Type'].params['charset']``)。"
 
 #: ../../library/email.message.rst:384
 msgid "``replace`` keyword was added."
@@ -964,9 +960,9 @@ msgstr "移除所有载荷和所有标头。"
 
 #: ../../library/email.message.rst:694
 msgid ""
-"Remove the payload and all of the :exc:`Content-` headers, leaving all other"
-" headers intact and in their original order."
-msgstr "移除载荷以及所有 :exc:`Content-` 标头，其他标头不加改变并且保持其原有顺序。"
+"Remove the payload and all of the :mailheader:`!Content-` headers, leaving "
+"all other headers intact and in their original order."
+msgstr "移除载荷以及所有 :mailheader:`!Content-` 标头，保持所有其他标头不变并保留其原始顺序。"
 
 #: ../../library/email.message.rst:698
 msgid ":class:`EmailMessage` objects have the following instance attributes:"

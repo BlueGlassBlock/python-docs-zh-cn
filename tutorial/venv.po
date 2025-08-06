@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# ww song <sww4718168@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -234,8 +233,9 @@ msgstr ""
 msgid ""
 "``pip`` has many more options.  Consult the :ref:`installing-index` guide "
 "for complete documentation for ``pip``.  When you've written a package and "
-"want to make it available on the Python Package Index, consult the "
-":ref:`distributing-index` guide."
+"want to make it available on the Python Package Index, consult the `Python "
+"packaging user guide`_."
 msgstr ""
-"``pip`` 有更多选择。有关 ``pip`` 的完整文档，请参阅 :ref:`installing-index` 指南。当您编写一个包并希望在 "
-"Python 包索引中使它可用时，请参考 :ref:`distributing-index` 指南。"
+"``pip`` 有更多的选项。 有关 ``pip`` 的完整文档请查阅 :ref:`installing-index` 指南。 "
+"当你编写了一个软件包并希望将其放在 Python Package Index 中时，请查阅 `Python packaging user "
+"guide`_。"

@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:09+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:04+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -398,7 +398,7 @@ msgid ""
 "Returns ``NULL`` on error.  Use :c:func:`PyErr_Occurred` to disambiguate."
 msgstr "出错时返回  ``NULL``，请利用 :c:func:`PyErr_Occurred` 辨别具体问题。"
 
-#: ../../c-api/long.rst:8 ../../c-api/long.rst:8
+#: ../../c-api/long.rst:8
 msgid "object"
 msgstr "object -- 对象"
 
@@ -411,8 +411,8 @@ msgid "integer"
 msgstr "integer"
 
 #: ../../c-api/long.rst:118
-msgid "LONG_MAX"
-msgstr "LONG_MAX"
+msgid "LONG_MAX (C macro)"
+msgstr "LONG_MAX (C 宏)"
 
 #: ../../c-api/long.rst:118 ../../c-api/long.rst:160 ../../c-api/long.rst:203
 #: ../../c-api/long.rst:218 ../../c-api/long.rst:234 ../../c-api/long.rst:250
@@ -420,13 +420,13 @@ msgid "OverflowError (built-in exception)"
 msgstr "OverflowError (内置异常)"
 
 #: ../../c-api/long.rst:203
-msgid "PY_SSIZE_T_MAX"
-msgstr "PY_SSIZE_T_MAX"
+msgid "PY_SSIZE_T_MAX (C macro)"
+msgstr "PY_SSIZE_T_MAX (C 宏)"
 
 #: ../../c-api/long.rst:218
-msgid "ULONG_MAX"
-msgstr "ULONG_MAX"
+msgid "ULONG_MAX (C macro)"
+msgstr "ULONG_MAX (C 宏)"
 
 #: ../../c-api/long.rst:234
-msgid "SIZE_MAX"
-msgstr "SIZE_MAX"
+msgid "SIZE_MAX (C macro)"
+msgstr "SIZE_MAX (C 宏)"

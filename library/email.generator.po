@@ -1,21 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# eric R <trencyclopedia@gmail.com>, 2021
-# Kevin Deng <kevindeng55+transifex@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,9 +38,8 @@ msgid ""
 "message on the console.  Taking a message object structure and producing a "
 "serialized representation is the job of the generator classes."
 msgstr ""
-"最普通的一种任务是生成由消息对象结构体表示的电子邮件消息的扁平（序列化）版本。 如果你想通过 :meth:`smtplib.SMTP.sendmail`"
-" 或 :mod:`nntplib` 模块来发送你的消息或是将消息打印到控制台就将需要这样做。 "
-"接受一个消息对象结构体并生成其序列化表示就是这些生成器类的工作。"
+"最常见的任务之一是生成由消息对象结构表示的电子邮件消息的扁平（序列化）版本。 如果您想通过 :meth:`smtplib.SMTP.sendmail` "
+"或 :mod:`nntplib` 模块发送消息，或在控制台上打印消息， 则需要执行此操作。 将消息对象结构转换为序列化表示的工作由生成器类完成。"
 
 #: ../../library/email.generator.rst:18
 msgid ""
@@ -402,14 +399,15 @@ msgstr "备注"
 #: ../../library/email.generator.rst:276
 msgid ""
 "This statement assumes that you use the appropriate setting for "
-"``unixfrom``, and that there are no :mod:`policy` settings calling for "
-"automatic adjustments (for example, "
-":attr:`~email.policy.Policy.refold_source` must be ``none``, which is *not* "
-"the default).  It is also not 100% true, since if the message does not "
-"conform to the RFC standards occasionally information about the exact "
+"``unixfrom``, and that there are no :mod:`email.policy` settings calling for"
+" automatic adjustments (for example, "
+":attr:`~email.policy.EmailPolicy.refold_source` must be ``none``, which is "
+"*not* the default).  It is also not 100% true, since if the message does not"
+" conform to the RFC standards occasionally information about the exact "
 "original text is lost during parsing error recovery.  It is a goal to fix "
 "these latter edge cases when possible."
 msgstr ""
-"此语句假定你使用了正确的 ``unixfrom`` 设置，并且没有用于自动调整的 :mod:`policy` 设置调用（例如 "
-":attr:`~email.policy.Policy.refold_source` 必须为 ``none``，这 *不是* 默认值）。 这也不是 "
-"100% 为真，因为如果消息不遵循 RFC 标准则有时实际原始文本的信息会在解析错误恢复时丢失。 它的目标是在可能的情况下修复这些后续边缘情况。"
+"此语句假定你使用了正确的 ``unixfrom`` 设置，并且没有针对自动调整的 :mod:`email.policy` "
+"设置调用（例如，:attr:`~email.policy.EmailPolicy.refold_source` 必须为 ``none``，这 *不是* "
+"默认值）。 这也不是 100% 为真的，因为如果消息不遵循 RFC 标准则有时实际原始文本的信息会在解析错误恢复时丢失。 "
+"它的目标是在可能的情况下修复这些后续的边缘情况。"

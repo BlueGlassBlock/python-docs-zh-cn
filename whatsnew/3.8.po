@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# WH-2099 <wh2099@outlook.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:24+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:07+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -116,11 +115,12 @@ msgid ""
 "There is a new function parameter syntax ``/`` to indicate that some "
 "function parameters must be specified positionally and cannot be used as "
 "keyword arguments.  This is the same notation shown by ``help()`` for C "
-"functions annotated with Larry Hastings' :ref:`Argument Clinic <howto-"
-"clinic>` tool."
+"functions annotated with Larry Hastings' `Argument Clinic "
+"<https://devguide.python.org/development-tools/clinic/>`__ tool."
 msgstr ""
-"新增了一个函数形参语法 ``/`` 用来指明某些函数形参必须为仅限位置而非关键字参数。 这种标记语法与通过 ``help()`` 所显示的使用 "
-"Larry Hastings 的 :ref:`Argument Clinic <howto-clinic>` 工具标记的 C 函数相同。"
+"新增了一个函数形参语法 ``/`` 用来指明某些函数形参必须作为位置参数而不可作为关键字参数。 这种标记语法与通过 ``help()`` 显示的使用 "
+"Larry Hastings 的 `Argument Clinic <https://devguide.python.org/development-"
+"tools/clinic/>`__ 工具所标记的 C 函数相同。"
 
 #: ../../whatsnew/3.8.rst:128
 msgid ""
@@ -621,8 +621,9 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:407
 msgid ""
-"Added support of ``\\N{name}`` escapes in :mod:`regular expressions <re>`::"
-msgstr "添加 ``\\N{name}`` 转义符在 :mod:`正则表达式 <re>` 中的支持::"
+"Added support of :samp:`\\\\N\\\\{{name}\\\\}` escapes in :mod:`regular "
+"expressions <re>`::"
+msgstr "在 :mod:`正则表达式 <re>`: 中添加了对 :samp:`\\\\N\\\\{{name}\\\\}` 转义码的支持::"
 
 #: ../../whatsnew/3.8.rst:414
 msgid ""
@@ -698,7 +699,7 @@ msgid ""
 "sessions. (Contributed by Google via Gregory P. Smith in :issue:`1054041`.)"
 msgstr ""
 "当 Python 解释器通过 Ctrl-C (SIGINT) 被中断并且所产生的 :exc:`KeyboardInterrupt` "
-"异常未被捕获，Python 进程现在会通过一个 SIGINT 信号或是使得发起调用的进程能检测到它是由 Ctrl-C 操作杀死的正确退出代码来退出。 "
+"异常未被捕获，Python 进程现在会通过一个 SIGINT 信号或是使得唤起的进程能检测到它是由 Ctrl-C 操作杀死的正确退出代码来退出。 "
 "POSIX 和 Windows 上的终端会相应地使用此代码在交互式会话中终止脚本。 （由 Google 的 Gregory P. Smith 在 "
 ":issue:`1054041` 中贡献。）"
 
@@ -895,7 +896,7 @@ msgid ""
 "spawn a new event loop on every invocation:"
 msgstr ""
 "运行 ``python -m asyncio`` 将启动一个原生异步 REPL。 这允许快速体验具有最高层级 :keyword:`await` 的代码。"
-" 这时不再需要直接调用 ``asyncio.run()``，因为此操作会在每次发起调用时产生一个新事件循环："
+" 这时不再需要直接调用 ``asyncio.run()``，因为此操作会在每次唤起时产生一个新事件循环："
 
 #: ../../whatsnew/3.8.rst:649
 msgid "(Contributed by Yury Selivanov in :issue:`37028`.)"
@@ -1085,15 +1086,16 @@ msgstr "datetime"
 #: ../../whatsnew/3.8.rst:756
 msgid ""
 "Added new alternate constructors :meth:`datetime.date.fromisocalendar` and "
-":meth:`datetime.datetime.fromisocalendar`, which construct :class:`date` and"
-" :class:`datetime` objects respectively from ISO year, week number, and "
-"weekday; these are the inverse of each class's ``isocalendar`` method. "
-"(Contributed by Paul Ganssle in :issue:`36004`.)"
+":meth:`datetime.datetime.fromisocalendar`, which construct "
+":class:`~datetime.date` and :class:`~datetime.datetime` objects respectively"
+" from ISO year, week number, and weekday; these are the inverse of each "
+"class's ``isocalendar`` method. (Contributed by Paul Ganssle in "
+":issue:`36004`.)"
 msgstr ""
 "添加了新的替代构造器 :meth:`datetime.date.fromisocalendar` 和 "
 ":meth:`datetime.datetime.fromisocalendar`，它们分别基于 ISO 年份、周序号和周内日序号来构造 "
-":class:`date` 和 :class:`datetime` 对象；这两者分别是其所对应类中 ``isocalendar`` 方法的逆操作。 （由"
-" Paul Ganssle 在 :issue:`36004` 中贡献。）"
+":class:`~datetime.date` 和 :class:`~datetime.datetime` 对象；这两者分别是其所对应类中 "
+"``isocalendar`` 方法的逆操作。 （由 Paul Ganssle 在 :issue:`36004` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:764
 msgid "functools"
@@ -1344,11 +1346,11 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:950
 msgid ""
-"(Suggested by Raymond Hettinger, implemented by Dong-hee Na, and reviewed by"
-" Vinay Sajip in :issue:`33897`.)"
+"(Suggested by Raymond Hettinger, implemented by Donghee Na, and reviewed by "
+"Vinay Sajip in :issue:`33897`.)"
 msgstr ""
-"（由 Raymond Hettinger 提议，由 Dong-hee Na 实现，并由 Vinay Sajip 在 :issue:`33897` "
-"中完成审核。）"
+"（由 Raymond Hettinger 提议，由 Donghee Na 实现，并由 Vinay Sajip 审核后在 :issue:`33897` "
+"中贡献。）"
 
 #: ../../whatsnew/3.8.rst:955
 msgid "math"
@@ -1584,6 +1586,8 @@ msgid ""
 "Added :meth:`pathlib.Path.link_to()` which creates a hard link pointing to a"
 " path. (Contributed by Joannah Nanjekye in :issue:`26978`)"
 msgstr ""
+"增加了 :meth:`pathlib.Path.link_to()` 用于创建指向路径的硬链接。 （由 Joannah Nanjekye 在 "
+":issue:`26978` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:1095
 msgid "pickle"
@@ -1802,7 +1806,7 @@ msgstr ""
 "Python 没有办法处理时被调用。 例如，当一个析构器在垃圾回收时 (:func:`gc.collect`) 所引发的异常。 （由 Victor "
 "Stinner 在 :issue:`36829` 中贡献。）"
 
-#: ../../whatsnew/3.8.rst:1247
+#: ../../whatsnew/3.8.rst:1247 ../../whatsnew/3.8.rst:2348
 msgid "tarfile"
 msgstr "tarfile"
 
@@ -2389,11 +2393,11 @@ msgstr ":c:func:`PyObject_INIT`, :c:func:`PyObject_INIT_VAR`"
 
 #: ../../whatsnew/3.8.rst:1574
 msgid ""
-"Private functions: :c:func:`_PyObject_GC_TRACK`, "
-":c:func:`_PyObject_GC_UNTRACK`, :c:func:`_Py_Dealloc`"
+"Private functions: :c:func:`!_PyObject_GC_TRACK`, "
+":c:func:`!_PyObject_GC_UNTRACK`, :c:func:`!_Py_Dealloc`"
 msgstr ""
-"私有函数: :c:func:`_PyObject_GC_TRACK`, :c:func:`_PyObject_GC_UNTRACK`, "
-":c:func:`_Py_Dealloc`"
+"私有函数: :c:func:`!_PyObject_GC_TRACK`, :c:func:`!_PyObject_GC_UNTRACK`, "
+":c:func:`!_Py_Dealloc`"
 
 #: ../../whatsnew/3.8.rst:1577
 msgid "(Contributed by Victor Stinner in :issue:`35059`.)"
@@ -2401,13 +2405,13 @@ msgstr "（由 Victor Stinner 在 :issue:`35059` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:1579
 msgid ""
-"The :c:func:`PyByteArray_Init` and :c:func:`PyByteArray_Fini` functions have"
-" been removed. They did nothing since Python 2.7.4 and Python 3.2.0, were "
-"excluded from the limited API (stable ABI), and were not documented. "
+"The :c:func:`!PyByteArray_Init` and :c:func:`!PyByteArray_Fini` functions "
+"have been removed. They did nothing since Python 2.7.4 and Python 3.2.0, "
+"were excluded from the limited API (stable ABI), and were not documented. "
 "(Contributed by Victor Stinner in :issue:`35713`.)"
 msgstr ""
-":c:func:`PyByteArray_Init` 和 :c:func:`PyByteArray_Fini` 函数已被移除。 它们自 Python "
-"2.7.4 和 Python 3.2.0 起就没有任何用处，被排除在受限 API (稳定版 ABI) 之外，并且未被写入文档。 （由 Victor "
+":c:func:`!PyByteArray_Init` 和 :c:func:`!PyByteArray_Fini` 函数已被移除。 它们自 Python"
+" 2.7.4 和 Python 3.2.0 起就没有任何用处，被排除在受限 API (稳定 ABI) 之外，并且未被写入文档。 （由 Victor "
 "Stinner 在 :issue:`35713` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:1584
@@ -2498,12 +2502,12 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:1628
 msgid ""
-":c:func:`Py_SetPath` now sets :data:`sys.executable` to the program full "
+":c:func:`!Py_SetPath` now sets :data:`sys.executable` to the program full "
 "path (:c:func:`Py_GetProgramFullPath`) rather than to the program name "
 "(:c:func:`Py_GetProgramName`). (Contributed by Victor Stinner in "
 ":issue:`38234`.)"
 msgstr ""
-":c:func:`Py_SetPath` 现在会将 :data:`sys.executable` 设为程序完整路径 "
+":c:func:`!Py_SetPath` 现在会将 :data:`sys.executable` 设置为程序完整路径 "
 "(:c:func:`Py_GetProgramFullPath`) 而不是程序名称 (:c:func:`Py_GetProgramName`)。 （由 "
 "Victor Stinner 在 :issue:`38234` 中贡献。）"
 
@@ -2546,12 +2550,12 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:1653
 msgid ""
-"The :meth:`__getitem__` methods of :class:`xml.dom.pulldom.DOMEventStream`, "
-":class:`wsgiref.util.FileWrapper` and :class:`fileinput.FileInput` have been"
-" deprecated."
+"The :meth:`~object.__getitem__` methods of "
+":class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` "
+"and :class:`fileinput.FileInput` have been deprecated."
 msgstr ""
 ":class:`xml.dom.pulldom.DOMEventStream`, :class:`wsgiref.util.FileWrapper` 和"
-" :class:`fileinput.FileInput` 的 :meth:`__getitem__` 方法已被弃用。"
+" :class:`fileinput.FileInput` 的 :meth:`~object.__getitem__` 方法已被弃用。"
 
 #: ../../whatsnew/3.8.rst:1657
 msgid ""
@@ -2670,10 +2674,10 @@ msgstr ""
 #: ../../whatsnew/3.8.rst:1712
 msgid ""
 "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` "
-"has been deprecated. (Contributed by Dong-hee Na in :issue:`35283`.)"
+"has been deprecated. (Contributed by Donghee Na in :issue:`35283`.)"
 msgstr ""
-":class:`threading.Thread` 的 :meth:`~threading.Thread.isAlive()` 方法已弃用。 （由 "
-"Dong-hee Na 在 :issue:`35283` 中贡献。）"
+":class:`threading.Thread` 的 :meth:`~threading.Thread.isAlive()` 方法已被弃用。 （由 "
+"Donghee Na 在 :issue:`35283` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:1716
 msgid ""
@@ -2901,9 +2905,8 @@ msgid ""
 "iterable expression in the leftmost :keyword:`!for` clause). (Contributed by"
 " Serhiy Storchaka in :issue:`10544`.)"
 msgstr ""
-"yield 表达式（包括 ``yield`` 和 ``yield from`` 子句）现在不允许在推导式和生成器表达式中使用（但 "
-":keyword:`!for` 子句最左边的可迭代对象表达式除外）。 （由 Serhiy Storchaka 在 :issue:`10544` "
-"中贡献。）"
+"yield 表达式（包括 ``yield`` 和 ``yield from`` 子句）现在不允许在推导式和生成器表达式中使用（但最左边的 "
+":keyword:`!for` 子句中的可迭代对象表达式除外）。 （由 Serhiy Storchaka 在 :issue:`10544` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:1820
 msgid ""
@@ -2956,16 +2959,21 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:1845
 msgid ""
-":c:func:`PyEval_AcquireLock` and :c:func:`PyEval_AcquireThread` now "
+":c:func:`!PyEval_AcquireLock` and :c:func:`!PyEval_AcquireThread` now "
 "terminate the current thread if called while the interpreter is finalizing, "
 "making them consistent with :c:func:`PyEval_RestoreThread`, "
 ":c:func:`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`. If this "
 "behavior is not desired, guard the call by checking "
-":c:func:`_Py_IsFinalizing` or :func:`sys.is_finalizing`. (Contributed by "
+":c:func:`!_Py_IsFinalizing` or :func:`sys.is_finalizing`. (Contributed by "
 "Joannah Nanjekye in :issue:`36475`.)"
 msgstr ""
+"现在 :c:func:`!PyEval_AcquireLock` 和 :c:func:`!PyEval_AcquireThread` "
+"当解释器正在最终化时被调用将会终结当前线程，以使它们与 :c:func:`PyEval_RestoreThread`, "
+":c:func:`Py_END_ALLOW_THREADS` 和 :c:func:`PyGILState_Ensure` 保持一致。 "
+"如果不想要此种行为，请通过检测 :c:func:`!_Py_IsFinalizing` 或 :func:`sys.is_finalizing` "
+"来保护该调用。 （由 Joannah Nanjekye 在 :issue:`36475` 中贡献。）"
 
-#: ../../whatsnew/3.8.rst:1855
+#: ../../whatsnew/3.8.rst:1855 ../../whatsnew/3.8.rst:2318
 msgid "Changes in the Python API"
 msgstr "Python API 的变化"
 
@@ -3266,11 +3274,11 @@ msgstr ""
 
 #: ../../whatsnew/3.8.rst:2021
 msgid ""
-"The :c:func:`PyEval_ReInitThreads` function has been removed from the C API."
-" It should not be called explicitly: use :c:func:`PyOS_AfterFork_Child` "
+"The :c:func:`!PyEval_ReInitThreads` function has been removed from the C "
+"API. It should not be called explicitly: use :c:func:`PyOS_AfterFork_Child` "
 "instead. (Contributed by Victor Stinner in :issue:`36728`.)"
 msgstr ""
-":c:func:`PyEval_ReInitThreads` 函数已从 C API 中移除。 它不应当被显式地调用；请改用 "
+":c:func:`!PyEval_ReInitThreads` 函数已被 C API 中移除。 它不应被显式地调用：请改用 "
 ":c:func:`PyOS_AfterFork_Child`。 （由 Victor Stinner 在 :issue:`36728` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:2026
@@ -3345,6 +3353,10 @@ msgid ""
 ":c:func:`PyObject_GC_NewVar`, or any other custom allocator that uses "
 ":c:func:`PyObject_Init` or :c:func:`PyObject_INIT`."
 msgstr ""
+"在分配实例之后在类型对象上移除 :c:macro:`Py_INCREF` —— 如果有的话。 这可能发生在调用 "
+":c:macro:`PyObject_New`, :c:macro:`PyObject_NewVar`, "
+":c:func:`PyObject_GC_New`, :c:func:`PyObject_GC_NewVar` 或任何其他使用 "
+":c:func:`PyObject_Init` 或 :c:func:`PyObject_INIT` 的自定义分配器之后。"
 
 #: ../../whatsnew/3.8.rst:2066 ../../whatsnew/3.8.rst:2085
 #: ../../whatsnew/3.8.rst:2104
@@ -3392,11 +3404,12 @@ msgstr "（由 Antoine Pitrou 在 :issue:`32388` 中贡献。）"
 
 #: ../../whatsnew/3.8.rst:2121
 msgid ""
-"The functions :c:func:`PyNode_AddChild` and :c:func:`PyParser_AddToken` now "
-"accept two additional ``int`` arguments *end_lineno* and *end_col_offset*."
+"The functions :c:func:`!PyNode_AddChild` and :c:func:`!PyParser_AddToken` "
+"now accept two additional ``int`` arguments *end_lineno* and "
+"*end_col_offset*."
 msgstr ""
-"函数 :c:func:`PyNode_AddChild` 和 :c:func:`PyParser_AddToken` 现在接受两个额外的 ``int``"
-" 参数 *end_lineno* 和 *end_col_offset*。"
+"函数 :c:func:`!PyNode_AddChild` 和 :c:func:`!PyParser_AddToken` 现在接受两个额外的 "
+"``int`` 参数 *end_lineno* 和 *end_col_offset*。"
 
 #: ../../whatsnew/3.8.rst:2124
 msgid ""
@@ -3530,10 +3543,38 @@ msgstr ""
 "Yury Selivanov 在 :issue:`37228` 中贡献。。）"
 
 #: ../../whatsnew/3.8.rst:2244
+msgid "Notable changes in Python 3.8.2"
+msgstr "Python 3.8.2 中的重要变化"
+
+#: ../../whatsnew/3.8.rst:2246
+msgid ""
+"Fixed a regression with the ``ignore`` callback of :func:`shutil.copytree`. "
+"The argument types are now str and List[str] again. (Contributed by Manuel "
+"Barkhau and Giampaolo Rodola in :gh:`83571`.)"
+msgstr ""
+"修复了 :func:`shutil.copytree` 的 ``ignore`` 回调中的回归问题。 现在该参数的类型已改回 str 和 "
+"List[str]。 （由 Manuel Barkhau 和 Giampaolo Rodola 在 :gh:`83571` 中贡献。）"
+
+#: ../../whatsnew/3.8.rst:2251
+msgid "Notable changes in Python 3.8.3"
+msgstr "Python 3.8.3 中的重要变化"
+
+#: ../../whatsnew/3.8.rst:2253
+msgid ""
+"The constant values of future flags in the :mod:`__future__` module are "
+"updated in order to prevent collision with compiler flags. Previously "
+"``PyCF_ALLOW_TOP_LEVEL_AWAIT`` was clashing with ``CO_FUTURE_DIVISION``. "
+"(Contributed by Batuhan Taskaya in :gh:`83743`)"
+msgstr ""
+":mod:`__future__` 模块中的 future 旗标常量值已被更新以防止与编译器旗标发生冲突。 在之前版本中 "
+"``PyCF_ALLOW_TOP_LEVEL_AWAIT`` 与 ``CO_FUTURE_DIVISION`` 存在冲突。 （由 Batuhan "
+"Taskaya 在 :gh:`83743` 中贡献。）"
+
+#: ../../whatsnew/3.8.rst:2259
 msgid "Notable changes in Python 3.8.8"
 msgstr "Python 3.8.8 中的重要变化"
 
-#: ../../whatsnew/3.8.rst:2246
+#: ../../whatsnew/3.8.rst:2261
 msgid ""
 "Earlier Python versions allowed using both ``;`` and ``&`` as query "
 "parameter separators in :func:`urllib.parse.parse_qs` and "
@@ -3551,11 +3592,80 @@ msgstr ""
 ":func:`cgi.parse_multipart` 因为它们在内部使用了受影响的函数。 要了解更多细节，请查看它们各自的文档。 （由 Adam "
 "Goldschmidt, Senthil Kumaran 和 Ken Jin 在 :issue:`42967` 中贡献。）"
 
-#: ../../whatsnew/3.8.rst:2257
+#: ../../whatsnew/3.8.rst:2272
+msgid "Notable changes in Python 3.8.9"
+msgstr "Python 3.8.9 中的重要变化"
+
+#: ../../whatsnew/3.8.rst:2274
+msgid ""
+"A security fix alters the :class:`ftplib.FTP` behavior to not trust the IPv4"
+" address sent from the remote server when setting up a passive data channel."
+"  We reuse the ftp server IP address instead.  For unusual code requiring "
+"the old behavior, set a ``trust_server_pasv_ipv4_address`` attribute on your"
+" FTP instance to ``True``.  (See :gh:`87451`)"
+msgstr ""
+"新的安全修正将 :class:`ftplib.FTP` 的行为改成当设置被动数据通道时不信任远程服务器所发送的 IPv4 地址。 我们会改为重用 ftp"
+" 服务器的 IP 地址。 对于需要原先的行为的不常见代码，请在你的 FTP 实例上将 "
+"``trust_server_pasv_ipv4_address`` 属性设为 ``True``。 （参见 :gh:`87451`。）"
+
+#: ../../whatsnew/3.8.rst:2281 ../../whatsnew/3.8.rst:2301
+msgid "Notable changes in Python 3.8.10"
+msgstr "Python 3.8.10 中的重要变化"
+
+#: ../../whatsnew/3.8.rst:2284
+msgid "macOS 11.0 (Big Sur) and Apple Silicon Mac support"
+msgstr "macOS 11.0 (Big Sur) 与 Apple Silicon Mac 支持"
+
+#: ../../whatsnew/3.8.rst:2286
+msgid ""
+"As of 3.8.10, Python now supports building and running on macOS 11 (Big Sur)"
+" and on Apple Silicon Macs (based on the ``ARM64`` architecture). A new "
+"universal build variant, ``universal2``, is now available to natively "
+"support both ``ARM64`` and ``Intel 64`` in one set of executables. Note that"
+" support for \"weaklinking\", building binaries targeted for newer versions "
+"of macOS that will also run correctly on older versions by testing at "
+"runtime for missing features, is not included in this backport from Python "
+"3.9; to support a range of macOS versions, continue to target for and build "
+"on the oldest version in the range."
+msgstr ""
+"对于 3.8.10，Python 现在支持在 macOS 11 (Big Sur) 和 Apple Silicon Mac (基于 ``ARM64`` "
+"架构) 上构建和运行。 现在提供了一个新的通用构建形式 ``universal2`` 能够在一组可执行文件上同时原生支持 ``ARM64`` 和 "
+"``Intel 64``。 请注意对 \"弱链接\" 的支持，即以较新 macOS "
+"版本为目标构建的二进制文件通过在运行时测试缺失特性的方式也能在较旧版本上正确运行，尚未被包括在本次对 Python 3.9 的反向移植中；要支持更多的 "
+"macOS 版本，请继续以设定版本区间的最旧版本作为目标进行构建。"
+
+#: ../../whatsnew/3.8.rst:2296
+msgid ""
+"(Originally contributed by Ronald Oussoren and Lawrence D'Anna in "
+":gh:`85272`, with fixes by FX Coudert and Eli Rykoff, and backported to 3.8 "
+"by Maxime Bélanger and Ned Deily)"
+msgstr ""
+"（最初由 Ronald Oussoren 和 Lawrence D'Anna 在 :gh:`85272` 中贡献，由 FX Coudert 和 Eli "
+"Rykoff 提供修正，并由 Maxime Bélanger 和 Ned Deily 反向移植到 3.8）"
+
+#: ../../whatsnew/3.8.rst:2304
+msgid "urllib.parse"
+msgstr "urllib.parse"
+
+#: ../../whatsnew/3.8.rst:2306
+msgid ""
+"The presence of newline or tab characters in parts of a URL allows for some "
+"forms of attacks. Following the WHATWG specification that updates "
+":rfc:`3986`, ASCII newline ``\\n``, ``\\r`` and tab ``\\t`` characters are "
+"stripped from the URL by the parser in :mod:`urllib.parse` preventing such "
+"attacks. The removal characters are controlled by a new module level "
+"variable ``urllib.parse._UNSAFE_URL_BYTES_TO_REMOVE``. (See :issue:`43882`)"
+msgstr ""
+"在 URL 中存在换行符或制表符，可能会导致某些形式的攻击。根据 WHATWG 的规范更新了:rfc:`3986`， "
+":mod:`urllib.parse` 中的解析器将从 URL 中移除 ASCII 换行符 ``\\n`` 、``\\r`` 和 "
+"``\\t``字符，以防止这种攻击。将移除的字符由一个新的模块级变量``urllib.parse._UNSAFE_URL_BYTES_TO_REMOVE``"
+" 控制。（参阅 :issue:`43882` ）"
+
+#: ../../whatsnew/3.8.rst:2315
 msgid "Notable changes in Python 3.8.12"
 msgstr "Python 3.8.12 中的重要变化"
 
-#: ../../whatsnew/3.8.rst:2259
+#: ../../whatsnew/3.8.rst:2320
 msgid ""
 "Starting with Python 3.8.12 the :mod:`ipaddress` module no longer accepts "
 "any leading zeros in IPv4 address strings. Leading zeros are ambiguous and "
@@ -3568,9 +3678,52 @@ msgstr ""
 "前缀的零有歧义且会被某些库解读为八进制数字。 例如旧版函数 :func:`socket.inet_aton` 就将前缀的零视为八进制数字。 最新 "
 ":func:`~socket.inet_pton` 的 glibc 实现则不接受任何前缀的零。"
 
-#: ../../whatsnew/3.8.rst:2266
+#: ../../whatsnew/3.8.rst:2327
 msgid ""
 "(Originally contributed by Christian Heimes in :issue:`36384`, and "
 "backported to 3.8 by Achraf Merzouki.)"
 msgstr ""
 "（最初由 Christian Heimes 在 :issue:`36384` 中贡献，并由 Achraf Merzouki 向下移植到 3.8。）"
+
+#: ../../whatsnew/3.8.rst:2331
+msgid "Notable security feature in 3.8.14"
+msgstr "3.8.14 中的重要安全特性"
+
+#: ../../whatsnew/3.8.rst:2333
+msgid ""
+"Converting between :class:`int` and :class:`str` in bases other than 2 "
+"(binary), 4, 8 (octal), 16 (hexadecimal), or 32 such as base 10 (decimal) "
+"now raises a :exc:`ValueError` if the number of digits in string form is "
+"above a limit to avoid potential denial of service attacks due to the "
+"algorithmic complexity. This is a mitigation for `CVE-2020-10735 "
+"<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735>`_. This "
+"limit can be configured or disabled by environment variable, command line "
+"flag, or :mod:`sys` APIs. See the :ref:`integer string conversion length "
+"limitation <int_max_str_digits>` documentation.  The default limit is 4300 "
+"digits in string form."
+msgstr ""
+"使用十进制以外的底，如 2（二进制）、4、8（八进制）、16（十六进制）、32 以外作为基数在 :class:`int` 和  :class:`str`"
+" 之间进行转换，如果字符串形式的数字数量超过一个限制，会抛出 :exc:`ValueError`，以避免因算法复杂而导致的潜在拒绝服务攻击。这是对 "
+"`CVE-2020-10735 <https://cve.mitre.org/cgi-"
+"bin/cvename.cgi?name=CVE-2020-10735>`_ 的缓解方案。这个限制可以通过环境变量、命令行旗标或 :mod:`sys` "
+"API 进行配置或禁用。参见 :ref:`integer string conversion length limitation "
+"<int_max_str_digits>` 文档。默认限制是字符串形式的 4300 位数字。"
+
+#: ../../whatsnew/3.8.rst:2345
+msgid "Notable changes in 3.8.17"
+msgstr "3.8.17 中的重要变化"
+
+#: ../../whatsnew/3.8.rst:2350
+msgid ""
+"The extraction methods in :mod:`tarfile`, and :func:`shutil.unpack_archive`,"
+" have a new a *filter* argument that allows limiting tar features than may "
+"be surprising or dangerous, such as creating files outside the destination "
+"directory. See :ref:`tarfile-extraction-filter` for details. In Python 3.12,"
+" use without the *filter* argument will show a :exc:`DeprecationWarning`. In"
+" Python 3.14, the default will switch to ``'data'``. (Contributed by Petr "
+"Viktorin in :pep:`706`.)"
+msgstr ""
+":mod:`tarfile` 中的提取方法和 :func:`shutil.unpack_archive` 都新增了 *filter* "
+"参数以允许限制可能令人意外或危险的 tar 特性，例如在目标目录之外创建文件。 相关细节参见 :ref:`tarfile-extraction-"
+"filter`。 在 Python 3.12 中，不带 *filter* 参数的用法将显示 :exc:`DeprecationWarning`。 在 "
+"Python 3.14 中，默认值将切换为 ``'data'``。 （由 Petr Viktorin 在 :pep:`706` 中贡献。）"

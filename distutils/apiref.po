@@ -1,21 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 汇民 王 <whuim@qq.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:10+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:04+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -422,10 +420,11 @@ msgstr ""
 msgid ""
 ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
 msgstr ""
+"来自 :mod:`distutils.extension` 的 :class:`~distutils.extension.Extension`"
 
 #: ../../distutils/apiref.rst:169
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
-msgstr ""
+msgstr "来自 :mod:`distutils.cmd` 的 :class:`~distutils.cmd.Command`"
 
 #: ../../distutils/apiref.rst:171
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"

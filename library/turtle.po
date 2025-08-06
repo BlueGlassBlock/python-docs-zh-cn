@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,7 @@ msgid ""
 "It's an effective and well-proven way for learners to encounter programming "
 "concepts and interaction with software, as it provides instant, visible "
 "feedback. It also provides convenient access to graphical output in general."
-msgstr ""
+msgstr "对于学习者来说这是一种接触编程概念和与软件交互的高效且久经验证的方式，因为它能提供即时、可见的反馈。 它还能提供方便直观的图形输出。"
 
 #: ../../library/turtle.rst:43
 msgid ""
@@ -69,6 +69,7 @@ msgid ""
 "graphical output it can be a way to do that without the overhead of "
 "introducing more complex or external libraries into their work."
 msgstr ""
+"海龟绘图最初是作为一种教学工具被创建的，供教师在课堂上使用。 对于需要生成一些图形输出的程序员来说这是一种无需在工作中引入更高复杂度或外部库的方式。"
 
 #: ../../library/turtle.rst:52
 msgid "Tutorial"
@@ -82,25 +83,27 @@ msgstr "新用户应当从这里开始。 在本教程中我们将探索海龟�
 
 #: ../../library/turtle.rst:59
 msgid "Starting a turtle environment"
-msgstr ""
+msgstr "启动海龟环境"
 
 #: ../../library/turtle.rst:61
 msgid "In a Python shell, import all the objects of the ``turtle`` module::"
-msgstr ""
+msgstr "在 Python shell 中，导入 ``turtle`` 模块的所有对象::"
 
 #: ../../library/turtle.rst:65
 msgid ""
 "If you run into a ``No module named '_tkinter'`` error, you'll have to "
 "install the :mod:`Tk interface package <tkinter>` on your system."
 msgstr ""
+"如果你遇到了 ``No module named '_tkinter'`` 错误，则需要在你的系统中安装 :mod:`Tk 接口包 "
+"<tkinter>`。"
 
 #: ../../library/turtle.rst:70
 msgid "Basic drawing"
-msgstr ""
+msgstr "基本绘图"
 
 #: ../../library/turtle.rst:72
 msgid "Send the turtle forward 100 steps::"
-msgstr ""
+msgstr "让海龟前进 100 步::"
 
 #: ../../library/turtle.rst:76
 msgid ""
@@ -108,22 +111,23 @@ msgid ""
 "by the turtle, heading East. Change the direction of the turtle, so that it "
 "turns 120 degrees left (anti-clockwise)::"
 msgstr ""
+"你应该会看到（最可能的情况，是在你的显示器的一个新窗口中）海龟画出一条线段，方向朝东。 改变海龟的方向，让它向左转 120 度（逆时针）::"
 
 #: ../../library/turtle.rst:82
 msgid "Let's continue by drawing a triangle::"
-msgstr ""
+msgstr "让我们继续画一个三角形::"
 
 #: ../../library/turtle.rst:88
 msgid ""
 "Notice how the turtle, represented by an arrow, points in different "
 "directions as you steer it."
-msgstr ""
+msgstr "注意以一个箭头表示的海龟是如何随着你的操纵指向不同方向的。"
 
 #: ../../library/turtle.rst:91
 msgid ""
 "Experiment with those commands, and also with ``backward()`` and "
 "``right()``."
-msgstr ""
+msgstr "请继续尝试这些命令，还可以使用 ``backward()`` 和 ``right()``。"
 
 #: ../../library/turtle.rst:96 ../../library/turtle.rst:345
 #: ../../library/turtle.rst:985
@@ -134,95 +138,95 @@ msgstr "画笔控制"
 msgid ""
 "Try changing the color - for example, ``color('blue')`` - and width of the "
 "line - for example, ``width(3)`` - and then drawing again."
-msgstr ""
+msgstr "试着改变颜色 —— 例如，``color('blue')`` 和线宽 —— 例如，``width(3)`` 然后再次绘制。"
 
 #: ../../library/turtle.rst:101
 msgid ""
 "You can also move the turtle around without drawing, by lifting up the pen: "
 "``up()`` before moving. To start drawing again, use ``down()``."
-msgstr ""
+msgstr "您也可以在不绘制线条的情况下移动海龟，即在移动前抬起画笔: ``up()``。 要重新开始绘制，请使用 ``down()``。"
 
 #: ../../library/turtle.rst:106
 msgid "The turtle's position"
-msgstr ""
+msgstr "海龟的位置"
 
 #: ../../library/turtle.rst:108
 msgid ""
 "Send your turtle back to its starting-point (useful if it has disappeared "
 "off-screen)::"
-msgstr ""
+msgstr "将海龟送回起点（这适用于海龟消失在屏幕之外的情况）::"
 
 #: ../../library/turtle.rst:113
 msgid ""
 "The home position is at the center of the turtle's screen. If you ever need "
 "to know them, get the turtle's x-y co-ordinates with::"
-msgstr ""
+msgstr "初始位置在海龟屏幕的中心。 如果你需要知道具体数值，可以这样获取海龟的 x-y 坐标::"
 
 #: ../../library/turtle.rst:118
 msgid "Home is at ``(0, 0)``."
-msgstr ""
+msgstr "初始点在 ``(0, 0)``。"
 
 #: ../../library/turtle.rst:120
 msgid ""
 "And after a while, it will probably help to clear the window so we can start"
 " anew::"
-msgstr ""
+msgstr "过一段时间后，也许可以考虑清空窗口这样我们就可以重新开始::"
 
 #: ../../library/turtle.rst:127
 msgid "Making algorithmic patterns"
-msgstr ""
+msgstr "使用算法绘制图案"
 
 #: ../../library/turtle.rst:129
 msgid "Using loops, it's possible to build up geometric patterns::"
-msgstr ""
+msgstr "使用循环，可以构建出各种几何图案::"
 
 #: ../../library/turtle.rst:138
 msgid "\\ - which of course, are limited only by the imagination!"
-msgstr ""
+msgstr "\\ - 当然，这仅受限于你的想象力！"
 
 #: ../../library/turtle.rst:140
 msgid ""
 "Let's draw the star shape at the top of this page. We want red lines, filled"
 " in with yellow::"
-msgstr ""
+msgstr "让我们绘制本页面顶部的星形。 我们想要用红色线条，黄色填充::"
 
 #: ../../library/turtle.rst:146
 msgid ""
 "Just as ``up()`` and ``down()`` determine whether lines will be drawn, "
 "filling can be turned on and off::"
-msgstr ""
+msgstr "就像用 ``up()`` 和 ``down()`` 决定是否画线一样，填充也可以打开或关闭::"
 
 #: ../../library/turtle.rst:151
 msgid "Next we'll create a loop::"
-msgstr ""
+msgstr "接下来我们将创建一个循环::"
 
 #: ../../library/turtle.rst:159
 msgid ""
 "``abs(pos()) < 1`` is a good way to know when the turtle is back at its home"
 " position."
-msgstr ""
+msgstr "``abs(pos()) < 1`` 是确定海龟何时回到初始点的好办法。"
 
 #: ../../library/turtle.rst:162
 msgid "Finally, complete the filling::"
-msgstr ""
+msgstr "最后，完成填充::"
 
 #: ../../library/turtle.rst:166
 msgid ""
 "(Note that filling only actually takes place when you give the "
 "``end_fill()`` command.)"
-msgstr ""
+msgstr "（请注意只有在你给出 ``end_fill()`` 命令时才会实际进行填充。）"
 
 #: ../../library/turtle.rst:173
 msgid "How to..."
-msgstr ""
+msgstr "如何..."
 
 #: ../../library/turtle.rst:175
 msgid "This section covers some typical turtle use-cases and approaches."
-msgstr ""
+msgstr "本节介绍一些典型的海龟使用案例和操作方式。"
 
 #: ../../library/turtle.rst:179
 msgid "Get started as quickly as possible"
-msgstr ""
+msgstr "尽快地开始"
 
 #: ../../library/turtle.rst:181
 msgid ""
@@ -231,6 +235,7 @@ msgid ""
 " to programming ideas, with a minimum of overhead (not just children, of "
 "course)."
 msgstr ""
+"海龟绘图形的乐趣之一在于通过简单的命令就能获得即时的视觉反馈 —— 这是一种向儿童介绍编程理念的绝佳方式，而且开销最小（当然，不仅适用于儿童）。"
 
 #: ../../library/turtle.rst:186
 msgid ""
@@ -238,6 +243,8 @@ msgid ""
 "functionality as functions, available with ``from turtle import *``. The "
 ":ref:`turtle graphics tutorial <turtle-tutorial>` covers this approach."
 msgstr ""
+"海龟模块将其所有基本功能作为函数公开，并通过 ``from turtle import *`` 提供使这一切成为可能。 :ref:`海龟绘图教程 "
+"<turtle-tutorial>` 介绍了相关的步骤。"
 
 #: ../../library/turtle.rst:190
 msgid ""
@@ -245,6 +252,7 @@ msgid ""
 " equivalents, such as ``fd()`` for :func:`forward`. These are especially "
 "useful when working with learners for whom typing is not a skill."
 msgstr ""
+"值得注意的是许多海乌命令还有更简洁的等价形式，例如 ``fd()`` 对应 :func:`forward`。 对于不擅长打字的学习者来说这尤其有用。"
 
 #: ../../library/turtle.rst:196
 msgid ""
@@ -253,10 +261,12 @@ msgid ""
 "straightforward, so check this in advance if you're planning to use turtle "
 "graphics with a learner."
 msgstr ""
+"你需要在系统中安装 :mod:`Tk 接口软件包 <tkinter>`，才能使用海龟绘图。 "
+"请注意这并不总是很容易做到的，所以如果你打算让学习者使用海龟绘图请事先检查这一点。"
 
 #: ../../library/turtle.rst:203
 msgid "Use the ``turtle`` module namespace"
-msgstr ""
+msgstr "使用 ``turtle`` 模块命名空间"
 
 #: ../../library/turtle.rst:205
 msgid ""
@@ -266,6 +276,8 @@ msgid ""
 "an issue if you're using turtle graphics in a script where other modules "
 "might be imported)."
 msgstr ""
+"使用 ``from turtle import *`` 是很方便 —— "
+"但要注意它导入的对象集相当大，如果你还在做海龟绘图以外的事情就有发生名称冲突的风险（如果你在可能导入了其他模块的脚本中使用海龟绘图则可能会遇到更大的问题）。"
 
 #: ../../library/turtle.rst:211
 msgid ""
@@ -274,38 +286,40 @@ msgid ""
 "over and over again becomes tedious, use for example ``import turtle as t`` "
 "instead.)"
 msgstr ""
+"解决办法是使用 ``import turtle`` —— ``fd()`` 将变成 ``turtle.fd()``，``width()`` 将变成 "
+"``turtle.width()`` 等等。 （如果反复输入“turtle”太过烦琐，还可改成 ``import turtle as t`` 等。）"
 
 #: ../../library/turtle.rst:218
 msgid "Use turtle graphics in a script"
-msgstr ""
+msgstr "在脚本中使用海龟绘图"
 
 #: ../../library/turtle.rst:220
 msgid ""
 "It's recommended to use the ``turtle`` module namespace as described "
 "immediately above, for example::"
-msgstr ""
+msgstr "建议使用上文所述的 ``turtle`` 模块命名空间，例如::"
 
 #: ../../library/turtle.rst:232
 msgid ""
 "Another step is also required though - as soon as the script ends, Python "
 "will also close the turtle's window. Add::"
-msgstr ""
+msgstr "但还需要另一个步骤 —— 因为一旦脚本结束，Python 将会同时关闭海龟的窗口。 请添加::"
 
 #: ../../library/turtle.rst:237
 msgid ""
 "to the end of the script. The script will now wait to be dismissed and will "
 "not exit until it is terminated, for example by closing the turtle graphics "
 "window."
-msgstr ""
+msgstr "到脚本的末尾。 现在脚本将等待被关闭而不会自动退出直到被主动终止，例如海龟绘图窗口被关闭。"
 
 #: ../../library/turtle.rst:243
 msgid "Use object-oriented turtle graphics"
-msgstr ""
+msgstr "使用面向对象的海龟绘图"
 
 #: ../../library/turtle.rst:245
 msgid ""
 ":ref:`Explanation of the object-oriented interface <turtle-explanation>`"
-msgstr ""
+msgstr ":ref:`面向对象接口说明 <turtle-explanation>`"
 
 #: ../../library/turtle.rst:247
 msgid ""
@@ -313,7 +327,7 @@ msgid ""
 " quickly as possible, it's more usual and much more powerful to use the "
 "object-oriented approach to turtle graphics. For example, this allows "
 "multiple turtles on screen at once."
-msgstr ""
+msgstr "除了非常基本的入门目的，或是尽快尝试操作之外，使用面向对象的方式进行海龟绘图更为常见也更为强大。 例如，这将允许屏幕上同时存在多只海龟。"
 
 #: ../../library/turtle.rst:252
 msgid ""
@@ -321,10 +335,12 @@ msgid ""
 " of ``Turtle`` objects). You *can* use the object-oriented approach in the "
 "shell, but it would be more typical in a Python script."
 msgstr ""
+"在这种方式下，各种海龟命令都是对象（主要是 ``Turtle`` 对象）的方法。 你 *可以* 在 shell 中使用面向对象的方法，但在 Python"
+" 脚本中使用是更为典型的做法。"
 
 #: ../../library/turtle.rst:256
 msgid "The example above then becomes::"
-msgstr ""
+msgstr "这样上面的例子就将变成::"
 
 #: ../../library/turtle.rst:270
 msgid ""
@@ -332,14 +348,15 @@ msgid ""
 "a Turtle instance exists on; it's created automatically along with the "
 "turtle."
 msgstr ""
+"请注意最后一行。 ``t.screen`` 是 Turtle 实例所在的 :class:`Screen` 的实例；它是与海龟一起自动创建的。"
 
 #: ../../library/turtle.rst:274
 msgid "The turtle's screen can be customised, for example::"
-msgstr ""
+msgstr "海龟的屏幕可以被自定义，例如::"
 
 #: ../../library/turtle.rst:281
 msgid "Turtle graphics reference"
-msgstr ""
+msgstr "海龟绘图参考"
 
 #: ../../library/turtle.rst:285
 msgid ""
@@ -802,32 +819,6 @@ msgid ""
 "``turtle``."
 msgstr "本节中的大部分示例都使用 Turtle 类的一个实例，命名为 ``turtle``。"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:0
 #: ../../library/turtle.rst:0
 msgid "Parameters"
 msgstr "参数"
@@ -2223,11 +2214,10 @@ msgstr "公共类"
 
 #: ../../library/turtle.rst:2301
 msgid ""
-"a :class:`tkinter.Canvas`, a :class:`ScrolledCanvas` or a "
+"a :class:`!tkinter.Canvas`, a :class:`ScrolledCanvas` or a "
 ":class:`TurtleScreen`"
 msgstr ""
-"一个 :class:`tkinter.Canvas` , :class:`ScrolledCanvas` 或 :class:`TurtleScreen`"
-" 类对象"
+"一个 :class:`!tkinter.Canvas`, :class:`ScrolledCanvas` 或 :class:`TurtleScreen`"
 
 #: ../../library/turtle.rst:2304
 msgid ""
@@ -2242,8 +2232,8 @@ msgid ""
 msgstr "RawTurtle 的子类，具有相同的接口，但其绘图场所为默认的 :class:`Screen` 类对象，在首次使用时自动创建。"
 
 #: ../../library/turtle.rst:2316
-msgid "a :class:`tkinter.Canvas`"
-msgstr "一个 :class:`tkinter.Canvas` 类对象"
+msgid "a :class:`!tkinter.Canvas`"
+msgstr "一个 :class:`!tkinter.Canvas`"
 
 #: ../../library/turtle.rst:2318
 msgid ""
@@ -2376,21 +2366,24 @@ msgid ""
 "A turtle object draws on a screen object, and there a number of key classes "
 "in the turtle object-oriented interface that can be used to create them and "
 "relate them to each other."
-msgstr ""
+msgstr "海龟对象在屏幕对象上绘图，在 turtle 的面向对象接口中有许多关键的类可被用于创建它们并将它们相互关联。"
 
 #: ../../library/turtle.rst:2395
 msgid ""
 "A :class:`Turtle` instance will automatically create a :class:`Screen` "
 "instance if one is not already present."
-msgstr ""
+msgstr ":class:`Turtle` 实例将自动创建一个 :class:`Screen` 实例，如果它还未创建的话。"
 
 #: ../../library/turtle.rst:2398
 msgid ""
 "``Turtle`` is a subclass of :class:`RawTurtle`, which *doesn't* "
 "automatically create a drawing surface - a *canvas* will need to be provided"
-" or created for it. The *canvas* can be a :class:`tkinter.Canvas`, "
+" or created for it. The *canvas* can be a :class:`!tkinter.Canvas`, "
 ":class:`ScrolledCanvas` or :class:`TurtleScreen`."
 msgstr ""
+"``Turtle`` 是 :class:`RawTurtle` 的子类，它 *不会* 自动创建绘图区域 —— 需要为其提供或创建一个 *canvas*。"
+" *canvas* 可以是一个 :class:`!tkinter.Canvas`, :class:`ScrolledCanvas` 或 "
+":class:`TurtleScreen`。"
 
 #: ../../library/turtle.rst:2404
 msgid ""
@@ -2398,8 +2391,11 @@ msgid ""
 ":class:`Screen` is a subclass of ``TurtleScreen``, and includes :ref:`some "
 "additional methods <screenspecific>` for managing its appearance (including "
 "size and title) and behaviour. ``TurtleScreen``'s constructor needs a "
-":class:`tkinter.Canvas` or a :class:`ScrolledCanvas` as an argument."
+":class:`!tkinter.Canvas` or a :class:`ScrolledCanvas` as an argument."
 msgstr ""
+":class:`TurtleScreen` 是基本的海龟绘图区域。 :class:`Screen` 是 ``TurtleScreen`` 的子类，并包括"
+" :ref:`一些额外方法 <screenspecific>` 用来管理其外观（包括大小和标题）及行为。 ``TurtleScreen`` "
+"的构造器需要一个 :class:`!tkinter.Canvas` 或 :class:`ScrolledCanvas` 作为参数。"
 
 #: ../../library/turtle.rst:2411
 msgid ""
@@ -2410,12 +2406,15 @@ msgid ""
 "created whenever any of the functions derived from a Turtle method is "
 "called."
 msgstr ""
+"海龟绘图形的函数式接口使用 ``Turtle`` 和 ``TurtleScreen``/``Screen`` 的各种方法。 在下层，每当从 "
+"``Screen`` 方法派生的函数被调用时就会自动创建一个屏幕对象。 同样地，每当从 Turtle 方法派生的函数被调用时也都会自动创建一个 "
+"Turtle 对象。"
 
 #: ../../library/turtle.rst:2417
 msgid ""
 "To use multiple turtles on a screen, the object-oriented interface must be "
 "used."
-msgstr ""
+msgstr "要在一个屏幕中使用多个海龟，就必须使用面向对象的接口。"
 
 #: ../../library/turtle.rst:2422
 msgid "Help and configuration"

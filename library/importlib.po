@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:16+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -467,7 +467,7 @@ msgstr "一个代表 :term:`meta path finder` 的抽象基类。"
 
 #: ../../library/importlib.rst:289 ../../library/importlib.rst:344
 msgid "No longer a subclass of :class:`Finder`."
-msgstr ""
+msgstr "不再是 :class:`Finder` 的子类。"
 
 #: ../../library/importlib.rst:294
 msgid ""
@@ -510,7 +510,7 @@ msgstr ""
 #: ../../library/importlib.rst:386 ../../library/importlib.rst:902
 #: ../../library/importlib.rst:959
 msgid "Use :meth:`find_spec` instead."
-msgstr ""
+msgstr "使用 :meth:`find_spec` 代替。"
 
 #: ../../library/importlib.rst:327
 msgid ""
@@ -522,8 +522,8 @@ msgstr ""
 "上的所有查找器的缓存进行无效的时候，这个函数被 :func:`importlib.invalidate_caches` 所使用。"
 
 #: ../../library/importlib.rst:331
-msgid "Returns ``None`` when called instead of ``NotImplemented``."
-msgstr "当方法被调用的时候，方法返回是 ``None`` 而不是 ``NotImplemented`` 。"
+msgid "Returns ``None`` when called instead of :data:`NotImplemented`."
+msgstr "当被调用时将返回 ``None`` 而不是 :data:`NotImplemented`。"
 
 #: ../../library/importlib.rst:337
 msgid ""
@@ -1826,7 +1826,7 @@ msgstr ""
 
 #: ../../library/importlib.rst:1392 ../../library/importlib.rst:1401
 msgid "The import machinery takes care of this automatically."
-msgstr ""
+msgstr "导入机制会自动进行处理。"
 
 #: ../../library/importlib.rst:1397
 msgid ""

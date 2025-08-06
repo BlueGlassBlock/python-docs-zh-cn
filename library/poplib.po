@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:37+0000\n"
-"PO-Revision-Date: 2023-05-24 02:18+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,15 +87,15 @@ msgstr ""
 "本类实现实际的 POP3 协议。实例初始化时，连接就会建立。如果省略 *port*，则使用标准 POP3 端口（110）。可选参数 *timeout* "
 "指定连接尝试的超时时间（以秒为单位，如果未指定超时，将使用全局默认超时设置）。"
 
-#: ../../library/poplib.rst:53 ../../library/poplib.rst:79
+#: ../../library/poplib.rst:55 ../../library/poplib.rst:81
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``poplib.connect`` with arguments"
 " ``self``, ``host``, ``port``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``poplib.connect``，附带参数 ``self``, ``host``, "
+"引发一个 :ref:`审计事件 <auditing>` ``poplib.connect`` 并附带参数 ``self``, ``host``, "
 "``port``。"
 
-#: ../../library/poplib.rst:55 ../../library/poplib.rst:81
+#: ../../library/poplib.rst:57 ../../library/poplib.rst:83
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``poplib.putline`` with arguments"
 " ``self``, ``line``."
@@ -244,8 +244,8 @@ msgstr "发送 user 命令，返回的响应应该指示需要一个密码。"
 #: ../../library/poplib.rst:158
 msgid ""
 "Send password, response includes message count and mailbox size. Note: the "
-"mailbox on the server is locked until :meth:`~poplib.quit` is called."
-msgstr "发送密码，响应包括邮件数和邮箱大小。注意：在调用 :meth:`~poplib.quit` 前，服务器上的邮箱都是锁定的。"
+"mailbox on the server is locked until :meth:`~POP3.quit` is called."
+msgstr "发送密码，响应包括邮件消息计数和邮箱大小。 注意：服务器上的邮箱将被锁定直到 :meth:`~POP3.quit` 被调用。"
 
 #: ../../library/poplib.rst:164
 msgid "Use the more secure APOP authentication to log into the POP3 server."

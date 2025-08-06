@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 14:44+0000\n"
-"PO-Revision-Date: 2023-05-24 02:23+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -86,6 +86,8 @@ msgid ""
 "operators ``+``, ``-``, ``*`` and ``/`` can be used to perform arithmetic; "
 "parentheses (``()``) can be used for grouping. For example::"
 msgstr ""
+"解释器像一个简单的计算器：你可以输入一个表达式，它将给出结果值。 表达式语法很直观：运算符 ``+``, ``-``, ``*`` 和 ``/`` "
+"可被用来执行算术运算；圆括号 (``()``) 可被用来进行分组。 例如::"
 
 #: ../../tutorial/introduction.rst:68
 msgid ""
@@ -157,7 +159,7 @@ msgstr ""
 
 #: ../../tutorial/introduction.rst:142
 msgid "Text"
-msgstr ""
+msgstr "文本"
 
 #: ../../tutorial/introduction.rst:144
 msgid ""
@@ -167,12 +169,15 @@ msgid ""
 "\"``Yay! :)``\". They can be enclosed in single quotes (``'...'``) or double"
 " quotes (``\"...\"``) with the same result [#]_."
 msgstr ""
+"除了数字 Python 还可以操作文本（由 :class:`str` 类型表示，称为“字符串”）。 这包括字符 \"``!``\", 单词 "
+"\"``rabbit``\", 名称 \"``Paris``\", 句子 \"``Got your back.``\" 等等. \"``Yay! "
+":)``\"。 它们可以用成对的单引号 (``'...'``) 或双引号 (``\"...\"``) 来标示，结果完全相同 [#]_。"
 
 #: ../../tutorial/introduction.rst:157
 msgid ""
 "To quote a quote, we need to \"escape\" it, by preceding it with ``\\``. "
 "Alternatively, we can use the other type of quotation marks::"
-msgstr ""
+msgstr "要标示引号本身，我们需要对它进行“转义”，即在前面加一个 ``\\``。 或者，我们也可以使用不同类型的引号::"
 
 #: ../../tutorial/introduction.rst:171
 msgid ""
@@ -181,6 +186,8 @@ msgid ""
 "omitting the enclosing quotes and by printing escaped and special "
 "characters::"
 msgstr ""
+"在 Python shell 中，字符串定义和输出字符串看起来可能不同。 :func:`print` "
+"函数会略去标示用的引号，并打印经过转义的特殊字符，产生更为易读的输出::"
 
 #: ../../tutorial/introduction.rst:182
 msgid ""
@@ -394,63 +401,73 @@ msgid ""
 msgstr "和字符串（及其他内置 :term:`sequence` 类型）一样，列表也支持索引和切片："
 
 #: ../../tutorial/introduction.rst:408
+msgid "Lists also support operations like concatenation::"
+msgstr "列表还支持合并操作："
+
+#: ../../tutorial/introduction.rst:413
+msgid ""
+"Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
+"type, i.e. it is possible to change their content::"
+msgstr "与 :term:`immutable` 字符串不同, 列表是 :term:`mutable` 类型，其内容可以改变："
+
+#: ../../tutorial/introduction.rst:423
+msgid ""
+"You can also add new items at the end of the list, by using the "
+":meth:`!list.append` *method* (we will see more about methods later)::"
+msgstr "你也可以在通过使用 :meth:`!list.append` *方法*，在列表末尾添加新条目（我们将在后面介绍更多相关的方法）::"
+
+#: ../../tutorial/introduction.rst:431
+msgid ""
+"Simple assignment in Python never copies data. When you assign a list to a "
+"variable, the variable refers to the *existing list*. Any changes you make "
+"to the list through one variable will be seen through all other variables "
+"that refer to it.::"
+msgstr ""
+"Python 中的简单赋值绝不会复制数据。 当你将一个列表赋值给一个变量时，该变量将引用 "
+"*现有的列表*。你通过一个变量对列表所做的任何更改都会被引用它的所有其他变量看到。::"
+
+#: ../../tutorial/introduction.rst:444
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
 "This means that the following slice returns a :ref:`shallow copy "
 "<shallow_vs_deep_copy>` of the list::"
 msgstr "切片操作返回包含请求元素的新列表。以下切片操作会返回列表的 :ref:`浅拷贝 <shallow_vs_deep_copy>`："
 
-#: ../../tutorial/introduction.rst:415
-msgid "Lists also support operations like concatenation::"
-msgstr "列表还支持合并操作："
-
-#: ../../tutorial/introduction.rst:420
-msgid ""
-"Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
-"type, i.e. it is possible to change their content::"
-msgstr "与 :term:`immutable` 字符串不同, 列表是 :term:`mutable` 类型，其内容可以改变："
-
-#: ../../tutorial/introduction.rst:430
-msgid ""
-"You can also add new items at the end of the list, by using the "
-":meth:`~list.append` *method* (we will see more about methods later)::"
-msgstr ":meth:`~list.append` *方法* 可以在列表末尾添加新元素（后面我们会看到更多例子）："
-
-#: ../../tutorial/introduction.rst:438
+#: ../../tutorial/introduction.rst:455
 msgid ""
 "Assignment to slices is also possible, and this can even change the size of "
 "the list or clear it entirely::"
 msgstr "为切片赋值可以改变列表大小，甚至清空整个列表："
 
-#: ../../tutorial/introduction.rst:457
+#: ../../tutorial/introduction.rst:474
 msgid "The built-in function :func:`len` also applies to lists::"
 msgstr "内置函数 :func:`len` 也支持列表："
 
-#: ../../tutorial/introduction.rst:463
+#: ../../tutorial/introduction.rst:480
 msgid ""
 "It is possible to nest lists (create lists containing other lists), for "
 "example::"
 msgstr "还可以嵌套列表（创建包含其他列表的列表），例如："
 
-#: ../../tutorial/introduction.rst:479
+#: ../../tutorial/introduction.rst:496
 msgid "First Steps Towards Programming"
 msgstr "走向编程的第一步"
 
-#: ../../tutorial/introduction.rst:481
+#: ../../tutorial/introduction.rst:498
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
 "two together.  For instance, we can write an initial sub-sequence of the "
-"`Fibonacci series <https://en.wikipedia.org/wiki/Fibonacci_number>`_ as "
+"`Fibonacci series <https://en.wikipedia.org/wiki/Fibonacci_sequence>`_ as "
 "follows::"
 msgstr ""
-"当然，Python 还可以完成比二加二更复杂的任务。 例如，可以编写 `斐波那契数列 "
-"<https://en.wikipedia.org/wiki/Fibonacci_number>`_ 的初始子序列，如下所示："
+"当然，我们还能用 Python 完成比二加二更复杂的任务。 例如，我们可以像下面这样写出 `斐波那契数列 "
+"<https://en.wikipedia.org/wiki/Fibonacci_sequence>`_ 初始部分的子序列::"
 
-#: ../../tutorial/introduction.rst:501
+#: ../../tutorial/introduction.rst:518
 msgid "This example introduces several new features."
 msgstr "本例引入了几个新功能。"
 
-#: ../../tutorial/introduction.rst:503
+#: ../../tutorial/introduction.rst:520
 msgid ""
 "The first line contains a *multiple assignment*: the variables ``a`` and "
 "``b`` simultaneously get the new values 0 and 1.  On the last line this is "
@@ -461,7 +478,7 @@ msgstr ""
 "第一行中的 *多重赋值* ：变量 ``a`` 和 ``b`` 同时获得新值 0 和 1 "
 "。最后一行又用了一次多重赋值，体现了，等号右边的所有表达式的值，都是在这一语句对任何变量赋新值之前求出来的——求值顺序为从左到右。"
 
-#: ../../tutorial/introduction.rst:509
+#: ../../tutorial/introduction.rst:526
 msgid ""
 "The :keyword:`while` loop executes as long as the condition (here: ``a < "
 "10``) remains true.  In Python, like in C, any non-zero integer value is "
@@ -473,11 +490,11 @@ msgid ""
 "to), ``>=`` (greater than or equal to) and ``!=`` (not equal to)."
 msgstr ""
 ":keyword:`while` 循环只要条件（这里是 ``a < 10``）为真就会一直执行。Python 和 C "
-"一样，任何非零整数都为真，零为假。这个条件也可以是字符串或列表的值，事实上，任何序列都可以；长度非零就为真，空序列则为假。示例中的判断只是最简单的比较。比较操作符的写法和"
+"一样，任何非零整数都为真，零为假。这个条件也可以是字符串或列表类型的值，事实上，任何序列都可以：长度非零就为真，空序列则为假。示例中的判断只是最简单的比较。比较操作符的写法和"
 " C 语言一样： ``<`` （小于）、 ``>`` （大于）、 ``==`` （等于）、 ``<=`` （小于等于)、 ``>=`` （大于等于）及 "
 "``!=`` （不等于）。"
 
-#: ../../tutorial/introduction.rst:518
+#: ../../tutorial/introduction.rst:535
 msgid ""
 "The *body* of the loop is *indented*: indentation is Python's way of "
 "grouping statements.  At the interactive prompt, you have to type a tab or "
@@ -491,7 +508,7 @@ msgstr ""
 "*循环体* 是 *缩进的* ：缩进是 Python "
 "组织语句的方式。在交互式命令行里，得为每个缩进的行输入空格（或制表符）。使用文本编辑器可以实现更复杂的输入方式；所有像样的文本编辑器都支持自动缩进。交互式输入复合语句时，要在最后输入空白行表示完成（因为解析器不知道哪一行代码是代码块的最后一行）。注意，同一块语句的每一行的缩进相同。"
 
-#: ../../tutorial/introduction.rst:527
+#: ../../tutorial/introduction.rst:544
 msgid ""
 "The :func:`print` function writes the value of the argument(s) it is given. "
 "It differs from just writing the expression you want to write (as we did "
@@ -503,17 +520,17 @@ msgstr ""
 ":func:`print` "
 "函数输出给定参数的值。除了可以以单一的表达式作为参数（比如，前面的计算器的例子），它还能处理多个参数，包括浮点数与字符串。它输出的字符串不带引号，且各参数项之间会插入一个空格，这样可以实现更好的格式化操作："
 
-#: ../../tutorial/introduction.rst:538
+#: ../../tutorial/introduction.rst:555
 msgid ""
 "The keyword argument *end* can be used to avoid the newline after the "
 "output, or end the output with a different string::"
 msgstr "关键字参数 *end* 可以取消输出后面的换行, 或用另一个字符串结尾："
 
-#: ../../tutorial/introduction.rst:550
+#: ../../tutorial/introduction.rst:567
 msgid "Footnotes"
 msgstr "备注"
 
-#: ../../tutorial/introduction.rst:551
+#: ../../tutorial/introduction.rst:568
 msgid ""
 "Since ``**`` has higher precedence than ``-``, ``-3**2`` will be interpreted"
 " as ``-(3**2)`` and thus result in ``-9``.  To avoid this and get ``9``, you"
@@ -522,7 +539,7 @@ msgstr ""
 "``**`` 比 ``-`` 的优先级更高, 所以 ``-3**2`` 会被解释成 ``-(3**2)`` ，因此，结果是 "
 "``-9``。要避免这个问题，并且得到 ``9``, 可以用 ``(-3)**2``。"
 
-#: ../../tutorial/introduction.rst:555
+#: ../../tutorial/introduction.rst:572
 msgid ""
 "Unlike other languages, special characters such as ``\\n`` have the same "
 "meaning with both single (``'...'``) and double (``\"...\"``) quotes. The "

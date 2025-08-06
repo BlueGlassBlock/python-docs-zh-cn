@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:40+0000\n"
-"PO-Revision-Date: 2023-05-24 02:23+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,59 +37,61 @@ msgstr "Bob Savage <bobsavage@mac.com>"
 msgid ""
 "Python on a Mac running macOS is in principle very similar to Python on any "
 "other Unix platform, but there are a number of additional features such as "
-"the IDE and the Package Manager that are worth pointing out."
+"the integrated development environment (IDE) and the Package Manager that "
+"are worth pointing out."
 msgstr ""
-"在运行 macOS 的 Mac 上的 Python 原则上与在其他 Unix 平台上的 Python 非常相似，但有一些额外的特性，如 IDE "
-"和包管理器，值得指出。"
+"运行 macOS 的 Mac 上的 Python 在原则上与其他 Unix 平台上的 Python 非常相似，但有一些额外的特性 "
+"如集成开发环境（IDE）和包管理器值得指出。"
 
-#: ../../using/mac.rst:18
-msgid "Getting and Installing MacPython"
-msgstr "获取和安装 MacPython"
+#: ../../using/mac.rst:21
+msgid "Getting and Installing Python"
+msgstr "获取和安装 Python"
 
-#: ../../using/mac.rst:20
+#: ../../using/mac.rst:23
 msgid ""
 "macOS used to come with Python 2.7 pre-installed between versions 10.8 and "
 "`12.3 <https://developer.apple.com/documentation/macos-release-"
 "notes/macos-12_3-release-notes#Python>`_. You are invited to install the "
-"most recent version of Python 3 from the Python website "
-"(https://www.python.org).  A current \"universal binary\" build of Python, "
-"which runs natively on the Mac's new Intel and legacy PPC CPU's, is "
-"available there."
+"most recent version of Python 3 from the `Python website "
+"<https://www.python.org/downloads/macos/>`__. A current \"universal2 "
+"binary\" build of Python, which runs natively on the Mac's new Apple Silicon"
+" and legacy Intel processors, is available there."
 msgstr ""
 "macOS 曾经在 10.8 至 `12.3 <https://developer.apple.com/documentation/macos-"
 "release-notes/macos-12_3-release-notes#Python>`_ 版中预装了 Python 2.7。 建议你从 "
-"Python 网站 (https://www.python.org) 安装最新版本的 Python 3。 那里也提供了当前 Python 的 "
-"\"通用二进制\" 编译版，它可以在使用新 Intel 和传统 PPC CPU 的 Mac 上原生运行。"
+"`Python 网站 <https://www.python.org/downloads/macos/>`__ 安装最新版本的 Python 3。 "
+"那里也提供了当前的 Python \"universal2 binary\" 编译版，它可以在 Mac 的新式 Apple Silicon 和旧式 "
+"Intel 处理器上原生运行。"
 
-#: ../../using/mac.rst:27
+#: ../../using/mac.rst:30
 msgid "What you get after installing is a number of things:"
 msgstr "你安装后得到的东西有："
 
-#: ../../using/mac.rst:29
+#: ../../using/mac.rst:32
 msgid ""
-"A :file:`Python 3.12` folder in your :file:`Applications` folder. In here "
-"you find IDLE, the development environment that is a standard part of "
-"official Python distributions; and PythonLauncher, which handles double-"
-"clicking Python scripts from the Finder."
+"A |python_version_literal| folder in your :file:`Applications` folder. In "
+"here you find IDLE, the development environment that is a standard part of "
+"official Python distributions; and :program:`Python Launcher`, which handles"
+" double-clicking Python scripts from the Finder."
 msgstr ""
-"会有一个 :file:`Python 3.12` 文件夹在你的 :file:`Applications` 文件夹中。 在这里你可以找到 "
-"IDLE，它是作为官方 Python 发行版标准组成部分的开发环境；以及 PythonLauncher，它负责处理在 Finder 中双击 Python"
-" 脚本的操作。"
+"你的 :file:`Applications` 文件夹中会有一个 |python_version_literal| 文件夹。 你将在这里找到 "
+"IDLE，它是作为官方 Python 发行版标准组成部分的开发环境；以及 :program:`Python Launcher`，它负责处理在 "
+"Finder 中双击 Python 脚本的操作。"
 
-#: ../../using/mac.rst:34
+#: ../../using/mac.rst:37
 msgid ""
 "A framework :file:`/Library/Frameworks/Python.framework`, which includes the"
 " Python executable and libraries. The installer adds this location to your "
-"shell path. To uninstall MacPython, you can simply remove these three "
-"things. A symlink to the Python executable is placed in /usr/local/bin/."
+"shell path. To uninstall Python, you can remove these three things. A "
+"symlink to the Python executable is placed in :file:`/usr/local/bin/`."
 msgstr ""
-"框架 :file:`/Library/Frameworks/Python.framework` ，包括 Python "
-"可执行文件和库。安装程序将此位置添加到 shell 路径。 要卸载 MacPython ，你可以简单地移除这三个项目。 Python "
-"可执行文件的符号链接放在 /usr/local/bin/ 中。"
+"一个框架 :file:`/Library/Frameworks/Python.framework`，它包括 Python 可执行文件和库。 "
+"安装程序将此位置添加到 shell 路径。 要卸载 Python，你可以移除这三个项目。 将有一个 Python 可执行文件的符号链接放在 "
+":file:`/usr/local/bin/` 中。"
 
-#: ../../using/mac.rst:39
+#: ../../using/mac.rst:44
 msgid ""
-"The Apple-provided build of Python is installed in "
+"On macOS 10.8-12.3, the Apple-provided build of Python is installed in "
 ":file:`/System/Library/Frameworks/Python.framework` and "
 ":file:`/usr/bin/python`, respectively. You should never modify or delete "
 "these, as they are Apple-controlled and are used by Apple- or third-party "
@@ -98,86 +100,89 @@ msgid ""
 "installations on your computer, so it will be important that your paths and "
 "usages are consistent with what you want to do."
 msgstr ""
-"Apple 提供的 Python 版本分别安装在 :file:`/System/Library/Frameworks/Python.framework`"
-" 和 :file:`/usr/bin/python` 中。 你永远不应修改或删除这些内容，因为它们由 Apple 控制并由 Apple "
-"或第三方软件使用。 请记住，如果你选择从 python.org 安装较新的 Python 版本，那么你的计算机上将安装两个不同但都有用的 Python "
-"，因此你的路径和用法与你想要执行的操作一致非常重要。"
+"在 macOS 10.8-12.3 上，Apple 提供的 Python 版本将分别安装在 "
+":file:`/System/Library/Frameworks/Python.framework` 和 "
+":file:`/usr/bin/python`。 你绝不应当修改或删除这些内容，因为它们由 Apple 控制并由 Apple 或第三方软件使用。 "
+"请记住如果你选择从 python.org 安装较新的 Python 版本，那么你的计算机上将有两个不同但都可用的 Python "
+"安装版，因此你的路径和用法与你想要执行的操作保持一致是非常重要的。"
 
-#: ../../using/mac.rst:47
+#: ../../using/mac.rst:52
 msgid ""
-"IDLE includes a help menu that allows you to access Python documentation. If"
+"IDLE includes a Help menu that allows you to access Python documentation. If"
 " you are completely new to Python you should start reading the tutorial "
 "introduction in that document."
-msgstr "IDLE 包含一个帮助菜单，允许你访问 Python 文档。 如果您是 Python 的新手，你应该开始阅读该文档中的教程介绍。"
+msgstr ""
+"IDLE 包括一个 Help 菜单，允许你访问 Python 文件。 如果你是完全的 Python 新手那么你应当开始阅读该文档中的教程部分。"
 
-#: ../../using/mac.rst:51
+#: ../../using/mac.rst:56
 msgid ""
 "If you are familiar with Python on other Unix platforms you should read the "
 "section on running Python scripts from the Unix shell."
 msgstr "如果你熟悉其他 Unix 平台上的 Python ，那么你应该阅读有关从 Unix shell 运行 Python 脚本的部分。"
 
-#: ../../using/mac.rst:56
+#: ../../using/mac.rst:61
 msgid "How to run a Python script"
 msgstr "如何运行 Python 脚本"
 
-#: ../../using/mac.rst:58
+#: ../../using/mac.rst:63
 msgid ""
 "Your best way to get started with Python on macOS is through the IDLE "
-"integrated development environment, see section :ref:`ide` and use the Help "
+"integrated development environment; see section :ref:`ide` and use the Help "
 "menu when the IDE is running."
 msgstr ""
-"你在 macOS 上开始使用 Python 的最好方法是通过 IDLE 集成开发环境，参见章节 :ref:`ide` 以及在IDE运行时使用帮助菜单。"
+"你在 macOS 上入门 Python 的最好方式是通过 IDLE 集成开发环境；请参阅 :ref:`ide` 章节并在 IDE 运行时使用 Help "
+"菜单。"
 
-#: ../../using/mac.rst:62
+#: ../../using/mac.rst:67
 msgid ""
 "If you want to run Python scripts from the Terminal window command line or "
 "from the Finder you first need an editor to create your script. macOS comes "
-"with a number of standard Unix command line editors, :program:`vim` and "
-":program:`emacs` among them. If you want a more Mac-like editor, "
-":program:`BBEdit` or :program:`TextWrangler` from Bare Bones Software (see "
-"http://www.barebones.com/products/bbedit/index.html) are good choices, as is"
-" :program:`TextMate` (see https://macromates.com/). Other editors include "
-":program:`Gvim` (https://macvim.org/macvim/) and :program:`Aquamacs` "
-"(http://aquamacs.org/)."
+"with a number of standard Unix command line editors, :program:`vim` "
+":program:`nano` among them. If you want a more Mac-like editor, "
+":program:`BBEdit` from Bare Bones Software (see "
+"https://www.barebones.com/products/bbedit/index.html) are good choices, as "
+"is :program:`TextMate` (see https://macromates.com). Other editors include "
+":program:`MacVim` (https://macvim.org) and :program:`Aquamacs` "
+"(https://aquamacs.org)."
 msgstr ""
-"如果你想从终端窗口命令行或 Finder 中运行 Python 脚本那么你首先需要用一个编辑器来创建你的脚本。 macOS 自带了一些标准的 Unix "
-"命令行编辑器，:program:`vim` 和 :program:`emacs` 就是其中的两个。 如果你想要一个更具 Mac 风格的编辑器，那么来自 "
-"Bare Bones Software 的 :program:`BBEdit` 或 :program:`TextWrangler` 是不错的选择 (参见"
-" http://www.barebones.com/products/bbedit/index.html)，还有 :program:`TextMate`"
-" (参见 https://macromates.com/)。 其他的编辑器包括 :program:`Gvim` "
-"(https://macvim.org/macvim/) 和 :program:`Aquamacs` (http://aquamacs.org/)。"
+"如果你想从 Terminal 窗口命令行或 Finder 中运行 Python 脚本那么你首先需要用一个编辑器来创建你的脚本。 macOS "
+"自带了多个标准的 Unix 命令行编辑器，其中包括 :program:`vim` :program:`nano`。 如果你想要一个更具 Mac "
+"风格的编辑器，那么来自 Bare Bones Software 的 :program:`BBEdit` (参见 "
+"https://www.barebones.com/products/bbedit/index.html) 是一个很好的选择，还有 "
+":program:`TextMate` (参见 https://macromates.com)。 其他的编辑器包括 :program:`MacVim` "
+"(https://macvim.org) 和 :program:`Aquamacs` (https://aquamacs.org)。"
 
-#: ../../using/mac.rst:72
+#: ../../using/mac.rst:77
 msgid ""
 "To run your script from the Terminal window you must make sure that "
 ":file:`/usr/local/bin` is in your shell search path."
 msgstr "要从终端窗口运行脚本，必须确保:file:`/usr/local/bin` 位于 shell 搜索路径中。"
 
-#: ../../using/mac.rst:75
+#: ../../using/mac.rst:80
 msgid "To run your script from the Finder you have two options:"
 msgstr "要从 Finder 运行你的脚本，你有两个选择："
 
-#: ../../using/mac.rst:77
-msgid "Drag it to :program:`PythonLauncher`"
-msgstr "把脚本拖拽到 :program:`PythonLauncher`"
+#: ../../using/mac.rst:82
+msgid "Drag it to :program:`Python Launcher`."
+msgstr "将其拖拽到 :program:`Python Launcher`。"
 
-#: ../../using/mac.rst:79
+#: ../../using/mac.rst:84
 msgid ""
-"Select :program:`PythonLauncher` as the default application to open your "
-"script (or any .py script) through the finder Info window and double-click "
-"it. :program:`PythonLauncher` has various preferences to control how your "
-"script is launched. Option-dragging allows you to change these for one "
+"Select :program:`Python Launcher` as the default application to open your "
+"script (or any ``.py`` script) through the finder Info window and double-"
+"click it. :program:`Python Launcher` has various preferences to control how "
+"your script is launched. Option-dragging allows you to change these for one "
 "invocation, or use its Preferences menu to change things globally."
 msgstr ""
-"选择 :program:`PythonLauncher` 作为通过 finder Info 窗口打开脚本（或任何 .py "
-"脚本）的默认应用程序，然后双击脚本。 :program:`PythonLauncher` 有各种首选项来控制脚本的启动方式。 "
-"拖拽方式允许你为一次调用更改这些选项，或使用其“首选项”菜单全局更改内容。"
+"选择 :program:`Python Launcher` 作为通过 finder Info 窗口打开脚本（或任何 ``.py`` "
+"脚本）和双击它时的默认应用程序。 :program:`Python Launcher` 有各种首选项来控制脚本的启动方式。 "
+"选项拖拽允许你为单次发起调用更改这些首选项，或使用其 Preferences 菜单进行全局性的更改。"
 
-#: ../../using/mac.rst:89
+#: ../../using/mac.rst:94
 msgid "Running scripts with a GUI"
 msgstr "运行有图形界面的脚本"
 
-#: ../../using/mac.rst:91
+#: ../../using/mac.rst:96
 msgid ""
 "With older versions of Python, there is one macOS quirk that you need to be "
 "aware of: programs that talk to the Aqua window manager (in other words, "
@@ -187,80 +192,70 @@ msgstr ""
 "对于旧版本的 Python ，有一个需要注意的 macOS 特殊问题：与 Aqua 窗口管理器通信的程序（换句话说，任何有 GUI "
 "的程序）需要以特殊的方式运行。使用 :program:`pythonw` 而不是 :program:`python` 来启动此类脚本。"
 
-#: ../../using/mac.rst:96
+#: ../../using/mac.rst:101
 msgid ""
 "With Python 3.9, you can use either :program:`python` or :program:`pythonw`."
 msgstr "对于 Python 3.9，你可以使用 :program:`python` 或者 :program:`pythonw`。"
 
-#: ../../using/mac.rst:100
+#: ../../using/mac.rst:105
 msgid "Configuration"
 msgstr "配置"
 
-#: ../../using/mac.rst:102
+#: ../../using/mac.rst:107
 msgid ""
 "Python on macOS honors all standard Unix environment variables such as "
 ":envvar:`PYTHONPATH`, but setting these variables for programs started from "
 "the Finder is non-standard as the Finder does not read your :file:`.profile`"
 " or :file:`.cshrc` at startup. You need to create a file "
-":file:`~/.MacOSX/environment.plist`. See Apple's Technical Document QA1067 "
-"for details."
+":file:`~/.MacOSX/environment.plist`. See Apple's `Technical Q&A QA1067 "
+"<https://developer.apple.com/library/archive/qa/qa1067/_index.html>`__ for "
+"details."
 msgstr ""
-"macOS 上的 Python 遵循所有标准的 Unix 环境变量，例如 :envvar:`PYTHONPATH` ，但是为从 Finder "
-"启动的程序设置这些变量是不标准的，因为 Finder 在启动时不会读取你的 :file:`.profile` 或 :file:`.cshrc` "
-"。你需要创建一个文件 :file:`~/.MacOSX/environment.plist` 。详情请看苹果的技术文件QA1067。"
+"macOS 上的 Python 遵循所有标准 Unix 环境变量例如 :envvar:`PYTHONPATH`，但是为从 Finder "
+"启动的程序设置这些变量是非标准的因为 Finder 在启动时不会读取你的 :file:`.profile` 或 :file:`.cshrc`。 "
+"你需要创建一个文件 :file:`~/.MacOSX/environment.plist`。 详情参见 Apple 的 `Technical Q&A "
+"QA1067 "
+"<https://developer.apple.com/library/archive/qa/qa1067/_index.html>`__。"
 
-#: ../../using/mac.rst:109
+#: ../../using/mac.rst:115
 msgid ""
-"For more information on installation Python packages in MacPython, see "
-"section :ref:`mac-package-manager`."
-msgstr "更多关于在 MacPython 中安装 Python 包的信息，参阅 :ref:`mac-package-manager` 部分。"
+"For more information on installation Python packages, see section :ref:`mac-"
+"package-manager`."
+msgstr "有关安装 Python 包的更多信息，请参阅 :ref:`mac-package-manager` 一节。"
 
-#: ../../using/mac.rst:116
+#: ../../using/mac.rst:122
 msgid "The IDE"
 msgstr "IDE"
 
-#: ../../using/mac.rst:118
+#: ../../using/mac.rst:124
 msgid ""
-"MacPython ships with the standard IDLE development environment. A good "
+"Python ships with the standard IDLE development environment. A good "
 "introduction to using IDLE can be found at "
-"http://www.hashcollision.org/hkn/python/idle_intro/index.html."
+"https://www.hashcollision.org/hkn/python/idle_intro/index.html."
 msgstr ""
-"MacPython 附带标准的 IDLE 开发环境。 有关使用 IDLE 的详细介绍，请访问 "
-"http://www.hashcollision.org/hkn/python/idle_intro/index.html 。"
+"Python 附带了标准的 IDLE 开发环境。 可以在 "
+"https://www.hashcollision.org/hkn/python/idle_intro/index.html 找到一篇有关使用 IDLE"
+" 的介绍。"
 
-#: ../../using/mac.rst:126
+#: ../../using/mac.rst:132
 msgid "Installing Additional Python Packages"
 msgstr "安装额外的 Python 包"
 
-#: ../../using/mac.rst:128
-msgid "There are several methods to install additional Python packages:"
-msgstr "有几个方法可以安装额外的 Python 包："
+#: ../../using/mac.rst:134
+msgid "This section has moved to the `Python Packaging User Guide`_."
+msgstr "本小节已移至 `Python Packaging User Guide`_。"
 
-#: ../../using/mac.rst:130
-msgid ""
-"Packages can be installed via the standard Python distutils mode (``python "
-"setup.py install``)."
-msgstr "可以通过标准的 Python distutils 模式（ ``python setup.py install`` ）安装软件包。"
+#: ../../using/mac.rst:142
+msgid "GUI Programming"
+msgstr "GUI 编程"
 
-#: ../../using/mac.rst:133
-msgid ""
-"Many packages can also be installed via the :program:`setuptools` extension "
-"or :program:`pip` wrapper, see https://pip.pypa.io/."
-msgstr ""
-"许多包也可以通过 :program:`setuptools` 扩展或 :program:`pip` 包装器安装，请参阅 "
-"https://pip.pypa.io/ 。"
-
-#: ../../using/mac.rst:138
-msgid "GUI Programming on the Mac"
-msgstr "Mac 上的图形界面编程"
-
-#: ../../using/mac.rst:140
+#: ../../using/mac.rst:144
 msgid ""
 "There are several options for building GUI applications on the Mac with "
 "Python."
 msgstr "使用 Python 在 Mac 上构建 GUI 应用程序有多种选择。"
 
-#: ../../using/mac.rst:142
+#: ../../using/mac.rst:146
 msgid ""
 "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, which "
 "is the foundation of most modern Mac development. Information on PyObjC is "
@@ -269,7 +264,7 @@ msgstr ""
 "*PyObjC* 是一个 Python 到 Apple 的 Objective-C/Cocoa 框架的绑定，这是大多数现代 Mac 开发的基础。 有关 "
 "PyObjC 的信息，请访问 https://pypi.org/project/pyobjc/。"
 
-#: ../../using/mac.rst:146
+#: ../../using/mac.rst:150
 msgid ""
 "The standard Python GUI toolkit is :mod:`tkinter`, based on the cross-"
 "platform Tk toolkit (https://www.tcl.tk). An Aqua-native version of Tk is "
@@ -278,55 +273,100 @@ msgid ""
 "source."
 msgstr ""
 
-#: ../../using/mac.rst:151
-msgid ""
-"*wxPython* is another popular cross-platform GUI toolkit that runs natively "
-"on macOS. Packages and documentation are available from "
-"https://www.wxpython.org."
-msgstr ""
-"*wxPython* 是另一个流行的跨平台 GUI 工具包，可以在 macOS 上原生运行。软件包和文档可从 "
-"https://www.wxpython.org 获取。"
+#: ../../using/mac.rst:155
+msgid "A number of alternative macOS GUI toolkits are available:"
+msgstr "有许多其他 macOS 的 GUI 工具包可供选择："
 
-#: ../../using/mac.rst:154
+#: ../../using/mac.rst:157
 msgid ""
-"*PyQt* is another popular cross-platform GUI toolkit that runs natively on "
-"macOS. More information can be found at "
-"https://riverbankcomputing.com/software/pyqt/intro."
+"`PySide <https://www.qt.io/qt-for-python>`__: Official Python bindings to "
+"the `Qt GUI toolkit <https://qt.io>`__."
 msgstr ""
-"*PyQt* 是另一个流行的跨平台 GUI 工具包，可以在 MacOS 上原生运行。更多信息可以在 "
-"https://riverbankcomputing.com/software/pyqt/intro 找到。"
+"`PySide <https://www.qt.io/qt-for-python>`__: `Qt GUI 工具包 <https://qt.io>`__"
+" 的官方 Python 绑定包。"
 
 #: ../../using/mac.rst:160
-msgid "Distributing Python Applications on the Mac"
-msgstr "在 Mac 上分发 Python 应用程序"
-
-#: ../../using/mac.rst:162
 msgid ""
-"The standard tool for deploying standalone Python applications on the Mac is"
-" :program:`py2app`. More information on installing and using py2app can be "
-"found at https://pypi.org/project/py2app/."
+"`PyQt <https://riverbankcomputing.com/software/pyqt/intro>`__: Alternative "
+"Python bindings to Qt."
 msgstr ""
-"在 Mac 上部署独立 Python 应用程序的标准工具是 :program:`py2app` 。关于安装和使用 py2app 的更多信息可以在 "
-"https://pypi.org/project/py2app/ 找到。"
+"`PyQt <https://riverbankcomputing.com/software/pyqt/intro>`__: Qt 的替代性 "
+"Python 绑定包。"
 
-#: ../../using/mac.rst:168
+#: ../../using/mac.rst:163
+msgid ""
+"`Kivy <https://kivy.org>`__: A cross-platform GUI toolkit that supports "
+"desktop and mobile platforms."
+msgstr "`Kivy <https://kivy.org>`__: 一款支持桌面和移动设备的跨平台 GUI 工具包。"
+
+#: ../../using/mac.rst:166
+msgid ""
+"`Toga <https://toga.readthedocs.io>`__: Part of the `BeeWare Project "
+"<https://beeware.org>`__; supports desktop, mobile, web and console apps."
+msgstr ""
+"`Toga <https://toga.readthedocs.io>`__: `BeeWare 项目 <https://beeware.org>`__"
+" 的一部分；支持桌面、移动设备、Web 和控制台应用。"
+
+#: ../../using/mac.rst:169
+msgid ""
+"`wxPython <https://www.wxpython.org>`__: A cross-platform toolkit that "
+"supports desktop operating systems."
+msgstr "`wxPython <https://www.wxpython.org>`__: 一款支持桌面操作系统的跨平台工具包。"
+
+#: ../../using/mac.rst:175
+msgid "Distributing Python Applications"
+msgstr "分发 Python 应用程序"
+
+#: ../../using/mac.rst:177
+msgid ""
+"A range of tools exist for converting your Python code into a standalone "
+"distributable application:"
+msgstr "有一系列工具可将你的 Python 代码转换为独立发布的应用程序："
+
+#: ../../using/mac.rst:180
+msgid ""
+"`py2app <https://pypi.org/project/py2app/>`__: Supports creating macOS "
+"``.app`` bundles from a Python project."
+msgstr ""
+"`py2app <https://pypi.org/project/py2app/>`__: 支持基于 Python 项目创建 macOS "
+"``.app`` 软件包。"
+
+#: ../../using/mac.rst:183
+msgid ""
+"`Briefcase <https://briefcase.readthedocs.io>`__: Part of the `BeeWare "
+"Project <https://beeware.org>`__; a cross-platform packaging tool that "
+"supports creation of ``.app`` bundles on macOS, as well as managing signing "
+"and notarization."
+msgstr ""
+"`Briefcase <https://briefcase.readthedocs.io>`__: `BeeWare 项目 "
+"<https://beeware.org>`__ 的一部分；一款支持在 macOS 上创建 ``.app`` "
+"软件包，并能管理签名和公证的跨平台打包工具。"
+
+#: ../../using/mac.rst:188
+msgid ""
+"`PyInstaller <https://pyinstaller.org/>`__: A cross-platform packaging tool "
+"that creates a single file or folder as a distributable artifact."
+msgstr ""
+"`PyInstaller <https://pyinstaller.org/>`__: 一款通过创建单独文件或目录作为可发布形式的跨平台打包工具。"
+
+#: ../../using/mac.rst:192
 msgid "Other Resources"
 msgstr "其他资源"
 
-#: ../../using/mac.rst:170
+#: ../../using/mac.rst:194
 msgid ""
-"The MacPython mailing list is an excellent support resource for Python users"
-" and developers on the Mac:"
-msgstr "MacPython 邮件列表是 Mac 上 Python 用户和开发人员的优秀支持资源："
+"The Pythonmac-SIG mailing list is an excellent support resource for Python "
+"users and developers on the Mac:"
+msgstr "Pythonmac-SIG 邮件列表是 Mac 上 Python 用户和开发人员的优秀支持资源："
 
-#: ../../using/mac.rst:173
+#: ../../using/mac.rst:197
 msgid "https://www.python.org/community/sigs/current/pythonmac-sig/"
 msgstr "https://www.python.org/community/sigs/current/pythonmac-sig/"
 
-#: ../../using/mac.rst:175
+#: ../../using/mac.rst:199
 msgid "Another useful resource is the MacPython wiki:"
 msgstr "另一个有用的资源是 MacPython wiki ："
 
-#: ../../using/mac.rst:177
+#: ../../using/mac.rst:201
 msgid "https://wiki.python.org/moin/MacPython"
 msgstr "https://wiki.python.org/moin/MacPython"

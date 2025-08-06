@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# nick <2330458484@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -129,7 +128,7 @@ msgstr "在开头添加一个新的动作。 请参阅 :meth:`append` 获取相�
 msgid ""
 "Return a file-like object, open to *file*, but read from or written to by "
 "the pipeline.  Note that only one of ``'r'``, ``'w'`` may be given."
-msgstr "返回一个文件类对象，打开到 *file*，但是将从管道读取或写入。 请注意只能给出 ``'r'``, ``'w'`` 中的一个。"
+msgstr "返回一个文件型对象，打开到 *file*，但是将从管道读取或写入。 请注意只能给出 ``'r'``, ``'w'`` 中的一个。"
 
 #: ../../library/pipes.rst:102
 msgid "Copy *infile* to *outfile* through the pipe."

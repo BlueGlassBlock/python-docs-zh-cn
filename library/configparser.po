@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:40+0000\n"
-"PO-Revision-Date: 2023-05-24 02:13+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -179,9 +179,9 @@ msgstr "回退值"
 
 #: ../../library/configparser.rst:211
 msgid ""
-"As with a dictionary, you can use a section's :meth:`get` method to provide "
-"fallback values:"
-msgstr "与字典类似，你可以使用某个小节的 :meth:`get` 方法来提供回退值:"
+"As with a dictionary, you can use a section's :meth:`~ConfigParser.get` "
+"method to provide fallback values:"
+msgstr "与字典类似，你可以使用某一节的 :meth:`~ConfigParser.get` 方法来提供回退值："
 
 #: ../../library/configparser.rst:224
 msgid ""
@@ -196,13 +196,13 @@ msgstr ""
 
 #: ../../library/configparser.rst:235
 msgid ""
-"One more thing to be aware of is that the parser-level :meth:`get` method "
-"provides a custom, more complex interface, maintained for backwards "
-"compatibility.  When using this method, a fallback value can be provided via"
-" the ``fallback`` keyword-only argument:"
+"One more thing to be aware of is that the parser-level "
+":meth:`~ConfigParser.get` method provides a custom, more complex interface, "
+"maintained for backwards compatibility.  When using this method, a fallback "
+"value can be provided via the ``fallback`` keyword-only argument:"
 msgstr ""
-"还需要注意的一点是解析器层级的 :meth:`get` 方法提供了自定义的更复杂接口，它被维护用于向下兼容。 当使用此方法时，回退值可以通过 "
-"``fallback`` 仅限关键字参数来提供:"
+"还需要注意的一点是解析器层级的 :meth:`~ConfigParser.get` 方法提供了自定义的更复杂接口，它被继续维护用于向下兼容。 "
+"当使用此方法时，可以通过 ``fallback`` 仅限关键字参数提供一个回退值："
 
 #: ../../library/configparser.rst:246
 msgid ""
@@ -236,11 +236,10 @@ msgstr ""
 
 #: ../../library/configparser.rst:274
 msgid ""
-"By default,  a valid section name can be any string that does not contain "
-"'\\\\n' or ']'. To change this, see :attr:`ConfigParser.SECTCRE`."
+"By default, a valid section name can be any string that does not contain "
+"'\\\\n'. To change this, see :attr:`ConfigParser.SECTCRE`."
 msgstr ""
-"在默认情况下，有效的节名称可以是不包含 '\\\\n' 或 ']' 的任意字符串。 要改变此设定，请参阅 "
-":attr:`ConfigParser.SECTCRE`。"
+"在默认情况下，有效的节名称可以是不包含 '\\\\n' 的任意字符串。 要改变此设定，请参阅 :attr:`ConfigParser.SECTCRE`。"
 
 #: ../../library/configparser.rst:277
 msgid ""
@@ -416,7 +415,7 @@ msgid ""
 " expanded (unless ``raw=True`` is provided)."
 msgstr ""
 "``parser.items()`` 兼容映射协议（返回 *section_name*, *section_proxy* 对的列表，包括 "
-"DEFAULTSECT）。 但是，此方法也可以带参数发起调用: ``parser.items(section, raw, vars)``。 "
+"DEFAULTSECT）。 但是，此方法也可以附带参数被唤起: ``parser.items(section, raw, vars)``。 "
 "这种调用形式返回指定 ``section`` 的 *option*, *value* 对的列表，将展开所有插值（除非提供了 ``raw=True`` "
 "选项）。"
 
@@ -425,7 +424,7 @@ msgid ""
 "The mapping protocol is implemented on top of the existing legacy API so "
 "that subclasses overriding the original interface still should have mappings"
 " working as expected."
-msgstr "映射协议是在现有的传统 API 之上实现的，以便重载原始接口的子类仍然具有符合预期的有效映射。"
+msgstr "映射协议是在现有的传统 API 之上实现的，以便重写原始接口的子类仍然具有符合预期的有效映射。"
 
 #: ../../library/configparser.rst:475
 msgid "Customizing Parser Behaviour"
@@ -445,8 +444,8 @@ msgstr ""
 #: ../../library/configparser.rst:483
 msgid ""
 "The most common way to change the way a specific config parser works is to "
-"use the :meth:`__init__` options:"
-msgstr "改变特定配置解析器行为的最常见方式是使用 :meth:`__init__` 选项:"
+"use the :meth:`!__init__` options:"
+msgstr "改变特定配置解析器行为的最常见方式是使用 :meth:`!__init__` 选项："
 
 #: ../../library/configparser.rst:486
 msgid "*defaults*, default value: ``None``"
@@ -465,8 +464,8 @@ msgstr ""
 #: ../../library/configparser.rst:493
 msgid ""
 "Hint: if you want to specify default values for a specific section, use "
-":meth:`read_dict` before you read the actual file."
-msgstr "提示：如果你想要为特定的小节指定默认的值，请在读取实际文件之前使用 :meth:`read_dict`。"
+":meth:`~ConfigParser.read_dict` before you read the actual file."
+msgstr "提示：如果你想要为特定的节指定默认值，请在读取实际文件之前 使用 :meth:`~ConfigParser.read_dict`。"
 
 #: ../../library/configparser.rst:496
 msgid "*dict_type*, default value: :class:`dict`"
@@ -573,12 +572,14 @@ msgstr "*strict*，默认值: ``True``"
 #: ../../library/configparser.rst:637
 msgid ""
 "When set to ``True``, the parser will not allow for any section or option "
-"duplicates while reading from a single source (using :meth:`read_file`, "
-":meth:`read_string` or :meth:`read_dict`).  It is recommended to use strict "
-"parsers in new applications."
+"duplicates while reading from a single source (using "
+":meth:`~ConfigParser.read_file`, :meth:`~ConfigParser.read_string` or "
+":meth:`~ConfigParser.read_dict`).  It is recommended to use strict parsers "
+"in new applications."
 msgstr ""
-"当设为 ``True`` 时，解析器在从单一源读取 (使用 :meth:`read_file`, :meth:`read_string` 或 "
-":meth:`read_dict`) 期间将不允许任何小节或选项出现重复。 推荐在新的应用中使用严格解析器。"
+"当设为 ``True`` 时，解析器在从单一源读取 (使用 :meth:`~ConfigParser.read_file`, "
+":meth:`~ConfigParser.read_string` 或 :meth:`~ConfigParser.read_dict`) "
+"期间将不允许任何节或选项出现重复。 推荐在新的应用中使用严格解析器。"
 
 #: ../../library/configparser.rst:642
 msgid ""
@@ -667,15 +668,15 @@ msgid ""
 "desirable, users may define them in a subclass or pass a dictionary where "
 "each key is a name of the converter and each value is a callable "
 "implementing said conversion.  For instance, passing ``{'decimal': "
-"decimal.Decimal}`` would add :meth:`getdecimal` on both the parser object "
+"decimal.Decimal}`` would add :meth:`!getdecimal` on both the parser object "
 "and all section proxies.  In other words, it will be possible to write both "
 "``parser_instance.getdecimal('section', 'key', fallback=0)`` and "
 "``parser_instance['section'].getdecimal('key', 0)``."
 msgstr ""
-"配置解析器提供了可选的值获取方法用来执行类型转换。 默认实现包括 :meth:`~ConfigParser.getint`, "
-":meth:`~ConfigParser.getfloat` 以及 :meth:`~ConfigParser.getboolean`。 "
+"配置解析器提供了可选的值获取方法用来执行类型转换。 默认情况下实现了 :meth:`~ConfigParser.getint`, "
+":meth:`~ConfigParser.getfloat` 和 :meth:`~ConfigParser.getboolean`。 "
 "如果还需要其他获取方法，用户可以在子类中定义它们，或者传入一个字典，其中每个键都是一个转换器的名称而每个值都是一个实现了特定转换的可调用对象。 "
-"例如，传入 ``{'decimal': decimal.Decimal}`` 将对解释器对象和所有节代理添加 :meth:`getdecimal`。 "
+"例如，传入 ``{'decimal': decimal.Decimal}`` 将对解释器对象和所有节代理添加 :meth:`!getdecimal`。 "
 "换句话说，可以同时编写 ``parser_instance.getdecimal('section', 'key', fallback=0)`` 和 "
 "``parser_instance['section'].getdecimal('key', 0)``。"
 
@@ -694,7 +695,7 @@ msgid ""
 "More advanced customization may be achieved by overriding default values of "
 "these parser attributes.  The defaults are defined on the classes, so they "
 "may be overridden by subclasses or by attribute assignment."
-msgstr "更多高级定制选项可通过重载这些解析器属性的默认值来达成。 默认值是在类中定义的，因此它们可以通过子类或属性赋值来重载。"
+msgstr "更多高级定制选项可通过重写这些解析器属性的默认值来达成。 默认值是在类中定义的，因此它们可以通过子类或属性赋值来重写。"
 
 #: ../../library/configparser.rst:716
 msgid ""
@@ -706,7 +707,7 @@ msgid ""
 msgstr ""
 "默认情况下当使用 :meth:`~ConfigParser.getboolean` 时，配置解析器会将下列值视为 ``True``: ``'1'``, "
 "``'yes'``, ``'true'``, ``'on'`` 而将下列值视为 ``False``: ``'0'``, ``'no'``, "
-"``'false'``, ``'off'``。 你可以通过指定一个自定义的字符串键及其对应的布尔值字典来重载此行为。 例如:"
+"``'false'``, ``'off'``。 你可以通过指定一个自定义的字符串键及其对应的布尔值字典来覆盖此行为。 例如:"
 
 #: ../../library/configparser.rst:734
 msgid ""
@@ -722,7 +723,7 @@ msgid ""
 "method if that's unsuitable. For example:"
 msgstr ""
 "这个方法会转换每次 read, get, 或 set 操作的选项名称。 默认会将名称转换为小写形式。 "
-"这也意味着当一个配置文件被写入时，所有键都将为小写形式。 如果此行为不合适则要重载此方法。 例如:"
+"这也意味着当一个配置文件被写入时，所有键都将为小写形式。 如果此行为不合适则要重写此方法。 例如:"
 
 #: ../../library/configparser.rst:770
 msgid ""
@@ -741,7 +742,7 @@ msgid ""
 msgstr ""
 "一个已编译正则表达式会被用来解析节标头。 默认将 ``[section]`` 匹配到名称 ``\"section\"``。 "
 "空格会被视为节名称的一部分，因此 ``[  larch  ]`` 将被读取为一个名称为 ``\"  larch  \"`` 的节。 "
-"如果此行为不合适则要重载此属性。 例如:"
+"如果此行为不合适则要覆盖此属性。 例如:"
 
 #: ../../library/configparser.rst:805
 msgid ""
@@ -749,7 +750,7 @@ msgid ""
 "option lines, it's not recommended to override it because that would "
 "interfere with constructor options *allow_no_value* and *delimiters*."
 msgstr ""
-"虽然 ConfigParser 对象也使用 ``OPTCRE`` 属性来识别选项行，但并不推荐重载它，因为这会与构造器选项 "
+"虽然 ConfigParser 对象也使用 ``OPTCRE`` 属性来识别选项行，但并不推荐重写它，因为这会与构造器选项 "
 "*allow_no_value* 和 *delimiters* 产生冲突。"
 
 #: ../../library/configparser.rst:811
@@ -834,12 +835,15 @@ msgid ""
 "When *default_section* is given, it specifies the name for the special "
 "section holding default values for other sections and interpolation purposes"
 " (normally named ``\"DEFAULT\"``).  This value can be retrieved and changed "
-"on runtime using the ``default_section`` instance attribute."
+"at runtime using the ``default_section`` instance attribute. This won't re-"
+"evaluate an already parsed config file, but will be used when writing parsed"
+" settings to a new config file."
 msgstr ""
-"当给定 *default_section* 时，它将指定存放其他节的默认值和用于插值的特殊节的名称 (通常命名为 ``\"DEFAULT\"``)。 "
-"该值可通过使用 ``default_section`` 实例属性在运行时被读取或修改。"
+"当给出 *default_section* 时，它指定了为其他部分和插值目的而保存默认值的特殊部分的名称 (通常命名为 "
+"``\"DEFAULT\"``)。 该值可通过使用 ``default_section`` 实例属性在运行时被读取或修改值。 "
+"这不会对已解析的配置文件进行重新求值，但会在将解析的设置写入新的配置文件时使用。"
 
-#: ../../library/configparser.rst:941
+#: ../../library/configparser.rst:943
 msgid ""
 "Interpolation behaviour may be customized by providing a custom handler "
 "through the *interpolation* argument. ``None`` can be used to turn off "
@@ -851,7 +855,7 @@ msgstr ""
 "可用来完全禁用插值，``ExtendedInterpolation()`` 提供了一种更高级的变体形式，它的设计受到了 ``zc.buildout`` "
 "的启发。 有关该主题的更多信息请参见 `专门的文档章节 <#interpolation-of-values>`_。"
 
-#: ../../library/configparser.rst:947
+#: ../../library/configparser.rst:949
 msgid ""
 "All option names used in interpolation will be passed through the "
 ":meth:`optionxform` method just like any other option name reference.  For "
@@ -863,22 +867,22 @@ msgstr ""
 ":meth:`optionxform` 的默认实现（它会将选项名称转换为小写形式）时，值 ``foo %(bar)s`` 和 ``foo "
 "%(BAR)s`` 是等价的。"
 
-#: ../../library/configparser.rst:953
+#: ../../library/configparser.rst:955
 msgid ""
 "When *converters* is given, it should be a dictionary where each key "
 "represents the name of a type converter and each value is a callable "
 "implementing the conversion from string to the desired datatype.  Every "
-"converter gets its own corresponding :meth:`get*()` method on the parser "
+"converter gets its own corresponding :meth:`!get*()` method on the parser "
 "object and section proxies."
 msgstr ""
-"当给定 *converters* 时，它应当为一个字典，其中每个键代表一个类型转换器的名称而每个值则为实现从字符串到目标数据类型的转换的可调用对象。 "
-"每个转换器会获得其在解析器对象和节代理上对应的 :meth:`get*()` 方法。"
+"当给定 *converters* 时，它应当为一个字典，其中每个键代表一个类型转换器的名称而每个值则为实现从字符串到目标类型的转换的可调用对象。 "
+"每个转换器会获得其在解析器对象和节代理上对应的 :meth:`!get*()` 方法。"
 
-#: ../../library/configparser.rst:959
+#: ../../library/configparser.rst:961
 msgid "The default *dict_type* is :class:`collections.OrderedDict`."
 msgstr "默认的 *dict_type* 为 :class:`collections.OrderedDict`。"
 
-#: ../../library/configparser.rst:962
+#: ../../library/configparser.rst:964
 msgid ""
 "*allow_no_value*, *delimiters*, *comment_prefixes*, *strict*, "
 "*empty_lines_in_values*, *default_section* and *interpolation* were added."
@@ -886,11 +890,11 @@ msgstr ""
 "添加了 *allow_no_value*, *delimiters*, *comment_prefixes*, *strict*, "
 "*empty_lines_in_values*, *default_section* 以及 *interpolation*。"
 
-#: ../../library/configparser.rst:967
+#: ../../library/configparser.rst:969
 msgid "The *converters* argument was added."
 msgstr "添加了 *converters* 参数。"
 
-#: ../../library/configparser.rst:970
+#: ../../library/configparser.rst:972
 msgid ""
 "The *defaults* argument is read with :meth:`read_dict()`, providing "
 "consistent behavior across the parser: non-string keys and values are "
@@ -899,23 +903,23 @@ msgstr ""
 "*defaults* 参数会通过 :meth:`read_dict()` "
 "来读取，提供全解析器范围内一致的行为：非字符串类型的键和值会被隐式地转换为字符串。"
 
-#: ../../library/configparser.rst:975 ../../library/configparser.rst:1260
+#: ../../library/configparser.rst:977 ../../library/configparser.rst:1262
 msgid ""
 "The default *dict_type* is :class:`dict`, since it now preserves insertion "
 "order."
 msgstr "默认的 *dict_type* 为 :class:`dict`，因为它现在会保留插入顺序。"
 
-#: ../../library/configparser.rst:981
+#: ../../library/configparser.rst:983
 msgid "Return a dictionary containing the instance-wide defaults."
 msgstr "返回包含实例范围内默认值的字典。"
 
-#: ../../library/configparser.rst:986
+#: ../../library/configparser.rst:988
 msgid ""
 "Return a list of the sections available; the *default section* is not "
 "included in the list."
 msgstr "返回可用节的列表；*default section* 不包括在该列表中。"
 
-#: ../../library/configparser.rst:992
+#: ../../library/configparser.rst:994
 msgid ""
 "Add a section named *section* to the instance.  If a section by the given "
 "name already exists, :exc:`DuplicateSectionError` is raised.  If the "
@@ -926,21 +930,21 @@ msgstr ""
 " *default section* 名称，则会引发 :exc:`ValueError`。 节名称必须为字符串；如果不是则会引发 "
 ":exc:`TypeError`。"
 
-#: ../../library/configparser.rst:997
+#: ../../library/configparser.rst:999
 msgid "Non-string section names raise :exc:`TypeError`."
 msgstr "非字符串的节名称将引发 :exc:`TypeError`。"
 
-#: ../../library/configparser.rst:1003
+#: ../../library/configparser.rst:1005
 msgid ""
 "Indicates whether the named *section* is present in the configuration. The "
 "*default section* is not acknowledged."
 msgstr "指明相应名称的 *section* 是否存在于配置中。 *default section* 不包含在内。"
 
-#: ../../library/configparser.rst:1009
+#: ../../library/configparser.rst:1011
 msgid "Return a list of options available in the specified *section*."
 msgstr "返回指定 *section* 中可用选项的列表。"
 
-#: ../../library/configparser.rst:1014
+#: ../../library/configparser.rst:1016
 msgid ""
 "If the given *section* exists, and contains the given *option*, return "
 ":const:`True`; otherwise return :const:`False`.  If the specified *section* "
@@ -949,13 +953,13 @@ msgstr ""
 "如果给定的 *section* 存在并且包含给定的 *option* 则返回 :const:`True`；否则返回 :const:`False`。 "
 "如果指定的 *section* 为 :const:`None` 或空字符串，则会使用 DEFAULT。"
 
-#: ../../library/configparser.rst:1021
+#: ../../library/configparser.rst:1023
 msgid ""
 "Attempt to read and parse an iterable of filenames, returning a list of "
 "filenames which were successfully parsed."
 msgstr "尝试读取并解析一个包含文件名的可迭代对象，返回一个被成功解析的文件名列表。"
 
-#: ../../library/configparser.rst:1024
+#: ../../library/configparser.rst:1026
 msgid ""
 "If *filenames* is a string, a :class:`bytes` object or a :term:`path-like "
 "object`, it is treated as a single filename.  If a file named in *filenames*"
@@ -969,7 +973,7 @@ msgstr ""
 "object`，它会被当作单个文件来处理。 如果 *filenames* 中名称对应的某个文件无法被打开，该文件将被忽略。 "
 "这样的设计使得你可以指定包含多个潜在配置文件位置的可迭代对象（例如当前目录、用户家目录以及某个系统级目录），存在于该可迭代对象中的所有配置文件都将被读取。"
 
-#: ../../library/configparser.rst:1033
+#: ../../library/configparser.rst:1035
 msgid ""
 "If none of the named files exist, the :class:`ConfigParser` instance will "
 "contain an empty dataset.  An application which requires initial values to "
@@ -979,44 +983,44 @@ msgstr ""
 "如果名称对应的文件全都不存在，则 :class:`ConfigParser` 实例将包含一个空数据集。 一个要求从文件加载初始值的应用应当在调用 "
 ":meth:`read` 来获取任何可选文件之前使用 :meth:`read_file` 来加载所要求的一个或多个文件::"
 
-#: ../../library/configparser.rst:1046
+#: ../../library/configparser.rst:1048
 msgid ""
-"The *encoding* parameter.  Previously, all files were read using the default"
-" encoding for :func:`open`."
-msgstr "*encoding* 形参。 在之前的版本中，所有文件都将使用 :func:`open` 的默认编码格式来读取。"
+"Added the *encoding* parameter. Previously, all files were read using the "
+"default encoding for :func:`open`."
+msgstr "增加了 *encoding* 形参。 在之前版本中，所有文件都将使用 :func:`open` 的默认编码格式来读取。"
 
-#: ../../library/configparser.rst:1050
+#: ../../library/configparser.rst:1052
 msgid "The *filenames* parameter accepts a :term:`path-like object`."
 msgstr "*filenames* 形参接受一个 :term:`path-like object`。"
 
-#: ../../library/configparser.rst:1053
+#: ../../library/configparser.rst:1055
 msgid "The *filenames* parameter accepts a :class:`bytes` object."
 msgstr "*filenames* 形参接受一个 :class:`bytes` 对象。"
 
-#: ../../library/configparser.rst:1059
+#: ../../library/configparser.rst:1061
 msgid ""
 "Read and parse configuration data from *f* which must be an iterable "
 "yielding Unicode strings (for example files opened in text mode)."
 msgstr "从 *f* 读取并解析配置数据，它必须是一个产生 Unicode 字符串的可迭代对象（例如以文本模式打开的文件）。"
 
-#: ../../library/configparser.rst:1062
+#: ../../library/configparser.rst:1064
 msgid ""
 "Optional argument *source* specifies the name of the file being read.  If "
-"not given and *f* has a :attr:`name` attribute, that is used for *source*; "
+"not given and *f* has a :attr:`!name` attribute, that is used for *source*; "
 "the default is ``'<???>'``."
 msgstr ""
-"可选参数 *source* 指定要读取的文件名称。 如果未给出并且 *f* 具有 :attr:`name` 属性，则该属性会被用作 "
+"可选参数 *source* 指定要读取的文件名称。 如果未给出并且 *f* 具有 :attr:`!name` 属性，则该属性会被用作 "
 "*source*；默认值为 ``'<???>'``。"
 
-#: ../../library/configparser.rst:1066
-msgid "Replaces :meth:`readfp`."
-msgstr "替代 :meth:`readfp`。"
+#: ../../library/configparser.rst:1068
+msgid "Replaces :meth:`!readfp`."
+msgstr "替代 :meth:`!readfp`。"
 
-#: ../../library/configparser.rst:1071
+#: ../../library/configparser.rst:1073
 msgid "Parse configuration data from a string."
 msgstr "从字符串中解析配置数据。"
 
-#: ../../library/configparser.rst:1073
+#: ../../library/configparser.rst:1075
 msgid ""
 "Optional argument *source* specifies a context-specific name of the string "
 "passed.  If not given, ``'<string>'`` is used.  This should commonly be a "
@@ -1025,7 +1029,7 @@ msgstr ""
 "可选参数 *source* 指定一个所传入字符串的上下文专属名称。 如果未给出，则会使用 ``'<string>'``。 这通常应为一个文件系统路径或 "
 "URL。"
 
-#: ../../library/configparser.rst:1082
+#: ../../library/configparser.rst:1084
 msgid ""
 "Load configuration from any object that provides a dict-like ``items()`` "
 "method.  Keys are section names, values are dictionaries with keys and "
@@ -1036,17 +1040,17 @@ msgstr ""
 "从任意一个提供了类似于字典的 ``items()`` 方法的对象加载配置。 键为节名称，值为包含节中所出现的键和值的字典。 "
 "如果所用的字典类型会保留顺序，则节和其中的键将按顺序加入。 值会被自动转换为字符串。"
 
-#: ../../library/configparser.rst:1088
+#: ../../library/configparser.rst:1090
 msgid ""
 "Optional argument *source* specifies a context-specific name of the "
 "dictionary passed.  If not given, ``<dict>`` is used."
 msgstr "可选参数 *source* 指定一个所传入字典的上下文专属名称。 如果未给出，则会使用 ``<dict>``。"
 
-#: ../../library/configparser.rst:1091
+#: ../../library/configparser.rst:1093
 msgid "This method can be used to copy state between parsers."
 msgstr "此方法可被用于在解析器之间拷贝状态。"
 
-#: ../../library/configparser.rst:1098
+#: ../../library/configparser.rst:1100
 msgid ""
 "Get an *option* value for the named *section*.  If *vars* is provided, it "
 "must be a dictionary.  The *option* is looked up in *vars* (if provided), "
@@ -1058,14 +1062,14 @@ msgstr ""
 "*vars*（如果有提供）、*section* 以及 *DEFAULTSECT*。 如果未找到该键并且提供了 *fallback*，则它会被用作回退值。"
 " 可以提供 ``None`` 作为 *fallback* 值。"
 
-#: ../../library/configparser.rst:1104
+#: ../../library/configparser.rst:1106
 msgid ""
 "All the ``'%'`` interpolations are expanded in the return values, unless the"
 " *raw* argument is true.  Values for interpolation keys are looked up in the"
 " same manner as the option."
 msgstr "所有 ``'%'`` 插值会在返回值中被展开，除非 *raw* 参数为真值。 插值键所使用的值会按与选项相同的方式来查找。"
 
-#: ../../library/configparser.rst:1108
+#: ../../library/configparser.rst:1110
 msgid ""
 "Arguments *raw*, *vars* and *fallback* are keyword only to protect users "
 "from trying to use the third argument as the *fallback* fallback (especially"
@@ -1074,7 +1078,7 @@ msgstr ""
 "*raw*, *vars* 和 *fallback* 都是仅限关键字参数，以防止用户试图使用第三个参数作业为 *fallback* "
 "回退值（特别是在使用映射 协议的时候）。"
 
-#: ../../library/configparser.rst:1116
+#: ../../library/configparser.rst:1118
 msgid ""
 "A convenience method which coerces the *option* in the specified *section* "
 "to an integer.  See :meth:`get` for explanation of *raw*, *vars* and "
@@ -1083,7 +1087,7 @@ msgstr ""
 "将在指定 *section* 中的 *option* 强制转换为整数的便捷方法。 参见 :meth:`get` 获取对于 *raw*, *vars* 和"
 " *fallback* 的解释。"
 
-#: ../../library/configparser.rst:1123
+#: ../../library/configparser.rst:1125
 msgid ""
 "A convenience method which coerces the *option* in the specified *section* "
 "to a floating point number.  See :meth:`get` for explanation of *raw*, "
@@ -1092,7 +1096,7 @@ msgstr ""
 "将在指定 *section* 中的 *option* 强制转换为浮点数的便捷方法。 参见 :meth:`get` 获取对于 *raw*, *vars* "
 "和 *fallback* 的解释。"
 
-#: ../../library/configparser.rst:1130
+#: ../../library/configparser.rst:1132
 msgid ""
 "A convenience method which coerces the *option* in the specified *section* "
 "to a Boolean value.  Note that the accepted values for the option are "
@@ -1108,14 +1112,14 @@ msgstr ""
 "和 ``'off'``，它们会使得此方法返回 ``False``。 这些字符串值会以对大小写不敏感的方式被检测。 任何其他值都将导致引发 "
 ":exc:`ValueError`。 参见 :meth:`get` 获取对于 *raw*, *vars* 和 *fallback* 的解释。"
 
-#: ../../library/configparser.rst:1143
+#: ../../library/configparser.rst:1145
 msgid ""
 "When *section* is not given, return a list of *section_name*, "
 "*section_proxy* pairs, including DEFAULTSECT."
 msgstr ""
 "当未给出 *section* 时，将返回由 *section_name*, *section_proxy* 对组成的列表，包括 DEFAULTSECT。"
 
-#: ../../library/configparser.rst:1146
+#: ../../library/configparser.rst:1148
 msgid ""
 "Otherwise, return a list of *name*, *value* pairs for the options in the "
 "given *section*.  Optional arguments have the same meaning as for the "
@@ -1124,14 +1128,14 @@ msgstr ""
 "在其他情况下，将返回给定的 *section* 中的 option 的 *name*, *value* 对组成的列表。 可选参数具有与 "
 ":meth:`get` 方法的参数相同的含义。"
 
-#: ../../library/configparser.rst:1150
+#: ../../library/configparser.rst:1152
 msgid ""
 "Items present in *vars* no longer appear in the result.  The previous "
 "behaviour mixed actual parser options with variables provided for "
 "interpolation."
 msgstr "*vars* 中的条目将不在结果中出现。 之前的行为混淆了实际的解析器选项和为插值提供的变量。"
 
-#: ../../library/configparser.rst:1158
+#: ../../library/configparser.rst:1160
 msgid ""
 "If the given section exists, set the given option to the specified value; "
 "otherwise raise :exc:`NoSectionError`.  *option* and *value* must be "
@@ -1140,7 +1144,7 @@ msgstr ""
 "如果给定的节存在，则将所给出的选项设为指定的值；在其他情况下将引发 :exc:`NoSectionError`。 *option* 和 *value* "
 "必须为字符串；如果不是则将引发 :exc:`TypeError`。"
 
-#: ../../library/configparser.rst:1165
+#: ../../library/configparser.rst:1167
 msgid ""
 "Write a representation of the configuration to the specified :term:`file "
 "object`, which must be opened in text mode (accepting strings).  This "
@@ -1151,7 +1155,7 @@ msgstr ""
 "将配置的表示形式写入指定的 :term:`file object`，该对象必须以文本模式打开（接受字符串）。 此表示形式可由将来的 "
 ":meth:`read` 调用进行解析。 如果 *space_around_delimiters* 为真值，键和值之前的分隔符两边将加上空格。"
 
-#: ../../library/configparser.rst:1173
+#: ../../library/configparser.rst:1175
 msgid ""
 "Comments in the original configuration file are not preserved when writing "
 "the configuration back. What is considered a comment, depends on the given "
@@ -1160,7 +1164,7 @@ msgstr ""
 "原始配置文件中的注释在写回配置时不会被保留。 具体哪些会被当作注释，取决于为 *comment_prefix* 和 "
 "*inline_comment_prefix* 所指定的值。"
 
-#: ../../library/configparser.rst:1181
+#: ../../library/configparser.rst:1183
 msgid ""
 "Remove the specified *option* from the specified *section*.  If the section "
 "does not exist, raise :exc:`NoSectionError`.  If the option existed to be "
@@ -1169,13 +1173,13 @@ msgstr ""
 "将指定的 *option* 从指定的 *section* 中移除。 如果指定的节不存在则会引发 :exc:`NoSectionError`。 "
 "如果要移除的选项存在则返回 :const:`True`；在其他情况下将返回 :const:`False`。"
 
-#: ../../library/configparser.rst:1189
+#: ../../library/configparser.rst:1191
 msgid ""
 "Remove the specified *section* from the configuration.  If the section in "
 "fact existed, return ``True``.  Otherwise return ``False``."
 msgstr "从配置中移除指定的 *section*。 如果指定的节确实存在则返回 ``True``。 在其他情况下将返回 ``False``。"
 
-#: ../../library/configparser.rst:1195
+#: ../../library/configparser.rst:1197
 msgid ""
 "Transforms the option name *option* as found in an input file or as passed "
 "in by client code to the form that should be used in the internal "
@@ -1184,9 +1188,9 @@ msgid ""
 "of this name on instances to affect this behavior."
 msgstr ""
 "将选项名 *option* 转换为输入文件中的形式或客户端代码所传入的应当在内部结构中使用的形式。 默认实现将返回 *option* "
-"的小写形式版本；子类可以重载此行为，或者客户端代码也可以在实例上设置一个具有此名称的属性来影响此行为。"
+"的小写形式版本；子类可以重写此行为，或者客户端代码也可以在实例上设置一个具有此名称的属性来影响此行为。"
 
-#: ../../library/configparser.rst:1201
+#: ../../library/configparser.rst:1203
 msgid ""
 "You don't need to subclass the parser to use this method, you can also set "
 "it on an instance, to a function that takes a string argument and returns a "
@@ -1196,47 +1200,48 @@ msgstr ""
 "你不需要子类化解析器来使用此方法，你也可以在一个实例上设置它，或使用一个接受字符串参数并返回字符串的函数。 例如将它设为 ``str`` "
 "将使得选项名称变得大小写敏感::"
 
-#: ../../library/configparser.rst:1209
+#: ../../library/configparser.rst:1211
 msgid ""
 "Note that when reading configuration files, whitespace around the option "
 "names is stripped before :meth:`optionxform` is called."
 msgstr "请注意当读取配置文件时，选项名称两边的空格将在调用 :meth:`optionxform` 之前被去除。"
 
-#: ../../library/configparser.rst:1215
+#: ../../library/configparser.rst:1217
 msgid "Use :meth:`read_file` instead."
 msgstr ""
 
-#: ../../library/configparser.rst:1218
+#: ../../library/configparser.rst:1220
 msgid ""
 ":meth:`readfp` now iterates on *fp* instead of calling ``fp.readline()``."
 msgstr ""
 
-#: ../../library/configparser.rst:1221
+#: ../../library/configparser.rst:1223
 msgid ""
 "For existing code calling :meth:`readfp` with arguments which don't support "
 "iteration, the following generator may be used as a wrapper around the file-"
 "like object::"
 msgstr ""
 
-#: ../../library/configparser.rst:1231
+#: ../../library/configparser.rst:1233
 msgid ""
 "Instead of ``parser.readfp(fp)`` use "
 "``parser.read_file(readline_generator(fp))``."
 msgstr ""
 
-#: ../../library/configparser.rst:1237
+#: ../../library/configparser.rst:1239
 msgid ""
-"The maximum depth for recursive interpolation for :meth:`get` when the *raw*"
-" parameter is false.  This is relevant only when the default *interpolation*"
-" is used."
+"The maximum depth for recursive interpolation for "
+":meth:`~configparser.ConfigParser.get` when the *raw* parameter is false.  "
+"This is relevant only when the default *interpolation* is used."
 msgstr ""
-"当 *raw* 形参为假值时 :meth:`get` 所采用的递归插值的最大深度。 这只在使用默认的 *interpolation* 时会起作用。"
+"当 *raw* 形参为假值时 :meth:`~configparser.ConfigParser.get` 所采用的递归插值的最大深度。 "
+"这只在使用默认的 *interpolation* 时会起作用。"
 
-#: ../../library/configparser.rst:1245
+#: ../../library/configparser.rst:1247
 msgid "RawConfigParser Objects"
 msgstr "RawConfigParser 对象"
 
-#: ../../library/configparser.rst:1255
+#: ../../library/configparser.rst:1257
 msgid ""
 "Legacy variant of the :class:`ConfigParser`.  It has interpolation disabled "
 "by default and allows for non-string section names, option names, and values"
@@ -1246,7 +1251,7 @@ msgstr ""
 "旧式 :class:`ConfigParser`。 它默认禁用插值并且允许通过不安全的 ``add_section`` 和 ``set`` 方法以及旧式"
 " ``defaults=`` 关键字参数处理来设置非字符串的节名、选项名和值。"
 
-#: ../../library/configparser.rst:1265
+#: ../../library/configparser.rst:1267
 msgid ""
 "Consider using :class:`ConfigParser` instead which checks types of the "
 "values to be stored internally.  If you don't want interpolation, you can "
@@ -1255,7 +1260,7 @@ msgstr ""
 "考虑改用 :class:`ConfigParser`，它会检查内部保存的值的类型。 如果你不想要插值，你可以使用 "
 "``ConfigParser(interpolation=None)``。"
 
-#: ../../library/configparser.rst:1272
+#: ../../library/configparser.rst:1274
 msgid ""
 "Add a section named *section* to the instance.  If a section by the given "
 "name already exists, :exc:`DuplicateSectionError` is raised.  If the "
@@ -1264,13 +1269,13 @@ msgstr ""
 "向实例添加一个名为 *section* 的节。 如果给定名称的节已存在，将会引发 :exc:`DuplicateSectionError`。 如果传入了"
 " *default section* 名称，则会引发 :exc:`ValueError`。"
 
-#: ../../library/configparser.rst:1276
+#: ../../library/configparser.rst:1278
 msgid ""
 "Type of *section* is not checked which lets users create non-string named "
 "sections.  This behaviour is unsupported and may cause internal errors."
 msgstr "不检查 *section* 以允许用户创建以非字符串命名的节。 此行为已不受支持并可能导致内部错误。"
 
-#: ../../library/configparser.rst:1282
+#: ../../library/configparser.rst:1284
 msgid ""
 "If the given section exists, set the given option to the specified value; "
 "otherwise raise :exc:`NoSectionError`.  While it is possible to use "
@@ -1283,7 +1288,7 @@ msgstr ""
 ":class:`RawConfigParser` (或使用 :class:`ConfigParser` 并将 *raw* 形参设为真值) "
 "以便实现非字符串值的 *internal* 存储，但是完整功能（包括插值和输出到文件）只能使用字符串值来实现。"
 
-#: ../../library/configparser.rst:1289
+#: ../../library/configparser.rst:1291
 msgid ""
 "This method lets users assign non-string values to keys internally.  This "
 "behaviour is unsupported and will cause errors when attempting to write to a"
@@ -1293,33 +1298,35 @@ msgstr ""
 "此方法允许用户在内部将非字符串值赋给键。 此行为已不受支持并会在尝试写入到文件或在非原始模式下获取数据时导致错误。 **请使用映射协议 "
 "API**，它不允许出现这样的赋值。"
 
-#: ../../library/configparser.rst:1296
+#: ../../library/configparser.rst:1298
 msgid "Exceptions"
 msgstr "异常"
 
-#: ../../library/configparser.rst:1300
+#: ../../library/configparser.rst:1302
 msgid "Base class for all other :mod:`configparser` exceptions."
 msgstr "所有其他 :mod:`configparser` 异常的基类。"
 
-#: ../../library/configparser.rst:1305
+#: ../../library/configparser.rst:1307
 msgid "Exception raised when a specified section is not found."
 msgstr "当找不到指定节时引发的异常。"
 
-#: ../../library/configparser.rst:1310
+#: ../../library/configparser.rst:1312
 msgid ""
-"Exception raised if :meth:`add_section` is called with the name of a section"
-" that is already present or in strict parsers when a section if found more "
-"than once in a single input file, string or dictionary."
+"Exception raised if :meth:`~ConfigParser.add_section` is called with the "
+"name of a section that is already present or in strict parsers when a "
+"section if found more than once in a single input file, string or "
+"dictionary."
 msgstr ""
-"当调用 :meth:`add_section` 时传入已存在的节名称，或者在严格解析器中当单个输入文件、字符串或字典内出现重复的节时引发的异常。"
+"当调用 :meth:`~ConfigParser.add_section` "
+"时传入已存在的节名称，或者在严格解析器中当单个输入文件、字符串或字典内出现重复的节时引发的异常。"
 
-#: ../../library/configparser.rst:1314
+#: ../../library/configparser.rst:1316
 msgid ""
-"Optional ``source`` and ``lineno`` attributes and arguments to "
-":meth:`__init__` were added."
-msgstr "将可选的 ``source`` 和 ``lineno`` 属性和参数添加到 :meth:`__init__`。"
+"Added the optional *source* and *lineno* attributes and parameters to "
+":meth:`!__init__`."
+msgstr "向 :meth:`!__init__` 添加了可选的 *source* 和 *lineno* 属性和形参。"
 
-#: ../../library/configparser.rst:1321
+#: ../../library/configparser.rst:1323
 msgid ""
 "Exception raised by strict parsers if a single option appears twice during "
 "reading from a single file, string or dictionary. This catches misspellings "
@@ -1329,19 +1336,19 @@ msgstr ""
 "当单个选项在从单个文件、字符串或字典读取时出现两次时引发的异常。 "
 "这会捕获拼写错误和大小写敏感相关的错误，例如一个字典可能包含两个键分别代表同一个大小写不敏感的配置键。"
 
-#: ../../library/configparser.rst:1329
+#: ../../library/configparser.rst:1331
 msgid ""
 "Exception raised when a specified option is not found in the specified "
 "section."
 msgstr "当指定的选项未在指定的节中被找到时引发的异常。"
 
-#: ../../library/configparser.rst:1335
+#: ../../library/configparser.rst:1337
 msgid ""
 "Base class for exceptions raised when problems occur performing string "
 "interpolation."
 msgstr "当执行字符串插值发生问题时所引发的异常的基类。"
 
-#: ../../library/configparser.rst:1341
+#: ../../library/configparser.rst:1343
 msgid ""
 "Exception raised when string interpolation cannot be completed because the "
 "number of iterations exceeds :const:`MAX_INTERPOLATION_DEPTH`.  Subclass of "
@@ -1350,39 +1357,39 @@ msgstr ""
 "当字符串插值由于迭代次数超出 :const:`MAX_INTERPOLATION_DEPTH` 而无法完成所引发的异常。 为 "
 ":exc:`InterpolationError` 的子类。"
 
-#: ../../library/configparser.rst:1348
+#: ../../library/configparser.rst:1350
 msgid ""
 "Exception raised when an option referenced from a value does not exist. "
 "Subclass of :exc:`InterpolationError`."
 msgstr "当从某个值引用的选项并不存在时引发的异常。 为 :exc:`InterpolationError` 的子类。"
 
-#: ../../library/configparser.rst:1354
+#: ../../library/configparser.rst:1356
 msgid ""
 "Exception raised when the source text into which substitutions are made does"
 " not conform to the required syntax.  Subclass of :exc:`InterpolationError`."
 msgstr "当将要执行替换的源文本不符合要求的语法时引发的异常。 为 :exc:`InterpolationError` 的子类。"
 
-#: ../../library/configparser.rst:1360
+#: ../../library/configparser.rst:1362
 msgid ""
 "Exception raised when attempting to parse a file which has no section "
 "headers."
 msgstr "当尝试解析一个不带节标头的文件时引发的异常。"
 
-#: ../../library/configparser.rst:1366
+#: ../../library/configparser.rst:1368
 msgid "Exception raised when errors occur attempting to parse a file."
 msgstr "当尝试解析一个文件而发生错误时引发的异常。"
 
-#: ../../library/configparser.rst:1368
+#: ../../library/configparser.rst:1370
 msgid ""
-"The ``filename`` attribute and :meth:`__init__` argument were renamed to "
+"The ``filename`` attribute and :meth:`!__init__` argument were renamed to "
 "``source`` for consistency."
 msgstr ""
 
-#: ../../library/configparser.rst:1374
+#: ../../library/configparser.rst:1376
 msgid "Footnotes"
 msgstr "备注"
 
-#: ../../library/configparser.rst:1375
+#: ../../library/configparser.rst:1377
 msgid ""
 "Config parsers allow for heavy customization.  If you are interested in "
 "changing the behaviour outlined by the footnote reference, consult the "
@@ -1394,7 +1401,7 @@ msgstr ""
 msgid ".ini"
 msgstr ".ini"
 
-#: ../../library/configparser.rst:16 ../../library/configparser.rst:16
+#: ../../library/configparser.rst:16
 msgid "file"
 msgstr "文件"
 

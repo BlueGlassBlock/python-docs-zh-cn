@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Zombie110year <zombie110year@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,7 +86,7 @@ msgstr ""
 msgid ""
 "The following sound header types are recognized, as listed below with the "
 "return value from :func:`whathdr`: and :func:`what`:"
-msgstr "下列音频标头类型是可识别的，带有如下来自 :func:`whathdr` 的返回值: 以及 :func:`what`:"
+msgstr ""
 
 #: ../../library/sndhdr.rst:61
 msgid "Value"
@@ -95,95 +94,95 @@ msgstr "值"
 
 #: ../../library/sndhdr.rst:61
 msgid "Sound header format"
-msgstr "音频标头格式"
+msgstr ""
 
 #: ../../library/sndhdr.rst:63
 msgid "``'aifc'``"
-msgstr "``'aifc'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:63
 msgid "Compressed Audio Interchange Files"
-msgstr "Compressed Audio Interchange Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:65
 msgid "``'aiff'``"
-msgstr "``'aiff'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:65
 msgid "Audio Interchange Files"
-msgstr "Audio Interchange Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:67
 msgid "``'au'``"
-msgstr "``'au'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:67
 msgid "Au Files"
-msgstr "Au Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:69
 msgid "``'hcom'``"
-msgstr "``'hcom'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:69
 msgid "HCOM Files"
-msgstr "HCOM Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:71
 msgid "``'sndt'``"
-msgstr "``'sndt'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:71
 msgid "Sndtool Sound Files"
-msgstr "Sndtool Sound Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:73
 msgid "``'voc'``"
-msgstr "``'voc'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:73
 msgid "Creative Labs Audio Files"
-msgstr "Creative Labs Audio Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:75
 msgid "``'wav'``"
-msgstr "``'wav'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:75
 msgid "Waveform Audio File Format Files"
-msgstr "Waveform Audio File Format Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:77
 msgid "``'8svx'``"
-msgstr "``'8svx'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:77
 msgid "8-Bit Sampled Voice Files"
-msgstr "8-Bit Sampled Voice Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:79
 msgid "``'sb'``"
-msgstr "``'sb'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:79
 msgid "Signed Byte Audio Data Files"
-msgstr "Signed Byte Audio Data Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:81
 msgid "``'ub'``"
-msgstr "``'ub'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:81
 msgid "UB Files"
-msgstr "UB Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:83
 msgid "``'ul'``"
-msgstr "``'ul'``"
+msgstr ""
 
 #: ../../library/sndhdr.rst:83
 msgid "uLAW Audio Files"
-msgstr "uLAW Audio Files"
+msgstr ""
 
 #: ../../library/sndhdr.rst:88
 msgid ""

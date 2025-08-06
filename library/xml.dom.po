@@ -1,23 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# ww song <sww4718168@gmail.com>, 2021
-# dannyvi <dannyvis@icloud.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1033,10 +1029,10 @@ msgstr ""
 msgid ""
 "There are also experimental methods that give this class more mapping "
 "behavior. You can use them or you can use the standardized "
-":meth:`getAttribute\\*` family of methods on the :class:`Element` objects."
+":meth:`!getAttribute\\*` family of methods on the :class:`Element` objects."
 msgstr ""
-"还有一些试验性方法给予这个类更多的映射行为。 你可以使用这些方法或者使用 :class:`Element` 对象上标准化的 "
-":meth:`getAttribute\\*` 方法族。"
+"还有一些试验性方法给予这个类更多的映射行为。 你可以使用它们或者使用 :class:`Element` 对象上标准化的 "
+":meth:`!getAttribute\\*` 方法族。"
 
 #: ../../library/xml.dom.rst:744
 msgid "Comment Objects"
@@ -1418,8 +1414,8 @@ msgstr "``boolean``"
 msgid "``bool`` or ``int``"
 msgstr "``bool`` 或 ``int``"
 
-#: ../../library/xml.dom.rst:985 ../../library/xml.dom.rst:985
-#: ../../library/xml.dom.rst:987 ../../library/xml.dom.rst:989
+#: ../../library/xml.dom.rst:985 ../../library/xml.dom.rst:987
+#: ../../library/xml.dom.rst:989
 msgid "``int``"
 msgstr "``int``"
 

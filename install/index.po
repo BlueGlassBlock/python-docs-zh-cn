@@ -1,30 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# cdarlint <cdarling@126.com>, 2021
-# ww song <sww4718168@gmail.com>, 2021
-# eric R <trencyclopedia@gmail.com>, 2021
-# jaystone776 <1732865113@qq.com>, 2021
-# Edward Ji <jiziao6@gmail.com>, 2021
-# Vincent <Intelligent.vincent@gmail.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# 叶浚安 <ye.pandaaaa906@gmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Trim21 <i@trim21.me>, 2021
-# Yifan Sun, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:05+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,6 +131,11 @@ msgid ""
 "module distribution is a simple matter of running one command from a "
 "terminal::"
 msgstr ""
+"如果你下载了一个模块源代码发布包，你可以很快地确定它是否按标准方式，即使用 Distutils 进行打包和分发。 "
+"首先，发布包的名称和版本号将在已下载归档文件的名称中明确显示，例如 :file:`foo-1.0.tar.gz` 或 "
+":file:`widget-0.9.7.zip`。 然后，归档文件将被解包为类似名称的目录: :file:`foo-1.0` 或 "
+":file:`widget-0.9.7`。 此外，发布包将包含一个安装脚本 :file:`setup.py`，以及一个名为 "
+":file:`README.txt` 或是 :file:`README` 的文件，它应当写明构建和安装模块发布包的方式是简单地在终端中运行一条命令::"
 
 #: ../../install/index.rst:77
 msgid ""
@@ -196,6 +190,10 @@ msgid ""
 "(such as :program:`unzip` or :program:`pkunzip`) to unpack the archive.  "
 "Then, open a command prompt window and run::"
 msgstr ""
+"在 Windows 上，你下载到的可能是 :file:`foo-1.0.zip`。 如果你将归档文件下载到 "
+":file:`C:\\\\Temp`，则它将被解包至 "
+":file:`C:\\\\Temp\\\\foo-1.0`；你可以使用带有图形用户界面的归档管理器（如 WinZip）或命令行工具（如 "
+":program:`unzip` 或 :program:`pkunzip` 等）来解包归档文件。 然后，打开一个命令行提示符窗口并运行::"
 
 #: ../../install/index.rst:129
 msgid "Splitting the job up"
@@ -465,10 +463,10 @@ msgstr ""
 
 #: ../../install/index.rst:312
 msgid ""
-"Files will be installed into subdirectories of :data:`site.USER_BASE` "
+"Files will be installed into subdirectories of :const:`site.USER_BASE` "
 "(written as :file:`{userbase}` hereafter).  This scheme installs pure Python"
 " modules and extension modules in the same location (also known as "
-":data:`site.USER_SITE`). Here are the values for UNIX, including macOS:"
+":const:`site.USER_SITE`). Here are the values for UNIX, including macOS:"
 msgstr ""
 
 #: ../../install/index.rst:318 ../../install/index.rst:329
@@ -569,6 +567,9 @@ msgid ""
 ":file:`/usr/local/`. This scheme can be used by anyone, regardless of the "
 "operating system they are installing for."
 msgstr ""
+"“主方案”背后的理念是你可以构建并维护个人的 Python 模块集。 该方案的名称源自 Unix 上“主目录”的概念，因为通常 Unix "
+"用户会将其主目录的布局设置为与 :file:`/usr/` 或 :file:`/usr/local/` 相似。 "
+"任何人都可以使用该方案，无论其安装的操作系统是什么。"
 
 #: ../../install/index.rst:361
 msgid "Installing a new module distribution is as simple as ::"
@@ -585,7 +586,7 @@ msgstr ""
 msgid ""
 "To make Python find the distributions installed with this scheme, you may "
 "have to :ref:`modify Python's search path <inst-search-path>` or edit "
-":mod:`sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or "
+":mod:`!sitecustomize` (see :mod:`site`) to call :func:`site.addsitedir` or "
 "edit :data:`sys.path`."
 msgstr ""
 
@@ -630,6 +631,9 @@ msgid ""
 "schemes come before.  However, there are at least two known cases where the "
 "prefix scheme will be useful."
 msgstr ""
+"“前缀方案”适用于当你希望使用一个 Python 安装程序来执行构建/安装（即运行 setup 脚本），但需要将模块安装到另一个 Python "
+"安装版（或看起来类似于另一个 Python 安装版）的第三方模块目录中的情况。 如果这听起来有点不寻常，确实如此 --- "
+"这就是为什么要先介绍用户和主目录方案的原因。 然而，至少有两种已知的情况会用到前缀方案。"
 
 #: ../../install/index.rst:403
 msgid ""
@@ -984,7 +988,7 @@ msgstr ""
 
 #: ../../install/index.rst:695
 msgid ""
-"However, if you reinstall the same major version of Python (perhaps when "
+"However, if you reinstall the same minor version of Python (perhaps when "
 "upgrading from 2.2 to 2.2.2, for example) :file:`site.py` will be "
 "overwritten by the stock version.  You'd have to remember that it was "
 "modified and save a copy before doing the installation."
@@ -1057,7 +1061,7 @@ msgstr ":file:`{prefix}/lib/python{ver}/distutils/distutils.cfg`"
 
 #: ../../install/index.rst:746 ../../install/index.rst:758
 msgid "personal"
-msgstr ""
+msgstr "personal"
 
 #: ../../install/index.rst:746
 msgid ":file:`$HOME/.pydistutils.cfg`"
@@ -1065,7 +1069,7 @@ msgstr ":file:`$HOME/.pydistutils.cfg`"
 
 #: ../../install/index.rst:748 ../../install/index.rst:760
 msgid "local"
-msgstr ""
+msgstr "local"
 
 #: ../../install/index.rst:748 ../../install/index.rst:760
 msgid ":file:`setup.cfg`"
@@ -1077,7 +1081,7 @@ msgstr "\\(3)"
 
 #: ../../install/index.rst:751
 msgid "And on Windows, the configuration files are:"
-msgstr ""
+msgstr "而在 Windows 中，配置文件为:"
 
 #: ../../install/index.rst:756
 msgid ":file:`{prefix}\\\\Lib\\\\distutils\\\\distutils.cfg`"
@@ -1113,8 +1117,8 @@ msgstr ""
 #: ../../install/index.rst:776
 msgid ""
 "On Unix, if the :envvar:`HOME` environment variable is not defined, the "
-"user's home directory will be determined with the :func:`getpwuid` function "
-"from the standard :mod:`pwd` module. This is done by the "
+"user's home directory will be determined with the :func:`~pwd.getpwuid` "
+"function from the standard :mod:`pwd` module. This is done by the "
 ":func:`os.path.expanduser` function used by Distutils."
 msgstr ""
 
@@ -1325,7 +1329,7 @@ msgstr ""
 
 #: ../../install/index.rst:944
 msgid "Using non-Microsoft compilers on Windows"
-msgstr ""
+msgstr "在 Windows 上使用非 Microsoft 编辑器"
 
 #: ../../install/index.rst:951
 msgid "Borland/CodeGear C++"
@@ -1380,29 +1384,31 @@ msgstr ""
 
 #: ../../install/index.rst:995
 msgid "`C++Builder Compiler <https://www.embarcadero.com/products>`_"
-msgstr ""
+msgstr "`C++Builder Compiler <https://www.embarcadero.com/products>`_"
 
 #: ../../install/index.rst:994
 msgid ""
 "Information about the free C++ compiler from Borland, including links to the"
 " download pages."
-msgstr ""
+msgstr "有关 Borland 发布的免费 C++ 编译器的信息，包括下载页面的链接。"
 
 #: ../../install/index.rst:998
 msgid ""
 "`Creating Python Extensions Using Borland's Free Compiler "
 "<http://www.cyberus.ca/~g_will/pyExtenDL.shtml>`_"
 msgstr ""
+"`Creating Python Extensions Using Borland's Free Compiler "
+"<http://www.cyberus.ca/~g_will/pyExtenDL.shtml>`_"
 
 #: ../../install/index.rst:998
 msgid ""
 "Document describing how to use Borland's free command-line C++ compiler to "
 "build Python."
-msgstr ""
+msgstr "介绍如何使用 Borland 发布的免费命令行方式 C++ 编译器构建 Python 的文档。"
 
 #: ../../install/index.rst:1003
 msgid "GNU C / Cygwin / MinGW"
-msgstr ""
+msgstr "GNU C / Cygwin / MinGW"
 
 #: ../../install/index.rst:1005
 msgid ""
@@ -1436,7 +1442,7 @@ msgstr ""
 
 #: ../../install/index.rst:1027
 msgid "Older Versions of Python and MinGW"
-msgstr ""
+msgstr "旧版 Python 和 MinGW"
 
 #: ../../install/index.rst:1028
 msgid ""
@@ -1487,6 +1493,8 @@ msgid ""
 "`Building Python modules on MS Windows platform with MinGW "
 "<https://old.zope.dev/Members/als/tips/win32_mingw_modules>`_"
 msgstr ""
+"`在 MS Windows 平台上使用 MinGW 构建 Python 模块 "
+"<https://old.zope.dev/Members/als/tips/win32_mingw_modules>`_"
 
 #: ../../install/index.rst:1066
 msgid ""

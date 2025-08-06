@@ -1,25 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# cdarlint <cdarling@126.com>, 2021
-# Arisaka97 <solitaire2312@gmail.com>, 2021
-# 稀饭~~ <wangwhai@qq.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# 钢 彭 <szhairui@gmail.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,7 +94,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.ConnectRegistry`` with "
 "arguments ``computer_name``, ``key``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.ConnectRegistry``，附带参数 "
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.ConnectRegistry`` 并附带参数 "
 "``computer_name``, ``key``。"
 
 #: ../../library/winreg.rst:58 ../../library/winreg.rst:84
@@ -149,15 +143,15 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.CreateKey`` with "
 "arguments ``key``, ``sub_key``, ``access``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.CreateKey``，附带参数 ``key``, ``sub_key``, "
-"``access``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.CreateKey`` 并附带参数 ``key``, ``sub_key``,"
+" ``access``。"
 
 #: ../../library/winreg.rst:82 ../../library/winreg.rst:114
 #: ../../library/winreg.rst:324
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.OpenKey/result`` with "
 "argument ``key``."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``winreg.OpenKey/result``，附带参数 ``key``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``winreg.OpenKey/result`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:98 ../../library/winreg.rst:154
 msgid ""
@@ -199,8 +193,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DeleteKey`` with "
 "arguments ``key``, ``sub_key``, ``access``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.DeleteKey``，附带参数 ``key``, ``sub_key``, "
-"``access``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.DeleteKey`` 并附带参数 ``key``, ``sub_key``,"
+" ``access``。"
 
 #: ../../library/winreg.rst:150
 msgid ""
@@ -236,7 +230,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DeleteValue`` with "
 "arguments ``key``, ``value``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.DeleteValue``，附带参数 ``key``, ``value``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.DeleteValue`` 并附带参数 ``key``, ``value``。"
 
 #: ../../library/winreg.rst:190
 msgid "Enumerates subkeys of an open registry key, returning a string."
@@ -259,7 +253,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnumKey`` with arguments"
 " ``key``, ``index``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.EnumKey``，附带参数 ``key``, ``index``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.EnumKey`` 并附带参数 ``key``, ``index``。"
 
 #: ../../library/winreg.rst:209
 msgid "Enumerates values of an open registry key, returning a tuple."
@@ -326,7 +320,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnumValue`` with "
 "arguments ``key``, ``index``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.EnumValue``，附带参数 ``key``, ``index``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.EnumValue`` 并附带参数 ``key``, ``index``。"
 
 #: ../../library/winreg.rst:247
 msgid ""
@@ -339,7 +333,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` "
 "``winreg.ExpandEnvironmentStrings`` with argument ``str``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.ExpandEnvironmentStrings``，附带参数 "
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.ExpandEnvironmentStrings`` 并附带参数 "
 "``str``。"
 
 #: ../../library/winreg.rst:258
@@ -396,14 +390,14 @@ msgstr ""
 #: ../../library/winreg.rst:290
 msgid ""
 "A call to :func:`LoadKey` fails if the calling process does not have the "
-":const:`SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are different"
-" from permissions -- see the `RegLoadKey documentation "
+":c:data:`!SE_RESTORE_PRIVILEGE` privilege.  Note that privileges are "
+"different from permissions -- see the `RegLoadKey documentation "
 "<https://msdn.microsoft.com/en-us/library/ms724889%28v=VS.85%29.aspx>`__ for"
 " more details."
 msgstr ""
-"如果调用 :func:`LoadKey` 的进程没有 :const:`SE_RESTORE_PRIVILEGE` "
-"权限，则调用会失败。请注意，特权与权限不同 —— 更多细节请参阅 `RegLoadKey 文档 "
-"<https://msdn.microsoft.com/en-us/library/ms724889%28v=VS.85%29.aspx>`__。"
+"如果调用 :func:`LoadKey` 的进程没有 :c:data:`!SE_RESTORE_PRIVILEGE` 特权则调用将失败。 "
+"请注意特权与权限是不同的 -- 更多细节请参阅 `RegLoadKey 文档 <https://msdn.microsoft.com/en-"
+"us/library/ms724889%28v=VS.85%29.aspx>`__。"
 
 #: ../../library/winreg.rst:296
 msgid ""
@@ -417,7 +411,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.LoadKey`` with arguments"
 " ``key``, ``sub_key``, ``file_name``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.LoadKey``，附带参数 ``key``, ``sub_key``, "
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.LoadKey`` 并附带参数 ``key``, ``sub_key``, "
 "``file_name``。"
 
 #: ../../library/winreg.rst:305
@@ -456,7 +450,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.OpenKey`` with arguments"
 " ``key``, ``sub_key``, ``access``."
 msgstr ""
-"触发 :ref:`审计事件 <auditing>` ``winreg.OpenKey``，附带参数为 ``key`` 、``sub_key`` 、 "
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.OpenKey`` 并附带参数 ``key``, ``sub_key``, "
 "``access``。"
 
 #: ../../library/winreg.rst:326
@@ -485,7 +479,7 @@ msgstr "整数值，给出了此注册表键的最后修改时间，单位为自
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryInfoKey`` with "
 "argument ``key``."
-msgstr "触发 :ref:`审计事件 <auditing>` ``winreg.QueryInfoKey``，附带参数为 ``key``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``winreg.QueryInfoKey`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:361
 msgid "Retrieves the unnamed value for a key, as a string."
@@ -516,8 +510,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryValue`` with "
 "arguments ``key``, ``sub_key``, ``value_name``."
 msgstr ""
-"触发 :ref:`审计事件 <auditing>` ``winreg.QueryValue``，附带参数为 ``key``、 ``sub_key`` 、"
-" ``value_name``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.QueryValue`` 并附带参数 ``key``, "
+"``sub_key``, ``value_name``。"
 
 #: ../../library/winreg.rst:380
 msgid ""
@@ -561,14 +555,15 @@ msgstr ""
 msgid ""
 "If *key* represents a key on a remote computer, the path described by "
 "*file_name* is relative to the remote computer. The caller of this method "
-"must possess the :const:`SeBackupPrivilege` security privilege.  Note that "
+"must possess the **SeBackupPrivilege** security privilege.  Note that "
 "privileges are different than permissions -- see the `Conflicts Between User"
 " Rights and Permissions documentation <https://msdn.microsoft.com/en-"
 "us/library/ms724878%28v=VS.85%29.aspx>`__ for more details."
 msgstr ""
-"如果 *key* 代表远程计算机的注册表键，那么 *file_name* 所描述的路径是相对于远程计算机的。本方法的调用者必须拥有 "
-":const:`SeBackupPrivilege` 特权。请注意，特权与权限是不同的 —— 更多细节请参见 `用户权利和权限之间的冲突文档 "
-"<https://msdn.microsoft.com/en-us/library/ms724878%28v=VS.85%29.aspx>`__。"
+"如果 *key* 是代表远程计算机上的注册表键，那么 *file_name* 所描述的路径就是相对于远程计算机的。 本方法的调用方必须拥有 "
+"**SeBackupPrivilege** 安全特权。 请注意特权与权限是不同的 -- 更多细节请参阅 `Conflicts Between User "
+"Rights and Permissions 文档 <https://msdn.microsoft.com/en-"
+"us/library/ms724878%28v=VS.85%29.aspx>`__。"
 
 #: ../../library/winreg.rst:423
 msgid "This function passes ``NULL`` for *security_attributes* to the API."
@@ -579,7 +574,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.SaveKey`` with arguments"
 " ``key``, ``file_name``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.SaveKey``，附带参数 ``key``, ``file_name``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.SaveKey`` 并附带参数 ``key``, ``file_name``。"
 
 #: ../../library/winreg.rst:430
 msgid "Associates a value with a specified key."
@@ -628,8 +623,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.SetValue`` with "
 "arguments ``key``, ``sub_key``, ``type``, ``value``."
 msgstr ""
-"触发 :ref:`审计事件 <auditing>` ``winreg.SetValue``，附带参数 ``key``、 ``sub_key`` 、 "
-"``type`` 、 ``value``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.SetValue`` 并附带参数 ``key``, ``sub_key``, "
+"``type``, ``value``。"
 
 #: ../../library/winreg.rst:458
 msgid "Stores data in the value field of an open registry key."
@@ -687,7 +682,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.DisableReflectionKey`` "
 "with argument ``key``."
 msgstr ""
-"触发 :ref:`审计事件 <auditing>` ``winreg.DisableReflectionKey``，附带参数 ``key``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.DisableReflectionKey`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:506
 msgid "Restores registry reflection for the specified disabled key."
@@ -703,7 +698,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.EnableReflectionKey`` "
 "with argument ``key``."
 msgstr ""
-"触发 :ref:`审计事件 <auditing>` ``winreg.EnableReflectionKey``，附带参数 ``key``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.EnableReflectionKey`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:521
 msgid "Determines the reflection state for the specified key."
@@ -718,7 +713,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.QueryReflectionKey`` "
 "with argument ``key``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``winreg.QueryReflectionKey``，附带参数 ``key``。"
+"引发一个 :ref:`审计事件 <auditing>` ``winreg.QueryReflectionKey`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:537
 msgid "Constants"
@@ -726,9 +721,8 @@ msgstr "常量"
 
 #: ../../library/winreg.rst:539
 msgid ""
-"The following constants are defined for use in many :mod:`_winreg` "
-"functions."
-msgstr "以下常量定义成可供很多 :mod:`_winreg` 函数使用。"
+"The following constants are defined for use in many :mod:`winreg` functions."
+msgstr "以下常量被定义以供多个 :mod:`winreg` 函数使用。"
 
 #: ../../library/winreg.rst:544
 msgid "HKEY_* Constants"
@@ -975,8 +969,9 @@ msgid ""
 msgstr "本模块中所有接受注册表句柄对象的注册表函数，也能接受一个整数，但鼓励大家使用句柄对象。"
 
 #: ../../library/winreg.rst:748
-msgid "Handle objects provide semantics for :meth:`__bool__` -- thus ::"
-msgstr "注册表句柄对象支持 :meth:`__bool__` 语义 —— 因此如果当前句柄有效（未关闭或断开连接）："
+msgid ""
+"Handle objects provide semantics for :meth:`~object.__bool__` -- thus ::"
+msgstr "句柄对象为 :meth:`~object.__bool__` 提供语义 —— 因此 ::"
 
 #: ../../library/winreg.rst:753
 msgid ""
@@ -1031,7 +1026,7 @@ msgstr "调用本函数后，注册表句柄将被迅速禁用，但并没有关
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``winreg.PyHKEY.Detach`` with "
 "argument ``key``."
-msgstr "引发一条 :ref:`审计事件 <auditing>` ``winreg.PyHKEY.Detach``，附带参数 ``key``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``winreg.PyHKEY.Detach`` 并附带参数 ``key``。"
 
 #: ../../library/winreg.rst:790
 msgid ""

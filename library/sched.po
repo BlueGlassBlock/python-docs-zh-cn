@@ -1,21 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Alpha Du <alphanow@gmail.com>, 2021
-# WH-2099 <wh2099@outlook.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
+# Nyuan Zhang, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-09 14:13+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 16:48+0000\n"
+"PO-Revision-Date: 2025-07-18 20:06+0000\n"
+"Last-Translator: Nyuan Zhang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -127,12 +125,11 @@ msgstr "如果事件队列为空则返回 ``True``。"
 
 #: ../../library/sched.rst:118
 msgid ""
-"Run all scheduled events. This method will wait  (using the "
-":func:`delayfunc` function passed to the constructor) for the next event, "
-"then execute it and so on until there are no more scheduled events."
+"Run all scheduled events. This method will wait  (using the *delayfunc* "
+"function passed to the constructor) for the next event, then execute it and "
+"so on until there are no more scheduled events."
 msgstr ""
-"运行所有预定事件。 此方法将等待（使用传递给构造函数的 :func:`delayfunc` "
-"函数）进行下一个事件，然后执行它，依此类推，直到没有更多的计划事件。"
+"运行所有计划事件。 此方法将等待（使用传递给构造器的 *delayfunc* 函数）进行下一个事件，然后执行它，依此类推直到没有更多的计划事件。"
 
 #: ../../library/sched.rst:122
 msgid ""
