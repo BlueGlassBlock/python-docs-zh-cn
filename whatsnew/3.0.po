@@ -1,23 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Fei Yin <icebirds@163.com>, 2018
-# ppcfish <ppcfish@gmail.com>, 2019
-# Lu <lu2github@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 23:43+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:18+0000\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,15 +19,15 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:3
 msgid "What's New In Python 3.0"
-msgstr "Python 3.0 有什么新变化"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:0
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:7
 msgid "Guido van Rossum"
-msgstr "Guido van Rossum"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:54
 msgid ""
@@ -69,7 +61,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:89
 msgid "Common Stumbling Blocks"
-msgstr "常见的绊脚石"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:91
 msgid ""
@@ -79,7 +71,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:95
 msgid "Print Is A Function"
-msgstr "Print 是函数"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:97
 msgid ""
@@ -90,15 +82,15 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:116
 msgid "You can also customize the separator between items, e.g.::"
-msgstr "你还可以自定义条目间的分隔符，例如 ::"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:120
 msgid "which produces:"
-msgstr "这将产生如下结果:"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:126
 msgid "Note:"
-msgstr "注意"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:128
 msgid ""
@@ -124,11 +116,11 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:143
 msgid "Views And Iterators Instead Of Lists"
-msgstr "用视图和迭代器取代列表"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:145
 msgid "Some well-known APIs no longer return lists:"
-msgstr "某些知名的 API 将不再返回列表:"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:147
 msgid ""
@@ -214,7 +206,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:207
 msgid "Integers"
-msgstr "整数"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:209
 msgid ""
@@ -387,7 +379,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:334
 msgid ":pep:`3120`: The default source encoding is now UTF-8."
-msgstr ":pep:`3120`：现在默认的源码编码格式是UTF-8。"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:336
 msgid ""
@@ -409,7 +401,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:348
 msgid "Overview Of Syntax Changes"
-msgstr "语法变化概述"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:350
 msgid ""
@@ -419,7 +411,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:354
 msgid "New Syntax"
-msgstr "新语法"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:356
 msgid ""
@@ -502,7 +494,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:406
 msgid "Changed Syntax"
-msgstr "语法变化"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:408
 msgid ""
@@ -534,7 +526,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:426
 msgid "you must now use::"
-msgstr "你现在需要使用::"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:431
 msgid ""
@@ -563,7 +555,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:450
 msgid "Removed Syntax"
-msgstr "移除的语法"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:452
 msgid ""
@@ -640,11 +632,11 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:496
 msgid ":ref:`pep-0370`."
-msgstr ":ref:`pep-0370`."
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:498
 msgid ":ref:`pep-0371`."
-msgstr ":ref:`pep-0371`."
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:500
 msgid ""
@@ -711,7 +703,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:543
 msgid ":ref:`pep-3129`."
-msgstr ":ref:`pep-3129`."
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:545
 msgid ""
@@ -722,7 +714,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:551
 msgid "Library Changes"
-msgstr "库的修改"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:553
 msgid ""
@@ -759,75 +751,75 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:576
 msgid "Old Name"
-msgstr "旧名称"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:576
 msgid "New Name"
-msgstr "新名称"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:578
 msgid "_winreg"
-msgstr "_winreg"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:578
 msgid "winreg"
-msgstr "winreg"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:579
 msgid "ConfigParser"
-msgstr "ConfigParser"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:579
 msgid "configparser"
-msgstr "configparser"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:580
 msgid "copy_reg"
-msgstr "copy_reg"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:580
 msgid "copyreg"
-msgstr "copyreg"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:581
 msgid "Queue"
-msgstr "Queue"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:581
 msgid "queue"
-msgstr "queue"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:582
 msgid "SocketServer"
-msgstr "SocketServer"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:582
 msgid "socketserver"
-msgstr "socketserver"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:583
 msgid "markupbase"
-msgstr "markupbase"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:583
 msgid "_markupbase"
-msgstr "_markupbase"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:584
 msgid "repr"
-msgstr "repr"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:584
 msgid "reprlib"
-msgstr "reprlib"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:585
 msgid "test.test_support"
-msgstr "test.test_support"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:585
 msgid "test.support"
-msgstr "test.support"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:588
 msgid ""
@@ -1221,7 +1213,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:852
 msgid "Build and C API Changes"
-msgstr "构建和 C API 的改变"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:854
 msgid ""
@@ -1237,7 +1229,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:860
 msgid ":pep:`3118`: New Buffer API."
-msgstr ":pep:`3118`: 新的缓冲区 API。"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:862
 msgid ":pep:`3121`: Extension Module Initialization & Finalization."
@@ -1256,8 +1248,6 @@ msgid ""
 ":c:func:`PyNumber_Coerce`, :c:func:`PyNumber_CoerceEx`, "
 ":c:func:`PyMember_Get`, and :c:func:`PyMember_Set` C APIs are removed."
 msgstr ""
-":c:func:`PyNumber_Coerce`, :c:func:`PyNumber_CoerceEx`, "
-":c:func:`PyMember_Get`, and :c:func:`PyMember_Set` C API 已被移除。"
 
 #: ../../whatsnew/3.0.rst:871
 msgid ""
@@ -1275,11 +1265,11 @@ msgstr ""
 #: ../../whatsnew/3.0.rst:878
 msgid ""
 "Removed :c:macro:`METH_OLDARGS` and :c:macro:`WITH_CYCLE_GC` from the C API."
-msgstr "从 C API 中移除 :c:macro:`METH_OLDARGS` 和 :c:macro:`WITH_CYCLE_GC`。"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:884
 msgid "Performance"
-msgstr "性能"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:886
 msgid ""
@@ -1291,7 +1281,7 @@ msgstr ""
 
 #: ../../whatsnew/3.0.rst:896
 msgid "Porting To Python 3.0"
-msgstr "移植到 Python 3.0"
+msgstr ""
 
 #: ../../whatsnew/3.0.rst:898
 msgid ""

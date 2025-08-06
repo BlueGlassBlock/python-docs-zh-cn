@@ -1,26 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 张俊（fighting） <zj651927693@gmail.com>, 2017
-# 操旭 <caoxu3000@126.com>, 2017
-# cdarlint <cdarling@126.com>, 2017
-# QR Wang <wangqirui1996@gmail.com>, 2018
-# 高垚鑫, 2018
-# taotieren <admin@taotieren.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2022
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 17:33+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:17+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,11 +121,11 @@ msgid ""
 "support :c:type:`Py_ssize_t` and drop :c:type:`int` support. It is best to "
 "always define :c:macro:`PY_SSIZE_T_CLEAN`."
 msgstr ""
-"所有 ``#`` 表达式的变式(``s#``，``y#``，等等)，长度参数的类型(整型或者 :c:type:`Py_ssize_t`)在包含 "
-":file:`Python.h` 头文件之前由 :c:macro:`PY_SSIZE_T_CLEAN` 宏的定义控制。如果这个宏被定义，长度是一个 "
-":c:type:`Py_ssize_t` Python 元大小类型而不是一个 :c:type:`int` 整型。在未来的 Python "
-"版本中将会改变，只支持 :c:type:`Py_ssize_t` 而放弃支持 :c:type:`int` 整型。最好一直定义 "
-":c:macro:`PY_SSIZE_T_CLEAN` 这个宏。"
+"所有 ``#`` 表达式的变体 (``s#``，``y#`` 等)，长度参数的类型 (整型或者 :c:type:`Py_ssize_t`) 在包含 "
+":file:`Python.h` 头文件之前由 :c:macro:`PY_SSIZE_T_CLEAN` 宏的定义控制。 如果这个宏被定义，长度是一个 "
+":c:type:`Py_ssize_t` 而不是一个 :c:type:`int`。 在未来的 Python 版本中将会改变，只支持 "
+":c:type:`Py_ssize_t` 而放弃支持 :c:type:`int`。 最好一直定义 :c:macro:`PY_SSIZE_T_CLEAN`"
+" 这个宏。"
 
 #: ../../c-api/arg.rst:85
 msgid "``s`` (:class:`str`) [const char \\*]"

@@ -1,25 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 叶浚安 <ye.pandaaaa906@gmail.com>, 2019
-# sgqy <sgqyzh@gmail.com>, 2019
-# ppcfish <ppcfish@gmail.com>, 2019
-# skylight <abcdefskylight@gmail.com>, 2019
-# Kelly Hwong <dianhuangkan@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 17:40+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:17+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,6 +35,8 @@ msgid ""
 "and other APIs, makes the API consistent across different Python versions, "
 "and is hence recommended over using ``distutils`` directly."
 msgstr ""
+"``setuptools`` 项目为 ``setup`` 函数和其他 API 添加了新的功能，使得 API 在不同 Python "
+"版本间保持一致，因此推荐以它来取代直接使用 ``distutils``。"
 
 #: ../../distutils/_setuptools_disclaimer.rst:3
 msgid ""
@@ -72,13 +68,13 @@ msgstr ""
 msgid ""
 "The basic do-everything function that does most everything you could ever "
 "ask for from a Distutils method."
-msgstr ""
+msgstr "基本的包办一切的函数，它完成了您可以从Distutils方法中请求的大部分事情。"
 
 #: ../../distutils/apiref.rst:36
 msgid ""
 "The setup function takes a large number of arguments. These are laid out in "
 "the following table."
-msgstr ""
+msgstr "setup函数接受大量参数。这些都列在下表中。"
 
 #: ../../distutils/apiref.rst:42 ../../distutils/apiref.rst:185
 msgid "argument name"
@@ -161,6 +157,7 @@ msgid ""
 "if the maintainer is provided, distutils will use it as the author in "
 ":file:`PKG-INFO`"
 msgstr ""
+"当前维护者的名字，如果与作者不同的话。 请注意，如果提供了维护者，distutils 将使用它作为 :file:`PKG-INFO` 中的作者。"
 
 #: ../../distutils/apiref.rst:68
 msgid "*maintainer_email*"
@@ -169,7 +166,7 @@ msgstr "*maintainer_email*"
 #: ../../distutils/apiref.rst:68
 msgid ""
 "The email address of the current maintainer, if different from the author"
-msgstr "当前维护者的电子邮件地址，如果不同与作者"
+msgstr "当前维护者的电子邮件地址（如果与作者不同）"
 
 #: ../../distutils/apiref.rst:72
 msgid "*url*"
@@ -193,7 +190,7 @@ msgstr "*packages*"
 
 #: ../../distutils/apiref.rst:77
 msgid "A list of Python packages that distutils will manipulate"
-msgstr ""
+msgstr "distutils将操作的Python软件包的列表"
 
 #: ../../distutils/apiref.rst:77 ../../distutils/apiref.rst:80
 #: ../../distutils/apiref.rst:83 ../../distutils/apiref.rst:100
@@ -339,7 +336,7 @@ msgstr "*package_dir*"
 
 #: ../../distutils/apiref.rst:119
 msgid "A mapping of package to directory names"
-msgstr "一个从包到目录名称的映射"
+msgstr "包到目录名的映射"
 
 #: ../../distutils/apiref.rst:127
 msgid ""
@@ -349,6 +346,8 @@ msgid ""
 "keyword args from *script* to :func:`setup`), or  the contents of the config"
 " files or command-line."
 msgstr ""
+"在某种程度上受控制的环境中运行一个安装脚本，并返回驱动程序的 :class:`distutils.dist.Distribution` 实例。 "
+"如果你需要查找分发元数据 (作为关键字 args 从 *script* 传递到 :func:`setup`)，或者配置文件或命令行的内容，这将非常有用。"
 
 #: ../../distutils/apiref.rst:133
 msgid ""
@@ -357,11 +356,14 @@ msgid ""
 "  *script_args* is a list of strings; if supplied, ``sys.argv[1:]`` will be "
 "replaced by *script_args* for the duration  of the call."
 msgstr ""
+"*script_name* 是一个将使用 :func:`exec` 读取和运行的文件。在调用期间，``sys.argv[0]`` 将被替换为 "
+"*script*。 *script_args* 是一个字符串列表；如果提供了 ``sys.argv[1:]``，则在调用期间将被 "
+"*script_args* 替换。"
 
 #: ../../distutils/apiref.rst:138
 msgid ""
 "*stop_after* tells :func:`setup` when to stop processing; possible  values:"
-msgstr ""
+msgstr "*stop_after* 告诉 :func:`setup` 何时停止处理；可能的值有："
 
 #: ../../distutils/apiref.rst:143 ../../distutils/apiref.rst:562
 #: ../../distutils/apiref.rst:1601
@@ -418,10 +420,11 @@ msgstr ""
 msgid ""
 ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
 msgstr ""
+"来自 :mod:`distutils.extension` 的 :class:`~distutils.extension.Extension`"
 
 #: ../../distutils/apiref.rst:169
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
-msgstr ""
+msgstr "来自 :mod:`distutils.cmd` 的 :class:`~distutils.cmd.Command`"
 
 #: ../../distutils/apiref.rst:171
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"
@@ -1220,15 +1223,15 @@ msgstr ""
 
 #: ../../distutils/apiref.rst:812
 msgid "macros defined with :option:`!-Dname[=value]`"
-msgstr "使用 :option:`!-Dname[=value]` 定义的宏"
+msgstr "通过 :option:`!-Dname[=value]` 定义的宏"
 
 #: ../../distutils/apiref.rst:814
 msgid "macros undefined with :option:`!-Uname`"
-msgstr "使用 :option:`!-Uname` 取消定义的宏"
+msgstr "通过 :option:`!-Uname` 取消定义的宏"
 
 #: ../../distutils/apiref.rst:816
 msgid "include search directories specified with :option:`!-Idir`"
-msgstr "包括使用 :option:`!-Idir` 指定的搜索目录"
+msgstr "包括通过 :option:`!-Idir` 指定的搜索目录"
 
 #: ../../distutils/apiref.rst:818
 msgid "libraries specified with :option:`!-llib`"
@@ -1394,6 +1397,11 @@ msgid ""
 " wouldn't work because inputs are missing, but that doesn't matter because "
 "you're not actually going to run the commands)."
 msgstr ""
+"如果 target 相对于 sources 中的任何文件已经过期，那么返回 true。换句话说，如果 target 存在且比 sources "
+"中的每个文件都更新，那么返回 false；否则，返回 true。missing 参数控制当源文件缺失时的处理方式：默认值（``'error'``）会抛出"
+" :func:`os.stat` 产生的 :exc:`OSError`；如果设为 ``'ignore'``，那么静默忽略缺失的源文件；如果设为 "
+"``'newer'``，那么任何缺失的源文件都会导致假定 target "
+"已经过期（这在“空运行”模式下很实用：即使由于输入文件缺失导致命令不能实际执行，该模式也会让你模拟执行这些命令，反正你也不会真正运行它们）。"
 
 #: ../../distutils/apiref.rst:971
 msgid ":mod:`distutils.dir_util` --- Directory tree operations"
@@ -2290,6 +2298,11 @@ msgid ""
 "options, is the :meth:`run` method, which must also be implemented by every "
 "command class."
 msgstr ""
+"定义命令类的抽象基类，这些类是 Distutils 的“工蜂”。每个命令类可以看作子程序，其行为由若干“选项”（局部变量）控制。选项在 "
+":meth:`initialize_options` 中声明，并在 :meth:`finalize_options` "
+"中定义（即赋予最终值），这两个方法都要由每个命令类实现。区分这两个阶段是必要的，因为选项值可能来自外部环境（命令行、配置文件等），任何依赖于其他选项的选项只能在这些外部影响因素处理完毕后才能计算得出——因此需要"
+" :meth:`finalize_options` 方法。子程序的主体部分（即根据选项值执行所有实际工作的部分）是 :meth:`run` "
+"方法，每个命令类也应当实现该方法。"
 
 #: ../../distutils/apiref.rst:1742
 msgid ""

@@ -1,21 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Fei Yin <icebirds@163.com>, 2018
-# ppcfish <ppcfish@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:26+0000\n"
-"PO-Revision-Date: 2017-02-16 23:42+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:18+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,15 +23,15 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:3
 msgid "What's New in Python 2.2"
-msgstr "Python 2.2 有什么新变化"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:0
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:5
 msgid "A.M. Kuchling"
-msgstr "A.M. Kuchling"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:13
 msgid "Introduction"
@@ -45,8 +43,6 @@ msgid ""
 "14, 2002.  Python 2.2.2 is a bugfix release of Python 2.2, originally "
 "released on December 21, 2001."
 msgstr ""
-"本文本介绍了 Python 2.2.2 的新增特性，该版本发布于 2002 年 10 月 14日。 Python 2.2.2 是 Python 2.2 "
-"的问题修正发布版，最初发布于 2001 年 12 月 21 日。"
 
 #: ../../whatsnew/2.2.rst:19
 msgid ""
@@ -69,7 +65,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:43
 msgid "PEPs 252 and 253: Type and Class Changes"
-msgstr "PEP 252 和 253：类型和类的修改"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:45
 msgid ""
@@ -97,7 +93,7 @@ msgstr ""
 msgid ""
 "Python 2.2 fixes this, and in the process adds some exciting new "
 "capabilities. A brief summary:"
-msgstr "Python 2.2 修正了此问题，并在此过程中添加了一些令人激动的新功能。 简明概述如下:"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:64
 msgid ""
@@ -159,7 +155,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:100
 msgid "Old and New Classes"
-msgstr "旧式类和新式类"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:102
 msgid ""
@@ -215,7 +211,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:153
 msgid "Descriptors"
-msgstr "描述器"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:155
 msgid ""
@@ -246,32 +242,32 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:172
 msgid ":attr:`~definition.__name__` is the attribute's name."
-msgstr ":attr:`~definition.__name__` 是属性的名称。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:174
 msgid ":attr:`__doc__` is the attribute's docstring."
-msgstr ":attr:`__doc__` 是属性的文档字符串。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:176
 msgid ""
 "``__get__(object)`` is a method that retrieves the attribute value from "
 "*object*."
-msgstr "``__get__(object)`` 是一个从 *object* 中提取属性值的方法。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:179
 msgid "``__set__(object, value)`` sets the attribute on *object* to *value*."
-msgstr "``__set__(object, value)`` 将 *object* 上的属性设为 *value*。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:181
 msgid ""
 "``__delete__(object, value)`` deletes the *value*  attribute of *object*."
-msgstr "``__delete__(object, value)`` 将删除 *object* 的 *value* 属性。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:183
 msgid ""
 "For example, when you write ``obj.x``, the steps that Python actually "
 "performs are::"
-msgstr "例如，当你写下 ``obj.x``，Python 实际要执行的步骤是::"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:189
 msgid ""
@@ -316,7 +312,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:244
 msgid "Multiple Inheritance: The Diamond Rule"
-msgstr "多重继承：钻石规则"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:246
 msgid ""
@@ -383,7 +379,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:309
 msgid "Attribute Access"
-msgstr "属性访问"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:311
 msgid ""
@@ -463,7 +459,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:392
 msgid "Related Links"
-msgstr "相关链接"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:394
 msgid ""
@@ -504,7 +500,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:421
 msgid "PEP 234: Iterators"
-msgstr "PEP 234: 迭代器"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:423
 msgid ""
@@ -614,11 +610,11 @@ msgstr ""
 msgid ""
 "Written by Ka-Ping Yee and GvR; implemented  by the Python Labs crew, mostly"
 " by GvR and Tim Peters."
-msgstr "由 Ka-Ping Yee 和 GvR 撰写；由 Python Labs 小组（主要由 GvR 和 Tim Peters）实现。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:542
 msgid "PEP 255: Simple Generators"
-msgstr "PEP 255: 简单的生成器"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:544
 msgid ""
@@ -641,7 +637,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:556
 msgid "Here's the simplest example of a generator function::"
-msgstr "这里是一个生成器函数的最简示例::"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:562
 msgid ""
@@ -673,14 +669,13 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:583
 msgid "Here's a sample usage of the :func:`generate_ints` generator::"
-msgstr "这里是 :func:`generate_ints` 生成器的用法示例::"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:600
 msgid ""
 "You could equally write ``for i in generate_ints(5)``, or ``a,b,c = "
 "generate_ints(3)``."
 msgstr ""
-"你可以等价地写成 ``for i in generate_ints(5)`` 或 ``a,b,c = generate_ints(3)``。"
 
 #: ../../whatsnew/2.2.rst:603
 msgid ""
@@ -747,7 +742,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:662
 msgid ":pep:`255` - Simple Generators"
-msgstr ":pep:`255` - 简单生成器"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:662
 msgid ""
@@ -758,7 +753,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:669
 msgid "PEP 237: Unifying Long Integers and Integers"
-msgstr "PEP 237: 统一长整数和整数"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:671
 msgid ""
@@ -793,13 +788,13 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:702
 msgid ":pep:`237` - Unifying Long Integers and Integers"
-msgstr ":pep:`237` - 统一长整数和整数"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:702
 msgid ""
 "Written by Moshe Zadka and Guido van Rossum.  Implemented mostly by Guido "
 "van Rossum."
-msgstr "由 Moshe Zadka 和 Guido van Rossum 撰写 ; 大部分由 Guido van Rossum 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:709
 msgid "PEP 238: Changing the Division Operator"
@@ -900,7 +895,7 @@ msgstr ""
 msgid ""
 "Written by Moshe Zadka and  Guido van Rossum.  Implemented by Guido van "
 "Rossum.."
-msgstr "由 Moshe Zadka 和 Guido van Rossum 撰写 ; 由 Guido van Rossum 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:777
 msgid "Unicode Changes"
@@ -960,15 +955,15 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:832
 msgid ":pep:`261` - Support for 'wide' Unicode characters"
-msgstr ":pep:`261` - 对 '宽' Unicode 字符的支持"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:833
 msgid "Written by Paul Prescod."
-msgstr "由 Paul Prescod 编写。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:839
 msgid "PEP 227: Nested Scopes"
-msgstr "PEP 227: 嵌套的作用域"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:841
 msgid ""
@@ -1006,7 +1001,7 @@ msgstr ""
 msgid ""
 "The readability of Python code written in a strongly functional style "
 "suffers greatly as a result."
-msgstr "结果将会严重损害以高度函数式风格编写的 Python 代码的可读性。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:879
 msgid ""
@@ -1029,8 +1024,6 @@ msgid ""
 "rather unlikely though, since such code would have been pretty confusing to "
 "read in the first place."
 msgstr ""
-"对于同时在模块层级和包含下层函数定义的函数内部局部变量使用了相同变量名的代码来说这项改变可能会导致一些兼容性问题。 "
-"不过这看来不太可能发生，因为阅读这样的代码本来就会相当令人困惑。"
 
 #: ../../whatsnew/2.2.rst:894
 msgid ""
@@ -1048,16 +1041,10 @@ msgid ""
 "variables, the compiler will flag this by raising a :exc:`SyntaxError` "
 "exception."
 msgstr ""
-"此项改变的一个附带影响是在特定条件下函数作用域内部 ``from module import *`` 和 ``exec`` 语句将不允许使用。 "
-"Python 参考手册已经写明 ``from module import *`` 仅在模块最高层级上是可用的，但此前 CPython "
-"解释器从未强制实施此规则。 作为嵌套作用域具体实现的一部分，将 Python 源码转为字节码的编译器会生成不同的代码来访问某个包含作用域内的变量。 "
-"``from module import *`` 和 ``exec`` 会使得编译器无法正确执行，因为它们会向局部命名空间添加在编译时还不存在的名称。 "
-"为此，如果一个函数包含带有自由变量的函数定义或 :keyword:`lambda` 表达式，编译器将通过引发 :exc:`SyntaxError` "
-"异常来提示。"
 
 #: ../../whatsnew/2.2.rst:907
 msgid "To make the preceding explanation a bit clearer, here's an example::"
-msgstr "为了使前面的解释更清楚，下面是一个例子::"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:916
 msgid ""
@@ -1065,27 +1052,25 @@ msgid ""
 "would define a new local variable named ``x`` whose value should be accessed"
 " by :func:`g`."
 msgstr ""
-"包含 ``exec`` 语句的第 4 行有语法错误，因为 ``exec`` 将定义一个名为 ``x`` 的新局部变量，它的值应当被 :func:`g` "
-"访问。"
 
 #: ../../whatsnew/2.2.rst:920
 msgid ""
 "This shouldn't be much of a limitation, since ``exec`` is rarely used in "
 "most Python code (and when it is used, it's often a sign of a poor design "
 "anyway)."
-msgstr "这应该不会是太大的限制，因为 ``exec`` 在多数 Python 代码中都极少被使用（而当它被使用时，往往也是个存在糟糕设计的信号）。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:927
 msgid ":pep:`227` - Statically Nested Scopes"
-msgstr ":pep:`227` - 静态嵌套作用域"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:928
 msgid "Written and implemented by Jeremy Hylton."
-msgstr "由 Jeremy Hylton 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:934
 msgid "New and Improved Modules"
-msgstr "新增和改进的模块"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:936
 msgid ""
@@ -1129,7 +1114,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:976
 msgid "The original patch for this feature was contributed by Nick Mathewson."
-msgstr "此特性的初始补丁由 Nick Mathewson 贡献。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:978
 msgid ""
@@ -1239,7 +1224,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:1049
 msgid "Interpreter Changes and Fixes"
-msgstr "解释器的改变和修正"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1051
 msgid ""
@@ -1287,37 +1272,37 @@ msgstr ""
 #: ../../whatsnew/2.2.rst:1079
 msgid ""
 "To upgrade an extension module to the new API, perform the following steps:"
-msgstr "要将一个扩展模块升级至新 API，请执行下列步骤:"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1081
 msgid "Rename :c:func:`Py_TPFLAGS_GC` to :c:func:`PyTPFLAGS_HAVE_GC`."
-msgstr "将 :c:func:`Py_TPFLAGS_GC` 重命名为 :c:func:`PyTPFLAGS_HAVE_GC`。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1084
 msgid ""
 "Use :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar` to allocate"
-msgstr "使用 :c:func:`PyObject_GC_New` 或 :c:func:`PyObject_GC_NewVar` 来分配"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1084
 msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
-msgstr "对象，并使用 :c:func:`PyObject_GC_Del` 来释放它们。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1087
 msgid "Rename :c:func:`PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and"
-msgstr "将 :c:func:`PyObject_GC_Init` 重命名为 :c:func:`PyObject_GC_Track` 并"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1087
 msgid ":c:func:`PyObject_GC_Fini` to :c:func:`PyObject_GC_UnTrack`."
-msgstr "将 :c:func:`PyObject_GC_Fini` 重命名为 :c:func:`PyObject_GC_UnTrack`。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1089
 msgid "Remove :c:func:`PyGC_HEAD_SIZE` from object size calculations."
-msgstr "将 :c:func:`PyGC_HEAD_SIZE` 从对象大小计算中移除。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1091
 msgid ""
 "Remove calls to :c:func:`PyObject_AS_GC` and :c:func:`PyObject_FROM_GC`."
-msgstr "移除对 :c:func:`PyObject_AS_GC` 和 :c:func:`PyObject_FROM_GC` 的调用。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1093
 msgid ""
@@ -1372,7 +1357,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:1129
 msgid "Other Changes and Fixes"
-msgstr "其他的改变和修正"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1131
 msgid ""
@@ -1385,7 +1370,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:1137
 msgid "Some of the more notable changes are:"
-msgstr "一些较为重要的改变:"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1139
 msgid ""
@@ -1471,15 +1456,13 @@ msgstr ""
 #: ../../whatsnew/2.2.rst:1210
 msgid ""
 "Large file support is now enabled on Windows.  (Contributed by Tim Peters.)"
-msgstr "大文件支持目前已在 Windows 上启用。 （由 Tim Peters 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1212
 msgid ""
 "The :file:`Tools/scripts/ftpmirror.py` script now parses a :file:`.netrc` "
 "file, if you have one. (Contributed by Mike Romberg.)"
 msgstr ""
-":file:`Tools/scripts/ftpmirror.py` 脚本现在会解析 :file:`.netrc` 文件，如果存在的话。 （由 Mike"
-" Romberg 贡献。）"
 
 #: ../../whatsnew/2.2.rst:1215
 msgid ""
@@ -1548,7 +1531,7 @@ msgstr ""
 
 #: ../../whatsnew/2.2.rst:1260
 msgid "Acknowledgements"
-msgstr "致谢"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:1262
 msgid ""
@@ -1561,9 +1544,3 @@ msgid ""
 "Paalasma, Tim Peters, Jens Quade, Tom Reinhardt, Neil Schemenauer, Guido van"
 " Rossum, Greg Ward, Edward Welbourne."
 msgstr ""
-"作者感谢以下人员为本文的各种草案提供建议，更正和帮助： Fred Bremmer, Keith Briggs, Andrew Dalke, Fred "
-"L. Drake, Jr., Carel Fellinger, David Goodger, Mark Hammond, Stephen Hansen,"
-" Michael Hudson, Jack Jansen, Marc-André Lemburg, Martin von Löwis, Fredrik "
-"Lundh, Michael McLay, Nick Mathewson, Paul Moore, Gustavo Niemeyer, Don "
-"O'Donnell, Joonas Paalasma, Tim Peters, Jens Quade, Tom Reinhardt, Neil "
-"Schemenauer, Guido van Rossum, Greg Ward, Edward Welbourne."

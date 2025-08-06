@@ -1,25 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# QR Wang <wangqirui1996@gmail.com>, 2018
-# Shengjing Zhu <zsj950618@gmail.com>, 2018
-# Fei Yin <icebirds@163.com>, 2018
-# ChenYuan <github@qiushi.ac.cn>, 2019
-# ppcfish <ppcfish@gmail.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 23:43+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:18+0000\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,21 +19,21 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:5
 msgid "What's New in Python 2.6"
-msgstr "Python 2.6 有什么新变化"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:0
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:9
 msgid "A.M. Kuchling (amk at amk.ca)"
-msgstr "A.M. Kuchling (amk at amk.ca)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:52
 msgid ""
 "This article explains the new features in Python 2.6, released on October 1 "
 "2008.  The release schedule is described in :pep:`361`."
-msgstr "本文介绍了 Python 2.6 的新特性，它发布于 2008 年 10 月 1 日。 发布日程说明见 :pep:`361`。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:55
 msgid ""
@@ -84,7 +74,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:90
 msgid "Python 3.0"
-msgstr "Python 3.0"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:92
 msgid ""
@@ -107,17 +97,17 @@ msgstr ""
 #: ../../whatsnew/2.6.rst:106
 msgid ""
 "A :meth:`__complex__` method for converting objects to a complex number."
-msgstr "用于将对象转换为复数的 :meth:`__complex__` 方法。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:107
 msgid "Alternate syntax for catching exceptions: ``except TypeError as exc``."
-msgstr "用于捕获异常的替代语法: ``except TypeError as exc``。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:108
 msgid ""
 "The addition of :func:`functools.reduce` as a synonym for the built-in "
 ":func:`reduce` function."
-msgstr "增加 :func:`functools.reduce` 作为内置 :func:`reduce` 函数的同义词。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:111
 msgid ""
@@ -149,7 +139,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:136
 msgid "Changes to the Development Process"
-msgstr "开发过程的变化"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:138
 msgid ""
@@ -161,7 +151,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:145
 msgid "New Issue Tracker: Roundup"
-msgstr "新问题追踪：简述"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:147
 msgid ""
@@ -208,39 +198,39 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:185
 msgid "https://bugs.python.org"
-msgstr "https://bugs.python.org"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:185
 msgid "The Python bug tracker."
-msgstr "Python 的错误追踪器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:188
 msgid "http://bugs.jython.org:"
-msgstr "http://bugs.jython.org:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:188
 msgid "The Jython bug tracker."
-msgstr "Jython 的错误追踪器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:191
 msgid "http://roundup.sourceforge.net/"
-msgstr "http://roundup.sourceforge.net/"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:191
 msgid "Roundup downloads and documentation."
-msgstr "Roundup 下载和文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:193
 msgid "http://svn.python.org/view/tracker/importer/"
-msgstr "http://svn.python.org/view/tracker/importer/"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:194
 msgid "Martin von Löwis's conversion scripts."
-msgstr "Martin von Löwis 的转换脚本。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:197
 msgid "New Documentation Format: reStructuredText Using Sphinx"
-msgstr "新的文档格式：使用 Sphinx 的 reStructuredText"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:199
 msgid ""
@@ -289,31 +279,31 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:236
 msgid "`Documenting Python <https://devguide.python.org/documenting/>`__"
-msgstr "`Documenting Python <https://devguide.python.org/documenting/>`__"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:236
 msgid "Describes how to write for Python's documentation."
-msgstr "描述如何编写Python文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:239
 msgid "`Sphinx <http://sphinx-doc.org/>`__"
-msgstr "`Sphinx <http://sphinx-doc.org/>`__"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:239
 msgid "Documentation and code for the Sphinx toolchain."
-msgstr "Sphinx工具链的文档和代码。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:241
 msgid "`Docutils <http://docutils.sourceforge.net>`__"
-msgstr "`Docutils <http://docutils.sourceforge.net>`__"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:242
 msgid "The underlying reStructuredText parser and toolset."
-msgstr "reStructuredText 的基础解析器和工具集。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:248
 msgid "PEP 343: The 'with' statement"
-msgstr "PEP 343: \"with\" 语句"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:250
 msgid ""
@@ -339,7 +329,7 @@ msgstr ""
 msgid ""
 "The ':keyword:`with`' statement is a control-flow structure whose basic "
 "structure is::"
-msgstr "The ':keyword:`with`' 语是一种基本结构如下所示的流程控制结构::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:271
 msgid ""
@@ -404,7 +394,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:331
 msgid "Writing Context Managers"
-msgstr "编写上下文管理器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:333
 msgid ""
@@ -417,7 +407,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:339
 msgid "A high-level explanation of the context management protocol is:"
-msgstr "在更高层级上对于上下文管理器协议的解释:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:341
 msgid ""
@@ -435,7 +425,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:349
 msgid "The code in *BLOCK* is executed."
-msgstr "*BLOCK* 中的代码会被执行。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:351
 msgid ""
@@ -511,7 +501,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:431
 msgid "The contextlib module"
-msgstr "contextlib 模块"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:433
 msgid ""
@@ -557,7 +547,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:492
 msgid ":pep:`343` - The \"with\" statement"
-msgstr ":pep:`343` - \"with\" 语句"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:489
 msgid ""
@@ -569,11 +559,11 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:494
 msgid "The documentation  for the :mod:`contextlib` module."
-msgstr ":mod:`contextlib` 模块的文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:501
 msgid "PEP 366: Explicit Relative Imports From a Main Module"
-msgstr "PEP 366: 从主模块显式相对导入"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:503
 msgid ""
@@ -599,7 +589,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:522
 msgid "PEP 370: Per-user ``site-packages`` Directory"
-msgstr "PEP 370: 分用户的 site-packages 目录"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:524
 msgid ""
@@ -613,15 +603,15 @@ msgstr ""
 msgid ""
 "Python 2.6 introduces a convention for user-specific site directories. The "
 "directory varies depending on the platform:"
-msgstr "Python 2.6 引入了一个用于用户专属站点目录的惯例。 该目录根据具体系统平台各不相同:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:532
 msgid "Unix and Mac OS X: :file:`~/.local/`"
-msgstr "Unix 和 Mac OS X: :file:`~/.local/`"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:533
 msgid "Windows: :file:`%APPDATA%/Python`"
-msgstr "Windows: :file:`%APPDATA%/Python`"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:535
 msgid ""
@@ -648,15 +638,15 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:552
 msgid ":pep:`370` - Per-user ``site-packages`` Directory"
-msgstr ":pep:`370` - 分用户的 site-packages 目录"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:553
 msgid "PEP written and implemented by Christian Heimes."
-msgstr "PEP 由 Christian Heimes 撰写并实现"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:561
 msgid "PEP 371: The ``multiprocessing`` Package"
-msgstr "PEP 371: 多任务处理包"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:563
 msgid ""
@@ -709,7 +699,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:642
 msgid "This produces the following output::"
-msgstr "这会产生以下输出::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:651
 msgid ""
@@ -726,26 +716,25 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:695
 msgid "This will produce the output::"
-msgstr "这将产生如下输出::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:706
 msgid "The documentation for the :mod:`multiprocessing` module."
-msgstr ":mod:`multiprocessing` 模块的文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:709
 msgid ":pep:`371` - Addition of the multiprocessing package"
-msgstr ":pep:`371` - 添加多任务处理包"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:709
 msgid ""
 "PEP written by Jesse Noller and Richard Oudkerk; implemented by Richard "
 "Oudkerk and Jesse Noller."
 msgstr ""
-"PEP 由 Jesse Noller 和 Richard Oudkerk 撰写，由 Richard Oudkerk 和 Jesse Noller 实现"
 
 #: ../../whatsnew/2.6.rst:718
 msgid "PEP 3101: Advanced String Formatting"
-msgstr "PEP 3101: 高级字符串格式"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:720
 msgid ""
@@ -794,47 +783,47 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:786
 msgid "The alignment of a field within the desired width can be specified:"
-msgstr "可以指定所需宽度内的字段对齐方式："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:789
 msgid "Character"
-msgstr "字符"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:789
 msgid "Effect"
-msgstr "效果"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:791
 msgid "< (default)"
-msgstr "< (默认)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:791
 msgid "Left-align"
-msgstr "左对齐"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:792
 msgid ">"
-msgstr ">"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:792
 msgid "Right-align"
-msgstr "右对齐"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:793
 msgid "^"
-msgstr "^"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:793
 msgid "Center"
-msgstr "居中对齐"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:794
 msgid "="
-msgstr "="
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:794
 msgid "(For numeric types only) Pad after the sign."
-msgstr "（仅适用于数字类型）在符号后加空格。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:797
 msgid ""
@@ -851,61 +840,61 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:810
 msgid "``b``"
-msgstr "``b``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:810
 msgid "Binary. Outputs the number in base 2."
-msgstr "二进制。输出以2为底的数字。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:811
 msgid "``c``"
-msgstr "``c``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:811
 msgid ""
 "Character. Converts the integer to the corresponding Unicode character "
 "before printing."
-msgstr "字符。在打印之前将整数转换为相应的Unicode字符。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:813
 msgid "``d``"
-msgstr "``d``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:813
 msgid "Decimal Integer. Outputs the number in base 10."
-msgstr "十进制整数。 输出以 10 为基数的数字。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:814
 msgid "``o``"
-msgstr "``o``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:814
 msgid "Octal format. Outputs the number in base 8."
-msgstr "八进制格式。 输出以 8 为基数的数字。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:815
 msgid "``x``"
-msgstr "``x``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:815
 msgid ""
 "Hex format. Outputs the number in base 16, using lower-case letters for the "
 "digits above 9."
-msgstr "十六进制格式。 输出以 16 为基数的数字，使用小写字母表示 9 以上的数码。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:817
 msgid "``e``"
-msgstr "``e``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:817
 msgid ""
 "Exponent notation. Prints the number in scientific notation using the letter"
 " 'e' to indicate the exponent."
-msgstr "指数表示法。用字母 'e' 以科学计数法打印数字以表示指数。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:819
 msgid "``g``"
-msgstr "``g``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:819
 msgid ""
@@ -915,7 +904,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:822
 msgid "``n``"
-msgstr "``n``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:822
 msgid ""
@@ -926,7 +915,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:825
 msgid "``%``"
-msgstr "``%``"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:825
 msgid ""
@@ -948,23 +937,23 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:849
 msgid ":ref:`formatstrings`"
-msgstr ":ref:`formatstrings`"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:849
 msgid "The reference documentation for format fields."
-msgstr "格式字段的参考文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:851
 msgid ":pep:`3101` - Advanced String Formatting"
-msgstr ":pep:`3101` - 高级字符串格式"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:852
 msgid "PEP written by Talin. Implemented by Eric Smith."
-msgstr "PEP 由 Eric V. Smith 撰写并实现"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:859
 msgid "PEP 3105: ``print`` As a Function"
-msgstr "PEP 3105: ``print`` 改为函数"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:861
 msgid ""
@@ -985,7 +974,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:876
 msgid "The parameters are:"
-msgstr "形参包括:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:878
 msgid "*args*: positional arguments whose values will be printed out."
@@ -1007,15 +996,15 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:886
 msgid ":pep:`3105` - Make print a function"
-msgstr ":pep:`3105` - print 改为函数"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:887
 msgid "PEP written by Georg Brandl."
-msgstr "PEP 由 Georg Brandl 撰写"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:894
 msgid "PEP 3110: Exception-Handling Changes"
-msgstr "PEP 3110: 异常处理的变更"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:896
 msgid ""
@@ -1058,15 +1047,15 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:937
 msgid ":pep:`3110` - Catching Exceptions in Python 3000"
-msgstr ":pep:`3110` - 在 Python 3000 中捕获异常"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:938
 msgid "PEP written and implemented by Collin Winter."
-msgstr "PEP 由 Collin Winter 撰写并实现"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:945
 msgid "PEP 3112: Byte Literals"
-msgstr "PEP 3112: 字节字面值"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:947
 msgid ""
@@ -1135,15 +1124,15 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1021
 msgid ":pep:`3112` - Bytes literals in Python 3000"
-msgstr ":pep:`3112` - Python 3000 中的字节字面值"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1022
 msgid "PEP written by Jason Orendorff; backported to 2.6 by Christian Heimes."
-msgstr "PEP 由 Jason Orendorff 撰写， 补丁2.6 由 Christian Heimes 撰写。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1029
 msgid "PEP 3116: New I/O Library"
-msgstr "PEP 3116: 新 I/O 库"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1031
 msgid ""
@@ -1234,7 +1223,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1103
 msgid ":pep:`3116` - New I/O"
-msgstr ":pep:`3116` - 新 I/O"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1102
 msgid ""
@@ -1245,7 +1234,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1111
 msgid "PEP 3118: Revised Buffer Protocol"
-msgstr "PEP 3118: 修改缓冲区协议"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1113
 msgid ""
@@ -1281,11 +1270,11 @@ msgstr ""
 msgid ""
 "The *flags* argument to :c:func:`PyObject_GetBuffer` specifies constraints "
 "upon the memory returned.  Some examples are:"
-msgstr " :c:func:`PyObject_GetBuffer` 的 *flags* 参数指明了对所返回内存的约束。 示例如下:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1141
 msgid ":const:`PyBUF_WRITABLE` indicates that the memory must be writable."
-msgstr ":const:`PyBUF_WRITABLE` 指定内存必须为可写。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1143
 msgid ""
@@ -1307,17 +1296,17 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1155
 msgid ":pep:`3118` - Revising the buffer protocol"
-msgstr ":pep:`3118` - 修改缓冲区协议"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1155
 msgid ""
 "PEP written by Travis Oliphant and Carl Banks; implemented by Travis "
 "Oliphant."
-msgstr "PEP 由 Travis Oliphant 和 Carl Banks 撰写，由 Travis Oliphant 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1164
 msgid "PEP 3119: Abstract Base Classes"
-msgstr "PEP 3119: 抽象基类"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1166
 msgid ""
@@ -1436,7 +1425,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1303
 msgid ":pep:`3119` - Introducing Abstract Base Classes"
-msgstr ":pep:`3119` - 引入抽象基类"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1302
 msgid ""
@@ -1446,7 +1435,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1311
 msgid "PEP 3127: Integer Literal Support and Syntax"
-msgstr "PEP 3127: 整型文字支持和语法"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1313
 msgid ""
@@ -1478,7 +1467,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1355
 msgid ":pep:`3127` - Integer Literal Support and Syntax"
-msgstr ":pep:`3127` - 整型文字支持和语法"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1355
 msgid "PEP written by Patrick Maupin; backported to 2.6 by Eric Smith."
@@ -1486,7 +1475,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1363
 msgid "PEP 3129: Class Decorators"
-msgstr "PEP 3129: 类装饰器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1365
 msgid ""
@@ -1496,15 +1485,15 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1373
 msgid "This is equivalent to::"
-msgstr "这相当于："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1382
 msgid ":pep:`3129` - Class Decorators"
-msgstr ":pep:`3129` - 类装饰器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1383
 msgid "PEP written by Collin Winter."
-msgstr "PEP 由 Collin Winter 撰写"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1390
 msgid "PEP 3141: A Type Hierarchy for Numbers"
@@ -1572,7 +1561,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1432
 msgid "PEP written by Jeffrey Yasskin."
-msgstr "PEP 由 Jeffrey Yasskin 撰写"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1434
 msgid ""
@@ -1590,7 +1579,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1440
 msgid "The :mod:`fractions` Module"
-msgstr ":mod:`fractions` 模块"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1442
 msgid ""
@@ -1629,11 +1618,11 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1485
 msgid "Other Language Changes"
-msgstr "其他语言特性修改"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1487
 msgid "Some smaller changes made to the core Python language are:"
-msgstr "对Python 语言核心进行的小改动："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1489
 msgid ""
@@ -1664,7 +1653,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1517
 msgid "(Contributed by Alexander Belopolsky; :issue:`1686487`.)"
-msgstr "（由 Alexander Belopolsky 在 :issue:`1686487` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1519
 msgid ""
@@ -1695,7 +1684,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1546
 msgid "(Contributed by Raymond Hettinger)"
-msgstr "（由 Raymond Hettinger 贡献）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1548
 msgid ""
@@ -1723,7 +1712,7 @@ msgstr ""
 #: ../../whatsnew/2.6.rst:1596 ../../whatsnew/2.6.rst:1880
 #: ../../whatsnew/2.6.rst:1901
 msgid "(Contributed by Raymond Hettinger.)"
-msgstr "（由 Raymond Hettinger 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1598
 msgid ""
@@ -1846,7 +1835,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1693
 msgid "Optimizations"
-msgstr "性能优化"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1695
 msgid ""
@@ -1962,7 +1951,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:1783
 msgid "New and Improved Modules"
-msgstr "新增和改进的模块"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1785
 msgid ""
@@ -2145,7 +2134,6 @@ msgid ""
 "(Implemented by Facundo Batista and Mark Dickinson.  Named tuple support "
 "added by Raymond Hettinger.)"
 msgstr ""
-"（由 Facundo Batista 和 Mark Dickinson 实现。 具名元组支持由 Raymond Hettinger 添加。）"
 
 #: ../../whatsnew/2.6.rst:1946
 msgid ""
@@ -2232,12 +2220,10 @@ msgid ""
 "Some new functions in the module include :func:`isgenerator`, "
 ":func:`isgeneratorfunction`, and :func:`isabstract`."
 msgstr ""
-"此模块中的新增函数包括 :func:`isgenerator`, :func:`isgeneratorfunction` 和 "
-":func:`isabstract`。"
 
 #: ../../whatsnew/2.6.rst:2009
 msgid "The :mod:`itertools` module gained several new functions."
-msgstr ":mod:`itertools` 模块增加了几个新函数。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2011
 msgid ""
@@ -2268,7 +2254,7 @@ msgstr ""
 msgid ""
 "``combinations(iterable, r)`` returns sub-sequences of length *r* from the "
 "elements of *iterable*. ::"
-msgstr "``combinations(iterable, r)`` 基于 *iterable* 的元素返回长度为 *r* 的子序列。 ::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2055
 msgid ""
@@ -2289,7 +2275,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2075
 msgid "(All contributed by Raymond Hettinger.)"
-msgstr "（全部由 Raymond Hettinger 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2077
 msgid ""
@@ -2309,7 +2295,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2089
 msgid "Several new functions were added to the :mod:`math` module:"
-msgstr "为 :mod:`math` 模块添加了一些新函数:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2091
 msgid ""
@@ -2345,7 +2331,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2110
 msgid ":func:`~math.log1p` returns the natural logarithm of *1+x* (base *e*)."
-msgstr ":func:`~math.log1p` 返回 *1+x* (以 *e* 为底) 的自然对数。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2113
 msgid ""
@@ -2376,7 +2362,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2132
 msgid "(Contributed by Christian Heimes and Mark Dickinson.)"
-msgstr "（由 Christian Heimes 和 Mark Dickinson 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2134
 msgid ""
@@ -2396,7 +2382,7 @@ msgstr ""
 #: ../../whatsnew/2.6.rst:2150
 msgid ""
 "(Contributed by Georg Brandl, after a suggestion by Gregory Petrosyan.)"
-msgstr "（由 Gregory Petrosyan 提供建议，之后由 Georg Brandl 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2152
 msgid ""
@@ -2406,7 +2392,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2162
 msgid "(Contributed by Georg Brandl, after a suggestion by Barry Warsaw.)"
-msgstr "（由 Barry Warsaw 提供建议，之后由 Georg Brandl 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2164
 msgid ""
@@ -2506,7 +2492,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2241
 msgid "(Contributed by Paul Moore; :issue:`2439`.)"
-msgstr "（由 Paul Moore 在 :issue:`2439` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2243
 msgid ""
@@ -2603,7 +2589,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2315
 msgid "(Contributed by Tarek Ziadé; :issue:`2663`.)"
-msgstr "（由 Tarek Ziadé 在 :issue:`2663` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2317
 msgid ""
@@ -2629,7 +2615,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2335
 msgid "(Contributed by Adam Olsen; :issue:`1583`.)"
-msgstr "（由 Adam Olsen 在 :issue:`1583` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2337
 msgid ""
@@ -2808,8 +2794,6 @@ msgid ""
 " class constructor, specifying a timeout measured in seconds.  (Added by "
 "Facundo Batista.)"
 msgstr ""
-"为 :class:`telnetlib.Telnet` 类构造器增加了可选的 ``timeout`` 形参，指定以秒为单位的超时设置。 （由 "
-"Facundo Batista 添加。）"
 
 #: ../../whatsnew/2.6.rst:2471
 msgid ""
@@ -2860,7 +2844,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2513
 msgid "(Contributed by Brett Cannon.)"
-msgstr "（由 Brett Cannon 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2515
 msgid ""
@@ -2871,7 +2855,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2534
 msgid "(Contributed by Dwayne Bailey; :issue:`1581073`.)"
-msgstr "（由 Dwayne Bailey 在 :issue:`1581073` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2536
 msgid ""
@@ -2946,7 +2930,7 @@ msgstr ""
 msgid ""
 "A :file:`turtle.cfg` file can be used to customize the starting appearance "
 "of the turtle's screen."
-msgstr ":file:`turtle.cfg` 文件可被用来定制海龟绘图屏幕的初始外观。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2579
 msgid ""
@@ -2956,7 +2940,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2582
 msgid "(:issue:`1513695`)"
-msgstr "(:issue:`1513695`)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2584
 msgid ""
@@ -2968,7 +2952,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2597
 msgid "(Added by Facundo Batista.)"
-msgstr "（由 Facundo Batista 添加。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2599
 msgid ""
@@ -3034,7 +3018,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2653
 msgid "(Contributed by Alan McIntyre; :issue:`467924`.)"
-msgstr "（由 Alan McIntyre 在 :issue:`467924` 中贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2655
 msgid ""
@@ -3052,7 +3036,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2667
 msgid "The :mod:`ast` module"
-msgstr ":mod:`ast` 模块"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2669
 msgid ""
@@ -3071,7 +3055,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2690
 msgid "This outputs a deeply nested tree::"
-msgstr "输出是一棵深度嵌套的树::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2723
 msgid ""
@@ -3092,7 +3076,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2747
 msgid "The :mod:`future_builtins` module"
-msgstr ":mod:`future_builtins` 模块"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2749
 msgid ""
@@ -3105,7 +3089,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2756
 msgid "The functions in this module currently include:"
-msgstr "目前此模块中的函数包括:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2758
 msgid ""
@@ -3130,7 +3114,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2775
 msgid "The :mod:`json` module: JavaScript Object Notation"
-msgstr ":mod:`json` 模块: JavaScript Object Notation"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2777
 msgid ""
@@ -3159,7 +3143,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2803
 msgid "The :mod:`plistlib` module: A Property-List Parser"
-msgstr ":mod:`plistlib` 模块：属性列表解析器"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2805
 msgid ""
@@ -3178,7 +3162,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2815
 msgid "Using the module is simple::"
-msgstr "此模块的用法很简单::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2842
 msgid "ctypes Enhancements"
@@ -3266,7 +3250,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2906
 msgid "The documentation for the :mod:`ssl` module."
-msgstr ":mod:`ssl` 模块的文档。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2911
 msgid "Deprecations and Removals"
@@ -3304,7 +3288,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2951
 msgid "The :mod:`gopherlib` module has been removed."
-msgstr ":mod:`gopherlib` 模块已被移除。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2953
 msgid ""
@@ -3332,7 +3316,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2966
 msgid "The :mod:`rgbimg` module has been removed."
-msgstr ":mod:`rgbimg` 模块已被移除。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2968
 msgid ""
@@ -3348,11 +3332,11 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2979
 msgid "Build and C API Changes"
-msgstr "构建和 C API 的改变"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2981
 msgid "Changes to Python's build process and to the C API include:"
-msgstr "针对 Python 构建过程和 C API 的改变包括:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2983
 msgid ""
@@ -3500,7 +3484,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:3097
 msgid "Port-Specific Changes: Windows"
-msgstr "特定于 Windows 的更改："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3099
 msgid ""
@@ -3569,7 +3553,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:3146
 msgid "Port-Specific Changes: Mac OS X"
-msgstr "特定于 Mac OS X 的更改："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3148
 msgid ""
@@ -3577,8 +3561,6 @@ msgid ""
 "framework name to be used by providing the :option:`!--with-framework-name=`"
 " option to the :program:`configure` script."
 msgstr ""
-"现在，在编译Python的框架版本时，可以为 :program:`configure` 脚本添加 :option:`!--with-framework-"
-"name=` 选项来指定要使用的框架名称。"
 
 #: ../../whatsnew/2.6.rst:3153
 msgid ""
@@ -3586,8 +3568,6 @@ msgid ""
 ":func:`macostools.touched` function to be removed because it depended on the"
 " :mod:`macfs` module.  (:issue:`1490190`)"
 msgstr ""
-":mod:`macfs` 模块已被删除。这反过来要求删除 :func:`macostools.touched` 函数，因为它依赖于 "
-":mod:`macfs` 模块。 (:issue:`1490190`)"
 
 #: ../../whatsnew/2.6.rst:3157
 msgid ""
@@ -3603,20 +3583,10 @@ msgid ""
 ":mod:`PixMapWrapper`, :mod:`StdSuites`, :mod:`SystemEvents`, "
 ":mod:`Terminal`, and :mod:`terminalcommand`."
 msgstr ""
-"许多其他 Mac OS 模块已弃用并将在 Python 3.0 中被删除: :mod:`_builtinSuites`, :mod:`aepack`, "
-":mod:`aetools`, :mod:`aetypes`, :mod:`applesingle`, :mod:`appletrawmain`, "
-":mod:`appletrunner`, :mod:`argvemulator`, :mod:`Audio_mac`, :mod:`autoGIL`, "
-":mod:`Carbon`, :mod:`cfmfile`, :mod:`CodeWarrior`, :mod:`ColorPicker`, "
-":mod:`EasyDialogs`, :mod:`Explorer`, :mod:`Finder`, :mod:`FrameWork`, "
-":mod:`findertools`, :mod:`ic`, :mod:`icglue`, :mod:`icopen`, "
-":mod:`macerrors`, :mod:`MacOS`, :mod:`macfs`, :mod:`macostools`, "
-":mod:`macresource`, :mod:`MiniAEFrame`, :mod:`Nav`, :mod:`Netscape`, "
-":mod:`OSATerminology`, :mod:`pimp`, :mod:`PixMapWrapper`, :mod:`StdSuites`, "
-":mod:`SystemEvents`, :mod:`Terminal` 和 :mod:`terminalcommand`。"
 
 #: ../../whatsnew/2.6.rst:3200
 msgid "Port-Specific Changes: IRIX"
-msgstr "特定于 IRIX 的更改："
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3202
 msgid ""
@@ -3628,22 +3598,16 @@ msgid ""
 ":mod:`panelparser`, :mod:`readcd`, :mod:`SV` and :mod:`sv`, :mod:`torgb`, "
 ":mod:`videoreader`, and :mod:`WAIT`."
 msgstr ""
-"许多旧的 IRIX 专用模块已被弃用，并将在Python 3.0中删除： :mod:`al` 和 :mod:`AL`, :mod:`cd`, "
-":mod:`cddb`, :mod:`cdplayer`, :mod:`CL` 和 :mod:`cl`, :mod:`DEVICE`, "
-":mod:`ERRNO`, :mod:`FILE`, :mod:`FL` 和 :mod:`fl`, :mod:`flp`, :mod:`fm`, "
-":mod:`GET`, :mod:`GLWS`, :mod:`GL` 和 :mod:`gl`, :mod:`IN`, :mod:`IOCTL`, "
-":mod:`jpeg`, :mod:`panelparser`, :mod:`readcd`, :mod:`SV` 和 :mod:`sv`, "
-":mod:`torgb`, :mod:`videoreader`, 和 :mod:`WAIT`."
 
 #: ../../whatsnew/2.6.rst:3232
 msgid "Porting to Python 2.6"
-msgstr "移植到Python 2.6"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3234
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code:"
-msgstr "本节列出了先前描述的改变以及可能需要修改你的代码的其他问题修正:"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3237
 msgid ""
@@ -3738,7 +3702,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:3308
 msgid "Acknowledgements"
-msgstr "致谢"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3310
 msgid ""
@@ -3747,6 +3711,3 @@ msgid ""
 " Georg Brandl, Steve Brown, Nick Coghlan, Ralph Corderoy, Jim Jewett, Kent "
 "Johnson, Chris Lambacher,  Martin Michlmayr, Antoine Pitrou, Brian Warner."
 msgstr ""
-"作者感谢以下人员对本文各种草稿给予的建议，更正和协助： Georg Brandl, Steve Brown, Nick Coghlan, Ralph "
-"Corderoy, Jim Jewett, Kent Johnson, Chris Lambacher,  Martin Michlmayr, "
-"Antoine Pitrou, Brian Warner."

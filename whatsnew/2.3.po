@@ -1,23 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Fei Yin <icebirds@163.com>, 2018
-# ppcfish <ppcfish@gmail.com>, 2019
-# Naisen Xu <723648649@qq.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 23:42+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:18+0000\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,21 +19,21 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:3
 msgid "What's New in Python 2.3"
-msgstr "Python 2.3 有什么新变化"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:0
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:5
 msgid "A.M. Kuchling"
-msgstr "A.M. Kuchling"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:11
 msgid ""
 "This article explains the new features in Python 2.3.  Python 2.3 was "
 "released on July 29, 2003."
-msgstr "本文介绍了 Python 2.3 的新特性。 Python 2.3 发布于 2003 年 7 月 29 日。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:14
 msgid ""
@@ -77,7 +69,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:41
 msgid "PEP 218: A Standard Set Datatype"
-msgstr "PEP 218: 标准集合数据类型"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:43
 msgid ""
@@ -91,7 +83,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:50
 msgid "Here's a simple example::"
-msgstr "这是一个简单的示例："
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:66
 msgid ""
@@ -115,21 +107,21 @@ msgstr ""
 msgid ""
 "There are also :meth:`issubset` and :meth:`issuperset` methods for checking "
 "whether one set is a subset or superset of another::"
-msgstr "另外还有 :meth:`issubset` 和 :meth:`issuperset` 方法用来检查一个集合是否为另一个集合的子集或超集::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:117
 msgid ":pep:`218` - Adding a Built-In Set Object Type"
-msgstr ":pep:`218` - 添加内置Set对象类型"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:117
 msgid ""
 "PEP written by Greg V. Wilson. Implemented by Greg V. Wilson, Alex Martelli,"
 " and GvR."
-msgstr "PEP 由 Greg V. Wilson 撰写 ; 由 Greg V. Wilson, Alex Martelli 和 GvR 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:126
 msgid "PEP 255: Simple Generators"
-msgstr "PEP 255: 简单的生成器"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:128
 msgid ""
@@ -157,7 +149,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:145
 msgid "Here's the simplest example of a generator function::"
-msgstr "这里是一个生成器函数的最简示例::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:151
 msgid ""
@@ -186,14 +178,13 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:169
 msgid "Here's a sample usage of the :func:`generate_ints` generator::"
-msgstr "这里是 :func:`generate_ints` 生成器的用法示例::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:186
 msgid ""
 "You could equally write ``for i in generate_ints(5)``, or ``a,b,c = "
 "generate_ints(3)``."
 msgstr ""
-"你可以等价地写成 ``for i in generate_ints(5)`` 或 ``a,b,c = generate_ints(3)``。"
 
 #: ../../whatsnew/2.3.rst:189
 msgid ""
@@ -260,7 +251,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:248
 msgid ":pep:`255` - Simple Generators"
-msgstr ":pep:`255` - 简单生成器"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:248
 msgid ""
@@ -271,7 +262,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:257
 msgid "PEP 263: Source Code Encodings"
-msgstr "PEP 263: 源代码的字符编码格式"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:259
 msgid ""
@@ -300,19 +291,17 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:282
 msgid ":pep:`263` - Defining Python Source Code Encodings"
-msgstr ":pep:`263` - 定义 Python 源代码的编码格式"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:282
 msgid ""
 "Written by Marc-André Lemburg and Martin von Löwis; implemented by Suzuki "
 "Hisao and Martin von Löwis."
 msgstr ""
-"由 Marc-André Lemburg 和 Martin von Löwis 撰写 ; 由 Suzuki Hisao 和 Martin von "
-"Löwis 实现。"
 
 #: ../../whatsnew/2.3.rst:289
 msgid "PEP 273: Importing Modules from ZIP Archives"
-msgstr "PEP 273: 从ZIP压缩包导入模块"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:291
 msgid ""
@@ -341,7 +330,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:331
 msgid ":pep:`273` - Import Modules from Zip Archives"
-msgstr ":pep:`273` - 从 ZIP 压缩包导入模块"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:329
 msgid ""
@@ -354,7 +343,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:338
 msgid "PEP 277: Unicode file name support for Windows NT"
-msgstr "PEP 277: 针对 Windows NT 的 Unicode 文件名支持"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:340
 msgid ""
@@ -377,7 +366,7 @@ msgstr ""
 msgid ""
 "Byte strings still work as file names, and on Windows Python will "
 "transparently convert them to Unicode using the ``mbcs`` encoding."
-msgstr "字节串仍可被用作文件名，并且在 Windows 上 Python 将透明地使用 ``mbcs`` 编码格式将其转换为 Unicode。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:353
 msgid ""
@@ -390,22 +379,21 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:359
 msgid "Under MacOS, :func:`os.listdir` may now return Unicode filenames."
-msgstr "在 MacOS 下，:func:`os.listdir` 现在可以返回 Unicode 文件名。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:365
 msgid ":pep:`277` - Unicode file name support for Windows NT"
-msgstr ":pep:`277` - 针对 Windows NT 的 Unicode 文件名支持"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:365
 msgid ""
 "Written by Neil Hodgson; implemented by Neil Hodgson, Martin von Löwis, and "
 "Mark Hammond."
 msgstr ""
-"由 Neil Hodgson 撰写 ; 由 Neil Hodgson, Martin von Löwis 和 Mark Hammond 实现。"
 
 #: ../../whatsnew/2.3.rst:375
 msgid "PEP 278: Universal Newline Support"
-msgstr "PEP 278: 通用换行支持"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:377
 msgid ""
@@ -445,15 +433,15 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:403
 msgid ":pep:`278` - Universal Newline Support"
-msgstr ":pep:`278` - 通用换行支持"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:404
 msgid "Written and implemented by Jack Jansen."
-msgstr "由 Jack Jansen 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:412
 msgid "PEP 279: enumerate()"
-msgstr "PEP 279: enumerate()"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:414
 msgid ""
@@ -465,23 +453,23 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:419
 msgid "A common idiom to change every element of a list looks like this::"
-msgstr "改变一个列表中每个元素的常见写法看起来像是这样::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:426
 msgid "This can be rewritten using :func:`enumerate` as::"
-msgstr "可以使用 :func:`enumerate` 重写为："
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:435
 msgid ":pep:`279` - The enumerate() built-in function"
-msgstr ":pep:`279` - 内置函数 enumerate()"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:436
 msgid "Written and implemented by Raymond D. Hettinger."
-msgstr "由 Raymond D. Hettinger 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:442
 msgid "PEP 282: The logging Package"
-msgstr "PEP 282: logging 包"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:444
 msgid ""
@@ -514,11 +502,11 @@ msgstr ""
 msgid ""
 "For simple uses, the :mod:`logging` package contains some convenience "
 "functions that always use the root log::"
-msgstr "为了简化使用，:mod:`logging` 包提供了一些始终使用根日志的便捷函数::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:475 ../../whatsnew/2.3.rst:500
 msgid "This produces the following output::"
-msgstr "这会产生以下输出::"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:481
 msgid ""
@@ -582,15 +570,15 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:541
 msgid ":pep:`282` - A Logging System"
-msgstr ":pep:`282` - Logging 系统"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:542
 msgid "Written by Vinay Sajip and Trent Mick; implemented by Vinay Sajip."
-msgstr "由 Vinay Sajip 和 Trent Mick 撰写 ; 由 Vinay Sajip 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:550
 msgid "PEP 285: A Boolean Type"
-msgstr "PEP 285: 布尔类型"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:552
 msgid ""
@@ -647,11 +635,11 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:613
 msgid ":pep:`285` - Adding a bool type"
-msgstr ":pep:`285` - 添加布尔类型"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:614
 msgid "Written and implemented by GvR."
-msgstr "由 GvR 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:620
 msgid "PEP 293: Codec Error Handling Callbacks"
@@ -694,11 +682,11 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:646
 msgid "Written and implemented by Walter Dörwald."
-msgstr "由 Walter Dörwald 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:654
 msgid "PEP 301: Package Index and Metadata for Distutils"
-msgstr "PEP 301: Distutils的软件包索引和元数据"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:656
 msgid ""
@@ -737,15 +725,15 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:694
 msgid ":pep:`301` - Package Index and Metadata for Distutils"
-msgstr ":pep:`301` - Distutils 的软件包索引和元数据"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:695
 msgid "Written and implemented by Richard Jones."
-msgstr "由 Richard Jones 撰写并实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:703
 msgid "PEP 302: New Import Hooks"
-msgstr "PEP 302: 新导入钩子"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:705
 msgid ""
@@ -803,16 +791,16 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:760
 msgid ":pep:`302` - New Import Hooks"
-msgstr ":pep:`302` - 新导入钩"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:761
 msgid ""
 "Written by Just van Rossum and Paul Moore. Implemented by Just van Rossum."
-msgstr "由 Just van Rossum 和 Paul Moore 撰写 ; 由 Just van Rossum 实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:769
 msgid "PEP 305: Comma-separated Files"
-msgstr "PEP 305: 逗号分隔文件"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:771
 msgid ""
@@ -854,15 +842,13 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:806
 msgid ":pep:`305` - CSV File API"
-msgstr "该实现在“Python 增强提议” - PEP `305` (CSV 文件 API)  中被提出"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:806
 msgid ""
 "Written and implemented  by Kevin Altis, Dave Cole, Andrew McNamara, Skip "
 "Montanaro, Cliff Wells."
 msgstr ""
-"由 Kevin Altis, Dave Cole, Andrew McNamara, Skip Montanaro, Cliff Wells "
-"撰写并实现。"
 
 #: ../../whatsnew/2.3.rst:815
 msgid "PEP 307: Pickle Enhancements"
@@ -914,15 +900,15 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:849
 msgid ":pep:`307` - Extensions to the pickle protocol"
-msgstr ":pep:`307` - pickle 协议的扩展"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:850
 msgid "Written and implemented  by Guido van Rossum and Tim Peters."
-msgstr "PEP 由 Guido van Rossum 和 Tim Peters 撰写和实现。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:858
 msgid "Extended Slices"
-msgstr "扩展切片"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:860
 msgid ""
@@ -1001,25 +987,25 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:966
 msgid "Other Language Changes"
-msgstr "其他语言特性修改"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:968
 msgid ""
 "Here are all of the changes that Python 2.3 makes to the core Python "
 "language."
-msgstr "以下是 Python 2.3 针对核心 Python 语言的所有改变。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:970
 msgid ""
 "The :keyword:`yield` statement is now always a keyword, as described in "
 "section :ref:`section-generators` of this document."
-msgstr ":keyword:`yield` 语句现在将始终是关键字，如本文档的 :ref:`section-generators` 一节所描述的。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:973
 msgid ""
 "A new built-in function :func:`enumerate` was added, as described in section"
 " :ref:`section-enumerate` of this document."
-msgstr "新增内置函数 :func:`enumerate`，如本文档的 :ref:`section-enumerate` 一节所描述的。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:976
 msgid ""
@@ -1027,8 +1013,6 @@ msgid ""
 "the built-in :class:`bool` type, as described in section :ref:`section-bool`"
 " of this document."
 msgstr ""
-"新增两个常量 :const:`True` 和 :const:`False` 以及内置的 :class:`bool` 类型，如本文档的 "
-":ref:`section-bool` 一节所描述的。"
 
 #: ../../whatsnew/2.3.rst:980
 msgid ""
@@ -1085,7 +1069,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1029
 msgid "(Patches contributed by Raymond Hettinger.)"
-msgstr "（由 Raymond Hettinger 贡献补丁。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1031
 msgid ""
@@ -1095,7 +1079,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1037
 msgid "(Contributed by Just van Rossum.)"
-msgstr "（由 Just van Rossum 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1039
 msgid ""
@@ -1137,8 +1121,6 @@ msgid ""
 "warning.  In a future version of Python, ``None`` may finally become a "
 "keyword."
 msgstr ""
-"现在使用 ``None`` 作为变量名将导致 :exc:`SyntaxWarning` 警告。 在未来的 Python 版本中，``None`` "
-"将最终成为一个保留关键字。"
 
 #: ../../whatsnew/2.3.rst:1072
 msgid ""
@@ -1205,7 +1187,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1125
 msgid "String Changes"
-msgstr "字符串的改变"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1127
 msgid ""
@@ -1231,7 +1213,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1157
 msgid "(Suggested by Simon Brunning and implemented by Walter Dörwald.)"
-msgstr "（由 Simon Brunning 提议并由 Walter Dörwald 实现。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1159
 msgid ""
@@ -1249,7 +1231,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1174
 msgid "(Contributed by Walter Dörwald.)"
-msgstr "（由 Walter Dörwald 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1176
 msgid ""
@@ -1268,7 +1250,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1189
 msgid "Optimizations"
-msgstr "性能优化"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1191
 msgid ""
@@ -1322,7 +1304,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1221
 msgid "New, Improved, and Deprecated Modules"
-msgstr "新增，改进和弃用的模块"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1223
 msgid ""
@@ -1413,7 +1395,7 @@ msgstr ""
 msgid ""
 "The new ``gc.get_referents(object)`` function returns a list of all the "
 "objects referenced by *object*."
-msgstr "新的 ``gc.get_referents(object)`` 函数将返回由 *object* 引用的所有对象组成的列表。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1283
 msgid ""
@@ -1427,7 +1409,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1294
 msgid "(Contributed by Peter Åstrand.)"
-msgstr "（由 Peter Åstrand 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1296
 msgid ""
@@ -1461,7 +1443,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1332
 msgid "(Contributed by Kevin O'Connor.)"
-msgstr "（由 Kevin O'Connor 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1334
 msgid ""
@@ -1530,7 +1512,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1382
 msgid "In Python 2.4, the default will change to always returning floats."
-msgstr "在 Python 2.4 中，默认将改为总是返回浮点数。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1384
 msgid ""
@@ -1592,7 +1574,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1436
 msgid "(All changes contributed by Raymond Hettinger.)"
-msgstr "（所有改变均由 Raymond Hettinger 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1438
 msgid ""
@@ -1659,7 +1641,7 @@ msgstr ""
 msgid ""
 "On Windows, the :mod:`socket` module now ships with Secure  Sockets Layer "
 "(SSL) support."
-msgstr "在 Windows，:mod:`socket` 模块现在将附带安全套接字层（SSL）支持。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1477
 msgid ""
@@ -1667,8 +1649,6 @@ msgid ""
 "Python level as ``sys.api_version``.  The current exception can be cleared "
 "by calling the new :func:`sys.exc_clear` function."
 msgstr ""
-"现在 C :const:`PYTHON_API_VERSION` 宏的值将在 Python 层级上暴露为 ``sys.api_version``。 "
-"当前的异常可通过调用新的 :func:`sys.exc_clear` 函数来清除。"
 
 #: ../../whatsnew/2.3.rst:1481
 msgid ""
@@ -1804,7 +1784,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1639
 msgid "(Contributed by Raymond Hettinger.)"
-msgstr "（由 Raymond Hettinger 贡献。）"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1641
 msgid ""
@@ -1857,7 +1837,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1679
 msgid "Date/Time Type"
-msgstr "Date/Time 类型"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1681
 msgid ""
@@ -1917,7 +1897,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1734
 msgid "The optparse Module"
-msgstr "optparse 模块"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1736
 msgid ""
@@ -1958,7 +1938,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1793
 msgid "See the module's documentation for more details."
-msgstr "有关更多详细信息，请参见模块的文档。"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1796
 msgid ""
@@ -2063,7 +2043,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1869
 msgid "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
-msgstr "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1868
 msgid ""
@@ -2074,11 +2054,11 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1876
 msgid "Build and C API Changes"
-msgstr "构建和 C API 的改变"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1878
 msgid "Changes to Python's build process and to the C API include:"
-msgstr "针对 Python 构建过程和 C API 的改变包括:"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1880
 msgid ""
@@ -2173,7 +2153,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1938
 msgid "Port-Specific Changes"
-msgstr "移植专属的改变"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1940
 msgid ""
@@ -2211,7 +2191,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1966
 msgid "Other Changes and Fixes"
-msgstr "其他的改变和修正"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1968
 msgid ""
@@ -2223,7 +2203,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1973
 msgid "Some of the more notable changes are:"
-msgstr "一些较为重要的改变:"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:1975
 msgid ""
@@ -2284,7 +2264,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:2015
 msgid "Porting to Python 2.3"
-msgstr "移植到 Python 2.3"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:2017
 msgid ""
@@ -2372,7 +2352,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:2077
 msgid "Acknowledgements"
-msgstr "致谢"
+msgstr ""
 
 #: ../../whatsnew/2.3.rst:2079
 msgid ""
@@ -2385,10 +2365,3 @@ msgid ""
 "Norwitz, Hans Nowak, Chris Reedy, Francesco Ricciardi, Vinay Sajip, Neil "
 "Schemenauer, Roman Suzi, Jason Tishler, Just van Rossum."
 msgstr ""
-"作者感谢以下人员为本文的各种草案提供建议，更正和帮助： Jeff Bauer, Simon Brunning, Brett Cannon, "
-"Michael Chermside, Andrew Dalke, Scott David Daniels, Fred L. Drake, Jr., "
-"David Fraser,  Kelly Gerber, Raymond Hettinger, Michael Hudson, Chris "
-"Lambert, Detlef Lannert, Martin von Löwis, Andrew MacIntyre, Lalo Martins, "
-"Chad Netzer, Gustavo Niemeyer, Neal Norwitz, Hans Nowak, Chris Reedy, "
-"Francesco Ricciardi, Vinay Sajip, Neil Schemenauer, Roman Suzi, Jason "
-"Tishler, Just van Rossum."

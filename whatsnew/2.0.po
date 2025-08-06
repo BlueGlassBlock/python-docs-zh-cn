@@ -1,24 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Fred <fred.wei@foxmail.com>, 2018
-# Fei Yin <icebirds@163.com>, 2018
-# Naisen Xu <723648649@qq.com>, 2019
-# ppcfish <ppcfish@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:34+0000\n"
-"PO-Revision-Date: 2017-02-16 23:42+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 19:10+0000\n"
+"PO-Revision-Date: 2025-07-18 19:18+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,15 +23,15 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:3
 msgid "What's New in Python 2.0"
-msgstr "Python 2.0 有什么新变化"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:0
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:5
 msgid "A.M. Kuchling and Moshe Zadka"
-msgstr "A.M. Kuchling 和 Moshe Zadka"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:13
 msgid "Introduction"
@@ -49,8 +44,6 @@ msgid ""
 "useful changes, and points out a few incompatible changes that may require "
 "rewriting code."
 msgstr ""
-" 新的发行版 Python  2.0 发布于2000年10月16 日。本文介绍了 Python 2.0 "
-"中令人兴奋的新功能，着重描述了一些其他有用的更改，并指出了一些可能需要重写代码的不兼容更改。"
 
 #: ../../whatsnew/2.0.rst:20
 msgid ""
@@ -67,7 +60,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:33
 msgid "What About Python 1.6?"
-msgstr "Python 1.6 将会怎样？"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:35
 msgid ""
@@ -95,7 +88,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:57
 msgid "New Development Process"
-msgstr "新开发流程"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:59
 msgid ""
@@ -200,7 +193,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:141
 msgid "Unicode"
-msgstr "Unicode"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:143
 msgid ""
@@ -367,7 +360,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:262
 msgid "List Comprehensions"
-msgstr "列表推导式"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:264
 msgid ""
@@ -484,7 +477,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:390
 msgid "String Methods"
-msgstr "字符串的方法"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:392
 msgid ""
@@ -537,7 +530,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:433
 msgid "Garbage Collection of Cycles"
-msgstr "循环的垃圾回收"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:435
 msgid ""
@@ -620,7 +613,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:495
 msgid "Other Core Changes"
-msgstr "其他核心变化"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:497
 msgid ""
@@ -631,7 +624,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:502
 msgid "Minor Language Changes"
-msgstr "细微的语言特性修改"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:504
 msgid ""
@@ -743,12 +736,10 @@ msgid ""
 "introduced.  They're both subclasses of :exc:`SyntaxError`, and are raised "
 "when Python code is found to be improperly indented."
 msgstr ""
-"新引入了两个异常 :exc:`TabError` 和 :exc:`IndentationError`。 它们均为 :exc:`SyntaxError` "
-"的子类，并会在发现 Python 代码缩进不正确时被引发。"
 
 #: ../../whatsnew/2.0.rst:601
 msgid "Changes to Built-in Functions"
-msgstr "对于内置函数的修改"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:603
 msgid ""
@@ -805,7 +796,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:647
 msgid "Porting to 2.0"
-msgstr "移植 Python 2.0"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:649
 msgid ""
@@ -924,7 +915,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:740
 msgid "Extending/Embedding Changes"
-msgstr "扩展/嵌入更改"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:742
 msgid ""
@@ -1026,7 +1017,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:811
 msgid "Distutils: Making Modules Easy to Install"
-msgstr "Distutils：使模块易于安装"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:813
 msgid ""
@@ -1062,20 +1053,18 @@ msgid ""
 "  For the simple case, when the software contains only .py files, a minimal "
 ":file:`setup.py` can be just a few lines long::"
 msgstr ""
-"为了使用 Distutils，你需要编写一个 :file:`setup.py` 脚本。 在简单场景下，当软件仅包含 .py 文件时，最小化的 "
-":file:`setup.py` 可以只有几行代码::"
 
 #: ../../whatsnew/2.0.rst:841
 msgid ""
 "The :file:`setup.py` file isn't much more complicated if the software "
 "consists of a few packages::"
-msgstr "如果软件是由几个包组成的 :file:`setup.py` 文件也不会太过复杂::"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:848
 msgid ""
 "A C extension can be the most complicated case; here's an example taken from"
 " the PyXML package::"
-msgstr "最复杂的情况可能是 C 扩展；下面是一个来自 PyXML 包的示例::"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:864
 msgid ""
@@ -1097,7 +1086,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:880
 msgid "XML Modules"
-msgstr "XML 模块"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:882
 msgid ""
@@ -1255,7 +1244,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:1029
 msgid "Module changes"
-msgstr "模块更改"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1031
 msgid ""
@@ -1317,7 +1306,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:1074
 msgid "New modules"
-msgstr "新增模块"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1076
 msgid ""
@@ -1439,7 +1428,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:1150
 msgid "IDLE Improvements"
-msgstr "IDLE 改进"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1152
 msgid ""
@@ -1476,19 +1465,19 @@ msgstr ""
 msgid ""
 "IDLE now has a command line, which is largely similar to  the vanilla Python"
 " interpreter."
-msgstr "IDLE 现在有一个命令行，它与原版 Python 解释器大致相同。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1171
 msgid "Call tips were added in many places."
-msgstr "在许多地方添加了调用提示。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1173
 msgid "IDLE can now be installed as a package."
-msgstr "IDLE 现在可以作为一个包被安装。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1175
 msgid "In the editor window, there is now a line/column bar at the bottom."
-msgstr "在编辑器窗口中，目前在底部位置增加了一个行/列显示栏。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1177
 msgid ""
@@ -1498,7 +1487,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:1184
 msgid "Deleted and Deprecated Modules"
-msgstr "删除和弃用的模块"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1186
 msgid ""
@@ -1521,7 +1510,7 @@ msgstr ""
 
 #: ../../whatsnew/2.0.rst:1199
 msgid "Acknowledgements"
-msgstr "致谢"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:1201
 msgid ""
@@ -1531,7 +1520,3 @@ msgid ""
 "Skip Montanaro, Vladimir Marangozov, Tobias Polzin, Guido van Rossum, Neil "
 "Schemenauer, and Russ Schmidt."
 msgstr ""
-"作者感谢以下人士对本文的各种草稿提出建议： David Bolen, Mark Hammond, Gregg Hauser, Jeremy "
-"Hylton, Fredrik Lundh, Detlef Lannert, Aahz Maruch, Skip Montanaro, Vladimir"
-" Marangozov, Tobias Polzin, Guido van Rossum, Neil Schemenauer, and Russ "
-"Schmidt."
