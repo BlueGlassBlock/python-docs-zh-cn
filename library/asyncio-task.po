@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +57,7 @@ msgstr "注意：简单地调用一个协程并不会使其被调度执行"
 
 #: ../../library/asyncio-task.rst:47
 msgid "To actually run a coroutine, asyncio provides three main mechanisms:"
-msgstr "要真正运行一个协程，asyncio 提供了三种主要机制:"
+msgstr "要实际运行协程，asyncio 提供了三种主要机制:"
 
 #: ../../library/asyncio-task.rst:49
 msgid ""
@@ -70,7 +70,7 @@ msgid ""
 "Awaiting on a coroutine.  The following snippet of code will print \"hello\""
 " after waiting for 1 second, and then print \"world\" after waiting for "
 "*another* 2 seconds::"
-msgstr "等待一个协程。以下代码段会在等待 1 秒后打印 \"hello\"，然后 *再次* 等待 2 秒后打印 \"world\"::"
+msgstr "对协程执行 await。以下代码段会在等待 1 秒后打印 \"hello\"，然后 *再次* 等待 2 秒后打印 \"world\"::"
 
 #: ../../library/asyncio-task.rst:73
 msgid "Expected output::"
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../../library/asyncio-task.rst:294 ../../library/asyncio-task.rst:846
 msgid "Added the *name* parameter."
-msgstr "添加了 *name* 形参。"
+msgstr "增加了 *name* 形参。"
 
 #: ../../library/asyncio-task.rst:299
 msgid "Sleeping"
@@ -823,7 +823,8 @@ msgid ""
 "cancellation, the Future object will be cancelled."
 msgstr ""
 "要取消一个正在运行的 Task 对象可使用 :meth:`cancel` 方法。调用此方法将使该 Task 对象抛出一个 "
-":exc:`CancelledError` 异常给打包的协程。如果取消期间一个协程正在等待一个 Future 对象，该 Future 对象也将被取消。"
+":exc:`CancelledError` 异常给打包的协程。如果取消期间一个协程正在对 Future 对象执行 await，该 Future "
+"对象也将被取消。"
 
 #: ../../library/asyncio-task.rst:830
 msgid ""

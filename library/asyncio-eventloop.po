@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,6 +119,10 @@ msgid ""
 ":exc:`DeprecationWarning` if there is no running event loop and no current "
 "loop is set. In some future Python release this will become an error."
 msgstr ""
+"在 Python 3.10.0--3.10.8 和 3.11.0 等版本中此函数（及隐式地使用了它的其他函数）会在没有正在运行的事件循环时发出 "
+":exc:`DeprecationWarning`，即使在策略中设置了当前循环也是如此。 在 Python 3.10.9, 3.11.1 和 3.12 "
+"等版本中在没有正在运行的事件循环且未设置当前循环时它们将发出 :exc:`DeprecationWarning`。 在未来的某个 Python "
+"发布版中这将被改为错误。"
 
 #: ../../library/asyncio-eventloop.rst:74
 msgid "Set *loop* as the current event loop for the current OS thread."
@@ -338,9 +342,7 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:226
 msgid "Unlike :meth:`call_soon_threadsafe`, this method is not thread-safe."
-msgstr ""
-"与 :meth:`call_soon_threadsafe` 不同，此方法不是线程安全的。, this method is not thread-"
-"safe."
+msgstr "与 :meth:`call_soon_threadsafe` 不同，此方法不是线程安全的。"
 
 #: ../../library/asyncio-eventloop.rst:230
 msgid ""
@@ -512,7 +514,7 @@ msgstr "如果提供了 *name* 参数且不为 ``None``，它会使用 :meth:`Ta
 
 #: ../../library/asyncio-eventloop.rst:360
 msgid "Added the *name* parameter."
-msgstr "添加了 *name* 形参。"
+msgstr "增加了 *name* 形参。"
 
 #: ../../library/asyncio-eventloop.rst:365
 msgid "Set a task factory that will be used by :meth:`loop.create_task`."
@@ -634,7 +636,7 @@ msgid ""
 "matching is disabled (which is a serious security risk, allowing for "
 "potential man-in-the-middle attacks)."
 msgstr ""
-"*server_hostname* 设置或重载目标服务器的证书将要匹配的主机名。 应当只在 *ssl* 不为 ``None`` 时传入。 "
+"*server_hostname* 设置或覆盖目标服务器的证书将要匹配的主机名。 应当只在 *ssl* 不为 ``None`` 时传入。 "
 "默认情况下会使用 *host* 参数的值。 如果 *host* 为空那就没有默认值，你必须为 *server_hostname* 传入一个值。 如果 "
 "*server_hostname* 为空字符串，则主机名匹配会被禁用（这是一个严重的安全风险，使得潜在的中间人攻击成为可能）。"
 
@@ -1592,7 +1594,7 @@ msgid ""
 "registered using :func:`signal.signal`, a callback registered with this "
 "function is allowed to interact with the event loop."
 msgstr ""
-"此回调将与该事件循环中其他加入队列的回调和可运行协程一起由 *loop* 发起调用。 不同与使用 :func:`signal.signal` "
+"此回调将与该事件循环中其他加入队列的回调和可运行协程一起由 *loop* 唤起。 不同与使用 :func:`signal.signal` "
 "注册的信号处理程序，使用此函数注册的回调可以与事件循环进行交互。"
 
 #: ../../library/asyncio-eventloop.rst:1094
@@ -1914,7 +1916,7 @@ msgstr "*stdin* 可以是以下对象之一:"
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard input stream using :meth:`~loop.connect_write_pipe`"
-msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输入流的管道"
+msgstr "一个文件型对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输入流的管道"
 
 #: ../../library/asyncio-eventloop.rst:1333
 #: ../../library/asyncio-eventloop.rst:1345
@@ -1948,7 +1950,7 @@ msgstr "*stdout* 可以是以下对象之一:"
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard output stream using :meth:`~loop.connect_write_pipe`"
-msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输出流的管道"
+msgstr "一个文件型对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准输出流的管道"
 
 #: ../../library/asyncio-eventloop.rst:1352
 msgid "*stderr* can be any of these:"
@@ -1958,7 +1960,7 @@ msgstr "*stderr* 可以是以下对象之一:"
 msgid ""
 "a file-like object representing a pipe to be connected to the subprocess's "
 "standard error stream using :meth:`~loop.connect_write_pipe`"
-msgstr "一个文件类对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准错误流的管道"
+msgstr "一个文件型对象，表示要使用 :meth:`~loop.connect_write_pipe` 连接到子进程的标准错误流的管道"
 
 #: ../../library/asyncio-eventloop.rst:1363
 msgid ""

@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1080,8 +1080,8 @@ msgid ""
 ":func:`time.ctime` invokes, but which :meth:`date.ctime` does not invoke) "
 "conforms to the C standard."
 msgstr ""
-"在原生 C :c:func:`ctime` 函数 (:func:`time.ctime` 会发起调用该函数，但 :meth:`date.ctime` "
-"则不会) 遵循 C 标准的平台上。"
+"在原生 C :c:func:`ctime` 函数遵循 C 标准的平台上 (:func:`time.ctime` 会发起对该函数的调用，但 "
+":meth:`date.ctime` 并不会) 。"
 
 #: ../../library/datetime.rst:733
 msgid ""
@@ -1750,7 +1750,7 @@ msgid ""
 ":class:`tzinfo` subclass to affect the result returned by "
 ":meth:`astimezone`. Ignoring error cases, :meth:`astimezone` acts like::"
 msgstr ""
-"请注意默认的 :meth:`tzinfo.fromutc` 方法在 :class:`tzinfo` 的子类中可以被重载，从而影响 "
+"请注意默认的 :meth:`tzinfo.fromutc` 方法在 :class:`tzinfo` 的子类中可以被重写，从而影响 "
 ":meth:`astimezone` 的返回结果。 如果忽略出错的情况，:meth:`astimezone` 的行为就类似于::"
 
 #: ../../library/datetime.rst:1274
@@ -2048,8 +2048,8 @@ msgid ""
 ":func:`time.ctime` invokes, but which :meth:`datetime.ctime` does not "
 "invoke) conforms to the C standard."
 msgstr ""
-"在原生 C :c:func:`ctime` 函数 (:func:`time.ctime` 会发起调用该函数，但 "
-":meth:`datetime.ctime` 则不会) 遵循 C 标准的平台上。"
+"在原生 C :c:func:`ctime` 函数遵循 C 标准的平台上 (:func:`time.ctime` 会发起对该函数的调用，但 "
+":meth:`datetime.ctime` 并不会) 。"
 
 #: ../../library/datetime.rst:1507
 msgid ""
@@ -2462,7 +2462,7 @@ msgstr ""
 "必须为具有同样的 :class:`tzinfo` 子类实例且 ``dt.tzinfo == tz`` 的每个 :class:`.datetime` 对象"
 " *dt* 返回同样的结果，此表达式会产生时区的“标准时差”，它不应取决于具体日期或时间，只取决于地理位置。 "
 ":meth:`datetime.astimezone` 的实现依赖此方法，但无法检测违反规则的情况；确保符合规则是程序员的责任。 如果一个 "
-":class:`tzinfo` 子类不能保证这一点，也许可以重载 :meth:`tzinfo.fromutc` 的默认实现以便在任何情况下与 "
+":class:`tzinfo` 子类不能保证这一点，也许可以重写 :meth:`tzinfo.fromutc` 的默认实现以便在任何情况下与 "
 ":meth:`astimezone` 正确配合。"
 
 #: ../../library/datetime.rst:2011
@@ -2547,7 +2547,7 @@ msgstr ""
 msgid ""
 "There is one more :class:`tzinfo` method that a subclass may wish to "
 "override:"
-msgstr "还有一个额外的 :class:`tzinfo` 方法，某个子类可能会希望重载它："
+msgstr "还有一个额外的 :class:`tzinfo` 方法，某个子类可能会希望重写它："
 
 #: ../../library/datetime.rst:2073
 msgid ""
@@ -3240,7 +3240,7 @@ msgstr "%"
 msgid ""
 "Several additional directives not required by the C89 standard are included "
 "for convenience. These parameters all correspond to ISO 8601 date values."
-msgstr "为了方便起见，还包括了C89标准不需要的其他一些指令。这些参数都对应于ISO 8601日期值。"
+msgstr "为了方便起见，还包括了C89标准不需要的其他一些指示符。 这些参数都对应于 ISO 8601 日期值。"
 
 #: ../../library/datetime.rst:2413
 msgid "``%G``"

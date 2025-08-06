@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:23+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:10+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -280,7 +280,7 @@ msgid ""
 "mode.  It is assumed to be at the start of the archive."
 msgstr ""
 "返回打包文件开头的  行指定的解释器程序。如果没有 ``#!`` 行，则返回 :const:`None`。参数 *archive* "
-"可为文件名或在字节串模式下打开以供读取的文件类对象。``#!`` 行假定是在打包文件的开头。"
+"可为文件名或在字节串模式下打开以供读取的文件型对象。``#!`` 行假定是在打包文件的开头。"
 
 #: ../../library/zipapp.rst:188
 msgid "Examples"
@@ -546,7 +546,7 @@ msgid ""
 "the default behaviour of the installer) or you should bundle your "
 "application with the embedded distribution."
 msgstr ""
-"若要如上所述发布一个 Windows 可执行文件，就得确保用户在 PATH 中包含``python3.dll`` "
+"若要如上所述发布一个 Windows 可执行文件，就得确保用户在 PATH 中包含 ``python3.dll`` "
 "的路径（安装程序默认不会如此），或者应把应用程序与内嵌版 Python 一起打包。"
 
 #: ../../library/zipapp.rst:408

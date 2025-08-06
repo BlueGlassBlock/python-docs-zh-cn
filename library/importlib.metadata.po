@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,16 +97,16 @@ msgid ""
 ":ref:`constituent files <files>`, and get a list of the distribution's "
 ":ref:`requirements`."
 msgstr ""
-"你也可以获得 :ref:`分发的版本号 <version>`，列出它的 :ref:`构成文件 <files>`，并且得到分发的 "
+"你也可以获得 :ref:`分发包的版本号 <version>`，列出它的 :ref:`构成文件 <files>`，并且得到分发包的 "
 ":ref:`requirements` 列表。"
 
 #: ../../library/importlib.metadata.rst:72
 msgid "Functional API"
-msgstr "功能性 API"
+msgstr "函数式 API"
 
 #: ../../library/importlib.metadata.rst:74
 msgid "This package provides the following functionality via its public API."
-msgstr "这个包通过其公共 API 提供了以下功能。"
+msgstr "这个包的公开 API 提供了以下功能。"
 
 #: ../../library/importlib.metadata.rst:80
 msgid "Entry points"
@@ -122,8 +122,8 @@ msgid ""
 "attribute."
 msgstr ""
 "``entry_points()`` 函数返回入口点的字典。入口点表现为 ``EntryPoint`` 的实例；每个 ``EntryPoint`` "
-"对象都有 ``.name`` ，``.group`` 与 ``.value`` 属性，用于解析值的 ``.load()`` 方法， "
-"``.module`` ，``.attr`` 与 ``.extras`` 属性是 ``.value`` 属性的对应部分。"
+"对象都有 ``.name`` ，``.group`` 与 ``.value`` 属性，用于解析值的 ``.load()`` 方法， 来自 "
+"``.value`` 属性的对应部分的 ``.module``, ``.attr`` 与 ``.extras`` 属性。"
 
 #: ../../library/importlib.metadata.rst:89
 msgid "Query all entry points::"
@@ -211,7 +211,7 @@ msgid ""
 "The keys of the returned data structure, a ``PackageMetadata``, name the "
 "metadata keywords, and the values are returned unparsed from the "
 "distribution metadata::"
-msgstr "返回的数据架构 ``PackageMetadata`` 的键代表元数据的关键字，而值从分发的元数据中不被解析地返回："
+msgstr "返回的数据结构 ``PackageMetadata`` 的键代表元数据的关键字，而值从分发的元数据中不被解析地返回："
 
 #: ../../library/importlib.metadata.rst:171
 msgid ""
@@ -232,7 +232,7 @@ msgstr "添加了 ``json`` 属性。"
 
 #: ../../library/importlib.metadata.rst:188
 msgid "Distribution versions"
-msgstr "分发的版本"
+msgstr "分发包的版本"
 
 #: ../../library/importlib.metadata.rst:190
 msgid ""
@@ -242,7 +242,7 @@ msgstr "``version()`` 函数是以字符串形式获取分发的版本号的最�
 
 #: ../../library/importlib.metadata.rst:200
 msgid "Distribution files"
-msgstr "分发的文件"
+msgstr "分发包的文件"
 
 #: ../../library/importlib.metadata.rst:202
 msgid ""
@@ -283,7 +283,7 @@ msgstr ""
 
 #: ../../library/importlib.metadata.rst:246
 msgid "Distribution requirements"
-msgstr "分发的依赖"
+msgstr "分发包的依赖"
 
 #: ../../library/importlib.metadata.rst:248
 msgid ""
@@ -303,7 +303,7 @@ msgstr "一个用来解析顶级 Python 包或者模块对应的分发的便捷�
 
 #: ../../library/importlib.metadata.rst:270
 msgid "Distributions"
-msgstr "分发"
+msgstr "分发包对象"
 
 #: ../../library/importlib.metadata.rst:272
 msgid ""

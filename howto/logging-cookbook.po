@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../howto/logging-cookbook.rst:5
 msgid "Logging Cookbook"
-msgstr "日志操作手册"
+msgstr "日志专题手册"
 
 #: ../../howto/logging-cookbook.rst:0
 msgid "Author"
@@ -38,13 +38,11 @@ msgid ""
 "This page contains a number of recipes related to logging, which have been "
 "found useful in the past. For links to tutorial and reference information, "
 "please see :ref:`cookbook-ref-links`."
-msgstr ""
-"本页面包含多个与日志记录相关的预置程序，它们在之前被认为都是有用处的。 要获取教程和参考信息的链接，请参阅 :ref:`cookbook-ref-"
-"links`。"
+msgstr "本页面包含多个与日志相关的专题，历史证明它们是很有用的。教程和参考信息的链接另见 :ref:`cookbook-ref-links`。"
 
 #: ../../howto/logging-cookbook.rst:16
 msgid "Using logging in multiple modules"
-msgstr "在多个模块中记录日志"
+msgstr "在多模块中使用日志"
 
 #: ../../howto/logging-cookbook.rst:18
 msgid ""
@@ -188,7 +186,7 @@ msgid ""
 "get processed by a handler. To do this, you need to use filters. Let's look "
 "at a scenario where you want to arrange things as follows:"
 msgstr ""
-"有时，你想要做的可能略微不同于处理句柄中标准的级别处理方式，即某个界限以上的所有级别都会被处理句柄所处理。 要做到这一点，你需要使用过滤器。 "
+"有时，你想要做的可能略微不同于处理器中标准的级别处理方式，即某个界限以上的所有级别都会被处理器所处理。 要做到这一点，你需要使用过滤器。 "
 "让我们来看一个假设你想要执行如下安排的场景:"
 
 #: ../../howto/logging-cookbook.rst:289
@@ -216,12 +214,12 @@ msgid ""
 "by adding a ``filters`` section parallel to ``formatters`` and ``handlers``:"
 msgstr ""
 "这个配置 *几乎* 能做到我们想要的，除了 ``sys.stdout`` 在 ``INFO`` 和 ``WARNING`` 消息之外还会显示严重级别 "
-"``ERROR`` 及以上的消息。 为防止这种情况，我们可以设置一个排除掉这些消息的过滤器并将其添加到相应的处理句柄。 这可以通过添加一个平行于 "
+"``ERROR`` 及以上的消息。 为防止这种情况，我们可以设置一个排除掉这些消息的过滤器并将其添加到相应的处理器。 这可以通过添加一个平行于 "
 "``formatters`` 和 ``handlers`` 的 ``filters`` 节来配置:"
 
 #: ../../howto/logging-cookbook.rst:352
 msgid "and changing the section on the ``stdout`` handler to add it:"
-msgstr "并修改 ``stdout`` 处理句柄上的节来添加它:"
+msgstr "并修改 ``stdout`` 处理器上的节来添加它:"
 
 #: ../../howto/logging-cookbook.rst:366
 msgid ""
@@ -360,7 +358,7 @@ msgid ""
 "application, to use the above approach for logging, so that any blocking "
 "code runs only in the ``QueueListener`` thread."
 msgstr ""
-"虽然前面的讨论没有专门提及异步代码，但需要注意当在异步代码中记录日志时，网络甚至文件处理句柄都可能会导致问题（阻塞事件循环）因为某些日志记录是在 "
+"虽然前面的讨论没有专门提及异步代码，但需要注意当在异步代码中记录日志时，网络甚至文件处理器都可能会导致问题（阻塞事件循环）因为某些日志记录是在 "
 ":mod:`asyncio` 内部完成的。 如果在应用程序中使用了任何异步代码，最好的做法是使用上面的日志记录方式，这样任何阻塞式代码都将只在 "
 "``QueueListener`` 线程中运行。"
 
@@ -789,7 +787,7 @@ msgstr ""
 
 #: ../../howto/logging-cookbook.rst:1222
 msgid "Imparting contextual information in handlers"
-msgstr "在处理句柄中传递上下文信息"
+msgstr "在处理器中传递上下文信息"
 
 #: ../../howto/logging-cookbook.rst:1224
 msgid ""
@@ -799,7 +797,7 @@ msgid ""
 "instead of modifying it in-place, as shown in the following script::"
 msgstr ""
 "每个 :class:`~Handler` 都有自己的过滤器链。 如果你想向一个 :class:`LogRecord` "
-"添加上下文信息而不使其泄露给其它处理句柄，你可以使用一个返回新 :class:`~LogRecord` 而不是原地修改它的过滤器，如下面的脚本所示::"
+"添加上下文信息而不使其泄露给其它处理器，你可以使用一个返回新 :class:`~LogRecord` 而不是原地修改它的过滤器，如下面的脚本所示::"
 
 #: ../../howto/logging-cookbook.rst:1251
 msgid "Logging to a single file from multiple processes"
@@ -924,7 +922,7 @@ msgid ""
 msgstr ""
 "当使用 `Gunicorn <https://gunicorn.org/>`_ 或 `uWSGI <https://uwsgi-"
 "docs.readthedocs.io/en/latest/>`_ (或其他类似工具) 来部署 Web 应用时，会创建多个工作进程来处理客户端请求。 "
-"在这种环境下，要避免在你的 Web 应用中直接创建基于文件的处理句柄。 而应改为使用一个 :class:`SocketHandler` 将来自 Web "
+"在这种环境下，要避免在你的 Web 应用中直接创建基于文件的处理器。 而应改为使用一个 :class:`SocketHandler` 将来自 Web "
 "应用的日志发送到在单独进程中运行的监听器。 这可以通过使用一个进程管理工具例如 Supervisor 来进行设置 —— 请参阅 `Running a "
 "logging socket listener in production`_ 了解详情。"
 
@@ -1236,7 +1234,7 @@ msgid ""
 "socket is created separately and passed to the handler (as its 'queue')::"
 msgstr ""
 "你可以使用 :class:`QueueHandler` 子类将消息发送给其他类型的队列 ，比如 ZeroMQ 'publish' 套接字。 "
-"在以下示例中，套接字将单独创建并传给处理句柄 (作为它的 'queue')::"
+"在以下示例中，套接字将单独创建并传给处理器 (作为它的 'queue')::"
 
 #: ../../howto/logging-cookbook.rst:1868
 msgid ""
@@ -1581,7 +1579,7 @@ msgid ""
 "is constructed."
 msgstr ""
 "在 Python 3.2 中，:class:`~logging.Formatter` 增加了一个 ``style`` 关键字形参，它默认为 ``%`` "
-"以便向下兼容，但是允许采用 ``{`` 或 ``{TX-PL-LABEL}#x60;`` 来支持 :meth:`str.format` 和 "
+"以便向下兼容，但是允许采用 ``{`` 或 ``$`` 来支持 :meth:`str.format` 和 "
 ":class:`string.Template` 所支持的格式化方式。 "
 "请注意此形参控制着用用于最终输出到日志的日志消息格式，并且与单独日志消息的构造方式完全无关。"
 
@@ -1642,7 +1640,7 @@ msgid ""
 msgstr ""
 "在 Python 3.2 中，伴随着 :class:`~logging.Formatter` 的上述变化，logging 包增加了允许用户使用 "
 ":func:`setLogRecordFactory` 函数来。设置自己的 :class:`LogRecord` 子类的功能。 "
-"你可以使用此功能来设置自己的 :class:`LogRecord` 子类，它会通过重载 :meth:`~LogRecord.getMessage` "
+"你可以使用此功能来设置自己的 :class:`LogRecord` 子类，它会通过重写 :meth:`~LogRecord.getMessage` "
 "方法来完成适当的操作。 ``msg % args`` "
 "格式化是在此方法的基类实现中进行的，你可以在那里用你自己的格式化操作来替换；但是，你应当注意要支持全部的格式化样式并允许将 %-formatting "
 "作为默认样式，以确保与其他代码进行配合。 还应当注意调用 ``str(self.msg)``，正如基类实现所做的一样。"
@@ -2206,7 +2204,7 @@ msgid ""
 "you can do so with a subclassed handler which looks something like this::"
 msgstr ""
 "RFC 5424 包括一些有用的特性例如对结构化数据的支持等，如果你想要能够将日志记录到带有该协议支持的 syslog "
-"服务器上，你可以使用一个看起来像是这样的子类化处理句柄来实现::"
+"服务器上，你可以使用一个看起来像是这样的子类化处理器来实现::"
 
 #: ../../howto/logging-cookbook.rst:3708
 msgid ""
@@ -2217,7 +2215,7 @@ msgid ""
 "using something like this::"
 msgstr ""
 "你需要熟悉 RFC 5424 才能完全理解上面的代码，你还可能会有稍加变化的的需求（例如你要如何将结构化数据记入日志）。 "
-"不管怎样，上面的代码应当根据你的特定需求来灵活调整。 通过上面的处理句柄，你可以使用类似这样的代码来传入结构化数据::"
+"不管怎样，上面的代码应当根据你的特定需求来灵活调整。 通过上面的处理器，你可以使用类似这样的代码来传入结构化数据::"
 
 #: ../../howto/logging-cookbook.rst:3722
 msgid "How to treat a logger like an output stream"
@@ -2230,7 +2228,7 @@ msgid ""
 "logger. You can do this using a class which wraps a logger with a file-like "
 "API. Here's a short script illustrating such a class:"
 msgstr ""
-"有时，你需要通过接口访问某个预期要写入到文件类对象第三方 API，但你希望将 API 的输出重定向到一个日志记录器。 你可以使用一个以文件类 API "
+"有时，你需要通过接口访问某个预期要写入到文件型对象第三方 API，但你希望将 API 的输出重定向到一个日志记录器。 你可以使用一个以文件类 API "
 "来包装日志记录器的类。 下面是一个演示这样的类的简短脚本:"
 
 #: ../../howto/logging-cookbook.rst:3764
@@ -2283,6 +2281,9 @@ msgid ""
 "when newlines are seen. Let's use a slghtly better implementation of "
 "``LoggerWriter``:"
 msgstr ""
+"你可以看到，这个输出并不很理解。 那是因为在下层写入到 ``sys.stderr`` "
+"的代码会执行多次写入，每次写入将产生一条单独的日志记录行（例如，上面的最后三行）。 要避免这个问题，你需要使用缓冲并且只在看到换行符时才输出日志记录行。"
+" 让我们使用一个更好些的 ``LoggerWriter`` 实现:"
 
 #: ../../howto/logging-cookbook.rst:3850
 msgid ""
@@ -2427,7 +2428,7 @@ msgstr ""
 
 #: ../../howto/logging-cookbook.rst:3946
 msgid "Other resources"
-msgstr "其他资源"
+msgstr "其它资源"
 
 #: ../../howto/logging-cookbook.rst:3959
 msgid ":ref:`Basic Tutorial <logging-basic-tutorial>`"

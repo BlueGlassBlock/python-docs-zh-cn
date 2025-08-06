@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -155,8 +155,7 @@ msgid ""
 "positive number for greater-than.  A key function is a callable that accepts"
 " one argument and returns another value to be used as the sort key."
 msgstr ""
-"比较函数是任何接受两个参数，对它们进行比较，并在结果为小于时返回一个负数，相等时返回零，大于时返回一个正数的可调用对象。 "
-"键函数是接受一个参数并返回另一个用作排序键的值的可调用对象。"
+"比较函数是任何接受两个参数，比较它们，并在结果为小于时返回负数，等于时返回零，大于时返回正数的可调用对象。键函数是接受一个参数并返回另一值的可调用对象，返回值在排序时被用作键。"
 
 #: ../../library/functools.rst:131
 msgid ""
@@ -347,7 +346,7 @@ msgid ""
 "comparison operator, *total_ordering* will not implement it again, even if "
 "the original method is abstract."
 msgstr ""
-"这个装饰器不会尝试重载类 *或其上级类* 中已经被声明的方法。 这意味着如果某个上级类定义了比较运算符，则 *total_ordering* "
+"这个装饰器不会尝试重写类 *或其上级类* 中已经被声明的方法。 这意味着如果某个上级类定义了比较运算符，则 *total_ordering* "
 "将不会再次实现它，即使原方法是抽象方法。"
 
 #: ../../library/functools.rst:300
@@ -365,7 +364,7 @@ msgid ""
 "extend and override *keywords*. Roughly equivalent to::"
 msgstr ""
 "返回一个新的 :ref:`部分对象<partial-objects>`，当被调用时其行为类似于 *func* 附带位置参数 *args* 和关键字参数 "
-"*keywords* 被调用。 如果为调用提供了更多的参数，它们会被附加到 *args*。 如果提供了额外的关键字参数，它们会扩展并重载 "
+"*keywords* 被调用。 如果为调用提供了更多的参数，它们会被附加到 *args*。 如果提供了额外的关键字参数，它们会扩展并重写 "
 "*keywords*。 大致等价于::"
 
 #: ../../library/functools.rst:322
@@ -647,7 +646,7 @@ msgid ""
 "``partial(update_wrapper, wrapped=wrapped, assigned=assigned, "
 "updated=updated)``. For example::"
 msgstr ""
-"这是一个便捷函数，用于在定义包装器函数时发起调用 :func:`update_wrapper` 作为函数装饰器。 它等价于 "
+"这是一个便捷函数，用于在定义包装器函数时唤起 :func:`update_wrapper` 作为函数装饰器。 它等价于 "
 "``partial(update_wrapper, wrapped=wrapped, assigned=assigned, "
 "updated=updated)``。 例如::"
 

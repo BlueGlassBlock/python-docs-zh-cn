@@ -1,21 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2022
-# CCXXXI <ccxxxi@qq.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1453,13 +1451,13 @@ msgstr ""
 
 #: ../../library/functions.rst:829
 msgid "This is the address of the object in memory."
-msgstr "这是对象在内在中的地址。"
+msgstr "这是对象在内存中的地址。"
 
 #: ../../library/functions.rst:831
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``builtins.id`` with argument "
 "``id``."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``builtins.id``，附带参数 ``id``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``builtins.id`` 并附带参数 ``id``。"
 
 #: ../../library/functions.rst:836
 msgid ""
@@ -2054,7 +2052,7 @@ msgid ""
 "an unknown encoding."
 msgstr ""
 "``'surrogateescape'`` 将把任何不正确的字节表示为 U+DC80 至 U+DCFF 范围内的下方替代码位。 当在写入数据时使用 "
-"``surrogateescape`` 错误处理句柄时这些替代码位会被转回到相同的字节。 这适用于处理具有未知编码格式的文件。"
+"``surrogateescape`` 错误处理器时这些替代码位会被转回到相同的字节。 这适用于处理具有未知编码格式的文件。"
 
 #: ../../library/functions.rst:1239
 msgid ""
@@ -2097,7 +2095,7 @@ msgid ""
 msgstr ""
 "从流中读取输入时，如果 *newline* 为 ``None``，则启用通用换行模式。输入中的行可以以 ``'\\n'``，``'\\r'`` 或 "
 "``'\\r\\n'`` 结尾，这些行被翻译成 ``'\\n'`` 在返回呼叫者之前。如果它是 "
-"``''``，则启用通用换行模式，但行结尾将返回给调用者未翻译。如果它具有任何其他合法值，则输入行仅由给定字符串终止，并且行结尾将返回给未调用的调用者。"
+"``''``，则启用通用换行模式，但行结尾将返回给调用者未翻译。如果它具有任何其他合法值，则输入行仅由给定字符串终止，并且返回给调用者时行结尾不会被转换。"
 
 #: ../../library/functions.rst:1266
 msgid ""
@@ -2276,7 +2274,7 @@ msgstr ""
 "参数必须为数值类型。 对于混用的操作数类型，则适用二元算术运算符的类型强制转换规则。 对于 :class:`int` "
 "操作数，结果具有与操作数相同的类型（转换后），除非第二个参数为负值；在这种情况下，所有参数将被转换为浮点数并输出浮点数结果。 例如，``pow(10, "
 "2)`` 返回 ``100``，但 ``pow(10, -2)`` 返回 ``0.01``。 对于 :class:`int` 或 "
-":class:`float` 类型的负基和一个非整数的指数，会产生一个复杂的结果。 例如， ``pow(-9, 0.5)`` 返回一个接近于 "
+":class:`float` 类型的负基和一个非整数的指数，会产生一个复数作为结果。 例如， ``pow(-9, 0.5)`` 返回一个接近于 "
 "``3j`` 的值。"
 
 #: ../../library/functions.rst:1386
@@ -2730,7 +2728,7 @@ msgid ""
 "Return a proxy object that delegates method calls to a parent or sibling "
 "class of *type*.  This is useful for accessing inherited methods that have "
 "been overridden in a class."
-msgstr "返回一个代理对象，它会将方法调用委托给 *type* 的父类或兄弟类。 这对于访问已在类中被重载的继承方法很有用。"
+msgstr "返回一个代理对象，它会将方法调用委托给 *type* 的父类或兄弟类。 这对于访问已在类中被重写的继承方法很有用。"
 
 #: ../../library/functions.rst:1728
 msgid ""
@@ -3074,7 +3072,7 @@ msgid ""
 "implementation is in use.  Direct use of :func:`__import__` is also "
 "discouraged in favor of :func:`importlib.import_module`."
 msgstr ""
-"此函数会由 :keyword:`import` 语句发起调用。 它可以被替换 (通过导入 :mod:`builtins` 模块并赋值给 "
+"此函数会由 :keyword:`import` 语句唤起。 它可以被替换 (通过导入 :mod:`builtins` 模块并赋值给 "
 "``builtins.__import__``) 以便修改 :keyword:`!import` 语句的语义，但是 **强烈** "
 "不建议这样做，因为使用导入钩子 (参见 :pep:`302`) 通常更容易实现同样的目标，并且不会导致代码问题，因为许多代码都会假定所用的是默认实现。 "
 "同样也不建议直接使用 :func:`__import__` 而应该用 :func:`importlib.import_module`。"

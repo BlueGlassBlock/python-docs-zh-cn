@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -323,7 +323,7 @@ msgstr "我们已经添加呢一个外部导入::"
 msgid ""
 "This include provides declarations that we use to handle attributes, as "
 "described a bit later."
-msgstr ""
+msgstr "这包括提供被我们用来处理属性的声明，正如我们稍后所描述的。"
 
 #: ../../extending/newtypes_tutorial.rst:249
 msgid ""
@@ -402,7 +402,7 @@ msgid ""
 msgstr ""
 "``tp_new`` 将接受被实例化的类型（不要求为 "
 "``CustomType``，如果被实例化的是一个子类）以及在该类型被调用时传入的任何参数，并预期返回所创建的实例。 ``tp_new`` "
-"处理句柄总是接受位置和关键字参数，但它们总是会忽略这些参数，而将参数处理留给初始化（即 C 中的 ``tp_init`` 或 Python 中的 "
+"处理器总是接受位置和关键字参数，但它们总是会忽略这些参数，而将参数处理留给初始化（即 C 中的 ``tp_init`` 或 Python 中的 "
 "``__init__`` 函数）方法来执行。"
 
 #: ../../extending/newtypes_tutorial.rst:336
@@ -513,7 +513,7 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_dealloc` handler on a type which doesn't support"
 " cyclic garbage collection [#]_."
 msgstr ""
-"当减少一个 :c:member:`~PyTypeObject.tp_dealloc` 处理句柄内不支持循环垃圾回收的类型的引用计数的时候 [#]_."
+"当减少一个 :c:member:`~PyTypeObject.tp_dealloc` 处理器内不支持循环垃圾回收的类型的引用计数的时候 [#]_."
 
 #: ../../extending/newtypes_tutorial.rst:435
 msgid ""
@@ -611,7 +611,7 @@ msgstr "最后，我们更新我们的 :file:`setup.py` 文件来生成新的模
 
 #: ../../extending/newtypes_tutorial.rst:539
 msgid "Providing finer control over data attributes"
-msgstr "提供对于数据属性的更精细控制Providing finer control over data attributes"
+msgstr "提供对于数据属性的更精细控制"
 
 #: ../../extending/newtypes_tutorial.rst:541
 msgid ""
@@ -671,7 +671,7 @@ msgstr "我们还移除了这些属性的成员定义::"
 msgid ""
 "We also need to update the :c:member:`~PyTypeObject.tp_init` handler to only"
 " allow strings [#]_ to be passed::"
-msgstr "我们还需要将 :c:member:`~PyTypeObject.tp_init` 处理句柄更新为只允许传入字符串 [#]_::"
+msgstr "我们还需要将 :c:member:`~PyTypeObject.tp_init` 处理器更新为只允许传入字符串 [#]_::"
 
 #: ../../extending/newtypes_tutorial.rst:646
 msgid ""
@@ -825,7 +825,7 @@ msgid ""
 "extensions will use the versions automatically provided."
 msgstr ""
 "这样就差不多了。 如果我们编写了自定义的 :c:member:`~PyTypeObject.tp_alloc` 或 "
-":c:member:`~PyTypeObject.tp_free` 处理句柄，则我们需要针对循环垃圾回收来修改它。 大多数扩展都将使用自动提供的版本。"
+":c:member:`~PyTypeObject.tp_free` 处理器，则我们需要针对循环垃圾回收来修改它。 大多数扩展都将使用自动提供的版本。"
 
 #: ../../extending/newtypes_tutorial.rst:794
 msgid "Subclassing other types"
@@ -888,9 +888,8 @@ msgid ""
 msgstr ""
 "这个模式在编写具有自定义 :c:member:`~PyTypeObject.tp_new` 和 "
 ":c:member:`~PyTypeObject.tp_dealloc` 成员的类型时很重要。 "
-":c:member:`~PyTypeObject.tp_new` 处理句柄不应为具有 "
-":c:member:`~PyTypeObject.tp_alloc` 的对象实际分配内存，而是让基类通过调用自己的 "
-":c:member:`~PyTypeObject.tp_new` 来处理它。"
+":c:member:`~PyTypeObject.tp_new` 处理器不应为具有 :c:member:`~PyTypeObject.tp_alloc`"
+" 的对象实际分配内存，而是让基类通过调用自己的 :c:member:`~PyTypeObject.tp_new` 来处理它。"
 
 #: ../../extending/newtypes_tutorial.rst:854
 msgid ""
@@ -936,7 +935,7 @@ msgid ""
 "We relied on this in the :c:member:`~PyTypeObject.tp_dealloc` handler in "
 "this example, because our type doesn't support garbage collection."
 msgstr ""
-"在本示例中我们需要 :c:member:`~PyTypeObject.tp_dealloc` 处理句柄中的这一机制，因为我们的类型不支持垃圾回收。"
+"在本示例中我们需要 :c:member:`~PyTypeObject.tp_dealloc` 处理器中的这一机制，因为我们的类型不支持垃圾回收。"
 
 #: ../../extending/newtypes_tutorial.rst:900
 msgid ""

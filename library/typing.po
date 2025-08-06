@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# 乐成 王, 2025
+# Freesand Leo <yuqinju@163.com>, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,14 +29,14 @@ msgstr ":mod:`typing` —— 对类型提示的支持"
 
 #: ../../library/typing.rst:10
 msgid "**Source code:** :source:`Lib/typing.py`"
-msgstr "**源码：** :source:`Lib/typing.py`"
+msgstr "**源代码：** :source:`Lib/typing.py`"
 
 #: ../../library/typing.rst:14
 msgid ""
 "The Python runtime does not enforce function and variable type annotations. "
 "They can be used by third party tools such as type checkers, IDEs, linters, "
 "etc."
-msgstr "Python 运行时不强制要求函数与变量类型注解。它们可用于类型检查器、IDE、错误检查器等第三方工具。"
+msgstr "Python 运行时不强制要求函数与变量类型注解。它们可被类型检查器、IDE、错误检查器等第三方工具使用。"
 
 #: ../../library/typing.rst:20
 msgid ""
@@ -215,7 +216,8 @@ msgid ""
 "A type alias is defined by assigning the type to the alias. In this example,"
 " ``Vector`` and ``list[float]`` will be treated as interchangeable "
 "synonyms::"
-msgstr "把类型赋给别名，就可以定义类型别名。本例中，``Vector`` 和 ``list[float]`` 相同，可互换："
+msgstr ""
+"类型别名是通过为类型赋值为指定的别名来定义的。 在本例中，``Vector`` 和 ``list[float]`` 将被视为可互换的同义词::"
 
 #: ../../library/typing.rst:105
 msgid ""
@@ -227,7 +229,7 @@ msgstr "类型别名适用于简化复杂的类型签名。例如："
 msgid ""
 "Note that ``None`` as a type hint is a special case and is replaced by "
 "``type(None)``."
-msgstr "注意，``None`` 是一种类型提示特例，已被 ``type(None)`` 取代。"
+msgstr "注意，``None`` 能作为类型提示是一个特例，它会被自动替换为 ``type(None)``。"
 
 #: ../../library/typing.rst:129
 msgid "NewType"
@@ -235,7 +237,7 @@ msgstr "NewType"
 
 #: ../../library/typing.rst:131
 msgid "Use the :class:`NewType` helper to create distinct types::"
-msgstr "使用 :class:`NewType` 助手来创建不同的类型 ::"
+msgstr "用 :class:`NewType` 助手创建与原类型不同的类型："
 
 #: ../../library/typing.rst:138
 msgid ""
@@ -296,8 +298,8 @@ msgid ""
 "treat ``Alias`` as being *exactly equivalent* to ``Original`` in all cases. "
 "This is useful when you want to simplify complex type signatures."
 msgstr ""
-"回顾上文，类型别名声明了两种彼此 *等价* 的类型。 ``Alias = Original`` 时，静态类型检查器认为 ``Alias`` 与 "
-"``Original`` *完全等价*。 这种方式适用于简化复杂类型签名。"
+"请记住使用类型别名将声明两个类型是相互 *等价* 的。 使用 ``Alias = Original`` 将使静态类型检查器在任何情况下都把 "
+"``Alias`` 视为与 ``Original`` *完全等价*。 这在你想要简化复杂的类型签名时会很有用处。"
 
 #: ../../library/typing.rst:195
 msgid ""
@@ -390,7 +392,7 @@ msgstr "容器中，对象的类型信息不能以泛型方式静态推断，因
 msgid ""
 "Generics can be parameterized by using a factory available in typing called "
 ":class:`TypeVar`."
-msgstr "typing 模块中推出的 :class:`TypeVar` 工厂函数实现泛型参数化。"
+msgstr "要参数化泛型，可使用 typing 中的 :class:`TypeVar`  工厂。"
 
 #: ../../library/typing.rst:283
 msgid "User-defined generic types"
@@ -428,7 +430,7 @@ msgstr ":class:`Generic` 类型变量的参数应各不相同。下列代码就�
 
 #: ../../library/typing.rst:347
 msgid "You can use multiple inheritance with :class:`Generic`::"
-msgstr ":class:`Generic` 支持多重继承："
+msgstr "您可以通过 :class:`Generic` 来使用多重继承："
 
 #: ../../library/typing.rst:357
 msgid ""
@@ -437,7 +439,7 @@ msgstr "继承自泛型类时，可以修正某些类型变量："
 
 #: ../../library/typing.rst:367
 msgid "In this case ``MyDict`` has a single parameter, ``T``."
-msgstr "比如，本例中 ``MyDict`` 调用的单参数，``T``。"
+msgstr "在这个例子中，``MyDict`` 就只有一个参数 ``T``。"
 
 #: ../../library/typing.rst:369
 msgid ""
@@ -666,7 +668,7 @@ msgstr "这些类型可用于类型注解，但不支持 ``[]``。"
 
 #: ../../library/typing.rst:591
 msgid "Special type indicating an unconstrained type."
-msgstr "不受限的特殊类型。"
+msgstr "特殊类型，表示没有约束的类型。"
 
 #: ../../library/typing.rst:593
 msgid "Every type is compatible with :data:`Any`."
@@ -769,11 +771,11 @@ msgstr "比较联合类型，不涉及参数顺序，例如："
 
 #: ../../library/typing.rst:669
 msgid "You cannot subclass or instantiate a ``Union``."
-msgstr "``Union`` 不能作为子类，也不能实例化。"
+msgstr "不可创建 ``Union`` 的子类或实例。"
 
 #: ../../library/typing.rst:671
 msgid "You cannot write ``Union[X][Y]``."
-msgstr "不支持 ``Union[X][Y]`` 这种写法。"
+msgstr "没有 ``Union[X][Y]`` 这种写法。"
 
 #: ../../library/typing.rst:673
 msgid "Don't remove explicit subclasses from unions at runtime."
@@ -969,7 +971,7 @@ msgstr ""
 
 #: ../../library/typing.rst:871
 msgid "Special type construct to mark class variables."
-msgstr "标记类变量的特殊类型构造器。"
+msgstr "特殊类型注解构造，用于标注类变量。"
 
 #: ../../library/typing.rst:873
 msgid ""
@@ -1075,7 +1077,7 @@ msgstr "语义详情："
 
 #: ../../library/typing.rst:958
 msgid "The first argument to ``Annotated`` must be a valid type"
-msgstr "``Annotated`` 的第一个参数必须是有效类型。"
+msgstr "``Annotated`` 的第一个参数必须是有效的类型。"
 
 #: ../../library/typing.rst:960
 msgid ""
@@ -1125,9 +1127,9 @@ msgid ""
 "conditional code flow and applying the narrowing to a block of code.  The "
 "conditional expression here is sometimes referred to as a \"type guard\"::"
 msgstr ""
-"PX旨在使 *类型缩小* 受益--"
-"这是静态类型检查器用来确定程序代码流中表达式的更精确类型的一种技术。通常，类型缩小是通过分析条件性代码流并将缩小的结果应用于一个代码块来完成的。 "
-"这里的条件表达式有时被称为 \"类型保护\"::"
+"``TypeGuard`` 旨在使 *类型收窄* "
+"受益——这是静态类型检查器用以确定表达式在代码流中的较精确类型的一种技术。通常，类型收窄是以分析条件代码流并将收窄应用于一个代码块来完成的，涉及到的条件表达式有时即被称为“type"
+" guard”。"
 
 #: ../../library/typing.rst:1020
 msgid ""
@@ -1135,24 +1137,24 @@ msgid ""
 " type guard.  Such a function should use ``TypeGuard[...]`` as its return "
 "type to alert static type checkers to this intention."
 msgstr ""
-"有时，使用一个用户定义的布尔函数作为类型保护会很方便。 这样的函数应该使用 ``TypeGuard[...]`` "
-"作为其返回类型，以提醒静态类型检查器注意这一意图。"
+"定义一个布尔函数作为 type guard 有时会很方便，此时应使用 ``TypeGuard[...]`` "
+"作为其返回类型以提醒静态类型检查器注意这一意图。"
 
 #: ../../library/typing.rst:1024
 msgid ""
 "Using  ``-> TypeGuard`` tells the static type checker that for a given "
 "function:"
-msgstr "对于一个给定的函数，使用 ``-> TypeGuard`` 告诉静态类型检查器:"
+msgstr "``-> TypeGuard`` 告诉静态类型检查器，某函数："
 
 #: ../../library/typing.rst:1027
 msgid "The return value is a boolean."
-msgstr "返回值是一个布尔值。"
+msgstr "返回一个布尔值。"
 
 #: ../../library/typing.rst:1028
 msgid ""
 "If the return value is ``True``, the type of its argument is the type inside"
 " ``TypeGuard``."
-msgstr "如果返回值是 ``True``，其参数的类型是 ``TypeGuard`` 里面的类型。"
+msgstr "如果返回值是 ``True``，那么其参数的类型是 ``TypeGuard`` 内的类型。"
 
 #: ../../library/typing.rst:1045
 msgid ""
@@ -1811,14 +1813,14 @@ msgid ""
 "``BinaryIO(IO[bytes])`` represent the types of I/O streams such as returned "
 "by :func:`open`."
 msgstr ""
-"泛型类型 ``IO[AnyStr]`` 及其子类 ``TextIO(IO[str])`` 与 ``BinaryIO(IO[bytes])`` 表示 "
-"I/O 流的类型，例如 :func:`open` 所返回的对象。"
+"泛型 ``IO[AnyStr]`` 及其子类 ``TextIO(IO[str])``、``BinaryIO(IO[bytes])`` 表示 I/O "
+"流——例如 :func:`open` 返回的对象——的类型。"
 
 #: ../../library/typing.rst:1739
 msgid ""
 "The ``typing.io`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
-msgstr "``typing.io`` 命名空间已被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
+msgstr "``typing.io`` 命名空间被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
 
 #: ../../library/typing.rst:1744
 msgid ""
@@ -1835,7 +1837,7 @@ msgstr ""
 msgid ""
 "The ``typing.re`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
-msgstr "``typing.re`` 命名空间已被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
+msgstr "``typing.re`` 命名空间被弃用并将被删除。 这些类型应该被直接从 ``typing`` 导入。"
 
 #: ../../library/typing.rst:1755
 msgid ""
@@ -2076,8 +2078,7 @@ msgid ""
 "of :class:`Generator` behaves contravariantly, not covariantly or "
 "invariantly."
 msgstr ""
-"注意，与 typing 模块里的其他泛型不同， :class:`Generator` 的 ``SendType`` "
-"属于逆变行为，不是协变行为，也是不变行为。"
+"注意，与 typing 模块里的其他泛型不同， :class:`Generator` 的 ``SendType`` 属于逆变行为，不是协变或不变行为。"
 
 #: ../../library/typing.rst:1931
 msgid ""
@@ -2252,33 +2253,33 @@ msgstr "这些协议由 :func:`runtime_checkable` 装饰。"
 msgid ""
 "An ABC with one abstract method ``__abs__`` that is covariant in its return "
 "type."
-msgstr "含抽象方法 ``__abs__`` 的抽象基类，是其返回类型里的协变量。"
+msgstr "一个抽象基类，含一个抽象方法 ``__abs__``，该方法与其返回类型协变。"
 
 #: ../../library/typing.rst:2096
 msgid "An ABC with one abstract method ``__bytes__``."
-msgstr "含抽象方法 ``__bytes__`` 的抽象基类。"
+msgstr "一个抽象基类，含一个抽象方法 ``__bytes__``。"
 
 #: ../../library/typing.rst:2100
 msgid "An ABC with one abstract method ``__complex__``."
-msgstr "含抽象方法 ``__complex__`` 的抽象基类。"
+msgstr "一个抽象基类，含一个抽象方法 ``__complex__``。"
 
 #: ../../library/typing.rst:2104
 msgid "An ABC with one abstract method ``__float__``."
-msgstr "含抽象方法 ``__float__`` 的抽象基类。"
+msgstr "一个抽象基类，含一个抽象方法 ``__float__``。"
 
 #: ../../library/typing.rst:2108
 msgid "An ABC with one abstract method ``__index__``."
-msgstr "含抽象方法 ``__index__`` 的抽象基类。"
+msgstr "一个抽象基类，含一个抽象方法 ``__index__``。"
 
 #: ../../library/typing.rst:2114
 msgid "An ABC with one abstract method ``__int__``."
-msgstr "含抽象方法 ``__int__`` 的抽象基类。"
+msgstr "一个抽象基类，含一个抽象方法 ``__int__``。"
 
 #: ../../library/typing.rst:2118
 msgid ""
 "An ABC with one abstract method ``__round__`` that is covariant in its "
 "return type."
-msgstr "含抽象方法 ``__round__`` 的抽象基类，是其返回类型的协变量。"
+msgstr "一个抽象基类，含一个抽象方法 ``__round__``，该方法与其返回类型协变。"
 
 #: ../../library/typing.rst:2122
 msgid "Functions and decorators"
@@ -2286,14 +2287,14 @@ msgstr "函数与装饰器"
 
 #: ../../library/typing.rst:2126
 msgid "Cast a value to a type."
-msgstr "把值强制转换为类型。"
+msgstr "把一个值转换为指定的类型。"
 
 #: ../../library/typing.rst:2128
 msgid ""
 "This returns the value unchanged.  To the type checker this signals that the"
 " return value has the designated type, but at runtime we intentionally don't"
 " check anything (we want this to be as fast as possible)."
-msgstr "不变更返回值。对类型检查器而言，代表了返回值具有指定的类型，但运行时故意不做任何检查（以便让检查速度尽量快）。"
+msgstr "这会把值原样返回。对类型检查器而言这代表了返回值具有指定的类型，在运行时我们故意没有设计任何检查（我们希望让这尽量快）。"
 
 #: ../../library/typing.rst:2135
 msgid ""
@@ -2483,5 +2484,5 @@ msgid ""
 "in ``__annotations__``. This makes it unnecessary to use quotes around the "
 "annotation (see :pep:`563`)."
 msgstr ""
-"使用 ``from __future__ import`` 时，函数定义时不处理注解， 而是把注解当作字符串存在 ``__annotations__``"
-" 里，这样就不必为注解使用引号。（详见 :pep:`563`）。"
+"若用了 ``from __future__ import annotations``，函数定义时则不求值注解，直接把注解以字符串形式存在 "
+"``__annotations__`` 里。这时毋需为注解打引号（见 :pep:`563`）。"

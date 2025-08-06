@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2022
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:08+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -409,7 +408,7 @@ msgstr "为了简化和标准化错误处理，编解码器可以通过接受 *e
 msgid ""
 "The following error handlers can be used with all Python :ref:`standard-"
 "encodings` codecs:"
-msgstr "以下错误处理句柄可以用于所有的 Python :ref:`standard-encodings` 编解码器:"
+msgstr "以下错误处理器可以用于所有的 Python :ref:`standard-encodings` 编解码器:"
 
 #: ../../library/codecs.rst:327 ../../library/codecs.rst:369
 #: ../../library/codecs.rst:388
@@ -488,7 +487,7 @@ msgstr ""
 msgid ""
 "The following error handlers are only applicable to encoding (within "
 ":term:`text encodings <text encoding>`):"
-msgstr "下列错误处理句柄仅在编码时适用（在 :term:`文本编码格式 <text encoding>` 类别以内）:"
+msgstr "下列错误处理器仅在编码时适用（在 :term:`文本编码格式 <text encoding>` 类别以内）:"
 
 #: ../../library/codecs.rst:371
 msgid "``'xmlcharrefreplace'``"
@@ -1018,7 +1017,7 @@ msgstr ""
 msgid ""
 "The *stream* argument must be a file-like object open for writing text or "
 "binary data, as appropriate for the specific codec."
-msgstr "*stream* 参数必须为一个基于特定编解码器打开用于写入文本或二进制数据的文件类对象。"
+msgstr "*stream* 参数必须为一个基于特定编解码器打开用于写入文本或二进制数据的文件型对象。"
 
 #: ../../library/codecs.rst:726
 msgid ""
@@ -1098,7 +1097,7 @@ msgstr ""
 msgid ""
 "The *stream* argument must be a file-like object open for reading text or "
 "binary data, as appropriate for the specific codec."
-msgstr "*stream* 参数必须为一个基于特定编解码器打开用于读取文本或二进制数据的文件类对象。"
+msgstr "*stream* 参数必须为一个基于特定编解码器打开用于读取文本或二进制数据的文件型对象。"
 
 #: ../../library/codecs.rst:781
 msgid ""
@@ -1234,7 +1233,7 @@ msgid ""
 "resp. Error handling is done in the same way as defined for the stream "
 "readers and writers."
 msgstr ""
-"创建一个 :class:`StreamReaderWriter` 实例。 *stream* 必须为一个文件类对象。 *Reader* 和 "
+"创建一个 :class:`StreamReaderWriter` 实例。 *stream* 必须为一个文件型对象。 *Reader* 和 "
 "*Writer* 必须为分别提供了 :class:`StreamReader` 和 :class:`StreamWriter` 接口的工厂函数或类。 "
 "错误处理通过与流式读取器和写入器所定义的相同方式来完成。"
 
@@ -1276,7 +1275,7 @@ msgstr "你可以使用这些对象来进行透明转码，例如从 Latin-1 转
 
 #: ../../library/codecs.rst:899
 msgid "The *stream* argument must be a file-like object."
-msgstr "*stream* 参数必须为一个文件类对象。"
+msgstr "*stream* 参数必须为一个文件型对象。"
 
 #: ../../library/codecs.rst:901
 msgid ""

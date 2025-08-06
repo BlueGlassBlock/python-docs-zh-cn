@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -238,9 +238,10 @@ msgid ""
 "the platforms default C :c:expr:`int` type, their value is masked to fit "
 "into the C type."
 msgstr ""
-"``None``，整数，字节对象和（Unicode）字符串是仅有的可以直接作为这些函数参数使用的原生 Python 对象。 ``None`` 将作为 C"
-" ``NULL`` 指针传入，字节对象和字符串将作为指向包含其数据 (:c:expr:`char *` 或 :c:expr:`wchar_t *`) "
-"的内存块的指针传入。 Python 整数则作为平台默认的 C :c:expr:`int` 类型传入，它们的值会被截断以适应 C 类型的长度。"
+"在原生 Python 对象中，``None``、整数、字节串以及（Unicode）字符串可以直接在这些函数调用中作为参数传递。 ``None`` 作为 "
+"C 的 ``NULL`` 指针传递，字节串和字符串作为指向包含其数据的内存块的指针传递 (:c:expr:`char *` 或 "
+":c:expr:`wchar_t *`)。 Python 整数以平台默认的 C 类型 :c:expr:`int` 传递，它们的值会被掩码化以适应 C "
+"中的类型。"
 
 #: ../../library/ctypes.rst:206
 msgid ""
@@ -1532,10 +1533,9 @@ msgid ""
 " the :data:`errno` value before the function call is swapped with the ctypes"
 " private copy, the same happens immediately after the function call."
 msgstr ""
-"*use_errno* 参数如果设置为 true，可以启用ctypes的机制，通过一种安全的方法获取系统的  :data:`errno` 错误码。 "
-":mod:`ctypes` 维护了一个线程局部变量，它是系统 :data:`errno` 的一份拷贝；如果调用了使用 "
-"``use_errno=True`` 创建的外部函数， :data:`errno` 的值会与 ctypes "
-"自己拷贝的那一份进行交换，函数执行完后立即再交换一次。"
+"对于 *use_errno* 参数，如果设为真，则 ctypes 会启用一种安全访问系统  :data:`errno` 的机制。 "
+":mod:`ctypes` 维护有系统 :data:`errno`  的一个线程局部副本；如果调用传入了 ``use_errno=True`` "
+"的外部函数，函数调用前 :data:`errno` 的值将与 ctypes 的私有副本交换，函数调用后也进行同样的交换。"
 
 #: ../../library/ctypes.rst:1418
 msgid ""
@@ -2110,7 +2110,7 @@ msgstr "以整数形式返回内存缓冲区地址。 *obj* 必须为一个 ctyp
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.addressof`` with "
 "argument ``obj``."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.addressof``，附带参数 ``obj``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.addressof`` 并附带参数 ``obj``。"
 
 #: ../../library/ctypes.rst:1854
 msgid ""
@@ -2175,7 +2175,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.create_string_buffer`` "
 "with arguments ``init``, ``size``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``ctypes.create_string_buffer``，附带参数 ``init``, "
+"引发一个 :ref:`审计事件 <auditing>` ``ctypes.create_string_buffer`` 并附带参数 ``init``, "
 "``size``。"
 
 #: ../../library/ctypes.rst:1898
@@ -2206,8 +2206,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.create_unicode_buffer`` "
 "with arguments ``init``, ``size``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``ctypes.create_unicode_buffer``，附带参数 ``init``, "
-"``size``。"
+"引发一个 :ref:`审计事件 <auditing>` ``ctypes.create_unicode_buffer`` 并附带参数 ``init``,"
+" ``size``。"
 
 #: ../../library/ctypes.rst:1915
 msgid ""
@@ -2280,7 +2280,7 @@ msgstr "返回调用线程中系统 :data:`errno` 变量的 ctypes 私有副本�
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.get_errno`` with no "
 "arguments."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.get_errno``，不附带任何参数。"
+msgstr "引发一个不带参数的 :ref:`审计事件 <auditing>` ``ctypes.get_errno``。"
 
 #: ../../library/ctypes.rst:1972
 msgid ""
@@ -2292,7 +2292,7 @@ msgstr "仅限 Windows：返回调用线程中系统 :data:`LastError` 变量的
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.get_last_error`` with no"
 " arguments."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.get_last_error``，不附带任何参数。"
+msgstr "引发一个不带参数的 :ref:`审计事件 <auditing>` ``ctypes.get_last_error``。"
 
 #: ../../library/ctypes.rst:1979
 msgid ""
@@ -2353,7 +2353,7 @@ msgstr "设置调用线程中系统 :data:`errno` 变量的 ctypes 私有副本�
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.set_errno`` with "
 "argument ``errno``."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.set_errno`` 附带参数 ``errno``。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.set_errno`` 并附带参数 ``errno``。"
 
 #: ../../library/ctypes.rst:2025
 msgid ""
@@ -2367,7 +2367,8 @@ msgstr ""
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.set_last_error`` with "
 "argument ``error``."
-msgstr "引发一个 :ref:`审计事件 <auditing>` ``ctypes.set_last_error``，附带参数 ``error``。"
+msgstr ""
+"引发一个 :ref:`审计事件 <auditing>` ``ctypes.set_last_error`` 并附带参数 ``error``。"
 
 #: ../../library/ctypes.rst:2034
 msgid ""
@@ -2462,7 +2463,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``ctypes.cdata/buffer`` with "
 "arguments ``pointer``, ``size``, ``offset``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``ctypes.cdata/buffer`` 附带参数 ``pointer``, "
+"引发一个 :ref:`审计事件 <auditing>` ``ctypes.cdata/buffer`` 并附带参数 ``pointer``, "
 "``size``, ``offset``。"
 
 #: ../../library/ctypes.rst:2099

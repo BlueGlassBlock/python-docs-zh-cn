@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -550,7 +550,7 @@ msgstr "将 *obj* 封存后的内容写入已打开的文件对象，该文件�
 
 #: ../../library/pickle.rst:338
 msgid "Do nothing by default.  This exists so a subclass can override it."
-msgstr "默认无动作，子类继承重载时使用。"
+msgstr "默认无动作，该方法可被子类重写。"
 
 #: ../../library/pickle.rst:340
 msgid ""
@@ -734,14 +734,15 @@ msgid ""
 "how they can be loaded, potentially reducing security risks. Refer to "
 ":ref:`pickle-restrict` for details."
 msgstr ""
-"子类可以重载此方法，来控制加载对象的类型和加载对象的方式，从而尽可能降低安全风险。参阅 :ref:`pickle-restrict` 获取更详细的信息。"
+"子类可以重写此方法，来控制加载对象的类型和加载对象的方式，从而尽可能降低安全风险。参阅 :ref:`pickle-restrict` 获取更详细的信息。"
 
 #: ../../library/pickle.rst:460
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``pickle.find_class`` with "
 "arguments ``module``, ``name``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``pickle.find_class`` 附带参数 ``module``、``name``。"
+"引发一个 :ref:`审计事件 <auditing>` ``pickle.find_class`` 并附带参数 ``module``, "
+"``name``。"
 
 #: ../../library/pickle.rst:464
 msgid ""
@@ -1476,7 +1477,7 @@ msgid ""
 "it permits the unpickler to import and invoke arbitrary code.  Just consider"
 " what this hand-crafted pickle data stream does when loaded::"
 msgstr ""
-"默认情况下，解封将会导入在 pickle 数据中找到的任何类或函数。 对于许多应用来说，此行为是不可接受的，因为它会允许解封器导入并发起调用任意代码。 "
+"默认情况下，解封将会导入在 pickle 数据中找到的任何类或函数。 对于许多应用来说，此行为是不可接受的，因为它会允许解封器导入并唤起任意代码。 "
 "只须考虑当这个手工构建的 pickle 数据流被加载时会做什么::"
 
 #: ../../library/pickle.rst:1061

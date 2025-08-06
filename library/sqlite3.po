@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Lu <lu2github@gmail.com>, 2022
-# LeeWendao <LeeWendao@outlook.com>, 2022
-# Nyuan Zhang, 2023
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
+# Lu <lu2github@gmail.com>, 2025
+# LeeWendao <LeeWendao@outlook.com>, 2025
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 03:05+0000\n"
-"PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -348,12 +347,11 @@ msgid ""
 "is set; :class:`str` will be returned instead. By default (``0``), type "
 "detection is disabled."
 msgstr ""
-"控制是否以及如何使用由 :func:`register_converter` 注册的转换器 (converter) 将并非由 :ref:`SQLite "
-"原生支持的数据类型 <sqlite3-types>` 转换为 Python 类型。将它设置为常量 :const:`PARSE_DECLTYPES` 与 "
-"常量 :const:`PARSE_COLNAMES` 的任意联合（combination，使用位运算符按位或 ``|`` "
-"创建）以启用它。如果两个常量标志 (flags) 都被设置，那么列名将优先于声明的类型。同样，请注意，即使您设置了 *detect_types* "
-"，您依然无法对生成的字段（例如 ``max(data)`` ）进行类型检测，此时它将会返回一个字符串 "
-":class:`str`。该参数的默认值为(``0``)，类型检测被禁用。"
+"控制是否以及如何使用由 :func:`register_converter` 注册的转换器将并非由 :ref:`SQLite 原生支持的 "
+"<sqlite3-types>` 数据类型转换为 Python 类型。 将它设置为 :const:`PARSE_DECLTYPES` 和 "
+":const:`PARSE_COLNAMES` 的任意组合 (使用 ``|``，即按位或) 来启动它。 如果两个旗标都被设置则列名将优先于声明的类型。 "
+"即使设置了 *detect_types*，依然无法对生成的字段 (例如 ``max(data)``) 进行类型检测；此时它将改为返回 "
+":class:`str`。 当使用默认值 (``0``) 时，类型检测将被禁用。"
 
 #: ../../library/sqlite3.rst:293
 msgid ""
@@ -363,10 +361,10 @@ msgid ""
 "opening transactions implicitly. See :ref:`sqlite3-controlling-transactions`"
 " for more."
 msgstr ""
-"该参数代表数据库连接的事务控制级别 ( :attr:`~Connection.isolation_level` ) ，它将控制数据库事务 "
-"(transactions) 是否以及如何隐式创建。它的可取值为 ``\"DEFERRED\"`` （默认值）， ``\"EXCLUSIVE\"`` ，"
-" ``\"IMMEDIATE\"`` 或 ``None`` （取用该值将禁止事务的隐式创建）。请参阅 "
-":ref:`sqlite3-controlling-transactions` 以获取更多信息。"
+"该参数代表数据库连接的事务控制级别 (:attr:`~Connection.isolation_level`)，它将控制数据库事务是否以及如何隐式创建 "
+"。 它的可取值为 ``\"DEFERRED\"`` (默认值)，``\"EXCLUSIVE\"``，``\"IMMEDIATE\"`` 或 "
+"``None`` (取用该值将禁止事务的隐式创建)。 请参阅 :ref:`sqlite3-controlling-transactions` "
+"以获取更多信息。"
 
 #: ../../library/sqlite3.rst:301
 msgid ""
@@ -392,8 +390,7 @@ msgstr ""
 msgid ""
 "The number of statements that :mod:`!sqlite3` should internally cache for "
 "this connection, to avoid parsing overhead. By default, 100 statements."
-msgstr ""
-"该参数指明 :mod:`!sqlite3` 模块为减少解析开销而为连接缓存的语句 (statements) 数量。默认情况下，它的值为 100。"
+msgstr ":mod:`!sqlite3` 应当为该连接进行内部缓存以避免解析开销的语句数量。 在默认情况下为 100 条语句。"
 
 #: ../../library/sqlite3.rst:319
 msgid ""
@@ -416,17 +413,15 @@ msgstr "返回类型"
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect`` with argument"
 " ``database``."
-msgstr ""
-"使用它将引发一个附带参数 ``database`` 的 :ref:`审计事件 (auditing event) <auditing>` "
-"``sqlite3.connect`` 。"
+msgstr "引发一个 :ref:`审计事件 <auditing>` ``sqlite3.connect`` 并附带参数 ``database``。"
 
 #: ../../library/sqlite3.rst:331
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect/handle`` with "
 "argument ``connection_handle``."
 msgstr ""
-"使用它将引发一个附带参数 ``connection_handle`` 的 :ref:`审计事件 <auditing>` "
-"``sqlite3.connect/handle`` 。"
+"引发一个 :ref:`审计事件 <auditing>` ``sqlite3.connect/handle`` 并附带参数 "
+"``connection_handle``。"
 
 #: ../../library/sqlite3.rst:333
 msgid "The *uri* parameter."
@@ -552,7 +547,7 @@ msgid ""
 "to :meth:`Connection.set_authorizer`, to indicate whether:"
 msgstr ""
 "作为传递给函数 :meth:`Connection.set_authorizer` 的形式参数 *authorizer_callback* "
-"的回调函数应该返回的旗标，以表明："
+"的回调函数应该返回的标志 (flags) ，以表明是否："
 
 #: ../../library/sqlite3.rst:442
 msgid "Access is allowed (:const:`!SQLITE_OK`),"
@@ -666,7 +661,7 @@ msgstr ""
 msgid ""
 "Commit any pending transaction to the database. If there is no open "
 "transaction, this method is a no-op."
-msgstr "向数据库提交任何未决事务 (pending transaction) 。如果不存在打开的事务，那么该方法便没有作用。"
+msgstr "向数据库提交任何待处理的事务。 如果没有已开启的事务，则此方法不执行任何操作。"
 
 #: ../../library/sqlite3.rst:533
 msgid ""
@@ -895,7 +890,7 @@ msgstr ""
 msgid ""
 "If you want to clear any previously installed progress handler, call the "
 "method with ``None`` for *progress_handler*."
-msgstr "如果你想清除任何先前安装的进度处理句柄，可在调用该方法时传入 ``None`` 作为 *progress_handler*。"
+msgstr "如果你想清除任何先前安装的进度处理器，可在调用该方法时传入 ``None`` 作为 *progress_handler*。"
 
 #: ../../library/sqlite3.rst:736
 msgid ""
@@ -966,7 +961,7 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.enable_load_extension``"
 " with arguments ``connection``, ``enabled``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``sqlite3.enable_load_extension``，附带参数 "
+"引发一个 :ref:`审计事件 <auditing>` ``sqlite3.enable_load_extension`` 并附带参数 "
 "``connection``, ``enabled``。"
 
 #: ../../library/sqlite3.rst:787
@@ -987,8 +982,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.load_extension`` with "
 "arguments ``connection``, ``path``."
 msgstr ""
-"引发一个 :ref:`审计事件 <auditing>` ``sqlite3.load_extension``，附带参数 ``connection``, "
-"``path``。"
+"引发一个 :ref:`审计事件 <auditing>` ``sqlite3.load_extension`` 并附带参数 ``connection``,"
+" ``path``。"
 
 #: ../../library/sqlite3.rst:838
 msgid "Added the ``sqlite3.load_extension`` auditing event."
@@ -1184,9 +1179,9 @@ msgid ""
 "no open transaction, a transaction is implicitly opened before executing "
 "*sql*."
 msgstr ""
-"如果属性 :attr:`~Connection.isolation_level` 的值不是 ``None``，并且 *sql* 是一个 "
-"``INSERT``、``UPDATE``、 ``DELETE`` 或 ``REPLACE`` 语句，并且现在没有打开的事务 (transaction)"
-" ，那么在执行 *sql* 语句前将会隐式打开一个事务。"
+"如果属性 :attr:`~Connection.isolation_level` 的值不是 ``None``，并且*sql* 是一个 "
+"``INSERT``、``UPDATE``、 ``DELETE``、 或 ``REPLACE`` 语句，并且现在没有打开的事务 "
+"(transaction) ，那么在执行 *sql* 语句前将会隐式打开一个事务。"
 
 #: ../../library/sqlite3.rst:1069
 msgid "Use :meth:`executescript` to execute multiple SQL statements."
@@ -1197,6 +1192,8 @@ msgid ""
 "For every item in *parameters*, repeatedly execute the :ref:`parameterized "
 "<sqlite3-placeholders>` SQL statement *sql*."
 msgstr ""
+"对于在 *parameters* 中的每一项，重复执行已经 :ref:`参数化 <sqlite3-placeholders>` 了的 SQL 语句 "
+"*sql*。"
 
 #: ../../library/sqlite3.rst:1077
 msgid ""
@@ -1205,7 +1202,7 @@ msgstr "使用与 :meth:`~Cursor.execute` 相同的隐式事务处理。"
 
 #: ../../library/sqlite3.rst:1079
 msgid "A single SQL :abbr:`DML (Data Manipulation Language)` statement."
-msgstr ""
+msgstr "一条 SQL :abbr:`DML (Data Manipulation Language)` 语句。"
 
 #: ../../library/sqlite3.rst:1082
 msgid ""
@@ -1216,7 +1213,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1088
 msgid "If *sql* is not a DML statment."
-msgstr ""
+msgstr "如果 *sql* 不是一条 DML 语句。"
 
 #: ../../library/sqlite3.rst:1107
 msgid ""
@@ -1700,6 +1697,11 @@ msgid ""
 "subclass), which must contain keys for all named parameters; any extra items"
 " are ignored. Here's an example of both styles:"
 msgstr ""
+"一条SQL语句可能使用这两种占位符中的一种：? 标记（或称问号标记风格 qmark style）或具名占位符（或称具名风格 named "
+"style）。对于问号标记风格，*parameters* 必须是一个长度与 ? 标记 的数量匹配的序列 "
+"(:term:`sequence`)，否则将会抛出 :exc:`ProgrammingError` 错误。 对于具名风格，*parameters* "
+"必须是一个 :class:`dict` 或是其子类的实例，同时该实例必须包括所有具名占位符所对应的键。 "
+"其中，该实例中不为具名占位符所对应的键将会被忽略。这里是上述两种风格的示例："
 
 #: ../../library/sqlite3.rst:1505
 msgid ""

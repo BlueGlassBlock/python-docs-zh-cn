@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2025, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
-"PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"POT-Creation-Date: 2025-07-25 18:10+0000\n"
+"PO-Revision-Date: 2025-07-18 20:09+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +27,7 @@ msgstr ":mod:`dis` --- Python 字节码反汇编器"
 
 #: ../../library/dis.rst:7
 msgid "**Source code:** :source:`Lib/dis.py`"
-msgstr "**Source code:** :source:`Lib/dis.py`"
+msgstr "**源代码:** :source:`Lib/dis.py`"
 
 #: ../../library/dis.rst:11
 msgid ""
@@ -118,7 +118,7 @@ msgid ""
 "the disassembled code. Setting this means :meth:`.dis` will display a "
 "\"current instruction\" marker against the specified opcode."
 msgstr ""
-"如果 *current_offset* 不是 ``None`` ，则它指的是反汇编代码中的指令偏移量。设置它意味着 :meth:`.dis` "
+"如果 *current_offset* 不是 ``None`` ，它指的就是汇编代码中的指令偏移量。设置它意味着 :meth:`.dis` "
 "将针对指定的操作码显示“当前指令”标记。"
 
 #: ../../library/dis.rst:79
@@ -379,7 +379,7 @@ msgstr "人类可读的操作参数描述"
 
 #: ../../library/dis.rst:312
 msgid "start index of operation within bytecode sequence"
-msgstr "在字节码序列中启动操作索引"
+msgstr "在字节码序列中的起始操作索引"
 
 #: ../../library/dis.rst:317
 msgid "line started by this opcode (if any), otherwise ``None``"
@@ -444,23 +444,23 @@ msgstr "一元操作获取堆栈顶部元素，应用操作，并将结果推回
 
 #: ../../library/dis.rst:383
 msgid "Implements ``TOS = +TOS``."
-msgstr "实现 ``TOS = +TOS`` 。"
+msgstr "实现 ``TOS = +TOS``。"
 
 #: ../../library/dis.rst:388
 msgid "Implements ``TOS = -TOS``."
-msgstr "实现 ``TOS = -TOS`` 。"
+msgstr "实现 ``TOS = -TOS``。"
 
 #: ../../library/dis.rst:393
 msgid "Implements ``TOS = not TOS``."
-msgstr "实现 ``TOS = not TOS`` 。"
+msgstr "实现 ``TOS = not TOS``。"
 
 #: ../../library/dis.rst:398
 msgid "Implements ``TOS = ~TOS``."
-msgstr "实现 ``TOS = ~TOS`` 。"
+msgstr "实现 ``TOS = ~TOS``。"
 
 #: ../../library/dis.rst:403
 msgid "Implements ``TOS = iter(TOS)``."
-msgstr "实现 ``TOS = iter(TOS)`` 。"
+msgstr "实现 ``TOS = iter(TOS)``。"
 
 #: ../../library/dis.rst:408
 msgid ""
@@ -515,7 +515,7 @@ msgstr "实现 ``TOS = TOS1 - TOS`` 。"
 
 #: ../../library/dis.rst:464
 msgid "Implements ``TOS = TOS1[TOS]``."
-msgstr "实现 ``TOS = TOS1[TOS]`` 。"
+msgstr "实现 ``TOS = TOS1[TOS]``。"
 
 #: ../../library/dis.rst:469
 msgid "Implements ``TOS = TOS1 << TOS``."
@@ -1363,8 +1363,8 @@ msgid ""
 "opcodes which don't use their argument and those that do (``< "
 "HAVE_ARGUMENT`` and ``>= HAVE_ARGUMENT``, respectively)."
 msgstr ""
-"这不是一个真正的操作码。 它用于标明使用参数和不使用参数的操作码 (分别为 ``< HAVE_ARGUMENT`` 和 ``>= "
-"HAVE_ARGUMENT``) 之间的分隔线。"
+"这不是一个真正的操作码。 它用于标明不使用参数和使用参数的操作码 (分别为 ``< HAVE_ARGUMENT`` 和 ``>= "
+"HAVE_ARGUMENT``) 之间的分隔。"
 
 #: ../../library/dis.rst:1282
 msgid ""
