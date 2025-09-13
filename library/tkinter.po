@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
+# python-doc bot, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 18:10+0000\n"
-"PO-Revision-Date: 2025-07-18 20:09+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-01-03 16:02+0000\n"
+"PO-Revision-Date: 2025-09-12 23:38+0000\n"
+"Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -209,7 +209,6 @@ msgstr ""
 "的执行模型是围绕协同多任务而设计的，Tkinter 协调了两者的差别（详见 `Threading model`_ ）。"
 
 #: ../../library/tkinter.rst:97 ../../library/tkinter.rst:908
-#: ../../library/tkinter.rst:908
 msgid "Tk"
 msgstr "Tk"
 
@@ -1613,7 +1612,7 @@ msgstr ""
 "请注意，在 ``turn_red()`` 回调函数中如何访问事件的 widget 字段。该字段包含了捕获 X "
 "事件的控件。下表列出了事件可供访问的其他字段，及其在 Tk 中的表示方式，这在查看 Tk 手册时很有用处。"
 
-#: ../../library/tkinter.rst:908 ../../library/tkinter.rst:908
+#: ../../library/tkinter.rst:908
 msgid "Tkinter Event Field"
 msgstr "Tkinter 事件字段"
 

@@ -4,18 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Lu <lu2github@gmail.com>, 2025
-# LeeWendao <LeeWendao@outlook.com>, 2025
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2025
+# python-doc bot, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 18:10+0000\n"
-"PO-Revision-Date: 2025-07-18 20:09+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-01-03 16:02+0000\n"
+"PO-Revision-Date: 2025-09-12 23:38+0000\n"
+"Last-Translator: python-doc bot, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -311,9 +309,7 @@ msgstr "模块函数"
 msgid "Open a connection to an SQLite database."
 msgstr "打开一个与 SQLite 数据库的连接。"
 
-#: ../../library/sqlite3.rst:0 ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0 ../../library/sqlite3.rst:0
-#: ../../library/sqlite3.rst:0 ../../library/sqlite3.rst:0
+#: ../../library/sqlite3.rst:0
 msgid "Parameters"
 msgstr "参数"
 
@@ -735,7 +731,6 @@ msgstr ""
 "如为 ``True``，创建的 SQL 函数将被标记为 `deterministic "
 "<https://sqlite.org/deterministic.html>`_，这允许 SQLite 执行额外的优化。"
 
-#: ../../library/sqlite3.rst:0 ../../library/sqlite3.rst:0
 #: ../../library/sqlite3.rst:0
 msgid "Raises"
 msgstr "引发"
